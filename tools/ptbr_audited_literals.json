@@ -1,0 +1,10 @@
+{
+  "分钟": {
+    "pt": ["m"],
+    "evidence": "Genshin TextMap: {0}分钟 -> {0}m"
+  },
+  "按鍵": {
+    "pt": ["Comandos"],
+    "evidence": "Traditional-Chinese alias of 按键, whose exact TextMap PT value is Comandos"
+  }
+}
