@@ -24,8 +24,6 @@ SCRIPTS_ROOT = ROOT / "repo" / "js"
 DTS_PATH = ROOT / "bettergi.d.ts"
 REPORT_PATH = ROOT / "reports" / "ptbr-hardcoded-ocr.json"
 
-# Exact Chinese literals with stable semantic meaning in the game UI.
-# Keys must match BetterGenshinImpact.Core.Localization.GameTextKey.
 SEMANTIC_LITERALS = {
     "确认": "confirm",
     "确定": "ok",
@@ -43,8 +41,6 @@ SEMANTIC_LITERALS = {
     "点击任意位置关闭": "click_anywhere_to_close",
 }
 
-# A CJK literal close to one of these tokens is probably functional game text,
-# not a log/comment. The report intentionally errs on the side of visibility.
 OCR_SENSITIVE_TOKENS = (
     "findText",
     "findTextAndClick",
@@ -60,17 +56,31 @@ OCR_SENSITIVE_TOKENS = (
 
 CJK_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
 STRING_RE = re.compile(r"(?P<quote>['\"])(?P<value>[^'\"\r\n]*[\u3400-\u4dbf\u4e00-\u9fff][^'\"\r\n]*)(?P=quote)")
+ALREADY_LOCALIZED_PREFIX_RE = re.compile(r"genshin\.getText\([^\r\n)]*\)\s*:\s*$")
 
 
 def localized_expression(literal: str, key: str) -> str:
-    # Keep old BetterGI compatibility for Chinese clients while allowing the
-    # new semantic API to localize on pt-BR/en/ja/etc.
     escaped = json.dumps(literal, ensure_ascii=False)
     semantic = json.dumps(key)
     return f"(genshin.getText ? genshin.getText({semantic}) : {escaped})"
 
 
+def collapse_nested_localization(text: str) -> str:
+    """Collapse one or more accidentally nested generated fallback expressions."""
+    changed = True
+    while changed:
+        changed = False
+        for literal, key in SEMANTIC_LITERALS.items():
+            single = localized_expression(literal, key)
+            nested = f"(genshin.getText ? genshin.getText({json.dumps(key)}) : {single})"
+            if nested in text:
+                text = text.replace(nested, single)
+                changed = True
+    return text
+
+
 def migrate_js_text(text: str) -> tuple[str, Counter[str]]:
+    text = collapse_nested_localization(text)
     replacements: Counter[str] = Counter()
 
     def replace(match: re.Match[str]) -> str:
@@ -79,9 +89,12 @@ def migrate_js_text(text: str) -> tuple[str, Counter[str]]:
         if key is None:
             return match.group(0)
 
-        # Do not rewrite object keys such as { "确认": handler }.
         tail = text[match.end():]
         if re.match(r"\s*:", tail):
+            return match.group(0)
+
+        prefix = text[max(0, match.start() - 160):match.start()]
+        if ALREADY_LOCALIZED_PREFIX_RE.search(prefix):
             return match.group(0)
 
         replacements[key] += 1
@@ -142,12 +155,19 @@ def scan_remaining(path: Path, text: str) -> list[dict[str, object]]:
     findings: list[dict[str, object]] = []
     lines = text.splitlines()
     for index, line in enumerate(lines, start=1):
-        if not any(token in line for token in OCR_SENSITIVE_TOKENS):
+        if not any(token in line for token in OCR_SENSITIVE_TOKENS) or not CJK_RE.search(line):
             continue
-        if not CJK_RE.search(line):
-            continue
+
         literals = [match.group("value") for match in STRING_RE.finditer(line)]
-        cjk_literals = [literal for literal in literals if CJK_RE.search(literal)]
+        cjk_literals: list[str] = []
+        for literal in literals:
+            if not CJK_RE.search(literal):
+                continue
+            key = SEMANTIC_LITERALS.get(literal)
+            if key and localized_expression(literal, key) in line:
+                continue
+            cjk_literals.append(literal)
+
         if not cjk_literals:
             continue
         findings.append({
@@ -196,22 +216,26 @@ def main() -> int:
     findings: list[dict[str, object]] = []
     for path in js_files:
         try:
-            current = path.read_text(encoding="utf-8") if args.apply else migrate_js_text(path.read_text(encoding="utf-8"))[0]
+            original = path.read_text(encoding="utf-8")
+            current = original if args.apply else migrate_js_text(original)[0]
         except UnicodeDecodeError:
             continue
         findings.extend(scan_remaining(path, current))
 
     known_remaining = [
-        finding
-        for finding in findings
+        finding for finding in findings
         if any(literal in SEMANTIC_LITERALS for literal in finding["literals"])
     ]
+    literal_frequency: Counter[str] = Counter()
+    for finding in findings:
+        literal_frequency.update(finding["literals"])
 
     report = {
         "semantic_replacements": dict(sorted(replacement_counts.items())),
         "files_would_change" if not args.apply else "files_changed": changed_files,
         "remaining_ocr_sensitive_cjk_count": len(findings),
         "remaining_known_semantic_count": len(known_remaining),
+        "remaining_literal_frequency": dict(literal_frequency.most_common()),
         "remaining": findings,
     }
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -222,6 +246,7 @@ def main() -> int:
         "semantic_replacements": sum(replacement_counts.values()),
         "remaining_ocr_sensitive_cjk": len(findings),
         "remaining_known_semantic": len(known_remaining),
+        "top_remaining_literals": literal_frequency.most_common(30),
         "report": REPORT_PATH.relative_to(ROOT).as_posix(),
     }, ensure_ascii=False, indent=2))
 
