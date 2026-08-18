@@ -525,7 +525,7 @@
         let ocr = captureGameRegion().Find(ocrRo);
         log.info(`开始检测进入世界申请弹窗, 超时时长: ${timeOut}ms`);
         for (let i = 0; i < Math.floor(timeOut / 100); i++) {
-            if (ocr.isExist() && ocr.text === "世界") {
+            if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, "世界") : ocr.text === "世界")) {
                 log.info(`检测到弹窗！`);
                 keyPress("Y");
                 await sleep(300); // 弹窗打开的时间
@@ -561,7 +561,7 @@
         let ro3 = captureGameRegion();
         ocrTitle = ro3.Find(ocrTitleRo);
         ro3.dispose();
-        if (!(ocrTitle.isExist() && ocrTitle.text === "多人游戏申请")) {
+        if (!(ocrTitle.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrTitle.text, "多人游戏申请") : ocrTitle.text === "多人游戏申请"))) {
             log.error(`未处于 多人游戏申请 界面...`);
             return false;
         }
@@ -628,7 +628,7 @@
             const ro5 = captureGameRegion();
             let ocrMulti = ro5.Find(ocrMultiRo);
             ro5.dispose();
-            if (ocrMulti.isExist() && ocrMulti.text === "多人游戏") {
+            if (ocrMulti.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrMulti.text, "多人游戏") : ocrMulti.text === "多人游戏")) {
                 break;
             }
         }
@@ -643,13 +643,13 @@
             const ro6 = captureGameRegion();
             let ocrJoin = ro6.Find(ocrJoinRo);
             ro6.dispose();
-            if (ocrJoin.isExist() && ocrJoin.text === "申请加入") {
+            if (ocrJoin.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrJoin.text, "申请加入") : ocrJoin.text === "申请加入")) {
                 ocrJoin.Click();
                 await sleep(10000);
                 const ro7 = captureGameRegion();
                 ocrJoin = ro7.Find(ocrJoinRo);
                 ro7.dispose();
-                if (!(ocrJoin.isExist() && ocrJoin.text === "申请加入")) return true;
+                if (!(ocrJoin.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrJoin.text, "申请加入") : ocrJoin.text === "申请加入"))) return true;
             }
             await sleep(8000);
         }

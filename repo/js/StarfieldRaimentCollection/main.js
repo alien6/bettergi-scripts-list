@@ -58,7 +58,7 @@
         const exit = capture.Find(exit_pic).isExist();
         const mainUI = capture.Find(mainUI_pic).isExist();
         const search_page = search_page_ocr && search_page_ocr.text.includes("搜索奇域");
-        const stage_enter = stage_enter_ocr && stage_enter_ocr.text.includes("开始挑战");
+        const stage_enter = stage_enter_ocr && (genshin.textContainsLiteral ? genshin.textContainsLiteral(stage_enter_ocr.text, "开始挑战") : stage_enter_ocr.text.includes("开始挑战"));
         const result_page = result_page_ocr && result_page_ocr.text.includes((genshin.getText ? genshin.getText("return_to_lobby") : "返回大厅"));
         let current_ui = "未知界面";
 
@@ -96,7 +96,7 @@
         keyPress("Escape");
         await sleep(1000);
         let ocrResult_btn = await Ocr(1663, 997, 168, 47);
-        if (ocrResult_btn && ocrResult_btn.text.includes("提瓦特")) {
+        if (ocrResult_btn && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult_btn.text, "提瓦特") : ocrResult_btn.text.includes("提瓦特"))) {
             if (re_tev) {
                 ocrResult_btn.Click();
                 await sleep(500);
@@ -230,7 +230,7 @@
         const ocrResult = await Ocr(1110, 889, 637, 91, true);
         if (ocrResult) {
             for (let i = 0; i < ocrResult.length; i++) {
-                if (ocrResult[i].text.includes((genshin.getText ? genshin.getText("start_game") : "开始游戏")) || ocrResult[i].text.includes("单人挑战")) {
+                if (ocrResult[i].text.includes((genshin.getText ? genshin.getText("start_game") : "开始游戏")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult[i].text, "单人挑战") : ocrResult[i].text.includes("单人挑战"))) {
                     ocrResult[i].Click();
                     await sleep(5000);
                     return false;
@@ -347,7 +347,7 @@
                             capture.dispose();
                         }
                         let ocrResult = await Ocr(352, 997, 146, 46);
-                        if (ocrResult && ocrResult.text.includes("保存配置")) {
+                        if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, "保存配置") : ocrResult.text.includes("保存配置"))) {
                             ocrResult.Click();
                         }
                         await sleep(500);

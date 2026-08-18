@@ -350,7 +350,7 @@ async function checkChallengeResults() {
         let ro2 = captureGameRegion();
         let res2 = ro2.find(region2);
         ro2.dispose();
-        if (res2.text.includes("设置")) click(1600, 260); //点击退出-选项4
+        if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res2.text, "设置") : res2.text.includes("设置"))) click(1600, 260); //点击退出-选项4
         else click(1600, 200); //点击退出-选项3
         await sleep(1000);
         click(1180, 756); //点击确认

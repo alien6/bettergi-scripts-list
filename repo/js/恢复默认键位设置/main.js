@@ -22,7 +22,7 @@ const RestoreButtonRo = RecognitionObject.TemplateMatch(file.ReadImageMatSync("R
             captureRegion.dispose();
             for (let i = 0; i < resList.count; i++) {
                 let res = resList[i];
-                if (res.text.includes("Key") || res.text.includes("Bindings") || res.text.includes("按键") || res.text.includes("按鍵")) {
+                if (res.text.includes("Key") || res.text.includes("Bindings") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "按键") : res.text.includes("按键")) || res.text.includes("按鍵")) {
                     res.click();
                     await sleep(2000);
 

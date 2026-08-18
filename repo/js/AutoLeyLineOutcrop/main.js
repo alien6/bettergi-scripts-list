@@ -989,7 +989,7 @@ async function startRewardTextDetection(cts) {
                         if (ocrResults && ocrResults.count > 0) {
                             for (let i = 0; i < ocrResults.count; i++) {
                                 if (ocrResults[i].text.includes("接触") ||
-                                    ocrResults[i].text.includes("地脉") ||
+                                    (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, "地脉") : ocrResults[i].text.includes("地脉")) ||
                                     ocrResults[i].text.includes("之花")) {
                                     log.debug("检测到文字: " + ocrResults[i].text);
                                     resolve(true);

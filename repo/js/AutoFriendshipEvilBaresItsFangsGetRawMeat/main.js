@@ -215,7 +215,7 @@
 					captureRegion.dispose();
 					for (let o = 0; o < resList.count; o++) {
 						let res = resList[o];
-						if (res.text.includes("张牙") || res.text.includes("舞爪") || res.text.includes("恶党") || res.text.includes("打倒") || res.text.includes("所有") || res.text.includes("鳄鱼")) {
+						if (res.text.includes("张牙") || res.text.includes("舞爪") || res.text.includes("恶党") || res.text.includes("打倒") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "所有") : res.text.includes("所有")) || res.text.includes("鳄鱼")) {
 							ocrStatus = true;
 							break;
 						}

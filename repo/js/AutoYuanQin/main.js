@@ -2003,7 +2003,7 @@
             await sleep(1000);
             let ocrResult_btn = await Ocr(1663, 997, 168, 47);
             await genshin.returnMainUi();
-            if (ocrResult_btn && ocrResult_btn.text.includes("提瓦特")) { // 千星奇域
+            if (ocrResult_btn && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult_btn.text, "提瓦特") : ocrResult_btn.text.includes("提瓦特"))) { // 千星奇域
                 // 进入乐器选择界面
                 keyDown("Z");
                 await sleep(1500);
@@ -2021,7 +2021,7 @@
                     result.click();
                     await sleep(500);
                     let ocrText = await Ocr(1633, 985, 142, 67);
-                    if (ocrText && ocrText.text.includes("装备")) {
+                    if (ocrText && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrText.text, "装备") : ocrText.text.includes("装备"))) {
                         click(1692, 1016);
                         await sleep(300);
                     }
@@ -2061,7 +2061,7 @@
                         result.click();
                         await sleep(500);
                         let ocrText = await Ocr(1656, 993, 92, 47);
-                        if (ocrText && ocrText.text.includes("替换")) {
+                        if (ocrText && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrText.text, "替换") : ocrText.text.includes("替换"))) {
                             click(1686, 1016);
                             await sleep(300);
                         }

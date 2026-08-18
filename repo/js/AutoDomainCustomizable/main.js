@@ -569,7 +569,7 @@
                 log.warn(`[脚本] 任务可能已完成，但检测到: ${msg}`);
                 safeNotify("error", `异常中断：背包物品可能已满，或无法检测秘境结束状态，自动任务已强制停止。`);
                 break; 
-            } else if (msg.includes("复苏")) {
+            } else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(msg, "复苏") : msg.includes("复苏"))) {
                 log.warn(`[脚本] 角色死亡，5秒后重试...`);
                 await sleep(5000);
                 continue;

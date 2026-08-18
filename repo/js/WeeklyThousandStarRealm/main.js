@@ -212,7 +212,7 @@ async function deleteSource() {
   await findImgAndClick(check_box, 0, sy, 1480, saveRegion.height + 70, 2000);
   // 删除
   await sleep(duration);
-  await findTextAndClick("删除", 960, 980, 960, 100, 50, 100);
+  await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral("删除") : "删除"), 960, 980, 960, 100, 50, 100);
   await findTextAndClick((genshin.getText ? genshin.getText("confirm") : "确认"), 960, 600, 960, 400, 50, 100);
   await findTextAndClick((genshin.getText ? genshin.getText("confirm") : "确认"), 960, 600, 960, 400, 50, 100);
 
@@ -297,7 +297,7 @@ async function searchStarMap() {
 async function createRoom() {
   const result = await findTextAndClick((genshin.getText ? genshin.getText("room") : "房间"),960, 100, 960, 200, 2);
   if (!result) {
-    await findTextAndClick("大厅", 960, 600, 960, 400, 2);
+    await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral("大厅") : "大厅"), 960, 600, 960, 400, 2);
     await waitUntilTextAppear((genshin.getText ? genshin.getText("room") : "房间"), () => {},960, 100, 960, 200, 50, 1000);
     await findTextAndClick((genshin.getText ? genshin.getText("room") : "房间"),960, 100, 960, 200, 20, 50, 200);
   }
@@ -407,7 +407,7 @@ async function exitToTeyvat() {
   await sleep(duration);
   keyPress("VK_F2");
   await sleep(duration);
-  await findTextAndClick("返回", 960, 0, 960, 100);
+  await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral("返回") : "返回"), 960, 0, 960, 100);
   await sleep(duration);
   await findTextAndClick((genshin.getText ? genshin.getText("confirm") : "确认"), 960, 600, 960, 400);
   await waitUntilImgAppear(paimon);

@@ -891,7 +891,7 @@
                     moveMouseTo(1555, 860); // 移走鼠标，防止干扰识别
                     let ocrResult = await Ocr(1626, 990, 150, 52);
                     // 防止卸下奇特的羽毛
-                    if (ocrResult && ocrResult.text.includes("装备")) {
+                    if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, "装备") : ocrResult.text.includes("装备"))) {
                         click(1685, 1018);
                     }
                     // 返回主界面
@@ -1081,7 +1081,7 @@
                 await sleep(500);
                 for (let i = 0; i < 5; i++) { // [DEBUG] 如果卡顿超过1s还没弹出小菜单则会出错
                     let ocrResult = await Ocr(502, 179, 220, 50);
-                    if (ocrResult && ocrResult.text.includes("查看资料")) {
+                    if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, "查看资料") : ocrResult.text.includes("查看资料"))) {
                         ocrResult.Click(); // 点击查看资料
                         await sleep(500);
                         break;

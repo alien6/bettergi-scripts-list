@@ -945,7 +945,7 @@
         while (true) {
             await sleep(200);
             let ocrResult = await Ocr(119, 29, 130, 37);
-            if (ocrResult && ocrResult.text.includes("角色选择")) break;
+            if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, "角色选择") : ocrResult.text.includes("角色选择"))) break;
         }
         await sleep(200);
         let ocrResult = await ocr_find_area(148, 95, 773, 937, "产出");
@@ -1067,7 +1067,7 @@
         await sleep(500);
         let checkOcr = await Ocr(730, 993, 524, 40);
         if (checkOcr) {
-            if (!(checkOcr.text.includes("自动"))) { // 未解锁自动烹饪
+            if (!((genshin.textContainsLiteral ? genshin.textContainsLiteral(checkOcr.text, "自动") : checkOcr.text.includes("自动")))) { // 未解锁自动烹饪
                 // 手动烹饪默认次数
                 let cook_num = parseInt(food_msg[food_name]["price"], 10) * 5;
                 let cook_count = 0;

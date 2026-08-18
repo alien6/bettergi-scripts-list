@@ -358,7 +358,7 @@ let isFighting = false;
             let rewardTextArea = captureRegion.DeriveCrop(1210, 515, 200, 50);
             let rewardResult = rewardTextArea.find(RecognitionObject.ocrThis);
             // 检测到特点文字则结束！！！
-            if (rewardResult.text.includes("之花") || rewardResult.text.includes("激活")) {
+            if (rewardResult.text.includes("之花") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(rewardResult.text, "激活") : rewardResult.text.includes("激活"))) {
                 log.info("已到达领奖点，检测到文字: " + rewardResult.text);
                 captureRegion.dispose();
                 rewardTextArea.dispose();
@@ -878,7 +878,7 @@ let isFighting = false;
                     try {
                         let _resList = _cap.findMulti(RecognitionObject.ocr(1554, 970, 360, 105));
                         for (let _ri = 0; _ri < _resList.count; _ri++) {
-                            if (_resList[_ri].text === "单人挑战") {
+                            if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(_resList[_ri].text, "单人挑战") : _resList[_ri].text === "单人挑战")) {
                                 intoAction = { text: _resList[_ri].text, x: _resList[_ri].x, y: _resList[_ri].y, found: true };
                                 break;
                             }

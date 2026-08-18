@@ -175,7 +175,7 @@ const LocationButtonRo = RecognitionObject.TemplateMatch(file.ReadImageMatSync("
 			captureRegion.dispose();
 			for (let i = 0; i < resList.count; i++) {
 				let res = resList[i];
-				if (res.text.includes("Key") || res.text.includes("Bindings") || res.text.includes("按键") || res.text.includes("按鍵")) {
+				if (res.text.includes("Key") || res.text.includes("Bindings") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "按键") : res.text.includes("按键")) || res.text.includes("按鍵")) {
 					log.info("按键选项卡位置:({x},{y},{h},{w}), 文本{text}", res.x, res.y, res.width, res.Height, res.text);
 					res.click();
 					await sleep(2000);

@@ -66,7 +66,7 @@ const WAIT_FRIEND_CONFIRM_TIMEOUT = 25 * 1000;
         if (joinOrAddText === '') {
             throw new Error('你的好友不在线');
         }
-        else if (joinOrAddText === '申请加入') {
+        else if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(joinOrAddText, "申请加入") : joinOrAddText === "申请加入")) {
             log.info(`已经发起加入申请，等待好友同意`);
             joinOrAddRegin.click();
         }

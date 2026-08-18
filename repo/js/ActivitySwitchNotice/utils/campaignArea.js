@@ -148,7 +148,7 @@ export async function campaignAreaMain(openKey = true) {
     await sleep(ms * 2)
     // 点击秘境征讨坐标
     // await click(xyConfig.campaignArea.x, xyConfig.campaignArea.y)
-    const find = await findTextAndClick("征讨领域");
+    const find = await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral("征讨领域") : "征讨领域"));
     if (find === null) {
         log.warn("未找到征讨领域")
         return

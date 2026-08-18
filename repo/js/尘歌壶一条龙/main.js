@@ -224,7 +224,7 @@ async function findSereniteaPot() {
         screen.dispose();
         targetRegion.dispose();
 
-        if (!ocrResult.isEmpty() && ocrResult.Text.includes("尘歌壶")) {
+        if (!ocrResult.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.Text, "尘歌壶") : ocrResult.Text.includes("尘歌壶"))) {
             // 点击指定坐标
             click(1690, 1020);
             await sleep(1000);
@@ -236,7 +236,7 @@ async function findSereniteaPot() {
             let ocrResult2 = targetRegion2.find(ocrRo2);
             screen2.dispose();
             targetRegion2.dispose();
-            if (!ocrResult2.isEmpty() && ocrResult2.Text.includes("尘歌壶")) {
+            if (!ocrResult2.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult2.Text, "尘歌壶") : ocrResult2.Text.includes("尘歌壶"))) {
                 throw new Error("当前无法放置尘歌壶，请检查具体原因");
             }
             return;
@@ -405,7 +405,7 @@ async function exchangeItems() {
 
                 // 如果发现任何已售罄的物品，就认为所有可购买的物品都已检查过，结束搜索
                 log.debug(`识别到的文字: ${soldOutResult.Text}`)
-                if (!soldOutResult.isEmpty() && soldOutResult.Text.includes("已售罄")) {
+                if (!soldOutResult.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(soldOutResult.Text, "已售罄") : soldOutResult.Text.includes("已售罄"))) {
                     break outerLoop;
                 }
 

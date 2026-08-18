@@ -335,19 +335,19 @@ async function analyzeResinOptions(sortedButtons, isOriginalResinEmpty) {
         );
 
         let hasCondensedResin = allTexts.some(t =>
-            t.text.includes("浓缩树脂") || t.text.includes("浓缩")
+            (genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, "浓缩树脂") : t.text.includes("浓缩树脂")) || t.text.includes("浓缩")
         );
 
         let hasTransientResin = allTexts.some(t =>
-            t.text.includes("须臾树脂") || t.text.includes("须臾")
+            (genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, "须臾树脂") : t.text.includes("须臾树脂")) || t.text.includes("须臾")
         );
 
         let hasFragileResin = allTexts.some(t =>
-            t.text.includes("脆弱树脂") || t.text.includes("脆弱")
+            (genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, "脆弱树脂") : t.text.includes("脆弱树脂")) || t.text.includes("脆弱")
         );
 
         let hasPrimogems = allTexts.some(t =>
-            t.text.includes("原石") && t.text.includes("3次")
+            (genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, "原石") : t.text.includes("原石")) && t.text.includes("3次")
         );
 
         // 输出识别到的树脂类型（调试用）

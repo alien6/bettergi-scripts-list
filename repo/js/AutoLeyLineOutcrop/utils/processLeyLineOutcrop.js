@@ -40,7 +40,7 @@ async function (timeout, targetPath, retries = 0) {
             await sleep(300);
             keyPress("F");
             await sleep(500);
-        } else if (result.text.includes("打倒所有敌人")) {
+        } else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result.text, "打倒所有敌人") : result.text.includes("打倒所有敌人"))) {
             log.info("地脉花已经打开，直接战斗");
         } else {
             // 未识别到目标，需要重新导航
@@ -103,7 +103,7 @@ async function processResurrect() {
         let resurrectButton = null;
         for (let i = 0; i < resList.count; i++) {
             let res = resList[i];
-            if (res.text.includes("复苏")) {
+            if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "复苏") : res.text.includes("复苏"))) {
                 resurrectButton = res;
                 break;
             }

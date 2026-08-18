@@ -416,7 +416,7 @@ function normalizeAccountOcrText(text) {
 
         for (let i = 0; i < resList.count; i++) {
             let res = resList[i];
-            if (res.text.includes("点击领取") || res.text.includes("空月祝福")) {
+            if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "点击领取") : res.text.includes("点击领取")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "空月祝福") : res.text.includes("空月祝福"))) {
                 res.click();
                 await sleep(500);
                 res.click();
@@ -430,7 +430,7 @@ function normalizeAccountOcrText(text) {
         captureRegionGetReward.dispose();
         for (let i = 0; i < resGetReward.count; i++) {
             let res = resGetReward[i];
-            if (res.text.includes("点击") || res.text.includes("空白") || res.text.includes("获得")) {
+            if (res.text.includes("点击") || res.text.includes("空白") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "获得") : res.text.includes("获得"))) {
                 res.click();
                 await sleep(500);
             }
