@@ -13,7 +13,10 @@ REPORT = ROOT / "reports" / "ptbr-strict-ocr.json"
 
 STRING = re.compile(r"(?P<q>['\"])(?P<v>[^'\"\r\n]*[\u3400-\u4dbf\u4e00-\u9fff][^'\"\r\n]*)(?P=q)")
 DIRECT_CALL = re.compile(r"(?:findText(?:AndClick)?|OcrMatch|chooseTalkOption|ChooseTalkOption|waitAndFindText|waitForOcrMatch)\s*\([^;\r\n]*$", re.I)
-OCR_EXPR = r"(?:[A-Za-z_$][\w$?.\[\]]*\.text|ocr[\w$?.\[\]]*|result\d*[\w$?.\[\]]*|results[\w$?.\[\]]*|res\d*[.$?\[\]A-Za-z0-9_]*|resList[\w$?.\[\]]*|findResult[\w$?.\[\]]*|recognitionResult[\w$?.\[\]]*|recognizedText[\w$?.\[\]]*|detectedText[\w$?.\[\]]*)"
+# Keep recognition-result identifiers narrow. The older ``res\d*...`` branch also
+# matched unrelated names such as resinTypeMap/resourceName, causing configuration
+# and internal-label comparisons to be reported as OCR dependencies.
+OCR_EXPR = r"(?:[A-Za-z_$][\w$?.\[\]]*\.text|ocr[\w$?.\[\]]*|result\d*[\w$?.\[\]]*|results[\w$?.\[\]]*|res(?:\d+)?(?:[.$?\[\]][A-Za-z0-9_$?\[\].]*)?|resList[\w$?.\[\]]*|findResult[\w$?.\[\]]*|recognitionResult[\w$?.\[\]]*|recognizedText[\w$?.\[\]]*|detectedText[\w$?.\[\]]*)"
 OCR_METHOD = re.compile(OCR_EXPR + r"\s*\.\s*(?:includes|contains|indexOf|startsWith|endsWith)\s*\([^\r\n]*$", re.I)
 OCR_COMPARE = re.compile(OCR_EXPR + r"\s*(?:===|==|!==|!=)\s*$", re.I)
 GENERATED_FALLBACK = re.compile(r"\(genshin\.getText\s*\?\s*genshin\.getText\([^\r\n)]*\)\s*:\s*$", re.I)
