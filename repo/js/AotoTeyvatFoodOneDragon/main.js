@@ -2036,7 +2036,7 @@
 
                         // 收集所有包含"分钟"或"秒"的项目
                         for (let j = 0; j < ocrResult.count; ++j) {
-                            if (ocrResult[j].text.endsWith("分钟") || ocrResult[j].text.endsWith("秒")) {
+                            if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, "分钟") : ocrResult[j].text.endsWith("分钟")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, "秒") : ocrResult[j].text.endsWith("秒"))) {
                                 foodItems.push({
                                     index: j,
                                     x: ocrResult[j].x,

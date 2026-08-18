@@ -1,16 +1,13 @@
 {
-  "strict_functional_cjk_count": 102,
+  "strict_functional_cjk_count": 94,
   "literal_frequency": {
     "委託": 3,
     "委": 3,
-    "分钟": 2,
-    "秒": 2,
     "使用20个原粹树脂": 2,
     "之花": 2,
     "20个": 2,
     "40个": 2,
     "挂起来吧": 2,
-    "再见": 2,
     "晶蝶": 2,
     "诱捕": 2,
     "装置": 2,
@@ -18,7 +15,6 @@
     "对局失败": 2,
     "申请造访": 2,
     "申請造訪": 2,
-    "切换账号": 2,
     "退出并": 2,
     "加速": 1,
     "快速加工": 1,
@@ -85,11 +81,11 @@
   },
   "file_frequency": {
     "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js": 10,
-    "repo/js/AutoPickLitter/main.js": 7,
     "repo/js/CrystalflyTrap/main.js": 7,
-    "repo/js/SwitchAccountMultipleMode/main.js": 7,
     "repo/js/使用历练点完成每日委托/main.js": 6,
+    "repo/js/AutoPickLitter/main.js": 5,
     "repo/js/DSTCG/main.js": 5,
+    "repo/js/SwitchAccountMultipleMode/main.js": 5,
     "repo/js/WeeklyThousandStarRealm/main.js": 5,
     "repo/js/AutoPathingLoader-MultiUser/main.js": 4,
     "repo/js/DoubleFriendshipEncounterPoints/main.js": 4,
@@ -100,14 +96,12 @@
     "repo/js/StarfieldRaimentCollection/main.js": 3,
     "repo/js/自动购买商品/main.js": 3,
     "repo/js/AEscoffier_chef/main.js": 2,
-    "repo/js/AotoTeyvatFoodOneDragon/main.js": 2,
     "repo/js/AutoFontaineLeyLine/main.js": 2,
     "repo/js/AutoLeyLineOutcrop/main.js": 2,
     "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js": 2,
     "repo/js/AutoStygianOnslaught/main.js": 2,
     "repo/js/TCGQuickProficiency/main.js": 2,
     "repo/js/铁匠铺/main.js": 2,
-    "repo/js/食材加工/main.js": 2,
     "repo/js/AutoFriendshipFight/main.js": 1,
     "repo/js/AutoPermission/main.js": 1,
     "repo/js/AutoYuanQin/main.js": 1,
@@ -147,18 +141,6 @@
       "line": 400,
       "literal": "珍贵",
       "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
-    },
-    {
-      "path": "repo/js/AotoTeyvatFoodOneDragon/main.js",
-      "line": 2039,
-      "literal": "分钟",
-      "source": "if (ocrResult[j].text.endsWith(\"分钟\") || ocrResult[j].text.endsWith(\"秒\")) {"
-    },
-    {
-      "path": "repo/js/AotoTeyvatFoodOneDragon/main.js",
-      "line": 2039,
-      "literal": "秒",
-      "source": "if (ocrResult[j].text.endsWith(\"分钟\") || ocrResult[j].text.endsWith(\"秒\")) {"
     },
     {
       "path": "repo/js/AutoFontaineLeyLine/main.js",
@@ -309,18 +291,6 @@
       "line": 1051,
       "literal": "挂起来吧",
       "source": "await genshin.chooseTalkOption(\"挂起来吧\");"
-    },
-    {
-      "path": "repo/js/AutoPickLitter/main.js",
-      "line": 1077,
-      "literal": "再见",
-      "source": "await genshin.chooseTalkOption(\"再见\");"
-    },
-    {
-      "path": "repo/js/AutoPickLitter/main.js",
-      "line": 1139,
-      "literal": "再见",
-      "source": "await genshin.chooseTalkOption(\"再见\");"
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
@@ -492,21 +462,9 @@
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 653,
-      "literal": "切换账号",
-      "source": "await waitForOcrMatch(\"切换账号\");"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
       "line": 656,
       "literal": "退出并",
       "source": "if (await waitForOcrMatch(\"退出并\", new OpenCvSharp.OpenCvSharp.Rect(0, 0, 1920, 1080), 0.8, 1000)) {"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 891,
-      "literal": "切换账号",
-      "source": "await waitForOcrMatch(\"切换账号\");"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -717,18 +675,6 @@
       "line": 869,
       "literal": "锻造队列",
       "source": "if (ocrResultsAfter.text.includes(\"锻造队列\")) {"
-    },
-    {
-      "path": "repo/js/食材加工/main.js",
-      "line": 438,
-      "literal": "分钟",
-      "source": "if (ocrResult[i].text.endsWith(\"分钟\") || ocrResult[i].text.endsWith(\"秒\")) {"
-    },
-    {
-      "path": "repo/js/食材加工/main.js",
-      "line": 438,
-      "literal": "秒",
-      "source": "if (ocrResult[i].text.endsWith(\"分钟\") || ocrResult[i].text.endsWith(\"秒\")) {"
     }
   ]
 }

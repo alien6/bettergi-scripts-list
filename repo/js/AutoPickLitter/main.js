@@ -1074,7 +1074,7 @@ async function numberTemplateMatch(
                     };  
                 } else {
                     await sleep(700);
-                    await genshin.chooseTalkOption("再见");
+                    await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral("再见") : "再见"));
                     await sleep(700);
                     leftButtonClick();
                     await sleep(1500);
@@ -1136,7 +1136,7 @@ async function numberTemplateMatch(
                     };
                 } else {
                     log.info("你开过了？look my eyes,回答我！！！");
-                    await genshin.chooseTalkOption("再见");
+                    await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral("再见") : "再见"));
                     await sleep(700);
                     leftButtonClick();
                     await sleep(1500);

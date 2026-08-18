@@ -650,7 +650,7 @@ function normalizeAccountOcrText(text) {
         }
         await waitForOcrMatch((genshin.getText ? genshin.getText("start_game") : "开始游戏"));
         await matchImgAndClick(login_out_account, "登录页的右下角退出按钮");
-        await waitForOcrMatch("切换账号");
+        await waitForOcrMatch((genshin.getTextLiteral ? genshin.getTextLiteral("切换账号") : "切换账号"));
         await matchImgAndClick(confirm_switch_account, "确认切换账号");
         // 检测是否弹出保存登陆记录弹框
         if (await waitForOcrMatch("退出并", new OpenCvSharp.OpenCvSharp.Rect(0, 0, 1920, 1080), 0.8, 1000)) {
@@ -888,7 +888,7 @@ function normalizeAccountOcrText(text) {
             await matchImgAndClick(out_to_login, "退出至登陆页面");
             await waitForOcrMatch((genshin.getText ? genshin.getText("start_game") : "开始游戏"));
             await matchImgAndClick(login_out_account, "登录页的右下角退出按钮");
-            await waitForOcrMatch("切换账号");
+            await waitForOcrMatch((genshin.getTextLiteral ? genshin.getTextLiteral("切换账号") : "切换账号"));
             await matchImgAndClick(confirm_switch_account, "确认切换账号");
             // 检测是否弹出保存登陆记录弹框
             if (await waitForOcrMatch("退出并", new OpenCvSharp.OpenCvSharp.Rect(0, 0, 1920, 1080), 0.8, 1000)) {

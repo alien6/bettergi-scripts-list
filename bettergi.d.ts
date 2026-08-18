@@ -217,6 +217,10 @@ declare const genshin: {
   textContainsLiteral(actualText: string, canonicalZhHans: string): boolean;
   /** Check whether OCR text equals a localized TextMap literal. */
   textEqualsLiteral(actualText: string, canonicalZhHans: string): boolean;
+  /** Check whether OCR text starts with a localized game literal. */
+  textStartsWithLiteral(actualText: string, canonicalZhHans: string): boolean;
+  /** Check whether OCR text ends with a localized game literal. */
+  textEndsWithLiteral(actualText: string, canonicalZhHans: string): boolean;
   /** Find the exact OCR result matching a semantic key inside an existing image region. */
   findTextKey(key: string, region: ImageRegion): Region;
   /** Find the exact OCR result matching a semantic key inside a capture rectangle. */
@@ -420,6 +424,8 @@ declare const genshin: {
   GetTextLiterals: typeof genshin.getTextLiterals;
   TextContainsLiteral: typeof genshin.textContainsLiteral;
   TextEqualsLiteral: typeof genshin.textEqualsLiteral;
+  TextStartsWithLiteral: typeof genshin.textStartsWithLiteral;
+  TextEndsWithLiteral: typeof genshin.textEndsWithLiteral;
   FindTextKey: typeof genshin.findTextKey;
   HasTextKey: typeof genshin.hasTextKey;
   FindTextKeyText: typeof genshin.findTextKeyText;
