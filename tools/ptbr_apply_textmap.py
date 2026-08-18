@@ -31,6 +31,10 @@ def patch_dts(text:str)->str:
   getTextLiteral(canonicalZhHans: string): string;
   /** Resolve every accepted localized variant for a canonical game literal. */
   getTextLiterals(canonicalZhHans: string): string[];
+  /** Resolve a historical Chinese string embedded in an older script. */
+  getLegacyText(canonicalText: string): string;
+  /** Resolve every accepted localized variant for historical script text. */
+  getLegacyTexts(canonicalText: string): string[];
   /** Check whether OCR text contains a localized game literal. */
   textContainsLiteral(actualText: string, canonicalZhHans: string): boolean;
   /** Check whether OCR text equals a localized game literal. */
@@ -42,22 +46,34 @@ def patch_dts(text:str)->str:
 '''
         if marker not in text: raise RuntimeError('getTexts marker not found in bettergi.d.ts')
         text=text.replace(marker,marker+block,1)
-    elif 'textEndsWithLiteral(actualText: string' not in text:
-        marker='  /** Check whether OCR text equals a localized TextMap literal. */\n  textEqualsLiteral(actualText: string, canonicalZhHans: string): boolean;\n'
-        if marker not in text:
-            marker='  textEqualsLiteral(actualText: string, canonicalZhHans: string): boolean;\n'
-        block='''  /** Check whether OCR text starts with a localized game literal. */
+    else:
+        if 'getLegacyText(canonicalText: string)' not in text:
+            marker='  getTextLiterals(canonicalZhHans: string): string[];\n'
+            block='''  /** Resolve a historical Chinese string embedded in an older script. */
+  getLegacyText(canonicalText: string): string;
+  /** Resolve every accepted localized variant for historical script text. */
+  getLegacyTexts(canonicalText: string): string[];
+'''
+            if marker not in text: raise RuntimeError('getTextLiterals marker not found')
+            text=text.replace(marker,marker+block,1)
+        if 'textEndsWithLiteral(actualText: string' not in text:
+            marker='  /** Check whether OCR text equals a localized TextMap literal. */\n  textEqualsLiteral(actualText: string, canonicalZhHans: string): boolean;\n'
+            if marker not in text:
+                marker='  textEqualsLiteral(actualText: string, canonicalZhHans: string): boolean;\n'
+            block='''  /** Check whether OCR text starts with a localized game literal. */
   textStartsWithLiteral(actualText: string, canonicalZhHans: string): boolean;
   /** Check whether OCR text ends with a localized game literal. */
   textEndsWithLiteral(actualText: string, canonicalZhHans: string): boolean;
 '''
-        if marker not in text: raise RuntimeError('textEqualsLiteral marker not found')
-        text=text.replace(marker,marker+block,1)
+            if marker not in text: raise RuntimeError('textEqualsLiteral marker not found')
+            text=text.replace(marker,marker+block,1)
 
     if 'GetTextLiteral: typeof genshin.getTextLiteral;' not in text:
         marker='  GetTexts: typeof genshin.getTexts;\n'
         block='''  GetTextLiteral: typeof genshin.getTextLiteral;
   GetTextLiterals: typeof genshin.getTextLiterals;
+  GetLegacyText: typeof genshin.getLegacyText;
+  GetLegacyTexts: typeof genshin.getLegacyTexts;
   TextContainsLiteral: typeof genshin.textContainsLiteral;
   TextEqualsLiteral: typeof genshin.textEqualsLiteral;
   TextStartsWithLiteral: typeof genshin.textStartsWithLiteral;
@@ -65,13 +81,21 @@ def patch_dts(text:str)->str:
 '''
         if marker not in text: raise RuntimeError('GetTexts alias marker not found')
         text=text.replace(marker,marker+block,1)
-    elif 'TextEndsWithLiteral: typeof genshin.textEndsWithLiteral;' not in text:
-        marker='  TextEqualsLiteral: typeof genshin.textEqualsLiteral;\n'
-        block='''  TextStartsWithLiteral: typeof genshin.textStartsWithLiteral;
+    else:
+        if 'GetLegacyText: typeof genshin.getLegacyText;' not in text:
+            marker='  GetTextLiterals: typeof genshin.getTextLiterals;\n'
+            block='''  GetLegacyText: typeof genshin.getLegacyText;
+  GetLegacyTexts: typeof genshin.getLegacyTexts;
+'''
+            if marker not in text: raise RuntimeError('GetTextLiterals alias marker not found')
+            text=text.replace(marker,marker+block,1)
+        if 'TextEndsWithLiteral: typeof genshin.textEndsWithLiteral;' not in text:
+            marker='  TextEqualsLiteral: typeof genshin.textEqualsLiteral;\n'
+            block='''  TextStartsWithLiteral: typeof genshin.textStartsWithLiteral;
   TextEndsWithLiteral: typeof genshin.textEndsWithLiteral;
 '''
-        if marker not in text: raise RuntimeError('TextEqualsLiteral alias marker not found')
-        text=text.replace(marker,marker+block,1)
+            if marker not in text: raise RuntimeError('TextEqualsLiteral alias marker not found')
+            text=text.replace(marker,marker+block,1)
     return text
 
 
