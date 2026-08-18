@@ -8,7 +8,7 @@ import {
 //#region src/constants/regions.ts
 /** 通用：查找确认按钮 */
 const findConfirmBtn = () => {
-  const txt = findTextWithinBounds((genshin.getText ? genshin.getText("confirm") : "确认"), 480, 720, 960, 145);
+  const txt = findTextWithinBounds((genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("confirm") : "确认")), 480, 720, 960, 145);
   txt?.drawSelf("group_text");
   return txt;
 };
@@ -226,7 +226,7 @@ const findDeleteStageSaveBtn = () => {
 };
 /** 关卡：查找结算跳过按钮 */
 const findSkipBtn = () => {
-  const txt = findTextWithinBounds((genshin.getText ? genshin.getText("skip") : "跳过"), 1720, 0, 200, 100, { contains: true });
+  const txt = findTextWithinBounds((genshin.getText ? genshin.getText("skip") : (genshin.getText ? genshin.getText("skip") : "跳过")), 1720, 0, 200, 100, { contains: true });
   txt?.drawSelf("group_text");
   return txt;
 };

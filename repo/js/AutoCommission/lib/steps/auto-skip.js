@@ -282,8 +282,8 @@ StepProcessorLoader.register("对话", async function (stepData, context) {
 2. 带优先选项的用法：
 {
   "type": "AutoSkip",
-  "priorityOptions": ["帮助", "同意", (genshin.getText ? genshin.getText("confirm") : "确认")],
-  "note": "优先点击包含'帮助'、'同意'、(genshin.getText ? genshin.getText("confirm") : "确认")的选项"
+  "priorityOptions": ["帮助", "同意", (genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("confirm") : "确认"))],
+  "note": "优先点击包含'帮助'、'同意'、(genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("confirm") : "确认"))的选项"
 }
 
 3. 带NPC白名单的用法：

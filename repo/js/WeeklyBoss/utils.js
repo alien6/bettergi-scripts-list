@@ -345,7 +345,7 @@ async function earlyChallage() {
 	moveMouseTo(1600,335);
 	await sleep(800);
 	await waitAndClickImage(settings.monsterName,true,50000,300,0,true,8);
-	await clickTextInRegion((genshin.getText ? genshin.getText("teleport") : "传送"),960,540,960,540);//左上角
+	await clickTextInRegion((genshin.getText ? genshin.getText("teleport") : (genshin.getText ? genshin.getText("teleport") : "传送")),960,540,960,540);//左上角
 	await sleep(5000);
 }
 

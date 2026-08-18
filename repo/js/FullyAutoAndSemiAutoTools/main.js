@@ -1100,7 +1100,7 @@ async function init() {
     auto.semi = settings.mode === "半自动"
     if (auto.semi) {
         auto.run = settings.auto_semi_key_mode === "继续运行"
-        auto.skip = settings.auto_semi_key_mode === (genshin.getText ? genshin.getText("skip") : "跳过")
+        auto.skip = settings.auto_semi_key_mode === (genshin.getText ? genshin.getText("skip") : (genshin.getText ? genshin.getText("skip") : "跳过"))
         auto.key = settings.auto_key
         if (!auto.key) {
             throw new Error(settings.mode + "模式下必须开启快捷键设置")

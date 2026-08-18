@@ -192,7 +192,7 @@ function shouldRunByWeekConfig(weekSelection) {
     /**
      * 1. 启动 AutoFight 任务
      * 2. 循环截图 OCR
-     * 3. 识别关键字 ["挑战成功", "达成", (genshin.getText ? genshin.getText("challenge_completed") : "挑战达成")]
+     * 3. 识别关键字 ["挑战成功", "达成", (genshin.getText ? genshin.getText("challenge_completed") : (genshin.getText ? genshin.getText("challenge_completed") : "挑战达成"))]
      * 4. 识别成功后取消任务
      */
     async function autoFightLike123js(ocrRo, timeout) {
@@ -214,7 +214,7 @@ function shouldRunByWeekConfig(weekSelection) {
                 let text = result.text;
                 
                 // 判断关键字
-                const keywords = ["挑战成功", "达成", (genshin.getText ? genshin.getText("challenge_completed") : "挑战达成")];
+                const keywords = ["挑战成功", "达成", (genshin.getText ? genshin.getText("challenge_completed") : (genshin.getText ? genshin.getText("challenge_completed") : "挑战达成"))];
                 let found = false;
                 
                 for (const keyword of keywords) {

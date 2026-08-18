@@ -10,7 +10,7 @@ async function (timeout) {
             try {
                 let startTime = Date.now();
                 let noTextCount = 0;
-                const successKeywords = [(genshin.getText ? genshin.getText("challenge_completed") : "挑战达成"), "战斗胜利", "挑战成功"];
+                const successKeywords = [(genshin.getText ? genshin.getText("challenge_completed") : (genshin.getText ? genshin.getText("challenge_completed") : "挑战达成")), "战斗胜利", "挑战成功"];
                 const failureKeywords = ["挑战失败"];
 
                 // 循环检测直到超时

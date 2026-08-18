@@ -169,7 +169,7 @@ async function recognizeTextAndClick(targetText, ocrRegion, timeout = 5000) {
             }
 
             // 只有在兼容模式下才点击确定
-            if (await waitForRecognition(ComfirmRo, (genshin.getText ? genshin.getText("confirm") : "确定"))) {
+            if (await waitForRecognition(ComfirmRo, (genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("ok") : "确定")))) {
                 click(994, 741); // 点击确定
                 await sleep(500);
             } else {

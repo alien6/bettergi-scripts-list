@@ -2,11 +2,12 @@
   "semantic_replacements": {
     "cancel": 1,
     "challenge_completed": 5,
-    "confirm": 23,
+    "confirm": 20,
     "exit_challenge": 11,
     "exit_domain": 1,
     "item_expired": 13,
     "ley_line_disorder": 2,
+    "ok": 3,
     "skip": 2,
     "teleport": 6
   },
@@ -43,8 +44,7 @@
     "repo/js/自动领取成就奖励/main.js",
     "repo/js/药品消耗统计/main.js",
     "repo/js/营养袋吃药统计/main.js",
-    "repo/js/角色养成一条龙/main.js",
-    "bettergi.d.ts"
+    "repo/js/角色养成一条龙/main.js"
   ],
   "remaining_ocr_sensitive_cjk_count": 445,
   "remaining_known_semantic_count": 19,
@@ -177,7 +177,7 @@
       "literals": [
         "确认"
       ],
-      "source": "if (ocrResult && ocrResult.text.includes((genshin.getText ? genshin.getText(\"confirm\") : \"确认\"))) {"
+      "source": "if (ocrResult && ocrResult.text.includes((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")))) {"
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
@@ -284,7 +284,7 @@
       "literals": [
         "物品过期"
       ],
-      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"))) {"
+      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
     },
     {
       "path": "repo/js/AcceleratedEditionSwitchParty/main.js",
@@ -333,7 +333,7 @@
       "literals": [
         "物品过期"
       ],
-      "source": "const expiredText = await findText((genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"), 870, 280, 170, 40, 2);"
+      "source": "const expiredText = await findText((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")), 870, 280, 170, 40, 2);"
     },
     {
       "path": "repo/js/AotoTeyvatFoodOneDragon/main.js",
@@ -408,7 +408,7 @@
       "literals": [
         "物品过期"
       ],
-      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"))) {"
+      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
     },
     {
       "path": "repo/js/ArtifactScore/main.js",
@@ -1225,7 +1225,7 @@
       "literals": [
         "取消"
       ],
-      "source": "if (error.message && error.message.includes((genshin.getText ? genshin.getText(\"cancel\") : \"取消\"))) {"
+      "source": "if (error.message && error.message.includes((genshin.getText ? genshin.getText(\"cancel\") : (genshin.getText ? genshin.getText(\"cancel\") : \"取消\")))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/main.js",
@@ -1684,7 +1684,7 @@
       "literals": [
         "物品过期"
       ],
-      "source": "if (ocrExpire.text == (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")) {"
+      "source": "if (ocrExpire.text == (genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"))) {"
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
@@ -2110,7 +2110,7 @@
         "物品过期",
         "检测到物品过期"
       ],
-      "source": "if (res && res.text && res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"))) { log.info('检测到物品过期'); click(1000, 750); await sleep(1000); }"
+      "source": "if (res && res.text && res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) { log.info('检测到物品过期'); click(1000, 750); await sleep(1000); }"
     },
     {
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
@@ -2313,7 +2313,7 @@
       "literals": [
         "确认"
       ],
-      "source": "const txt = findTextWithinBounds((genshin.getText ? genshin.getText(\"confirm\") : \"确认\"), 480, 720, 960, 145);"
+      "source": "const txt = findTextWithinBounds((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")), 480, 720, 960, 145);"
     },
     {
       "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
@@ -2425,7 +2425,7 @@
       "literals": [
         "跳过"
       ],
-      "source": "const txt = findTextWithinBounds((genshin.getText ? genshin.getText(\"skip\") : \"跳过\"), 1720, 0, 200, 100, { contains: true });"
+      "source": "const txt = findTextWithinBounds((genshin.getText ? genshin.getText(\"skip\") : (genshin.getText ? genshin.getText(\"skip\") : \"跳过\")), 1720, 0, 200, 100, { contains: true });"
     },
     {
       "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
@@ -2499,7 +2499,7 @@
       "literals": [
         "物品过期"
       ],
-      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"))) {"
+      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
     },
     {
       "path": "repo/js/RoleExperienceCalculation/main.js",
@@ -2881,7 +2881,7 @@
       "literals": [
         "确认"
       ],
-      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : \"确认\"), 960, 600, 960, 400, 50, 100);"
+      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")), 960, 600, 960, 400, 50, 100);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -2889,7 +2889,7 @@
       "literals": [
         "确认"
       ],
-      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : \"确认\"), 960, 600, 960, 400, 50, 100);"
+      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")), 960, 600, 960, 400, 50, 100);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -2897,7 +2897,7 @@
       "literals": [
         "确认"
       ],
-      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : \"确认\"), 960, 600, 960, 400, 50);"
+      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")), 960, 600, 960, 400, 50);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -3049,7 +3049,7 @@
       "literals": [
         "确认"
       ],
-      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : \"确认\"), 960, 600, 960, 400);"
+      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")), 960, 600, 960, 400);"
     },
     {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",
@@ -3065,7 +3065,7 @@
       "literals": [
         "确认"
       ],
-      "source": "if (res.text === (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")) {"
+      "source": "if (res.text === (genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\"))) {"
     },
     {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",
@@ -3289,7 +3289,7 @@
       "literals": [
         "确认"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"confirm\") : \"确认\"))) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")))) {"
     },
     {
       "path": "repo/js/批量讨伐角色养成材料BOSS/src/utils.js",
@@ -3313,7 +3313,7 @@
       "literals": [
         "物品过期"
       ],
-      "source": "if (typeof result?.text === \"string\" && result.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"))) {"
+      "source": "if (typeof result?.text === \"string\" && result.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
     },
     {
       "path": "repo/js/提瓦特记事本/main.js",
@@ -3321,7 +3321,7 @@
       "literals": [
         "物品过期"
       ],
-      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"))) {"
+      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
     },
     {
       "path": "repo/js/猜角色辅助/main.js",
@@ -3559,7 +3559,7 @@
       "literals": [
         "物品过期"
       ],
-      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"))) {"
+      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
     },
     {
       "path": "repo/js/营养袋吃药统计/main.js",

@@ -701,7 +701,7 @@ await sleep(400);
     
 await waitAndClickImage(imageName);
     try {
- await repeatOperationUntilTextFound({x: 1640,y: 960,width: 200,height: 100,targetText: (genshin.getText ? genshin.getText("teleport") : "传送"),stepDuration: 0, maxSteps:25, waitTime:100,ifClick: true});//用来等待点击文字,10s等待
+ await repeatOperationUntilTextFound({x: 1640,y: 960,width: 200,height: 100,targetText: (genshin.getText ? genshin.getText("teleport") : (genshin.getText ? genshin.getText("teleport") : "传送")),stepDuration: 0, maxSteps:25, waitTime:100,ifClick: true});//用来等待点击文字,10s等待
     } catch (error) {
      log.info("秘境未开启");
      await genshin.returnMainUi();

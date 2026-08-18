@@ -340,7 +340,7 @@ export async function openBag() {
     await toMainUi();
     await keyPress(openBagKey);
     await sleep(500);
-    const expiredText = await findText((genshin.getText ? genshin.getText("item_expired") : "物品过期"), 870, 280, 170, 40, 2);
+    const expiredText = await findText((genshin.getText ? genshin.getText("item_expired") : (genshin.getText ? genshin.getText("item_expired") : "物品过期")), 870, 280, 170, 40, 2);
     if (expiredText) {
         log.info("检测到过期物品，关闭弹窗");
         await sleep(500);

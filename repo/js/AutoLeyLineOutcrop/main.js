@@ -871,7 +871,7 @@ async function autoFight(timeout) {
         await fightTask;
     } catch (error) {
         // 忽略取消任务产生的异常
-        if (error.message && error.message.includes((genshin.getText ? genshin.getText("cancel") : "取消"))) {
+        if (error.message && error.message.includes((genshin.getText ? genshin.getText("cancel") : (genshin.getText ? genshin.getText("cancel") : "取消")))) {
             log.debug("战斗任务已正常取消");
         } else {
             log.warn(`战斗任务结束时出现异常: ${error.message}`);

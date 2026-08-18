@@ -470,7 +470,7 @@ const commonMap = new Map([
     // ['sort_progress_bar_bottom_arrow', {name: '排序进度条底部箭头', type: '.jpg'}],
     ['click_close', {name: '点击关闭', type: '.jpg'}],
     ['click_open', {name: '点击开启', type: '.jpg'}],
-    ['confirm', {name: (genshin.getText ? genshin.getText("confirm") : "确认"), type: '.jpg'}],
+    ['confirm', {name: (genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("confirm") : "确认")), type: '.jpg'}],
     ['sift', {name: '筛选', type: '.jpg'}],
     // ['sift_holy_relic', {name: '筛选圣遗物套装', type: '.jpg'}],
     ['return_key', {name: '返回键', type: '.jpg'}],

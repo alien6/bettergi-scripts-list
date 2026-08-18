@@ -491,7 +491,7 @@
 
           await textOCREnhanced("单人挑战", 8, 1, 0, 1615, 990, 220, 50);//等待“单人挑战”出现
           await textOCREnhanced("开始挑战", 8, 1, 0, 1615, 990, 220, 50);//等待“开始挑战”出现
-          await textOCREnhanced((genshin.getText ? genshin.getText("ley_line_disorder") : "地脉异常"), 15, 1, 0, 840, 405, 180, 55);//等待“地脉异常”出现
+          await textOCREnhanced((genshin.getText ? genshin.getText("ley_line_disorder") : (genshin.getText ? genshin.getText("ley_line_disorder") : "地脉异常")), 15, 1, 0, 840, 405, 180, 55);//等待“地脉异常”出现
           await sleep(1000);
 
           return true;
@@ -782,7 +782,7 @@
 
      // 背包过期物品识别，需要在背包界面，并且是1920x1080分辨率下使用
      async function handleExpiredItems() {
-          const ifGuoqi = await textOCREnhanced((genshin.getText ? genshin.getText("item_expired") : "物品过期"), 1.5, 0, 3, 870, 280, 170, 40);
+          const ifGuoqi = await textOCREnhanced((genshin.getText ? genshin.getText("item_expired") : (genshin.getText ? genshin.getText("item_expired") : "物品过期")), 1.5, 0, 3, 870, 280, 170, 40);
           if (ifGuoqi.found) {
                log.info("检测到过期物品，正在处理...");
                await sleep(500);
