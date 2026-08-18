@@ -213,6 +213,10 @@ declare const genshin: {
   getTextLiteral(canonicalZhHans: string): string;
   /** Resolve every accepted TextMap-backed variant. */
   getTextLiterals(canonicalZhHans: string): string[];
+  /** Resolve a historical Chinese string embedded in an older script. */
+  getLegacyText(canonicalText: string): string;
+  /** Resolve every accepted localized variant for historical script text. */
+  getLegacyTexts(canonicalText: string): string[];
   /** Check whether OCR text contains a localized TextMap literal. */
   textContainsLiteral(actualText: string, canonicalZhHans: string): boolean;
   /** Check whether OCR text equals a localized TextMap literal. */
@@ -422,6 +426,8 @@ declare const genshin: {
   GetTexts: typeof genshin.getTexts;
   GetTextLiteral: typeof genshin.getTextLiteral;
   GetTextLiterals: typeof genshin.getTextLiterals;
+  GetLegacyText: typeof genshin.getLegacyText;
+  GetLegacyTexts: typeof genshin.getLegacyTexts;
   TextContainsLiteral: typeof genshin.textContainsLiteral;
   TextEqualsLiteral: typeof genshin.textEqualsLiteral;
   TextStartsWithLiteral: typeof genshin.textStartsWithLiteral;

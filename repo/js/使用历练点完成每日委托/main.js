@@ -289,7 +289,7 @@ const adventurePath = settings.adventurePath || '蒙德'; // 若未定义，用�
                 ro6.dispose();
                 for (let i = 0; i < resList2.count; i++) {
                     let res = resList2[i];
-                    if (res.text.includes("申请造访") || res.text.includes("visit Serenitea Pot") || res.text.includes("申請造訪")) {
+                    if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "申请造访") : res.text.includes("申请造访")) || res.text.includes("visit Serenitea Pot") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "申請造訪") : res.text.includes("申請造訪"))) {
                         if (settings.enableDebug) {
                             log.info("申请造访尘歌壶位置:({x},{y},{w},{h}), 识别内容：{text}", res.x, res.y, res.Width, res.Height, res.text);
                         }
@@ -434,7 +434,7 @@ const adventurePath = settings.adventurePath || '蒙德'; // 若未定义，用�
             ro22.dispose();
             for (let i = 0; i < resList.count; i++) {
                 let res = resList[i];
-                if (res.text.includes((genshin.getText ? genshin.getText("commission") : "委托")) || res.text.includes("委託") || res.text.includes("Commissions") || res.text.includes("委")) {
+                if (res.text.includes((genshin.getText ? genshin.getText("commission") : "委托")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "委託") : res.text.includes("委託")) || res.text.includes("Commissions") || res.text.includes("委")) {
                     if (settings.enableDebug) {
                         log.info("识别到委托选项卡位置:({x},{y},{w},{h}), 识别内容：{text}", res.x, res.y, res.Width, res.Height, res.text);
                     }
@@ -487,7 +487,7 @@ const adventurePath = settings.adventurePath || '蒙德'; // 若未定义，用�
             captureRegion.dispose();
             for (let i = 0; i < resList.count; i++) {
                 let res = resList[i];
-                if (res.text.includes((genshin.getText ? genshin.getText("commission") : "委托")) || res.text.includes("委託") || res.text.includes("Commissions") || res.text.includes("委")) {
+                if (res.text.includes((genshin.getText ? genshin.getText("commission") : "委托")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "委託") : res.text.includes("委託")) || res.text.includes("Commissions") || res.text.includes("委")) {
                     if (settings.enableDebug) {
                         log.info("识别到委托选项卡位置:({x},{y},{w},{h}), 识别内容：{text}", res.x, res.y, res.Width, res.Height, res.text);
                     }

@@ -1,37 +1,15 @@
 {
-  "strict_functional_cjk_count": 87,
+  "strict_functional_cjk_count": 48,
+  "legacy_runtime_covered_count": 0,
   "literal_frequency": {
-    "委託": 3,
-    "委": 3,
-    "使用20个原粹树脂": 2,
-    "之花": 2,
-    "20个": 2,
-    "40个": 2,
-    "挂起来吧": 2,
     "对局胜利": 2,
     "对局失败": 2,
-    "申请造访": 2,
-    "申請造訪": 2,
     "退出并": 2,
     "加速": 1,
     "快速加工": 1,
-    "箱": 1,
-    "珍貴": 1,
-    "珍贵": 1,
-    "使用40个原粹树脂，获取2次产出": 1,
     "下次": 1,
-    "接触": 1,
-    "双倍": 1,
-    "2倍产出": 1,
-    "2倍": 1,
-    "补充": 1,
     "原粹": 1,
     "树脂": 1,
-    "溢口": 1,
-    "校验完成": 1,
-    "校验失败": 1,
-    "路线启动": 1,
-    "全部路线结束": 1,
     "世界权限": 1,
     "能给我几支香吗": 1,
     "给我一份福利餐": 1,
@@ -62,11 +40,6 @@
     "收藏": 1,
     "无法出战": 1,
     "道具已达到容量上限": 1,
-    "次0点": 1,
-    "点": 1,
-    "小时": 1,
-    "即时刷新": 1,
-    "锄地": 1,
     "当前物品在背包内的容量已达上限": 1,
     "有什么卖的": 1,
     "可以卖一些": 1,
@@ -76,36 +49,29 @@
     "锻造队列": 1
   },
   "file_frequency": {
-    "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js": 10,
-    "repo/js/使用历练点完成每日委托/main.js": 6,
-    "repo/js/AutoPickLitter/main.js": 5,
     "repo/js/DSTCG/main.js": 5,
     "repo/js/SwitchAccountMultipleMode/main.js": 5,
     "repo/js/WeeklyThousandStarRealm/main.js": 5,
-    "repo/js/AutoPathingLoader-MultiUser/main.js": 4,
-    "repo/js/DoubleFriendshipEncounterPoints/main.js": 4,
     "repo/js/TeyvatScanner/main.js": 4,
     "repo/js/七圣召唤七日历练全自动/main.js": 4,
-    "repo/js/背包材料统计/lib/timeCostSystem.js": 4,
-    "repo/js/AIPC珍贵宝箱无限刷/main.js": 3,
+    "repo/js/AutoPickLitter/main.js": 3,
     "repo/js/StarfieldRaimentCollection/main.js": 3,
     "repo/js/自动购买商品/main.js": 3,
     "repo/js/AEscoffier_chef/main.js": 2,
-    "repo/js/AutoFontaineLeyLine/main.js": 2,
-    "repo/js/AutoLeyLineOutcrop/main.js": 2,
-    "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js": 2,
-    "repo/js/AutoStygianOnslaught/main.js": 2,
+    "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js": 2,
     "repo/js/TCGQuickProficiency/main.js": 2,
     "repo/js/铁匠铺/main.js": 2,
     "repo/js/AutoFriendshipFight/main.js": 1,
     "repo/js/AutoPermission/main.js": 1,
+    "repo/js/AutoStygianOnslaught/main.js": 1,
     "repo/js/AutoYuanQin/main.js": 1,
     "repo/js/JoinFriendsWorld/main.js": 1,
     "repo/js/WeeklyBoss/utils.js": 1,
-    "repo/js/背包材料统计/main.js": 1,
     "repo/js/营养袋吃药统计/main.js": 1,
     "repo/js/诛贼-地方传奇-利亚姆/lib/Laim/lib/MobPuller.js": 1
   },
+  "runtime_covered_literal_frequency": {},
+  "runtime_covered_file_frequency": {},
   "findings": [
     {
       "path": "repo/js/AEscoffier_chef/main.js",
@@ -120,100 +86,10 @@
       "source": "if (itemPage && itemPage.text.includes(\"快速加工\")) { // 如果未打开矿石详情页面"
     },
     {
-      "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
-      "line": 400,
-      "literal": "箱",
-      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
-    },
-    {
-      "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
-      "line": 400,
-      "literal": "珍貴",
-      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
-    },
-    {
-      "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
-      "line": 400,
-      "literal": "珍贵",
-      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
-    },
-    {
-      "path": "repo/js/AutoFontaineLeyLine/main.js",
-      "line": 774,
-      "literal": "使用20个原粹树脂",
-      "source": "if (resinTypeMap[rewards[i]] == \"使用20个原粹树脂\" || resinTypeMap[rewards[i]] == \"使用40个原粹树脂，获取2次产出\")"
-    },
-    {
-      "path": "repo/js/AutoFontaineLeyLine/main.js",
-      "line": 774,
-      "literal": "使用40个原粹树脂，获取2次产出",
-      "source": "if (resinTypeMap[rewards[i]] == \"使用20个原粹树脂\" || resinTypeMap[rewards[i]] == \"使用40个原粹树脂，获取2次产出\")"
-    },
-    {
       "path": "repo/js/AutoFriendshipFight/main.js",
       "line": 187,
       "literal": "下次",
       "source": "await genshin.chooseTalkOption(\"下次\");"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/main.js",
-      "line": 991,
-      "literal": "接触",
-      "source": "if (ocrResults[i].text.includes(\"接触\") ||"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/main.js",
-      "line": 993,
-      "literal": "之花",
-      "source": "ocrResults[i].text.includes(\"之花\")) {"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 41,
-      "literal": "双倍",
-      "source": "t.text.includes(\"双倍\") ||"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 42,
-      "literal": "2倍产出",
-      "source": "t.text.includes(\"2倍产出\") ||"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 43,
-      "literal": "2倍",
-      "source": "t.text.includes(\"2倍\")"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 218,
-      "literal": "补充",
-      "source": "const hasSupplement = textList.some(t => t.text.includes(\"补充\"));"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 329,
-      "literal": "20个",
-      "source": "(t.text.includes(\"20个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 334,
-      "literal": "40个",
-      "source": "(t.text.includes(\"40个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 377,
-      "literal": "20个",
-      "source": "(t.text.includes(\"20个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 381,
-      "literal": "40个",
-      "source": "(t.text.includes(\"40个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -226,42 +102,6 @@
       "line": 749,
       "literal": "树脂",
       "source": "(t.text.includes(`${targetAmount}个`) && t.text.includes(\"树脂\"))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
-      "line": 30,
-      "literal": "之花",
-      "source": "if (result2.text.includes(\"之花\")) {"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
-      "line": 37,
-      "literal": "溢口",
-      "source": "if (result2.text.includes(\"溢口\")) {"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 440,
-      "literal": "校验完成",
-      "source": "if (ocrList[i].text.includes(\"校验完成\")) {"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 443,
-      "literal": "校验失败",
-      "source": "} else if (ocrList[i].text.includes(\"校验失败\")) {"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 924,
-      "literal": "路线启动",
-      "source": "if (ocr[l].text === \"路线启动\") { // 检测队长的消息"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 961,
-      "literal": "全部路线结束",
-      "source": "if (ocr[l].text.includes(\"全部路线结束\")) { // 检测队长的消息"
     },
     {
       "path": "repo/js/AutoPermission/main.js",
@@ -277,18 +117,6 @@
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
-      "line": 1035,
-      "literal": "挂起来吧",
-      "source": "await genshin.chooseTalkOption(\"挂起来吧\");"
-    },
-    {
-      "path": "repo/js/AutoPickLitter/main.js",
-      "line": 1051,
-      "literal": "挂起来吧",
-      "source": "await genshin.chooseTalkOption(\"挂起来吧\");"
-    },
-    {
-      "path": "repo/js/AutoPickLitter/main.js",
       "line": 1168,
       "literal": "给我一份福利餐",
       "source": "// await genshin.chooseTalkOption(\"给我一份福利餐\");"
@@ -298,12 +126,6 @@
       "line": 1538,
       "literal": "其实",
       "source": "await genshin.chooseTalkOption(\"其实\");"
-    },
-    {
-      "path": "repo/js/AutoStygianOnslaught/main.js",
-      "line": 651,
-      "literal": "使用20个原粹树脂",
-      "source": "if (resinTypeMap[rewards[i]] == \"使用20个原粹树脂\")"
     },
     {
       "path": "repo/js/AutoStygianOnslaught/main.js",
@@ -346,30 +168,6 @@
       "line": 1881,
       "literal": "对局失败",
       "source": "} else if (ocr.isExist() && ocr.text.includes(\"对局失败\")){"
-    },
-    {
-      "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
-      "line": 253,
-      "literal": "申请造访",
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
-    },
-    {
-      "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
-      "line": 253,
-      "literal": "申請造訪",
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
-    },
-    {
-      "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
-      "line": 400,
-      "literal": "委託",
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
-    },
-    {
-      "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
-      "line": 400,
-      "literal": "委",
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
@@ -522,72 +320,6 @@
       "source": "if (!result.isEmpty() && result.text.includes(\"道具已达到容量上限\")) {"
     },
     {
-      "path": "repo/js/使用历练点完成每日委托/main.js",
-      "line": 292,
-      "literal": "申请造访",
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
-    },
-    {
-      "path": "repo/js/使用历练点完成每日委托/main.js",
-      "line": 292,
-      "literal": "申請造訪",
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
-    },
-    {
-      "path": "repo/js/使用历练点完成每日委托/main.js",
-      "line": 437,
-      "literal": "委託",
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
-    },
-    {
-      "path": "repo/js/使用历练点完成每日委托/main.js",
-      "line": 437,
-      "literal": "委",
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
-    },
-    {
-      "path": "repo/js/使用历练点完成每日委托/main.js",
-      "line": 490,
-      "literal": "委託",
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
-    },
-    {
-      "path": "repo/js/使用历练点完成每日委托/main.js",
-      "line": 490,
-      "literal": "委",
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
-    },
-    {
-      "path": "repo/js/背包材料统计/lib/timeCostSystem.js",
-      "line": 26,
-      "literal": "次0点",
-      "source": "if (refreshCD.includes('次0点')) {"
-    },
-    {
-      "path": "repo/js/背包材料统计/lib/timeCostSystem.js",
-      "line": 33,
-      "literal": "点",
-      "source": "} else if (refreshCD.includes('点')) {"
-    },
-    {
-      "path": "repo/js/背包材料统计/lib/timeCostSystem.js",
-      "line": 40,
-      "literal": "小时",
-      "source": "} else if (refreshCD.includes('小时')) {"
-    },
-    {
-      "path": "repo/js/背包材料统计/lib/timeCostSystem.js",
-      "line": 47,
-      "literal": "即时刷新",
-      "source": "} else if (refreshCD === '即时刷新') {"
-    },
-    {
-      "path": "repo/js/背包材料统计/main.js",
-      "line": 627,
-      "literal": "锄地",
-      "source": "const normalPaths = pathEntries.filter(entry => entry.resourceName && !entry.monsterName && entry.resourceName !== '锄地');"
-    },
-    {
       "path": "repo/js/自动购买商品/main.js",
       "line": 228,
       "literal": "当前物品在背包内的容量已达上限",
@@ -629,5 +361,6 @@
       "literal": "锻造队列",
       "source": "if (ocrResultsAfter.text.includes(\"锻造队列\")) {"
     }
-  ]
+  ],
+  "runtime_covered_findings": []
 }

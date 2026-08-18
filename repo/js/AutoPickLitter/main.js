@@ -1032,7 +1032,7 @@ async function numberTemplateMatch(
                         results = "大凶";
                         await pathingScript.runFile("assets/挂签路线.json");
                         await performOcr("御签挂", { min: 900, max: 1700 }, { min: 380, max: 880 }, false);
-                        await genshin.chooseTalkOption("挂起来吧");
+                        await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral("挂起来吧") : "挂起来吧"));
                         await sleep(700);
                         await click(111,184);
                         await sleep(1000);
@@ -1048,7 +1048,7 @@ async function numberTemplateMatch(
                         await pathingScript.runFile("assets/挂签路线.json");
                         await performOcr("御签挂", { min: 900, max: 1700 }, { min: 380, max: 880 }, false);
                         await sleep(700);
-                        await genshin.chooseTalkOption("挂起来吧");
+                        await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral("挂起来吧") : "挂起来吧"));
                         await click(111,184);
                         await sleep(1000);
                         await click(1250,817);

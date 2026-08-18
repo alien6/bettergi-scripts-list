@@ -421,7 +421,7 @@
                             } else {
                                 log.error(`${playerP}校验失败: ${ocrList[i].text}`);
                                 if (sendSignal) { // 队长发布检验完成信息
-                                    await sendMessage(`校验失败`);
+                                    await sendMessage(`BGI_VERIFY_FAIL`);
                                 }
                                 return false
                             }
@@ -429,7 +429,7 @@
                     }
                     if (Object.values(verifyDic).every(value => value === true)) { // 全部验证通过
                         if (sendSignal) { // 队长发布检验完成信息
-                            await sendMessage(`校验完成`);
+                            await sendMessage(`BGI_VERIFY_OK`);
                         }
                         await sleep(300);
                         return true;
@@ -437,10 +437,10 @@
                 }
             } else { // 队员
                 for (let i = 0; i < ocrList.count; i++) {
-                    if (ocrList[i].text.includes("校验完成")) {
+                    if (ocrList[i].text.includes("BGI_VERIFY_OK")) {
                         log.info(`检测到队长的校验完成信号`)
                         return true;
-                    } else if (ocrList[i].text.includes("校验失败")) {
+                    } else if (ocrList[i].text.includes("BGI_VERIFY_FAIL")) {
                         log.error(`检测到队长的校验失败信号`)
                         return false;
                     }
@@ -841,7 +841,7 @@
                                         }
                                         if (Object.values(judge_dic).every(value => value === true)) { // 全部就位
                                             log.info("全部就位");
-                                            await sendMessage("路线启动");
+                                            await sendMessage("BGI_ROUTE_START");
                                             wait_flag = false;
                                         };
                                     }
@@ -851,7 +851,7 @@
                             await pathingScript.run(JSON.stringify(pathDic));
                         }
                         // 跑完了全部路线
-                        await sendMessage("全部路线结束");
+                        await sendMessage("BGI_ROUTES_DONE");
                         // 等待队员退出（防止自己返回单人模式时卡死）
                         await sleep(12000);
                         // 返回单人模式（会自动踢出队员）
@@ -921,7 +921,7 @@
                                     while (wait_flag) { // 循环等待
                                         let ocr = captureGameRegion().FindMulti(ocrMsgRo); // 当前页面OCR
                                         for (let l = 0; l < ocr.count; l++) { // 遍历OCR数组
-                                            if (ocr[l].text === "路线启动") { // 检测队长的消息
+                                            if (ocr[l].text === "BGI_ROUTE_START") { // 检测队长的消息
                                                 log.info(`检测到队长发送的路线启动信息`);
                                                 wait_flag = false;
                                                 break;
@@ -958,7 +958,7 @@
                             let ocr = ro13.FindMulti(ocrMsgRo); // 当前页面OCR
                             ro13.dispose();
                             for (let l = 0; l < ocr.count; l++) { // 遍历OCR数组
-                                if (ocr[l].text.includes("全部路线结束")) { // 检测队长的消息
+                                if (ocr[l].text.includes("BGI_ROUTES_DONE")) { // 检测队长的消息
                                     log.info(`检测到队长发送的脚本结束信息`);
                                     // 返回单人模式（会自动踢出队员）
                                     genshin.returnMainUi();

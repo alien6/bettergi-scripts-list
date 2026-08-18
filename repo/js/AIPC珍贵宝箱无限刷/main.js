@@ -397,7 +397,7 @@ const LocationButtonRo = RecognitionObject.TemplateMatch(file.ReadImageMatSync("
 			captureRegion.dispose();
 			for (let i = 0; i < resList.count; i++) {
 				let res = resList[i];
-				if (res.text.includes("Precious") || res.text.includes("Chest") || res.text.includes("箱") || res.text.includes("珍貴") || res.text.includes("珍贵")) {
+				if (res.text.includes("Precious") || res.text.includes("Chest") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "箱") : res.text.includes("箱")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "珍貴") : res.text.includes("珍貴")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "珍贵") : res.text.includes("珍贵"))) {
 					failureCount++;
 					log.warn(`检测到宝箱未被拾取 (${failureCount}/5) 次`);
 					if (failureCount >= 3) {
