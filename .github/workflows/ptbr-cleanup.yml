@@ -1,0 +1,50 @@
+name: PT-BR Migration Cleanup
+
+on:
+  push:
+    branches:
+      - feature/pt-br-support
+    paths:
+      - tools/ptbr_cleanup.py
+      - .github/workflows/ptbr-cleanup.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/pt-br-support
+          fetch-depth: 0
+
+      - name: Fetch main
+        run: git fetch origin main:refs/remotes/origin/main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Clean migration noise
+        run: python tools/ptbr_cleanup.py
+
+      - name: Commit cleanup
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No cleanup changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bettergi.d.ts repo/js
+          git commit -m "chore: remove PT-BR migration diff noise"
+          git push origin HEAD:feature/pt-br-support
