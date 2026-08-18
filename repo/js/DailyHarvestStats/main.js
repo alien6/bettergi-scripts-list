@@ -679,7 +679,7 @@ if (typeof module === 'undefined') (async function () {
     async function close_expired_stuff_popup_window() {
         const rg = captureGameRegion();
         const res = rg.find(RecognitionObject.ocr(850, 273, 225, 51));
-        if (res && res.text && res.text.includes((genshin.getText ? genshin.getText("item_expired") : (genshin.getText ? genshin.getText("item_expired") : "物品过期")))) { log.info('检测到物品过期'); click(1000, 750); await sleep(1000); }
+        if (res && res.text && res.text.includes((genshin.getText ? genshin.getText("item_expired") : "物品过期"))) { log.info('检测到物品过期'); click(1000, 750); await sleep(1000); }
         rg.dispose();
     }
     async function getBottleCount(itemName, templatePath) {

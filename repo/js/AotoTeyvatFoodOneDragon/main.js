@@ -131,7 +131,7 @@
 
     // 背包过期物品识别，需要在背包界面，并且是1920x1080分辨率下使用
     async function handleExpiredItems() {
-        const ifGuoqi = await textOCR((genshin.getText ? genshin.getText("item_expired") : (genshin.getText ? genshin.getText("item_expired") : "物品过期")), 1.5, 0, 0, 870, 280, 170, 40);
+        const ifGuoqi = await textOCR((genshin.getText ? genshin.getText("item_expired") : "物品过期"), 1.5, 0, 0, 870, 280, 170, 40);
         if (ifGuoqi.found) {
             log.info("检测到过期物品，正在处理...");
             await sleep(500);

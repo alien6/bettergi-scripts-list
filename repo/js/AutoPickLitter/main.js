@@ -745,7 +745,7 @@ async function chcekDragonEggs() {
 async function checkExpire() {
     await sleep(1000);
     let ocrExpire = await performOcr("",{ min: 870, max: 1040 }, { min: 280, max: 320 }, true);
-    if (ocrExpire.text == (genshin.getText ? genshin.getText("item_expired") : (genshin.getText ? genshin.getText("item_expired") : "物品过期"))) {
+    if (ocrExpire.text == (genshin.getText ? genshin.getText("item_expired") : "物品过期")) {
         log.info(`处理中=========`);
        await click(980, 750);
        await sleep(50);

@@ -1,16 +1,5 @@
 {
-  "semantic_replacements": {
-    "cancel": 1,
-    "challenge_completed": 5,
-    "confirm": 20,
-    "exit_challenge": 11,
-    "exit_domain": 1,
-    "item_expired": 13,
-    "ley_line_disorder": 2,
-    "ok": 3,
-    "skip": 2,
-    "teleport": 6
-  },
+  "semantic_replacements": {},
   "files_changed": [
     "repo/js/AEscoffier_chef/main.js",
     "repo/js/AbundantOre/main.js",
@@ -37,7 +26,6 @@
     "repo/js/WeeklyThousandStarRealm/main.js",
     "repo/js/YNF-AutoEat/main.js",
     "repo/js/七圣召唤七日历练全自动/main.js",
-    "repo/js/切换画质/main.js",
     "repo/js/恢复默认键位设置/main.js",
     "repo/js/提瓦特记事本/main.js",
     "repo/js/纪行周常-10次秘境一条龙/main.js",
@@ -46,8 +34,324 @@
     "repo/js/营养袋吃药统计/main.js",
     "repo/js/角色养成一条龙/main.js"
   ],
-  "remaining_ocr_sensitive_cjk_count": 445,
-  "remaining_known_semantic_count": 19,
+  "remaining_ocr_sensitive_cjk_count": 427,
+  "remaining_known_semantic_count": 0,
+  "remaining_literal_frequency": {
+    "原粹树脂": 11,
+    "开始游戏": 10,
+    "当前拥有": 9,
+    "搜索": 8,
+    "房间": 7,
+    "圣遗物": 6,
+    "烹饪": 5,
+    "当前队伍名称位置:({x},{y},{w},{h}), 识别结果：{text}": 5,
+    "目标队伍位置:({x},{y},{w},{h}), 识别结果：{text}": 5,
+    "当前队伍": 5,
+    "已到达领奖点，检测到文字: ": 5,
+    "点击进入": 5,
+    "培养需求": 4,
+    "全部领取": 4,
+    "文本位置:({x},{y},{w},{h}), 识别内容：{text}": 4,
+    "取消自动任务": 4,
+    "鱼饵": 4,
+    "模板匹配": 4,
+    "复活": 4,
+    "文字": 4,
+    "目标文字": 4,
+    "自动退出": 4,
+    "接触征讨之花": 4,
+    "待激活": 3,
+    "绝缘": 3,
+    "影中沉凝的幻灭": 3,
+    "委托完成": 3,
+    "伪造地图追踪(跑图+垂钓)": 3,
+    "之花": 3,
+    "20个": 3,
+    "40个": 3,
+    "委托": 3,
+    "委託": 3,
+    "委": 3,
+    "识别到委托选项卡位置:({x},{y},{w},{h}), 识别内容：{text}": 3,
+    "管理": 3,
+    "返回大厅": 3,
+    "材料不足": 2,
+    "自动烹饪": 2,
+    "料理制作": 2,
+    "队列已满": 2,
+    "按键": 2,
+    "按鍵": 2,
+    "高效": 2,
+    "螃蟹": 2,
+    "分钟": 2,
+    "秒": 2,
+    "全选": 2,
+    "套装锁定方案": 2,
+    "不允许使用HTTP请求": 2,
+    "蒙德": 2,
+    "检测到文字: ": 2,
+    "尝试多次后,截图失败!": 2,
+    "复苏": 2,
+    "伪造地图追踪(跑图)": 2,
+    "装备": 2,
+    "伪造地图追踪(垂钓)": 2,
+    "原粹树脂识别数量结果：": 2,
+    "脆弱树脂识别数量结果：": 2,
+    "传奇": 2,
+    "高收益": 2,
+    "钟离": 2,
+    "芙宁娜": 2,
+    "地脉": 2,
+    "停止": 2,
+    "申请加入": 2,
+    "挂起来吧": 2,
+    "再见": 2,
+    "单人挑战": 2,
+    "提瓦特": 2,
+    "晶蝶": 2,
+    "诱捕": 2,
+    "装置": 2,
+    "元素爆发": 2,
+    "元素": 2,
+    "点": 2,
+    "对局胜利": 2,
+    "对局失败": 2,
+    "指定好友名字位置:({x},{y},{w},{h}), 识别内容：{text}": 2,
+    "申请造访": 2,
+    "申請造訪": 2,
+    "申请造访尘歌壶位置:({x},{y},{w},{h}), 识别内容：{text}": 2,
+    "无法进入 [${res.text}] 的尘歌壶": 2,
+    "大厅": 2,
+    "收藏": 2,
+    "返回": 2,
+    "点击": 2,
+    "切换账号": 2,
+    "退出并": 2,
+    "登录其他账号": 2,
+    "尘歌壶": 2,
+    "路径名: ": 2,
+    "—初始化—": 2,
+    "无变化": 2,
+    "角色选择": 1,
+    "自动": 1,
+    "加速": 1,
+    "快速加工": 1,
+    "按键选项卡位置:({x},{y},{h},{w}), 文本{text}": 1,
+    "白萝卜识别结果:({x},{y},{h},{w}), 数量：{text}": 1,
+    "卷心菜识别结果:({x},{y},{h},{w}), 数量：{text}": 1,
+    "箱": 1,
+    "珍貴": 1,
+    "珍贵": 1,
+    "征讨领域": 1,
+    "当前状态:": 1,
+    "，无需调整": 1,
+    "当前状态：": 1,
+    "输出模式：全图代码位置：({x},{y},{h},{w},{string})": 1,
+    "当前项目：": 1,
+    "空": 1,
+    "荧": 1,
+    "冰套": 1,
+    "未生效": 1,
+    "编辑": 1,
+    "暂无方案配置": 1,
+    "新建锁定方案": 1,
+    "元素伤害加成": 1,
+    "提示": 1,
+    "已到达指定位置，检测到文字: ": 1,
+    "OCR结果: {OCRresults}": 1,
+    "测试模式无效": 1,
+    "测试用例不存在": 1,
+    "流程文件不存在": 1,
+    "walk 方向只能是 w、a、s、d": 1,
+    "搜索到相关成就：{ocr}（标准化后：{cleaned}）": 1,
+    "点击包含提取到任务人名的选项: {text}": 1,
+    "检测到目标交互项，点击进入对话: {text}": 1,
+    "完成提示": 1,
+    "开启挑战": 1,
+    "璃月": 1,
+    "稻妻": 1,
+    "须弥": 1,
+    "枫丹": 1,
+    "纳塔": 1,
+    "挪德": 1,
+    "编辑委托流程": 1,
+    "录制地图路径": 1,
+    "询问艾琳关于X": 1,
+    "检测到复苏界面": 1,
+    "【配置警告】浓缩树脂数量大于0，但未配置在刷取顺序(1)中，将被底层忽略！": 1,
+    "【配置警告】原粹树脂需要消耗40体力，但未配置在刷取顺序(2)中，将被底层忽略！": 1,
+    "【配置警告】原粹树脂需要消耗20体力，但未配置在刷取顺序(3)中，将被底层忽略！": 1,
+    "【配置警告】须臾树脂数量大于0，但未配置在刷取顺序(4)中，将被底层忽略！": 1,
+    "【配置警告】脆弱树脂数量大于0，但未配置在刷取顺序(5)中，将被底层忽略！": 1,
+    "战斗脚本文件不存在": 1,
+    "背包物品已满": 1,
+    "未检测到秘境结束": 1,
+    "未找到对应的秘境": 1,
+    "禁用": 1,
+    "查看资料": 1,
+    "张牙": 1,
+    "舞爪": 1,
+    "恶党": 1,
+    "打倒": 1,
+    "所有": 1,
+    "鳄鱼": 1,
+    "下次": 1,
+    "蕈兽": 1,
+    "维沙瓦": 1,
+    "运行锄地路线": 1,
+    "启用仅指定怪物模式": 1,
+    "精英高收益": 1,
+    "高危": 1,
+    "爱可菲": 1,
+    "莉奈娅": 1,
+    "纳西妲": 1,
+    "雷电将军": 1,
+    "水下": 1,
+    "怪物掉落材料": 1,
+    "接触": 1,
+    "双倍": 1,
+    "2倍产出": 1,
+    "2倍": 1,
+    "激活地脉之花": 1,
+    "选择激活方式": 1,
+    "补充": 1,
+    "浓缩树脂": 1,
+    "浓缩": 1,
+    "须臾树脂": 1,
+    "须臾": 1,
+    "脆弱树脂": 1,
+    "脆弱": 1,
+    "原石": 1,
+    "3次": 1,
+    "原粹": 1,
+    "树脂": 1,
+    "战斗失败": 1,
+    "衍出": 1,
+    "溢口": 1,
+    "打倒所有敌人": 1,
+    "脆弱树脂数量: ": 1,
+    "须臾树脂数量: ": 1,
+    "验证": 1,
+    "校验完成": 1,
+    "校验失败": 1,
+    "世界": 1,
+    "多人游戏申请": 1,
+    "多人游戏": 1,
+    "路线启动": 1,
+    "全部路线结束": 1,
+    "世界权限": 1,
+    "能给我几支香吗": 1,
+    "给我一份福利餐": 1,
+    "狼啸": 1,
+    "鸣风": 1,
+    "旭日": 1,
+    "海蛇": 1,
+    "鹿引": 1,
+    "晨露": 1,
+    "层云": 1,
+    "灯火": 1,
+    "其实": 1,
+    "圣遗物空间检查": 1,
+    "幽境检查": 1,
+    "合成": 1,
+    "任务提示": 1,
+    "激活": 1,
+    "紊乱平息": 1,
+    "大循环": 1,
+    "替换": 1,
+    "联机合奏": 1,
+    "地方特产": 1,
+    "小道": 1,
+    "回合开始时：": 1,
+    "结束阶段：": 1,
+    "初始手牌": 1,
+    "重投骰子": 1,
+    "出战角色": 1,
+    "万能元素": 1,
+    "充能": 1,
+    "回合结束": 1,
+    "检测到物品过期": 1,
+    "识别到锚点文字: ": 1,
+    "自动战斗": 1,
+    "自动对话": 1,
+    "自动拾取": 1,
+    "有草神": 1,
+    "强化": 1,
+    "==处理前": 1,
+    "祝圣油膏": 1,
+    "冒险等阶": 1,
+    "其他玩家": 1,
+    "战斗": 1,
+    "清除": 1,
+    "1970年": 1,
+    "局外": 1,
+    "删除所选": 1,
+    "中断挑战": 1,
+    "奖励一览": 1,
+    "诸界纪游": 1,
+    "已装备": 1,
+    "攻击力": 1,
+    "防御力": 1,
+    "生命值": 1,
+    "经验计算结果\\n": 1,
+    "搜索奇域": 1,
+    "开始挑战": 1,
+    "已完成所有任务": 1,
+    "前往大厅": 1,
+    "保存配置": 1,
+    "点击领取": 1,
+    "空月祝福": 1,
+    "空白": 1,
+    "获得": 1,
+    "识别到目标账号：{0}": 1,
+    "我方出战牌组": 1,
+    "更改牌组外观": 1,
+    "七": 1,
+    "倒计时": 1,
+    "继续": 1,
+    "置顶": 1,
+    "管理关卡": 1,
+    "删除": 1,
+    "当前牌组名称: {text}": 1,
+    "无法出战": 1,
+    "设置": 1,
+    "JS HTTP权限": 1,
+    "道具已达到容量上限": 1,
+    "已售罄": 1,
+    "元素战技": 1,
+    "入队语音": 1,
+    "加入队伍": 1,
+    "倒下语音": 1,
+    "倒下": 1,
+    "宝箱语音": 1,
+    "打开宝箱": 1,
+    "宝箱": 1,
+    "命之座": 1,
+    "天赋": 1,
+    "传说任务": 1,
+    "个人任务": 1,
+    "特殊料理": 1,
+    "拾枝杂谈": 1,
+    "角色PV": 1,
+    "角色EP": 1,
+    " -> 转换后: ": 1,
+    "次0点": 1,
+    "小时": 1,
+    "/其他/": 1,
+    "【测算模式】": 1,
+    "📁pathing材料": 1,
+    "【扫描额外的分类】": 1,
+    "当前物品在背包内的容量已达上限": 1,
+    "售罄": 1,
+    "有什么卖的": 1,
+    "可以卖一些": 1,
+    "进入世界申请": 1,
+    "药物数量无变化": 1,
+    "OCR识别结果: {text}": 1,
+    "利亚姆": 1,
+    "枫丹水下": 1,
+    "今日已无法锻造": 1,
+    "锻造队列": 1
+  },
   "remaining": [
     {
       "path": "repo/js/AEscoffier_chef/main.js",
@@ -173,14 +477,6 @@
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1113,
-      "literals": [
-        "确认"
-      ],
-      "source": "if (ocrResult && ocrResult.text.includes((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")))) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
       "line": 1125,
       "literals": [
         "烹饪"
@@ -279,14 +575,6 @@
       "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
     },
     {
-      "path": "repo/js/AbundantOre/main.js",
-      "line": 310,
-      "literals": [
-        "物品过期"
-      ],
-      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
-    },
-    {
       "path": "repo/js/AcceleratedEditionSwitchParty/main.js",
       "line": 86,
       "literals": [
@@ -326,14 +614,6 @@
         "征讨领域"
       ],
       "source": "const find = await findTextAndClick(\"征讨领域\");"
-    },
-    {
-      "path": "repo/js/ActivitySwitchNotice/utils/tool.js",
-      "line": 343,
-      "literals": [
-        "物品过期"
-      ],
-      "source": "const expiredText = await findText((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")), 870, 280, 170, 40, 2);"
     },
     {
       "path": "repo/js/AotoTeyvatFoodOneDragon/main.js",
@@ -401,14 +681,6 @@
         "当前项目："
       ],
       "source": "log.debug(\"当前项目：\" + res2.text);"
-    },
-    {
-      "path": "repo/js/ArtifactExpCount/main.js",
-      "line": 340,
-      "literals": [
-        "物品过期"
-      ],
-      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
     },
     {
       "path": "repo/js/ArtifactScore/main.js",
@@ -1221,14 +1493,6 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/main.js",
-      "line": 874,
-      "literals": [
-        "取消"
-      ],
-      "source": "if (error.message && error.message.includes((genshin.getText ? genshin.getText(\"cancel\") : (genshin.getText ? genshin.getText(\"cancel\") : \"取消\")))) {"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/main.js",
       "line": 979,
       "literals": [
         "原粹树脂"
@@ -1680,14 +1944,6 @@
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
-      "line": 748,
-      "literals": [
-        "物品过期"
-      ],
-      "source": "if (ocrExpire.text == (genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"))) {"
-    },
-    {
-      "path": "repo/js/AutoPickLitter/main.js",
       "line": 930,
       "literals": [
         "能给我几支香吗"
@@ -2107,10 +2363,9 @@
       "path": "repo/js/DailyHarvestStats/main.js",
       "line": 682,
       "literals": [
-        "物品过期",
         "检测到物品过期"
       ],
-      "source": "if (res && res.text && res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) { log.info('检测到物品过期'); click(1000, 750); await sleep(1000); }"
+      "source": "if (res && res.text && res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\"))) { log.info('检测到物品过期'); click(1000, 750); await sleep(1000); }"
     },
     {
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
@@ -2309,14 +2564,6 @@
     },
     {
       "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
-      "line": 11,
-      "literals": [
-        "确认"
-      ],
-      "source": "const txt = findTextWithinBounds((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")), 480, 720, 960, 145);"
-    },
-    {
-      "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
       "line": 92,
       "literals": [
         "搜索"
@@ -2421,14 +2668,6 @@
     },
     {
       "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
-      "line": 229,
-      "literals": [
-        "跳过"
-      ],
-      "source": "const txt = findTextWithinBounds((genshin.getText ? genshin.getText(\"skip\") : (genshin.getText ? genshin.getText(\"skip\") : \"跳过\")), 1720, 0, 200, 100, { contains: true });"
-    },
-    {
-      "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
       "line": 244,
       "literals": [
         "中断挑战"
@@ -2492,14 +2731,6 @@
         "当前拥有"
       ],
       "source": "if (res.text.includes(\"当前拥有\")) {"
-    },
-    {
-      "path": "repo/js/PurchaseArtifacts/main.js",
-      "line": 19,
-      "literals": [
-        "物品过期"
-      ],
-      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
     },
     {
       "path": "repo/js/RoleExperienceCalculation/main.js",
@@ -2877,30 +3108,6 @@
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 216,
-      "literals": [
-        "确认"
-      ],
-      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")), 960, 600, 960, 400, 50, 100);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 217,
-      "literals": [
-        "确认"
-      ],
-      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")), 960, 600, 960, 400, 50, 100);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 239,
-      "literals": [
-        "确认"
-      ],
-      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")), 960, 600, 960, 400, 50);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
       "line": 246,
       "literals": [
         "房间"
@@ -3044,28 +3251,12 @@
       "source": "await findTextAndClick(\"返回\", 960, 0, 960, 100);"
     },
     {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 412,
-      "literals": [
-        "确认"
-      ],
-      "source": "await findTextAndClick((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")), 960, 600, 960, 400);"
-    },
-    {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",
       "line": 89,
       "literals": [
         "当前牌组名称: {text}"
       ],
       "source": "log.info(\"当前牌组名称: {text}\", teamName.text);"
-    },
-    {
-      "path": "repo/js/七圣召唤七日历练全自动/main.js",
-      "line": 148,
-      "literals": [
-        "确认"
-      ],
-      "source": "if (res.text === (genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\"))) {"
     },
     {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",
@@ -3284,14 +3475,6 @@
       "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || res.text.includes(\"按键\") || res.text.includes(\"按鍵\")) {"
     },
     {
-      "path": "repo/js/恢复默认键位设置/main.js",
-      "line": 43,
-      "literals": [
-        "确认"
-      ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"confirm\") : (genshin.getText ? genshin.getText(\"confirm\") : \"确认\")))) {"
-    },
-    {
       "path": "repo/js/批量讨伐角色养成材料BOSS/src/utils.js",
       "line": 37,
       "literals": [
@@ -3306,22 +3489,6 @@
         "尝试多次后,截图失败!"
       ],
       "source": "|| msg.includes(\"尝试多次后,截图失败!\");"
-    },
-    {
-      "path": "repo/js/提瓦特记事本/main.js",
-      "line": 579,
-      "literals": [
-        "物品过期"
-      ],
-      "source": "if (typeof result?.text === \"string\" && result.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
-    },
-    {
-      "path": "repo/js/提瓦特记事本/main.js",
-      "line": 1013,
-      "literals": [
-        "物品过期"
-      ],
-      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
     },
     {
       "path": "repo/js/猜角色辅助/main.js",
@@ -3552,14 +3719,6 @@
         "进入世界申请"
       ],
       "source": "if (ocr_res.text.includes(\"进入世界申请\")) {"
-    },
-    {
-      "path": "repo/js/营养袋吃药统计/main.js",
-      "line": 101,
-      "literals": [
-        "物品过期"
-      ],
-      "source": "if (ocr_res.text.includes((genshin.getText ? genshin.getText(\"item_expired\") : (genshin.getText ? genshin.getText(\"item_expired\") : \"物品过期\")))) {"
     },
     {
       "path": "repo/js/营养袋吃药统计/main.js",

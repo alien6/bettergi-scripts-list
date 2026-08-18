@@ -859,7 +859,7 @@
                     log.warn("{t}","原石使用啦！！！！！！！！！...");
                     await click(SHU.x+550,SHU.y)
 
-                    let dimai2 = await Textocr((genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("confirm") : "确认")),0.5, 0, 0, 960,720, 400, 80);
+                    let dimai2 = await Textocr((genshin.getText ? genshin.getText("confirm") : "确认"),0.5, 0, 0, 960,720, 400, 80);
                     if (dimai2.found) {
                         await click(865,630)//不再提示
                         await sleep(1000);
@@ -1078,7 +1078,7 @@
                 try {
                     let startTime = Date.now();
                     let noTextCount = 0;
-                    const successKeywords = [(genshin.getText ? genshin.getText("challenge_completed") : (genshin.getText ? genshin.getText("challenge_completed") : "挑战达成")), "战斗胜利", "挑战成功"];
+                    const successKeywords = [(genshin.getText ? genshin.getText("challenge_completed") : "挑战达成"), "战斗胜利", "挑战成功"];
                     const failureKeywords = ["挑战失败"];
                     const recovery  = ["复苏"];
     

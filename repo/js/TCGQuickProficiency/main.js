@@ -114,12 +114,12 @@ async function runAsPartner() {
         await sleep(500);
         await recognizeTextAndClick("放弃对局", [1543, 172, 112, 43]);
         await waitForTextAppear("确定要放弃", [785, 497, 339, 39]);
-        await recognizeTextAndClick((genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("confirm") : "确认")), [1142, 732, 78, 51]);
+        await recognizeTextAndClick((genshin.getText ? genshin.getText("confirm") : "确认"), [1142, 732, 78, 51]);
 
-        await waitForTextAppear((genshin.getText ? genshin.getText("exit_challenge") : (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战")), [913, 893, 130, 43], 60000);
+        await waitForTextAppear((genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"), [913, 893, 130, 43], 60000);
         await sleep(300);
-        await recognizeTextAndClick((genshin.getText ? genshin.getText("exit_challenge") : (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战")), [913, 893, 130, 43]);
-        log.info((genshin.getText ? genshin.getText("exit_challenge") : (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战")));
+        await recognizeTextAndClick((genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"), [913, 893, 130, 43]);
+        log.info((genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"));
 
         try {
             await sleep(3000);
@@ -188,9 +188,9 @@ async function startChallenge() {
     await recognizeTextAndClick((genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("ok") : "确定")), [937, 922, 82, 54], 30000);
 
     log.info("等待对方认输");
-    await waitForTextAppear((genshin.getText ? genshin.getText("exit_challenge") : (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战")), [913, 893, 130, 43], 60000);
+    await waitForTextAppear((genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"), [913, 893, 130, 43], 60000);
     await sleep(300);
-    await recognizeTextAndClick((genshin.getText ? genshin.getText("exit_challenge") : (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战")), [913, 893, 130, 43]);
+    await recognizeTextAndClick((genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"), [913, 893, 130, 43]);
 
     currentState = "猫尾酒馆进门";
 }

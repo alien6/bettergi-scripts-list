@@ -721,7 +721,7 @@ let isFighting = false;
                     log.warn("{t}","原石使用啦！！！！！！！！！...");
                     await click(SHU.x+550,SHU.y)
 
-                    let dimai2 = await Textocr((genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("confirm") : "确认")),0.5, 0, 0, 960,720, 400, 80);
+                    let dimai2 = await Textocr((genshin.getText ? genshin.getText("confirm") : "确认"),0.5, 0, 0, 960,720, 400, 80);
                     if (dimai2.found) {
                         await click(865,630)//不再提示
                         await sleep(1000);
@@ -782,15 +782,15 @@ let isFighting = false;
             log.info("尝试退出挑战...");   
             await keyPress("VK_ESCAPE"); 
             await sleep(1000);
-            let exitChallenge0 = await Textocr((genshin.getText ? genshin.getText("exit_challenge") : (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战")),0.5,1,0,866,719,274,86);
+            let exitChallenge0 = await Textocr((genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"),0.5,1,0,866,719,274,86);
             await sleep(1000);
             await keyPress("VK_ESCAPE"); 
             await sleep(1000);                                 
-            let exitChallenge1 = await Textocr((genshin.getText ? genshin.getText("exit_challenge") : (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战")),0.5,1,0,866,719,274,86);
+            let exitChallenge1 = await Textocr((genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"),0.5,1,0,866,719,274,86);
             await sleep(1000);
             await keyPress("VK_ESCAPE");
             await sleep(1000); 
-            let exitChallenge2 = await Textocr((genshin.getText ? genshin.getText("exit_challenge") : (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战")),0.5,1,0,866,719,274,86);
+            let exitChallenge2 = await Textocr((genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"),0.5,1,0,866,719,274,86);
             if (!exitChallenge2.found){break}
         }   
 
@@ -1103,14 +1103,14 @@ let isFighting = false;
 
                         var exitTimeout = 0;
                         while(exitTimeout < 20) {
-                            let exitChallenge = await Textocr((genshin.getText ? genshin.getText("exit_challenge") : (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战")),0.3,0,0,866,719,274,86);
+                            let exitChallenge = await Textocr((genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"),0.3,0,0,866,719,274,86);
                             if (exitChallenge.found) {
                                 await sleep(1000);  
                                 await click(exitChallenge.x, exitChallenge.y);
                                 await sleep(1000);  
                                 break;
                             } 
-                                let exitChallenge2 = await Textocr((genshin.getText ? genshin.getText("exit_challenge") : (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战")),0.3,1,0,866,719,274,86);               
+                                let exitChallenge2 = await Textocr((genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"),0.3,1,0,866,719,274,86);               
                                 log.info("尝试退出挑战...");
                                 await sleep(1000);  
                                 await keyPress("VK_ESCAPE"); 

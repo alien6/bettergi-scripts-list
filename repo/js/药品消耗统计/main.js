@@ -195,7 +195,7 @@ const ocrRegion = {
 
     // 背包过期物品识别
     async function handleExpiredItems() {
-        const ifGuoqi = await textOCREnhanced((genshin.getText ? genshin.getText("item_expired") : (genshin.getText ? genshin.getText("item_expired") : "物品过期")), 1.5, 0, 3, 870, 280, 170, 40);
+        const ifGuoqi = await textOCREnhanced((genshin.getText ? genshin.getText("item_expired") : "物品过期"), 1.5, 0, 3, 870, 280, 170, 40);
         if (ifGuoqi.found) {
             log.info("检测到过期物品，正在处理...");
             await sleep(500);

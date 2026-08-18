@@ -1110,7 +1110,7 @@
                 await set_ingredient_num(food_num);
                 while (true) { // [DEBUG] 无容错
                     let ocrResult = await Ocr(934, 884, 76, 39);
-                    if (ocrResult && ocrResult.text.includes((genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("confirm") : "确认")))) {
+                    if (ocrResult && ocrResult.text.includes((genshin.getText ? genshin.getText("confirm") : "确认"))) {
                         ocrResult.Click();
                         await sleep(500);
                         break;

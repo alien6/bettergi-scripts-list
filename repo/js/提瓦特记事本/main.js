@@ -576,7 +576,7 @@ async function runCharacterExpBookStats() {
         const gameRegion = captureGameRegion();
         try {
             const result = gameRegion.find(RecognitionObject.ocr(850, 273, 225, 51));
-            if (typeof result?.text === "string" && result.text.includes((genshin.getText ? genshin.getText("item_expired") : (genshin.getText ? genshin.getText("item_expired") : "物品过期")))) {
+            if (typeof result?.text === "string" && result.text.includes((genshin.getText ? genshin.getText("item_expired") : "物品过期"))) {
                 log.info("检测到物品过期弹窗，正在关闭");
                 await click(1000, 750);
                 await sleep(1000);
@@ -768,7 +768,7 @@ let countTimePoint = "提瓦特记事本";
     await sleep(200);
     await clickPNG("未锁定");
     await sleep(200);
-    await clickPNG((genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("confirm") : "确认")));
+    await clickPNG((genshin.getText ? genshin.getText("confirm") : "确认"));
     await sleep(200);
     click(30, 30);
     await sleep(100);
@@ -780,7 +780,7 @@ let countTimePoint = "提瓦特记事本";
     await sleep(100);
     await clickPNG("重置");
     await sleep(200);
-    await clickPNG((genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("confirm") : "确认")));
+    await clickPNG((genshin.getText ? genshin.getText("confirm") : "确认"));
     click(30, 30);
     await sleep(100);
     //点击分解
@@ -1010,7 +1010,7 @@ let countTimePoint = "提瓦特记事本";
         const text_h = 51;
         const ocr_res = game_region.find(RecognitionObject.ocr(text_x, text_y, text_w, text_h));
         if (ocr_res) {
-            if (ocr_res.text.includes((genshin.getText ? genshin.getText("item_expired") : (genshin.getText ? genshin.getText("item_expired") : "物品过期")))) {
+            if (ocr_res.text.includes((genshin.getText ? genshin.getText("item_expired") : "物品过期"))) {
                 log.info("检测到物品过期");
                 click(1000, 750);
                 await sleep(1000);
