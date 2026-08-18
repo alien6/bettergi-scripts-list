@@ -5,6 +5,74 @@
   },
   "按鍵": {
     "pt": ["Comandos"],
-    "evidence": "Traditional-Chinese alias of 按键, whose exact TextMap PT value is Comandos"
+    "evidence": "Traditional-Chinese alias of 按键, exact TextMap PT value Comandos"
+  },
+  "使用": {
+    "pt": ["Usar", "Use"],
+    "evidence": "TextMap PT resin/item action phrases use Usar/Use"
+  },
+  "补充": {
+    "pt": ["Recarregar", "Reabastecer", "Reabastecimento"],
+    "evidence": "TextMap PT insufficient-resource phrases use Recarregue/Reabastecimento"
+  },
+  "激活地脉之花": {
+    "pt": ["Ativar a Flor da Linha Ley", "Ativar Flor da Linha Ley"],
+    "evidence": "TextMap PT phrases translate 激活地脉之花 as ativar a Flor da Linha Ley"
+  },
+  "选择激活方式": {
+    "pt": ["Selecionar modo de ativação", "Escolha o método de ativação"],
+    "evidence": "Context-audited activation UI wording"
+  },
+  "接触": {
+    "pt": ["Toque", "Tocar"],
+    "evidence": "TextMap PT Ley Line interaction: Toque na Abertura da Linha Ley"
+  },
+  "之花": {
+    "pt": ["Flor"],
+    "evidence": "TextMap PT 地脉之花 -> Flor de Linha Ley"
+  },
+  "溢口": {
+    "pt": ["Abertura", "Aberturas"],
+    "evidence": "TextMap PT 地脉溢口 -> Aberturas da Linha Ley"
+  },
+  "双倍": {
+    "pt": ["dobro", "em dobro", "2x"],
+    "evidence": "PT-BR double-reward wording variants"
+  },
+  "2倍产出": {
+    "pt": ["2x", "2 vezes", "dobro"],
+    "evidence": "PT-BR double-output wording variants"
+  },
+  "2倍": {
+    "pt": ["2x", "2 vezes", "dobro"],
+    "evidence": "PT-BR 2x wording variants"
+  },
+  "20个": {
+    "pt": ["20"],
+    "evidence": "Chinese classifier 个 is absent from PT-BR; numeric identity is language-independent"
+  },
+  "40个": {
+    "pt": ["40"],
+    "evidence": "Chinese classifier 个 is absent from PT-BR; numeric identity is language-independent"
+  },
+  "晶蝶": {
+    "pt": ["Borboleta de Cristal", "Borboletas de Cristal"],
+    "evidence": "Genshin TextMap PT uses Borboleta de Cristal"
+  },
+  "装置": {
+    "pt": ["dispositivo", "mecanismo"],
+    "evidence": "Genshin TextMap PT paired phrases use dispositivo/mecanismo"
+  },
+  "挂起来吧": {
+    "pt": ["Pendure-o.", "Pendure-o"],
+    "evidence": "Exact TextMap context: 挂起来吧。 -> Pendure-o."
+  },
+  "申请造访": {
+    "pt": ["Inscrever-se para visitar o Bule de Relachá", "Se registrar para visitar o Bule de Relachá"],
+    "evidence": "TextMap PT Bule visit permission phrases"
+  },
+  "申請造訪": {
+    "pt": ["Inscrever-se para visitar o Bule de Relachá", "Se registrar para visitar o Bule de Relachá"],
+    "evidence": "Traditional-Chinese alias of 申请造访"
   }
 }
