@@ -1,5 +1,5 @@
 {
-  "strict_functional_cjk_count": 94,
+  "strict_functional_cjk_count": 87,
   "literal_frequency": {
     "委託": 3,
     "委": 3,
@@ -8,9 +8,6 @@
     "20个": 2,
     "40个": 2,
     "挂起来吧": 2,
-    "晶蝶": 2,
-    "诱捕": 2,
-    "装置": 2,
     "对局胜利": 2,
     "对局失败": 2,
     "申请造访": 2,
@@ -41,7 +38,6 @@
     "其实": 1,
     "紊乱平息": 1,
     "联机合奏": 1,
-    "小道": 1,
     "初始手牌": 1,
     "重投骰子": 1,
     "出战角色": 1,
@@ -81,7 +77,6 @@
   },
   "file_frequency": {
     "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js": 10,
-    "repo/js/CrystalflyTrap/main.js": 7,
     "repo/js/使用历练点完成每日委托/main.js": 6,
     "repo/js/AutoPickLitter/main.js": 5,
     "repo/js/DSTCG/main.js": 5,
@@ -321,48 +316,6 @@
       "line": 2075,
       "literal": "联机合奏",
       "source": "if (ocrResult && ocrResult.text.includes(\"联机合奏\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 48,
-      "literal": "小道",
-      "source": "if (!res.text.includes(\"小道\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 74,
-      "literal": "晶蝶",
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 74,
-      "literal": "诱捕",
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 74,
-      "literal": "装置",
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 137,
-      "literal": "晶蝶",
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 137,
-      "literal": "诱捕",
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 137,
-      "literal": "装置",
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
     },
     {
       "path": "repo/js/DSTCG/main.js",
