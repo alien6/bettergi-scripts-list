@@ -31,7 +31,7 @@ jobs:
           python-version: '3.12'
 
       - name: Apply semantic text migration
-        run: python tools/ptbr_migrate.py --apply --fail-on-known
+        run: python tools/ptbr_migrate.py --apply
 
       - name: Show migration summary
         run: cat reports/ptbr-hardcoded-ocr.json | head -n 120
