@@ -11,9 +11,9 @@ export async function checkHolyRelicsKey(threshold = 400) {
     // const threshold = settings.threshold || 100  // 注释掉的阈值设置代码
     await openBag()  // 打开背包
     await sleep(ms)
-    const textFind = await findText((genshin.getText ? genshin.getText("artifact") : "圣遗物"));  // 查找(genshin.getText ? genshin.getText("artifact") : "圣遗物")文本
+    const textFind = await findText((genshin.getText ? genshin.getText("artifact") : "圣遗物"));  // 查找"圣遗物"文本
     log.debug("textFind:" + textFind)  // 记录查找结果
-    if (textFind === null) {  // 如果未找到(genshin.getText ? genshin.getText("artifact") : "圣遗物")文本
+    if (textFind === null) {  // 如果未找到"圣遗物"文本
         await sleep(ms)  // 等待1秒
         log.info("进入圣遗物背包")  // 记录准备进入圣遗物背包
         // 点击圣遗物背包

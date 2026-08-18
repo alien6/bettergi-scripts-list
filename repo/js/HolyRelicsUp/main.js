@@ -817,7 +817,7 @@ async function templateMatchHolyRelicsKnapsack() {
     let saint_relic_backpack_selected = getJsonPath('saint_relic_backpack_selected', false)
     let templateJson = {
         path_base: saint_relic_backpack_selected.path,
-        text: saint_relic_backpack_selected.name,               // 要识别的文本内容，即(genshin.getText ? genshin.getText("artifact") : "圣遗物")三个字
+        text: saint_relic_backpack_selected.name,               // 要识别的文本内容，即"圣遗物"三个字
         type: saint_relic_backpack_selected.type,
         x: 0,                       // 识别区域的起始x坐标，设为0表示从屏幕最左侧开始
         y: 0,                       // 识别区域的起始y坐标，设为0表示从屏幕最顶部开始
@@ -828,7 +828,7 @@ async function templateMatchHolyRelicsKnapsack() {
     let holyRelicsKnapsack = templateMatchFindByJson(templateJson)
     await wait(ms)
     if (!isExist(holyRelicsKnapsack)) {
-        // templateJson.text = (genshin.getText ? genshin.getText("artifact") : "圣遗物")
+        // templateJson.text = "圣遗物"
         let holy_relic = getJsonPath('holy_relic')
         templateJson.text = holy_relic.name
         templateJson.type = holy_relic.type

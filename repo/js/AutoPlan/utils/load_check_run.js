@@ -955,7 +955,7 @@ class Boss extends Base {
             //         break;
             //     } catch (e) {
             //         const errorMessage = e.message
-            //         if (errorMessage.includes((genshin.getText ? genshin.getText("revive") : "复活"))) {
+            //         if (errorMessage.includes("复活")) {
             //             continue;
             //         }
             //         if (!config.run.exclude_run_exception || config.run.loop_plan) {//排除异常 与循环计划互斥

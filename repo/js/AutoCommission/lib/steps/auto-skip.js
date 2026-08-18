@@ -282,8 +282,8 @@ StepProcessorLoader.register("对话", async function (stepData, context) {
 2. 带优先选项的用法：
 {
   "type": "AutoSkip",
-  "priorityOptions": ["帮助", "同意", (genshin.getText ? genshin.getText("confirm") : "确认")],
-  "note": "优先点击包含'帮助'、'同意'、(genshin.getText ? genshin.getText("confirm") : "确认")的选项"
+  "priorityOptions": ["帮助", "同意", "确认"],
+  "note": "优先点击包含'帮助'、'同意'、"确认"的选项"
 }
 
 3. 带NPC白名单的用法：
@@ -311,7 +311,7 @@ StepProcessorLoader.register("对话", async function (stepData, context) {
 {
   "type": "AutoSkip",
   "npcWhiteList": ["委托发布者", "任务NPC"],
-  "priorityOptions": ["帮助", (genshin.getText ? genshin.getText("commission") : "委托"), "任务"],
+  "priorityOptions": ["帮助", "委托", "任务"],
   "blacklist": ["拒绝", "离开"],
   "priorityIcons": ["icon_quest.png"],
   "note": "完整配置：NPC白名单优先级最高，然后是任务相关选项，避免拒绝类选项"
