@@ -9,6 +9,7 @@ on:
       - tools/ptbr_apply_textmap.py
       - tools/ptbr_audited_literals.json
       - tools/ptbr_manual_fixes.py
+      - tools/ptbr_targeted_regression.py
       - tools/ptbr_cleanup.py
       - tools/ptbr_strict_scan.py
       - reports/ptbr-textmap-resolved.json
@@ -45,8 +46,24 @@ jobs:
       - name: Apply audited TextMap mappings
         run: python tools/ptbr_apply_textmap.py
 
+      - name: RED - record targeted regressions before fixes
+        shell: bash
+        run: |
+          set +e
+          python tools/ptbr_targeted_regression.py --report reports/ptbr-targeted-before.json
+          code=$?
+          set -e
+          if [ "$code" -eq 0 ]; then
+            echo "Expected targeted regression check to be RED before fixes, but it already passed."
+          else
+            echo "RED confirmed: targeted language-dependent paths are still present before fixes."
+          fi
+
       - name: Apply targeted language-independent fixes
         run: python tools/ptbr_manual_fixes.py
+
+      - name: GREEN - require targeted regressions to be fixed
+        run: python tools/ptbr_targeted_regression.py --report reports/ptbr-targeted-after.json
 
       - name: Clean comments, settings and newline noise
         run: python tools/ptbr_cleanup.py
@@ -55,7 +72,7 @@ jobs:
         run: python tools/ptbr_strict_scan.py
 
       - name: Validate Python utilities
-        run: python -m py_compile tools/ptbr_migrate.py tools/ptbr_apply_textmap.py tools/ptbr_manual_fixes.py tools/ptbr_cleanup.py tools/ptbr_strict_scan.py
+        run: python -m py_compile tools/ptbr_migrate.py tools/ptbr_apply_textmap.py tools/ptbr_manual_fixes.py tools/ptbr_targeted_regression.py tools/ptbr_cleanup.py tools/ptbr_strict_scan.py
 
       - name: Validate manifests
         run: |
@@ -79,6 +96,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add bettergi.d.ts repo/js reports/ptbr-hardcoded-ocr.json reports/ptbr-strict-ocr.json
+          git add bettergi.d.ts repo/js reports/ptbr-hardcoded-ocr.json reports/ptbr-strict-ocr.json reports/ptbr-targeted-before.json reports/ptbr-targeted-after.json
           git commit -m "chore: apply audited PT-BR script migration"
           git push origin HEAD:feature/pt-br-support
