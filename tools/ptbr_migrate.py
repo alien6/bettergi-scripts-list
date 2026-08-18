@@ -28,7 +28,7 @@ REPORT_PATH = ROOT / "reports" / "ptbr-hardcoded-ocr.json"
 # Keys must match BetterGenshinImpact.Core.Localization.GameTextKey.
 SEMANTIC_LITERALS = {
     "确认": "confirm",
-    "确定": "confirm",
+    "确定": "ok",
     "取消": "cancel",
     "退出秘境": "exit_domain",
     "退出挑战": "exit_challenge",
