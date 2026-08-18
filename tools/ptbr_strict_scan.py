@@ -12,15 +12,19 @@ SCRIPTS = ROOT / "repo" / "js"
 REPORT = ROOT / "reports" / "ptbr-strict-ocr.json"
 
 STRING = re.compile(r"(?P<q>['\"])(?P<v>[^'\"\r\n]*[\u3400-\u4dbf\u4e00-\u9fff][^'\"\r\n]*)(?P=q)")
-DIRECT_CALL = re.compile(r"(?:findText(?:AndClick)?|OcrMatch|chooseTalkOption|ChooseTalkOption)\s*\([^;\r\n]*$", re.I)
-OCR_METHOD = re.compile(r"(?:\.text|ocr|recogn|result|res|find|detected|detector|ocrText|recognizedText)[\w.$?]*\s*\.\s*(?:includes|contains|indexOf|startsWith|endsWith)\s*\([^\r\n]*$", re.I)
-OCR_COMPARE = re.compile(r"(?:\.text|ocr|recogn|result|res|find|detected)[\w.$?]*\s*(?:===|==|!==|!=)\s*$", re.I)
+DIRECT_CALL = re.compile(r"(?:findText(?:AndClick)?|OcrMatch|chooseTalkOption|ChooseTalkOption|waitAndFindText|waitForOcrMatch)\s*\([^;\r\n]*$", re.I)
+OCR_EXPR = r"(?:[A-Za-z_$][\w$?.\[\]]*\.text|ocr[\w$?.\[\]]*|result\d*[\w$?.\[\]]*|results[\w$?.\[\]]*|res\d*[.$?\[\]A-Za-z0-9_]*|resList[\w$?.\[\]]*|findResult[\w$?.\[\]]*|recognitionResult[\w$?.\[\]]*|recognizedText[\w$?.\[\]]*|detectedText[\w$?.\[\]]*)"
+OCR_METHOD = re.compile(OCR_EXPR + r"\s*\.\s*(?:includes|contains|indexOf|startsWith|endsWith)\s*\([^\r\n]*$", re.I)
+OCR_COMPARE = re.compile(OCR_EXPR + r"\s*(?:===|==|!==|!=)\s*$", re.I)
 GENERATED_FALLBACK = re.compile(r"\(genshin\.getText\s*\?\s*genshin\.getText\([^\r\n)]*\)\s*:\s*$", re.I)
+IGNORE_CALL_PREFIX = re.compile(r"(?:log|Log)\.(?:info|debug|warn|warning|error)\([^\r\n]*$|notification\.[A-Za-z]+\([^\r\n]*$", re.I)
 RESOLVED_LITERAL_API = (
     'genshin.getTextLiteral ?',
     'genshin.getTextLiterals ?',
     'genshin.textContainsLiteral ?',
     'genshin.textEqualsLiteral ?',
+    'genshin.textStartsWithLiteral ?',
+    'genshin.textEndsWithLiteral ?',
 )
 
 
@@ -54,11 +58,11 @@ def scan(path:Path):
         if inside(m.start(),comments): continue
         ls=text.rfind('\n',0,m.start())+1; le=text.find('\n',m.end()); le=len(text) if le<0 else le
         prefix=text[ls:m.start()]; suffix=text[m.end():le]; line=text[ls:le]
-        if 'settings.' in line or any(marker in line for marker in RESOLVED_LITERAL_API) or GENERATED_FALLBACK.search(prefix[-220:]):
+        if 'settings.' in line or any(marker in line for marker in RESOLVED_LITERAL_API) or GENERATED_FALLBACK.search(prefix[-220:]) or IGNORE_CALL_PREFIX.search(prefix[-260:]):
             continue
-        direct=bool(DIRECT_CALL.search(prefix[-350:]))
-        method=bool(OCR_METHOD.search(prefix[-350:]))
-        compare=bool(OCR_COMPARE.search(prefix[-350:])) or bool(re.match(r"\s*(?:===|==|!==|!=)",suffix) and re.search(r"(?:\.text|ocr|recogn|result|res|find|detected)",prefix,re.I))
+        direct=bool(DIRECT_CALL.search(prefix[-450:]))
+        method=bool(OCR_METHOD.search(prefix[-450:]))
+        compare=bool(OCR_COMPARE.search(prefix[-450:]))
         if not (direct or method or compare): continue
         findings.append({'path':path.relative_to(ROOT).as_posix(),'line':text.count('\n',0,m.start())+1,'literal':m.group('v'),'source':line.strip()[:500]})
     return findings
