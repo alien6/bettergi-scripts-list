@@ -1,0 +1,3068 @@
+{
+  "source": "MTAlexKen/Genshin-resources exact shared TextMap hash; CHS phrase contains unresolved literal",
+  "literal_count": 79,
+  "with_context_count": 42,
+  "contexts": {
+    "委託": [],
+    "委": [
+      {
+        "hash": "2203128568",
+        "zh": "完成淮安的委托",
+        "pt": "Conclua a missão de Huai'an"
+      },
+      {
+        "hash": "1587950002",
+        "zh": "岚姐和我说的「让冒险家乖乖接受委托的秘诀」果然有用…",
+        "pt": "O método secreto que a Lan me ensinou para \"convencer aventureiros a aceitar missões com bom grado\" realmente funcionou..."
+      },
+      {
+        "hash": "2812604850",
+        "zh": "那就辛苦你去和委托人胡塞尼先生谈一谈了。",
+        "pt": "Nesse caso, deixarei a questão de entrar em contato com o Sr. Hosseini com você."
+      },
+      {
+        "hash": "96663986",
+        "zh": "啊，请留步！顺便…如果你同意接下这个委托的话，报酬请直接找沐宁商议吧。",
+        "pt": "Espere, espere um momento! Há mais uma coisa. Se você aceitar essa comissão, basta negociar seu pagamento diretamente com Muning."
+      },
+      {
+        "hash": "286790523",
+        "zh": "求助：\\n我收到线报，<color=#3399CC>八酝岛</color>上有异动，本来以为是叛军又有新动向。\\n原来只是<color=#3399CC>海乱鬼与浮浪人</color>抱团作乱，既然如此，便无需大张旗鼓前去讨伐。\\n故而，我在此发布委托，征召一位勇士前去驱除贼子，事成必有报酬。",
+        "pt": "Ajuda:\\nEu recebi um relatório de que estava ocorrendo problemas na <color=#3399CC>Ilha Yashiori</color>, e inicialmente pensei que poderiam ser os cavaleiros errantes agindo novamente.\\nContudo, eram apenas <color=#3399CC>Kairagi e Vagantes</color> se unindo para causar problemas. Sendo assim, não vejo necessidade de agir contra eles tão abertamente.\\nEntão, eu coloquei aqui uma missão para um bravo guerreiro acabar com eles. A recompensa será generosa, obviamente."
+      },
+      {
+        "hash": "4202892155",
+        "zh": "勘定奉行府上尚在评议接班人，议定之前，勘定之事务暂由大御所殿下亲委之人直接督行。",
+        "pt": "Enquanto a Comissão Kanjou debate a questão de seu sucessor, as funções da Comissão serão desempenhadas por um representante pessoal de Sua Excelência."
+      },
+      {
+        "hash": "1298279778",
+        "zh": "我想委托各位的就是这件事。你们看，能不能帮着把<color=#00E1FFFF>客栈附近</color>的<color=#00E1FFFF>陨石</color>清一清？",
+        "pt": "Eu gostaria de pedir a todos, vocês podem nos ajudar a nos livrarmos dos <color=#00E1FFFF>meteoritos</color> perto do <color=#00E1FFFF>albergue</color>?"
+      },
+      {
+        "hash": "3146346850",
+        "zh": "所以我想，如果请一位生存能力优更优秀、冒险经验也更丰富的冒险家，应该能完美解决这份委托。",
+        "pt": "Por isso eu pensei que deveríamos enviar um aventureiro com habilidades de sobrevivência e experiência excepcionais, e pedir que completasse essa missão."
+      },
+      {
+        "hash": "3668594018",
+        "zh": "这件事很影响我家的生意，我已经委托了凯瑟琳，既然你们要寻找委托，能不能就帮我这个忙呢？",
+        "pt": "Este assunto tem tido um grande impacto em nossos negócios. Como já submeti a comissão à Katheryne, talvez você possa considerar a possibilidade de nos ajudar."
+      },
+      {
+        "hash": "393385314",
+        "zh": "我是陪着安娜出来执行委托的。",
+        "pt": "Estou acompanhando a Anna em sua comissão."
+      },
+      {
+        "hash": "1953963154",
+        "zh": "怎么又是这些委托…",
+        "pt": "Como é que só tem missões desse tipo..."
+      },
+      {
+        "hash": "2290690194",
+        "zh": "当然啦！这种程度的委托，对我们来说是小菜一碟！",
+        "pt": "Ah qual é! Uma comissão deste nível é facílimo para a gente!"
+      },
+      {
+        "hash": "2956227730",
+        "zh": "有什么委托吗？",
+        "pt": "Você tem uma missão para mim?"
+      },
+      {
+        "hash": "3407348882",
+        "zh": "最近，对于一些难度比较大的委托，比起委托协会，璃月港的居民们似乎更愿意去找千岩军帮忙。",
+        "pt": "Recentemente, para aquelas missões mais difíceis, os cidadãos preferem pedir ajuda dos Millelith ao invés da Guilda."
+      },
+      {
+        "hash": "1627414274",
+        "zh": "那么，委托算是完成了？",
+        "pt": "Bem, a comissão está completa, então?"
+      },
+      {
+        "hash": "2024945410",
+        "zh": "旅行者，能请你再陪我去执行一下委托吗？我还有事想要请教你。",
+        "pt": "Viajante, você se importaria de vir comigo de novo? Ainda tenho algo que gostaria de te perguntar."
+      },
+      {
+        "hash": "2397167362",
+        "zh": "虽然只是素不相识之人的委托，希望您务必考虑一下。多谢了。",
+        "pt": "Apesar de ser uma missão dada por um estranho, espero que você possa considerá-la. Agradeço-lhe muito se a fizer."
+      },
+      {
+        "hash": "2902989570",
+        "zh": "你好，你是看到我的委托了吧。怎么样，你准备好一份杏仁豆腐了吗？",
+        "pt": "Olá, você viu minha missão, não foi? Então, você já preparou 1 Tofu de Amêndoas?"
+      },
+      {
+        "hash": "3979442946",
+        "zh": "也就是说，场上场下共十三位评委，十三张有效票将分别投给两位选手。得票高者，就是今天的冠军！",
+        "pt": "Isso faz um total de treze juízes, com treze votos. Cada juiz votará pelo seu finalista favorito, e aquele que receber mais votos será o vencedor de hoje!"
+      },
+      {
+        "hash": "2715630351",
+        "zh": "不记得是第八个还是第九个刚完成的时候，至冬国总部那边发来消息，说我刚刚完成了两个「S级」的委托。",
+        "pt": "Então, quando terminei a oitava... Ou foi a minha nona aventura? Enfim, eu tinha acabado de terminar e, em seguida, recebi a informação da Divisão de Snezhnaya que aparentemente eu havia completado duas aventuras de categoria S."
+      }
+    ],
+    "分钟": [
+      {
+        "hash": "1263831928",
+        "zh": "行走在花见坂的街道上，很难不注意到一位名为「荒泷一斗」的鬼族青年。\\n姑且不论头顶醒目的鬼角与充满穿透力的大嗓门，仅凭那副在孩子群中兴致盎然参与游戏的模样，就足以让荒泷一斗从芸芸众生中脱颖而出。\\n而且，对于工匠云集、终日忙碌的花见坂来说，他也实在是清闲过头了。\\n一斗自称「荒泷派初代目头领」，在某次无伤大雅的街头斗殴后，他曾向前来调查的天领奉行官员解释过这份职业，但两分钟后就被对方打断，并记录下「无职」二字。\\n「无职」一说并不准确。因为除了不被幕府认可的帮派事务之外，一斗也会做些零工维持生计，工作频率为做一休三，十分稳定。\\n就算要写，也应该写「四分之三无职」才对。",
+        "pt": "Ao caminhar por Hanamizaka, é difícil não notar um jovem do povo oni chamado Arataki Itto.\\nNão se preocupe com seus chifres ou voz penetrante que se destacam muito entre os demais — só de ver ele se juntando entusiasticamente para brincar de jogos infantis é suficiente para distingui-lo da multidão.\\nDe qualquer forma, sua óbvia falta de coisas para fazer contrasta fortemente com a própria Hanamizaka, onde os artesãos se reúnem em massa e se ocupam o dia inteiro.\\nItto afirma ser o \"primeiro e maior chefe da Gangue Arataki\", cujas responsabilidades e deveres ele tentou explicar a alguns funcionários da Comissão Tenryou quando eles vieram até ele para investigar uma briga de rua bastante inofensiva. Infelizmente, eles o interromperam não dois minutos durante a explicação antes de defini-lo como \"desempregado\".\\nEssa designação não é exatamente precisa, é claro: além das atividades da Gangue, que o Shogunato não reconhece, Itto também faz alguns bicos para se manter firme, geralmente trabalhando um dia antes de tirar três dias de folga.\\nComo tal, uma designação mais precisa deveria ser \"três quartos desempregado\"."
+      },
+      {
+        "hash": "38265914",
+        "zh": "然后，把裹了面粉的禽肉片放进油锅翻炸…唔，三四分钟。再添火升温，直到表皮金黄，就可以捞出来了。",
+        "pt": "Em seguida, coloque as fatias de frango empanadas na farinha na frigideira e frite-as... Bem, por três a quatro minutos. Aumente o fogo até que a pele fique dourada. Então você pode tirá-las."
+      },
+      {
+        "hash": "1956123978",
+        "zh": "不足1分钟",
+        "pt": "Menos de 1 minuto"
+      },
+      {
+        "hash": "2572167496",
+        "zh": "3分钟内完成挑战",
+        "pt": "Complete o desafio em pelo menos 3 minutos"
+      },
+      {
+        "hash": "690312487",
+        "zh": "最近的话，我比较喜欢怪谈故事，那些千变万化的妖怪实在是神奇。之前的话，对忍术也有不小的兴趣。嗯？三分钟热度？…不，不是这样的！",
+        "pt": "Ultimamente gosto de histórias sobrenaturais. Especialmente aquelas sobre metamorfoses youkai — são tão fascinantes. Antes disso, eu costumava gostar de histórias de ninjutsu, e antes disso... Hmm? Você acha que não sou dedicado o suficiente? N—Não! Não é isso, você me entendeu errado!"
+      },
+      {
+        "hash": "2122849597",
+        "zh": "《蒙德地理知多少》《一分钟看懂蒙德冒险史》…有了这些，就能获得更多知识了吧。",
+        "pt": "\"Conhecendo a Geografia de Mondstadt\", \"Uma História de Aventuras de Um minuto em Mondstadt\"... Há tanto que eu posso aprender com eles."
+      },
+      {
+        "hash": "325339057",
+        "zh": "再歇五分钟…",
+        "pt": "Só... Só mais um..."
+      },
+      {
+        "hash": "2288294313",
+        "zh": "用了{ChallengeCurrValue10}分钟就飞到了，真厉害。",
+        "pt": "Você usou {ChallengeCurrValue10} minuto(s) para chegar lá, incrível!"
+      },
+      {
+        "hash": "2457066704",
+        "zh": "{0}分钟",
+        "pt": "{0}m"
+      },
+      {
+        "hash": "3698630576",
+        "zh": "这是一张精细到分钟的作息表。\\n从清晨跟安柏一起晨跑并顺路为丽莎购置早饭，到夜间亲手洗衣服并把换洗物件收纳整齐，大小琐事均有条目，可见时间安排得相当紧凑。\\n每件做完的事情上都有勾号标记，因外力延误的事项则备注了详细原因。\\n在因身体不适未能按时完成的「蒙德城公共设施评审报告」条目后，备注了「凌晨3时已完成，取消本月末的书籍购置奖励。」\\n琴有时想，这张表格的灵感来源，或许是十年前母亲为自己绘制的训练表。",
+        "pt": "Este cronograma é preciso até nos minutos.\\nDe uma corrida matinal com a Amber, seguida de um café da manhã com a Lisa no caminho, até lavar a sua própria roupa à mão e separar suas roupas à noite - todas as coisas, grandes e pequenas, estão incluídas no cronograma da Jean.\\nTodos os itens concluídos são marcados, enquanto os atrasados devido a fatores externos apresentam os porquês e motivos detalhados.\\nPróximo ao item \"Revisão das Instalações Públicas de Mondstadt\" - atrasado devido a um surto de doença - está escrito o seguinte \"concluído às 3 da manhã, o prêmio de compra de livros no final do mês foi cancelado.\" \\n Jean às vezes pensa que a inspiração para esse cronograma pode ter sido o programa de treinamento que sua mãe elaborou para ela há dez anos."
+      },
+      {
+        "hash": "935171972",
+        "zh": "中断后，十分钟内无法再次开始棋局",
+        "pt": "Ao encerrar a partida no intermediário, você será incapaz de reiniciar a partida pelos próximos 10 minutos"
+      },
+      {
+        "hash": "1013684375",
+        "zh": "{0}小时{1}分钟",
+        "pt": "{0} h(s) {1} m(s)"
+      },
+      {
+        "hash": "2185044046",
+        "zh": "<color=#D3BC8EFF>【规则】</color>\\n象征着元素循环不顺、地脉淤积的概念结晶。完成特定挑战后，将会显现出来。用「原粹树脂」激活「地脉之花」，就能获取地脉中对应着这些挑战的秘宝。\\n原粹树脂会随时间恢复，每{0}分钟恢复1点。\\n当前拥有的原粹树脂达到或超过可恢复上限时，原粹树脂将不再随时间恢复。\\n原粹树脂可以消耗原石补充。\\n <color=#D3BC8EFF>【奖励】</color>\\n激活不同的地脉之花，可以获得圣遗物、摩拉、养成素材等各种奖励。",
+        "pt": "<color=#D3BC8EFF>Regras</color>\\nA Flor de Linha Ley são cristais formados em depósitos de Linhas Ley devido ao fluxo obstruído de energia elemental. Eles aparecem após completar desafios específicos. Use a Resina Original nas Flores de Linha Ley para coletar a premiação do desafio.\\nResina Original se regenera com o tempo: 1 Resina Original é recuperada a cada {0} minuto(s).\\nQuando a quantidade máxima de Resina Original é alcançada ou excedida, ela não irá mais se regenerar.\\nVocê pode comprar Resina Original usando Gemas Essenciais.\\n<color=#D3BC8EFF>Premiações</color>\\nUse Resina Original nas Flores de Linha Ley para receber artefatos, Mora e materiais de aumento de nível."
+      },
+      {
+        "hash": "339994887",
+        "zh": "{0}分钟后过期",
+        "pt": "Expira em {0} minuto(s)"
+      },
+      {
+        "hash": "3744328127",
+        "zh": "芭芭拉处于队伍后台时，队伍中自己的角色倒下时，则立即：\\n·复苏该角色；\\n·将该角色生命值恢复至100%。\\n该效果每15分钟只能触发一次。",
+        "pt": "Quando a Barbara não estiver no campo de batalha e o próprio personagem da equipe for abatido:\\nRevive automaticamente este personagem.\\nRegenera totalmente a Vida deste personagem até 100%.\\nEste efeito pode ser ativado uma vez a cada 15 mins."
+      },
+      {
+        "hash": "3309819069",
+        "zh": "二十分钟后…",
+        "pt": "20 minutos depois..."
+      },
+      {
+        "hash": "269913516",
+        "zh": "在10分钟内击败讨伐目标「{0}」",
+        "pt": "Derrote este Alvo em menos de 10 minutos: {0}"
+      },
+      {
+        "hash": "3568506551",
+        "zh": "{0}分钟",
+        "pt": "{0}m"
+      },
+      {
+        "hash": "3097802410",
+        "zh": "这么快就回来了，还没到一分钟就全部解决了，身手不凡，身手不凡呐，哈哈哈。",
+        "pt": "Tão cedo? Em menos de um minuto, inclusive! Você é realmente bom! Muito bom mesmo, hahaha!"
+      },
+      {
+        "hash": "2743176480",
+        "zh": "二十分钟后…",
+        "pt": "20 minutos depois..."
+      }
+    ],
+    "秒": [
+      {
+        "hash": "1891883153",
+        "zh": "护盾强效提升<color=#99FFFFFF>25%</color>。攻击命中后的8秒内，攻击力提升<color=#99FFFFFF>5%</color>。该效果至多可叠加5层，每0.3秒只能触发一次。此外，处于护盾庇护下时，该效果的攻击力提升效果提高100%。",
+        "pt": "Aumenta a força do Escudo em <color=#99FFFFFF>25%</color>. Acertar ataques em inimigos aumenta o ataque em <color=#99FFFFFF>5%</color> por 8s. Acumula até 5 vezes. Pode ocorrer apenas uma vez a cada 0.3s. Enquanto estiver protegido por um escudo, esse efeito de ataque é aumentado em 100%."
+      },
+      {
+        "hash": "1947253905",
+        "zh": "施放元素战技或元素爆发后的10秒内，队伍中所有角色受治疗效果加成提高20%。",
+        "pt": "Ao usar uma Habilidade Elemental ou Explosão, aumenta a cura recebida por todos os membros da equipe em 20% por 10s."
+      },
+      {
+        "hash": "2919406737",
+        "zh": "攻击造成暴击时，有<color=#99FFFFFF>70%</color>的几率产生少量元素微粒，能为角色恢复6点元素能量。该效果每<color=#99FFFFFF>10.5</color>秒只能触发一次。",
+        "pt": "Os Acertos Críticos possuem <color=#99FFFFFF>70%</color> de chance de gerar uma pequena quantidade de Partícula Elemental, que irá regenerar 6 de Energia para o Personagem. Pode ocorrer uma vez a cada <color=#99FFFFFF>10.5</color>s."
+      },
+      {
+        "hash": "3429869713",
+        "zh": "在240秒内击败1名敌人",
+        "pt": "Derrotar 1 inimigos em 240s."
+      },
+      {
+        "hash": "3471395985",
+        "zh": "触发超载、超导、感电或雷元素扩散反应后的12秒内，攻击力提高<color=#99FFFFFF>40%</color>。",
+        "pt": "Depois de 12s após a ativação da reação de Sobrecarga, Supercondutor, Redemoinho Electro, aumenta o ATQ em <color=#99FFFFFF>40%</color>."
+      },
+      {
+        "hash": "3559833745",
+        "zh": "施放元素战技后，普通攻击和重击命中时会在小范围内额外造成<color=#99FFFFFF>105%</color>攻击力的伤害。该效果持续15秒，伤害每3秒只能触发一次。",
+        "pt": "Após usar e acertar uma Habilidade Elemental, Normal ou Ataque Carregado, causa Dano de ATQ adicional de <color=#99FFFFFF>105%</color> em uma área pequena por 15s. Pode ser ativado uma vez a cada 3s."
+      },
+      {
+        "hash": "3569360017",
+        "zh": "挑战时间不得超过300秒。",
+        "pt": "O tempo de desafio não pode exceder 300s."
+      },
+      {
+        "hash": "3727748241",
+        "zh": "在240秒内击败20名敌人",
+        "pt": "Derrotar 20 inimigos em 240s."
+      },
+      {
+        "hash": "433843345",
+        "zh": "「式札·呪水」的持续时间延长{0}秒。",
+        "pt": "A duração do Shikifuda: Águas Mágicas é estendida em {0}s."
+      },
+      {
+        "hash": "3052994434",
+        "zh": "冷却时间|{param6:F1}秒",
+        "pt": "Recarga|{param6:F1}s"
+      },
+      {
+        "hash": "3268462466",
+        "zh": "在%2%秒内击败怪物",
+        "pt": "Derrote os oponentes dentro de %2%s"
+      },
+      {
+        "hash": "3329050498",
+        "zh": "在%2%秒内击败%1%只怪物",
+        "pt": "Derrote %1% oponente(s) dentro de %2%s"
+      },
+      {
+        "hash": "3344021378",
+        "zh": "在%2%秒内击败怪物",
+        "pt": "Derrote os oponentes dentro de %2%s"
+      },
+      {
+        "hash": "3621409666",
+        "zh": "当前场上角色视为普通攻击伤害的攻击命中敌人后，有50%的几率在命中敌人的位置释放冲击波，在范围内造成真实伤害。每0.3秒至多通过这种方式释放一次冲击波。",
+        "pt": "Quando o personagem ativo atingir inimigos com ataques que são considerados como Dano de Ataque Normal, há uma chance de 50% de lançar uma onda de choque na posição do inimigo, infligindo Dano Real em AdE. É possível lançar uma onda de choque a cada 0.3s dessa forma."
+      },
+      {
+        "hash": "4240729986",
+        "zh": "点按冷却时间|{param6:F1}秒",
+        "pt": "Recarga do Pressionar|{param6:F1}s"
+      },
+      {
+        "hash": "511632258",
+        "zh": "在%2%秒内击败%1%名敌人",
+        "pt": "Derrote %1% inimigos dentro de %2% s"
+      },
+      {
+        "hash": "903818114",
+        "zh": "冷却时间|{param5:F1}秒",
+        "pt": "Tempo de Recarga|{param5:F1}s"
+      },
+      {
+        "hash": "1501461779",
+        "zh": "梦想一心持续时间|{param18:F1}秒",
+        "pt": "Duração do Musou Isshin|{param18:F1}s"
+      },
+      {
+        "hash": "503105811",
+        "zh": "梦想一心持续时间|{param18:F1}秒",
+        "pt": "Duração do Musou Isshin|{param18:F1}s"
+      },
+      {
+        "hash": "2718989988",
+        "zh": "提高当前场上角色的抗打断能力，并使角色受到的伤害降低50%，持续12秒。",
+        "pt": "Aumenta a resistência a interrupção do personagem ativo e diminui o Dano que eles sofrem em 50% durante 12s."
+      }
+    ],
+    "之花": [
+      {
+        "hash": "1034911618",
+        "zh": "我说错什么了？大家关于「风之花」的认识，就是这样的呀…",
+        "pt": "O que eu falei de errado? É isto que todos sabem sobre a Flor do Vento..."
+      },
+      {
+        "hash": "1100007298",
+        "zh": "哦，他们认为风之花是蒲公英，这应该是目前最主流的观点了。",
+        "pt": "Ah, eles acreditam que a Flor do Vento é um Dandelion. Hoje em dia, esse é o ponto de vista predominante."
+      },
+      {
+        "hash": "1445714818",
+        "zh": "在我看来，只要愿意去相信，那么「风之花」便是存在的…",
+        "pt": "Do meu ponto de vista só precisamos confiar na sua existência..."
+      },
+      {
+        "hash": "2343315108",
+        "zh": "磐陀裂生之花",
+        "pt": "Flor do Penhasco Rachado"
+      },
+      {
+        "hash": "4106526372",
+        "zh": "守护之花",
+        "pt": "Flor do Guarda"
+      },
+      {
+        "hash": "3250401140",
+        "zh": "夏祭之花",
+        "pt": "Flor do Festival de Verão"
+      },
+      {
+        "hash": "507171700",
+        "zh": "#<color=#D3BC8EFF>【规则】</color>\\n征讨领域中盘踞着异常强大的敌人。挑战成功后，可以获得极为丰厚的秘宝。\\n完成征讨领域时，需要在「地脉之花·征讨之花」处消耗「原粹树脂」来领取奖励。\\n激活地脉之花需要消耗60个原粹树脂。\\n每周开始时，会产生三次机会，使这些征讨之花所需的原粹树脂减半。\\n\\n<color=#D3BC8EFF>【重置】</color>\\n每周可以获取1次征讨领域的奖励。\\n每周一凌晨4点重置。{TIMEZONE}",
+        "pt": "#<color=#D3BC8EFF>Regras</color>\\nDomínio Dizimado contém oponentes estranhamente poderosos. Depois de completar com sucesso o desafio, você pode obter premiações abundantes.\\nPara receber esses prêmios, use a Resina Original nas Flores de Linha Ley - Flor da Punição.\\nRevitalizar as Flores de Linha Ley requer 60 Resinas Originais.\\nNo início de todas as semanas haverá 3 oportunidades para reduzir em metade a Resina necessária para essa Flor da Punição.\\n\\n<color=#D3BC8EFF>Reinicialização</color>\\nApenas uma premiação do Domínio Dizimado pode ser obtida por semana.\\nIsso reinicia às 04:00 toda segunda-feira. {TIMEZONE}"
+      },
+      {
+        "hash": "2838508492",
+        "zh": "流放者之花",
+        "pt": "Flor do Exilado"
+      },
+      {
+        "hash": "3065571276",
+        "zh": "无垢之花",
+        "pt": "Flor da Purificação"
+      },
+      {
+        "hash": "3100817356",
+        "zh": "宗室之花",
+        "pt": "Flor Real"
+      },
+      {
+        "hash": "670208972",
+        "zh": "守护之花",
+        "pt": "Flor do Guarda"
+      },
+      {
+        "hash": "4229745400",
+        "zh": "早已绝迹的冰川之花，霜结着点点冰露。孤高的勇士也曾为这朵鲜花折腰。",
+        "pt": "Uma espécie de flor de geleiras extinta há muito tempo atrás. Até mesmo o guerreiro mais arrogante, um dia, se curvou diante dela."
+      },
+      {
+        "hash": "3746344920",
+        "zh": "在劫难之日侥幸免受纷乱的践踏与紫之火的忿恨之摧，于惨象中幸存的雷色之花。",
+        "pt": "Não foi afetada pelas chamas ardentes de uma catástrofe destrutiva no passado. É uma flor remanescente de dias passados."
+      },
+      {
+        "hash": "442489723",
+        "zh": "激活地脉之花以收取秘宝。\\n\\n<size=24>激活将消耗<color=#E0902CFF> {0}个 {1}</color>，当前拥有的 {1}数量不足，需要消耗背包中的{2}进行补充，还是使用原石补充？</size>",
+        "pt": "Revitalize a Flor de Linha Ley para resgatar uma recompensa.\\n\\nSão necessários <size=24><color=#E0902CFF>{0} {1}</color>. Você não possui {1} suficientes. Comprar com {2} do seu Inventário ou com Gemas Essenciais?</size>"
+      },
+      {
+        "hash": "555949410",
+        "zh": "不知道这次的风花节，会由谁来向巴巴托斯大人献上「风之花」呢？",
+        "pt": "Quem será que fará as oferendas a Barbatos no Festival da Brisa Florescente desse ano?"
+      },
+      {
+        "hash": "4148165378",
+        "zh": "风花典礼快要开始了。风花节之星，选好属于你的「风之花」了吗？",
+        "pt": "A Cerimônia da Flor do Vento está começando. Como Estrela da Flor do Vento você já escolheu a Flor do Vento?"
+      },
+      {
+        "hash": "3779121008",
+        "zh": "盛开于磐陀巨岩的金石之花。花瓣随风轻摇，似有生机。",
+        "pt": "Flor de pedra dourada em plena floração. As pétalas balançam suavemente ao vento, parecendo estar vivas."
+      },
+      {
+        "hash": "3421259324",
+        "zh": "羁缠之花",
+        "pt": "Flor Envolvente"
+      },
+      {
+        "hash": "42467900",
+        "zh": "流放者之花",
+        "pt": "Flor do Exilado"
+      },
+      {
+        "hash": "4062903578",
+        "zh": "哦！与雷泽意见一致，「风之花」是刺刺的麻麻的钩钩果！",
+        "pt": "Oh! Você pensa o mesmo que Razor. A Flor do Vento será Gancho do Lobo, espinhoso e picante!"
+      }
+    ],
+    "20个": [
+      {
+        "hash": "3336351917",
+        "zh": "在璃月，完成20个大世界机关限时挑战（层岩巨渊另外计算）。",
+        "pt": "Conclua 20 desafios de mecanismo Contra o Tempo no Mundo Aberto em Liyue (contabilizados separadamente no Despenhadeiro)."
+      },
+      {
+        "hash": "1812257957",
+        "zh": "在其他玩家的世界中，采集20个地区特产。",
+        "pt": "Colete 20 especialidades regionais no mundo de um outro jogador"
+      },
+      {
+        "hash": "3846426789",
+        "zh": "在鹤观开启120个宝箱。",
+        "pt": "Abra 120 baús na Ilha Tsurumi."
+      },
+      {
+        "hash": "1552533613",
+        "zh": "20个料理食谱达到熟练。",
+        "pt": "Domine 20 Receitas."
+      },
+      {
+        "hash": "3179345125",
+        "zh": "在蒙德追随20个仙灵，并点亮仙灵之庭（龙脊雪山地区除外）。",
+        "pt": "Siga 20 Seelies em Mondstadt, e ilumine o Jardim de Seelie (Com exceção da Espinha do Dragão)"
+      },
+      {
+        "hash": "3888553682",
+        "zh": "完成20个料理制作",
+        "pt": "Cozinhe 20 pratos"
+      },
+      {
+        "hash": "3008728907",
+        "zh": "每一层阁的可击碎物的数量上限提升20个。",
+        "pt": "O número máximo de objetos destrutíveis em cada piso é aumentado em 20."
+      },
+      {
+        "hash": "1894109264",
+        "zh": "收集120个「霜噬碎屑」",
+        "pt": "Colete 120 Fragmentos de Gelo"
+      },
+      {
+        "hash": "745636477",
+        "zh": "在龙脊雪山追随20个温暖仙灵，并点亮仙灵之庭。",
+        "pt": "Siga 20 Seelies Quentes na Espinha do Dragão e ilumine o Jardim de Seelie"
+      },
+      {
+        "hash": "3979927838",
+        "zh": "击败20个开放世界BOSS，接触征讨之花并获得馈赠",
+        "pt": "Eliminar 20 Chefes de mundo aberto e as recompensas da Flor da Punição"
+      },
+      {
+        "hash": "1812196626",
+        "zh": "在一个洞天形态中，同时放置20个「乔木」或「灌木」类摆设",
+        "pt": "Coloque 20 Decorações de Árvores ou Arbustos em um único arranjo do Paraíso Mágico"
+      },
+      {
+        "hash": "2690069333",
+        "zh": "在璃月追随20个仙灵，并点亮仙灵之庭（层岩巨渊另外计算）。",
+        "pt": "Siga 20 Seelies em Liyue, e ilumine seus Jardins de Seelie (contabilizados separadamente no Despenhadeiro)."
+      },
+      {
+        "hash": "3117588",
+        "zh": "成功运输20个元素凝块。",
+        "pt": "Transporte 20 Coágulos Elementais."
+      },
+      {
+        "hash": "1920396610",
+        "zh": "「谒索雷痕」：累计获取「鸣雷纯晶」2220个",
+        "pt": "Colisão do Trovão: Obtenha um total de 2.220 Cristais do Trovão"
+      },
+      {
+        "hash": "3203051549",
+        "zh": "解锁20个鱼类图鉴。",
+        "pt": "Desbloqueie 20 tipos de peixe no Arquivo"
+      },
+      {
+        "hash": "1309565797",
+        "zh": "制作120个摆设。",
+        "pt": "Crie 120 Decorações"
+      },
+      {
+        "hash": "126809293",
+        "zh": "在稻妻的鸣神岛、神无冢与八酝岛，追上20个雷灵。",
+        "pt": "Siga 20 Seelies Electro na Ilha Narukami, Kannazuka e Ilha Yashiori na região de Inazuma."
+      }
+    ],
+    "40个": [
+      {
+        "hash": "4033279989",
+        "zh": "在稻妻的海祇岛与清籁岛开启40个宝箱。",
+        "pt": "Abra 40 baús na Ilha Watatsumi e Ilha Seirai em Inazuma."
+      },
+      {
+        "hash": "2752209213",
+        "zh": "在璃月，完成40个大世界机关限时挑战（层岩巨渊另外计算）。",
+        "pt": "Conclua 40 desafios de mecanismo Contra o Tempo no Mundo Aberto em Liyue (contabilizados separadamente no Despenhadeiro)."
+      },
+      {
+        "hash": "2944582773",
+        "zh": "在璃月追随40个仙灵，并点亮仙灵之庭（层岩巨渊另外计算）。",
+        "pt": "Siga 40 Seelies em Liyue, e ilumine seus Jardins de Seelie (contabilizados separadamente no Despenhadeiro)."
+      },
+      {
+        "hash": "3033475645",
+        "zh": "40个料理食谱达到熟练。",
+        "pt": "Domine 40 Receitas."
+      },
+      {
+        "hash": "2801365493",
+        "zh": "在「贵本之道-『玄此玉田』」中收获40个采集物。",
+        "pt": "Obtenha 40 itens em Um Caminho de Valor: Gen Kono Tamada"
+      },
+      {
+        "hash": "322205237",
+        "zh": "在蒙德追随40个仙灵，并点亮仙灵之庭（龙脊雪山地区除外）。",
+        "pt": "Siga 40 Seelies em Mondstadt, e ilumine o Jardim de Seelie (Com exceção da Espinha do Dragão)"
+      },
+      {
+        "hash": "3854442525",
+        "zh": "在渊下宫开启40个宝箱。",
+        "pt": "Abra 40 baús em Enkanomiya"
+      },
+      {
+        "hash": "2074538613",
+        "zh": "在稻妻的鸣神岛、神无冢与八酝岛，追上40个雷灵。",
+        "pt": "Siga 40 Seelies Electro na Ilha Narukami, Kannazuka e Ilha Yashiori na região de Inazuma."
+      },
+      {
+        "hash": "2140793669",
+        "zh": "在龙脊雪山开启40个宝箱。",
+        "pt": "Abra 40 baús na Espinha do Dragão"
+      },
+      {
+        "hash": "3048192485",
+        "zh": "在「贵本之道-『薿此芝田』」中收获40个采集物。",
+        "pt": "Obtenha 40 itens em Um Caminho de Valor: Negumi Shibada"
+      },
+      {
+        "hash": "142442589",
+        "zh": "在「贵本之道-『楚此渚田』」中收获40个采集物。",
+        "pt": "Obtenha 40 itens em Um Caminho de Valor: Chiyu Kono Nagata"
+      }
+    ],
+    "挂起来吧": [
+      {
+        "hash": "747241970",
+        "zh": "挂起来吧。",
+        "pt": "Pendure-o."
+      },
+      {
+        "hash": "2022187426",
+        "zh": "挂起来吧。",
+        "pt": "Pendure-o."
+      },
+      {
+        "hash": "2394351882",
+        "zh": "挂起来吧。",
+        "pt": "Pendure-o."
+      },
+      {
+        "hash": "756259594",
+        "zh": "挂起来吧。",
+        "pt": "Pendure-o."
+      },
+      {
+        "hash": "621872858",
+        "zh": "挂起来吧。",
+        "pt": "Pendure-o."
+      },
+      {
+        "hash": "2518588026",
+        "zh": "挂起来吧。",
+        "pt": "Pendure-o."
+      },
+      {
+        "hash": "3827398090",
+        "zh": "挂起来吧。",
+        "pt": "Pendure-o."
+      },
+      {
+        "hash": "1309014538",
+        "zh": "挂起来吧。",
+        "pt": "Pendure-o."
+      },
+      {
+        "hash": "4015455754",
+        "zh": "挂起来吧。",
+        "pt": "Pendure-o."
+      }
+    ],
+    "再见": [
+      {
+        "hash": "1885151106",
+        "zh": "再见。",
+        "pt": "Adeus."
+      },
+      {
+        "hash": "1931819906",
+        "zh": "再见。",
+        "pt": "Adeus."
+      },
+      {
+        "hash": "2290497410",
+        "zh": "再见。",
+        "pt": "Adeus."
+      },
+      {
+        "hash": "2705539970",
+        "zh": "那我们晚点再见！",
+        "pt": "Bem, te vejo mais tarde então!"
+      },
+      {
+        "hash": "2766294914",
+        "zh": "再见。",
+        "pt": "Adeus."
+      },
+      {
+        "hash": "289154946",
+        "zh": "再见。",
+        "pt": "Adeus."
+      },
+      {
+        "hash": "3501380482",
+        "zh": "再见。",
+        "pt": "Tchau."
+      },
+      {
+        "hash": "3996675970",
+        "zh": "#{PLAYERAVATAR#SEXPRO[INFO_MALE_PRONOUN_BIGBROTHER|INFO_FEMALE_PRONOUN_BIGSISTER]}再见！如果遇到我的兄弟和姐姐，帮我打个招呼噢！",
+        "pt": "#Adeus, {F#tia}{M#tio}! Se você encontrar nossos irmãos e irmãs, mande um oi para eles!"
+      },
+      {
+        "hash": "473151362",
+        "zh": "再见，真搞不懂你。",
+        "pt": "Não lhe entendo, mas adeus."
+      },
+      {
+        "hash": "2853160211",
+        "zh": "再见。",
+        "pt": "Adeus."
+      },
+      {
+        "hash": "4269127955",
+        "zh": "本以为回到蒙德就没机会再见到新鲜的蔷薇了…",
+        "pt": "Eu pensei que quando eu voltasse a Mondstadt, eu não teria mais chances de ver rosas frescas novamente."
+      },
+      {
+        "hash": "1232856498",
+        "zh": "会在「教令院」再见吗？",
+        "pt": "Voltaremos a nos encontrar na Academia?"
+      },
+      {
+        "hash": "1785479602",
+        "zh": "嗯…再见。",
+        "pt": "Adeus."
+      },
+      {
+        "hash": "2337233330",
+        "zh": "再见，要是我也能像五郎大将一样厉害…说笑了，哈哈！",
+        "pt": "Adeus. Se eu fosse habilidoso como o General Gorou... Haha, só estou brincando!"
+      },
+      {
+        "hash": "420523442",
+        "zh": "路上小心，托克再见！",
+        "pt": "Tchauzinho, Teucer! Tenha uma boa viagem!"
+      },
+      {
+        "hash": "1611783522",
+        "zh": "再见。",
+        "pt": "Adeus."
+      },
+      {
+        "hash": "2271403362",
+        "zh": "再见。",
+        "pt": "Tchau."
+      },
+      {
+        "hash": "2780701026",
+        "zh": "再见，工作加油。",
+        "pt": "Adeus, e boa sorte."
+      },
+      {
+        "hash": "385044834",
+        "zh": "再见，希望早日听到你的好消息。",
+        "pt": "Até mais! Espero ouvir notícias boas suas em breve."
+      },
+      {
+        "hash": "3902845282",
+        "zh": "保重，再见。",
+        "pt": "Desejo o melhor para você, adeus."
+      }
+    ],
+    "晶蝶": [
+      {
+        "hash": "3149721746",
+        "zh": "虽然大部分都找了回来，但有一瓶风晶蝶的元素萃取物，还有一瓶无相之雷的粉末，怎么都找不到了。",
+        "pt": "Consegui recuperar a maioria, mas dois frascos sumiram: extrato elemental de Borboleta de Cristal Anemo e pó de Hypostasis Electro."
+      },
+      {
+        "hash": "2930789706",
+        "zh": "#嗯…也是啦。真拿吉法师没办法。{NICKNAME}，抓个晶蝶给他看看吧！",
+        "pt": "#Bem, sim... Mas Kichiboushi não tem como pegá-la. {NICKNAME}, pegue-a para ele dar uma olhada!"
+      },
+      {
+        "hash": "2285253217",
+        "zh": "5只岩晶蝶…行吧，差不多就值这个价。",
+        "pt": "Cinco Borboletas de Cristal Geo... Sim, penso que vale a pena. Eu vou fazer isso."
+      },
+      {
+        "hash": "3775301575",
+        "zh": "风晶蝶",
+        "pt": "Borboleta de Cristal Anemo"
+      },
+      {
+        "hash": "2905489485",
+        "zh": "不，杰克，你有没有见过蒙德城外飞舞的风晶蝶？",
+        "pt": "Hmm... Veja, Jack, você já viu uma Borboleta de Cristal? Elas são encontradas em campo aberto ao redor da cidade de Mondstadt."
+      },
+      {
+        "hash": "356439491",
+        "zh": "早柚在队伍中时，队伍中自己的角色接近晶蝶等部分生物时，不会惊动它们。\\n有效对象可参考图鉴中「生物志 / 野生动物」的「其他」分类。",
+        "pt": "Quando Sayu estiver na equipe, seus personagens não irão assustar as Borboletas de Cristais e alguns outros animais ao chegar perto deles.\\nCheque a sub-categoria \"Outros\" da seção \"Seres Vivos/Animais Selvagens\" do Arquivo, para descobrir quais criaturas esta habilidade funciona."
+      },
+      {
+        "hash": "1597417050",
+        "zh": "但是，抓晶蝶还是你比较熟练嘛。",
+        "pt": "Sim, mas você ainda assim tem mais experiência!"
+      },
+      {
+        "hash": "3219545009",
+        "zh": "冒险…去深山里抓几只仪式上用的晶蝶，似乎是有那么些冒险意味。",
+        "pt": "Aventura... Aventurar-se nas montanhas para capturar algumas Borboletas de Cristal parece ser uma aventura aceitável."
+      },
+      {
+        "hash": "2773685413",
+        "zh": "使用道具「四方八方之网」捕获1只晶蝶。",
+        "pt": "Use a Rede Oniubíqua para capturar 1 Borboleta de Cristal"
+      },
+      {
+        "hash": "4287467599",
+        "zh": "捕捉晶蝶采集",
+        "pt": "Coletado ao capturar Borboletas de Cristais"
+      },
+      {
+        "hash": "106537168",
+        "zh": "「晶蝶的栖枝」",
+        "pt": "Poleiro de Borboleta de Cristal"
+      },
+      {
+        "hash": "554685346",
+        "zh": "可能晶蝶就是这样的物种。",
+        "pt": "É possível que o organismo das Borboletas de Cristal seja assim."
+      },
+      {
+        "hash": "3347452402",
+        "zh": "砰砰~晶蝶~金色的晶蝶~",
+        "pt": "Caboom! Borboleta de Cristal! Borboleta de Cristal dourada!"
+      },
+      {
+        "hash": "2815984135",
+        "zh": "岩晶蝶",
+        "pt": "Borboleta de Cristal Geo"
+      },
+      {
+        "hash": "2766162352",
+        "zh": "雷晶蝶",
+        "pt": "Borboleta de Cristal Electro"
+      },
+      {
+        "hash": "1109045762",
+        "zh": "对。晶蝶是金色，为什么不是金色。",
+        "pt": "Sim. Borboleta de Cristal é dourada. Por que não é dourado?"
+      },
+      {
+        "hash": "4246864087",
+        "zh": "风晶蝶",
+        "pt": "Borboleta de Cristal"
+      },
+      {
+        "hash": "3382185746",
+        "zh": "不过，还是有点失望喔…为什么岩晶蝶的晶核不是金色的呢？",
+        "pt": "Ainda assim, é um pouco decepcionante. Por que os Núcleos de Cristal das Borboletas de Cristal Geo não são dourados?"
+      },
+      {
+        "hash": "3654468130",
+        "zh": "风晶蝶。",
+        "pt": "Borboletas de Cristal."
+      },
+      {
+        "hash": "1134737480",
+        "zh": "岩晶蝶",
+        "pt": "Borboleta de Cristal Geo"
+      }
+    ],
+    "诱捕": [],
+    "装置": [
+      {
+        "hash": "1581631362",
+        "zh": "但我之前也说了，这个装置的可靠性有些…不达预期。",
+        "pt": "Mas, como eu disse antes, a confiabilidade deste dispositivo pode não corresponder às expectativas."
+      },
+      {
+        "hash": "3577382322",
+        "zh": "坦白说，我也没见过这种构造的装置。你认为是深渊教团放置的，不无道理。莫非，他们是在做什么准备…",
+        "pt": "Para ser sincero, eu também nunca vi um dispositivo assim antes e faz sentido achar que ele pertença à Ordem do Abismo. O que será que eles estão planejando fazer aqui?"
+      },
+      {
+        "hash": "81275314",
+        "zh": "那下面这个装置又是什么呢？好像跟周围有些格格不入…",
+        "pt": "Que dispositivo é esse então? Ele não parece combinar muito com as coisas ao redor..."
+      },
+      {
+        "hash": "1399712635",
+        "zh": "冒险家协会精心准备的战斗特训。据说只要启动「诱饵装置」，就会有很多敌人被吸引而来。\\n营地中的「诱饵装置」初始会处于「寒源」状态，在间歇性使周围的敌人获得增幅效果的同时，还会提高角色身上「严寒」的累积速度。\\n如果能找到「深赤之石」，或许就能启动周围的机关，并转变「诱饵装置」的状态…",
+        "pt": "Uma sessão especial de Treinamento de Combate preparada pela Guilda de Aventureiros. Dizem que usar uma isca deverá atrair um grande número de oponentes.\\nA isca montada dentro do acampamento começará em um estado de \"Fonte de Frio\", fazendo com que os inimigos próximos recebam bônus em intervalos regulares e a velocidade de acumulação de Frio Extremo nos seus personagens seja maior.\\nSe você conseguir encontrar um Cristal de Sangue, talvez possa ativar os mecanismos próximos e mudar o estado da isca..."
+      },
+      {
+        "hash": "2961855842",
+        "zh": "而且在那之后，我们还需要忙活好一阵子呢…解锁炮闩还需要激活信号装置才行。",
+        "pt": "Estaremos bem ocupados depois de abri-lo. Teremos que ativar um dispositivo de sinalização para abrir a culatra."
+      },
+      {
+        "hash": "3620471554",
+        "zh": "「…安东中士报告说有一个女人一直在跟踪我们，有布下陷阱和警报装置的必要…」",
+        "pt": "\"...Sargento Anton reportou que uma mulher tem nos seguido por toda parte. Talvez tenhamos que colocar mais armadilhas e ficar de guarda...\""
+      },
+      {
+        "hash": "564088578",
+        "zh": "为了让这个装置能在「御影炉心」里头顺利运转，我需要一些特殊的材料。",
+        "pt": "Precisaremos de alguns materiais especiais para garantir o funcionamento tranquilo deste dispositivo dentro da Fornalha Mikage."
+      },
+      {
+        "hash": "307571568",
+        "zh": "泽维尔说的存储有「祟神」核心的装置，应该就是那个东西了。",
+        "pt": "Xavier disse que há um dispositivo que está guardando o núcleo do Tatarigami. Paimon acha que deve ser essa coisa."
+      },
+      {
+        "hash": "3987748122",
+        "zh": "刚才那台装置同样给我造成了不小的创伤，我需要一点时间来恢复。",
+        "pt": "Aquele dispositivo de agora há pouco me feriu fortemente, preciso me recuperar por um tempo."
+      },
+      {
+        "hash": "1352023297",
+        "zh": "能在几乎任何地方快速架设烹饪的神奇锅炉。璃月的土地广袤、地形错综复杂；璃月人爱好美食。能同时体现这些特点的，恐怕就是这种便携烹饪用锅。利用这种装置，即使身处绝云间的高峰，或是在孤云阁的礁岛上，都能随时做出新鲜的菜肴。",
+        "pt": "Cria rapidamente um pote mágico misterioso para cozinhar em qualquer lugar. O território de Liyue é vasto, e sua geografia é complicada; as pessoas de Liyue amam comer. Esse pote é algo que pode satisfazer essas duas características. Ao usar ele, não importa se está no Relevo de Jueyun, ou recifes da Floresta de Pedra Guyun, a pessoa poderá cozinhar a qualquer momento."
+      },
+      {
+        "hash": "3489192193",
+        "zh": "沿着一定的脉络，散落在大陆上的奇怪装置。大陆上的人说这是古代的神秘物件，虽然不知道有什么用，但是早就习以为常了；对提瓦特大陆还很陌生的旅行者看它十分新鲜，但是好像能明白它的用法。",
+        "pt": "Dispositivos estranhos espalhados por Teyvat, aparentemente formando uma certa ordem. As pessoas no continente os veem como objetos antigos. Apesar de não saberem para que servem, já estão acostumadas com sua existência. Para um viajante, no entanto, sua função se torna bastante aparente."
+      },
+      {
+        "hash": "2663074922",
+        "zh": "怎么办，把那个深渊司铎解决了，装置却还是没有停下来…",
+        "pt": "O que faremos agora? O Sacerdote do Abismo se foi, mas o dispositivo não para..."
+      },
+      {
+        "hash": "2777374826",
+        "zh": "这种纯应急装置，那种东西就不用了。",
+        "pt": "Como este é um dispositivo puramente de emergência, não precisamos de tais coisas."
+      },
+      {
+        "hash": "3436494138",
+        "zh": "所以我…猜，大概、也许、应该、说不准，是储存着「祟神」核心的装置出了问题，从而影响到了我布置的护罩。",
+        "pt": "Bem, por isso creio que potencialmente... Possivelmente? Provavelmente é um problema com o dispositivo no núcleo do Tatarigami que está tendo efeito sobre o escudo que instalei."
+      },
+      {
+        "hash": "772045416",
+        "zh": "埃里克实在撑不下去了…我们不得不选择放弃。\\n这本笔记就留在这儿吧，也许宝藏在等待着更有缘的人。\\n\\n可能你们也发现了，门口的机关装置需要一直有人在旁边控制，其他的机关才能够操作。\\n不过…代价是…\\n<color=#FFE14BFF>在门口控制机关装置的人，要背负极大的风险</color>。\\n一旦其余机关的操作顺序有误，那个人就会面临着…\\n\\n我可以给你一个忠告，\\n那就是——<color=#FFE14BFF>火把的数量并非在暗示着操作顺序</color>，我们曾为这样的误解付出惨痛的代价。\\n或许…<color=#FFE14BFF>顺序应该与火把在地上的位置有关</color>？\\n真正的答案究竟是什么呢？\\n我想知道，我也想知道啊…\\n可埃里克的身体已经…",
+        "pt": "Eric não aguenta mais... Não tivemos outra opção senão desistir.\\nVou deixar esse caderno aqui. Talvez o tesouro esteja destinado para outra pessoa.\\n\\nComo vocês devem ter visto também, o mecanismo da entrada precisa que alguém fica do lado controlando para os outros mecanismos funcionarem.\\nPorém...\\n<color=#FFE14BFF>A pessoa que fica controlando o mecanismo na entrada fica sob um perigo enorme</color>.\\nSe houver um problema na ordem de funcionamento dos mecanismos restantes, essa pessoa terá de enfrentar...\\n\\nPor outras palavras, tenho um conselho para você:\\n<color=#FFE14BFF>O número de tochas não indica a ordem de funcionamento</color>, nós cometemos esse erro e pagamos um preço caro por isso.\\nTalvez... <color=#FFE14BFF>A ordem deve estar relacionada com a localização das tochas no chão</color>?\\nQual é a resposta?\\nEu quero saber, eu também quero saber...\\nMas, fisicamente, Eric não aguenta mais..."
+      },
+      {
+        "hash": "3730374260",
+        "zh": "启动装置",
+        "pt": "Ative o dispositivo"
+      },
+      {
+        "hash": "100972874",
+        "zh": "周围的雾气好像变淡了！果然点亮装置是有用的呢。",
+        "pt": "A neblina parece estar se dissipando! Como esperado, esse farol é útil."
+      },
+      {
+        "hash": "3608353354",
+        "zh": "不要低估深渊的技术，依靠那个装置，可以将池水的净化能力提升十倍百倍…",
+        "pt": "Não subestime a tecnologia do Abismo! Com aquele dispositivo, o desempenho de purificação fica cem vezes melhor..."
+      },
+      {
+        "hash": "3098610091",
+        "zh": "冒险家协会精心准备的战斗特训。据说只要启动「诱饵装置」，就会有很多敌人被吸引而来。\\n营地中的「诱饵装置」初始会处于「寒源」状态，在间歇性使周围的敌人获得增幅效果的同时，还会提高角色身上「严寒」的累积速度。\\n如果能找到「深赤之石」，或许就能启动周围的机关，并转变「诱饵装置」的状态…",
+        "pt": "Uma sessão especial de Treinamento de Combate preparada pela Guilda de Aventureiros. Dizem que usar uma isca deverá atrair um grande número de oponentes.\\nA isca montada dentro do acampamento começará em um estado de \"Fonte de Frio\", fazendo com que os inimigos próximos recebam bônus em intervalos regulares e a velocidade de acumulação de Frio Extremo nos seus personagens seja maior.\\nSe você conseguir encontrar um Cristal de Sangue, talvez possa ativar os mecanismos próximos e mudar o estado da isca..."
+      },
+      {
+        "hash": "218929500",
+        "zh": "回到中央，启动装置",
+        "pt": "Retorne ao centro e ative o mecanismo"
+      }
+    ],
+    "对局胜利": [],
+    "对局失败": [],
+    "申请造访": [
+      {
+        "hash": "3239212206",
+        "zh": "申请造访<color=#37FFFFFF>「尘歌壶」</color>",
+        "pt": "Se registrar para visitar o <color=#37FFFFFF>Bule de Relachá</color>"
+      },
+      {
+        "hash": "1885430610",
+        "zh": "申请造访尘歌壶",
+        "pt": "Inscrever-se para visitar o Bule de Relachá"
+      },
+      {
+        "hash": "281708925",
+        "zh": "{0}申请造访尘歌壶",
+        "pt": "{0} deseja visitar o Bule de Relachá"
+      }
+    ],
+    "申請造訪": [],
+    "切换账号": [
+      {
+        "hash": "587681533",
+        "zh": "切换账号",
+        "pt": "Alterar conta"
+      }
+    ],
+    "退出并": [],
+    "加速": [
+      {
+        "hash": "3715823490",
+        "zh": "用外力冲击，可能会加速净化晶石…",
+        "pt": "Usar força externa pode acelerar o processo de purificação..."
+      },
+      {
+        "hash": "1172696053",
+        "zh": "钓鱼过程中，若能使张力保持在最佳张力区，使用此竿可加速缩短鱼儿挣扎时间，若离开最佳张力区，加速过程会被重置。\\n\\n因「海中月」而生的特制长竿。为了应对传说中的大鱼，制作者特别在竿身、鱼线中掺入了罕见的功能材料，使其不仅拥有不俗的延展性，更能承千斤而不崩。如此宝具，用来对付普通鱼儿自然也不在话下，但总是这样牛鼎烹鸡的话，它也会感到负尘蒙羞吧？",
+        "pt": "Durante a pesca, se você  puder se manter dentro da Zona de Tensão Ideal, usar essa vara pode reduzir o tempo de resistência do peixe de forma estável. Se você sair da Zona de Tensão Ideal, a aceleração será redefinida.\\n\\nUma vara de pesca especial criada para pescar o Leviatã Lunar. Para enfrentar esse peixe lendário, o criador dessa vara adicionou especialmente alguns materiais com funções raras tanto na vara como na linha de pesca, dando-lhes alta maleabilidade e força de tensão. Claro que um tesouro como esse poderia facilmente pegar peixes ordinários, mas parece um exagero tão grande que até a vara ficaria envergonhada de ser usada."
+      },
+      {
+        "hash": "363820632",
+        "zh": "零散堆放的果蔬袋，无序摆放的表象下另有门道——部分果蔬可能互相影响，加速腐烂的过程，适当拉开间距，有助于长期销售。\\n当然，要是生意兴隆，每天货品脱销，也就不必为这种小事烦恼了。",
+        "pt": "Sacos de frutas e vegetais desorganizadamente dispersos. Por trás dessa colocação desordenada, há uma outra teoria - algumas frutas e vegetais podem se afetar mutuamente, acelerando o apodrecimento. Portanto um intervalo adequado é melhor para a venda a longo prazo.\\nÉ claro que, se os negócios estiverem florescendo todos os dias, não há necessidade de se preocupar com tais problemas triviais."
+      },
+      {
+        "hash": "3068951001",
+        "zh": "绝命的加速",
+        "pt": "Aceleração Fatal"
+      },
+      {
+        "hash": "3220145997",
+        "zh": "在这种机关上移动时会获得加速效果；如果移动方向和运行方向相反的话，移动时会受到减速效果。",
+        "pt": "Se você se mover nesse mecanismo, acelerará. Mas se estiver se movendo na direção oposta da do movimento do dispositivo, desacelerará."
+      },
+      {
+        "hash": "1897810349",
+        "zh": "可以使填入的物质发生质变，转化成其他物质的道具。\\n·质变过程中，需要进行<color=#3399CCFF>元素攻击</color>使其能量达到发生质变的临界值。\\n·获取经过质变的物质后，需要经过七天才能再次使用。\\n\\n从遗迹中发现的古代神秘仪器，具有加速循环，使物质发生「质变」的力量。普遍而言，地上地下的一切都在循环，记忆与元素在地脉中恒常奔涌，腐烂的日落果会回归尘泥，而泥土中生长出来的树木终有一天也会结出晶莹的果实吧…",
+        "pt": "Um dispositivo que pode transmutar materiais colocados dentro dele e convertê-los em alguns outros materiais.\\nDurante o processo de transmutação, você deve usar <color=#3399CCFF>Ataques Elementais</color> para gerar energia suficiente para que a transmutação ocorra.\\nApós a obtenção dos materiais transmutados, é preciso esperar sete dias para utilizá-lo novamente.\\n\\nUm dispositivo misterioso encontrado nas ruínas, que serve para acelerar a circulação e fazer realizar transformações anormais. Em geral, tudo nesse mundo está em circulação, entretanto, as memórias e elementos flutuam nas Linha Ley. Os Frutos do Pôr do Sol podres se derretem na terra no final, e as árvores que brotam da terra irão florescer e produzir frutos..."
+      },
+      {
+        "hash": "1157711316",
+        "zh": "把它们打碎，就可以形成<color=#00E1FFFF>加速风环。</color>",
+        "pt": "Ao quebrá-los, criará <color=#00E1FFFF>correntes de aceleração</color>."
+      },
+      {
+        "hash": "3456934864",
+        "zh": "品质极佳的花瓶，摆放在社奉行本部的玄关。这只花瓶已有相当的年头，代行们都不知道它的来历。但有行家跟据其瓷面的特点，用釉的手法判断，这只花瓶的历史可能在「锁国令」之前——它是当年购自璃月的珍品。那批流入稻妻的瓷器启发了不少工匠，加速了稻妻工艺的更新换代，现如今，稻妻的瓷器也开辟出了只属于自己瓷器流派。",
+        "pt": "Um vaso de flores de excelente qualidade, está colocado na porta da Sede da Comissão Yashiro. Este vaso já tem vários anos e, de fato, nenhum dos empregados da casa sabe realmente de onde ele vem. No entanto, um profissional seria capaz de dizer que, pelo vidro exclusivo que possui, deve ser proveniente da era do Decreto Sakoku, e foi provavelmente comprado em Liyue por um preço bastante alto há muito tempo. Esse lote de trabalhos em porcelana inspirou muitos artesãos de Inazuma e ajudou a inaugurar uma nova era na arte local. A cultura única de trabalho em porcelana de Inazuma há muito que está amplamente estabelecida."
+      },
+      {
+        "hash": "1690749760",
+        "zh": "剩余可加速时间{0}",
+        "pt": "Tempo de Aceleração Restante: {0}"
+      },
+      {
+        "hash": "899828666",
+        "zh": "「…层岩巨渊地下的异变在缓慢加速，为了阻止情况进一步恶化，我们需要尽快将『摩科什装置』运抵底部组装…」",
+        "pt": "\"...As estranhas mudanças no subsolo do Despenhadeiro tem se acelerado cada vez mais. Temos que levar o Dispositivo Mokosh para o fundo para ser montado o mais rápido possível...\""
+      },
+      {
+        "hash": "1786477685",
+        "zh": "拾取后角色能够在一段时间内获得加速效果。",
+        "pt": "Após coletá-la, o personagem aumenta a velocidade de movimento por um período de tempo."
+      },
+      {
+        "hash": "2542602465",
+        "zh": "从遗迹中发现的古代神秘仪器，具有加速循环，使物质发生「质变」的力量。普遍而言，地上地下的一切都在循环，记忆与元素在地脉中恒常奔涌，腐烂的日落果会回归尘泥，而泥土中生长出来的树木终有一天也会结出晶莹的果实吧…",
+        "pt": "Um dispositivo misterioso encontrado nas ruínas, que serve para acelerar ciclos e realizar transformações anormais. Em geral, tudo neste mundo está em um ciclo. Memórias e elementos fluem nas Linha Ley. Os Frutos do Pôr do Sol apodrecem sobre a terra, da qual um dia brotarão árvores que produzirão outros frutos..."
+      },
+      {
+        "hash": "2300014348",
+        "zh": "击破<color=#00E1FFFF>凝结的风球</color>，就可以制造<color=#00E1FFFF>加速风环</color>…",
+        "pt": "Ao romper os <color=#00E1FFFF>Orbes Anemos condensados</color> pode criar uma <color=#00E1FFFF>corrente de aceleração</color>."
+      },
+      {
+        "hash": "3196681666",
+        "zh": "「…技术士官波格丹娜发现那些黑色的泥状物仍然在不断增生，我们需要加速行动了…」",
+        "pt": "\"...Especialista Bogdana descobriu que a lama preta ainda está constantemente se alastrando. Temos que nos mover mais rápido do que antes...\""
+      },
+      {
+        "hash": "824530706",
+        "zh": "镜头加速模式（瞄准模式）",
+        "pt": "Modo de Aceleração da Câmera (Modo de Mira)"
+      },
+      {
+        "hash": "3387960027",
+        "zh": "只不过，人生只有一次，解翠之戏却还能再来。令人心跳加速的冒险与赢得美玉的欣喜交汇，何种游戏能超越这等刺激？",
+        "pt": "Porém, ainda que só vivamos uma vez, podemos desfrutar da alegria da jade em muitos momentos. O que é mais empolgante, embarcar em uma aventura ousada ou receber um belo pedaço de jade?"
+      },
+      {
+        "hash": "491056134",
+        "zh": "要消耗{0}个{1}加速制作吗？",
+        "pt": "Deseja consumir {0} {1} para acelerar a fabricação?"
+      },
+      {
+        "hash": "1398010090",
+        "zh": "近来层岩巨渊的地质结构变化一直在…加速。你也看到了那些覆盖岩石的污黑物质…是近来才大面积增生的。",
+        "pt": "Recentemente a estrutura geográfica no Despenhadeiro tem mudado cada vez mais rápido... A substância escura que você viu cobrindo as rochas só começou a aparecer em todo lugar recentemente."
+      },
+      {
+        "hash": "222806658",
+        "zh": "据说敷上之后清清凉凉的，可以加速伤口痊愈。",
+        "pt": "Dizem que tem uma sensação refrescante e age rápido para curar completamente as feridas."
+      },
+      {
+        "hash": "1765339882",
+        "zh": "伤员和军士们因为渊下宫环境的恢复，都已经加速撤离了。呃，大部分都撤离了…",
+        "pt": "A evacuação está indo muito mais rápido agora graças as condições ambientais melhores. Bem, a maioria dos soldados já foi embora..."
+      }
+    ],
+    "快速加工": [],
+    "箱": [
+      {
+        "hash": "2758785922",
+        "zh": "浮生石片就放在那边的箱子里，你们自己找找看吧。",
+        "pt": "Os Fragmentos de Plaustrite estão ali, por favor, fiquem à vontade."
+      },
+      {
+        "hash": "3814986626",
+        "zh": "哈哈哈…祝你离开提瓦特以后，在星海之间也能捡到宝箱。",
+        "pt": "Hahaha... Bem, que você encontre tesouros entre as estrelas mesmo depois de ter deixado Teyvat."
+      },
+      {
+        "hash": "2249054884",
+        "zh": "前往安置宝箱的水车处",
+        "pt": "Vá para onde o báu do moinho d'água está"
+      },
+      {
+        "hash": "1290977634",
+        "zh": "可没想到，他从地里犁出一个宝箱来！",
+        "pt": "Não pensei que fossemos encontrar um baú de tesouro!"
+      },
+      {
+        "hash": "1269110530",
+        "zh": "哼哼，既然「塞钱箱」已经修好了，那神社一定会很快重新热闹起来的…",
+        "pt": "Haha, agora que a Caixa de Oferendas foi reparada, o santuário logo voltará à sua antiga efervescente glória..."
+      },
+      {
+        "hash": "161645314",
+        "zh": "我的父母都是矿工，这些矿石就是他们开采的！以往工头叔叔会把大家采到的矿石收集起来上交城里的大人，登记封箱后运去踏鞴砂。",
+        "pt": "Meus pais são mineradores e todos esses minérios aqui foram extraídos por eles! Antigamente, o tio contramestre era responsável por recolher o minério extraído por todos para entregar para vossas senhorias, que era depois registrado, lacrado em caixas e transportado para Tatarasuna."
+      },
+      {
+        "hash": "3798747418",
+        "zh": "（需要输入正确的密码才能打开这个箱子。密码的「第四位」应该输入什么呢…）",
+        "pt": "(Você deve inserir o código correto para abrir esta caixa. Qual número você deseja inserir na quarta posição?)"
+      },
+      {
+        "hash": "3307208961",
+        "zh": "好想给他起个难听的绰号…但要是得罪了仙人，以后发现宝箱的时候，会不会只能开出卷心菜…？",
+        "pt": "Paimon quer dar a ele um apelido feio... Mas se ele se ofender, você acha que ele vai nos amaldiçoar e só encontraremos repolho nos baús pelo resto dos nossos dias?"
+      },
+      {
+        "hash": "3537249386",
+        "zh": "一只箱子里可能藏着宝藏也可能藏着灾难，那我们就是到了开箱前的最后时刻呀！总不能毫无准备地打开它吧！",
+        "pt": "Você nunca sabe o que encontrará em um baú até abri-lo e, agora que chegamos nesse momento, precisamos estar prontos para o que quer que ele contenha!"
+      },
+      {
+        "hash": "2226449544",
+        "zh": "交错放置的杉木货箱",
+        "pt": "Pilha Bagunçada de Caixotes de Abeto"
+      },
+      {
+        "hash": "437092201",
+        "zh": "开启各类宝箱后的5秒内，持续恢复30%生命值。",
+        "pt": "Abrir um baú recupera 30% de Vida Máxima durante 5 segundos."
+      },
+      {
+        "hash": "119041302",
+        "zh": "当前「周旋之地」中的伪装物：<color=#FFCC33>酒桶、木箱</color>。\\n游侠与猎手不断转移，最终深入至雪山深处的星荧洞窟。\\n冰封的洞窟与世隔绝，常用的伪装反而变得极为醒目，对游侠们构成了前所未有的挑战。\\n来自寒冷的干扰更为棘手，双方都要不时寻找暖源，使得周旋更为焦灼！",
+        "pt": "Os disfarces atuais nesta Zona Contestada são: <color=#FFCC33>Barris de Vinho e caixotes de madeira</color>.\\nTanto o Caçador quanto o Cavaleiro Errante se movem de lugar em lugar, finalmente chegando à Caverna do Brilho Estelar nas profundezas da Espinha do Dragão.\\nA caverna selada de gelo é cortada do resto do mundo, tornando os disfarces comuns óbvios pelo contraste, o que proporciona um desafio até então não encontrado pelos Cavaleiros Errantes.\\nPara completar, ambos os lados devem buscar constantemente uma fonte de calor, tornando sua disputa cada vez mais desesperada!"
+      },
+      {
+        "hash": "3634248599",
+        "zh": "打开宝箱·其一",
+        "pt": "Abrir Baú do Tesouro - I"
+      },
+      {
+        "hash": "58332474",
+        "zh": "那当然，这些箱子都是我特意放在这里的。",
+        "pt": "Claro, coloquei todos esses baús aqui de propósito."
+      },
+      {
+        "hash": "1843316725",
+        "zh": "嗯？宝箱本来就是这样的吧？",
+        "pt": "Hmm? Baús são sempre assim, não são?"
+      },
+      {
+        "hash": "3649437685",
+        "zh": "居然宝箱都和我作对…唉。",
+        "pt": "Eu não consigo imaginar que até mesmo os baús estão contra mim."
+      },
+      {
+        "hash": "4033279989",
+        "zh": "在稻妻的海祇岛与清籁岛开启40个宝箱。",
+        "pt": "Abra 40 baús na Ilha Watatsumi e Ilha Seirai em Inazuma."
+      },
+      {
+        "hash": "2164886410",
+        "zh": "好了，快去挑一个宝箱打开吧，嘿嘿，祝你有份好手气。",
+        "pt": "Está bem, abra logo um báu, hehe, desejo-lhe boa sorte."
+      },
+      {
+        "hash": "980312970",
+        "zh": "记得是叫「御神签箱」…",
+        "pt": "Não é chamada de Caixa de Rolinhos da Sorte?"
+      },
+      {
+        "hash": "3823666569",
+        "zh": "抗侵蚀强度 {0}。\\n睦疏之匣能量上限 {1}。\\n睦疏之匣可驱散最强大的黑雾。\\n睦疏之匣会在小地图上标记周围的常世之荚和渊海髓矿的位置。\\n使用睦疏之匣，会在小地图标记周围的宝箱和挑战的位置。\\n使用睦疏之匣对敌人施加影响后， 使其物理抗性和所有元素抗性降低{2}%，持续{3}秒。",
+        "pt": "Resistência contra Corrosão: {0}.\\nEnergia máxima da Caixa de Bokuso: {1}.\\nA Caixa de Bokuso poderá dispersar Escuridão Fortíssima.\\nA Caixa de Bokuso marcará no minimapa a localização dos Legumes de Tokoyo e Minério de Medula das Profundezas.\\nAo usar a Caixa de Bokuso, serão marcadas no minimapa as localizações de Baús e de Desafios.\\nAo aplicar os efeitos da Caixa de Bokuso sobre os inimigos, sua RES Física e RES a todos os Elementos serão reduzidas em {2}% por {3}s."
+      }
+    ],
+    "珍貴": [],
+    "珍贵": [
+      {
+        "hash": "2941244152",
+        "zh": "新的秘境已经解锁。秘境中隐藏着各种各样的珍贵道具，积极探索分散在世界各地的秘境，赢得其中的宝藏吧。",
+        "pt": "Um novo domínio foi desbloqueado. Dentro do domínio, estão escondidos diversos tesouros, explore o domínio para obter todo o tesouro mantido dentro."
+      },
+      {
+        "hash": "3165239680",
+        "zh": "是珍贵的药材，但存放了这么久已经失去了药用价值。",
+        "pt": "Um ingrediente medicinal precioso que perdeu por completo seus valores medicinais depois de tanto tempo."
+      },
+      {
+        "hash": "3753723264",
+        "zh": "珍贵的观赏鱼，可被饲养于「灵沼云池」中。\\n被传为龙之后裔的大型鱼类。\\n是假龙族群的旁支，也可以说是假龙族群中的觉醒者。跟它不成器的表亲相比，锖假龙褪下了原先银样蜡枪头般的金赤战袍，取而代之的是其貌不扬却硬如精铁的锖色铠甲，意志坚定，为了食物和领地敢于向任何进犯者发起反击。就战斗力而言，它们已经能够与小型海兽一较高下，堪称振兴族群的骨干力量，又有「铁骨海龙」的尊称。",
+        "pt": "Um valioso Peixe Ornamental que pode ser mantido como animal de estimação na Piscina da Nuvem de Espíritos.\\nUm peixe grande que dizem ser descendente dos dragões.\\nEsta é uma espécie variante de Koi, e por vezes denominada como o \"dragão acordado\" entre eles. Em contraste com sua aparência surrada, o Koi Rústico perdeu seu tabardo dourado opulento em troca por uma armadura dura de bronze rústico. Muito enérgico, ele irá lutar contra qualquer intruso que tente roubar sua comida e entra no seu território. Em termos de capacidade de luta pura, eles estão à altura até dos pequenos monstros do mar e foram apelidados de \"Dragão de Trombone\" em honra da sua força, que é considerada a espinha dorsal da revitalização futura da espécie."
+      },
+      {
+        "hash": "2887872867",
+        "zh": "也正是因为这样，每一朵塞西莉亚花都显得弥足珍贵…",
+        "pt": "É exatamente por causa disso, cada Cecilia é muito preciosa..."
+      },
+      {
+        "hash": "2719505109",
+        "zh": "这座远古祝圣祭坛中，聚集着惧怕冰元素的魔物。\\n若能通过其中的试炼，或许能获得珍贵的圣遗物。",
+        "pt": "Este antigo altar abençoado está cheio de monstros que temem Cryo.\\nVocê poderá obter Artefatos valiosos apenas se você passar no teste."
+      },
+      {
+        "hash": "3606582997",
+        "zh": "工艺复杂的璃月名菜。没有掌握熬汤的工艺，致使乱炖出的产物口感腥咸。考虑到食材的珍贵…唉，着实令人骑虎难下。",
+        "pt": "Um tipo de culinária complexo e famoso de Liyue. Sem ter dominado a arte de cozinhar, o prato parecido com um ensopado resultante tem um sabor salgado e de peixe. Mas, apenas considerar os ingredientes caros será suficiente para mantê-lo até que a panela esteja vazia."
+      },
+      {
+        "hash": "158944120",
+        "zh": "是珍贵的药材，但存放了这么久已经失去了药用价值。",
+        "pt": "Um ingrediente medicinal precioso que perdeu por completo seus valores medicinais depois de tanto tempo."
+      },
+      {
+        "hash": "2397050744",
+        "zh": "珍贵的观赏鱼，可被饲养于「灵沼云池」中。\\n长满刺状鳍的迅猛鱼类，全速游动时矛般尖吻甚至能劈开水流。因此又得名「劈水刺」、「箭难追」等。\\n与诸多同类相异，肺棘鱼可以在干涸的泥塘中存活很久，除了鳃部，它们还能用退化了鳞片的皮肤来呼吸，这更符合两栖类的性状，因此除了不请自来的渔师，它们还面临着被棘鱼学科除名的存在性危机。",
+        "pt": "Um valioso Peixe Ornamental que pode ser mantido como animal de estimação na Piscina da Nuvem de Espíritos.\\nUm peixe rápido e feroz com barbatanas espinhosas, cuja boca espinhosa pode furar a corrente quando nada a toda velocidade. Suas capacidades lhe renderam os apelidos de \"O Cortador\" e \"Difícil de Pegar\".\\nAo contrário de outros de seu tipo, o Esgana-Gato pode viver em piscinas secas e lamacentas por muito tempo. Além de suas brânquias, também pode respirar através de suas escamas vestigiais, que é uma característica muito mais semelhante à dos anfíbios. Como tal, além de lidar com pescadores não convidados, eles correm o risco de serem expulsos do departamento dos peixes por serem mais espinho do que peixe."
+      },
+      {
+        "hash": "3197492831",
+        "zh": "听我爹说，这些矿石是受到了地脉能量的影响变异而成的，这比水晶矿可珍贵多了！",
+        "pt": "O meu pai diz que esses minérios são formados por conta da força de Linha Ley, e são muito mais preciosos."
+      },
+      {
+        "hash": "586111149",
+        "zh": "角色经验素材，含有20000点经验值。\\n如果向往着天空岛而在大陆开始巡礼，这些经验可称得上弥足珍贵。",
+        "pt": "Material de EXP de Personagem. Concede 20000 de EXP.\\nEssas experiências são extremamente preciosas para um peregrino que viaja por Teyvat para estar mais perto de Celestia."
+      },
+      {
+        "hash": "2005055086",
+        "zh": "性命虽然珍贵…但比起「降魔大圣」所承受的，死亡不过是一种苟且偷安而已。",
+        "pt": "A vida é preciosa sim... Mas em comparação com o sofrimento do Conquistador de Demônios, a morte já é nada..."
+      },
+      {
+        "hash": "3161732444",
+        "zh": "<color=#D3BC8EFF>【活动简介】</color>\\n诡幻叵测的「诀箓阴阳寮」悄然敞开了大门，其中囚禁的魔物空前凶戾，但对于探寻真相与锤炼武艺的执着之人而言，这座秘境正是宝贵的试炼之地…\\n\\n<color=#D3BC8EFF>【参与条件】</color>\\n活动期间，冒险等阶达到30并完成「愿望」后，可以参与「谜境悬兵」活动。\\n\\n<color=#D3BC8EFF>【活动规则】</color>\\n·从活动开始的第一天起，每三天会开启新的试炼关卡。\\n·携行「式札」进入「诀箓阴阳寮」，可以借助「式大将」的辅佐，运用「符法之力」和「式札」，更为顺利地通过试炼，并获取「虚损之拓本」、「残悴之式札」和「朽裂之庚牌」。\\n·「虚损之拓本」可以用于强化「式大将」的能力；「残悴之式札」可以用来在试炼中获取增益效果；「朽裂之庚牌」可以在活动商店中换取珍贵的宝物。\\n活动结束后，上述三种代币将被回收。",
+        "pt": "<color=#D3BC8EFF>Descrição do Evento</color>\\nOs grandes portões da bizarra e imprevisível Câmara Mística Onmyou se abriram. Os monstros aprisionados dentro são realmente ferozes, mas para aqueles que buscam a verdade e desejam enfrentar seu poder marcial, este Domínio é um lugar valioso para desafiar a si mesmos...\\n\\n<color=#D3BC8EFF>Elegibilidade</color>\\nAlcançar o Rank de Aventura 30 e completar a Missão \"Desejos\" durante a duração do evento para participar do \"Guerreiros do Labirinto\".\\n\\n<color=#D3BC8EFF>Regras do Evento</color>\\n·A partir do primeiro dia do evento, uma nova etapa de desafio será desbloqueada a cada três dias.\\n·Leve Shikifuda para a Câmara Mística Onmyou para alistar a ajuda de Shiki Taishou, que usará amuletos mágicos e Shikifuda para ajudar a vencer os desafios, que o ajudarão a obter Réplicas Danificadas, Shikifuda Desgastados e Talismãs Envelhecidos.\\n·Réplicas Danificadas podem ser usadas para aprimorar as habilidades de Shiki Taishou. Shikifuda Desgastados pode ser usado para obter aprimoramentos durante os desafios. Talismãs Envelhecidos podem ser trocados na loja do evento por tesouros valiosos.\\nAs três moedas mencionadas acima desaparecerão automaticamente quando o evento terminar."
+      },
+      {
+        "hash": "1213911166",
+        "zh": "原粹树脂能提炼大气中的元素力，慢慢地补充能量。\\n利用某种极为珍贵的结晶体，也可以快速将能量充满…",
+        "pt": "A Resina Original reabastece gradualmente, absorvendo a energia elemental do ambiente natural.\\nAlternativamente, você pode reabastecê-la mais rapidamente usando uma certa variedade de gemas altamente preciosas."
+      },
+      {
+        "hash": "1316549936",
+        "zh": "珍贵的观赏鱼，可被饲养于「灵沼云池」中。\\n稀有的炮鲀品种，鱼如其名，是在水底世界传播苦涩的家伙。与普通炮鲀相较，它们射出的水炮速度更慢、体积更小，但却因为附着了极具刺激性的苦味信息素而让威力不退反进。在求偶期间，还经常能够见到雄性和雌性之间互相喷射苦味水炮的奇景，或许向彼此传递生命中的苦涩，也是一种爱意的体现吧。",
+        "pt": "Um valioso Peixe Ornamental que pode ser mantido como animal de estimação na Piscina da Nuvem de Espíritos.\\nUm baiacu raro. Como o nome sugere, essa criatura espalha amargura onde quer que vá no mundo aquático. Os projéteis de seu canhão de água são mais lentos e fracos que o de suas contrapartidas ordinárias, mas o poder de tais ataques não é menor devido aos feromônios incrivelmente amargos nele. Durante sua fase de acasalamento, um observador pode até mesmo testemunhar a curiosa vista dos machos e fêmeas dessa espécie atirarem uns nos outros com seus jatos d'água. Talvez compartilhar as amarguras da vida também seja uma manifestação de amor."
+      },
+      {
+        "hash": "2975262936",
+        "zh": "珍贵的观赏鱼，可被饲养于「灵沼云池」中。\\n性情温和，姿态优雅的蝶鱼，拥有流线型的美丽背鳍，又有「水中王后」的美誉。\\n体表环绕着茶色的纹路，好奇心旺盛，对一切活动物体都抱有强烈的兴趣，而它们表达兴趣的方式就是用嘴试试能不能吃，虽然不是什么带有恶意的攻击，但却因此常常招来灭顶之灾。",
+        "pt": "Um valioso Peixe Ornamental que pode ser mantido como animal de estimação na Piscina da Nuvem de Espíritos.\\nUm gentil e elegante peixe borboleta. Possui uma adorável barbatana dorsal, e possui o apelido \"Rainha das Águas\".\\nOs padrões cor de chá rodeiam esse peixe curioso que parece interessado em tudo ao seu redor. Infelizmente, seu método de expressar interesse em qualquer coisa é para ver se pode comer. Não é algo malicioso, mas essa atitude já colocou essa espécie em apuros muitas vezes."
+      },
+      {
+        "hash": "421539032",
+        "zh": "是珍贵的药材，但存放了这么久已经失去了药用价值。",
+        "pt": "Um ingrediente medicinal precioso que perdeu por completo seus valores medicinais depois de tanto tempo."
+      },
+      {
+        "hash": "12408638",
+        "zh": "珍贵的宝箱",
+        "pt": "Baú Precioso"
+      },
+      {
+        "hash": "243288388",
+        "zh": "<color=#D3BC8EFF>【活动简介】</color>\\n活动期间，旅行者可以参加「皑尘与雪影」活动，并在「龙脊雪山」地区完成各种挑战，获取「踏雪章」与「克险章」，换取各类物资。\\n\\n<color=#D3BC8EFF>【参与条件】</color>\\n冒险等阶达到20并完成「为了没有眼泪的明天」后，可以进行「旅行者观察报告」任务。完成「旅行者观察报告」与「雪山迷踪」任务后，即可参与「皑尘与雪影」活动。在活动期间，接取「旅行者观察报告」所需的冒险等阶也会调整至20级。\\n\\n<color=#D3BC8EFF>【活动商店】</color>\\n在活动持续期间，可以在活动商店中，用「踏雪章」与「克险章」兑换珍贵的物资。活动结束后，持有的上述两种奖章会自动消失，同时相关活动商店页签也将关闭。",
+        "pt": "<color=#D3BC8EFF>[Descrição do Evento]</color>\\nDurante o período do evento, Viajantes poderão participar do evento Poeira e Neve Escura, realizando diversos desafios na Espinha do Dragão para obterem Insígnias Congelantes e Insígnias da Vitória que podem ser trocados por recompensas.\\n\\n<color=#D3BC8EFF>[Elegibilidade]</color>\\nApós alcançar o Rank de Aventura 20 e completar \"Por um Amanhã sem Lágrimas\", será possível realizar a missão \"Relatório de Observação do Viajante\". Após se completar as missões \"Relatório de Observação do Viajante\" e \"Perdidos na Neve\" será possível participar do evento \"Poeira e Neve Escura\". Durante o período do evento, a missão \"Relatório de Observação do Viajante\" terá seu Rank de Aventura necessário ajustado para 20.\\n\\n<color=#D3BC8EFF>[Loja do Evento]</color>\\nDurante o período do evento, será possível utilizar as Insígnias Congelantes e Insígnias da Vitória para trocar por valiosas recompensas na Loja do Evento. Após o evento terminar, esses dois tipos de insígnias em sua posse desaparecerão automaticamente e a página correspondente da loja do evento também será fechada."
+      },
+      {
+        "hash": "52375497",
+        "zh": "就，就算是这样，那…那也是个很珍贵的铃铛！对吧，婆婆？",
+        "pt": "Hum... Mesmo assim, é um sino muito precioso, né?"
+      },
+      {
+        "hash": "254737960",
+        "zh": "是珍贵的药材，但存放了这么久已经失去了药用价值。",
+        "pt": "Um ingrediente medicinal precioso que perdeu por completo seus valores medicinais depois de tanto tempo."
+      }
+    ],
+    "下次": [
+      {
+        "hash": "2020434818",
+        "zh": "唔，下次要不要以「转生为八重宫司」为题材征稿呢？",
+        "pt": "Ooh, talvez eu devesse encomendar uma sequência: Renascer como Guuji Yae. O que você acha?"
+      },
+      {
+        "hash": "4131324802",
+        "zh": "太好啦！下次摩拉用完的时候，我们来找凝光小姐就行！",
+        "pt": "Que bom! Na próxima vez que a Paimon não tiver Mora, já sabe quem procurar."
+      },
+      {
+        "hash": "2195938738",
+        "zh": "下次不要偷看了，好吗？",
+        "pt": "Não espie da próxima vez, certo?"
+      },
+      {
+        "hash": "2100098008",
+        "zh": "挑战过程中，角色倒下次数不多于1次",
+        "pt": "Durante o desafio, os personagens não podem ser derrotados mais de 1 vez."
+      },
+      {
+        "hash": "3960765824",
+        "zh": "某日，行秋的大哥前来寻他，屋内却没有人在。回来后，行秋遇到了候在走廊上的大哥。\\n「你房内太过凌乱，我便自作主张替你收拾了一番。行秋啊，你与大哥同样肩负着飞云商会的名声，理应为众人作出表率。岂能不知一屋不扫，何以扫天下？昔年仙人有云…」\\n对着行秋唠叨半小时后，大哥终于放过了他，临走前留下一句奇怪的话：\\n「下次，大哥不会未经许可进入你房间了，丫鬟那边我也会提点一句。」\\n行秋一头雾水，不知该作何回答。离去的大哥却在转身后换上一副惆怅面孔，自言自语道：\\n「床底下还藏了书…嗯…大哥可不会去看那是什么书的。哎，行秋也长大啦，以后会不会嫌我的管教太啰嗦呢？这叫做什么来着…青春期，是吗？」\\n行秋也很奇怪。他藏了这么多武侠小说，早已做好与帮佣们斗智斗勇的准备，可为什么一直没人来探查他的房间呢？",
+        "pt": "Um dia, o irmão mais velho de Xingqiu veio procurá-lo, mas descobriu que ele não estava por perto. Quando Xingqiu voltou mais tarde, ele encontrou seu irmão no corredor.\\n\"Seu quarto estava uma bagunça, então eu lhe ajudei a arrumar. Ouça, você e eu somos responsáveis pela reputação da Guilda de Comerciantes de Feiyun. Temos que agir de acordo. Se você não pode nem limpar um quarto, como vai querer ajudar o mundo? Um Adeptus disse uma vez...\"\\nDepois de meia hora de palestras, Xingqiu foi finalmente liberado, mas seu irmão disse algo estranho no quarto:\\n\"Não entrarei no seu quarto sem permissão da próxima vez... vou garantir que as empregadas façam o mesmo\".\\nXingqiu não fazia ideia do que estava falando. No entanto, quando seu irmão se virou, com um olhar desanimado, ele murmurou para si mesmo: \\n\"Aqueles livros debaixo da cama... Não, eu não deveria folhear esse tipo de livro， eles são... Afinal de contas, Xingqiu está crescendo... Não quero dar bronca o tempo todo... Puberdade, talvez?\"\\nNo final, até Xingqiu achou estranho, esperando que uma das empregadas tivesse algo a dizer sobre o estoque de romances de artes marciais embaixo da cama, mas ninguém nunca entrou em seu quarto novamente."
+      },
+      {
+        "hash": "526055808",
+        "zh": "如今的万叶以「南十字」船队为家，漂泊于四海之上。\\n偶尔地，麻烦依然会找上门来，但有「南十字」一众人支持，这些麻烦处理起来也不再棘手。\\n坐在「死兆星」号那高高的观测台上，眺望着碧海蓝天，他终于有心情去回味自己在过去那段动荡日子里的感受。\\n武士们都愿自己一生热烈，以手中之刀博取无上名誉。\\n但其中总有人受欲念引诱，偏离「仁」与「义」的正道，挥刀留下无穷的仇恨。\\n上天赋予众生血肉，神明护佑他们的生命，不是为了让人举刀相争的。\\n我所握的，不应当是杀人刀，而应是活人剑。\\n终武士一生，须守一道，这便是我的「道」。\\n如此想着，万叶不禁起了诗兴，正想留下数句作日后的座右铭，但这时船上传来了不满的声音：\\n「万叶啊，别窝在观测台上望天了，快下来搭把手啊！」\\n好吧，掌舵手海龙在叫他了，那座右铭的事便下次再想吧。",
+        "pt": "Hoje em dia Kazuha considera a Frota Crux como seu lar, e vive uma vida errante.\\nDe vez em quando, os problemas também batem à porta, mas com o apoio da tripulação da Frota Crux, os problemas espinhosos deixaram de ser tão difíceis como antes.\\nSentado no observatório no Alcor, contemplando o céu aberto e o mar interminável, ele finalmente tinha um momento para saborear o que ele tinha sentido nos dias agitados antes.\\nTodos os Samurais querem obter maiores honras com sua paixão da vida e a lâmina na sua mão.\\nMas há sempre pessoas que se desviam para o caminho errado, enganadas pela sua ganância e desejos, e acabou deixando rancores infinitos com a sua lâmina.\\nOs deuses nos deram o corpo e abençoaram as nossas vidas, não para lutarmos um contra o outro.\\nA lâmina que eu carrego, não é para tirar a vida, mas para proteger-nos da morte.\\nA vida inteira de um Samurai, segue sempre um princípio, e esse é o meu princípio.\\nPensando nisso, veio uma vontade de criar um poema que poderia ser o lema da vida, mas foi exatamente neste momento em que vieram algumas reclamações:\\n\"Kazuha, não fique de braços cruzados no observatório, venha dar uma mão.\"\\nTudo bem. Foi o colega que estava o chamando, e o lema? Fica para a próxima vez."
+      },
+      {
+        "hash": "3071152482",
+        "zh": "想要赚大钱，就得办点大事，下次有机会的话，你们再努努力吧。",
+        "pt": "É preciso fazer grandes coisas para se ganhar uma grande recompensa. Se nos encontrarmos novamente, então você poderá tentar sua sorte."
+      },
+      {
+        "hash": "2562150546",
+        "zh": "#唔…下次也不知道什么时候还会再见了，希望那时候{NICKNAME}大哥哥/大姐姐还记得我！",
+        "pt": "#Bem, não sei quando lhe verei novamente. Espero que você lembre de mim, {NICKNAME}!"
+      },
+      {
+        "hash": "4267516050",
+        "zh": "下次再见。",
+        "pt": "Até a próxima."
+      },
+      {
+        "hash": "2272029442",
+        "zh": "角色倒下次数不多于%2%次",
+        "pt": "Os personagens não podem cair no chão mais de %2% vezes."
+      },
+      {
+        "hash": "747405071",
+        "zh": "除开「璃月七星」的工作，我也会做很多公益方面的事，大多数的反响都还不错。但类似「每天多工作一个时辰」这样的倡议，就遇到了不小的阻力…唉，看来想法还是太超前了，要不然，下次改成半个时辰试试吧。",
+        "pt": "Além das tarefas dos Qixing de Liyue, faço muitos trabalhos voluntários também, e a maioria dos feedbacks é positiva. Mas tais propostas como \"trabalhar mais uma hora\" não estão correndo muito bem! Na próxima vez, vai ser só \"meia hora\"."
+      },
+      {
+        "hash": "1764226620",
+        "zh": "委托任务刷新地域已更改为「{0}」，将在下次刷新时生效",
+        "pt": "A região de Missão de Aventura foi alterada para {0}. Essa alteração entrará em vigor na próxima reinicialização."
+      },
+      {
+        "hash": "469439770",
+        "zh": "不错的故事呢。我能记下来吗？下次跟人聊天也许会用到。",
+        "pt": "É uma boa história. Posso escrevê-la? Posso contá-la para outras pessoas no futuro."
+      },
+      {
+        "hash": "831227799",
+        "zh": "神里小姐知书达理，心地善良又温柔端庄，就是不够坦率。欸对了，下次说话的时候，要是小姐又露出那副欲言又止的模样，你一定要主动些，多问问她的想法。",
+        "pt": "A Srta. Kamisato é em todos os aspectos uma pessoa equilibrada: erudita, compassiva, bem-educada e elegante... a única coisa que ela poderia fazer melhor é falar mais o que pensa. Na verdade, tome cuidado com isso da próxima vez que você falar com ela — às vezes, ela parece que está prestes a dizer algo, mas então ela se contém. Se isso acontecer, continue perguntando a opinião dela, veja se você pode encorajá-la a se abrir um pouco."
+      },
+      {
+        "hash": "353588538",
+        "zh": "好在意啊。下次去鸣神大社解签的时候，要不要试着对对暗号？",
+        "pt": "De qualquer forma, isto parece importante. Da próxima vez que decifrarmos nosso rolinho da sorte, vamos tentar combinar os códigos secretos, tudo bem?"
+      },
+      {
+        "hash": "3868347706",
+        "zh": "好啦，如果你们真的想为我做点什么，不如就下次请我吃饭好了。",
+        "pt": "Bom, se vocês realmente querem fazer algo por mim, podem me convidar para comer."
+      },
+      {
+        "hash": "1407766883",
+        "zh": "少年不必多礼，您的剑客朋友已付清所有赔偿了。顺便一提，客人以大剑狂舞餐桌的奇技令人大开眼界，希望下次能再度表演。",
+        "pt": "Fique tranquilo. O seu amigo espadachim já pagou por todo o dano. Aliás, foi muito impressionante a sua dança de espada. Desejamos ver a sua dança novamente."
+      },
+      {
+        "hash": "1074810869",
+        "zh": "唉，下次我一定不喝那么多了…什么都不记得了。",
+        "pt": "*Suspiro* Eu com certeza não beberei tanto da próxima vez... Não me lembro de nada."
+      },
+      {
+        "hash": "1171349949",
+        "zh": "看来…只能下次再约他出去了。",
+        "pt": "Parece que vou ter que tentar convidá-lo para sair em outra ocasião."
+      },
+      {
+        "hash": "3625053066",
+        "zh": "嗯…下次要不要以枕玉老师为原型，写一篇以小说家为主角的故事试试呢？",
+        "pt": "Hmm... Talvez na próxima vez nós possamos tentar escrever uma história sobre um autor baseado em Zhenyu?"
+      }
+    ],
+    "接触": [
+      {
+        "hash": "2875103378",
+        "zh": "这种矿石确实富含元素力，如果没有「神之眼」的人和它长时间接触，轻则身体抱恙，重则性格大变，重病不起…",
+        "pt": "Ela é abundante em energia elemental. Portanto, se alguém sem uma Visão entrar em contato com ela por um período prolongado... Na melhor das hipóteses, ele adoece; na pior das hipóteses, sofrerá grandes mudanças de personalidade e sua doença só irá piorar..."
+      },
+      {
+        "hash": "3177532175",
+        "zh": "元素已由地脉之中溢流而出，会以某人的意志为壤，结出辉煌的花蕾。与其接触，获取丰厚的馈藏吧",
+        "pt": "Botões de flores brilhantes que brotam de elementos que saem das Linhas Ley, usando a vontade de alguém como seu solo fértil para crescer. Toque para receber seus tesouros extravagantes."
+      },
+      {
+        "hash": "33081450",
+        "zh": "不信的话就等着瞧吧，那个叫志琼的冒险家…我见过近距离接触过那种东西之后人的样子。",
+        "pt": "Apenas espere e veja se você ainda não acredita em mim. Aquela aventureira chamada Zhiqiong... Bem, eu já vi o que acontece com aqueles que se aproximam demais dessas coisas."
+      },
+      {
+        "hash": "1770302715",
+        "zh": "<color=#FFD780FF>千早振</color>在施放时，如果接触了<color=#80C0FFFF>水元素</color>/<color=#FF9999FF>火元素</color>/<color=#99FFFFFF>冰元素</color>/<color=#FFACFFFF>雷元素</color>，则会使这次<color=#FFD780FF>千早振</color>的下落攻击·乱岚拨止，发生元素转化，将附加200%攻击力的对应元素伤害，该伤害视为下落攻击伤害。每次<color=#FFD780FF>千早振</color>的技能效果中，元素转化仅会发生一次。",
+        "pt": "Quando <color=#FFD780FF>Chihayaburu</color> é lançado, se entrar em contato com <color=#80C0FFFF>Hydro</color>/<color=#FF9999FF>Pyro</color>/<color=#99FFFFFF>Cryo</color>/<color=#FFACFFFF>Electro</color> fará com que o Ataque Imersivo - Ranzan Aéreo de <color=#FFD780FF>Chihayaburu</color> cause Conversão Elemental, gerando 200% de Dano Elemental adicional correspondente, e esse Dano é considerado um Dano de Ataque Imersivo. A Conversão Elemental só pode acontecer uma vez por cada vez do efeito da Habilidade <color=#FFD780FF>Chihayaburu</color>."
+      },
+      {
+        "hash": "261348152",
+        "zh": "呼应着某人的「意志」而产生的地脉溢口。<color=#FFE14BFF>与其接触并打倒所有敌人</color>后，「地脉之花」会从中结出，可以消耗「原粹树脂」获取丰厚的馈藏…",
+        "pt": "Aberturas da Linha Ley que são geradas em resposta à vontade de alguém. <color=#FFE14BFF>Toque na abertura e derrote todos os oponentes</color> para revelar uma Flor de Linha Ley. Você pode consumir a Resina Original para receber tesouros extravagantes."
+      },
+      {
+        "hash": "838640440",
+        "zh": "每隔一段时间会在周围生成水泡并禁锢接触水泡的敌人",
+        "pt": "Cria Bolhas de Névoa periodicamente na área circundante e prende os inimigos que entrarem em contato com elas"
+      },
+      {
+        "hash": "1013464510",
+        "zh": "接触征讨之花",
+        "pt": "Toque na Flor da Punição"
+      },
+      {
+        "hash": "3317510202",
+        "zh": "请务必注意安全，不要用手直接触碰陨石。",
+        "pt": "Por favor, tome cuidado, não toque diretamente nos meteoritos."
+      },
+      {
+        "hash": "4065977402",
+        "zh": "这个东西，一般人接触不到，但其实就是普通的地脉镇石啦，它很容易吸引怪物过来。",
+        "pt": "Este dispositivo de exorcismo? Pessoas como você não o reconheceriam, mas é apenas um velho Monolith de Linhas Ley, enganosamente eficaz para atrair monstros."
+      },
+      {
+        "hash": "3080984906",
+        "zh": "如果想让他们更信任您，您还要多多与他们接触才是。",
+        "pt": "Se quiser fazer com que eles confiem mais em você, é bom se aproximar mais deles."
+      },
+      {
+        "hash": "2603087904",
+        "zh": "<color=#FFE14BFF>火元素</color>与<color=#FFE14BFF>雷元素</color>接触时，会引发<color=#FFE14BFF>「超载」</color>反应。超载反应会引发剧烈的爆炸，造成<color=#FFE14BFF>火元素范围伤害</color>。",
+        "pt": "Quando <color=#FFE14BFF>Pyro</color> entra em contato com <color=#FFE14BFF>Electro</color>, ocorre <color=#FFE14BFF>Sobrecarga</color>. Sobrecarga causa explosões poderosas que infligem <color=#FFE14BFF>Dano Pyro na AdE</color>."
+      },
+      {
+        "hash": "4119140938",
+        "zh": "只不过也因为接触了我们，触碰了甚至它诞生之前的真相。于是它不得不寻找一种壮烈的死法。",
+        "pt": "Entretanto, ao fazer contato conosco, também teve contato com uma verdade de antes de sua própria existência. Por isso, foi forçado a buscar uma valorosa morte."
+      },
+      {
+        "hash": "1816693040",
+        "zh": "对附近较大范围内的敌人喷射水流，造成水元素伤害与潮湿效果。\\n除此之外，每隔一段时间，「奇术机关·镜水自波」会在周围生成水泡，暂时禁锢接触水泡的敌人。",
+        "pt": "Ataca inimigos em uma AdE grande com canhões d'água que causam Dano Hydro e aplicam o status de Molhado.\\nAlém disso, o Veneficus Mechanicus: Reflexões Ondulantes cria periodicamente bolhas de névoa ao redor, deixando os inimigos temporariamente presos."
+      },
+      {
+        "hash": "715539041",
+        "zh": "然后，你要用力摇晃，让酒液充分接触空气，还有让蒲公英种子清凉的口感和酒液得以融合。",
+        "pt": "Agite vigorosamente para que o álcool fique exposto ao ar e a sensação refrescante das sementes de dandelion se misture com o licor."
+      },
+      {
+        "hash": "1368763533",
+        "zh": "接触「永恒」的象征，「千手百眼神像」。",
+        "pt": "Entre em contato com a Estátua do Deus Onipresente, o símbolo da \"Eternidade\"."
+      },
+      {
+        "hash": "2047417722",
+        "zh": "那时我与妻子活得很安逸，很少接触到战斗的事情。但「眼狩令」颁布之后，一切都变了…",
+        "pt": "Minha esposa e eu tínhamos uma vida tranquila. Guerra e batalhas não eram algo com o qual nos preocupávamos. Tudo isso mudou com o Decreto de Caça à Visão..."
+      },
+      {
+        "hash": "2020619992",
+        "zh": "<color=#FFE14BFF>冰元素</color>与<color=#FFE14BFF>水元素</color>接触时，会产生<color=#FFE14BFF>「冻结」</color>反应。处于冻结状态下的生物，将无法行动。",
+        "pt": "Quando <color=#FFE14BFF>Cryo</color> entra em contato com <color=#FFE14BFF>Hydro</color>, ocorre a reação <color=#FFE14BFF>Congelado</color>. Os seres congelados ficarão imóveis."
+      },
+      {
+        "hash": "2035118082",
+        "zh": "直到最近，我才有机会和人类接触。直到最近，我才知道书卷里的内容和意义。",
+        "pt": "Só recentemente finalmente tive a chance de entrar em contato com os humanos e aprender o que as coisas que li nos livros realmente significa."
+      },
+      {
+        "hash": "3522998248",
+        "zh": "<color=#FFE14BFF>火元素</color>与<color=#FFE14BFF>水元素</color>接触时，会引发<color=#FFE14BFF>「蒸发」</color>反应。蒸发反应会使<color=#FFE14BFF>触发反应的水元素或火元素伤害按照一定比例获得提升</color>。触发反应的伤害元素类型是<color=#FFE14BFF>水元素</color>时，相比火元素能获得更大的提升。",
+        "pt": "Quando <color=#FFE14BFF>Pyro</color> entra em contato com <color=#FFE14BFF>Hydro</color>, ocorre <color=#FFE14BFF>Vaporizar</color>. Vaporizar <color=#FFE14BFF>faz com que a fonte do Dano Hydro ou Pyro receba um determinado Bônus de Dano</color>. Se o tipo de Dano causado for <color=#FFE14BFF>Hydro</color>, ela receberá um Bônus de Dano maior do que Pyro."
+      },
+      {
+        "hash": "138956127",
+        "zh": "刚开始的时候，我非常诧异有人公开穿着天领奉行的制服来海祇岛。如果他是天领奉行的武士，就不该这么鲁莽；如果他是天领奉行的间谍，又不该这么招摇。不过接触过一段时间之后，我发现这位自称是「侦探」的鹿野院先生，对海祇岛的军事布防、政务商贸都不感兴趣，倒像是来旅游的。所以我只是加派了一些人手盯着他，并没有赶他离开。如果你见到他的话，倒是可以跟他聊上几句。",
+        "pt": "Inicialmente, fiquei surpresa ao ver alguém vindo à Ilha Watatsumi usando um uniforme da Comissão Tenryou. Um samurai da Comissão Tenryou nunca seria tão descarado, e um espião da Comissão Tenryou certamente nunca seria tão evidente. Logo depois, descobri que ele era um \"detetive\" autoproclamado pelo nome de Shikanoin, e que não se interessava por assuntos militares, governamentais ou comerciais. Ao invés disso, ele parecia ter chegado para um passeio. Dessa forma, coloquei alguns olhos nele, mas me abstive de tomar qualquer medida para retirá-lo da ilha. Não deixe de falar com ele se a oportunidade alguma vez aparecer."
+      }
+    ],
+    "双倍": [
+      {
+        "hash": "1414437000",
+        "zh": "好在胡桃对生意尤为重视，从不轻慢。\\n「咱们往生堂啊，收活人的钱，送死人上路，肩负双倍的责任，须让阴阳两界的人满意。」\\n说起堂里规矩，胡桃总是头头是道。\\n每到白天闭门停业，胡桃便邀请各路博学客卿来为年轻仪倌们说书讲学。\\n「葬仪传统是一门大学问，不可依赖印象和习惯。」\\n诸位讲师中，钟离先生最受敬仰。他的讲学成效显著，大大提升了往生堂仪倌的素养。\\n即使胡桃常常调侃钟离的古板作风，他仍是最受胡桃信赖之人。\\n此外，胡桃也要求仪倌们重视客户需求，不应拘泥于某种特定丧葬形式。\\n「客人们各有要求，有些想让逝者走得清净，有些追求热闹喜丧，还有些富贵人家，下葬只讲求一个排场。我们做什么、如何做，理应取决于他们要什么。」\\n胡桃主掌事务后，往生堂经营稳定，施礼得当，甚至令不少忌讳白事的璃月居民对丧葬一事有所改观。\\n话虽如此，仪倌们受训时，胡桃倒是另有去处，一溜烟便跑得没影。\\n这位堂主的兴趣爱好极富个人特色，又很难说是否太有闲情。\\n月下码头，山间危楼，最高处那个背手而立出口成诗的身影必定是胡桃。\\n她酷爱在夜晚闲逛，只要兴致来了，无论身处何处，总会情不自禁地赋诗一首。\\n而途经华光林山间歇脚亭的商贾，或许会有幸见到一位独坐桌边自娱自乐的神秘少女。\\n四个人才能组成的牌局，胡桃自己和自己都能玩得停不下来。\\n至于其中乐趣…唯有她自己知道。",
+        "pt": "Ainda bem que a Hutao valoriza bastante os seus negócios, e nunca negligencia os seus clientes.\\n\"A nossa Funerária de Wangsheng recebe dinheiro dos vivos, e manda os falecidos ao paraíso, portanto, estamos carregados da responsabilidade dupla, e temos que satisfazer ambos lados.\"\\nPor falar nas regras na Funerária, a Hutao sempre tem as suas ideias próprias.\\nQuando a Funerária de Wangsheng está fora do serviço, a Hutao convida os estudiosos e consultores experientes para dar palestras aos novos agentes.\\n\"Na verdade, o funeral é uma ciência. Não pode ser realizado baseado em impressões e hábitos pessoais.\"\\nEntre esses estudiosos, o Zhongli é o mais admirado. As suas palestras deram bons frutos, fazendo com que aumente o profissionalismo dos agentes da Funerária de Wangsheng.\\nEle é aquele que a Hutao mais confia, mesmo que ela sempre se queixa sobre os seus comportamentos antiquados.\\nAlém disso, a Hutao também salienta que os requisitos personalizados dos clientes devem ser atendidos, e os tipos de funeral devem ser diversificados.\\n\"Os clientes têm os seus próprios requisitos, alguns querem os falecidos partam com calma, entretanto, outros preferem um funeral mais animado, ou alguns podem querer um funeral mais luxuoso. Fazemos o que os clientes pedem, e são as demandas dos clientes que decidem como fazemos.\"\\nApós a Hutao tomar a posse, a Funerária de Wangsheng tem tido um negócio estável e lucrativo, fazendo com que os moradores de Liyue mudem a sua impressão sobre o funeral.\\nMesmo assim, nas palestras para os novos agentes, sempre não se vê a Hutao. Para onde ela vai?\\nOs passatempos dessa Diretora são excêntricos assim como sua personalidade, e é difícil dizer quais de suas atividades são de uma natureza puramente de lazer.\\nSe você ver uma garota no alto de um penhasco ou prédios altos em uma noite com lua, que está compondo a poesia, ela com certeza é a Hutao.\\nEla adora passear na noite, procurando por inspiração. Quando a inspiração chega, não importa onde esteja, ela transformará seus pensamentos em bela poesia...\\nNão é surpreendente ver uma garota que se senta aí numa mesa brincando e falando sozinha.\\nE a Hutao pode jogar sozinha um jogo de 4 pessoas alegremente.\\nQuanto à diversão desse tipo de jogo, só Hutao que sabe."
+      },
+      {
+        "hash": "2554495444",
+        "zh": "#<color=#D3BC8EFF>【活动规则】</color>\\n在活动期间，回归旅行者可以领取1次「归还奖励」。同时参与并完成「岁时累记」及「归还之路」活动任务后可以领取对应的奖励。回归期间还可享受「归途祝愿」，拥有额外掉落的机会。\\n\\n<color=#D3BC8EFF>【岁时累记】累计登录奖励</color>\\n在活动期间，每日登录即可领取奖励（每日凌晨4点更新{TIMEZONE}），每日奖励仅可领取1次，最多可以领取7天的奖励。\\n\\n<color=#D3BC8EFF>【归还之路】回归任务奖励</color>\\n在活动期间，完成指定任务可领取任务奖励和积分。积分达到指定数量可领取相应档位的奖励，每一档位额外奖励仅可领取1次。四个阶段将会于每日凌晨4点依次开放（{TIMEZONE}），请旅行者注意。\\n（累计登录任务同样于每日凌晨4点（{TIMEZONE}）刷新，需重新登录以增加计数。）\\n\\n<color=#D3BC8EFF>【归途祝愿】额外双倍掉落</color>\\n回归期间内共会获得21次双倍掉落机会，回归的旅行者每日可使用3次。在使用「原粹树脂」激活完成「祝圣秘境」、「炼武秘境」与「精通秘境」后的秘境古树，与完成「地脉衍出·启示之花」与「地脉衍出·藏金之花」时，将会获得双倍奖励。双倍掉落次数每日凌晨4点刷新（{TIMEZONE}），请旅行者及时使用。",
+        "pt": "#<color=#D3BC8EFF> Regras do Evento</color>\\nDurante o evento, os Viajantes de Retorno podem resgatar um conjunto especial de Recompensas de Desejo de Retorno uma vez. Ao mesmo tempo, você pode participar das missões de eventos \"Passagem do Tempo\" e \"Caminho do Retorno\". Após a conclusão, os Viajantes podem resgatar as recompensas correspondentes. Você também pode receber o \"Desejo de Retorno\" e obter de descontos de bônus durante este período.\\n\\n<color=#D3BC8EFF>Recompensas de Login da Passagem do tempo</color>\\nOs Viajantes que retornam podem fazer login todos os dias para resgatar recompensas (redefine diariamente às 04:00 {TIMEZONE}). Apenas uma recompensa de login pode ser resgatada a cada dia por até 7 dias.\\n\\n<color=#D3BC8EFF>Recompensas do Caminho do Retorno</color>\\nOs Viajantes de Retorno podem completar as missões diárias para obter pontos e resgatar recompensas. Quando seus pontos acumulados atingirem o valor designado, você pode resgatar recompensas correspondentes à posição. As recompensas do bônus para cada posição só podem ser resgatada apenas uma vez. Os quatro estágios ficarão disponíveis por ordem todos os dias às 04:00 ({TIMEZONE}). Viajantes, fiquem ligados.\\n(A missão de login acumulado também é redefinida todos os dias às 04:00 ({TIMEZONE}) e os Viajantes precisam fazer login novamente para aumentar as vezes.)\\n\\n<color=#D3BC8EFF>Bônus de Drop em Dobro do Desejo de Retorno</color>\\nDurante o Retorno receberá 21 oportunidades de ganhar drops em dobro. Os jogadores podem usar 3 vezes por dia. Elas podem ser usadas para obter o dobro das recompensas de Árvores Petrificadas em Domínios e Flores de Linha Ley usando Resina Original. A quantidade de oportunidades de liberação dupla é atualizada diariamente às 04:00 ({TIMEZONE}). Lembre-se de usar as oportunidades a tempo!"
+      },
+      {
+        "hash": "4201881749",
+        "zh": "今日双倍掉落剩余次数",
+        "pt": "Chances Restantes de Drop Duplo de hoje"
+      },
+      {
+        "hash": "1394196306",
+        "zh": "假如能跟你一起演绎「摇滚」，那一定是双倍的…不，那一定是这个世上最棒的事情！",
+        "pt": "Se eu puder fazer uma música de Rock n' Roll com você isso com certeza seria duas vezes... Não. Isso com certeza seria a coisa mais legal desse mundo!"
+      },
+      {
+        "hash": "1393862653",
+        "zh": "#回归的旅行者总共可获得21次双倍掉落的使用机会，每日最多可使用3次。在使用「原粹树脂」激活完成「祝圣秘境」、「炼武秘境」与「精通秘境」后的秘境古树，与完成「地脉衍出·启示之花」与「地脉衍出·藏金之花」时，获得双倍奖励。双倍掉落次数每日凌晨4点刷新（{TIMEZONE}），请旅行者及时使用。",
+        "pt": "#Os Viajantes de Retorno recebem 21 oportunidades para ganhar drops em dobro. Elas podem ser usadas para obter recompensas em dobro de Árvores Petrificadas em Domínios e Flores de Linha Ley usando Resina Original. Pode usar 3 vezes por dia no máximo. A quantidade de chances de drops em dobro são redefinidas diariamente às 04:00 ({TIMEZONE}). Lembre-se de usar as oportunidades a tempo."
+      },
+      {
+        "hash": "3664025597",
+        "zh": "活动期间双倍掉落剩余{0}次",
+        "pt": "Chances Restantes de Drop Duplo do Evento: {0}"
+      },
+      {
+        "hash": "133146752",
+        "zh": "双倍！",
+        "pt": "Bônus!"
+      },
+      {
+        "hash": "469311751",
+        "zh": "受人之托，忠人之事。我们往生堂性质特殊，肩负着双倍责任，所以，一定要让两个世界的人都满意才行。",
+        "pt": "Servimos aos clientes. Aqui na Funerária de Wangsheng, temos um trabalho especial, e carregamos uma responsabilidade dobrada: satisfazer os clientes de dois mundos."
+      },
+      {
+        "hash": "2129674639",
+        "zh": "双倍秘宝",
+        "pt": "Recompensa em Dobro"
+      },
+      {
+        "hash": "2910587597",
+        "zh": "【归途祝愿】额外双倍掉落",
+        "pt": "Bônus de Drop Adicional de \"Desejo de Retorno\""
+      },
+      {
+        "hash": "1386241405",
+        "zh": "双倍掉落",
+        "pt": "Drop Duplo"
+      }
+    ],
+    "2倍产出": [
+      {
+        "hash": "1386621859",
+        "zh": "完美烹饪防御类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida de aumento de DEF, Xinyan tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "779979035",
+        "zh": "合成武器突破素材时，有10%概率获得2倍产出。",
+        "pt": "Quando Ayaka fabrica Materiais de Ascensão de Armas, ele tem 10% de chance de receber o dobro do produto."
+      },
+      {
+        "hash": "2270889547",
+        "zh": "合成角色天赋素材时，有10%概率获得2倍产出。",
+        "pt": "Quando sintetiza Materiais para aprimoramento de Talento do Personagem, tem uma chance de 10% de obter o dobro da Produção."
+      },
+      {
+        "hash": "1415116931",
+        "zh": "完美烹饪冒险类食物时，有12%概率获得2倍产出。",
+        "pt": "Ao fazer uma comida Perfeita relacionada a efeitos de Aventura, há 12% de chance de se obter o dobro de produção."
+      },
+      {
+        "hash": "4099575347",
+        "zh": "完美烹饪防御类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida de aumento de DEF, Noelle tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "1823299387",
+        "zh": "完美烹饪恢复类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida com efeito de recuperação, tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "810427107",
+        "zh": "合成武器突破素材时，有10%概率获得2倍产出。",
+        "pt": "Quando Albedo fabrica Materiais de Ascensão de Armas, ele tem 10% de chance de receber o dobro do produto."
+      },
+      {
+        "hash": "3985819811",
+        "zh": "完美烹饪攻击类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida de aumento de ATQ, Xiangling tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "1532071283",
+        "zh": "完美烹饪恢复类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida com efeito de recuperação, tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "2768580979",
+        "zh": "完美烹饪恢复类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida com efeito de recuperação, tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "2984501507",
+        "zh": "合成角色与武器培养素材时，有10%概率获得2倍产出。",
+        "pt": "Quando Sucrose cria Materiais de Elevação de Personagens e de Armas, ela tem 10% de chance de receber o dobro de produção."
+      },
+      {
+        "hash": "2521602571",
+        "zh": "旅行者在稻妻成功<color=#FFD780FF>钓鱼</color>时，因为托马的帮助，有20%概率获得2倍产出。",
+        "pt": "Quando você <color=#FFD780FF>pescar</color> com sucesso em Inazuma, possui 20% de chance de obter o dobro de peixe graças a ajuda do Thoma."
+      }
+    ],
+    "2倍": [
+      {
+        "hash": "1386621859",
+        "zh": "完美烹饪防御类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida de aumento de DEF, Xinyan tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "779979035",
+        "zh": "合成武器突破素材时，有10%概率获得2倍产出。",
+        "pt": "Quando Ayaka fabrica Materiais de Ascensão de Armas, ele tem 10% de chance de receber o dobro do produto."
+      },
+      {
+        "hash": "2270889547",
+        "zh": "合成角色天赋素材时，有10%概率获得2倍产出。",
+        "pt": "Quando sintetiza Materiais para aprimoramento de Talento do Personagem, tem uma chance de 10% de obter o dobro da Produção."
+      },
+      {
+        "hash": "1415116931",
+        "zh": "完美烹饪冒险类食物时，有12%概率获得2倍产出。",
+        "pt": "Ao fazer uma comida Perfeita relacionada a efeitos de Aventura, há 12% de chance de se obter o dobro de produção."
+      },
+      {
+        "hash": "4099575347",
+        "zh": "完美烹饪防御类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida de aumento de DEF, Noelle tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "1823299387",
+        "zh": "完美烹饪恢复类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida com efeito de recuperação, tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "810427107",
+        "zh": "合成武器突破素材时，有10%概率获得2倍产出。",
+        "pt": "Quando Albedo fabrica Materiais de Ascensão de Armas, ele tem 10% de chance de receber o dobro do produto."
+      },
+      {
+        "hash": "3985819811",
+        "zh": "完美烹饪攻击类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida de aumento de ATQ, Xiangling tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "1532071283",
+        "zh": "完美烹饪恢复类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida com efeito de recuperação, tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "2768580979",
+        "zh": "完美烹饪恢复类食物时，有12%概率获得2倍产出。",
+        "pt": "Quando uma Culinária Perfeita é feita em uma comida com efeito de recuperação, tem uma chance de 12% de receber o dobro de produção."
+      },
+      {
+        "hash": "2984501507",
+        "zh": "合成角色与武器培养素材时，有10%概率获得2倍产出。",
+        "pt": "Quando Sucrose cria Materiais de Elevação de Personagens e de Armas, ela tem 10% de chance de receber o dobro de produção."
+      },
+      {
+        "hash": "2521602571",
+        "zh": "旅行者在稻妻成功<color=#FFD780FF>钓鱼</color>时，因为托马的帮助，有20%概率获得2倍产出。",
+        "pt": "Quando você <color=#FFD780FF>pescar</color> com sucesso em Inazuma, possui 20% de chance de obter o dobro de peixe graças a ajuda do Thoma."
+      }
+    ],
+    "补充": [
+      {
+        "hash": "42699650",
+        "zh": "你身上的「触媒」变得更亮了呢，看起来这东西可以补充光亮！",
+        "pt": "Parece que o seu Condutor está mais brilhante ainda. Se a Paimon não está enganada, ela pode reabastecer a luz."
+      },
+      {
+        "hash": "2319403392",
+        "zh": "一些特定的机关、生物，如明石灯、吉光虫，能补充触媒的能量。",
+        "pt": "Alguns dispositivos especiais e criaturas como Lanternas Lúmen e Insetos de Luz da Sorte podem ser utilizados para recarregar a energia do Condutor."
+      },
+      {
+        "hash": "442489723",
+        "zh": "激活地脉之花以收取秘宝。\\n\\n<size=24>激活将消耗<color=#E0902CFF> {0}个 {1}</color>，当前拥有的 {1}数量不足，需要消耗背包中的{2}进行补充，还是使用原石补充？</size>",
+        "pt": "Revitalize a Flor de Linha Ley para resgatar uma recompensa.\\n\\nSão necessários <size=24><color=#E0902CFF>{0} {1}</color>. Você não possui {1} suficientes. Comprar com {2} do seu Inventário ou com Gemas Essenciais?</size>"
+      },
+      {
+        "hash": "1763606495",
+        "zh": "是在谈论甘雨正帮忙照看着的小姑娘么。呵，不用紧张，此事我并无声张的打算。就当那个船长，总能做一两件聪明事吧。对了，这瑶瑶，近来光顾着吃海产了，你得想办法劝劝甘雨，叫她为瑶瑶多补充些瓜果蔬菜才对。",
+        "pt": "Presumo que você se refira à garota de que a Ganyu está tomando conta. Não se preocupe, não tenho planos de tornar esse assunto público. Estou contente em estender um pouco de clemência às estranhas manobras perniciosas da capitã do barco. Uma coisa, no entanto - a Yaoyao parece ter se apaixonado um pouco com frutos do mar recentemente. Você deve tentar convencê-la a incluir mais frutas e vegetais em sua dieta."
+      },
+      {
+        "hash": "2617210003",
+        "zh": "消耗原粹树脂以收取天降之星的秘宝。\\n\\n<size=24>激活将消耗<color=#E0902CFF> {0}个 {1}</color>，当前拥有的 {1}数量不足，需要消耗背包中的{2}进行补充，还是使用原石补充？</size>",
+        "pt": "Consuma Resina Original e receba o tesouro misterioso da Estrela Caída.\\n\\n<size=24>Custará<color=#E0902CFF> {0} {1} </color>. No momento você possui {1}, isso é insuficiente. Deseja consumir {2} do inventário ou Gema Essencial para completar?</size>"
+      },
+      {
+        "hash": "116396057",
+        "zh": "消耗<color=#F39000>{0}</color>原石，补充<color=#F39000>{1}</color>点原粹树脂，今日还能补充<color=#F39000>{2}</color>次\\n单日内补充次数越多，所需原石就越多",
+        "pt": "Consumir <color=#F39000>{0}</color> Gemas Essenciais para recarregar <color=#F39000>{1}</color> Resinas Originais. Hoje ainda pode recarregar <color=#F39000>{2}</color> vezes\\nQuanto mais vezes recarregar em um dia, mais Gemas Essenciais serão precisas."
+      },
+      {
+        "hash": "299847562",
+        "zh": "开启「原素烘炉」以收取秘宝。\\n\\n<size=24>将消耗<color=#FF5141FF>{0}个{1}</color>，当前拥有的{1}数量不足。\\n补充{1}以收取秘宝，或消耗<color=#F39000FF>{2}</color>以获取额外奖励。</size>",
+        "pt": "Ative o Crisol Elemental para obter uma recompensa.\\n\\n<size=24>Consumirá <color=#FF5141FF> {1}</color> x{0}.\\n\\nAtualmente você não possui {1} suficiente.\\nRecarregue ou consuma <color=#F39000FF>{2}</color> para obter uma recompensa adicional.</size>"
+      },
+      {
+        "hash": "3793412804",
+        "zh": "补充能量",
+        "pt": "Recarregar energia"
+      },
+      {
+        "hash": "3410660410",
+        "zh": "这道菜最初是幕府的外国人泽维尔教给我们的。听他说很适合矿工补充能量呢！",
+        "pt": "Originalmente, este prato foi ensinado pelo Xavier, que é um forasteiro do Shogunato. Segundo ele, é indicado para mineradores que precisam repor suas energias!"
+      },
+      {
+        "hash": "2445721555",
+        "zh": "开启「原素烘炉」以收取秘宝。\\n\\n<size=24>将消耗<color=#FF5141FF>{0}个{1}</color>，当前拥有的{1}数量不足，补充以领取奖励。</size>",
+        "pt": "Ative o Crisol Elemental para obter uma recompensa.\\n\\n<size=24>Consumirá <color=#FF5141FF> {1}</color> x{0}. Atualmente você não possui {1} suficiente. Recarregue para poder continuar. </size>"
+      },
+      {
+        "hash": "2242081029",
+        "zh": "原粹树脂今日补充次数已达上限",
+        "pt": "Limite máximo diário de reabastecimento de Resina Original alcançado"
+      },
+      {
+        "hash": "1213911166",
+        "zh": "原粹树脂能提炼大气中的元素力，慢慢地补充能量。\\n利用某种极为珍贵的结晶体，也可以快速将能量充满…",
+        "pt": "A Resina Original reabastece gradualmente, absorvendo a energia elemental do ambiente natural.\\nAlternativamente, você pode reabastecê-la mais rapidamente usando uma certa variedade de gemas altamente preciosas."
+      },
+      {
+        "hash": "1944143091",
+        "zh": "消耗原粹树脂以回收陨星残骸中的能量。\\n\\n<size=24>回收将消耗<color=#E0902CFF> {0}个 {1}</color>，当前拥有的 {1}数量不足，需要消耗背包中的{2}进行补充，还是使用原石补充？</size>",
+        "pt": "Consuma Resina Original e receba a energia dos fragmentos de meteorito.\\n\\n<size=24>Custará<color=#E0902CFF> {0} {1} </color>. No momento você possui {1}, isso é insuficiente. Deseja usar {2} de seu inventário ou Gema Essencial para completar?</size>"
+      },
+      {
+        "hash": "91394189",
+        "zh": "蒸制而成的蛋料理。色泽澄澈金黄的禽蛋羹上点缀了几颗莲子。不管是作为早餐还是饭后点心，都能大量补充身体所需的优质营养。",
+        "pt": "Um prato de ovo cozido no vapor. As cores claras e douradas do creme de ovos foram adornadas com várias raízes de lótus. Seja no café da manhã ou lanche após a refeição, seu valor nutricional superior pode nutrir muito o corpo."
+      },
+      {
+        "hash": "2641050507",
+        "zh": "消耗原粹树脂以收取纯水之念的秘宝。\\n\\n<size=24>将消耗<color=#FF5141FF>{0}点{1}</color>，当前拥有的{1}数量不足，补充以领取奖励。</size>",
+        "pt": "Consuma Resina Original para obter recompensas do Devaneio de Águas Puras.\\n\\n<size=24>Consumirá <color=#FF5141FF> {1} </color>x{0}. Atualmente você não possui {1} suficiente. Recarregue para continuar.</size>"
+      },
+      {
+        "hash": "560610243",
+        "zh": "开启「原素烘炉」以收取秘宝。\\n\\n<size=24>激活将消耗<color=#E0902CFF> {0}个 {1}</color>，当前拥有的 {1}数量不足，需要消耗背包中的{2}进行补充，还是使用原石补充？</size>",
+        "pt": "Acenda o Crisol Elemental e colete tesouros secretos.\\n\\n<size=24>Fazer isso irá custar <color=#E0902CFF>{0} {1}</color>. Atualmente você não tem {1} o suficiente. Você deseja comprar usando Gemas Essenciais, ou usando {2} do seu inventário?</size>"
+      },
+      {
+        "hash": "1468185543",
+        "zh": "我会提炼出甜甜花的花蜜，做成糖块。脑袋转不动的时候吃一块，就又可以集中精神了。做研究，糖分的补充是很重要的。",
+        "pt": "Eu faço bombons com Flores Doce refinadas. Com apenas um bombom, posso voltar a me concentrar quando estou distraída. O suplemento de açúcar é fundamental para a minha pesquisa."
+      },
+      {
+        "hash": "2851492515",
+        "zh": "激活石化古树以收取秘宝。\\n\\n<size=24>激活将消耗<color=#E0902CFF> {0}个 {1}</color>，当前拥有的 {1}数量不足，需要消耗背包中的{2}进行补充，还是使用原石补充？</size>",
+        "pt": "Revitalize a Árvore Petrificada para resgatar uma recompensa.\\n\\nSão necessários<size=24><color=#E0902CFF>{0} {1}</color>. Você não possui {1} suficientes. Comprar com {2} do seu Inventário ou com Gemas Essenciais?</size>"
+      },
+      {
+        "hash": "2554031987",
+        "zh": "激活石化古树以收取秘宝。\\n\\n<size=24>将消耗<color=#FF5141FF>{0}个{1}</color>，当前拥有的{1}数量不足，补充以领取奖励。</size>",
+        "pt": "Revitalize a Árvore Petrificada para obter recompensas.\\n\\n<size=24>Consumirá <color=#FF5141FF> {1} </color>x {0}. Atualmente você não possui {1} suficiente. Recarregue para continuar.</size>"
+      },
+      {
+        "hash": "1760761836",
+        "zh": "（今日还能补充{0}次）",
+        "pt": "(Ainda pode ser reabastecido {0} vez(es) hoje)"
+      }
+    ],
+    "原粹": [
+      {
+        "hash": "507171700",
+        "zh": "#<color=#D3BC8EFF>【规则】</color>\\n征讨领域中盘踞着异常强大的敌人。挑战成功后，可以获得极为丰厚的秘宝。\\n完成征讨领域时，需要在「地脉之花·征讨之花」处消耗「原粹树脂」来领取奖励。\\n激活地脉之花需要消耗60个原粹树脂。\\n每周开始时，会产生三次机会，使这些征讨之花所需的原粹树脂减半。\\n\\n<color=#D3BC8EFF>【重置】</color>\\n每周可以获取1次征讨领域的奖励。\\n每周一凌晨4点重置。{TIMEZONE}",
+        "pt": "#<color=#D3BC8EFF>Regras</color>\\nDomínio Dizimado contém oponentes estranhamente poderosos. Depois de completar com sucesso o desafio, você pode obter premiações abundantes.\\nPara receber esses prêmios, use a Resina Original nas Flores de Linha Ley - Flor da Punição.\\nRevitalizar as Flores de Linha Ley requer 60 Resinas Originais.\\nNo início de todas as semanas haverá 3 oportunidades para reduzir em metade a Resina necessária para essa Flor da Punição.\\n\\n<color=#D3BC8EFF>Reinicialização</color>\\nApenas uma premiação do Domínio Dizimado pode ser obtida por semana.\\nIsso reinicia às 04:00 toda segunda-feira. {TIMEZONE}"
+      },
+      {
+        "hash": "42489615",
+        "zh": "原粹树脂回满",
+        "pt": "Resina Original Regenerada"
+      },
+      {
+        "hash": "3393185641",
+        "zh": "消耗80点原粹树脂",
+        "pt": "Use 80 Resinas Originais"
+      },
+      {
+        "hash": "2617210003",
+        "zh": "消耗原粹树脂以收取天降之星的秘宝。\\n\\n<size=24>激活将消耗<color=#E0902CFF> {0}个 {1}</color>，当前拥有的 {1}数量不足，需要消耗背包中的{2}进行补充，还是使用原石补充？</size>",
+        "pt": "Consuma Resina Original e receba o tesouro misterioso da Estrela Caída.\\n\\n<size=24>Custará<color=#E0902CFF> {0} {1} </color>. No momento você possui {1}, isso é insuficiente. Deseja consumir {2} do inventário ou Gema Essencial para completar?</size>"
+      },
+      {
+        "hash": "261348152",
+        "zh": "呼应着某人的「意志」而产生的地脉溢口。<color=#FFE14BFF>与其接触并打倒所有敌人</color>后，「地脉之花」会从中结出，可以消耗「原粹树脂」获取丰厚的馈藏…",
+        "pt": "Aberturas da Linha Ley que são geradas em resposta à vontade de alguém. <color=#FFE14BFF>Toque na abertura e derrote todos os oponentes</color> para revelar uma Flor de Linha Ley. Você pode consumir a Resina Original para receber tesouros extravagantes."
+      },
+      {
+        "hash": "1751610069",
+        "zh": "原粹树脂不足",
+        "pt": "Resina Original Insuficiente"
+      },
+      {
+        "hash": "116396057",
+        "zh": "消耗<color=#F39000>{0}</color>原石，补充<color=#F39000>{1}</color>点原粹树脂，今日还能补充<color=#F39000>{2}</color>次\\n单日内补充次数越多，所需原石就越多",
+        "pt": "Consumir <color=#F39000>{0}</color> Gemas Essenciais para recarregar <color=#F39000>{1}</color> Resinas Originais. Hoje ainda pode recarregar <color=#F39000>{2}</color> vezes\\nQuanto mais vezes recarregar em um dia, mais Gemas Essenciais serão precisas."
+      },
+      {
+        "hash": "2768288862",
+        "zh": "剩余<color=#F39000>{0}</color>天，每日可领取<color=#F39000>{1}</color>点原粹树脂。今日尚未领取",
+        "pt": "Dias restantes: <color=#F39000>{0}</color>, todos os dias pode resgatar <color=#F39000>{1}</color> Resinas Originais. Hoje ainda não resgatou."
+      },
+      {
+        "hash": "2242081029",
+        "zh": "原粹树脂今日补充次数已达上限",
+        "pt": "Limite máximo diário de reabastecimento de Resina Original alcançado"
+      },
+      {
+        "hash": "1213911166",
+        "zh": "原粹树脂能提炼大气中的元素力，慢慢地补充能量。\\n利用某种极为珍贵的结晶体，也可以快速将能量充满…",
+        "pt": "A Resina Original reabastece gradualmente, absorvendo a energia elemental do ambiente natural.\\nAlternativamente, você pode reabastecê-la mais rapidamente usando uma certa variedade de gemas altamente preciosas."
+      },
+      {
+        "hash": "1817991577",
+        "zh": "消耗100点原粹树脂",
+        "pt": "Use 100 Resinas Originais"
+      },
+      {
+        "hash": "2073165128",
+        "zh": "<color=#FFE14BFF>原粹树脂</color>可以激活秘境深处的石化古树，以及世界上的各种地脉之花，以获得秘宝。",
+        "pt": "<color=#FFE14BFF>Resina Original</color> pode ser usada para revigorar as Árvores Petrificadas encontradas nas profundezas dos Domínios, assim como as várias Flores de Linha Ley encontradas por Teyvat. Fazer isso irá lhe conceder tesouros valiosos."
+      },
+      {
+        "hash": "1944143091",
+        "zh": "消耗原粹树脂以回收陨星残骸中的能量。\\n\\n<size=24>回收将消耗<color=#E0902CFF> {0}个 {1}</color>，当前拥有的 {1}数量不足，需要消耗背包中的{2}进行补充，还是使用原石补充？</size>",
+        "pt": "Consuma Resina Original e receba a energia dos fragmentos de meteorito.\\n\\n<size=24>Custará<color=#E0902CFF> {0} {1} </color>. No momento você possui {1}, isso é insuficiente. Deseja usar {2} de seu inventário ou Gema Essencial para completar?</size>"
+      },
+      {
+        "hash": "2641050507",
+        "zh": "消耗原粹树脂以收取纯水之念的秘宝。\\n\\n<size=24>将消耗<color=#FF5141FF>{0}点{1}</color>，当前拥有的{1}数量不足，补充以领取奖励。</size>",
+        "pt": "Consuma Resina Original para obter recompensas do Devaneio de Águas Puras.\\n\\n<size=24>Consumirá <color=#FF5141FF> {1} </color>x{0}. Atualmente você não possui {1} suficiente. Recarregue para continuar.</size>"
+      },
+      {
+        "hash": "3807446566",
+        "zh": "#「征讨之花」是「地脉之花」的一种，象征着强大的存在。而这其中异常强大的生灵的征讨之花，通常需要消耗60点「原粹树脂」激活，以获取地脉中对应着他们的宝藏。\\n每周开始时，会产生三次机会，使激活他们的征讨之花所需的原粹树脂减半。\\n领取奖励的机会与减半次数每周一凌晨4点重置。{TIMEZONE} \\n\\n本周剩余消耗减半次数：{0}",
+        "pt": "#A Flor da Punição é um tipo de Flor de Linha Ley, simbolizando uma existência mais forte. Por isso, para revitalizar essa poderosa Flor da Punição, normalmente são necessários 60 Resinais Originais para obter suas recompensas.\\nA partir do começo de cada semana, haverão três chances de revitalizar a Flor da Punição com a metade do seu custo de Resina Original.\\nAs chances de obter as recompensas e utilizar a metade do custo são renovadas toda segunda-feira às 04:00 ({TIMEZONE}) \\n\\nVezes restantes com metade do custo de Resina Original nesta semana: {0}"
+      },
+      {
+        "hash": "3667884565",
+        "zh": "消耗原粹树脂以回收陨星残骸中的能量。\\n\\n<size=24>回收将消耗<color=#E0902CFF> {0}个 {1}</color>，是否确认？</size>",
+        "pt": "Consuma Resina Original e receba a energia dos fragmentos de meteorito.\\n\\n<size=24>Custará<color=#E0902CFF> {0} {1} </color>, deseja continuar?</size>"
+      },
+      {
+        "hash": "1809041399",
+        "zh": "*有效期持续{0}天！\\n累计可获得{1}原粹树脂！",
+        "pt": "*Válido por {0} dias!\\nObtenha um total de {1} Resina Original!"
+      },
+      {
+        "hash": "2346605891",
+        "zh": "消耗原粹树脂以收取天降之星的秘宝。\\n\\n<size=24>将消耗<color=#FF5141FF>{0}个{1}</color>，当前拥有的{1}数量不足，补充以领取奖励。</size>",
+        "pt": "Consuma Resina Original para obter recompensas da Estrela Caída.\\n\\n<size=24>Consumirá <color=#FF5141FF> {1} </color>x {0}. Atualmente você não possui {1} suficiente. Recarregue para continuar.</size>"
+      },
+      {
+        "hash": "2480427610",
+        "zh": "累计消耗150点原粹树脂",
+        "pt": "Use um total de 150 Resinas Originais"
+      },
+      {
+        "hash": "2554495444",
+        "zh": "#<color=#D3BC8EFF>【活动规则】</color>\\n在活动期间，回归旅行者可以领取1次「归还奖励」。同时参与并完成「岁时累记」及「归还之路」活动任务后可以领取对应的奖励。回归期间还可享受「归途祝愿」，拥有额外掉落的机会。\\n\\n<color=#D3BC8EFF>【岁时累记】累计登录奖励</color>\\n在活动期间，每日登录即可领取奖励（每日凌晨4点更新{TIMEZONE}），每日奖励仅可领取1次，最多可以领取7天的奖励。\\n\\n<color=#D3BC8EFF>【归还之路】回归任务奖励</color>\\n在活动期间，完成指定任务可领取任务奖励和积分。积分达到指定数量可领取相应档位的奖励，每一档位额外奖励仅可领取1次。四个阶段将会于每日凌晨4点依次开放（{TIMEZONE}），请旅行者注意。\\n（累计登录任务同样于每日凌晨4点（{TIMEZONE}）刷新，需重新登录以增加计数。）\\n\\n<color=#D3BC8EFF>【归途祝愿】额外双倍掉落</color>\\n回归期间内共会获得21次双倍掉落机会，回归的旅行者每日可使用3次。在使用「原粹树脂」激活完成「祝圣秘境」、「炼武秘境」与「精通秘境」后的秘境古树，与完成「地脉衍出·启示之花」与「地脉衍出·藏金之花」时，将会获得双倍奖励。双倍掉落次数每日凌晨4点刷新（{TIMEZONE}），请旅行者及时使用。",
+        "pt": "#<color=#D3BC8EFF> Regras do Evento</color>\\nDurante o evento, os Viajantes de Retorno podem resgatar um conjunto especial de Recompensas de Desejo de Retorno uma vez. Ao mesmo tempo, você pode participar das missões de eventos \"Passagem do Tempo\" e \"Caminho do Retorno\". Após a conclusão, os Viajantes podem resgatar as recompensas correspondentes. Você também pode receber o \"Desejo de Retorno\" e obter de descontos de bônus durante este período.\\n\\n<color=#D3BC8EFF>Recompensas de Login da Passagem do tempo</color>\\nOs Viajantes que retornam podem fazer login todos os dias para resgatar recompensas (redefine diariamente às 04:00 {TIMEZONE}). Apenas uma recompensa de login pode ser resgatada a cada dia por até 7 dias.\\n\\n<color=#D3BC8EFF>Recompensas do Caminho do Retorno</color>\\nOs Viajantes de Retorno podem completar as missões diárias para obter pontos e resgatar recompensas. Quando seus pontos acumulados atingirem o valor designado, você pode resgatar recompensas correspondentes à posição. As recompensas do bônus para cada posição só podem ser resgatada apenas uma vez. Os quatro estágios ficarão disponíveis por ordem todos os dias às 04:00 ({TIMEZONE}). Viajantes, fiquem ligados.\\n(A missão de login acumulado também é redefinida todos os dias às 04:00 ({TIMEZONE}) e os Viajantes precisam fazer login novamente para aumentar as vezes.)\\n\\n<color=#D3BC8EFF>Bônus de Drop em Dobro do Desejo de Retorno</color>\\nDurante o Retorno receberá 21 oportunidades de ganhar drops em dobro. Os jogadores podem usar 3 vezes por dia. Elas podem ser usadas para obter o dobro das recompensas de Árvores Petrificadas em Domínios e Flores de Linha Ley usando Resina Original. A quantidade de oportunidades de liberação dupla é atualizada diariamente às 04:00 ({TIMEZONE}). Lembre-se de usar as oportunidades a tempo!"
+      }
+    ],
+    "树脂": [
+      {
+        "hash": "507171700",
+        "zh": "#<color=#D3BC8EFF>【规则】</color>\\n征讨领域中盘踞着异常强大的敌人。挑战成功后，可以获得极为丰厚的秘宝。\\n完成征讨领域时，需要在「地脉之花·征讨之花」处消耗「原粹树脂」来领取奖励。\\n激活地脉之花需要消耗60个原粹树脂。\\n每周开始时，会产生三次机会，使这些征讨之花所需的原粹树脂减半。\\n\\n<color=#D3BC8EFF>【重置】</color>\\n每周可以获取1次征讨领域的奖励。\\n每周一凌晨4点重置。{TIMEZONE}",
+        "pt": "#<color=#D3BC8EFF>Regras</color>\\nDomínio Dizimado contém oponentes estranhamente poderosos. Depois de completar com sucesso o desafio, você pode obter premiações abundantes.\\nPara receber esses prêmios, use a Resina Original nas Flores de Linha Ley - Flor da Punição.\\nRevitalizar as Flores de Linha Ley requer 60 Resinas Originais.\\nNo início de todas as semanas haverá 3 oportunidades para reduzir em metade a Resina necessária para essa Flor da Punição.\\n\\n<color=#D3BC8EFF>Reinicialização</color>\\nApenas uma premiação do Domínio Dizimado pode ser obtida por semana.\\nIsso reinicia às 04:00 toda segunda-feira. {TIMEZONE}"
+      },
+      {
+        "hash": "42489615",
+        "zh": "原粹树脂回满",
+        "pt": "Resina Original Regenerada"
+      },
+      {
+        "hash": "3393185641",
+        "zh": "消耗80点原粹树脂",
+        "pt": "Use 80 Resinas Originais"
+      },
+      {
+        "hash": "2617210003",
+        "zh": "消耗原粹树脂以收取天降之星的秘宝。\\n\\n<size=24>激活将消耗<color=#E0902CFF> {0}个 {1}</color>，当前拥有的 {1}数量不足，需要消耗背包中的{2}进行补充，还是使用原石补充？</size>",
+        "pt": "Consuma Resina Original e receba o tesouro misterioso da Estrela Caída.\\n\\n<size=24>Custará<color=#E0902CFF> {0} {1} </color>. No momento você possui {1}, isso é insuficiente. Deseja consumir {2} do inventário ou Gema Essencial para completar?</size>"
+      },
+      {
+        "hash": "261348152",
+        "zh": "呼应着某人的「意志」而产生的地脉溢口。<color=#FFE14BFF>与其接触并打倒所有敌人</color>后，「地脉之花」会从中结出，可以消耗「原粹树脂」获取丰厚的馈藏…",
+        "pt": "Aberturas da Linha Ley que são geradas em resposta à vontade de alguém. <color=#FFE14BFF>Toque na abertura e derrote todos os oponentes</color> para revelar uma Flor de Linha Ley. Você pode consumir a Resina Original para receber tesouros extravagantes."
+      },
+      {
+        "hash": "1751610069",
+        "zh": "原粹树脂不足",
+        "pt": "Resina Original Insuficiente"
+      },
+      {
+        "hash": "116396057",
+        "zh": "消耗<color=#F39000>{0}</color>原石，补充<color=#F39000>{1}</color>点原粹树脂，今日还能补充<color=#F39000>{2}</color>次\\n单日内补充次数越多，所需原石就越多",
+        "pt": "Consumir <color=#F39000>{0}</color> Gemas Essenciais para recarregar <color=#F39000>{1}</color> Resinas Originais. Hoje ainda pode recarregar <color=#F39000>{2}</color> vezes\\nQuanto mais vezes recarregar em um dia, mais Gemas Essenciais serão precisas."
+      },
+      {
+        "hash": "2768288862",
+        "zh": "剩余<color=#F39000>{0}</color>天，每日可领取<color=#F39000>{1}</color>点原粹树脂。今日尚未领取",
+        "pt": "Dias restantes: <color=#F39000>{0}</color>, todos os dias pode resgatar <color=#F39000>{1}</color> Resinas Originais. Hoje ainda não resgatou."
+      },
+      {
+        "hash": "2242081029",
+        "zh": "原粹树脂今日补充次数已达上限",
+        "pt": "Limite máximo diário de reabastecimento de Resina Original alcançado"
+      },
+      {
+        "hash": "1213911166",
+        "zh": "原粹树脂能提炼大气中的元素力，慢慢地补充能量。\\n利用某种极为珍贵的结晶体，也可以快速将能量充满…",
+        "pt": "A Resina Original reabastece gradualmente, absorvendo a energia elemental do ambiente natural.\\nAlternativamente, você pode reabastecê-la mais rapidamente usando uma certa variedade de gemas altamente preciosas."
+      },
+      {
+        "hash": "1817991577",
+        "zh": "消耗100点原粹树脂",
+        "pt": "Use 100 Resinas Originais"
+      },
+      {
+        "hash": "2073165128",
+        "zh": "<color=#FFE14BFF>原粹树脂</color>可以激活秘境深处的石化古树，以及世界上的各种地脉之花，以获得秘宝。",
+        "pt": "<color=#FFE14BFF>Resina Original</color> pode ser usada para revigorar as Árvores Petrificadas encontradas nas profundezas dos Domínios, assim como as várias Flores de Linha Ley encontradas por Teyvat. Fazer isso irá lhe conceder tesouros valiosos."
+      },
+      {
+        "hash": "1944143091",
+        "zh": "消耗原粹树脂以回收陨星残骸中的能量。\\n\\n<size=24>回收将消耗<color=#E0902CFF> {0}个 {1}</color>，当前拥有的 {1}数量不足，需要消耗背包中的{2}进行补充，还是使用原石补充？</size>",
+        "pt": "Consuma Resina Original e receba a energia dos fragmentos de meteorito.\\n\\n<size=24>Custará<color=#E0902CFF> {0} {1} </color>. No momento você possui {1}, isso é insuficiente. Deseja usar {2} de seu inventário ou Gema Essencial para completar?</size>"
+      },
+      {
+        "hash": "2641050507",
+        "zh": "消耗原粹树脂以收取纯水之念的秘宝。\\n\\n<size=24>将消耗<color=#FF5141FF>{0}点{1}</color>，当前拥有的{1}数量不足，补充以领取奖励。</size>",
+        "pt": "Consuma Resina Original para obter recompensas do Devaneio de Águas Puras.\\n\\n<size=24>Consumirá <color=#FF5141FF> {1} </color>x{0}. Atualmente você não possui {1} suficiente. Recarregue para continuar.</size>"
+      },
+      {
+        "hash": "3928328228",
+        "zh": "浓缩树脂",
+        "pt": "Resina Condensada"
+      },
+      {
+        "hash": "3807446566",
+        "zh": "#「征讨之花」是「地脉之花」的一种，象征着强大的存在。而这其中异常强大的生灵的征讨之花，通常需要消耗60点「原粹树脂」激活，以获取地脉中对应着他们的宝藏。\\n每周开始时，会产生三次机会，使激活他们的征讨之花所需的原粹树脂减半。\\n领取奖励的机会与减半次数每周一凌晨4点重置。{TIMEZONE} \\n\\n本周剩余消耗减半次数：{0}",
+        "pt": "#A Flor da Punição é um tipo de Flor de Linha Ley, simbolizando uma existência mais forte. Por isso, para revitalizar essa poderosa Flor da Punição, normalmente são necessários 60 Resinais Originais para obter suas recompensas.\\nA partir do começo de cada semana, haverão três chances de revitalizar a Flor da Punição com a metade do seu custo de Resina Original.\\nAs chances de obter as recompensas e utilizar a metade do custo são renovadas toda segunda-feira às 04:00 ({TIMEZONE}) \\n\\nVezes restantes com metade do custo de Resina Original nesta semana: {0}"
+      },
+      {
+        "hash": "4132523683",
+        "zh": "消耗树脂，激活地脉之花以收取秘宝。\\n\\n<size=24>消耗<color=#E0902CFF>浓缩树脂</color>以获取额外奖励。</size>",
+        "pt": "Consuma Resina para revitalizar a Flor de Linha Ley e receber o tesouro misterioso.\\n\\n<size=24>Use <color=#E0902CFF>Resina Condensada</color> e obtenha uma recompensa adicional.</size>"
+      },
+      {
+        "hash": "3667884565",
+        "zh": "消耗原粹树脂以回收陨星残骸中的能量。\\n\\n<size=24>回收将消耗<color=#E0902CFF> {0}个 {1}</color>，是否确认？</size>",
+        "pt": "Consuma Resina Original e receba a energia dos fragmentos de meteorito.\\n\\n<size=24>Custará<color=#E0902CFF> {0} {1} </color>, deseja continuar?</size>"
+      },
+      {
+        "hash": "1809041399",
+        "zh": "*有效期持续{0}天！\\n累计可获得{1}原粹树脂！",
+        "pt": "*Válido por {0} dias!\\nObtenha um total de {1} Resina Original!"
+      },
+      {
+        "hash": "2346605891",
+        "zh": "消耗原粹树脂以收取天降之星的秘宝。\\n\\n<size=24>将消耗<color=#FF5141FF>{0}个{1}</color>，当前拥有的{1}数量不足，补充以领取奖励。</size>",
+        "pt": "Consuma Resina Original para obter recompensas da Estrela Caída.\\n\\n<size=24>Consumirá <color=#FF5141FF> {1} </color>x {0}. Atualmente você não possui {1} suficiente. Recarregue para continuar.</size>"
+      }
+    ],
+    "溢口": [
+      {
+        "hash": "261348152",
+        "zh": "呼应着某人的「意志」而产生的地脉溢口。<color=#FFE14BFF>与其接触并打倒所有敌人</color>后，「地脉之花」会从中结出，可以消耗「原粹树脂」获取丰厚的馈藏…",
+        "pt": "Aberturas da Linha Ley que são geradas em resposta à vontade de alguém. <color=#FFE14BFF>Toque na abertura e derrote todos os oponentes</color> para revelar uma Flor de Linha Ley. Você pode consumir a Resina Original para receber tesouros extravagantes."
+      },
+      {
+        "hash": "304139350",
+        "zh": "会在地脉溢口处盛开的花朵。如果能完成堵塞地脉的挑战，并消耗「原粹树脂」的话，就能获取大地的丰厚馈赠。",
+        "pt": "Flores que florescem em lugares onde a Linha Ley transborda. Se você conseguir vencer o desafio de abertura de Linha Ley e se consumir \"Resina Original\" suficiente com você, será generosamente recompensado."
+      },
+      {
+        "hash": "922799356",
+        "zh": "接触地脉溢口",
+        "pt": "Toque na abertura da Linha Ley"
+      }
+    ],
+    "校验完成": [],
+    "校验失败": [],
+    "路线启动": [],
+    "全部路线结束": [],
+    "世界权限": [
+      {
+        "hash": "2574030659",
+        "zh": "世界权限：不允许加入",
+        "pt": "Permissão do mundo: Rejeitar Pedidos de Entrada"
+      },
+      {
+        "hash": "1634386057",
+        "zh": "世界权限：确认后可加入",
+        "pt": "Permissão do mundo: Necessária confirmação para entrar"
+      },
+      {
+        "hash": "2121887079",
+        "zh": "世界权限：直接加入",
+        "pt": "Permissão do mundo: Permitir Entrada Direta"
+      }
+    ],
+    "能给我几支香吗": [
+      {
+        "hash": "42866082",
+        "zh": "能给我几支香吗？",
+        "pt": "Você poderia me dar alguns palitos de incenso?"
+      },
+      {
+        "hash": "879050290",
+        "zh": "能给我几支香吗？",
+        "pt": "Você poderia me dar alguns palitos de incenso?"
+      }
+    ],
+    "给我一份福利餐": [],
+    "其实": [
+      {
+        "hash": "1190390658",
+        "zh": "那怎么行呢，不用在意我。其实每年的烟花会都是这样，会接到很多中途插进来的订单。",
+        "pt": "Vai ficar tudo bem. Na verdade é assim todos os anos, há sempre um monte de pedidos extras para encaixar aqui e ali."
+      },
+      {
+        "hash": "2140205954",
+        "zh": "「天领奉行勾结愚人众」这件事，其实是我们编造的。",
+        "pt": "Nós inventamos. A história sobre a Comissão Tenryou conspirando com os Fatui... não aconteceu."
+      },
+      {
+        "hash": "3212269442",
+        "zh": "其实奇怪的地方并非我的身姿，而是我与她已经不再相见了，不是吗？",
+        "pt": "Mais curioso do que minha aparência é o fato de que ela e eu não nos vemos mais, você não acha?"
+      },
+      {
+        "hash": "327178114",
+        "zh": "他其实另有来意…",
+        "pt": "Na verdade, ele tem outros motivos para estar aqui..."
+      },
+      {
+        "hash": "3948018562",
+        "zh": "其实阿茂的看法更合理…",
+        "pt": "Na verdade, o Shigeru tem mais razão..."
+      },
+      {
+        "hash": "4179480450",
+        "zh": "就比如这块石头，看似普通，其实这是一块星星的碎片。",
+        "pt": "Bem, olhe este pedaço de pedra, por exemplo. Parece completamente ordinária, mas na verdade veio de uma estrela."
+      },
+      {
+        "hash": "588247938",
+        "zh": "这个，怎么说呢，虽然我其实最开始就准备好了…",
+        "pt": "Isso... Eu na verdade tinha começado a anotar isso desde o começo..."
+      },
+      {
+        "hash": "874702722",
+        "zh": "其实我正打算配合风花节开发一道新菜，主推「风的味道」，现在正在准备食材呢。",
+        "pt": "Na verdade eu estou pensando em criar um novo prato para o Festival da Brisa Florescente, com sabor do vento. E agora estou preparando os ingredientes."
+      },
+      {
+        "hash": "4133322488",
+        "zh": "「肉坨」其实是遥远的古代，统治天遒谷的一位君王…是山中的龙王。",
+        "pt": "Adakka era um rei que governou o Vale Tianqiu nos tempos antigos... Um rei dragão das montanhas."
+      },
+      {
+        "hash": "1233448370",
+        "zh": "看上去其实也不会，他们好像已经习惯这样的日子了。",
+        "pt": "Huh, eles não me pareciam ser assim. Acho que eles estão acostumados a isso."
+      },
+      {
+        "hash": "1617931698",
+        "zh": "托马其实是个还不错的家伙，是吧？我们也该继续前进了。",
+        "pt": "Thoma não é uma pessoa nada ruim. Devemos ir andando."
+      },
+      {
+        "hash": "308300210",
+        "zh": "看似平平无奇的山野，其实蕴含着悠远的诗意。",
+        "pt": "Mesmo o trecho mais comum do campo, o mais humilde dos morros, abriga profundezas impressionantes de um passado distante."
+      },
+      {
+        "hash": "3110734258",
+        "zh": "那个加藤什么平来着，这两位客人与我交情不浅，其实他们正是解决各种怪事的专家。驱邪什么的，当然也不在话下。",
+        "pt": "#Katou seja-lá-qual-for-seu-nome, {M#esses dois são conhecidos meus}{F#essas duas são conhecidas minhas}, e inclusive, são especialistas em resolver todo tipo de fenômenos sobrenaturais e estranhos. Exorcismos e coisas do gênero fazem parte do trabalho {M#deles}{F#delas}."
+      },
+      {
+        "hash": "3421538738",
+        "zh": "其实，陪乔尔玩的时候，我也特别想念爷爷…",
+        "pt": "Na verdade, quando eu estava fazendo companhia a Joel, comecei a sentir muita falta de meu avô..."
+      },
+      {
+        "hash": "3595196850",
+        "zh": "我就是看它们长的肥肥嫩嫩，可爱的很，就给它们喂了几次吃的而已，它们其实都是野生的…",
+        "pt": "Eu só os achei meio fofos, sabe, por isso os alimentei algumas vezes... mas eles são pássaros selvagens!"
+      },
+      {
+        "hash": "3910744498",
+        "zh": "那时候人不太多。她给我看了一下她面具下的脸，其实大部分都很正常。她戴面具只是为了掩藏一件事。",
+        "pt": "Não havia muitas pessoas perto naquela hora, por isso ela eventualmente me deixou olhar seu rosto por detrás da máscara. Na verdade, era bem normal, exceto por um detalhe que ela estava tentando esconder."
+      },
+      {
+        "hash": "4116996530",
+        "zh": "我其实想知道皇女殿下会不会有什么烦恼。",
+        "pt": "Na verdade, eu gostaria de saber sobre suas preocupações, ó Vossa Majestade, a Princesa."
+      },
+      {
+        "hash": "4153676210",
+        "zh": "其实，海灯节期间我也很忙的。我问香菱要了几份菜谱，正在试做呢，你来都来了，不如试试…",
+        "pt": "Para ser sincera, este Ritual de Lanternas está sendo bem cheio para mim. Pedi a Xiangling para me dar algumas receitas e tenho tentado fazê-las. Já que você está aqui, por que não experimenta..."
+      },
+      {
+        "hash": "509696434",
+        "zh": "而且，其实还有另外一个原因，我从来没和别人讲过，因为我觉得有点幼稚。",
+        "pt": "Talvez, um pouco infantil. Que é o motivo pelo qual não contei a ninguém sobre meu plano."
+      },
+      {
+        "hash": "612254130",
+        "zh": "其实，我们的真实身份是…",
+        "pt": "Na verdade, nós somos..."
+      }
+    ],
+    "紊乱平息": [],
+    "联机合奏": [],
+    "小道": [
+      {
+        "hash": "1857099456",
+        "zh": "展示当前时间的小道具，在没有月亮的黑夜里是唯一的时间参照。",
+        "pt": "Um pequeno dispositivo para mostrar a hora atual. Apenas funciona em noites sem lua."
+      },
+      {
+        "hash": "1446953720",
+        "zh": "使用「留念镜」这种特殊的<color=#FFE14BFF>小道具</color>时，会透过透镜观察周遭的世界。\\n如果通过它观察<color=#FFE14BFF>这种特殊的「地狐」小像</color>，可能会发生奇妙的事情…",
+        "pt": "O <color=#FFE14BFF>dispositivo</color> único conhecido como Lente das Lembranças pode ser usado para observar o mundo ao redor.\\nObserve esta <color=#FFE14BFF>estátua do Kitsune Terrestre</color> através dela e algo milagroso pode acontecer."
+      },
+      {
+        "hash": "813674232",
+        "zh": "展示当前时间的小道具，在没有月亮的黑夜里是唯一的时间参照。",
+        "pt": "Um pequeno dispositivo para mostrar a hora atual. Apenas funciona em noites sem lua."
+      },
+      {
+        "hash": "354745222",
+        "zh": "小道具",
+        "pt": "Item"
+      },
+      {
+        "hash": "4074603384",
+        "zh": "展示当前时间的小道具，在没有月亮的黑夜里是唯一的时间参照。",
+        "pt": "Um pequeno dispositivo para mostrar a hora atual. Apenas funciona em noites sem lua."
+      },
+      {
+        "hash": "188451662",
+        "zh": "小道具",
+        "pt": "Item"
+      },
+      {
+        "hash": "2362932046",
+        "zh": "小道具",
+        "pt": "Item"
+      },
+      {
+        "hash": "311147040",
+        "zh": "小道具",
+        "pt": "Item"
+      },
+      {
+        "hash": "4050215441",
+        "zh": "「送仙」…？！呃，最近我也听过不少小道消息，可一直没敢太多过问。那，那就是，岩王爷他，确实…",
+        "pt": "Ritual de Ascensão? Recentemente eu tenho ouvido muitos rumores, mas nunca cheguei a pensar muito nisso. Então significa que... O Rex Lapis está realmente..."
+      },
+      {
+        "hash": "2091398405",
+        "zh": "所处地区特殊，暂不能使用此小道具",
+        "pt": "A área é especial, não é possível usar este item"
+      },
+      {
+        "hash": "1963846041",
+        "zh": "小道具",
+        "pt": "Item"
+      },
+      {
+        "hash": "3071761736",
+        "zh": "进行耐力锻炼时计时的小道具，比沙漏的流转更加稳定。",
+        "pt": "Uma ferramenta para monitorar o tempo durante um treino de resistência. É mais precisa e confiável em relação a uma ampulheta comum."
+      },
+      {
+        "hash": "1038437352",
+        "zh": "进行耐力锻炼时计时的小道具，比沙漏的流转更加稳定。",
+        "pt": "Uma ferramenta para monitorar o tempo durante um treino de resistência. É mais precisa e confiável em relação a uma ampulheta comum."
+      },
+      {
+        "hash": "571594590",
+        "zh": "小道具",
+        "pt": "Item"
+      },
+      {
+        "hash": "3557347984",
+        "zh": "展示当前时间的小道具，在没有月亮的黑夜里是唯一的时间参照。",
+        "pt": "Um pequeno dispositivo para mostrar a hora atual. Apenas funciona em noites sem lua."
+      },
+      {
+        "hash": "2646659440",
+        "zh": "进行耐力锻炼时计时的小道具，比沙漏的流转更加稳定。",
+        "pt": "Uma ferramenta para monitorar o tempo durante um treino de resistência. É mais precisa e confiável em relação a uma ampulheta comum."
+      },
+      {
+        "hash": "1714119054",
+        "zh": "任务特殊，暂不能使用小道具进行拍照。使用「拍照」功能完成拍照。",
+        "pt": "A missão é especial, por isso não pode usar itens para fotografar. Use a função \"Fotografar\"."
+      },
+      {
+        "hash": "1571535376",
+        "zh": "展示当前时间的小道具，在没有月亮的黑夜里是唯一的时间参照。",
+        "pt": "Um pequeno dispositivo para mostrar a hora atual. Apenas funciona em noites sem lua."
+      },
+      {
+        "hash": "3047377664",
+        "zh": "展示当前时间的小道具，在没有月亮的黑夜里是唯一的时间参照。",
+        "pt": "Um pequeno dispositivo para mostrar a hora atual. Apenas funciona em noites sem lua."
+      },
+      {
+        "hash": "1426915182",
+        "zh": "任务特殊，暂不能使用小道具进行拍照。使用「拍照」功能完成拍照。",
+        "pt": "A missão é especial, por isso não pode usar itens para fotografar. Use a função \"Fotografar\"."
+      }
+    ],
+    "初始手牌": [],
+    "重投骰子": [],
+    "出战角色": [
+      {
+        "hash": "914339421",
+        "zh": "不能对出战角色使用复苏道具",
+        "pt": "Não é possível usar itens de ressurreição em personagens implantados"
+      }
+    ],
+    "检测到物品过期": [],
+    "其他玩家": [
+      {
+        "hash": "2933715846",
+        "zh": "世界中尚有其他玩家，进入「尘歌壶」后，其他玩家会被立刻请离，是否确认进入？",
+        "pt": "Ainda existem outros jogadores em seu mundo. Se você entrar no Bule de Relachá, eles serão imediatamente obrigados a sair. Você deseja entrar?"
+      },
+      {
+        "hash": "4173152981",
+        "zh": "确认断开当前世界所有其他玩家的连接？",
+        "pt": "Deseja desconectar de todos os outros jogadores do mundo atual?"
+      },
+      {
+        "hash": "546580621",
+        "zh": "您在使用演奏功能时，提请您使用原创曲目或取得相关授权，以避免伤害第三方权益，或出现其他按照游戏使用许可及服务协议禁止或不适宜内容；否则我们可能会对您使用本功能加以限制。\\n此外，基于游戏功能，其他玩家可能会收听或使用您的演奏内容，提请您知悉并确认。",
+        "pt": "Ao usar a função de performance, você deve usar uma música original ou obter a respectiva licença, para evitar infringir os direitos de terceiros ou cometer atos que estejam proibidos ou sejam inapropriados segundo os Termos de Serviço; caso contrário, podemos restringir seu uso dessa função.\\nAlém disso, com base na função do jogo, você deve saber e aceitar que outros jogadores podem ouvir e usar sua performance."
+      },
+      {
+        "hash": "3588217316",
+        "zh": "你已发起「天降之星」共同挑战邀请，请等待其他玩家确认，{0}秒内未确认将自动拒绝",
+        "pt": "Você já enviou um convite para desafiar a Estrela Caída, por favor espere a confirmação dos outros jogadores. Se não confirmarem em {0}s, o convite será automaticamente cancelado."
+      },
+      {
+        "hash": "1006179917",
+        "zh": "请输入其他玩家的UID",
+        "pt": "Insira o UID de outro jogador"
+      },
+      {
+        "hash": "3009445965",
+        "zh": "与其他玩家一同完成20次秘境挑战。",
+        "pt": "Conclua 20 desafios no modo multijogador."
+      },
+      {
+        "hash": "969049621",
+        "zh": "其他玩家解锁了一个宝箱",
+        "pt": "Outro jogador desbloqueou um baú."
+      },
+      {
+        "hash": "1613578453",
+        "zh": "与其他玩家一同完成5次秘境挑战。",
+        "pt": "Conclua 5 desafios no modo multijogador."
+      },
+      {
+        "hash": "2157660762",
+        "zh": "无法在其他玩家的世界中使用",
+        "pt": "Não é possível usar no mundo de outros jogadores"
+      },
+      {
+        "hash": "1285466405",
+        "zh": "其他玩家尚未通关「挑战·犬流之道」，无法参与挑战。",
+        "pt": "Os outros jogadores ainda não completaram \"Desafio - Caminho Canino\", não é possível participar do desafio"
+      },
+      {
+        "hash": "1812257957",
+        "zh": "在其他玩家的世界中，采集20个地区特产。",
+        "pt": "Colete 20 especialidades regionais no mundo de um outro jogador"
+      },
+      {
+        "hash": "2421469741",
+        "zh": "在其他玩家的世界中，采集5个地区特产。",
+        "pt": "Colete 5 especialidades regionais no mundo de um outro jogador"
+      },
+      {
+        "hash": "2470518317",
+        "zh": "与其他玩家一同完成100次秘境挑战。",
+        "pt": "Conclua 100 desafios de domínio no modo multijogador."
+      },
+      {
+        "hash": "1881858357",
+        "zh": "该玩家正在进入其他玩家游戏进度",
+        "pt": "No momento, o jogador se encontra no mundo de outro jogador."
+      },
+      {
+        "hash": "1019376917",
+        "zh": "与其他玩家一同战胜无相之岩。",
+        "pt": "Derrote um Hypostasis Geo no modo multijogador."
+      },
+      {
+        "hash": "1986007119",
+        "zh": "点击准备等待其他玩家，{0}秒内不确认自动解散挑战",
+        "pt": "Pressione Pronto e aguarde por outros jogadores. O desafio multijogador será abandonado automaticamente se não for confirmado em {0}s"
+      },
+      {
+        "hash": "2500228407",
+        "zh": "点击准备等待其他玩家，{0}秒内不确认自动解散挑战",
+        "pt": "Pressione Pronto e aguarde por outros jogadores. O desafio multijogador será abandonado automaticamente se não for confirmado em {0}s"
+      },
+      {
+        "hash": "3022951895",
+        "zh": "点击准备等待其他玩家，{0}秒内不确认自动解散挑战",
+        "pt": "Pressione Pronto e aguarde por outros jogadores. O desafio multijogador será abandonado automaticamente se não for confirmado em {0}s"
+      },
+      {
+        "hash": "2212895173",
+        "zh": "与其他玩家一同战胜无相之火。",
+        "pt": "Derrote um Hypostasis Pyro em Multijogador."
+      },
+      {
+        "hash": "3403372797",
+        "zh": "与其他玩家一同战胜纯水精灵。",
+        "pt": "Derrote um Oceanids no modo multijogador."
+      }
+    ],
+    "搜索奇域": [],
+    "已完成所有任务": [],
+    "前往大厅": [],
+    "退出至登录界面": [],
+    "进入游戏": [
+      {
+        "hash": "7791454",
+        "zh": "直接进入游戏",
+        "pt": "Entrar agora"
+      },
+      {
+        "hash": "1618796217",
+        "zh": "进入游戏后，可在[设置-画质]内进行调整",
+        "pt": "Depois de entrar no jogo, você pode ajustar em [Configurações-Gráficos]"
+      },
+      {
+        "hash": "1895609152",
+        "zh": "预下载不影响当前游戏内容。\\n进度已保存，后续可以继续预下载。\\n\\n是否暂停下载并进入游戏？",
+        "pt": "O pré-download do jogo não influencia o conteúdo atual dele.\\nSeu progresso já está salvo e você poderá continuar o pré-download mais tarde.\\n\\nDeseja pausar o pré-download e entrar no jogo?"
+      },
+      {
+        "hash": "3806992877",
+        "zh": "您的账号没有测试资格，无法进入游戏。",
+        "pt": "Sua conta não possui acesso à versão beta. Acesso negado."
+      },
+      {
+        "hash": "4097171968",
+        "zh": "暂停并进入游戏",
+        "pt": "Pause e Inicie o Jogo"
+      },
+      {
+        "hash": "3267551877",
+        "zh": "进入游戏，完成对应的挑战项即可获得奇术点",
+        "pt": "Entre no jogo e complete os desafios apropriados para ganhar Pontos Veneficus"
+      },
+      {
+        "hash": "1028286913",
+        "zh": "进入游戏后，可在[设置-画质]内进行调整",
+        "pt": "Depois de entrar no jogo, você pode ajustar em [Configurações-Gráficos]"
+      },
+      {
+        "hash": "2384463120",
+        "zh": "暂停下载并进入游戏",
+        "pt": "Pause o download e entre no jogo"
+      },
+      {
+        "hash": "633842728",
+        "zh": "进入游戏",
+        "pt": "Conectar"
+      }
+    ],
+    "登录其他账号": [],
+    "我方出战牌组": [],
+    "更改牌组外观": [],
+    "罗盘状态异常，可能在战斗中": [],
+    "未发现宝藏或宝藏相关线索": [],
+    "发现宝藏或宝藏相关线索": [],
+    "倒计时": [
+      {
+        "hash": "1229984914",
+        "zh": "让我们一起倒计时，三、二、一！",
+        "pt": "Vamos fazer a contagem regressiva juntos! Três, dois, um!"
+      },
+      {
+        "hash": "2832345339",
+        "zh": "终场倒计时",
+        "pt": "Contagem Regressiva em Duelo"
+      },
+      {
+        "hash": "3295619323",
+        "zh": "每击败一只怪物倒计时减少5秒",
+        "pt": "Cada inimigo derrotado diminui a contagem regressiva em 5s."
+      },
+      {
+        "hash": "252998797",
+        "zh": "刷新倒计时:{0}",
+        "pt": "Atualiza em: {0}"
+      },
+      {
+        "hash": "2525671955",
+        "zh": "坚持存活到倒计时结束",
+        "pt": "Sobreviva até que a contagem regressiva acabe"
+      },
+      {
+        "hash": "2127445055",
+        "zh": "坚持存活到倒计时结束",
+        "pt": "Sobreviva até que a contagem regressiva acabe"
+      },
+      {
+        "hash": "958520099",
+        "zh": "每杀死一只怪物倒计时减少%2%秒",
+        "pt": "Ao derrotar um inimigo, diminui a contagem em %2%s."
+      },
+      {
+        "hash": "2540049707",
+        "zh": "本商品刷新倒计时 {0}",
+        "pt": "O item atualiza em: {0}"
+      },
+      {
+        "hash": "2459596008",
+        "zh": "下一阶段任务开启倒计时：{0}",
+        "pt": "A próxima fase será desbloqueada em: {0}"
+      },
+      {
+        "hash": "2609189779",
+        "zh": "每杀死一只怪物倒计时减少15秒",
+        "pt": "Derrotar um oponente diminui a contagem em 15s."
+      },
+      {
+        "hash": "3776722574",
+        "zh": "刷新倒计时：{0}",
+        "pt": "Atualiza em: {0}"
+      },
+      {
+        "hash": "3551668606",
+        "zh": "{0}联机匹配成功，是否加入多人游戏世界 倒计时 {1:00}:{2:00}",
+        "pt": "Pareamento bem-sucedido: {0}. Entrar na sessão multijogador? (Contagem regressiva {1:00}:{2:00})"
+      },
+      {
+        "hash": "1169586747",
+        "zh": "刷新倒计时：{0}",
+        "pt": "Atualiza em: {0}"
+      },
+      {
+        "hash": "1275310887",
+        "zh": "达成「终场倒计时」的「迷踪币」加成",
+        "pt": "Moedas do Labirinto Adicionais por alcançar \"Contagem Regressiva\""
+      },
+      {
+        "hash": "1779216671",
+        "zh": "每杀死一只怪物倒计时减少%2%秒",
+        "pt": "Ao derrotar um inimigo, diminui a contagem em %2%s."
+      },
+      {
+        "hash": "2033584178",
+        "zh": "扮演猎手达成「终场倒计时」：120秒内捕获所有游侠",
+        "pt": "Como caçador, atinja \"Contagem Regressiva em Duelo\": Capture todos os Cavaleiros Errantes dentro de 120s"
+      },
+      {
+        "hash": "4008658228",
+        "zh": "渊月螺旋重置倒计时",
+        "pt": "Contagem regressiva para a redefinição da Lua Abissal"
+      },
+      {
+        "hash": "150745558",
+        "zh": "比赛倒计时、计分判断用$HIDDEN",
+        "pt": "Contagem regressiva da competição. Para calcular os pontos."
+      },
+      {
+        "hash": "1572458855",
+        "zh": "每杀死一只怪物倒计时减少15秒",
+        "pt": "Derrotar um oponente diminui a contagem em 15s."
+      },
+      {
+        "hash": "294234860",
+        "zh": "刷新倒计时:{0}小时{1}分",
+        "pt": "Contagem para Atualização: {0}h{1}m"
+      }
+    ],
+    "点击": [
+      {
+        "hash": "3377962688",
+        "zh": "丽莎的<color=#FFE14BFF>元素战技</color>，不仅可以点击释放，还能<color=#FFE14BFF>长按</color>进行咏唱",
+        "pt": "A <color=#FFE14BFF>Habilidade Elemental</color> da Lisa pode ser lançada ao pressionar, ou canalizada ao <color=#FFE14BFF>segurar</color>."
+      },
+      {
+        "hash": "364953252",
+        "zh": "#按住{INPUT_ACTION_TYPE#56}键可以显示鼠标光标，点击此处以追踪任务",
+        "pt": "#Mantenha pressionado {INPUT_ACTION_TYPE#56} para mostrar o ponteiro do mouse, e toque aqui para navegar até o destino da missão"
+      },
+      {
+        "hash": "1648903116",
+        "zh": "点击使用「式札」",
+        "pt": "Pressione para usar o Shikifuda"
+      },
+      {
+        "hash": "2013060530",
+        "zh": "点击按钮切换机件",
+        "pt": "Pressione para trocar o segmento da lanterna"
+      },
+      {
+        "hash": "216307579",
+        "zh": "在风场内点击跳跃键两次，可以乘风起飞",
+        "pt": "Pressione duas vezes na tecla Pular para subir para a corrente de vento e voar."
+      },
+      {
+        "hash": "2835990810",
+        "zh": "点击学习鱼饵配方",
+        "pt": "Pressione para aprender os diagramas das iscas"
+      },
+      {
+        "hash": "1400758408",
+        "zh": "雷种子象征着稻妻大地的庇护与认可，具有各式各样的力量。点击「详细信息」以查看雷种子当前的能力。",
+        "pt": "Os Electrogrãos simbolizam os favores e a proteção da terra de Inazuma, e possuem várias habilidades. Pressione \"Detalhes\" para ver as habilidades de seus Electrogrãos atuais."
+      },
+      {
+        "hash": "3535917764",
+        "zh": "点击进入",
+        "pt": "Pressione para entrar"
+      },
+      {
+        "hash": "3123305504",
+        "zh": "点击使用学习食谱",
+        "pt": "Pressione para aprender a receita"
+      },
+      {
+        "hash": "1931964542",
+        "zh": "点击任意位置关闭",
+        "pt": "Pressione em qualquer lugar para fechar"
+      },
+      {
+        "hash": "1662394584",
+        "zh": "#点击{INPUT_ACTION_TYPE#20}施放元素爆发",
+        "pt": "#Pressione {INPUT_ACTION_TYPE#20} para liberar o Supremo"
+      },
+      {
+        "hash": "3109630195",
+        "zh": "点击按钮攻击",
+        "pt": "Pressione para atacar"
+      },
+      {
+        "hash": "1527081688",
+        "zh": "根据提示，按照正确的顺序点击按键，就能准确搅拌饮品了。搅拌完成后会自动进入下一步。",
+        "pt": "Siga as dicas e pressione na ordem correta para misturar sua bebida. Uma vez que estiver misturada apropriadamente, você poderá seguir ao próximo passo."
+      },
+      {
+        "hash": "3279567874",
+        "zh": "点击按钮切换机件",
+        "pt": "Pressione para trocar o segmento da lanterna"
+      },
+      {
+        "hash": "1220768345",
+        "zh": "点击任意空白区域后继续。",
+        "pt": "Pressione em qualquer área para continuar."
+      },
+      {
+        "hash": "2933992080",
+        "zh": "点击装备/卸下地脉之果碎片",
+        "pt": "Pressione para equipar ou desequipar o Fragmento do Fruto da Linha Ley"
+      },
+      {
+        "hash": "2115868535",
+        "zh": "点击查看转化功能",
+        "pt": "Pressione para ver a função de Conversão"
+      },
+      {
+        "hash": "1604764690",
+        "zh": "点击确认建造奇术机关",
+        "pt": "Pressione para construir um Veneficus Mechanicus"
+      },
+      {
+        "hash": "3267655058",
+        "zh": "点击建造机关",
+        "pt": "Pressione para construir o Mechanicus"
+      },
+      {
+        "hash": "916877939",
+        "zh": "点击空白区域继续",
+        "pt": "Pressione em qualquer espaço vazio para continuar"
+      }
+    ],
+    "继续": [
+      {
+        "hash": "4185476994",
+        "zh": "我得尽快整理一下我之前搜集的那些资料，然后继续编写那本有关「护法夜叉」的书。",
+        "pt": "Preciso organizar os materiais que reuni e continuar compilando meu livro sobre o Guardião Yaksha."
+      },
+      {
+        "hash": "597901186",
+        "zh": "唉，我们继续在这里琢磨一下吧。",
+        "pt": "Hmm, vamos continuar por aqui pensando um pouco."
+      },
+      {
+        "hash": "2606923512",
+        "zh": "唔…算了，既然这里的异变点被清理掉了，就请前辈随我继续顺着隧道前进吧。",
+        "pt": "Bem, não importa. Como a anomalia daqui desapareceu, continue me seguindo nos túneis."
+      },
+      {
+        "hash": "1312212402",
+        "zh": "我们会继续在这座岛上探索，也继续搜集关于这件事的线索，等过段时间，我们就会回去向协会报告。",
+        "pt": "Continuaremos explorando esta ilha e coletando mais informações sobre esse incidente por um tempo, e depois informaremos a Guilda."
+      },
+      {
+        "hash": "1617931698",
+        "zh": "托马其实是个还不错的家伙，是吧？我们也该继续前进了。",
+        "pt": "Thoma não é uma pessoa nada ruim. Devemos ir andando."
+      },
+      {
+        "hash": "3933607346",
+        "zh": "虽然离教官的要求还有一段距离，但我还是会继续努力的。",
+        "pt": "Nossos instrutores ainda querem ver mais de mim, então vou continuar trabalhando nisso."
+      },
+      {
+        "hash": "969838002",
+        "zh": "深境螺旋中永不停息的低语鼓励着你继续深入。请选择一种深秘降福…",
+        "pt": "Os sussurros incessantes do Abismo do Espiral encorajam você a seguir mais profundamente. Escolha sua Bênção do Abismo..."
+      },
+      {
+        "hash": "3429459928",
+        "zh": "对了！只要水面继续升高，我们就能从那里出去了！",
+        "pt": "Sim! Só precisamos que o nível da água continue a subir que nós poderemos sair daqui!"
+      },
+      {
+        "hash": "1692544354",
+        "zh": "既然你无法信任我，那我们就继续向前吧。",
+        "pt": "Como você não confia em mim, continuaremos seguindo em frente."
+      },
+      {
+        "hash": "1864726882",
+        "zh": "更何况，现在平静的生活来之不易，我也终于不必再为了一颗发光的小球继续奔波啦。",
+        "pt": "E não é como se uma vida pacífica fosse fácil de se obter. Quanto a mim, não preciso mais ser escravo por uma bolinha cintilante."
+      },
+      {
+        "hash": "2343369058",
+        "zh": "如今他们若想继续控制事态，就必须走到台前，露出獠牙。我会等待那一刻到来。",
+        "pt": "Se eles continuarem querendo controlar a situação, terão que jogar do lado exposto também, revelando a sua verdadeira intenção como uma besta revela suas presas. E eu, ficarei esperando por este momento."
+      },
+      {
+        "hash": "3185385826",
+        "zh": "我们只有继续深入才能得知了。",
+        "pt": "Só saberemos se continuarmos indo para o fundo."
+      },
+      {
+        "hash": "3765578082",
+        "zh": "我们继续在附近转转吧，说不定还有其它遗迹守卫在。",
+        "pt": "Vamos continuar a olhar por aqui, talvez ainda encontremos outros Guardas das Ruínas."
+      },
+      {
+        "hash": "3794164066",
+        "zh": "「…接下来要继续往反方向前进，把它们再度引向远离小队主力的地方…」",
+        "pt": "\"... Em seguida, continuarei indo na direção oposta para os atrair para ainda mais longe de onde a equipe está...\""
+      },
+      {
+        "hash": "816151906",
+        "zh": "从地窟重返阳光照耀之地，离别的苦楚仍在胸中作痛。\\n神明的动机，血亲的去向，世界的真相，究竟散落在何方？\\n总之，为了那句「抵达终点」，继续向前吧。",
+        "pt": "Você finalmente retornou das cavernas para a terra onde o raio do sol atinge, a tortura de despedida ainda paira no seu coração.\\nO motivo dos Arcontes, o paradeio do seu ente, a verdade do mundo... O que está escondido?\\nMas, no final das contas, para aquele \"Chegar ao destino\", avance sem olhar para trás!"
+      },
+      {
+        "hash": "2225533074",
+        "zh": "既然现在有了融化那些冰的办法，那我也可以继续组织队伍探索雪山了…",
+        "pt": "Como agora existe uma maneira de derreter aqueles gelos estranhos, posso continuar a organizar equipes para explorarem a Montanha Nevada..."
+      },
+      {
+        "hash": "1640610562",
+        "zh": "那就…继续将计就计。",
+        "pt": "Parece que precisamos pensar em um plano por nós mesmos."
+      },
+      {
+        "hash": "2073137922",
+        "zh": "既然已经踏上了两条截然不同的永恒之路，我可以继续维持现状，也可以选择不计代价地将她带回正轨…",
+        "pt": "Desde que embarcamos em dois caminhos muito diferentes para a eternidade, posso continuar a manter o status ou fazer o que for preciso para trazê-la de volta ao caminho certo, independentemente do custo..."
+      },
+      {
+        "hash": "2386947842",
+        "zh": "继续加油吧。",
+        "pt": "Continue dando seu melhor!"
+      },
+      {
+        "hash": "3228237570",
+        "zh": "只有这样，野狗一样的海贼才不会继续来骚扰我。或许还能威慑其他海贼营寨，令他们不敢轻易打这艘破船的主意。",
+        "pt": "Essa é a única maneira de impedi-los de retornar e me importunarem como se fossem uma matilha de cães de rua. Talvez isso até mostre para os outros acampamentos piratas que eles não devem ter a audácia de atacar este barco."
+      }
+    ],
+    "置顶": [
+      {
+        "hash": "2967782656",
+        "zh": "结构简单的路灯，并未设置顶棚，悬挂的灯笼可能在大雨中熄灭。好在设置这种路灯的地区并非居民的常住地或要道关口，而是诸如甘金岛这类祭典的举办地。天气恶劣时很少有人在那一带活动，不需要这种路灯的照明。",
+        "pt": "Esta simples lâmpada de rua não foi equipada com um teto, e como tal, sua lanterna pode acabar sendo apagada quando há chuvas fortes. Felizmente, estas lanternas não estão geralmente situadas em lugares onde vivem muitas pessoas ou ao longo de estradas importantes, mas em lugares onde são realizados festivais como na Ilha Amakane. O mau tempo faz com que as pessoas acabem não indo para lá e, portanto, as lâmpadas não precisarão ser acesas de qualquer forma."
+      },
+      {
+        "hash": "833612863",
+        "zh": "<color=#D3BC8EFF>【邮箱容量】</color>\\n邮箱中最多能保存1000封邮件。\\n当邮件数量超过上限时，系统将依照时间顺序由旧到新，自动删除无附件或附件已领取的邮件。\\n除此之外，邮箱具有显示上限，当邮件超出一定数量后，只会展示其中一部分邮件。\\n删除过多的邮件后，将展示剩余的邮件。\\n\\n<color=#D3BC8EFF>【邮件标记】</color>\\n被标记的邮件不会被快捷删除，并在邮件列表中排序置顶。\\n但被标记的邮件依然会随时间过期消失。\\n\\n<color=#D3BC8EFF>【邮件珍藏盒】</color>\\n对于诸如生日祝福的一部分重要邮件，在领取该邮件的奖励后，该邮件将被自动收入「邮件珍藏盒」。\\n「邮件珍藏盒」中的邮件不会被快捷删除，且不会随时间过期消失。",
+        "pt": "<color=#D3BC8EFF>[Capacidade da Caixa de E-mails]</color>\\nA caixa de e-mails pode armazenar um máximo de 1000 e-mails.\\nQuando o número de e-mails excede o limite máximo, o sistema irá eliminar automaticamente os e-mails sem anexos ou com anexos já resgatados por ordem de tempo, do mais velho para o mais novo.\\nAlém disso, a caixa de e-mails tem um limite máximo de exibição, quando os e-mails excedem uma certa quantidade, apenas é exibida uma parte dos e-mails.\\nDepois dos e-mails serem eliminados, os e-mails restantes serão exibidos.\\n\\n<color=#D3BC8EFF>[E-mails Marcados]</color>\\nOs e-mails marcados não serão eliminados por atalhos e ficarão no topo da lista de e-mails.\\nPorém, os e-mails marcados também serão eliminados automaticamente se passar muito tempo.<color=#D3BC8EFF>[Caixa de E-mails Favoritos]</color>\\nAlguns e-mails importantes, como saudações de aniversário, serão transferidos automaticamente para a Caixa de E-mails Favoritos depois de você ter coletado as recompensas.\\nOs e-mails transferidos dessa forma não podem ser excluídos rapidamente e não expiram."
+      }
+    ],
+    "管理关卡": [],
+    "收藏": [
+      {
+        "hash": "4107497346",
+        "zh": "这本轻小说，我买了三套。一套用来阅读，一套用来收藏，还有一套用来向朋友宣传。",
+        "pt": "Comprei três cópias desta Light Novel. Um para ler, outra para minha coleção, e outro para emprestar para os meus amigos para promovê-lo."
+      },
+      {
+        "hash": "2509857019",
+        "zh": "如此有艺术美感的创意，我当然会想要加入自己的收藏。",
+        "pt": "Claro, qualquer pessoas com o mínimo interesse por arte, incluiria essa relíquia em sua coleção."
+      },
+      {
+        "hash": "3591981272",
+        "zh": "做工精妙的白狐玩偶，同样采用了木质骨架覆盖织物的工艺，相比同系列的狸猫玩偶，价格要稍高一线。这是因为稻妻民众对狐狸有着特殊的情感，白狐玩偶更总是被抢购一空，唯有提高价格才能在非公开的收藏品市场买到。",
+        "pt": "Estes bonecos kitsune brancos requintadamente trabalhados também usam o processo de cobrir o esqueleto de madeira com tecido. Comparado com os bonecos de tanuki da mesma série, o preço destes são ligeiramente mais altos. Isto porque as pessoas de Inazuma têm um carinho especial por kitsunes, e os bonecos de kitsunes brancos estão sempre esgotados. Apenas ao aumentar o preço que podem ser compradas no mercado de colecionáveis privado."
+      },
+      {
+        "hash": "3576272898",
+        "zh": "嗯，因为这个房间里放了很多凝光大人的收藏品，不只是衣服，还有各种文玩，玉器…",
+        "pt": "Bem, é que há muitas coisas da Senhorita Ningguang guardadas aqui, como roupas, livros, e até mesmo artefatos de jade..."
+      },
+      {
+        "hash": "4293401998",
+        "zh": "他住在轻策庄，收藏各种书籍。虽然脾气不太好，但聊到藏书还是很健谈的。",
+        "pt": "Um colecionador de livros que mora na Vila Qingce. Ele é um completo resmungão - mas se comportará caso a conversa for sobre livros."
+      },
+      {
+        "hash": "2595443417",
+        "zh": "取消收藏",
+        "pt": "Cancelar Favorito"
+      },
+      {
+        "hash": "2901248295",
+        "zh": "据说巴巴托斯大人的神器，传说中的天空之琴就收藏在教堂里面！",
+        "pt": "Dizem que o instrumento sagrado de Barbatos, a Lira Sagrada der Himmel, está consagrado na Catedral."
+      },
+      {
+        "hash": "1421421781",
+        "zh": "表情收藏",
+        "pt": "Emojis Favoritos"
+      },
+      {
+        "hash": "295777415",
+        "zh": "璃月七星中的那位「天权」大人，嗯，她的手段我也略有耳闻。说来，我还收藏有一套限量版的「璃月千年」，你感兴趣吗？我差人拿出来，我们下一盘如何？",
+        "pt": "#Ouvi uma coisa ou outra sobre como a Vossa Eminência, a Tianquan opera. Falando nisso, acontece que eu tenho uma cópia, edição limitada, de \"Mil Anos em Liyue\", você está interessad{M#o}{F#a}? O que me diz, devo pedir para alguém ir pegar para que possamos jogar uma partida?"
+      },
+      {
+        "hash": "3990011437",
+        "zh": "木户与木奈两人的香包。似乎是由两个小香包缝制在一起，被精心收藏在木盒之中。",
+        "pt": "Uma bolsinha perfumada carregada por Kito e Kina. Parece ter sido tecida de duas bolsinhas menores antes de ser cuidadosamente escondida em uma caixa de madeira."
+      },
+      {
+        "hash": "4263646699",
+        "zh": "至少她没有否认——大教堂里收藏着天空之琴。",
+        "pt": "Pelo menos, ela não negou que a Lira Sagrada se encontra resguardada na Catedral."
+      },
+      {
+        "hash": "3459323087",
+        "zh": "这个房间里，都是我收藏的骨头。放在左边柜子里的，有蜥蜴，青蛙，还有草鱼，挂在前面的是野猪，右边角落里的那个，是丘丘人…啊，别紧张，不用害怕，其实都是很可爱的东西，习惯了就好了。",
+        "pt": "Neste quarto, é a minha coleção de ossos. No armário à esquerda, têm ossos de lagarto, sapo e peixe. Aí em frente, são ossos de Javali; E no canto à direita, são ossos de Hilichurl... Não se preocupe, eles são fofos, é só uma questão de se acostumar."
+      },
+      {
+        "hash": "4267791309",
+        "zh": "大日御舆收藏的白夜国之宝。蛇神到来后，渊下宫用以公证大誓与大愿的宝物。",
+        "pt": "Um tesouro nacional do Reino de Byakuya guardado no Dainichi Mikoshi. Com a chegada do Deus Serpente, este item foi usado para autenticar grandes juramentos e desejos."
+      },
+      {
+        "hash": "358286086",
+        "zh": "霹雳收藏家",
+        "pt": "Apanhador de Relâmpagos"
+      },
+      {
+        "hash": "3258604367",
+        "zh": "是啊，别看在码头上给大家占卜赚不来几个钱，可我还是挺喜欢收藏些小物件的。",
+        "pt": "Está certo! Eu poderia ganhar a vida escassamente fazendo adivinhação nas docas, mas ainda adoro colecionar itens antigos."
+      },
+      {
+        "hash": "522722112",
+        "zh": "秋季的一个午后，绫华办完琐事走在回程路上，偶然听见一间老宅中传来苍老的歌声。\\n屋内住着一位双目失明的老妇人。干瘦的手指拨动琴弦，木琴便发出流水般的声响。\\n兴许是耳朵灵敏的关系，老人听见脚步声，询问门外的人是谁。绫华不想她感到困扰，便说自己是迷路误入此地的附近居民。\\n身为社奉行，绫华对民生十分熟悉，很快认出这位膝下无子的孤寡老人正是天气晴朗时在街边弹唱卖艺的那位。\\n曲是过时的老调，歌亦如此。目不能视的老人，早已落后他人太多。即便在追寻永恒的国度之中，也会有活得如此艰辛的人。\\n出于好意，隐瞒身份的绫华陪老人聊了好一会儿。老人当她是普通少女，给她讲木琴的做法和弹法，还将自己收藏的茶叶分了一些给她。\\n与神里家常备的极品茶叶相比，这些粗茶几乎算是草根。但绫华珍重地收下，并再三向她道谢。\\n这一天，她屡次想起双亲。父母若是还在，想必也会有像这样老去的一日。\\n回到家中，绫华将这个故事告诉兄长绫人。兄妹俩一同享用了老人赠予的粗茶。\\n此后每隔一段时日，绫华都亲自前去探望老妇人，依然用着附近居民的名义，每次都为她带去一些平民爱用的生活必需品。\\n「街口的绯樱树又开花了，」绫华笑着告诉老人，「如您的琴声一般美丽。」",
+        "pt": "Em uma tarde de outono, Ayaka estava voltando para casa após concluir alguns pequenos afazeres quando ouviu a voz de uma pessoa idosa vindo do interior de uma velha casa.\\nLá dentro, havia uma senhora cega de ambos os olhos, cujos dedos finos como palitos produziam música como água corrente ao dedilharem as cordas de seu instrumento.\\nTalvez tenha sido por causa de seus ouvidos aguçados, mas a velha senhora ouviu os passos de Ayaka e perguntou quem estava do lado de fora. Não querendo perturbar a senhora, Ayaka respondeu que era uma moradora das vizinhanças que havia se perdido e entrado por engano naquele lugar.\\nComo membro da Comissão Yashiro, Ayaka conhecia bem a vida das pessoas e rapidamente reconheceu aquela senhora solitária como a pessoa que tocava melodias nas ruas da cidade quando o tempo estava bom.\\nA melodia estava desatualizada, assim como a música. Como alguém que não podia ver, aquela senhora há muito estava em descompasso com os novos tempos. Mesmo na nação que busca a eternidade, alguns ainda tinham vidas muito difíceis.\\nUsando a bondade em seu coração, Ayaka permaneceu anônima e passou um longo tempo conversando com a velha senhora. Achando que Ayaka era uma garota comum, a senhora falou sobre o método de fabricar e tocar o koto, e até deu a ela algumas folhas de chá que mantinha guardadas.\\nComparadas com as requintadas folhas que o Clã Kamisato tinha em estoque, aquelas folhas ásperas poderiam muito bem ser grama, mas Ayaka as aceitou com profunda gratidão assim mesmo.\\nNaquele dia, ela pensou em seus pais muitas vezes. Se estivessem por perto, teriam chegado a ficar tão velhos?\\nQuando voltou para casa, ela falou sobre aquele encontro com o irmão, e os dois compartilharam o chá rústico que a velha senhora havia presenteado.\\nDepois disso, Ayaka passou a visitar a velha senhora regularmente, sempre se fazendo passar por alguém que mora nas vizinhanças e sempre levando alguns itens de uso diário que as pessoas comuns costumavam gostar.\\n\"As árvores sakura nas ruas floresceram novamente\", Ayaka disse para a senhora com um sorriso, \"e elas são tão adoráveis quanto a sua música\"."
+      },
+      {
+        "hash": "1434423106",
+        "zh": "啊？做个收藏不行吗？怎么，蒙德人连个遗迹守卫都不敢试试吗？",
+        "pt": "Hã? Um homem não pode coletar algumas bugigangas? Ou o povo de Mondstadt tem medo de um pequeno Guarda das Ruínas?"
+      },
+      {
+        "hash": "3925394864",
+        "zh": "以「垂香木」制作高大书架，存放古籍和卷轴时尤为方便。\\n格栅交错的设计不止是为了美观，还能提高工作效率，据说这型书柜最受喜爱展示自己藏书的书籍收藏者钟爱。",
+        "pt": "Uma estante alta de Cedro que pode armazenar tomos e pergaminhos antigos convenientemente.\\nO design das prateleiras escalonadas não é apenas para fins estéticos, mas também melhora o fluxo de trabalho. Dizem que essa estante é a mais popular entre aqueles que gostam de exibir sua coleção de livros."
+      },
+      {
+        "hash": "4093619814",
+        "zh": "不对！是我的人生！我倾尽一生收藏的！保护的！我的藏书，没了！！",
+        "pt": "Errado! É a minha vida! Passei minha vida inteira colecionando! Protegendo! Minha coleção se foi!"
+      },
+      {
+        "hash": "3080623730",
+        "zh": "嘿嘿，我们钓鱼协会，还是收藏了不少好东西的！",
+        "pt": "Hehe, nossa Associação de Pesca tem uma coleção de coisas boas!"
+      }
+    ],
+    "无法出战": [],
+    "道具已达到容量上限": [],
+    "次0点": [],
+    "点": [
+      {
+        "hash": "2919406737",
+        "zh": "攻击造成暴击时，有<color=#99FFFFFF>70%</color>的几率产生少量元素微粒，能为角色恢复6点元素能量。该效果每<color=#99FFFFFF>10.5</color>秒只能触发一次。",
+        "pt": "Os Acertos Críticos possuem <color=#99FFFFFF>70%</color> de chance de gerar uma pequena quantidade de Partícula Elemental, que irá regenerar 6 de Energia para o Personagem. Pode ocorrer uma vez a cada <color=#99FFFFFF>10.5</color>s."
+      },
+      {
+        "hash": "3743066257",
+        "zh": "快点收好…还有，别和葛瑞丝阿姨说啊！",
+        "pt": "Rápido, pegue isso. Não diga nada a tia Grace!"
+      },
+      {
+        "hash": "1007278978",
+        "zh": "可惜，你们没有早点遇见我。",
+        "pt": "Uma pena que não tenhamos nos conhecido antes."
+      },
+      {
+        "hash": "1077619586",
+        "zh": "稍微有点那种「隐藏实力、神秘感，在故事中后期会加入主角团队」的气质。我和他合作过很多次了。",
+        "pt": "Ele tem aquela aura de \"mantendo seu verdadeiro poder um mistério, apenas para se juntar à equipe no protagonista nas fases finais da história\", sabe? Eu já trabalhei com ele muitas vezes."
+      },
+      {
+        "hash": "1100007298",
+        "zh": "哦，他们认为风之花是蒲公英，这应该是目前最主流的观点了。",
+        "pt": "Ah, eles acreditam que a Flor do Vento é um Dandelion. Hoje em dia, esse é o ponto de vista predominante."
+      },
+      {
+        "hash": "1161393026",
+        "zh": "宽敞的床榻，松软的枕头，灯火明度适中，还有盆景作为点缀…",
+        "pt": "Cama grande, travesseiro suave e iluminação moderada, junto com essa planta como ornamento! Que lindo!"
+      },
+      {
+        "hash": "1688903554",
+        "zh": "呼…有点事情做还是比闲着好。对了，前辈如果没有其他事情的话也请跟我一起来吧！",
+        "pt": "*Suspiro* É sempre melhor fazer algo ao invés de ficar de braços cruzados... Então, se você não tiver nada para fazer, venha comigo!"
+      },
+      {
+        "hash": "1728529282",
+        "zh": "那我来帮你把秘境地点标注在地图上吧，测试任务就拜托你了。",
+        "pt": "Bem, então, permita-me marcar a localização deste domínio para você em seu mapa. Tenha um bom teste!"
+      },
+      {
+        "hash": "1816809346",
+        "zh": "重击体力消耗|{param6:F1}点",
+        "pt": "Consumo de Stamina de Ataque Carregado|{param6:F1}"
+      },
+      {
+        "hash": "1846328194",
+        "zh": "老大，好像有点不太对劲…",
+        "pt": "Chefe... algo não está certo..."
+      },
+      {
+        "hash": "1882874754",
+        "zh": "另外，也是更重要的一点，当事人对这件事并不在意。",
+        "pt": "Em segundo lugar, e mais importante, a pessoa envolvida não parece se importar."
+      },
+      {
+        "hash": "1952445314",
+        "zh": "这样一来，价格又要小打一点折扣。",
+        "pt": "Receio que isso resulte numa redução do seu preço."
+      },
+      {
+        "hash": "2309894018",
+        "zh": "欸欸欸，这么高难度的任务，百代小姐你的语气也太轻松了一点吧？！",
+        "pt": "Hã?! Isso é uma missão muito difícil! Como que você pode falar de uma maneira tão tranquila assim?!"
+      },
+      {
+        "hash": "2643135362",
+        "zh": "嗯…我倒也还能喝得下，只是尝过之后总觉得差了点味道，和普通的饮料也没什么区别。",
+        "pt": "Bem... quero dizer, eu poderia apenas bebê-las. Mas elas não têm assim tanto sabor, não achei nada de especial."
+      },
+      {
+        "hash": "2705539970",
+        "zh": "那我们晚点再见！",
+        "pt": "Bem, te vejo mais tarde então!"
+      },
+      {
+        "hash": "2880619394",
+        "zh": "解锁「蒙德 蒙德城」传送锚点",
+        "pt": "Desbloqueie o ponto de Teleporte da Cidade de Mondstadt"
+      },
+      {
+        "hash": "3163962242",
+        "zh": "之前我不是按您的要求重新规划了烟花布置点，把布置范围扩展到了轻策庄吗？",
+        "pt": "Você não me pediu antes para replanejar o plano dos fogos de artifício para que pudéssemos expandir seu alcance até a Vila Qingce?"
+      },
+      {
+        "hash": "3238507394",
+        "zh": "有点意思，不过有些地方比较生硬，对「设定」的展示也不够优雅。不过，无论如何…",
+        "pt": "Isso é muito interessante, de fato, mas alguns aspectos dessa história são bastante rígidos e não contribuem para o desenvolvimento do cenário. Ainda..."
+      },
+      {
+        "hash": "3361770370",
+        "zh": "#哎？{NICKNAME}的词汇量是不是有点匮乏…",
+        "pt": "Hã? Não diga para Paimon que seu vocabulário também está pequeno..."
+      },
+      {
+        "hash": "3399651202",
+        "zh": "我知道，但是…唉，我真是奇了怪了，每次我想请假的时候，总是会出点事。",
+        "pt": "Eu sei, mas... Ai, é muito estranho, toda vez que quero uma folga, acontece alguma coisa."
+      }
+    ],
+    "小时": [
+      {
+        "hash": "3960765824",
+        "zh": "某日，行秋的大哥前来寻他，屋内却没有人在。回来后，行秋遇到了候在走廊上的大哥。\\n「你房内太过凌乱，我便自作主张替你收拾了一番。行秋啊，你与大哥同样肩负着飞云商会的名声，理应为众人作出表率。岂能不知一屋不扫，何以扫天下？昔年仙人有云…」\\n对着行秋唠叨半小时后，大哥终于放过了他，临走前留下一句奇怪的话：\\n「下次，大哥不会未经许可进入你房间了，丫鬟那边我也会提点一句。」\\n行秋一头雾水，不知该作何回答。离去的大哥却在转身后换上一副惆怅面孔，自言自语道：\\n「床底下还藏了书…嗯…大哥可不会去看那是什么书的。哎，行秋也长大啦，以后会不会嫌我的管教太啰嗦呢？这叫做什么来着…青春期，是吗？」\\n行秋也很奇怪。他藏了这么多武侠小说，早已做好与帮佣们斗智斗勇的准备，可为什么一直没人来探查他的房间呢？",
+        "pt": "Um dia, o irmão mais velho de Xingqiu veio procurá-lo, mas descobriu que ele não estava por perto. Quando Xingqiu voltou mais tarde, ele encontrou seu irmão no corredor.\\n\"Seu quarto estava uma bagunça, então eu lhe ajudei a arrumar. Ouça, você e eu somos responsáveis pela reputação da Guilda de Comerciantes de Feiyun. Temos que agir de acordo. Se você não pode nem limpar um quarto, como vai querer ajudar o mundo? Um Adeptus disse uma vez...\"\\nDepois de meia hora de palestras, Xingqiu foi finalmente liberado, mas seu irmão disse algo estranho no quarto:\\n\"Não entrarei no seu quarto sem permissão da próxima vez... vou garantir que as empregadas façam o mesmo\".\\nXingqiu não fazia ideia do que estava falando. No entanto, quando seu irmão se virou, com um olhar desanimado, ele murmurou para si mesmo: \\n\"Aqueles livros debaixo da cama... Não, eu não deveria folhear esse tipo de livro， eles são... Afinal de contas, Xingqiu está crescendo... Não quero dar bronca o tempo todo... Puberdade, talvez?\"\\nNo final, até Xingqiu achou estranho, esperando que uma das empregadas tivesse algo a dizer sobre o estoque de romances de artes marciais embaixo da cama, mas ninguém nunca entrou em seu quarto novamente."
+      },
+      {
+        "hash": "455011434",
+        "zh": "小时候，我也想要神之眼，他们说只要够强，就有机会。",
+        "pt": "Quando eu era pequeno, eu também queria uma Visão. Diziam que só precisava ser forte que eu teria uma chance."
+      },
+      {
+        "hash": "2697431765",
+        "zh": "「口袋锚点」剩余时间：{0}天{1}小时",
+        "pt": "Tempo Restante do Teleporte Portátil: {0} dia(s) e {1} hora(s)"
+      },
+      {
+        "hash": "345783903",
+        "zh": "小时候，大人都让我要像个女孩子，让我学这个，学那个，但我天赋不行，总是挨骂。摇滚就不一样，没人教我，我也能做得很好，但却被大人说「没个女孩儿样」，唉，这就叫成见。",
+        "pt": "Quando eu era pequena, os adultos diziam que eu devia parecer mais uma menina, estudar isso, estudar aquilo, mas eu não era boa nessas coisas, então só recebia broncas. Com Rock 'N' Roll foi diferente, ninguém me ensino, e eu sabia fazer bem, mas os adultos diziam: \"Isso não é coisa de mulher\". Ai... Quanto preconceito."
+      },
+      {
+        "hash": "3053822010",
+        "zh": "这个就交给你们吧，这是我们小时候每人都梦想的豪华玩具箱，但那时候我们都没什么钱，根本买不起。",
+        "pt": "Pegue isto, é uma caixa de brinquedos de primeira linha que todos nós sonhávamos em ter quando criança. Naquela época, nenhum de nós podia arcar com isso, não tínhamos um tostão."
+      },
+      {
+        "hash": "2276007528",
+        "zh": "距渊月螺旋重置还有{0}天{1}小时",
+        "pt": "{0} dia(s) e {1} hora(s) para a redefinição da Lua Abissal"
+      },
+      {
+        "hash": "264908320",
+        "zh": "一旦脱离了工作的范畴，甘雨就很容易显露出本性上的与众不同之处。\\n她有睡午觉的习惯，同时仿佛内置了极其精准的生物钟。一旦到了午休时间，便不分地点不分场合，只要将身子蜷作一团就能立刻睡着，即使吵闹到有一群丘丘人围在她身边跳舞，也不会醒来。\\n这种习性，最初也只是「璃月七星」内部流传的笑谈。\\n然而，有次陪同某一代的「天璇星」，在午间外出就餐后，酒足饭饱的甘雨直接缩进了路边的干草堆里，被一路运去了荻花洲，直到卸货时脑袋砸到了地面，才醒了过来。\\n在这往返的三小时内，四处找不见甘雨、又深知甘雨不会不告而别的那位「天璇星」，险些填报了人口失踪信息。\\n在那之后，面对「今后只能在安全之地午睡」的告诫，甘雨有些委屈地回应：\\n「璃月全境…不都是安全的地方吗。」\\n究其原因，或许是身为仙兽的混血后裔，甘雨对于世间事物的认知，与多数的人类原本就有所不同。",
+        "pt": "Fora do seu trabalho, Ganyu rapidamente mostra como ela é diferente da maioria das outras pessoas.\\nEla tem o hábito de tirar cochilos à tarde e seu relógio interno é incrivelmente preciso. Quando chega a hora do almoço, não importa onde esteja, ela simplesmente adormecerá no local. Até mesmo a dança ruidosa dos Hilichurls não consegue acordá-la.\\nA princípio, esses hábitos eram apenas uma piada recorrente entre os Qixing de Liyue.\\nMas uma vez, Ganyu acompanhou o então Tianxuan em um almoço fora da cidade. Após comer bastante, ela deitou sobre um monte de feno à beira da estrada, que acabou sendo transportado até a Ilhota de Dihua. Ela acordou apenas depois de bater com a cabeça durante o descarregamento.\\nNão foi possível encontrar Ganyu em qualquer lugar nas três horas seguintes. Sabendo que ela não iria embora sem avisar, o Tianxuan quase fez uma queixa de desaparecimento.\\nApós receber uma severa advertência para \"apenas tirar cochilos à tarde onde for seguro\", Ganyu respondeu:\\n\"Bem... Não está tudo seguro em Liyue?\"\\nTalvez a mistura de sangue humano e de besta iluminada fluindo em suas veias faça Ganyu entender os assuntos do mundo de forma diferente da maioria dos humanos."
+      },
+      {
+        "hash": "954384714",
+        "zh": "「…『大黄金盗宝鼬』，最为狡猾奸诈，只许在两个小时内完成呼唤与喂食环节…建议时间：<color=#00E1FFFF>0:00—1:59</color>」",
+        "pt": "\"... Furão Ladrão Dourado: É o mais esperto de todos. Limite sua alimentação e interação para apenas duas horas... Horário recomendado: <color=#00E1FFFF>0:00 — 1:59</color>\""
+      },
+      {
+        "hash": "3639531417",
+        "zh": "{0}小时",
+        "pt": "{0}h"
+      },
+      {
+        "hash": "412983331",
+        "zh": "可莉：「这里的鱼，抓来烤着吃一定很棒吧…可莉想吃鱼…」\\n芭芭拉：「那芭芭拉陪你去抓鱼吧！不过小声一点，别让姐姐发现我们去抓鱼哦。」\\n可莉：「真的吗？芭芭拉姐姐也喜欢吃鱼吗？」\\n芭芭拉：「哈哈哈，比起吃，还是抓鱼玩的乐趣比较大呢。小时候我和姐姐也去抓过…别看姐姐平时那样，小时候也是个很有童心的人哦。以前她还养过小乌龟，没想到吧！」",
+        "pt": "Klee: \"Os peixes quando assados ficam bem gostosos... Klee quer comer Peixe...\"\\n Barbara: \"Então eu vou com você pegar peixes! Mas não faça barulho, não deixe minha irmã descobrir que estamos indo fazer isso!\"\\nKlee: \"Mesmo? Barbara também gosta de peixe?\"\\nBarbara: \"Hahaha, comparado a comer, pegar peixes é muito mais divertido. Quando éramos pequenas, eu e minha irmã também pegávamos... Minha irmã geralmente não é rigorosa assim, quando era criança, ela era uma pessoa muito inocente. Antes ela ainda criava uma tartaruga, você não imaginaria nisso, imaginaria?\""
+      },
+      {
+        "hash": "557761571",
+        "zh": "我小时候也养过啊，这有什么可奇怪的。",
+        "pt": "Eu também tinha um quando eu era criança. O que tem de estranho nisso?"
+      },
+      {
+        "hash": "98645592",
+        "zh": "或许每个鬼族的孩子，都在小时候听过赤鬼与青鬼的故事：\\n性情温和、乐善好施的赤鬼击败了作恶多端的青鬼，鬼族自此赢得了人类的尊重。\\n这是儿时的一斗最喜欢的故事。长着红色鬼角的一斗，为自己身为赤鬼的后裔而自豪。\\n然而，稚童这份淳朴的自豪感却被一件事动摇了。\\n一斗居住的村子接连发生恶性的抢劫伤人事件，荒泷一家因为鬼族的身份无端受到了怀疑。\\n当年的许多事一斗已经记不清了，但他始终记得父母带他离开村子时，村民们那充满警惕与厌恶的目光，还有那句后来一斗又听过无数遍的话：\\n「果然鬼就是鬼。」\\n无论在什么时代，人类眼中的鬼都只是鬼罢了。比起从未作恶却被迫背井离乡的父母，或许还是成为被人畏惧的青鬼更好。\\n父母病逝后，年少的一斗混迹于街头，只要有人胆敢在面前提起鬼族，他就一定会与对方大打出手。\\n虽然大多时候一斗都只有挨打的份，可他无论被打倒多少次都绝不投降，十分难缠。\\n但一斗毕竟是个孩子，终于在被几个混混联合起来一顿毒打后，因为又累又饿，昏倒在了街头。\\n危难之时，一位人类老妇救下了一斗。\\n「喂，本大爷可是鬼啊！为什么要救我？！」「我熬了米粥，你饿了吧。」\\n「我都说了我是鬼族！你看不见我头上的角吗？」「能看见能看见…锅里有粥，要喝吗？」\\n「啊啊啊，这人怎么不听别人说话——咳…婆婆，麻烦您，米粥，给我来一碗…」「来喽。」",
+        "pt": "Toda criança oni provavelmente já ouviu a história do Oni Carmesim e do Oni Azul:\\nO gentil e prestativo Oni Carmesim derrotou o perverso Oni Azul, ganhando assim o respeito dos humanos.\\nEsta era a história favorita de Itto quando ele era pequeno, e ele estava orgulhoso de seus chifres vermelhos de oni e de sua linhagem do Oni Carmesim.\\nEntretanto, este simples orgulho foi abalado por um certo incidente.\\nQuando ocorreram incidentes de roubo na vila em que Itto vivia, a família Arataki ficou sob suspeita por causa de sua herança oni.\\nItto não se lembra mais dos detalhes daquele incidente, mas ele se lembra dos olhares desconfiados e enojados que os aldeões deram a ele e a seus pais quando saíram, e das palavras de despedida que eles disseram, as quais Itto ouviu inúmeras vezes desde então:\\n\"Uma vez um Oni, sempre um Oni.\"\\nNão importa quando, todos os oni são iguais no que diz respeito aos humanos. Nesse caso, não seria melhor se tornar o Oni Azul, a quem as pessoas temiam? Certamente isso era preferível a ser como seus pais, que foram expulsos apesar de não terem feito nada de errado.\\nDepois que seus pais morreram de doenças, o jovem Itto foi levado para as ruas, onde se lançava em qualquer pessoa que falasse mal do povo oni.\\nBem, Itto era principalmente o que acabava apanhando. Mas ele provou ser uma grande dor de cabeça, nunca desistindo, não importa quantas vezes o derrubaram.\\nMesmo assim, ele era apenas uma criança e acabou caindo na rua devido à exaustão e fome após uma terrível rodada de espancamentos nas mãos de alguns marginais que haviam se unido contra ele.\\nNeste momento de crise, Itto foi salvo por uma velha mulher humana.\\n\"Por que você me salvou? Você não vê que eu sou um oni?\" \"Você deve estar com fome. Venha, fiz um mingau.\"\\n\"Eu lhe disse, eu sou um oni! Você não consegue ver os chifres?\" \"Oh, eu consigo vê-los\". Você quer um pouco desse mingau, a propósito?\"\\n\"Arg, sabe de uma coisa, você não está me ouvindo de jeito nenhum. Ah, tudo bem... Uma tigela de mingau, por favor.\" \"É pra já.\""
+      },
+      {
+        "hash": "146856996",
+        "zh": "{0}天{1}小时",
+        "pt": "{0} dia(s) e {1} hora(s)"
+      },
+      {
+        "hash": "2913617571",
+        "zh": "{0}/小时",
+        "pt": "{0}/hr"
+      },
+      {
+        "hash": "2066273357",
+        "zh": "老一辈总是念叨着那里是什么什么象征…我们小时候就去过好多次了。",
+        "pt": "Os mais velhos estão sempre falando sobre algum símbolo de algo ou outro por lá... E nós já estivemos lá tantas vezes quando éramos jovens."
+      },
+      {
+        "hash": "977881545",
+        "zh": "剩余{0}天{1}小时",
+        "pt": "{0} dia(s) e {1} hora(s) restante(s)."
+      },
+      {
+        "hash": "1091538962",
+        "zh": "这里…倒是让我想起来，绫华小时候和我一起逛祭典的场景了…",
+        "pt": "Ah, isso me lembra quando Ayaka era nova, e visitávamos o festival juntos..."
+      },
+      {
+        "hash": "4113738770",
+        "zh": "哦对，这么说起来，狼哥小时候就分不清楚东南西北。要是我们不带着他，他都不敢自己下山。",
+        "pt": "Agora que você mencionou isso, o Grande G sempre teve um péssimo senso de direção. Quando éramos crianças, ele nunca descia a colina sozinho, sempre tivemos que guiá-lo."
+      },
+      {
+        "hash": "4178366482",
+        "zh": "哈哈哈，这愿望是她帮我写的吧，我小时候确实最想实现这个愿望…",
+        "pt": "Hahaha, ela escreveu este desejo para mim, não foi? Eu me lembro de querer realizá-lo acima de tudo quando eu era criança..."
+      },
+      {
+        "hash": "4015804711",
+        "zh": "小时候，我有两个好朋友，我们无话不说。本来我以为，我对她们了解得一清二楚，但后来发生了一些事，我突然就…看不透她们了。她们现在在哪儿，在做什么，还记不记得我，这些…我都不知道。就算再好的朋友，也会变成这样呢。",
+        "pt": "Quando era pequena, tinha duas amigas muito boas, falávamos tudo e não tínhamos segredos. Pensava que as conhecia muito bem, mas depois percebi que não as conhecia mais de repente. Onde elas estão, o que elas estão fazendo, elas ainda se lembram de mim? Não sei as respostas certas... É triste. Mesmo que sejamos boas amigas, estamos afastadas."
+      }
+    ],
+    "即时刷新": [],
+    "锄地": [],
+    "当前物品在背包内的容量已达上限": [],
+    "有什么卖的": [
+      {
+        "hash": "1412434055",
+        "zh": "有什么卖的？",
+        "pt": "O que você está vendendo?"
+      },
+      {
+        "hash": "236192503",
+        "zh": "有什么卖的？",
+        "pt": "O que você está vendendo?"
+      },
+      {
+        "hash": "701109575",
+        "zh": "有什么卖的？",
+        "pt": "O que você está vendendo?"
+      },
+      {
+        "hash": "2667621718",
+        "zh": "有什么卖的？",
+        "pt": "O que você está vendendo?"
+      }
+    ],
+    "可以卖一些": [
+      {
+        "hash": "336714919",
+        "zh": "可以卖一些猎物给我吗？",
+        "pt": "Você pode me vender algumas das suas caças?"
+      }
+    ],
+    "进入世界申请": [],
+    "利亚姆": [],
+    "今日已无法锻造": [
+      {
+        "hash": "110208304",
+        "zh": "今日已无法锻造精锻用魔矿。",
+        "pt": "Não foi possível forjar os Orbes de Refinamento Mítico."
+      },
+      {
+        "hash": "905054512",
+        "zh": "今日已无法锻造精锻用良矿。",
+        "pt": "Não foi possível forjar os Orbes de Refinamento Mítico hoje."
+      },
+      {
+        "hash": "1652126048",
+        "zh": "今日已无法锻造精锻用良矿。",
+        "pt": "Não foi possível forjar os Orbes de Refinamento Mítico hoje."
+      },
+      {
+        "hash": "1106263712",
+        "zh": "今日已无法锻造精锻用矿，请等待明日。",
+        "pt": "Não foi possível forjar os Orbes de Fortalecimento. Por favor, espere até amanhã."
+      },
+      {
+        "hash": "334576640",
+        "zh": "今日已无法锻造精锻用魔矿。",
+        "pt": "Não foi possível forjar os Orbes de Refinamento Mítico."
+      }
+    ],
+    "锻造队列": [
+      {
+        "hash": "1670905548",
+        "zh": "锻造队列({0}/{1})",
+        "pt": "Fila de Forjamento {0}/{1}"
+      },
+      {
+        "hash": "3450341110",
+        "zh": "锻造队列已满",
+        "pt": "Fila de forjamento cheia"
+      }
+    ]
+  }
+}
