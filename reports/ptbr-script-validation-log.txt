@@ -1,7 +1,7 @@
 === PYTHON SYNTAX ===
 === STRICT SCAN ===
 {
-  "strict_functional_cjk_count": 102,
+  "strict_functional_cjk_count": 94,
   "top_literals": [
     [
       "委託",
@@ -10,14 +10,6 @@
     [
       "委",
       3
-    ],
-    [
-      "分钟",
-      2
-    ],
-    [
-      "秒",
-      2
     ],
     [
       "使用20个原粹树脂",
@@ -37,10 +29,6 @@
     ],
     [
       "挂起来吧",
-      2
-    ],
-    [
-      "再见",
       2
     ],
     [
@@ -69,10 +57,6 @@
     ],
     [
       "申請造訪",
-      2
-    ],
-    [
-      "切换账号",
       2
     ],
     [
@@ -162,6 +146,22 @@
     [
       "能给我几支香吗",
       1
+    ],
+    [
+      "给我一份福利餐",
+      1
+    ],
+    [
+      "其实",
+      1
+    ],
+    [
+      "紊乱平息",
+      1
+    ],
+    [
+      "联机合奏",
+      1
     ]
   ],
   "top_files": [
@@ -170,15 +170,7 @@
       10
     ],
     [
-      "repo/js/AutoPickLitter/main.js",
-      7
-    ],
-    [
       "repo/js/CrystalflyTrap/main.js",
-      7
-    ],
-    [
-      "repo/js/SwitchAccountMultipleMode/main.js",
       7
     ],
     [
@@ -186,7 +178,15 @@
       6
     ],
     [
+      "repo/js/AutoPickLitter/main.js",
+      5
+    ],
+    [
       "repo/js/DSTCG/main.js",
+      5
+    ],
+    [
+      "repo/js/SwitchAccountMultipleMode/main.js",
       5
     ],
     [
@@ -230,10 +230,6 @@
       2
     ],
     [
-      "repo/js/AotoTeyvatFoodOneDragon/main.js",
-      2
-    ],
-    [
       "repo/js/AutoFontaineLeyLine/main.js",
       2
     ],
@@ -258,10 +254,6 @@
       2
     ],
     [
-      "repo/js/食材加工/main.js",
-      2
-    ],
-    [
       "repo/js/AutoFriendshipFight/main.js",
       1
     ],
@@ -283,6 +275,14 @@
     ],
     [
       "repo/js/背包材料统计/main.js",
+      1
+    ],
+    [
+      "repo/js/营养袋吃药统计/main.js",
+      1
+    ],
+    [
+      "repo/js/诛贼-地方传奇-利亚姆/lib/Laim/lib/MobPuller.js",
       1
     ]
   ]
