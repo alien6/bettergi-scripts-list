@@ -40,7 +40,7 @@ const RestoreButtonRo = RecognitionObject.TemplateMatch(file.ReadImageMatSync("R
                         captureRegion2.dispose();
                         for (let i = 0; i < resList2.count; i++) {
                             let res = resList2[i];
-                            if (res.text.includes("确认")) {
+                            if (res.text.includes((genshin.getText ? genshin.getText("confirm") : "确认"))) {
                                 log.info("识别到确认按钮");
                                 res.click();
                                 await sleep(2000);

@@ -203,6 +203,28 @@ declare const genshin: {
   readonly scaleTo1080PRatio: number;
   /** 系统 DPI 缩放比例 */
   readonly screenDpiScale: number;
+  /** Current Genshin client culture configured in BetterGI. */
+  readonly gameCulture: string;
+  /** Resolve a semantic game-text key for the current client culture. */
+  getText(key: string): string;
+  /** Resolve all accepted OCR variants for a semantic game-text key. */
+  getTexts(key: string): string[];
+  /** Find the exact OCR result matching a semantic key inside an existing image region. */
+  findTextKey(key: string, region: ImageRegion): Region;
+  /** Find the exact OCR result matching a semantic key inside a capture rectangle. */
+  findTextKey(key: string, x: number, y: number, width: number, height: number): Region;
+  /** Return whether a semantic key is visible inside an existing image region. */
+  hasTextKey(key: string, region: ImageRegion): boolean;
+  /** Return whether a semantic key is visible inside a capture rectangle. */
+  hasTextKey(key: string, x: number, y: number, width: number, height: number): boolean;
+  /** Return the actual OCR text matched by a semantic key, or an empty string. */
+  findTextKeyText(key: string, region: ImageRegion): string;
+  /** Return the actual OCR text matched by a semantic key in a capture rectangle, or an empty string. */
+  findTextKeyText(key: string, x: number, y: number, width: number, height: number): string;
+  /** Find and click the exact OCR result matching a semantic key. */
+  findTextKeyAndClick(key: string, region: ImageRegion): boolean;
+  /** Find and click the exact OCR result matching a semantic key in a capture rectangle. */
+  findTextKeyAndClick(key: string, x: number, y: number, width: number, height: number): boolean;
   /** 导航相关Instance，仅内部使用 */
   readonly lazyNavigationInstance: any;
   /**
@@ -383,6 +405,13 @@ declare const genshin: {
   readonly Height: typeof genshin.height;
   readonly ScaleTo1080PRatio: typeof genshin.scaleTo1080PRatio;
   readonly ScreenDpiScale: typeof genshin.screenDpiScale;
+  readonly GameCulture: typeof genshin.gameCulture;
+  GetText: typeof genshin.getText;
+  GetTexts: typeof genshin.getTexts;
+  FindTextKey: typeof genshin.findTextKey;
+  HasTextKey: typeof genshin.hasTextKey;
+  FindTextKeyText: typeof genshin.findTextKeyText;
+  FindTextKeyAndClick: typeof genshin.findTextKeyAndClick;
   readonly LazyNavigationInstance: typeof genshin.lazyNavigationInstance;
   Tp: typeof genshin.tp;
   MoveMapTo: typeof genshin.moveMapTo;

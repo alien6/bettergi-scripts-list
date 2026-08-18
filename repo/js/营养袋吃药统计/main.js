@@ -98,7 +98,7 @@ function escapeRegExp(string) {
         const text_h = 51;
         const ocr_res = game_region.find(RecognitionObject.ocr(text_x, text_y, text_w, text_h));
         if (ocr_res) {
-            if (ocr_res.text.includes("物品过期")) {
+            if (ocr_res.text.includes((genshin.getText ? genshin.getText("item_expired") : "物品过期"))) {
                 log.info("检测到物品过期");
                 click(1000, 750);
                 await sleep(1000);

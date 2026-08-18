@@ -145,7 +145,7 @@ async function switchCardTeam(Name, shareCode) {
         captureRegion = captureGameRegion();
         let res = captureRegion.find(RecognitionObject.ocr(1140, 732, 83, 55));
         captureRegion.dispose();
-        if (res.text === "确认") {
+        if (res.text === (genshin.getText ? genshin.getText("confirm") : "确认")) {
             res.click();
         } else {
             click(731, 998); // 编辑牌组

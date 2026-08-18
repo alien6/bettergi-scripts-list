@@ -650,7 +650,7 @@
 
     // 背包过期物品识别
     async function handleExpiredItems() {
-        const ifGuoqi = await textOCREnhanced("物品过期", 1.5, 0, 3, 870, 280, 170, 40);
+        const ifGuoqi = await textOCREnhanced((genshin.getText ? genshin.getText("item_expired") : "物品过期"), 1.5, 0, 3, 870, 280, 170, 40);
         if (ifGuoqi.found) {
             log.info("检测到过期物品，正在处理...");
             await sleep(500);
@@ -823,7 +823,7 @@
         try {
             const result = captureRegion.find(ocrRo2);
             const text = result.text;
-            const keywords = ["挑战成功", "达成", "挑战达成"];
+            const keywords = ["挑战成功", "达成", (genshin.getText ? genshin.getText("challenge_completed") : "挑战达成")];
 
             for (const keyword of keywords) {
                 if (text.includes(keyword)) {
@@ -848,7 +848,7 @@
         await sleep(10);
         await textOCREnhanced("开始挑战", 8, 1, 0, 1615, 990, 220, 50);// 等待“开始挑战”出现
         await sleep(10);
-        await textOCREnhanced("地脉异常", 10, 1, 0, 840, 405, 180, 55);// 等待“地脉异常”出现
+        await textOCREnhanced((genshin.getText ? genshin.getText("ley_line_disorder") : "地脉异常"), 10, 1, 0, 840, 405, 180, 55);// 等待“地脉异常”出现
 
         await sleep(1000);
 

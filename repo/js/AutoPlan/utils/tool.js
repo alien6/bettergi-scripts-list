@@ -204,7 +204,7 @@ export async function toMainUi() {
  * 该函数用于处理退出秘境界面的相关操作，包括点击确认按钮和检测界面状态
  */
 export async function outDomainUI() {
-    Log.info(`{0}`, "退出秘境");
+    Log.info(`{0}`, (genshin.getText ? genshin.getText("exit_domain") : "退出秘境"));
     const ocrRegion = {
         x: 509,
         y: 259,
@@ -249,7 +249,7 @@ export async function outDomainUI() {
 }
 
 export async function outStygianOnslaughtUI() {
-    Log.info(`{0}`, "退出挑战");
+    Log.info(`{0}`, (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"));
     const ocrRegion = {
         x: 509,
         y: 259,

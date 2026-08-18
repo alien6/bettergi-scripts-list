@@ -213,8 +213,8 @@ async function deleteSource() {
   // 删除
   await sleep(duration);
   await findTextAndClick("删除", 960, 980, 960, 100, 50, 100);
-  await findTextAndClick("确认", 960, 600, 960, 400, 50, 100);
-  await findTextAndClick("确认", 960, 600, 960, 400, 50, 100);
+  await findTextAndClick((genshin.getText ? genshin.getText("confirm") : "确认"), 960, 600, 960, 400, 50, 100);
+  await findTextAndClick((genshin.getText ? genshin.getText("confirm") : "确认"), 960, 600, 960, 400, 50, 100);
 
   log.info("关卡存档删除完成");
   await sleep(duration);
@@ -225,7 +225,7 @@ async function deleteSource() {
 async function exitRoom() {
   keyPress("VK_P");
   await waitUntilTextAppear(
-    "确认",
+    (genshin.getText ? genshin.getText("confirm") : "确认"),
     async () => {
       await findImgAndClick(exit_room, 960, 0, 960, 540, 5000);
     },
@@ -236,7 +236,7 @@ async function exitRoom() {
     50,
     100
   );
-  await findTextAndClick("确认", 960, 600, 960, 400, 50);
+  await findTextAndClick((genshin.getText ? genshin.getText("confirm") : "确认"), 960, 600, 960, 400, 50);
   await genshin.returnMainUi();
 }
 
@@ -409,7 +409,7 @@ async function exitToTeyvat() {
   await sleep(duration);
   await findTextAndClick("返回", 960, 0, 960, 100);
   await sleep(duration);
-  await findTextAndClick("确认", 960, 600, 960, 400);
+  await findTextAndClick((genshin.getText ? genshin.getText("confirm") : "确认"), 960, 600, 960, 400);
   await waitUntilImgAppear(paimon);
   // 有镜头拉近动画
   await sleep(duration);

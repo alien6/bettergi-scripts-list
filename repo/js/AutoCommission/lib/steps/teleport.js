@@ -26,8 +26,8 @@
     }
   });
   
-  // 同时注册"传送"别名
-  StepProcessorLoader.register("传送", async function(step, context) {
+  // 同时注册(genshin.getText ? genshin.getText("teleport") : "传送")别名
+  StepProcessorLoader.register((genshin.getText ? genshin.getText("teleport") : "传送"), async function(step, context) {
     return StepProcessorLoader.processors["tp"](step, context);
   });
 })();
@@ -42,7 +42,7 @@ JSON使用示例:
 
 或者带强制传送参数:
 {
-  "type": "传送",
+  "type": (genshin.getText ? genshin.getText("teleport") : "传送"),
   "data": [100, 200, true],  // 第三个参数为强制传送标志
   "note": "强制传送到坐标"
 }
