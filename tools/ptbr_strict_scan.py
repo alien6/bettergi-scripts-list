@@ -16,6 +16,12 @@ DIRECT_CALL = re.compile(r"(?:findText(?:AndClick)?|OcrMatch|chooseTalkOption|Ch
 OCR_METHOD = re.compile(r"(?:\.text|ocr|recogn|result|res|find|detected|detector|ocrText|recognizedText)[\w.$?]*\s*\.\s*(?:includes|contains|indexOf|startsWith|endsWith)\s*\([^\r\n]*$", re.I)
 OCR_COMPARE = re.compile(r"(?:\.text|ocr|recogn|result|res|find|detected)[\w.$?]*\s*(?:===|==|!==|!=)\s*$", re.I)
 GENERATED_FALLBACK = re.compile(r"\(genshin\.getText\s*\?\s*genshin\.getText\([^\r\n)]*\)\s*:\s*$", re.I)
+RESOLVED_LITERAL_API = (
+    'genshin.getTextLiteral ?',
+    'genshin.getTextLiterals ?',
+    'genshin.textContainsLiteral ?',
+    'genshin.textEqualsLiteral ?',
+)
 
 
 def comment_mask(text: str) -> list[tuple[int, int]]:
@@ -48,7 +54,8 @@ def scan(path:Path):
         if inside(m.start(),comments): continue
         ls=text.rfind('\n',0,m.start())+1; le=text.find('\n',m.end()); le=len(text) if le<0 else le
         prefix=text[ls:m.start()]; suffix=text[m.end():le]; line=text[ls:le]
-        if 'settings.' in line or GENERATED_FALLBACK.search(prefix[-220:]): continue
+        if 'settings.' in line or any(marker in line for marker in RESOLVED_LITERAL_API) or GENERATED_FALLBACK.search(prefix[-220:]):
+            continue
         direct=bool(DIRECT_CALL.search(prefix[-350:]))
         method=bool(OCR_METHOD.search(prefix[-350:]))
         compare=bool(OCR_COMPARE.search(prefix[-350:])) or bool(re.match(r"\s*(?:===|==|!==|!=)",suffix) and re.search(r"(?:\.text|ocr|recogn|result|res|find|detected)",prefix,re.I))
