@@ -1,0 +1,50 @@
+name: PT-BR Script Migration
+
+on:
+  push:
+    branches:
+      - feature/pt-br-support
+    paths:
+      - tools/ptbr_migrate.py
+      - .github/workflows/ptbr-migrate.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/pt-br-support
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply semantic text migration
+        run: python tools/ptbr_migrate.py --apply --fail-on-known
+
+      - name: Show migration summary
+        run: cat reports/ptbr-hardcoded-ocr.json | head -n 120
+
+      - name: Commit generated migration
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No migration changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bettergi.d.ts repo/js reports/ptbr-hardcoded-ocr.json
+          git commit -m "chore: apply PT-BR semantic text migration"
+          git push origin HEAD:feature/pt-br-support
