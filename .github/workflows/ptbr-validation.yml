@@ -1,0 +1,49 @@
+name: PT-BR Script Validation
+
+on:
+  push:
+    branches:
+      - feature/pt-br-support
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Verify semantic migration is up to date
+        shell: bash
+        run: |
+          python tools/ptbr_migrate.py --apply --fail-on-known
+          git diff --exit-code -- bettergi.d.ts repo/js
+
+      - name: Validate migration report JSON
+        run: python -m json.tool reports/ptbr-hardcoded-ocr.json > /dev/null
+
+      - name: Check manifests are valid JSON
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          count = 0
+          for path in Path('repo/js').rglob('manifest.json'):
+              with path.open('r', encoding='utf-8-sig') as f:
+                  json.load(f)
+              count += 1
+          print(f'Validated {count} manifest.json files')
+          PY
