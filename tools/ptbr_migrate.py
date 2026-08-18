@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
 """Migrate BetterGI scripts away from fixed Simplified-Chinese game UI literals.
 
-The migration is intentionally conservative:
-- only exact, known game-UI literals are rewritten;
-- JSON files and arbitrary prose are never modified;
-- object-property keys are left untouched;
-- generated BetterGI typings are patched idempotently;
-- remaining OCR-sensitive CJK literals are reported for follow-up.
-
-Run with --apply to modify files. Without --apply it only reports what would change.
+The migration is conservative: known static game UI literals are localized,
+comments are ignored, existing file encoding/newline style is preserved, and a
+strict functional OCR report is separated from the broader review report.
 """
 
 from __future__ import annotations
 
 import argparse
+import codecs
 import json
 import re
 from collections import Counter
@@ -66,22 +62,41 @@ SEMANTIC_LITERALS = {
     "队列已满": "queue_full",
 }
 
-OCR_SENSITIVE_TOKENS = (
-    "findText",
-    "findTextAndClick",
-    "findMulti",
-    "OcrMatch",
-    "RecognitionObject.Ocr",
-    ".includes(",
-    ".contains(",
-    "chooseTalkOption",
-    "ChooseTalkOption",
-    ".text",
-)
-
 CJK_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
 STRING_RE = re.compile(r"(?P<quote>['\"])(?P<value>[^'\"\r\n]*[\u3400-\u4dbf\u4e00-\u9fff][^'\"\r\n]*)(?P=quote)")
 ALREADY_LOCALIZED_PREFIX_RE = re.compile(r"genshin\.getText\([^\r\n)]*\)\s*:\s*$")
+FUNCTION_CALL_RE = re.compile(
+    r"(?:findText(?:AndClick)?|OcrMatch|chooseTalkOption|ChooseTalkOption|"
+    r"findTextKey(?:AndClick|Text)?|hasTextKey)\s*\([^;\r\n]*$",
+    re.IGNORECASE,
+)
+METHOD_MATCH_RE = re.compile(r"\.(?:includes|contains|indexOf|startsWith|endsWith)\s*\(\s*$", re.IGNORECASE)
+COMPARE_BEFORE_RE = re.compile(r"(?:===|!==|==|!=)\s*$")
+COMPARE_AFTER_RE = re.compile(r"^\s*(?:===|!==|==|!=)")
+TEXT_ASSIGNMENT_RE = re.compile(
+    r"(?:const|let|var)\s+[A-Za-z_$][\w$]*(?:text|keyword|label|target|ocr)[\w$]*\s*=\s*$",
+    re.IGNORECASE,
+)
+OCR_COLLECTION_MARKERS = (
+    "OneContainMatchText",
+    "AllContainMatchText",
+    "RegexMatchText",
+    "matchTexts",
+)
+
+
+def read_utf8(path: Path) -> tuple[str, bytes, bool]:
+    raw = path.read_bytes()
+    return raw.decode("utf-8-sig"), raw, raw.startswith(codecs.BOM_UTF8)
+
+
+def write_like(path: Path, text: str, original_raw: bytes, had_bom: bool) -> None:
+    newline = "\r\n" if b"\r\n" in original_raw else "\n"
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    raw = normalized.replace("\n", newline).encode("utf-8")
+    if had_bom:
+        raw = codecs.BOM_UTF8 + raw
+    path.write_bytes(raw)
 
 
 def localized_expression(literal: str, key: str) -> str:
@@ -90,8 +105,81 @@ def localized_expression(literal: str, key: str) -> str:
     return f"(genshin.getText ? genshin.getText({semantic}) : {escaped})"
 
 
+def comment_ranges(text: str) -> list[tuple[int, int]]:
+    ranges: list[tuple[int, int]] = []
+    i = 0
+    n = len(text)
+    quote: str | None = None
+    escaped = False
+    while i < n:
+        ch = text[i]
+        nxt = text[i + 1] if i + 1 < n else ""
+
+        if quote is not None:
+            if escaped:
+                escaped = False
+            elif ch == "\\":
+                escaped = True
+            elif ch == quote:
+                quote = None
+            i += 1
+            continue
+
+        if ch in ("'", '"', "`"):
+            quote = ch
+            i += 1
+            continue
+        if ch == "/" and nxt == "/":
+            start = i
+            end = text.find("\n", i + 2)
+            if end == -1:
+                end = n
+            ranges.append((start, end))
+            i = end
+            continue
+        if ch == "/" and nxt == "*":
+            start = i
+            end_token = text.find("*/", i + 2)
+            end = n if end_token == -1 else end_token + 2
+            ranges.append((start, end))
+            i = end
+            continue
+        i += 1
+    return ranges
+
+
+def in_ranges(position: int, ranges: list[tuple[int, int]]) -> bool:
+    return any(start <= position < end for start, end in ranges)
+
+
+def line_context(text: str, match: re.Match[str]) -> tuple[str, str, str]:
+    start = text.rfind("\n", 0, match.start()) + 1
+    end = text.find("\n", match.end())
+    if end == -1:
+        end = len(text)
+    line = text[start:end]
+    prefix = text[start:match.start()]
+    suffix = text[match.end():end]
+    return line, prefix, suffix
+
+
+def is_functional_context(text: str, match: re.Match[str]) -> bool:
+    line, prefix, suffix = line_context(text, match)
+    compact_prefix = prefix[-300:]
+    if FUNCTION_CALL_RE.search(compact_prefix):
+        return True
+    if METHOD_MATCH_RE.search(compact_prefix):
+        return True
+    if COMPARE_BEFORE_RE.search(compact_prefix) or COMPARE_AFTER_RE.search(suffix):
+        return True
+    if TEXT_ASSIGNMENT_RE.search(compact_prefix):
+        return True
+    if any(marker in line for marker in OCR_COLLECTION_MARKERS):
+        return True
+    return False
+
+
 def collapse_nested_localization(text: str) -> str:
-    """Collapse one or more accidentally nested generated fallback expressions."""
     changed = True
     while changed:
         changed = False
@@ -106,9 +194,12 @@ def collapse_nested_localization(text: str) -> str:
 
 def migrate_js_text(text: str) -> tuple[str, Counter[str]]:
     text = collapse_nested_localization(text)
+    comments = comment_ranges(text)
     replacements: Counter[str] = Counter()
 
     def replace(match: re.Match[str]) -> str:
+        if in_ranges(match.start(), comments):
+            return match.group(0)
         literal = match.group("value")
         key = SEMANTIC_LITERALS.get(literal)
         if key is None:
@@ -120,6 +211,12 @@ def migrate_js_text(text: str) -> tuple[str, Counter[str]]:
 
         prefix = text[max(0, match.start() - 160):match.start()]
         if ALREADY_LOCALIZED_PREFIX_RE.search(prefix):
+            return match.group(0)
+
+        # Known game labels are migrated in OCR/comparison contexts and in
+        # explicit text/keyword/target assignments. Existing generated
+        # expressions from earlier broad passes are left intact and audited.
+        if not is_functional_context(text, match):
             return match.group(0)
 
         replacements[key] += 1
@@ -176,29 +273,45 @@ def patch_dts(text: str) -> tuple[str, bool]:
     return text, True
 
 
-def scan_remaining(path: Path, text: str) -> list[dict[str, object]]:
+def scan_functional(path: Path, text: str) -> list[dict[str, object]]:
     findings: list[dict[str, object]] = []
-    lines = text.splitlines()
-    for index, line in enumerate(lines, start=1):
-        if not any(token in line for token in OCR_SENSITIVE_TOKENS) or not CJK_RE.search(line):
+    comments = comment_ranges(text)
+    for match in STRING_RE.finditer(text):
+        if in_ranges(match.start(), comments) or not is_functional_context(text, match):
             continue
-
-        literals = [match.group("value") for match in STRING_RE.finditer(line)]
-        cjk_literals: list[str] = []
-        for literal in literals:
-            if not CJK_RE.search(literal):
-                continue
-            key = SEMANTIC_LITERALS.get(literal)
-            if key and localized_expression(literal, key) in line:
-                continue
-            cjk_literals.append(literal)
-
-        if not cjk_literals:
+        literal = match.group("value")
+        key = SEMANTIC_LITERALS.get(literal)
+        line, _, _ = line_context(text, match)
+        if key and localized_expression(literal, key) in line:
             continue
+        line_number = text.count("\n", 0, match.start()) + 1
         findings.append({
             "path": path.relative_to(ROOT).as_posix(),
-            "line": index,
-            "literals": cjk_literals,
+            "line": line_number,
+            "literals": [literal],
+            "source": line.strip()[:500],
+        })
+    return findings
+
+
+def scan_review(path: Path, text: str) -> list[dict[str, object]]:
+    findings: list[dict[str, object]] = []
+    comments = comment_ranges(text)
+    for match in STRING_RE.finditer(text):
+        if in_ranges(match.start(), comments):
+            continue
+        literal = match.group("value")
+        line, _, _ = line_context(text, match)
+        key = SEMANTIC_LITERALS.get(literal)
+        if key and localized_expression(literal, key) in line:
+            continue
+        if not any(token in line for token in (".text", "Ocr", "OCR", "find", "Find", "include", "contain")):
+            continue
+        line_number = text.count("\n", 0, match.start()) + 1
+        findings.append({
+            "path": path.relative_to(ROOT).as_posix(),
+            "line": line_number,
+            "literals": [literal],
             "source": line.strip()[:500],
         })
     return findings
@@ -210,17 +323,17 @@ def main() -> int:
     parser.add_argument(
         "--fail-on-known",
         action="store_true",
-        help="fail if a known semantic Chinese literal remains in OCR-sensitive code",
+        help="fail if a known semantic Chinese literal remains in functional OCR code",
     )
     args = parser.parse_args()
 
     changed_files: list[str] = []
     replacement_counts: Counter[str] = Counter()
-
     js_files = sorted(SCRIPTS_ROOT.rglob("*.js")) if SCRIPTS_ROOT.exists() else []
+
     for path in js_files:
         try:
-            original = path.read_text(encoding="utf-8")
+            original, raw, bom = read_utf8(path)
         except UnicodeDecodeError:
             continue
         migrated, counts = migrate_js_text(original)
@@ -228,40 +341,49 @@ def main() -> int:
         if migrated != original:
             changed_files.append(path.relative_to(ROOT).as_posix())
             if args.apply:
-                path.write_text(migrated, encoding="utf-8", newline="\n")
+                write_like(path, migrated, raw, bom)
 
     if DTS_PATH.exists():
-        original_dts = DTS_PATH.read_text(encoding="utf-8-sig")
+        original_dts, raw_dts, bom_dts = read_utf8(DTS_PATH)
         migrated_dts, changed = patch_dts(original_dts)
         if changed:
             changed_files.append(DTS_PATH.relative_to(ROOT).as_posix())
             if args.apply:
-                DTS_PATH.write_text(migrated_dts, encoding="utf-8", newline="\n")
+                write_like(DTS_PATH, migrated_dts, raw_dts, bom_dts)
 
-    findings: list[dict[str, object]] = []
+    functional: list[dict[str, object]] = []
+    review: list[dict[str, object]] = []
     for path in js_files:
         try:
-            original = path.read_text(encoding="utf-8")
-            current = original if args.apply else migrate_js_text(original)[0]
+            current, _, _ = read_utf8(path)
+            if not args.apply:
+                current = migrate_js_text(current)[0]
         except UnicodeDecodeError:
             continue
-        findings.extend(scan_remaining(path, current))
+        functional.extend(scan_functional(path, current))
+        review.extend(scan_review(path, current))
 
     known_remaining = [
-        finding for finding in findings
+        finding for finding in functional
         if any(literal in SEMANTIC_LITERALS for literal in finding["literals"])
     ]
-    literal_frequency: Counter[str] = Counter()
-    for finding in findings:
-        literal_frequency.update(finding["literals"])
+    functional_frequency: Counter[str] = Counter()
+    review_frequency: Counter[str] = Counter()
+    for finding in functional:
+        functional_frequency.update(finding["literals"])
+    for finding in review:
+        review_frequency.update(finding["literals"])
 
     report = {
         "semantic_replacements": dict(sorted(replacement_counts.items())),
         "files_would_change" if not args.apply else "files_changed": changed_files,
-        "remaining_ocr_sensitive_cjk_count": len(findings),
+        "remaining_functional_cjk_count": len(functional),
         "remaining_known_semantic_count": len(known_remaining),
-        "remaining_literal_frequency": dict(literal_frequency.most_common()),
-        "remaining": findings,
+        "remaining_functional_literal_frequency": dict(functional_frequency.most_common()),
+        "remaining_functional": functional,
+        "review_cjk_count": len(review),
+        "review_literal_frequency": dict(review_frequency.most_common()),
+        "review": review,
     }
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -269,9 +391,10 @@ def main() -> int:
     print(json.dumps({
         "changed_files": len(changed_files),
         "semantic_replacements": sum(replacement_counts.values()),
-        "remaining_ocr_sensitive_cjk": len(findings),
+        "remaining_functional_cjk": len(functional),
         "remaining_known_semantic": len(known_remaining),
-        "top_remaining_literals": literal_frequency.most_common(30),
+        "top_functional_literals": functional_frequency.most_common(40),
+        "review_cjk": len(review),
         "report": REPORT_PATH.relative_to(ROOT).as_posix(),
     }, ensure_ascii=False, indent=2))
 
