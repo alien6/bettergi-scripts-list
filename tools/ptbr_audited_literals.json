@@ -75,6 +75,10 @@
     "pt": ["Inscrever-se para visitar o Bule de Relachá", "Se registrar para visitar o Bule de Relachá"],
     "evidence": "Traditional-Chinese alias of 申请造访"
   },
+  "委託": {
+    "pt": ["Comissão"],
+    "evidence": "Traditional-Chinese alias of 委托; semantic commission key uses Comissão in PT-BR"
+  },
   "箱": {
     "pt": ["Baú"],
     "evidence": "Genshin PT-BR chest UI uses Baú"
