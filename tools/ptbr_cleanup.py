@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Clean mechanical noise introduced by early PT-BR migration passes.
 
-- restore generated localization expressions inside JS comments back to the
-  original Chinese literal (comments are not functional OCR dependencies);
+- restore generated localization expressions inside JS comments;
+- restore generated localization expressions used as internal script setting
+  values (settings.* comparisons are not game OCR text);
 - restore each changed JS file's newline style to the version on origin/main;
 - restore bettergi.d.ts newline style as well.
 
@@ -20,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 GEN_RE = re.compile(
     r'\(genshin\.getText \? genshin\.getText\("[^"\r\n]+"\) : "(?P<literal>[^"\r\n]+)"\)'
 )
+SETTINGS_LINE_RE = re.compile(r"\bsettings\.[A-Za-z_$][\w$]*")
 
 
 def git_show_main(path: str) -> bytes:
@@ -101,6 +103,17 @@ def clean_comments(text: str) -> str:
     return "".join(pieces)
 
 
+def clean_internal_settings(text: str) -> str:
+    """Undo generated localization on lines comparing internal settings values."""
+    lines = text.splitlines(keepends=True)
+    cleaned: list[str] = []
+    for line in lines:
+        if SETTINGS_LINE_RE.search(line) and GEN_RE.search(line):
+            line = GEN_RE.sub(lambda m: f'"{m.group("literal")}"', line)
+        cleaned.append(line)
+    return "".join(cleaned)
+
+
 def changed_script_paths() -> list[str]:
     output = subprocess.check_output(
         ["git", "diff", "--name-only", "origin/main...HEAD", "--", "repo/js", "bettergi.d.ts"],
@@ -124,7 +137,10 @@ def main() -> int:
 
         current_raw = path.read_bytes()
         current_text, current_bom = decode(current_raw)
-        cleaned = clean_comments(current_text) if rel.endswith(".js") else current_text
+        cleaned = current_text
+        if rel.endswith(".js"):
+            cleaned = clean_comments(cleaned)
+            cleaned = clean_internal_settings(cleaned)
         desired = encode_like(cleaned, base_raw, current_bom)
         if desired != current_raw:
             path.write_bytes(desired)
