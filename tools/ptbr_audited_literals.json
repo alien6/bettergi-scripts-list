@@ -74,5 +74,17 @@
   "申請造訪": {
     "pt": ["Inscrever-se para visitar o Bule de Relachá", "Se registrar para visitar o Bule de Relachá"],
     "evidence": "Traditional-Chinese alias of 申请造访"
+  },
+  "箱": {
+    "pt": ["Baú"],
+    "evidence": "Genshin PT-BR chest UI uses Baú"
+  },
+  "珍贵": {
+    "pt": ["Precioso"],
+    "evidence": "Genshin PT-BR Precious Chest wording uses Precioso"
+  },
+  "珍貴": {
+    "pt": ["Precioso"],
+    "evidence": "Traditional-Chinese alias of 珍贵"
   }
 }
