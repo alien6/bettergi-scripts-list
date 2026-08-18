@@ -676,7 +676,7 @@ async function tryForgeOre(oreType) {
                         await click(960, 1042);// 多次点击结束弹窗
                         return true; // 终止锻造流程
                     }
-                    else if (ocrResults.text.includes("材料不足")) {
+                    else if (ocrResults.text.includes((genshin.getText ? genshin.getText("insufficient_materials") : "材料不足"))) {
                         if (notice) {
                             notification.send("检测到 材料不足 跳过当前矿物。请检查背包，及时补充矿物。");
                         } else {

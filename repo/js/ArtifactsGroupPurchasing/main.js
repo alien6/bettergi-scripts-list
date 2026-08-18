@@ -1577,7 +1577,7 @@ async function processArtifacts() {
         let enterAttempts = 0;
         await sleep(500);
         while (enterAttempts < 10) {
-            const type = "圣遗物";
+            const type = (genshin.getText ? genshin.getText("artifact") : "圣遗物");
             const clicked = await findAndClick([
                 `assets/RecognitionObject/背包界面/${type}1.png`,
                 `assets/RecognitionObject/背包界面/${type}2.png`

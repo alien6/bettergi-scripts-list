@@ -1071,7 +1071,7 @@ async function ingredientProcessing() {
  * - sleep: 延迟函数
  */
 async function collectCraftedItems() {
-    if (await clickPNG("全部领取", 3)) {
+    if (await clickPNG((genshin.getText ? genshin.getText("claim_all") : "全部领取"), 3)) {
         let dowait = false;
         await sleep(4 * checkInterval);
         while (await findPNG("道具数量超过上限")) {
@@ -1111,7 +1111,7 @@ async function handleCraftingError(errorType, itemName, removeFromList) {
             log.warn(`检测到${itemName}${errorType}，等待图标消失`);
             await sleep(300);
         }
-        if (await clickPNG("全部领取", 3)) {
+        if (await clickPNG((genshin.getText ? genshin.getText("claim_all") : "全部领取"), 3)) {
             await clickPNG("点击空白区域继续");
             await findPNG("食材加工2");
             await sleep(100);
@@ -1150,12 +1150,12 @@ async function doCraft(index, tasks) {
     await sleep(300);
 
     /* ---------- 1. 队列已满 ---------- */
-    if (await handleCraftingError("队列已满", tasks[index].name, false)) {
+    if (await handleCraftingError((genshin.getText ? genshin.getText("queue_full") : "队列已满"), tasks[index].name, false)) {
         return false;
     }
 
     /* ---------- 2. 材料不足 ---------- */
-    if (await handleCraftingError("材料不足", tasks[index].name, true)) {
+    if (await handleCraftingError((genshin.getText ? genshin.getText("insufficient_materials") : "材料不足"), tasks[index].name, true)) {
         return false;
     }
 

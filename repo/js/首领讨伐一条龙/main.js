@@ -40,7 +40,7 @@ const autoNavigateToReward = async () => {
         captureRegion.dispose();
         rewardTextArea.dispose();
         // 检测到特点文字则结束！！！ 
-        if (rewardResult.text == "接触征讨之花") {
+        if (rewardResult.text == (genshin.getText ? genshin.getText("touch_trounce_blossom") : "接触征讨之花")) {
             log.info(`总计前进第${advanceNum}次`);
             log.info("已到达领奖点，检测到文字: " + rewardResult.text);
             return;

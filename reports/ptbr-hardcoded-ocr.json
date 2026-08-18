@@ -1,83 +1,103 @@
 {
-  "semantic_replacements": {},
+  "semantic_replacements": {
+    "artifact": 19,
+    "auto_cook": 5,
+    "auto_exit": 4,
+    "awaiting_activation": 5,
+    "bait": 4,
+    "cancel_auto_task": 17,
+    "claim_all": 12,
+    "click_to_enter": 6,
+    "commission": 5,
+    "commission_completed": 3,
+    "cooking": 8,
+    "cooking_production": 4,
+    "current_owned": 9,
+    "current_party": 5,
+    "growth_requirements": 4,
+    "insufficient_materials": 5,
+    "manage": 3,
+    "original_resin": 12,
+    "queue_full": 5,
+    "return_to_lobby": 9,
+    "revive": 5,
+    "room": 12,
+    "search": 12,
+    "start_game": 10,
+    "touch_trounce_blossom": 6
+  },
   "files_changed": [
+    "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
     "repo/js/AEscoffier_chef/main.js",
-    "repo/js/AbundantOre/main.js",
-    "repo/js/ActivitySwitchNotice/utils/tool.js",
+    "repo/js/ActivitySwitchNotice/utils/HolyRelics.js",
     "repo/js/AotoTeyvatFoodOneDragon/main.js",
-    "repo/js/ArtifactExpCount/main.js",
+    "repo/js/ArtifactScore/main.js",
+    "repo/js/ArtifactsAssistant/main.js",
+    "repo/js/ArtifactsGroupPurchasing/main.js",
+    "repo/js/AutoArtifactLockingSettings/main.js",
     "repo/js/AutoCommission/lib/steps/auto-skip.js",
-    "repo/js/AutoCommission/lib/steps/teleport.js",
-    "repo/js/AutoFontaineLeyLine/main.js",
+    "repo/js/AutoCommissionNova/src/processors/basic-destroy-watchtower.js",
+    "repo/js/AutoCommissionNova/src/processors/impregnable-defense.js",
+    "repo/js/AutoCommissionNova/src/processors/music-flow.js",
+    "repo/js/AutoCommissionNova/src/processors/use-item.js",
+    "repo/js/AutoCommissionNova/src/utils/error-utils.js",
+    "repo/js/AutoCommissionNova/src/vision/ui-detector.js",
+    "repo/js/AutoFishingTeyvat-Bait/main.js",
+    "repo/js/AutoFriendshipFight/main.js",
     "repo/js/AutoLeyLineOutcrop/main.js",
-    "repo/js/AutoLeyLineOutcrop/utils/recognizeTextInRegion.js",
+    "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+    "repo/js/AutoLeyLineOutcrop/utils/calCountByResin.js",
     "repo/js/AutoMonday/main.js",
-    "repo/js/AutoPickLitter/main.js",
-    "repo/js/AutoPlan/utils/tool.js",
-    "repo/js/AutoStygianOnslaught/main.js",
-    "repo/js/ComputerBlower/main.js",
-    "repo/js/DailyHarvestStats/main.js",
-    "repo/js/FullyAutoAndSemiAutoTools/main.js",
+    "repo/js/AutoNewsKiller/main.js",
+    "repo/js/AutoPathingLoader-MultiUser/main.js",
+    "repo/js/AutoPlan/config/config.js",
+    "repo/js/AutoPlan/main.js",
+    "repo/js/AutoPlan/utils/HolyRelics.js",
+    "repo/js/AutoPlan/utils/load_check_run.js",
+    "repo/js/AutoPlan/utils/physical.js",
+    "repo/js/CD-Aware-AutoGather/main.js",
+    "repo/js/DoubleFriendshipEncounterPoints/main.js",
     "repo/js/HolyRelicsUp/main.js",
     "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
-    "repo/js/PurchaseArtifacts/main.js",
-    "repo/js/TCGQuickProficiency/main.js",
+    "repo/js/MiliastraExperiencePlayback/libs/modules/room.js",
+    "repo/js/MiliastraExperiencePlayback/libs/modules/stage.js",
+    "repo/js/OCRArtifacts/lib/Artifact.js",
+    "repo/js/OCRCountResin/main.js",
+    "repo/js/StarfieldRaimentCollection/main.js",
+    "repo/js/SwitchAccountMultipleMode/main.js",
+    "repo/js/TeleportActivationChecker/main.js",
     "repo/js/WeeklyBoss/utils.js",
     "repo/js/WeeklyThousandStarRealm/main.js",
-    "repo/js/YNF-AutoEat/main.js",
-    "repo/js/七圣召唤七日历练全自动/main.js",
-    "repo/js/恢复默认键位设置/main.js",
-    "repo/js/提瓦特记事本/main.js",
-    "repo/js/纪行周常-10次秘境一条龙/main.js",
-    "repo/js/自动领取成就奖励/main.js",
-    "repo/js/药品消耗统计/main.js",
+    "repo/js/使用历练点完成每日委托/main.js",
+    "repo/js/全队自动回满大招能量/main.js",
+    "repo/js/批量讨伐角色养成材料BOSS/src/reward.js",
+    "repo/js/批量讨伐角色养成材料BOSS/src/utils.js",
     "repo/js/营养袋吃药统计/main.js",
-    "repo/js/角色养成一条龙/main.js"
+    "repo/js/角色养成一条龙/main.js",
+    "repo/js/采集cd管理/main.js",
+    "repo/js/铁匠铺/main.js",
+    "repo/js/食材加工极速版/main.js",
+    "repo/js/首领讨伐一条龙/main.js"
   ],
-  "remaining_ocr_sensitive_cjk_count": 427,
+  "remaining_ocr_sensitive_cjk_count": 325,
   "remaining_known_semantic_count": 0,
   "remaining_literal_frequency": {
-    "原粹树脂": 11,
-    "开始游戏": 10,
-    "当前拥有": 9,
-    "搜索": 8,
-    "房间": 7,
-    "圣遗物": 6,
-    "烹饪": 5,
     "当前队伍名称位置:({x},{y},{w},{h}), 识别结果：{text}": 5,
     "目标队伍位置:({x},{y},{w},{h}), 识别结果：{text}": 5,
-    "当前队伍": 5,
     "已到达领奖点，检测到文字: ": 5,
-    "点击进入": 5,
-    "培养需求": 4,
-    "全部领取": 4,
     "文本位置:({x},{y},{w},{h}), 识别内容：{text}": 4,
-    "取消自动任务": 4,
-    "鱼饵": 4,
     "模板匹配": 4,
-    "复活": 4,
     "文字": 4,
     "目标文字": 4,
-    "自动退出": 4,
-    "接触征讨之花": 4,
-    "待激活": 3,
     "绝缘": 3,
     "影中沉凝的幻灭": 3,
-    "委托完成": 3,
     "伪造地图追踪(跑图+垂钓)": 3,
     "之花": 3,
     "20个": 3,
     "40个": 3,
-    "委托": 3,
     "委託": 3,
     "委": 3,
     "识别到委托选项卡位置:({x},{y},{w},{h}), 识别内容：{text}": 3,
-    "管理": 3,
-    "返回大厅": 3,
-    "材料不足": 2,
-    "自动烹饪": 2,
-    "料理制作": 2,
-    "队列已满": 2,
     "按键": 2,
     "按鍵": 2,
     "高效": 2,
@@ -355,96 +375,6 @@
   "remaining": [
     {
       "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 305,
-      "literals": [
-        "当前拥有"
-      ],
-      "source": "if (ocr_area[i].text.includes(\"当前拥有\")) { // 寻找“当前拥有”"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 318,
-      "literals": [
-        "培养需求"
-      ],
-      "source": "} else if (ocr_area[i].text.includes(\"培养需求\")) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 744,
-      "literals": [
-        "材料不足"
-      ],
-      "source": "if (checkOcr && checkOcr.text.includes(\"材料不足\")) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 750,
-      "literals": [
-        "烹饪"
-      ],
-      "source": "if (checkOcr && checkOcr.text.includes(\"烹饪\")) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 761,
-      "literals": [
-        "自动烹饪"
-      ],
-      "source": "if (checkOcr && checkOcr.text.includes(\"自动烹饪\")) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 767,
-      "literals": [
-        "烹饪"
-      ],
-      "source": "if (!(checkOcr && checkOcr.text.includes(\"烹饪\"))) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 768,
-      "literals": [
-        "料理制作"
-      ],
-      "source": "if (checkOcr.text.includes(\"料理制作\")) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 777,
-      "literals": [
-        "烹饪"
-      ],
-      "source": "if (checkOcr && checkOcr.text.includes(\"烹饪\")) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 789,
-      "literals": [
-        "料理制作"
-      ],
-      "source": "if (flag && flag.text.includes(\"料理制作\")) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 890,
-      "literals": [
-        "当前拥有",
-        "培养需求"
-      ],
-      "source": "if (ocrResult && (ocrResult.text.includes(\"当前拥有\") || ocrResult.text.includes(\"培养需求\"))) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 899,
-      "literals": [
-        "当前拥有",
-        "培养需求"
-      ],
-      "source": "if (ocrResult && (ocrResult.text.includes(\"当前拥有\") || ocrResult.text.includes(\"培养需求\"))) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
       "line": 948,
       "literals": [
         "角色选择"
@@ -458,62 +388,6 @@
         "自动"
       ],
       "source": "if (!(checkOcr.text.includes(\"自动\"))) { // 未解锁自动烹饪"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1086,
-      "literals": [
-        "自动烹饪"
-      ],
-      "source": "if (checkOcr && checkOcr.text.includes(\"自动烹饪\")) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1100,
-      "literals": [
-        "烹饪"
-      ],
-      "source": "if (!(checkOcr && checkOcr.text.includes(\"烹饪\"))) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1125,
-      "literals": [
-        "烹饪"
-      ],
-      "source": "if (ocrResult && ocrResult.text.includes(\"烹饪\")) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1337,
-      "literals": [
-        "全部领取"
-      ],
-      "source": "if (claim_all && claim_all.text === \"全部领取\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1451,
-      "literals": [
-        "队列已满"
-      ],
-      "source": "if (check_ocr && check_ocr.text === \"队列已满\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1496,
-      "literals": [
-        "全部领取"
-      ],
-      "source": "if (claim_all && claim_all.text === \"全部领取\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1756,
-      "literals": [
-        "全部领取"
-      ],
-      "source": "if (claim_all && claim_all.text === \"全部领取\") {"
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
@@ -597,15 +471,6 @@
         "目标队伍位置:({x},{y},{w},{h}), 识别结果：{text}"
       ],
       "source": "log.info(\"目标队伍位置:({x},{y},{w},{h}), 识别结果：{text}\", res.x, res.y, res.Width, res.Height, res.text);"
-    },
-    {
-      "path": "repo/js/ActivitySwitchNotice/utils/HolyRelics.js",
-      "line": 14,
-      "literals": [
-        "圣遗物",
-        "圣遗物"
-      ],
-      "source": "const textFind = await findText(\"圣遗物\");  // 查找\"圣遗物\"文本"
     },
     {
       "path": "repo/js/ActivitySwitchNotice/utils/campaignArea.js",
@@ -692,14 +557,6 @@
       "source": "const travelerAlias = [\"空\", \"荧\"].find(name => compact.includes(name))"
     },
     {
-      "path": "repo/js/ArtifactScore/main.js",
-      "line": 449,
-      "literals": [
-        "待激活"
-      ],
-      "source": "if (text.includes(\"待激活\")) {"
-    },
-    {
       "path": "repo/js/ArtifactScore/tools/crawl-standalone.js",
       "line": 769,
       "literals": [
@@ -756,14 +613,6 @@
       "source": "if ((artisSets || []).includes('绝缘') && (weight.recharge || 0) > 0) {"
     },
     {
-      "path": "repo/js/ArtifactsAssistant/main.js",
-      "line": 94,
-      "literals": [
-        "待激活"
-      ],
-      "source": "if (!attrs[i].includes(\"待激活\")) {"
-    },
-    {
       "path": "repo/js/AutoArtifactLockingSettings/main.js",
       "line": 96,
       "literals": [
@@ -818,14 +667,6 @@
         "全选"
       ],
       "source": "if (selectedSets.includes(\"全选\")) {"
-    },
-    {
-      "path": "repo/js/AutoArtifactLockingSettings/main.js",
-      "line": 409,
-      "literals": [
-        "圣遗物"
-      ],
-      "source": "let verifyResult = findTextInRegion(131, 21, 231, 70, \"圣遗物\");"
     },
     {
       "path": "repo/js/AutoArtifactLockingSettings/main.js",
@@ -932,14 +773,6 @@
       "source": "log.info(\"点击包含提取到任务人名的选项: {text}\", matchedByName.text);"
     },
     {
-      "path": "repo/js/AutoCommissionNova/src/processors/basic-destroy-watchtower.js",
-      "line": 107,
-      "literals": [
-        "委托完成"
-      ],
-      "source": "completed: completionText.includes(\"委托完成\"),"
-    },
-    {
       "path": "repo/js/AutoCommissionNova/src/processors/commission-tracking.js",
       "line": 64,
       "literals": [
@@ -951,18 +784,9 @@
       "path": "repo/js/AutoCommissionNova/src/processors/impregnable-defense.js",
       "line": 59,
       "literals": [
-        "完成提示",
-        "委托完成"
+        "完成提示"
       ],
-      "source": "return String(readOcr(COMPLETION_REGION, \"完成提示\")).replace(/\\s/g, \"\").includes(\"委托完成\");"
-    },
-    {
-      "path": "repo/js/AutoCommissionNova/src/processors/music-flow.js",
-      "line": 15,
-      "literals": [
-        "委托完成"
-      ],
-      "source": "if (text.includes(\"委托完成\")) {"
+      "source": "return String(readOcr(COMPLETION_REGION, \"完成提示\")).replace(/\\s/g, \"\").includes((genshin.getText ? genshin.getText(\"commission_completed\") : \"委托完成\"));"
     },
     {
       "path": "repo/js/AutoCommissionNova/src/processors/start-challenge.js",
@@ -1027,14 +851,6 @@
         "挪德"
       ],
       "source": "case text.includes(\"挪德\"):"
-    },
-    {
-      "path": "repo/js/AutoCommissionNova/src/utils/error-utils.js",
-      "line": 58,
-      "literals": [
-        "取消自动任务"
-      ],
-      "source": "return msg.includes(\"取消自动任务\")"
     },
     {
       "path": "repo/js/AutoCommissionNova/src/utils/error-utils.js",
@@ -1231,86 +1047,6 @@
       "source": "if (ocrResult && ocrResult.text.includes(\"查看资料\")) {"
     },
     {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 417,
-      "literals": [
-        "鱼饵"
-      ],
-      "source": "if (shelter_option.text !== \"鱼饵\") {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 427,
-      "literals": [
-        "鱼饵"
-      ],
-      "source": "if (ocrList[i].text.includes(\"鱼饵\")) {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 490,
-      "literals": [
-        "当前拥有"
-      ],
-      "source": "if (ocr_area[i].text.includes(\"当前拥有\")) {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 502,
-      "literals": [
-        "培养需求"
-      ],
-      "source": "} else if (ocr_area[i].text.includes(\"培养需求\")) {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 540,
-      "literals": [
-        "当前拥有"
-      ],
-      "source": "if (ocr_area[i].text.includes(\"当前拥有\")) {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 592,
-      "literals": [
-        "鱼饵"
-      ],
-      "source": "if (shelter_option.text !== \"鱼饵\") {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 601,
-      "literals": [
-        "鱼饵"
-      ],
-      "source": "if (ocrList[i].text.includes(\"鱼饵\")) {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 664,
-      "literals": [
-        "当前拥有"
-      ],
-      "source": "if (ocr_area[i].text.includes(\"当前拥有\")) {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 925,
-      "literals": [
-        "全部领取"
-      ],
-      "source": "if (claim_all && claim_all.text === \"全部领取\") {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 952,
-      "literals": [
-        "队列已满"
-      ],
-      "source": "if (check_ocr && check_ocr.text === \"队列已满\") {"
-    },
-    {
       "path": "repo/js/AutoFontaineLeyLine/main.js",
       "line": 940,
       "literals": [
@@ -1346,14 +1082,6 @@
         "下次"
       ],
       "source": "await genshin.chooseTalkOption(\"下次\");"
-    },
-    {
-      "path": "repo/js/AutoFriendshipFight/main.js",
-      "line": 500,
-      "literals": [
-        "取消自动任务"
-      ],
-      "source": "if (msg.includes(\"取消自动任务\") || msg.includes(\"A task was canceled\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipFight/main.js",
@@ -1493,14 +1221,6 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/main.js",
-      "line": 979,
-      "literals": [
-        "原粹树脂"
-      ],
-      "source": "if (resList[i].text.includes(\"原粹树脂\")) {"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/main.js",
       "line": 991,
       "literals": [
         "接触"
@@ -1581,37 +1301,19 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 328,
-      "literals": [
-        "原粹树脂"
-      ],
-      "source": "(t.text.includes(\"20\") && t.text.includes(\"原粹树脂\")) ||"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
       "line": 329,
       "literals": [
-        "20个",
-        "原粹树脂"
+        "20个"
       ],
-      "source": "(t.text.includes(\"20个\") && t.text.includes(\"原粹树脂\"))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 333,
-      "literals": [
-        "原粹树脂"
-      ],
-      "source": "(t.text.includes(\"40\") && t.text.includes(\"原粹树脂\")) ||"
+      "source": "(t.text.includes(\"20个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
       "line": 334,
       "literals": [
-        "40个",
-        "原粹树脂"
+        "40个"
       ],
-      "source": "(t.text.includes(\"40个\") && t.text.includes(\"原粹树脂\"))"
+      "source": "(t.text.includes(\"40个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -1651,55 +1353,35 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 376,
-      "literals": [
-        "原粹树脂"
-      ],
-      "source": "(t.text.includes(\"20\") && t.text.includes(\"原粹树脂\")) ||"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
       "line": 377,
       "literals": [
-        "20个",
-        "原粹树脂"
+        "20个"
       ],
-      "source": "(t.text.includes(\"20个\") && t.text.includes(\"原粹树脂\"))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 380,
-      "literals": [
-        "原粹树脂"
-      ],
-      "source": "(t.text.includes(\"40\") && t.text.includes(\"原粹树脂\")) ||"
+      "source": "(t.text.includes(\"20个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
       "line": 381,
       "literals": [
-        "40个",
-        "原粹树脂"
+        "40个"
       ],
-      "source": "(t.text.includes(\"40个\") && t.text.includes(\"原粹树脂\"))"
+      "source": "(t.text.includes(\"40个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
       "line": 730,
       "literals": [
-        "20个",
-        "原粹树脂"
+        "20个"
       ],
-      "source": "if ((text.includes(\"20\") || text.includes(\"20个\")) && text.includes(\"原粹树脂\")) {"
+      "source": "if ((text.includes(\"20\") || text.includes(\"20个\")) && text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
       "line": 733,
       "literals": [
-        "40个",
-        "原粹树脂"
+        "40个"
       ],
-      "source": "if ((text.includes(\"40\") || text.includes(\"40个\")) && text.includes(\"原粹树脂\")) {"
+      "source": "if ((text.includes(\"40\") || text.includes(\"40个\")) && text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -1716,14 +1398,6 @@
         "树脂"
       ],
       "source": "(t.text.includes(`${targetAmount}个`) && t.text.includes(\"树脂\"))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/calCountByResin.js",
-      "line": 308,
-      "literals": [
-        "当前拥有"
-      ],
-      "source": "if (textList[i].text.includes(\"当前拥有\")) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/executePathsUsingNodeData.js",
@@ -1816,14 +1490,6 @@
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 115,
-      "literals": [
-        "当前队伍"
-      ],
-      "source": "if (ocr.isExist() && ocr.text === \"当前队伍\") {"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
       "line": 417,
       "literals": [
         "验证"
@@ -1888,43 +1554,11 @@
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 704,
-      "literals": [
-        "当前队伍"
-      ],
-      "source": "if (ocr.isExist() && ocr.text === \"当前队伍\") { // 多此一举"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 811,
-      "literals": [
-        "当前队伍"
-      ],
-      "source": "if (ocr.isExist() && ocr.text === \"当前队伍\") { // 多此一举"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 910,
-      "literals": [
-        "当前队伍"
-      ],
-      "source": "if (ocr.isExist() && ocr.text === \"当前队伍\") { // 多此一举"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
       "line": 924,
       "literals": [
         "路线启动"
       ],
       "source": "if (ocr[l].text === \"路线启动\") { // 检测队长的消息"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 948,
-      "literals": [
-        "当前队伍"
-      ],
-      "source": "if (ocr.isExist() && ocr.text === \"当前队伍\") { // 多此一举"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -2077,55 +1711,6 @@
         "幽境检查"
       ],
       "source": "if (auto_check.includes(\"幽境检查\")) {"
-    },
-    {
-      "path": "repo/js/AutoPlan/utils/HolyRelics.js",
-      "line": 14,
-      "literals": [
-        "圣遗物",
-        "圣遗物"
-      ],
-      "source": "const textFind = await findText(\"圣遗物\");  // 查找\"圣遗物\"文本"
-    },
-    {
-      "path": "repo/js/AutoPlan/utils/load_check_run.js",
-      "line": 374,
-      "literals": [
-        "复活"
-      ],
-      "source": "if (errorMessage.includes(\"复活\") && domainParam.DomainName) {"
-    },
-    {
-      "path": "repo/js/AutoPlan/utils/load_check_run.js",
-      "line": 528,
-      "literals": [
-        "复活"
-      ],
-      "source": "if (errorMessage.includes(\"复活\")) {"
-    },
-    {
-      "path": "repo/js/AutoPlan/utils/load_check_run.js",
-      "line": 736,
-      "literals": [
-        "复活"
-      ],
-      "source": "if (errorMessage.includes(\"复活\")) {"
-    },
-    {
-      "path": "repo/js/AutoPlan/utils/load_check_run.js",
-      "line": 958,
-      "literals": [
-        "复活"
-      ],
-      "source": "//         if (errorMessage.includes(\"复活\")) {"
-    },
-    {
-      "path": "repo/js/AutoPlan/utils/physical.js",
-      "line": 314,
-      "literals": [
-        "当前拥有"
-      ],
-      "source": "if (res.text.includes(\"当前拥有\")) {"
     },
     {
       "path": "repo/js/AutoRefinedCondensationResin/main.js",
@@ -2428,11 +2013,10 @@
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
       "line": 400,
       "literals": [
-        "委托",
         "委託",
         "委"
       ],
-      "source": "if (res.text.includes(\"委托\") || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
@@ -2508,14 +2092,6 @@
     },
     {
       "path": "repo/js/HolyRelicsUp/main.js",
-      "line": 831,
-      "literals": [
-        "圣遗物"
-      ],
-      "source": "// templateJson.text = \"圣遗物\""
-    },
-    {
-      "path": "repo/js/HolyRelicsUp/main.js",
       "line": 2244,
       "literals": [
         "强化"
@@ -2564,43 +2140,11 @@
     },
     {
       "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
-      "line": 92,
-      "literals": [
-        "搜索"
-      ],
-      "source": "return findTextWithinBounds(\"搜索\", 1320, 0, 600, 95, { contains: true });"
-    },
-    {
-      "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
-      "line": 96,
-      "literals": [
-        "搜索"
-      ],
-      "source": "const txt = findTextWithinBounds(\"搜索\", 0, 120, 1920, 60, { contains: true });"
-    },
-    {
-      "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
       "line": 102,
       "literals": [
         "清除"
       ],
       "source": "return findTextWithinBounds(\"清除\", 0, 120, 1920, 60, { contains: true });"
-    },
-    {
-      "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
-      "line": 106,
-      "literals": [
-        "搜索"
-      ],
-      "source": "return findTextWithinBounds(\"搜索\", 0, 120, 1920, 60, { contains: true });"
-    },
-    {
-      "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
-      "line": 136,
-      "literals": [
-        "房间"
-      ],
-      "source": "const txt = findTextWithinBounds(\"房间\", 1580, 110, 320, 390, { contains: true });"
     },
     {
       "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
@@ -2612,35 +2156,11 @@
     },
     {
       "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
-      "line": 154,
-      "literals": [
-        "房间"
-      ],
-      "source": "const txt = findTextWithinBounds(\"房间\", 960, 95, 960, 70, { contains: true });"
-    },
-    {
-      "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
       "line": 176,
       "literals": [
         "收藏"
       ],
       "source": "return findTextWithinBounds(\"收藏\", 0, 880, 200, 200, { contains: true });"
-    },
-    {
-      "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
-      "line": 180,
-      "literals": [
-        "管理"
-      ],
-      "source": "return findTextWithinBounds(\"管理\", 1320, 0, 600, 95, { contains: true });"
-    },
-    {
-      "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
-      "line": 184,
-      "literals": [
-        "管理"
-      ],
-      "source": "return findTextWithinBounds(\"管理\", 1220, 980, 700, 100);"
     },
     {
       "path": "repo/js/MiliastraExperiencePlayback/libs/constants/regions.js",
@@ -2708,14 +2228,6 @@
     },
     {
       "path": "repo/js/OCRArtifacts/lib/Artifact.js",
-      "line": 49,
-      "literals": [
-        "待激活"
-      ],
-      "source": "if (str.includes('待激活')) {"
-    },
-    {
-      "path": "repo/js/OCRArtifacts/lib/Artifact.js",
       "line": 52,
       "literals": [
         "攻击力",
@@ -2723,14 +2235,6 @@
         "生命值"
       ],
       "source": "if (str.includes('%') && ['攻击力', '防御力', '生命值'].includes(n)) {"
-    },
-    {
-      "path": "repo/js/OCRCountResin/main.js",
-      "line": 262,
-      "literals": [
-        "当前拥有"
-      ],
-      "source": "if (res.text.includes(\"当前拥有\")) {"
     },
     {
       "path": "repo/js/RoleExperienceCalculation/main.js",
@@ -2758,14 +2262,6 @@
     },
     {
       "path": "repo/js/StarfieldRaimentCollection/main.js",
-      "line": 62,
-      "literals": [
-        "返回大厅"
-      ],
-      "source": "const result_page = result_page_ocr && result_page_ocr.text.includes(\"返回大厅\");"
-    },
-    {
-      "path": "repo/js/StarfieldRaimentCollection/main.js",
       "line": 99,
       "literals": [
         "提瓦特"
@@ -2784,10 +2280,9 @@
       "path": "repo/js/StarfieldRaimentCollection/main.js",
       "line": 233,
       "literals": [
-        "开始游戏",
         "单人挑战"
       ],
-      "source": "if (ocrResult[i].text.includes(\"开始游戏\") || ocrResult[i].text.includes(\"单人挑战\")) {"
+      "source": "if (ocrResult[i].text.includes((genshin.getText ? genshin.getText(\"start_game\") : \"开始游戏\")) || ocrResult[i].text.includes(\"单人挑战\")) {"
     },
     {
       "path": "repo/js/StarfieldRaimentCollection/main.js",
@@ -2826,27 +2321,11 @@
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 452,
-      "literals": [
-        "点击进入"
-      ],
-      "source": "if (u.findText(resList, \"点击进入\")) {"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
       "line": 579,
       "literals": [
         "识别到目标账号：{0}"
       ],
       "source": "u.logi(\"识别到目标账号：{0}\", selectedUser.text);"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 651,
-      "literals": [
-        "开始游戏"
-      ],
-      "source": "await waitForOcrMatch(\"开始游戏\");"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -2866,59 +2345,11 @@
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 666,
-      "literals": [
-        "开始游戏"
-      ],
-      "source": "await waitForOcrMatch(\"开始游戏\");"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 687,
-      "literals": [
-        "开始游戏"
-      ],
-      "source": "await waitForOcrMatch(\"开始游戏\");"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 691,
-      "literals": [
-        "点击进入"
-      ],
-      "source": "await waitForOcrMatch(\"点击进入\");"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
       "line": 727,
       "literals": [
         "登录其他账号"
       ],
       "source": "await recognizeTextAndClick(\"登录其他账号\", RecognitionObject.Ocr(300, 200, 1200, 800), 5000);"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 757,
-      "literals": [
-        "点击进入"
-      ],
-      "source": "await recognizeTextAndClick(\"点击进入\", RecognitionObject.Ocr(862, 966, 206, 104), 5000);"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 850,
-      "literals": [
-        "点击进入"
-      ],
-      "source": "await recognizeTextAndClick(\"点击进入\", RecognitionObject.Ocr(862, 966, 206, 104), 5000);"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 889,
-      "literals": [
-        "开始游戏"
-      ],
-      "source": "await waitForOcrMatch(\"开始游戏\");"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -2945,30 +2376,6 @@
       "source": "await recognizeTextAndClick(\"登录其他账号\", RecognitionObject.Ocr(300, 200, 1200, 800), 8000);"
     },
     {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 924,
-      "literals": [
-        "开始游戏"
-      ],
-      "source": "await waitForOcrMatch(\"开始游戏\");"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 945,
-      "literals": [
-        "开始游戏"
-      ],
-      "source": "await waitForOcrMatch(\"开始游戏\");"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 949,
-      "literals": [
-        "点击进入"
-      ],
-      "source": "await waitForOcrMatch(\"点击进入\");"
-    },
-    {
       "path": "repo/js/TCGQuickProficiency/main.js",
       "line": 262,
       "literals": [
@@ -2993,14 +2400,6 @@
       "source": "character = ch_result.text.trim().replace(/t/g, \"七\");"
     },
     {
-      "path": "repo/js/TeleportActivationChecker/main.js",
-      "line": 380,
-      "literals": [
-        "取消自动任务"
-      ],
-      "source": "return message.includes(\"取消自动任务\") || lowerMessage.includes(\"canceled\") || lowerMessage.includes(\"cancelled\");"
-    },
-    {
       "path": "repo/js/WeeklyBoss/utils.js",
       "line": 526,
       "literals": [
@@ -3008,22 +2407,6 @@
         "目标文字"
       ],
       "source": "log.info(`检测到${targetText === null ? '文字' : '目标文字'}: ${ocrResult.text}`);"
-    },
-    {
-      "path": "repo/js/WeeklyBoss/utils.js",
-      "line": 610,
-      "literals": [
-        "自动退出"
-      ],
-      "source": "if (res.text.includes(\"自动退出\")) {"
-    },
-    {
-      "path": "repo/js/WeeklyBoss/utils.js",
-      "line": 1029,
-      "literals": [
-        "接触征讨之花"
-      ],
-      "source": "if (rewardResult.text == \"接触征讨之花\") {"
     },
     {
       "path": "repo/js/WeeklyBoss/utils.js",
@@ -3035,27 +2418,11 @@
     },
     {
       "path": "repo/js/WeeklyBoss/utils.js",
-      "line": 1088,
-      "literals": [
-        "接触征讨之花"
-      ],
-      "source": "if (rewardResult.text == \"接触征讨之花\") {"
-    },
-    {
-      "path": "repo/js/WeeklyBoss/utils.js",
       "line": 1089,
       "literals": [
         "已到达领奖点，检测到文字: "
       ],
       "source": "log.info(\"已到达领奖点，检测到文字: \" + rewardResult.text);"
-    },
-    {
-      "path": "repo/js/WeeklyBoss/utils.js",
-      "line": 1139,
-      "literals": [
-        "自动退出"
-      ],
-      "source": "let hasText2 = res2.text.includes(\"自动退出\");"
     },
     {
       "path": "repo/js/WeeklyBoss/utils.js",
@@ -3092,35 +2459,11 @@
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 198,
-      "literals": [
-        "管理"
-      ],
-      "source": "await findTextAndClick(\"管理\", 960, 980, 960, 100, 50, 50);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
       "line": 215,
       "literals": [
         "删除"
       ],
       "source": "await findTextAndClick(\"删除\", 960, 980, 960, 100, 50, 100);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 246,
-      "literals": [
-        "房间"
-      ],
-      "source": "const inRoom = await findText(\"房间\", 1500, 0, 420, 500, 5, 100);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 259,
-      "literals": [
-        "房间"
-      ],
-      "source": "const inRoom = await findText(\"房间\", 1500, 0, 420, 500, 5, 100);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -3132,115 +2475,11 @@
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 274,
-      "literals": [
-        "搜索"
-      ],
-      "source": "await findTextAndClick(\"搜索\", 1320, 0, 600, 95);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 275,
-      "literals": [
-        "搜索"
-      ],
-      "source": "await findTextAndClick(\"搜索\", 0, 120, 1920, 60, 10, 100, 50, 200);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 278,
-      "literals": [
-        "搜索"
-      ],
-      "source": "await findTextAndClick(\"搜索\", 0, 120, 1920, 60);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 287,
-      "literals": [
-        "搜索"
-      ],
-      "source": "await findTextAndClick(\"搜索\", 0, 0, 1920, 120, 10, 100, 50, 200);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 290,
-      "literals": [
-        "搜索"
-      ],
-      "source": "await findTextAndClick(\"搜索\", 0, 0, 1920, 120);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 298,
-      "literals": [
-        "房间"
-      ],
-      "source": "const result = await findTextAndClick(\"房间\",960, 100, 960, 200, 2);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
       "line": 300,
       "literals": [
         "大厅"
       ],
       "source": "await findTextAndClick(\"大厅\", 960, 600, 960, 400, 2);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 302,
-      "literals": [
-        "房间"
-      ],
-      "source": "await findTextAndClick(\"房间\",960, 100, 960, 200, 20, 50, 200);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 304,
-      "literals": [
-        "开始游戏"
-      ],
-      "source": "await findText(\"开始游戏\", 960, 540, 960, 540);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 331,
-      "literals": [
-        "开始游戏"
-      ],
-      "source": "await findTextAndClick(\"开始游戏\", 960, 540, 960, 540, 5, 50, 50);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 353,
-      "literals": [
-        "返回大厅"
-      ],
-      "source": "await findTextAndClick(\"返回大厅\", 960, 540, 960, 540);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 365,
-      "literals": [
-        "房间"
-      ],
-      "source": "const inRoom = await findText(\"房间\", 1500, 0, 420, 500);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 370,
-      "literals": [
-        "开始游戏"
-      ],
-      "source": "await findTextAndClick(\"开始游戏\", 960, 540, 960, 540, 20, 50, 50);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 392,
-      "literals": [
-        "返回大厅"
-      ],
-      "source": "await findTextAndClick(\"返回大厅\", 960, 540, 960, 540);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -3367,11 +2606,10 @@
       "path": "repo/js/使用历练点完成每日委托/main.js",
       "line": 437,
       "literals": [
-        "委托",
         "委託",
         "委"
       ],
-      "source": "if (res.text.includes(\"委托\") || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -3385,11 +2623,10 @@
       "path": "repo/js/使用历练点完成每日委托/main.js",
       "line": 490,
       "literals": [
-        "委托",
         "委託",
         "委"
       ],
-      "source": "if (res.text.includes(\"委托\") || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -3407,14 +2644,6 @@
         "目标文字"
       ],
       "source": "log.info(`检测到${targetText === null ? '文字' : '目标文字'}: ${ocrResult.text}`);"
-    },
-    {
-      "path": "repo/js/全队自动回满大招能量/main.js",
-      "line": 142,
-      "literals": [
-        "自动退出"
-      ],
-      "source": "if (res.text.includes(\"自动退出\")) {"
     },
     {
       "path": "repo/js/博士周本充能/main.js",
@@ -3473,14 +2702,6 @@
         "按鍵"
       ],
       "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || res.text.includes(\"按键\") || res.text.includes(\"按鍵\")) {"
-    },
-    {
-      "path": "repo/js/批量讨伐角色养成材料BOSS/src/utils.js",
-      "line": 37,
-      "literals": [
-        "取消自动任务"
-      ],
-      "source": "const isCancel = msg.includes(\"取消自动任务\")"
     },
     {
       "path": "repo/js/批量讨伐角色养成材料BOSS/src/utils.js",
@@ -3739,22 +2960,6 @@
     },
     {
       "path": "repo/js/角色养成一条龙/main.js",
-      "line": 325,
-      "literals": [
-        "自动退出"
-      ],
-      "source": "if (res.text.includes(\"自动退出\")) {"
-    },
-    {
-      "path": "repo/js/角色养成一条龙/main.js",
-      "line": 365,
-      "literals": [
-        "接触征讨之花"
-      ],
-      "source": "if (rewardResult.text == \"接触征讨之花\") {"
-    },
-    {
-      "path": "repo/js/角色养成一条龙/main.js",
       "line": 367,
       "literals": [
         "已到达领奖点，检测到文字: "
@@ -3804,14 +3009,6 @@
     },
     {
       "path": "repo/js/铁匠铺/main.js",
-      "line": 679,
-      "literals": [
-        "材料不足"
-      ],
-      "source": "else if (ocrResults.text.includes(\"材料不足\")) {"
-    },
-    {
-      "path": "repo/js/铁匠铺/main.js",
       "line": 869,
       "literals": [
         "锻造队列"
@@ -3826,14 +3023,6 @@
         "秒"
       ],
       "source": "if (ocrResult[i].text.endsWith(\"分钟\") || ocrResult[i].text.endsWith(\"秒\")) {"
-    },
-    {
-      "path": "repo/js/首领讨伐一条龙/main.js",
-      "line": 43,
-      "literals": [
-        "接触征讨之花"
-      ],
-      "source": "if (rewardResult.text == \"接触征讨之花\") {"
     },
     {
       "path": "repo/js/首领讨伐一条龙/main.js",

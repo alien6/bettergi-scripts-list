@@ -46,7 +46,7 @@ class _Artifact {
             for (let n of ATTR_NAMES) {
                 if (str.includes(n)) {
                     let t = {}
-                    if (str.includes('待激活')) {
+                    if (str.includes((genshin.getText ? genshin.getText("awaiting_activation") : "待激活"))) {
                         t['active'] = false
                     }
                     if (str.includes('%') && ['攻击力', '防御力', '生命值'].includes(n)) {

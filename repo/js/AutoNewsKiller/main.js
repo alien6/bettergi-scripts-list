@@ -13,7 +13,7 @@ let newCount = 0;
     let types = Array.from(settings.executingTypes);
     if (types.includes("全选")) {
         types = ["武器",
-            "圣遗物",
+            (genshin.getText ? genshin.getText("artifact") : "圣遗物"),
             "养成道具",
             "食物",
             "材料",
@@ -36,7 +36,7 @@ let newCount = 0;
                 continue;
             }
         }
-        if (type === "圣遗物") {
+        if (type === (genshin.getText ? genshin.getText("artifact") : "圣遗物")) {
             await findAndClick([`assets/RecognitionObject/筛选1.png`, `assets/RecognitionObject/筛选2.png`]);
             await sleep(300);
             moveMouseTo(960, 540);

@@ -112,7 +112,7 @@
         let ocr = ro.Find(ocrRo); // 当前页面OCR
         ro.dispose();
         for (let i = 0; i < 3; i++) {
-            if (ocr.isExist() && ocr.text === "当前队伍") {
+            if (ocr.isExist() && ocr.text === (genshin.getText ? genshin.getText("current_party") : "当前队伍")) {
                 ocr.Click(); // 点击 当前队伍
                 await sleep(500);
                 click(445, 1010); // 点击聊天框
@@ -701,7 +701,7 @@
                         const ro8 = captureGameRegion();
                         let ocr = ro8.Find(ocrRo); // 当前页面OCR
                         ro8.dispose();
-                        if (ocr.isExist() && ocr.text === "当前队伍") { // 多此一举
+                        if (ocr.isExist() && ocr.text === (genshin.getText ? genshin.getText("current_party") : "当前队伍")) { // 多此一举
                             ocr.Click(); // 点击 当前队伍
                         }
                         await sleep(200);
@@ -808,7 +808,7 @@
                                     moveMouseTo(1555, 860); // 移走鼠标，防止干扰OCR
                                     await sleep(200);
                                     let ocr = captureGameRegion().Find(ocrRo); // 当前页面OCR
-                                    if (ocr.isExist() && ocr.text === "当前队伍") { // 多此一举
+                                    if (ocr.isExist() && ocr.text === (genshin.getText ? genshin.getText("current_party") : "当前队伍")) { // 多此一举
                                         ocr.Click(); // 点击 当前队伍
                                     }
                                     await sleep(200);
@@ -907,7 +907,7 @@
                                     moveMouseTo(1555, 860); // 移走鼠标，防止干扰OCR
                                     await sleep(200);
                                     let ocr = captureGameRegion().Find(ocrRo); // 当前页面OCR
-                                    if (ocr.isExist() && ocr.text === "当前队伍") { // 多此一举
+                                    if (ocr.isExist() && ocr.text === (genshin.getText ? genshin.getText("current_party") : "当前队伍")) { // 多此一举
                                         ocr.Click(); // 点击 当前队伍
                                     }
                                     await sleep(200);
@@ -945,7 +945,7 @@
                         const ro12 = captureGameRegion();
                         let ocr = ro12.Find(ocrRo); // 当前页面OCR
                         ro12.dispose();
-                        if (ocr.isExist() && ocr.text === "当前队伍") { // 多此一举
+                        if (ocr.isExist() && ocr.text === (genshin.getText ? genshin.getText("current_party") : "当前队伍")) { // 多此一举
                             ocr.Click(); // 点击 当前队伍
                         }
                         await sleep(200);

@@ -34,7 +34,7 @@ function isToday(date) {
 function isCancellationError(error) {
     if (!error) return false;
     const msg = (error.message || error.toString() || "").toLowerCase();
-    const isCancel = msg.includes("取消自动任务")
+    const isCancel = msg.includes((genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务"))
         || msg.includes("task was canceled")
         || msg.includes("operationcanceledexception")
         || msg.includes("normalendexception")

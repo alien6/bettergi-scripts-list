@@ -195,7 +195,7 @@ async function deleteSource() {
   await sleep(duration);
 
   await findTextAndClick("管理关卡", 960, 0, 960, 100, 50, 50);
-  await findTextAndClick("管理", 960, 980, 960, 100, 50, 50);
+  await findTextAndClick((genshin.getText ? genshin.getText("manage") : "管理"), 960, 980, 960, 100, 50, 50);
 
   // 查找目标存档
   const saveRegion = await findSaveInList(starRoomName);
@@ -243,7 +243,7 @@ async function exitRoom() {
 // 进入千星奇域的全部奇域页面
 async function enterSourcePage() {
   // 1. 检测是否在房间内，在则退出
-  const inRoom = await findText("房间", 1500, 0, 420, 500, 5, 100);
+  const inRoom = await findText((genshin.getText ? genshin.getText("room") : "房间"), 1500, 0, 420, 500, 5, 100);
   if (inRoom) {
     await exitRoom();
     keyPress("VK_F6");
@@ -256,7 +256,7 @@ async function enterSourcePage() {
 // 进入千星奇域的收藏奇域页面
 async function enterStarSourcePage() {
   // 1. 检测是否在房间内，在则退出
-  const inRoom = await findText("房间", 1500, 0, 420, 500, 5, 100);
+  const inRoom = await findText((genshin.getText ? genshin.getText("room") : "房间"), 1500, 0, 420, 500, 5, 100);
   if (inRoom) {
     await exitRoom();
     keyPress("VK_B");
@@ -271,11 +271,11 @@ async function enterStarSourcePage() {
 
 // 搜索关卡
 async function searchMap() {
-  await findTextAndClick("搜索", 1320, 0, 600, 95);
-  await findTextAndClick("搜索", 0, 120, 1920, 60, 10, 100, 50, 200);
+  await findTextAndClick((genshin.getText ? genshin.getText("search") : "搜索"), 1320, 0, 600, 95);
+  await findTextAndClick((genshin.getText ? genshin.getText("search") : "搜索"), 0, 120, 1920, 60, 10, 100, 50, 200);
   inputText(roomID);
   await sleep(duration);
-  await findTextAndClick("搜索", 0, 120, 1920, 60);
+  await findTextAndClick((genshin.getText ? genshin.getText("search") : "搜索"), 0, 120, 1920, 60);
   await sleep(duration);
   click(355, 365);
   await sleep(duration);
@@ -284,10 +284,10 @@ async function searchMap() {
 // 从收藏搜索关卡
 async function searchStarMap() {
   await checkAndFold();
-  await findTextAndClick("搜索", 0, 0, 1920, 120, 10, 100, 50, 200);
+  await findTextAndClick((genshin.getText ? genshin.getText("search") : "搜索"), 0, 0, 1920, 120, 10, 100, 50, 200);
   inputText(starRoomName);
   await sleep(duration);
-  await findTextAndClick("搜索", 0, 0, 1920, 120);
+  await findTextAndClick((genshin.getText ? genshin.getText("search") : "搜索"), 0, 0, 1920, 120);
   await sleep(duration);
   click(420, 830);
   await sleep(duration);
@@ -295,13 +295,13 @@ async function searchStarMap() {
 
 // 创建房间
 async function createRoom() {
-  const result = await findTextAndClick("房间",960, 100, 960, 200, 2);
+  const result = await findTextAndClick((genshin.getText ? genshin.getText("room") : "房间"),960, 100, 960, 200, 2);
   if (!result) {
     await findTextAndClick("大厅", 960, 600, 960, 400, 2);
-    await waitUntilTextAppear("房间", () => {},960, 100, 960, 200, 50, 1000);
-    await findTextAndClick("房间",960, 100, 960, 200, 20, 50, 200);
+    await waitUntilTextAppear((genshin.getText ? genshin.getText("room") : "房间"), () => {},960, 100, 960, 200, 50, 1000);
+    await findTextAndClick((genshin.getText ? genshin.getText("room") : "房间"),960, 100, 960, 200, 20, 50, 200);
   }
-  await findText("开始游戏", 960, 540, 960, 540);
+  await findText((genshin.getText ? genshin.getText("start_game") : "开始游戏"), 960, 540, 960, 540);
   click(770, 275);
   // 校验点击状态
   await sleep(duration);
@@ -328,14 +328,14 @@ async function playMap() {
 
   await createRoom();
 
-  await findTextAndClick("开始游戏", 960, 540, 960, 540, 5, 50, 50);
+  await findTextAndClick((genshin.getText ? genshin.getText("start_game") : "开始游戏"), 960, 540, 960, 540, 5, 50, 50);
   log.info("开始执行第{i}/{total}次奇域挑战", 1, total);
   if (useMask) {
     sendProgress(0, `正在执行第1/${total}次挑战`, 1, total);
   }
   let firstOutputCount = 0;
   await waitUntilTextAppear(
-    "返回大厅",
+    (genshin.getText ? genshin.getText("return_to_lobby") : "返回大厅"),
     async () => {
       await findAndClickWhiteSpaceNext();
       if (firstOutputCount % 16 === 0) {
@@ -350,7 +350,7 @@ async function playMap() {
     500,
     2000
   );
-  await findTextAndClick("返回大厅", 960, 540, 960, 540);
+  await findTextAndClick((genshin.getText ? genshin.getText("return_to_lobby") : "返回大厅"), 960, 540, 960, 540);
   if (!useFixedAttempts) {
     decreaseWeekTotal();
   }
@@ -362,19 +362,19 @@ async function playMap() {
   await deleteSource();
 
   for (let i = 1; i < total; i++) {
-    const inRoom = await findText("房间", 1500, 0, 420, 500);
+    const inRoom = await findText((genshin.getText ? genshin.getText("room") : "房间"), 1500, 0, 420, 500);
     if (inRoom) {
       await sleep(duration);
       keyPress("VK_P");
       await sleep(duration);
-      await findTextAndClick("开始游戏", 960, 540, 960, 540, 20, 50, 50);
+      await findTextAndClick((genshin.getText ? genshin.getText("start_game") : "开始游戏"), 960, 540, 960, 540, 20, 50, 50);
       log.info("开始执行第{i}/{total}次奇域挑战", i + 1, total);
       if (useMask) {
         sendProgress(Math.round(i / total * 100), `正在执行第${i + 1}/${total}次挑战`, i + 1, total);
       }
       let outputCount = 0;
       await waitUntilTextAppear(
-        "返回大厅",
+        (genshin.getText ? genshin.getText("return_to_lobby") : "返回大厅"),
         async () => {
           await findAndClickWhiteSpaceNext();
           if (outputCount % 16 === 0) {
@@ -389,7 +389,7 @@ async function playMap() {
         500,
         2000
       );
-      await findTextAndClick("返回大厅", 960, 540, 960, 540);
+      await findTextAndClick((genshin.getText ? genshin.getText("return_to_lobby") : "返回大厅"), 960, 540, 960, 540);
       if (!useFixedAttempts) {
         decreaseWeekTotal();
       }

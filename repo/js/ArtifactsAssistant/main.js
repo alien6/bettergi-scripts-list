@@ -91,7 +91,7 @@ class Relics {
             }
             if (id < 3 && !attrs[i].includes("%")) id += targetKeywords.length;
             this.subAttr[i] = id;
-            if (!attrs[i].includes("待激活")) {
+            if (!attrs[i].includes((genshin.getText ? genshin.getText("awaiting_activation") : "待激活"))) {
                 const strval = attrs[i].match(/\d*\.?\d+/);
                 if (!strval) throw new Error("副属性数值解析错误");
                 this.subValue[i] = parseFloat(strval[0]);

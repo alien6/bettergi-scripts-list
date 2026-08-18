@@ -325,13 +325,13 @@ async function analyzeResinOptions(sortedButtons, isOriginalResinEmpty) {
 
         // 识别树脂类型（注意：如果原粹树脂耗尽，应该忽略这些识别）
         let hasOriginalResin20 = !isOriginalResinEmpty && allTexts.some(t =>
-            (t.text.includes("20") && t.text.includes("原粹树脂")) ||
-            (t.text.includes("20个") && t.text.includes("原粹树脂"))
+            (t.text.includes("20") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) ||
+            (t.text.includes("20个") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂")))
         );
 
         let hasOriginalResin40 = !isOriginalResinEmpty && allTexts.some(t =>
-            (t.text.includes("40") && t.text.includes("原粹树脂")) ||
-            (t.text.includes("40个") && t.text.includes("原粹树脂"))
+            (t.text.includes("40") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) ||
+            (t.text.includes("40个") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂")))
         );
 
         let hasCondensedResin = allTexts.some(t =>
@@ -373,12 +373,12 @@ async function analyzeResinOptions(sortedButtons, isOriginalResinEmpty) {
                     // 重新识别树脂类型
                     allTexts = await captureAllTexts();
                     hasOriginalResin20 = allTexts.some(t =>
-                        (t.text.includes("20") && t.text.includes("原粹树脂")) ||
-                        (t.text.includes("20个") && t.text.includes("原粹树脂"))
+                        (t.text.includes("20") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) ||
+                        (t.text.includes("20个") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂")))
                     );
                     hasOriginalResin40 = allTexts.some(t =>
-                        (t.text.includes("40") && t.text.includes("原粹树脂")) ||
-                        (t.text.includes("40个") && t.text.includes("原粹树脂"))
+                        (t.text.includes("40") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) ||
+                        (t.text.includes("40个") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂")))
                     );
                 } else {
                     log.warn("20树脂模式：未能切换到20个原粹树脂，将使用40个");
@@ -727,10 +727,10 @@ async function analyzeResinOptions(sortedButtons, isOriginalResinEmpty) {
 function parseCurrentResinAmount(texts) {
     for (let i = 0; i < texts.length; i++) {
         const text = texts[i].text;
-        if ((text.includes("20") || text.includes("20个")) && text.includes("原粹树脂")) {
+        if ((text.includes("20") || text.includes("20个")) && text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) {
             return 20;
         }
-        if ((text.includes("40") || text.includes("40个")) && text.includes("原粹树脂")) {
+        if ((text.includes("40") || text.includes("40个")) && text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) {
             return 40;
         }
     }

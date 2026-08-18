@@ -104,7 +104,7 @@ function readDestroyStatus(context) {
     }
     return {
         progress: parseWatchtowerProgress(descriptionText),
-        completed: completionText.includes("委托完成"),
+        completed: completionText.includes((genshin.getText ? genshin.getText("commission_completed") : "委托完成")),
         descriptionText,
         completionText,
     };
@@ -391,7 +391,7 @@ function disposeCombatLoop(combat) {
 function assertCombatLoopRunning(combat) {
     if (!combat.state.settled || combat.state.intentionalCancel) return;
     if (combat.state.error) throw combat.state.error;
-    if (combat.cts.Token.IsCancellationRequested) throw new Error("取消自动任务");
+    if (combat.cts.Token.IsCancellationRequested) throw new Error((genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务"));
     throw new Error("哨塔简易策略在进度更新前意外结束");
 }
 

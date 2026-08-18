@@ -311,7 +311,7 @@ StepProcessorLoader.register("对话", async function (stepData, context) {
 {
   "type": "AutoSkip",
   "npcWhiteList": ["委托发布者", "任务NPC"],
-  "priorityOptions": ["帮助", "委托", "任务"],
+  "priorityOptions": ["帮助", (genshin.getText ? genshin.getText("commission") : "委托"), "任务"],
   "blacklist": ["拒绝", "离开"],
   "priorityIcons": ["icon_quest.png"],
   "note": "完整配置：NPC白名单优先级最高，然后是任务相关选项，避免拒绝类选项"

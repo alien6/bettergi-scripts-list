@@ -406,7 +406,7 @@ async function main() {
   await sleep(DELAY_MEDIUM);
 
   // 第二步：验证是否进入圣遗物页面
-  let verifyResult = findTextInRegion(131, 21, 231, 70, "圣遗物");
+  let verifyResult = findTextInRegion(131, 21, 231, 70, (genshin.getText ? genshin.getText("artifact") : "圣遗物"));
   if (!verifyResult) {
     log.error("未检测到「圣遗物」页面");
     return;

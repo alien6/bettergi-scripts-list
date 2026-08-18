@@ -976,7 +976,7 @@ async function startRewardTextDetection(cts) {
                         let resList = captureRegion.findMulti(ocrRoThis); // 使用预定义的ocrRoThis对象
                         if (resList && resList.count > 0) {
                             for (let i = 0; i < resList.count; i++) {
-                                if (resList[i].text.includes("原粹树脂")) {
+                                if (resList[i].text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) {
                                     log.debug("已到达领取页面，可以领奖");
                                     resolve(true);
                                     return;

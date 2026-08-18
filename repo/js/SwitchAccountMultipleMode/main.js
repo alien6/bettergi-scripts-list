@@ -449,7 +449,7 @@ function normalizeAccountOcrText(text) {
             if (logoutIconFound) {
                 let resList = captureRegion.findMulti(RecognitionObject.ocr(850, 970, 220, 100));
                 captureRegion.dispose();
-                if (u.findText(resList, "点击进入")) {
+                if (u.findText(resList, (genshin.getText ? genshin.getText("click_to_enter") : "点击进入"))) {
                     u.logi("检测到目前处于登录界面");
                     return false;
                 }
@@ -594,7 +594,7 @@ function normalizeAccountOcrText(text) {
 
     async function stateEnterGame() {
         // u.logi("开始进入游戏，等待游戏加载。");
-        let textClickToStart = await u.waitAndFindText("点击进入", 850, 970, 220, 100);
+        let textClickToStart = await u.waitAndFindText((genshin.getText ? genshin.getText("click_to_enter") : "点击进入"), 850, 970, 220, 100);
         // u.logi("已识别到\"点击进入\"文本，点击鼠标进入游戏。");
         textClickToStart.DrawSelf("ClickToStart");
         textClickToStart.Click();
@@ -648,7 +648,7 @@ function normalizeAccountOcrText(text) {
             await stateReturnToGenshinGate();
             await sleep(1000);
         }
-        await waitForOcrMatch("开始游戏");
+        await waitForOcrMatch((genshin.getText ? genshin.getText("start_game") : "开始游戏"));
         await matchImgAndClick(login_out_account, "登录页的右下角退出按钮");
         await waitForOcrMatch("切换账号");
         await matchImgAndClick(confirm_switch_account, "确认切换账号");
@@ -663,7 +663,7 @@ function normalizeAccountOcrText(text) {
         await sleep(500);
         // 换服务器操作
         if (settings.Servers && (settings.Servers !== "不切换服务器" || settings.Servers == "")) {
-            await waitForOcrMatch("开始游戏");
+            await waitForOcrMatch((genshin.getText ? genshin.getText("start_game") : "开始游戏"));
             log.info("正在更换服务器")
             await matchImgAndClick(switch_server, "更换服务器");
             let serversMatched = true;
@@ -684,11 +684,11 @@ function normalizeAccountOcrText(text) {
             }
         }
         await keyPress("VK_ESCAPE");
-        await waitForOcrMatch("开始游戏");
+        await waitForOcrMatch((genshin.getText ? genshin.getText("start_game") : "开始游戏"));
         await click(960, 640);
         await page.Wait(5000);
         log.info('等待提瓦特大门加载');
-        await waitForOcrMatch("点击进入");
+        await waitForOcrMatch((genshin.getText ? genshin.getText("click_to_enter") : "点击进入"));
         await click(960, 640);
         // 可能登录账号的时候出现月卡提醒，则先点击一次月卡。
         await genshin.blessingOfTheWelkinMoon();
@@ -754,7 +754,7 @@ function normalizeAccountOcrText(text) {
              * 如果发现卡在这一步，请适当延长sleep时间
              */
             await sleep(8000);
-            await recognizeTextAndClick("点击进入", RecognitionObject.Ocr(862, 966, 206, 104), 5000);
+            await recognizeTextAndClick((genshin.getText ? genshin.getText("click_to_enter") : "点击进入"), RecognitionObject.Ocr(862, 966, 206, 104), 5000);
             await sleep(15000);
 
             //可能登录账号的时候出现月卡提醒，则先点击一次月卡。
@@ -847,7 +847,7 @@ function normalizeAccountOcrText(text) {
              * 如果发现卡在这一步，请适当延长sleep时间
              */
             await sleep(6500);
-            await recognizeTextAndClick("点击进入", RecognitionObject.Ocr(862, 966, 206, 104), 5000);
+            await recognizeTextAndClick((genshin.getText ? genshin.getText("click_to_enter") : "点击进入"), RecognitionObject.Ocr(862, 966, 206, 104), 5000);
             await sleep(12000);
 
             //可能登录账号的时候出现月卡提醒，则先点击一次月卡。
@@ -886,7 +886,7 @@ function normalizeAccountOcrText(text) {
         try {
             await matchImgAndClick(pm_out, "左下角退出门");
             await matchImgAndClick(out_to_login, "退出至登陆页面");
-            await waitForOcrMatch("开始游戏");
+            await waitForOcrMatch((genshin.getText ? genshin.getText("start_game") : "开始游戏"));
             await matchImgAndClick(login_out_account, "登录页的右下角退出按钮");
             await waitForOcrMatch("切换账号");
             await matchImgAndClick(confirm_switch_account, "确认切换账号");
@@ -921,7 +921,7 @@ function normalizeAccountOcrText(text) {
             }
             // 换服务器操作
             if (settings.Servers && (settings.Servers !== "不切换服务器" || settings.Servers == "")) {
-                await waitForOcrMatch("开始游戏");
+                await waitForOcrMatch((genshin.getText ? genshin.getText("start_game") : "开始游戏"));
                 log.info("正在更换服务器")
                 await matchImgAndClick(switch_server, "更换服务器");
                 let serversMatched = true;
@@ -942,11 +942,11 @@ function normalizeAccountOcrText(text) {
                 }
             }
             await keyPress("VK_ESCAPE");
-            await waitForOcrMatch("开始游戏");
+            await waitForOcrMatch((genshin.getText ? genshin.getText("start_game") : "开始游戏"));
             await click(960, 640);
             await page.Wait(5000);
             log.info('等待提瓦特大门加载');
-            await waitForOcrMatch("点击进入");
+            await waitForOcrMatch((genshin.getText ? genshin.getText("click_to_enter") : "点击进入"));
             await click(960, 640);
             // 可能登录账号的时候出现月卡提醒，则先点击一次月卡。
             await genshin.blessingOfTheWelkinMoon();

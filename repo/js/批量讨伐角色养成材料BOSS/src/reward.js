@@ -7,7 +7,7 @@ import { isCancellationError } from "./utils.js";
  * 1. 调整为俯视视角
  * 2. 通过识别宝箱图标来调整方向和前进
  * 3. 检测攀爬状态并尝试脱离
- * 4. 检测到"接触征讨之花"时进行交互，进入领奖界面后停止
+ * 4. 检测到(genshin.getText ? genshin.getText("touch_trounce_blossom") : "接触征讨之花")时进行交互，进入领奖界面后停止
  * 
  * @async
  * @function autoNavigateToReward
@@ -47,7 +47,7 @@ async function autoNavigateToReward() {
             }
 
             // 到达征讨之花后进行交互，继续等待领奖界面出现
-            if (await page.Locator("接触征讨之花", rewardRect).isExist()) {
+            if (await page.Locator((genshin.getText ? genshin.getText("touch_trounce_blossom") : "接触征讨之花"), rewardRect).isExist()) {
                 log.info("检测到接触征讨之花，按 F 键交互");
                 keyPress("F");
                 await sleep(300);

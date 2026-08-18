@@ -607,7 +607,7 @@ async function restoredEnergyAutoFightAndEndDetection() {
       const ro = captureGameRegion();
       let res = ro.find(RecognitionObject.ocr(840, 935, 230, 40));
       ro.dispose();
-      if (res.text.includes("自动退出")) {
+      if (res.text.includes((genshin.getText ? genshin.getText("auto_exit") : "自动退出"))) {
         log.info("检测到挑战成功");
         return;
       }
@@ -1026,7 +1026,7 @@ const autoNavigateToReward = async () => {
     let rewardTextArea = captureRegion.DeriveCrop(1210, 515, 200, 50);
     let rewardResult = rewardTextArea.find(RecognitionObject.ocrThis);
     // 检测到特点文字则结束！！！
-    if (rewardResult.text == "接触征讨之花") {
+    if (rewardResult.text == (genshin.getText ? genshin.getText("touch_trounce_blossom") : "接触征讨之花")) {
       log.info(`总计前进第${advanceNum}次`);
       log.info("已到达领奖点，检测到文字: " + rewardResult.text);
       return;
@@ -1085,7 +1085,7 @@ const autoNavigateToRewardNoIcon = async (step = 150, maxStep = 150) => {
     let rewardTextArea = captureRegion.DeriveCrop(1210, 515, 200, 50);
     let rewardResult = rewardTextArea.find(RecognitionObject.ocrThis);
     // 检测到特点文字则结束！！！
-    if (rewardResult.text == "接触征讨之花") {
+    if (rewardResult.text == (genshin.getText ? genshin.getText("touch_trounce_blossom") : "接触征讨之花")) {
       log.info("已到达领奖点，检测到文字: " + rewardResult.text);
       log.info(`总计前进步数：${advanceNum}`);
       return;
@@ -1136,7 +1136,7 @@ async function autoFightAndEndDetection(extraFightAction) {
     let teamRes1 = capture.find(teamRo1);
     let teamRes2 = capture.find(teamRo2);
     let hasText1 = !res1.isEmpty() && res1.text.trim().length > 0;
-    let hasText2 = res2.text.includes("自动退出");
+    let hasText2 = res2.text.includes((genshin.getText ? genshin.getText("auto_exit") : "自动退出"));
     let hasText3 = teamRes1.isExist() || teamRes2.isExist();
     let paimon = capture.find(paimonMenuRo);
     if (paimon.isExist()) throw new Error('复活次数用尽,挑战失败');

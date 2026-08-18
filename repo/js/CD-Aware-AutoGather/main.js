@@ -1157,7 +1157,7 @@ async function getCoOpModeAndHostUid() {
     keyPress("F2");
     await waitForTextAppear("多人游戏", [130, 20, 129, 57]);
     let uid = await getGameAccount(true, false);
-    const coOpMode = !(await isTextExistedInRegion("搜索", [1638, 90, 87, 63]));
+    const coOpMode = !(await isTextExistedInRegion((genshin.getText ? genshin.getText("search") : "搜索"), [1638, 90, 87, 63]));
     if (coOpMode) {
         const btnText = await getTextInRegion([1560, 992, 191, 55]);
         // 仅在多人模式且非房主时需要

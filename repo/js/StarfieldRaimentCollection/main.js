@@ -59,7 +59,7 @@
         const mainUI = capture.Find(mainUI_pic).isExist();
         const search_page = search_page_ocr && search_page_ocr.text.includes("搜索奇域");
         const stage_enter = stage_enter_ocr && stage_enter_ocr.text.includes("开始挑战");
-        const result_page = result_page_ocr && result_page_ocr.text.includes("返回大厅");
+        const result_page = result_page_ocr && result_page_ocr.text.includes((genshin.getText ? genshin.getText("return_to_lobby") : "返回大厅"));
         let current_ui = "未知界面";
 
         if (page_close) { // 奇域界面
@@ -230,7 +230,7 @@
         const ocrResult = await Ocr(1110, 889, 637, 91, true);
         if (ocrResult) {
             for (let i = 0; i < ocrResult.length; i++) {
-                if (ocrResult[i].text.includes("开始游戏") || ocrResult[i].text.includes("单人挑战")) {
+                if (ocrResult[i].text.includes((genshin.getText ? genshin.getText("start_game") : "开始游戏")) || ocrResult[i].text.includes("单人挑战")) {
                     ocrResult[i].Click();
                     await sleep(5000);
                     return false;

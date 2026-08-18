@@ -477,7 +477,7 @@ async function processArtifacts(times = 1) {
             log.info("检测到过期物品弹窗，处理");
             await sleep(1000);
         }
-        let type = "圣遗物";
+        let type = (genshin.getText ? genshin.getText("artifact") : "圣遗物");
         await findAndClick([`assets/RecognitionObject/背包界面/${type}1.png`, `assets/RecognitionObject/背包界面/${type}2.png`])
         await sleep(500);
         if (!await findAndClick(decomposeRo)) {
@@ -625,7 +625,7 @@ async function processArtifacts(times = 1) {
             log.info("检测到过期物品弹窗，处理");
             await sleep(1000);
         }
-        let type = "圣遗物";
+        let type = (genshin.getText ? genshin.getText("artifact") : "圣遗物");
         await findAndClick([`assets/RecognitionObject/背包界面/${type}1.png`, `assets/RecognitionObject/背包界面/${type}2.png`])
         try {
             for (let i = 0; i < times; i++) {

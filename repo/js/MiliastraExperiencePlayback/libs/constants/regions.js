@@ -89,11 +89,11 @@ const findMiliastraBtn = () => {
 };
 /** 房间：查找搜索奇域按钮 */
 const findAllWonderlandsBtn = () => {
-  return findTextWithinBounds("搜索", 1320, 0, 600, 95, { contains: true });
+  return findTextWithinBounds((genshin.getText ? genshin.getText("search") : "搜索"), 1320, 0, 600, 95, { contains: true });
 };
 /** 房间：查找奇域搜索输入框 */
 const findSearchWonderlandInput = () => {
-  const txt = findTextWithinBounds("搜索", 0, 120, 1920, 60, { contains: true });
+  const txt = findTextWithinBounds((genshin.getText ? genshin.getText("search") : "搜索"), 0, 120, 1920, 60, { contains: true });
   txt?.drawSelf("group_text");
   return txt;
 };
@@ -103,7 +103,7 @@ const findClearInputBtn = () => {
 };
 /** 房间：查找搜索奇域按钮 */
 const findSearchWonderlandBtn = () => {
-  return findTextWithinBounds("搜索", 0, 120, 1920, 60, { contains: true });
+  return findTextWithinBounds((genshin.getText ? genshin.getText("search") : "搜索"), 0, 120, 1920, 60, { contains: true });
 };
 /** 房间：查找首行前N个奇域搜索结果名称 */
 const findTopNSearchResultTexts = (n) => {
@@ -133,7 +133,7 @@ const clickToChooseFirstSearchResult = () => {
 };
 /** 房间：查找进入房间快捷键按钮 */
 const findEnterRoomShortcut = () => {
-  const txt = findTextWithinBounds("房间", 1580, 110, 320, 390, { contains: true });
+  const txt = findTextWithinBounds((genshin.getText ? genshin.getText("room") : "房间"), 1580, 110, 320, 390, { contains: true });
   txt?.drawSelf("group_text");
   return txt;
 };
@@ -151,7 +151,7 @@ const findGoToLobbyBtn = () => {
 };
 /** 房间：查找创建房间按钮 */
 const findCreateRoomBtn = () => {
-  const txt = findTextWithinBounds("房间", 960, 95, 960, 70, { contains: true });
+  const txt = findTextWithinBounds((genshin.getText ? genshin.getText("room") : "房间"), 960, 95, 960, 70, { contains: true });
   txt?.drawSelf("group_text");
   return txt;
 };
@@ -177,11 +177,11 @@ const findBeyondFavoritesBtn = () => {
 };
 /** 存档：查找管理关卡按钮 */
 const findManageStagesBtn = () => {
-  return findTextWithinBounds("管理", 1320, 0, 600, 95, { contains: true });
+  return findTextWithinBounds((genshin.getText ? genshin.getText("manage") : "管理"), 1320, 0, 600, 95, { contains: true });
 };
 /** 存档：查找编辑关卡存档按钮 */
 const findEditStageSaveBtn = () => {
-  return findTextWithinBounds("管理", 1220, 980, 700, 100);
+  return findTextWithinBounds((genshin.getText ? genshin.getText("manage") : "管理"), 1220, 980, 700, 100);
 };
 /** 存档：查找存档时间占位符 */
 const saveListViewBounds = [210, 250, 1650, 710];

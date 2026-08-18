@@ -139,7 +139,7 @@
                 const ro = captureGameRegion();
                 let res = ro.find(RecognitionObject.ocr(840, 935, 230, 40));
                 ro.dispose();
-                if (res.text.includes("自动退出")) {
+                if (res.text.includes((genshin.getText ? genshin.getText("auto_exit") : "自动退出"))) {
                     log.info("检测到挑战成功");
                     return;
                 }
