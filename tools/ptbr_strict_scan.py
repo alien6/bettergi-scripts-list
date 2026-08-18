@@ -1,11 +1,5 @@
 #!/usr/bin/env python3
-"""High-confidence scan for Chinese literals that directly affect OCR/UI matching.
-
-Unlike the broad audit, this scanner intentionally ignores script settings,
-logging, character/item configuration, and internal mode names. It reports only
-literals passed directly to text/OCR helpers or compared against OCR-result-like
-variables/properties.
-"""
+"""High-confidence scan for Chinese literals that directly affect OCR/UI matching."""
 from __future__ import annotations
 
 import json
@@ -17,21 +11,11 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "repo" / "js"
 REPORT = ROOT / "reports" / "ptbr-strict-ocr.json"
 
-CJK = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
 STRING = re.compile(r"(?P<q>['\"])(?P<v>[^'\"\r\n]*[\u3400-\u4dbf\u4e00-\u9fff][^'\"\r\n]*)(?P=q)")
-DIRECT_CALL = re.compile(
-    r"(?:findText(?:AndClick)?|OcrMatch|chooseTalkOption|ChooseTalkOption)\s*\([^;\r\n]*$",
-    re.I,
-)
-OCR_METHOD = re.compile(
-    r"(?:\.text|ocr|recogn|result|res|find|detected|detector|ocrText|recognizedText)[\w.$?]*"
-    r"\s*\.\s*(?:includes|contains|indexOf|startsWith|endsWith)\s*\([^\r\n]*$",
-    re.I,
-)
-OCR_COMPARE = re.compile(
-    r"(?:\.text|ocr|recogn|result|res|find|detected)[\w.$?]*\s*(?:===|==|!==|!=)\s*$",
-    re.I,
-)
+DIRECT_CALL = re.compile(r"(?:findText(?:AndClick)?|OcrMatch|chooseTalkOption|ChooseTalkOption)\s*\([^;\r\n]*$", re.I)
+OCR_METHOD = re.compile(r"(?:\.text|ocr|recogn|result|res|find|detected|detector|ocrText|recognizedText)[\w.$?]*\s*\.\s*(?:includes|contains|indexOf|startsWith|endsWith)\s*\([^\r\n]*$", re.I)
+OCR_COMPARE = re.compile(r"(?:\.text|ocr|recogn|result|res|find|detected)[\w.$?]*\s*(?:===|==|!==|!=)\s*$", re.I)
+GENERATED_FALLBACK = re.compile(r"\(genshin\.getText\s*\?\s*genshin\.getText\([^\r\n)]*\)\s*:\s*$", re.I)
 
 
 def comment_mask(text: str) -> list[tuple[int, int]]:
@@ -45,7 +29,7 @@ def comment_mask(text: str) -> list[tuple[int, int]]:
             i+=1; continue
         if c in "'\"`": q=c; i+=1; continue
         if c=='/' and n=='/':
-            e=text.find('\n', i+2); e=len(text) if e<0 else e; out.append((i,e)); i=e; continue
+            e=text.find('\n',i+2); e=len(text) if e<0 else e; out.append((i,e)); i=e; continue
         if c=='/' and n=='*':
             e=text.find('*/',i+2); e=len(text) if e<0 else e+2; out.append((i,e)); i=e; continue
         i+=1
@@ -64,7 +48,7 @@ def scan(path:Path):
         if inside(m.start(),comments): continue
         ls=text.rfind('\n',0,m.start())+1; le=text.find('\n',m.end()); le=len(text) if le<0 else le
         prefix=text[ls:m.start()]; suffix=text[m.end():le]; line=text[ls:le]
-        if 'settings.' in line: continue
+        if 'settings.' in line or GENERATED_FALLBACK.search(prefix[-220:]): continue
         direct=bool(DIRECT_CALL.search(prefix[-350:]))
         method=bool(OCR_METHOD.search(prefix[-350:]))
         compare=bool(OCR_COMPARE.search(prefix[-350:])) or bool(re.match(r"\s*(?:===|==|!==|!=)",suffix) and re.search(r"(?:\.text|ocr|recogn|result|res|find|detected)",prefix,re.I))
