@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LEYLINE = ROOT / "repo" / "js" / "AutoLeyLineOutcrop" / "utils" / "attemptReward.js"
 CRYSTALFLY = ROOT / "repo" / "js" / "CrystalflyTrap" / "main.js"
+MULTI_PATHING = ROOT / "repo" / "js" / "AutoPathingLoader-MultiUser" / "main.js"
 
 
 def read(path: Path):
@@ -79,8 +80,6 @@ def patch_leyline(text: str) -> str:
 
 
 def patch_crystalfly(text: str) -> str:
-    # The script already knows the gadget-tab coordinate. Clicking it is safer
-    # than OCR-matching the Chinese-only backpack title fragment 小道.
     old_tab = '''            let backpackTitle = captureGameRegion();
             let resList = backpackTitle.findMulti(RecognitionObject.ocr(130, 0, 200, 50));
             backpackTitle.dispose();
@@ -98,9 +97,6 @@ def patch_crystalfly(text: str) -> str:
             await sleep(1000);'''
     text = text.replace(old_tab, new_tab)
 
-    # After generic literal migration, the same one-line guard still contains
-    # the three canonical Chinese fallback strings. Crystal + device is unique
-    # enough here; the middle fragment 诱捕 is unnecessary.
     guard = re.compile(r'(?m)^\s*if \([^\n]*"晶蝶"[^\n]*"诱捕"[^\n]*"装置"[^\n]*\) \{$')
     replacement = '''                const isCrystalfly = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "晶蝶") : res.text.includes("晶蝶");
                 const isDevice = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "装置") : res.text.includes("装置");
@@ -109,9 +105,28 @@ def patch_crystalfly(text: str) -> str:
     return text
 
 
+def patch_multi_pathing(text: str) -> str:
+    # These are protocol messages exchanged by script instances through party chat.
+    # Stable ASCII tokens are language-independent and OCR-friendly under both Latin
+    # and Chinese Paddle models. Exact string replacements update both sender/receiver.
+    protocol = {
+        '"校验完成"': '"BGI_VERIFY_OK"',
+        '"校验失败"': '"BGI_VERIFY_FAIL"',
+        '"路线启动"': '"BGI_ROUTE_START"',
+        '"全部路线结束"': '"BGI_ROUTES_DONE"',
+    }
+    for old, new in protocol.items():
+        text = text.replace(old, new)
+    return text
+
+
 def main() -> int:
     changed = []
-    for path, patcher in ((LEYLINE, patch_leyline), (CRYSTALFLY, patch_crystalfly)):
+    for path, patcher in (
+        (LEYLINE, patch_leyline),
+        (CRYSTALFLY, patch_crystalfly),
+        (MULTI_PATHING, patch_multi_pathing),
+    ):
         text, raw, bom = read(path)
         updated = patcher(text)
         if updated != text:
