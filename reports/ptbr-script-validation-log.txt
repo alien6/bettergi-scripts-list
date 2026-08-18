@@ -1,20 +1,8 @@
 === PYTHON SYNTAX ===
 === STRICT SCAN ===
 {
-  "strict_functional_cjk_count": 171,
+  "strict_functional_cjk_count": 102,
   "top_literals": [
-    [
-      "按键",
-      4
-    ],
-    [
-      "之花",
-      3
-    ],
-    [
-      "单人挑战",
-      3
-    ],
     [
       "委託",
       3
@@ -22,14 +10,6 @@
     [
       "委",
       3
-    ],
-    [
-      "按鍵",
-      2
-    ],
-    [
-      "征讨领域",
-      2
     ],
     [
       "分钟",
@@ -40,19 +20,11 @@
       2
     ],
     [
-      "追踪",
+      "使用20个原粹树脂",
       2
     ],
     [
-      "装备",
-      2
-    ],
-    [
-      "所有",
-      2
-    ],
-    [
-      "地脉",
+      "之花",
       2
     ],
     [
@@ -64,27 +36,11 @@
       2
     ],
     [
-      "停止",
-      2
-    ],
-    [
-      "申请加入",
-      2
-    ],
-    [
       "挂起来吧",
       2
     ],
     [
       "再见",
-      2
-    ],
-    [
-      "激活",
-      2
-    ],
-    [
-      "提瓦特",
       2
     ],
     [
@@ -116,18 +72,6 @@
       2
     ],
     [
-      "空月祝福",
-      2
-    ],
-    [
-      "点击",
-      2
-    ],
-    [
-      "获得",
-      2
-    ],
-    [
       "切换账号",
       2
     ],
@@ -136,58 +80,94 @@
       2
     ],
     [
-      "删除",
-      2
-    ],
-    [
-      "大厅",
-      2
-    ],
-    [
-      "返回",
-      2
-    ],
-    [
-      "尘歌壶",
-      2
-    ],
-    [
-      "角色选择",
-      1
-    ],
-    [
-      "自动",
-      1
-    ],
-    [
       "加速",
+      1
+    ],
+    [
+      "快速加工",
+      1
+    ],
+    [
+      "箱",
+      1
+    ],
+    [
+      "珍貴",
+      1
+    ],
+    [
+      "珍贵",
+      1
+    ],
+    [
+      "使用40个原粹树脂，获取2次产出",
+      1
+    ],
+    [
+      "下次",
+      1
+    ],
+    [
+      "接触",
+      1
+    ],
+    [
+      "双倍",
+      1
+    ],
+    [
+      "2倍产出",
+      1
+    ],
+    [
+      "2倍",
+      1
+    ],
+    [
+      "补充",
+      1
+    ],
+    [
+      "原粹",
+      1
+    ],
+    [
+      "树脂",
+      1
+    ],
+    [
+      "溢口",
+      1
+    ],
+    [
+      "校验完成",
+      1
+    ],
+    [
+      "校验失败",
+      1
+    ],
+    [
+      "路线启动",
+      1
+    ],
+    [
+      "全部路线结束",
+      1
+    ],
+    [
+      "世界权限",
+      1
+    ],
+    [
+      "能给我几支香吗",
       1
     ]
   ],
   "top_files": [
     [
       "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      18
-    ],
-    [
-      "repo/js/SwitchAccountMultipleMode/main.js",
-      14
-    ],
-    [
-      "repo/js/WeeklyThousandStarRealm/main.js",
-      11
-    ],
-    [
-      "repo/js/AutoPathingLoader-MultiUser/main.js",
-      9
-    ],
-    [
-      "repo/js/StarfieldRaimentCollection/main.js",
-      8
-    ],
-    [
-      "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
-      7
+      10
     ],
     [
       "repo/js/AutoPickLitter/main.js",
@@ -198,39 +178,23 @@
       7
     ],
     [
-      "repo/js/AIPC珍贵宝箱无限刷/main.js",
-      6
+      "repo/js/SwitchAccountMultipleMode/main.js",
+      7
     ],
     [
       "repo/js/使用历练点完成每日委托/main.js",
       6
     ],
     [
-      "repo/js/AutoStygianOnslaught/main.js",
-      5
-    ],
-    [
       "repo/js/DSTCG/main.js",
       5
     ],
     [
-      "repo/js/七圣召唤七日历练全自动/main.js",
+      "repo/js/WeeklyThousandStarRealm/main.js",
       5
     ],
     [
-      "repo/js/AEscoffier_chef/main.js",
-      4
-    ],
-    [
-      "repo/js/AutoLeyLineOutcrop/utils/findLeyLineOutcropByBook.js",
-      4
-    ],
-    [
-      "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
-      4
-    ],
-    [
-      "repo/js/AutoYuanQin/main.js",
+      "repo/js/AutoPathingLoader-MultiUser/main.js",
       4
     ],
     [
@@ -238,31 +202,31 @@
       4
     ],
     [
+      "repo/js/TeyvatScanner/main.js",
+      4
+    ],
+    [
+      "repo/js/七圣召唤七日历练全自动/main.js",
+      4
+    ],
+    [
       "repo/js/背包材料统计/lib/timeCostSystem.js",
       4
     ],
     [
+      "repo/js/AIPC珍贵宝箱无限刷/main.js",
+      3
+    ],
+    [
+      "repo/js/StarfieldRaimentCollection/main.js",
+      3
+    ],
+    [
       "repo/js/自动购买商品/main.js",
-      4
-    ],
-    [
-      "repo/js/AutoLeyLineOutcrop/main.js",
       3
     ],
     [
-      "repo/js/TeyvatScanner/main.js",
-      3
-    ],
-    [
-      "repo/js/尘歌壶一条龙/main.js",
-      3
-    ],
-    [
-      "repo/js/恢复默认键位设置/main.js",
-      3
-    ],
-    [
-      "repo/js/ActivitySwitchNotice/utils/campaignArea.js",
+      "repo/js/AEscoffier_chef/main.js",
       2
     ],
     [
@@ -270,7 +234,19 @@
       2
     ],
     [
-      "repo/js/AutoFishingTeyvat/main.js",
+      "repo/js/AutoFontaineLeyLine/main.js",
+      2
+    ],
+    [
+      "repo/js/AutoLeyLineOutcrop/main.js",
+      2
+    ],
+    [
+      "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
+      2
+    ],
+    [
+      "repo/js/AutoStygianOnslaught/main.js",
       2
     ],
     [
@@ -284,6 +260,30 @@
     [
       "repo/js/食材加工/main.js",
       2
+    ],
+    [
+      "repo/js/AutoFriendshipFight/main.js",
+      1
+    ],
+    [
+      "repo/js/AutoPermission/main.js",
+      1
+    ],
+    [
+      "repo/js/AutoYuanQin/main.js",
+      1
+    ],
+    [
+      "repo/js/JoinFriendsWorld/main.js",
+      1
+    ],
+    [
+      "repo/js/WeeklyBoss/utils.js",
+      1
+    ],
+    [
+      "repo/js/背包材料统计/main.js",
+      1
     ]
   ]
 }
