@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 LEYLINE = ROOT / "repo" / "js" / "AutoLeyLineOutcrop" / "utils" / "attemptReward.js"
+CRYSTALFLY = ROOT / "repo" / "js" / "CrystalflyTrap" / "main.js"
 
 
 def read(path: Path):
@@ -22,19 +23,11 @@ def write_like(path: Path, text: str, raw: bytes, bom: bool):
     path.write_bytes((codecs.BOM_UTF8 if bom else b"") + data)
 
 
-def replace_literal(text: str, old: str, new: str) -> str:
-    return text.replace(old, new)
-
-
 def patch_leyline(text: str) -> str:
-    # Remaining double-reward count is the only number in the dedicated OCR ROI.
     text = text.replace(
         'const match = texts[i].text.match(/2倍产出次数[:：]?(\\d+)/);',
         'const match = texts[i].text.match(/(\\d+)/);'
     )
-
-    # The Chinese classifier 个 is not part of PT-BR. The number plus the
-    # localized full resin name is enough and is more robust in every language.
     text = text.replace(
         'if ((text.includes("20") || text.includes("20个")) && text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) {',
         'if (text.includes("20") && text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) {'
@@ -52,7 +45,6 @@ def patch_leyline(text: str) -> str:
     return texts.some(t => t.text.includes(targetAmount.toString()) && t.text.includes(originalResin));'''
     text = text.replace(old_verify, new_verify)
 
-    # Full localized names supersede the Chinese-only partial-name fallbacks.
     text = text.replace(
         'genshin.textContainsLiteral(t.text, "浓缩树脂") : t.text.includes("浓缩树脂")) || t.text.includes("浓缩"))',
         'genshin.textContainsLiteral(t.text, "浓缩树脂") : t.text.includes("浓缩树脂")))'
@@ -65,43 +57,61 @@ def patch_leyline(text: str) -> str:
         'genshin.textContainsLiteral(t.text, "脆弱树脂") : t.text.includes("脆弱树脂")) || t.text.includes("脆弱"))',
         'genshin.textContainsLiteral(t.text, "脆弱树脂") : t.text.includes("脆弱树脂")))'
     )
-
-    # Primogem option needs only the visible count 3 plus the localized item name.
     text = text.replace(
         't.text.includes((genshin.getTextLiteral ? genshin.getTextLiteral("原石") : "原石")) && t.text.includes("3次")',
         't.text.includes((genshin.getTextLiteral ? genshin.getTextLiteral("原石") : "原石")) && t.text.includes("3")'
     )
-
-    # Plain local variable equality is not recognized by the generic migration tool.
     text = text.replace(
         'if (text === "使用") {',
         'if (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(text, "使用") : text === "使用") {'
     )
 
-    # Remove classifier-only duplicates after TextMap wrappers were generated.
-    text = re.sub(
-        r'\(t\.text\.includes\("20"\)\s*\|\|\s*\(genshin\.textContainsLiteral \? genshin\.textContainsLiteral\(t\.text, "20个"\) : t\.text\.includes\("20个"\)\)\)',
-        't.text.includes("20")', text
-    )
-    text = re.sub(
-        r'\(t\.text\.includes\("40"\)\s*\|\|\s*\(genshin\.textContainsLiteral \? genshin\.textContainsLiteral\(t\.text, "40个"\) : t\.text\.includes\("40个"\)\)\)',
-        't.text.includes("40")', text
-    )
-    text = re.sub(
-        r'\(text\.includes\("20"\)\s*\|\|\s*\(genshin\.textContainsLiteral \? genshin\.textContainsLiteral\(text, "20个"\) : text\.includes\("20个"\)\)\)',
-        'text.includes("20")', text
-    )
-    text = re.sub(
-        r'\(text\.includes\("40"\)\s*\|\|\s*\(genshin\.textContainsLiteral \? genshin\.textContainsLiteral\(text, "40个"\) : text\.includes\("40个"\)\)\)',
-        'text.includes("40")', text
-    )
+    for subject in ("t.text", "text"):
+        text = re.sub(
+            rf'\({re.escape(subject)}\.includes\("20"\)\s*\|\|\s*\(genshin\.textContainsLiteral \? genshin\.textContainsLiteral\({re.escape(subject)}, "20个"\) : {re.escape(subject)}\.includes\("20个"\)\)\)',
+            f'{subject}.includes("20")', text
+        )
+        text = re.sub(
+            rf'\({re.escape(subject)}\.includes\("40"\)\s*\|\|\s*\(genshin\.textContainsLiteral \? genshin\.textContainsLiteral\({re.escape(subject)}, "40个"\) : {re.escape(subject)}\.includes\("40个"\)\)\)',
+            f'{subject}.includes("40")', text
+        )
+    return text
 
+
+def patch_crystalfly(text: str) -> str:
+    # The script already knows the gadget-tab coordinate. Clicking it is safer
+    # than OCR-matching the Chinese-only backpack title fragment 小道.
+    old_tab = '''            let backpackTitle = captureGameRegion();
+            let resList = backpackTitle.findMulti(RecognitionObject.ocr(130, 0, 200, 50));
+            backpackTitle.dispose();
+            for (let i = 0; i < resList.count; i++) {
+                let res = resList[i];
+                if (!res.text.includes("小道")) {
+                    log.info("点击小道具栏");
+                    click(1060, 40);
+                    await sleep(1000);
+                }
+            }'''
+    new_tab = '''            // Open the gadget tab directly; this avoids a language-specific backpack title OCR check.
+            log.info("点击小道具栏");
+            click(1060, 40);
+            await sleep(1000);'''
+    text = text.replace(old_tab, new_tab)
+
+    # After generic literal migration, the same one-line guard still contains
+    # the three canonical Chinese fallback strings. Crystal + device is unique
+    # enough here; the middle fragment 诱捕 is unnecessary.
+    guard = re.compile(r'(?m)^\s*if \([^\n]*"晶蝶"[^\n]*"诱捕"[^\n]*"装置"[^\n]*\) \{$')
+    replacement = '''                const isCrystalfly = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "晶蝶") : res.text.includes("晶蝶");
+                const isDevice = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "装置") : res.text.includes("装置");
+                if (!isCrystalfly || !isDevice) {'''
+    text = guard.sub(replacement, text)
     return text
 
 
 def main() -> int:
     changed = []
-    for path, patcher in ((LEYLINE, patch_leyline),):
+    for path, patcher in ((LEYLINE, patch_leyline), (CRYSTALFLY, patch_crystalfly)):
         text, raw, bom = read(path)
         updated = patcher(text)
         if updated != text:
