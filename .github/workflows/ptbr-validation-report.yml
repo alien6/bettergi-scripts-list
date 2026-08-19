@@ -19,9 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout triggering commit
+        uses: actions/checkout@v4
         with:
-          ref: feature/pt-br-support
           fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
@@ -49,6 +49,9 @@ jobs:
 
           echo '=== PYTHON SYNTAX ===' | tee -a reports/ptbr-script-validation-log.txt
           python -m py_compile tools/ptbr_migrate.py tools/ptbr_cleanup.py tools/ptbr_strict_scan.py tools/ptbr_textmap_resolve.py tools/ptbr_apply_textmap.py tools/ptbr_manual_fixes.py tools/ptbr_targeted_regression.py 2>&1 | tee -a reports/ptbr-script-validation-log.txt || status=1
+
+          echo '=== PYTHON UNIT TESTS ===' | tee -a reports/ptbr-script-validation-log.txt
+          python -m unittest discover -s tools -p 'test_ptbr_*.py' 2>&1 | tee -a reports/ptbr-script-validation-log.txt || status=1
 
           echo '=== STRICT SCAN ===' | tee -a reports/ptbr-script-validation-log.txt
           python tools/ptbr_strict_scan.py 2>&1 | tee -a reports/ptbr-script-validation-log.txt || status=1
