@@ -73,6 +73,30 @@ class StrictScanTests(unittest.TestCase):
         finally:
             ptbr_strict_scan.ROOT = old_root
 
+    def test_custom_tcg_ocr_helpers_are_audited(self):
+        old_root = ptbr_strict_scan.ROOT
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                path = root / "repo" / "js" / "fixture.js"
+                path.parent.mkdir(parents=True)
+                path.write_text(
+                    'await waitForTextAppear("出战角色", [1766, 850, 118, 43]);\n'
+                    'await recognizeTextAndClick("更改牌组外观", [1592, 186, 139, 35]);\n',
+                    encoding="utf-8",
+                )
+                ptbr_strict_scan.ROOT = root
+
+                blockers, covered = ptbr_strict_scan.scan(path, set())
+
+                self.assertEqual(
+                    ["出战角色", "更改牌组外观"],
+                    [item["literal"] for item in blockers],
+                )
+                self.assertEqual([], covered)
+        finally:
+            ptbr_strict_scan.ROOT = old_root
+
 
 if __name__ == "__main__":
     unittest.main()
