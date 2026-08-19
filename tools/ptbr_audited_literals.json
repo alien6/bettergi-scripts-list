@@ -91,6 +91,22 @@
     "pt": ["Fila de Forjamento", "Fila de forjamento"],
     "evidence": "Genshin TextMap exact paired labels: 锻造队列({0}/{1}) -> Fila de Forjamento {0}/{1}; 锻造队列已满 -> Fila de forjamento cheia"
   },
+  "世界权限": {
+    "pt": ["Permissão do mundo"],
+    "evidence": "Genshin TextMap world permission rows begin with Permissão do mundo"
+  },
+  "倒计时": {
+    "pt": ["Contagem regressiva", "Contagem Regressiva", "Atualiza em", "Contagem para Atualização"],
+    "evidence": "Genshin TextMap countdown/reset rows use Contagem regressiva, Atualiza em and Contagem para Atualização"
+  },
+  "有什么卖的": {
+    "pt": ["O que você está vendendo"],
+    "evidence": "Exact Genshin TextMap dialogue: 有什么卖的？ -> O que você está vendendo?"
+  },
+  "可以卖一些": {
+    "pt": ["Você pode me vender algumas"],
+    "evidence": "Genshin TextMap paired dialogue: 可以卖一些猎物给我吗？ -> Você pode me vender algumas das suas caças?"
+  },
   "箱": {
     "pt": ["Baú"],
     "evidence": "Genshin PT-BR chest UI uses Baú"
