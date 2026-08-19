@@ -115,6 +115,10 @@
     "pt": ["outros jogadores", "Outros jogadores", "outro jogador", "Outro jogador"],
     "evidence": "Genshin TextMap UID/world rows use outros jogadores and outro jogador in the same search/join context"
   },
+  "退出至登录界面": {
+    "pt": ["Sair para a tela de login"],
+    "evidence": "PT-BR Genshin 5.5 exit menu terminology: Sair para a tela de login"
+  },
   "箱": {
     "pt": ["Baú"],
     "evidence": "Genshin PT-BR chest UI uses Baú"
