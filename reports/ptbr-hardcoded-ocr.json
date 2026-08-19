@@ -1,7 +1,11 @@
 {
-  "semantic_replacements": {},
-  "files_changed": [],
-  "remaining_functional_cjk_count": 770,
+  "semantic_replacements": {
+    "skip": 1
+  },
+  "files_changed": [
+    "repo/js/FullyAutoAndSemiAutoTools/main.js"
+  ],
+  "remaining_functional_cjk_count": 767,
   "remaining_known_semantic_count": 0,
   "remaining_functional_literal_frequency": {
     "是": 14,
@@ -27,7 +31,10 @@
     "夜晚": 4,
     "进入他人世界": 4,
     "模板匹配": 4,
+    "挂起来吧": 4,
+    "再见": 4,
     "元素战技": 4,
+    "切换账号": 4,
     "OCR启动": 4,
     "收尾额外B": 3,
     "锅": 3,
@@ -40,8 +47,6 @@
     "蕈兽": 3,
     "启用仅指定怪物模式": 3,
     "之花": 3,
-    "20个": 3,
-    "40个": 3,
     "空参数": 3,
     "领队": 3,
     "申请加入": 3,
@@ -64,6 +69,7 @@
     "按键": 2,
     "按鍵": 2,
     "诺艾尔": 2,
+    "征讨领域": 2,
     "自动拾取": 2,
     "识别失败": 2,
     "不运行": 2,
@@ -105,14 +111,11 @@
     "电气水晶充能": 2,
     "手动加世界": 2,
     "自动加世界": 2,
-    "挂起来吧": 2,
-    "再见": 2,
     "刷新剧情列表": 2,
     "单人挑战": 2,
     "提瓦特": 2,
     "地方特产": 2,
     "晶蝶": 2,
-    "诱捕": 2,
     "装置": 2,
     "元素": 2,
     "点": 2,
@@ -127,10 +130,12 @@
     "点击": 2,
     "下拉列表": 2,
     "账号+密码+OCR": 2,
-    "切换账号": 2,
     "退出并": 2,
     "不切换服务器": 2,
     "主": 2,
+    "删除": 2,
+    "大厅": 2,
+    "返回": 2,
     "兼容模式": 2,
     "中": 2,
     "只要大瓶": 2,
@@ -172,7 +177,6 @@
     "只跳过与精英怪战斗的路线": 1,
     "小": 1,
     "分": 1,
-    "征讨领域": 1,
     "自定义通知": 1,
     "自动拾取（智能）": 1,
     "强制拾取": 1,
@@ -277,14 +281,10 @@
     "打倒所有敌人": 1,
     "作为领队": 1,
     "作为队员": 1,
-    "校验完成": 1,
-    "校验失败": 1,
     "世界": 1,
     "多人游戏申请": 1,
     "多人游戏": 1,
     "全字匹配": 1,
-    "路线启动": 1,
-    "全部路线结束": 1,
     "基于固定位置": 1,
     "世界权限": 1,
     "上次取水时间:": 1,
@@ -344,7 +344,6 @@
     "模板匹配1": 1,
     "模板匹配2": 1,
     "纯运算": 1,
-    "小道": 1,
     "我方支援牌：|": 1,
     "敌方支援牌：|": 1,
     "我方召唤牌：|": 1,
@@ -421,10 +420,7 @@
     "继续": 1,
     "置顶": 1,
     "管理关卡": 1,
-    "删除": 1,
     "收藏": 1,
-    "大厅": 1,
-    "返回": 1,
     "固定数量模式": 1,
     "剩余数量模式": 1,
     "括号": 1,
@@ -751,7 +747,7 @@
       "literals": [
         "角色选择"
       ],
-      "source": "if (ocrResult && ocrResult.text.includes(\"角色选择\")) break;"
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"角色选择\") : ocrResult.text.includes(\"角色选择\"))) break;"
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
@@ -807,7 +803,7 @@
       "literals": [
         "自动"
       ],
-      "source": "if (!(checkOcr.text.includes(\"自动\"))) { // 未解锁自动烹饪"
+      "source": "if (!((genshin.textContainsLiteral ? genshin.textContainsLiteral(checkOcr.text, \"自动\") : checkOcr.text.includes(\"自动\")))) { // 未解锁自动烹饪"
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
@@ -871,7 +867,7 @@
       "literals": [
         "按键"
       ],
-      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || res.text.includes(\"按键\") || res.text.includes(\"按鍵\")) {"
+      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"按键\") : res.text.includes(\"按键\")) || res.text.includes(\"按鍵\")) {"
     },
     {
       "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
@@ -879,7 +875,7 @@
       "literals": [
         "按鍵"
       ],
-      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || res.text.includes(\"按键\") || res.text.includes(\"按鍵\")) {"
+      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"按键\") : res.text.includes(\"按键\")) || res.text.includes(\"按鍵\")) {"
     },
     {
       "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
@@ -887,7 +883,7 @@
       "literals": [
         "箱"
       ],
-      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
+      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"箱\") : res.text.includes(\"箱\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍貴\") : res.text.includes(\"珍貴\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍贵\") : res.text.includes(\"珍贵\"))) {"
     },
     {
       "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
@@ -895,7 +891,7 @@
       "literals": [
         "珍貴"
       ],
-      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
+      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"箱\") : res.text.includes(\"箱\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍貴\") : res.text.includes(\"珍貴\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍贵\") : res.text.includes(\"珍贵\"))) {"
     },
     {
       "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
@@ -903,7 +899,7 @@
       "literals": [
         "珍贵"
       ],
-      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
+      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"箱\") : res.text.includes(\"箱\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍貴\") : res.text.includes(\"珍貴\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍贵\") : res.text.includes(\"珍贵\"))) {"
     },
     {
       "path": "repo/js/AbundantOre/main.js",
@@ -991,7 +987,15 @@
       "literals": [
         "征讨领域"
       ],
-      "source": "const find = await findTextAndClick(\"征讨领域\");"
+      "source": "const find = await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"征讨领域\") : \"征讨领域\"));"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/campaignArea.js",
+      "line": 151,
+      "literals": [
+        "征讨领域"
+      ],
+      "source": "const find = await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"征讨领域\") : \"征讨领域\"));"
     },
     {
       "path": "repo/js/ActivitySwitchNotice/utils/ws.js",
@@ -1127,7 +1131,7 @@
       "literals": [
         "分钟"
       ],
-      "source": "if (ocrResult[j].text.endsWith(\"分钟\") || ocrResult[j].text.endsWith(\"秒\")) {"
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"分钟\") : ocrResult[j].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"秒\") : ocrResult[j].text.endsWith(\"秒\"))) {"
     },
     {
       "path": "repo/js/AotoTeyvatFoodOneDragon/main.js",
@@ -1135,7 +1139,7 @@
       "literals": [
         "秒"
       ],
-      "source": "if (ocrResult[j].text.endsWith(\"分钟\") || ocrResult[j].text.endsWith(\"秒\")) {"
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"分钟\") : ocrResult[j].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"秒\") : ocrResult[j].text.endsWith(\"秒\"))) {"
     },
     {
       "path": "repo/js/AotoTeyvatFoodOneDragon/main.js",
@@ -1791,7 +1795,7 @@
       "literals": [
         "追踪"
       ],
-      "source": "if (trackingResult === \"追踪\") {"
+      "source": "if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(trackingResult, \"追踪\") : trackingResult === \"追踪\")) {"
     },
     {
       "path": "repo/js/AutoCommission/lib/steps/switch-team.js",
@@ -2103,7 +2107,7 @@
       "literals": [
         "复苏"
       ],
-      "source": "} else if (msg.includes(\"复苏\")) {"
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(msg, \"复苏\") : msg.includes(\"复苏\"))) {"
     },
     {
       "path": "repo/js/AutoDomainCustomizable/main.js",
@@ -2295,7 +2299,7 @@
       "literals": [
         "装备"
       ],
-      "source": "if (ocrResult && ocrResult.text.includes(\"装备\")) {"
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"装备\") : ocrResult.text.includes(\"装备\"))) {"
     },
     {
       "path": "repo/js/AutoFishingTeyvat/main.js",
@@ -2367,7 +2371,7 @@
       "literals": [
         "查看资料"
       ],
-      "source": "if (ocrResult && ocrResult.text.includes(\"查看资料\")) {"
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"查看资料\") : ocrResult.text.includes(\"查看资料\"))) {"
     },
     {
       "path": "repo/js/AutoFishingTeyvat/main.js",
@@ -2471,7 +2475,7 @@
       "literals": [
         "张牙"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -2479,7 +2483,7 @@
       "literals": [
         "舞爪"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -2487,7 +2491,7 @@
       "literals": [
         "恶党"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -2495,7 +2499,7 @@
       "literals": [
         "打倒"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -2503,7 +2507,7 @@
       "literals": [
         "所有"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -2511,7 +2515,7 @@
       "literals": [
         "鳄鱼"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -2823,7 +2827,7 @@
       "literals": [
         "接触"
       ],
-      "source": "if (ocrResults[i].text.includes(\"接触\") ||"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, \"接触\") : ocrResults[i].text.includes(\"接触\")) ||"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/main.js",
@@ -2831,7 +2835,7 @@
       "literals": [
         "地脉"
       ],
-      "source": "ocrResults[i].text.includes(\"地脉\") ||"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, \"地脉\") : ocrResults[i].text.includes(\"地脉\")) ||"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/main.js",
@@ -2839,7 +2843,7 @@
       "literals": [
         "之花"
       ],
-      "source": "ocrResults[i].text.includes(\"之花\")) {"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, \"之花\") : ocrResults[i].text.includes(\"之花\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2847,7 +2851,7 @@
       "literals": [
         "双倍"
       ],
-      "source": "t.text.includes(\"双倍\") ||"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"双倍\") : t.text.includes(\"双倍\")) ||"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2855,7 +2859,7 @@
       "literals": [
         "2倍产出"
       ],
-      "source": "t.text.includes(\"2倍产出\") ||"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"2倍产出\") : t.text.includes(\"2倍产出\")) ||"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2863,7 +2867,7 @@
       "literals": [
         "2倍"
       ],
-      "source": "t.text.includes(\"2倍\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"2倍\") : t.text.includes(\"2倍\"))"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2871,7 +2875,7 @@
       "literals": [
         "激活地脉之花"
       ],
-      "source": "if (text.includes(\"激活地脉之花\") ||"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(text, \"激活地脉之花\") : text.includes(\"激活地脉之花\")) ||"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2879,7 +2883,7 @@
       "literals": [
         "选择激活方式"
       ],
-      "source": "text.includes(\"选择激活方式\")) {"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(text, \"选择激活方式\") : text.includes(\"选择激活方式\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2887,7 +2891,7 @@
       "literals": [
         "补充"
       ],
-      "source": "const hasSupplement = textList.some(t => t.text.includes(\"补充\"));"
+      "source": "const hasSupplement = textList.some(t => (genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"补充\") : t.text.includes(\"补充\")));"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2895,23 +2899,7 @@
       "literals": [
         "使用"
       ],
-      "source": "if (text === \"使用\") {"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 329,
-      "literals": [
-        "20个"
-      ],
-      "source": "(t.text.includes(\"20个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 334,
-      "literals": [
-        "40个"
-      ],
-      "source": "(t.text.includes(\"40个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
+      "source": "if (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(text, \"使用\") : text === \"使用\") {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2919,7 +2907,7 @@
       "literals": [
         "浓缩树脂"
       ],
-      "source": "t.text.includes(\"浓缩树脂\") || t.text.includes(\"浓缩\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"浓缩树脂\") : t.text.includes(\"浓缩树脂\")) || t.text.includes(\"浓缩\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2927,7 +2915,7 @@
       "literals": [
         "浓缩"
       ],
-      "source": "t.text.includes(\"浓缩树脂\") || t.text.includes(\"浓缩\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"浓缩树脂\") : t.text.includes(\"浓缩树脂\")) || t.text.includes(\"浓缩\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2935,7 +2923,7 @@
       "literals": [
         "须臾树脂"
       ],
-      "source": "t.text.includes(\"须臾树脂\") || t.text.includes(\"须臾\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"须臾树脂\") : t.text.includes(\"须臾树脂\")) || t.text.includes(\"须臾\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2943,7 +2931,7 @@
       "literals": [
         "须臾"
       ],
-      "source": "t.text.includes(\"须臾树脂\") || t.text.includes(\"须臾\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"须臾树脂\") : t.text.includes(\"须臾树脂\")) || t.text.includes(\"须臾\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2951,7 +2939,7 @@
       "literals": [
         "脆弱树脂"
       ],
-      "source": "t.text.includes(\"脆弱树脂\") || t.text.includes(\"脆弱\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"脆弱树脂\") : t.text.includes(\"脆弱树脂\")) || t.text.includes(\"脆弱\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2959,7 +2947,7 @@
       "literals": [
         "脆弱"
       ],
-      "source": "t.text.includes(\"脆弱树脂\") || t.text.includes(\"脆弱\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"脆弱树脂\") : t.text.includes(\"脆弱树脂\")) || t.text.includes(\"脆弱\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2967,7 +2955,7 @@
       "literals": [
         "原石"
       ],
-      "source": "t.text.includes(\"原石\") && t.text.includes(\"3次\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"原石\") : t.text.includes(\"原石\")) && t.text.includes(\"3次\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -2975,39 +2963,7 @@
       "literals": [
         "3次"
       ],
-      "source": "t.text.includes(\"原石\") && t.text.includes(\"3次\")"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 377,
-      "literals": [
-        "20个"
-      ],
-      "source": "(t.text.includes(\"20个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 381,
-      "literals": [
-        "40个"
-      ],
-      "source": "(t.text.includes(\"40个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 730,
-      "literals": [
-        "20个"
-      ],
-      "source": "if ((text.includes(\"20\") || text.includes(\"20个\")) && text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\"))) {"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 733,
-      "literals": [
-        "40个"
-      ],
-      "source": "if ((text.includes(\"40\") || text.includes(\"40个\")) && text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\"))) {"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"原石\") : t.text.includes(\"原石\")) && t.text.includes(\"3次\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -3063,7 +3019,7 @@
       "literals": [
         "停止"
       ],
-      "source": "if (res.text.includes(\"停止\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"停止\") : res.text.includes(\"停止\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/findLeyLineOutcropByBook.js",
@@ -3071,7 +3027,7 @@
       "literals": [
         "停止"
       ],
-      "source": "if (res.text.includes(\"停止\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"停止\") : res.text.includes(\"停止\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/findLeyLineOutcropByBook.js",
@@ -3079,7 +3035,7 @@
       "literals": [
         "地脉"
       ],
-      "source": "} else if (res.text.includes(\"地脉\") || res.text.includes(\"衍出\")) {"
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"地脉\") : res.text.includes(\"地脉\")) || res.text.includes(\"衍出\")) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/findLeyLineOutcropByBook.js",
@@ -3087,7 +3043,7 @@
       "literals": [
         "衍出"
       ],
-      "source": "} else if (res.text.includes(\"地脉\") || res.text.includes(\"衍出\")) {"
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"地脉\") : res.text.includes(\"地脉\")) || res.text.includes(\"衍出\")) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
@@ -3095,7 +3051,7 @@
       "literals": [
         "之花"
       ],
-      "source": "if (result2.text.includes(\"之花\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result2.text, \"之花\") : result2.text.includes(\"之花\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
@@ -3103,7 +3059,7 @@
       "literals": [
         "溢口"
       ],
-      "source": "if (result2.text.includes(\"溢口\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result2.text, \"溢口\") : result2.text.includes(\"溢口\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
@@ -3111,7 +3067,7 @@
       "literals": [
         "打倒所有敌人"
       ],
-      "source": "} else if (result.text.includes(\"打倒所有敌人\")) {"
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result.text, \"打倒所有敌人\") : result.text.includes(\"打倒所有敌人\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
@@ -3119,7 +3075,7 @@
       "literals": [
         "复苏"
       ],
-      "source": "if (res.text.includes(\"复苏\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"复苏\") : res.text.includes(\"复苏\"))) {"
     },
     {
       "path": "repo/js/AutoMonday/main.js",
@@ -3251,27 +3207,11 @@
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 440,
-      "literals": [
-        "校验完成"
-      ],
-      "source": "if (ocrList[i].text.includes(\"校验完成\")) {"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 443,
-      "literals": [
-        "校验失败"
-      ],
-      "source": "} else if (ocrList[i].text.includes(\"校验失败\")) {"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
       "line": 528,
       "literals": [
         "世界"
       ],
-      "source": "if (ocr.isExist() && ocr.text === \"世界\") {"
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"世界\") : ocr.text === \"世界\")) {"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -3279,7 +3219,7 @@
       "literals": [
         "多人游戏申请"
       ],
-      "source": "if (!(ocrTitle.isExist() && ocrTitle.text === \"多人游戏申请\")) {"
+      "source": "if (!(ocrTitle.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrTitle.text, \"多人游戏申请\") : ocrTitle.text === \"多人游戏申请\"))) {"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -3287,7 +3227,7 @@
       "literals": [
         "多人游戏"
       ],
-      "source": "if (ocrMulti.isExist() && ocrMulti.text === \"多人游戏\") {"
+      "source": "if (ocrMulti.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrMulti.text, \"多人游戏\") : ocrMulti.text === \"多人游戏\")) {"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -3295,7 +3235,7 @@
       "literals": [
         "申请加入"
       ],
-      "source": "if (ocrJoin.isExist() && ocrJoin.text === \"申请加入\") {"
+      "source": "if (ocrJoin.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrJoin.text, \"申请加入\") : ocrJoin.text === \"申请加入\")) {"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -3303,7 +3243,7 @@
       "literals": [
         "申请加入"
       ],
-      "source": "if (!(ocrJoin.isExist() && ocrJoin.text === \"申请加入\")) return true;"
+      "source": "if (!(ocrJoin.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrJoin.text, \"申请加入\") : ocrJoin.text === \"申请加入\"))) return true;"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -3336,22 +3276,6 @@
         "全字匹配"
       ],
       "source": "let requestFeedback = await dealPlayerRequest(settingDic[\"match_detail\"], 60000, settingDic[\"match_mode\"] === \"全字匹配\" ? \"exact\" : \"feature\");"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 924,
-      "literals": [
-        "路线启动"
-      ],
-      "source": "if (ocr[l].text === \"路线启动\") { // 检测队长的消息"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 961,
-      "literals": [
-        "全部路线结束"
-      ],
-      "source": "if (ocr[l].text.includes(\"全部路线结束\")) { // 检测队长的消息"
     },
     {
       "path": "repo/js/AutoPermission/main.js",
@@ -3511,7 +3435,15 @@
       "literals": [
         "挂起来吧"
       ],
-      "source": "await genshin.chooseTalkOption(\"挂起来吧\");"
+      "source": "await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral(\"挂起来吧\") : \"挂起来吧\"));"
+    },
+    {
+      "path": "repo/js/AutoPickLitter/main.js",
+      "line": 1035,
+      "literals": [
+        "挂起来吧"
+      ],
+      "source": "await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral(\"挂起来吧\") : \"挂起来吧\"));"
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
@@ -3519,7 +3451,15 @@
       "literals": [
         "挂起来吧"
       ],
-      "source": "await genshin.chooseTalkOption(\"挂起来吧\");"
+      "source": "await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral(\"挂起来吧\") : \"挂起来吧\"));"
+    },
+    {
+      "path": "repo/js/AutoPickLitter/main.js",
+      "line": 1051,
+      "literals": [
+        "挂起来吧"
+      ],
+      "source": "await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral(\"挂起来吧\") : \"挂起来吧\"));"
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
@@ -3527,7 +3467,15 @@
       "literals": [
         "再见"
       ],
-      "source": "await genshin.chooseTalkOption(\"再见\");"
+      "source": "await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral(\"再见\") : \"再见\"));"
+    },
+    {
+      "path": "repo/js/AutoPickLitter/main.js",
+      "line": 1077,
+      "literals": [
+        "再见"
+      ],
+      "source": "await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral(\"再见\") : \"再见\"));"
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
@@ -3535,7 +3483,15 @@
       "literals": [
         "再见"
       ],
-      "source": "await genshin.chooseTalkOption(\"再见\");"
+      "source": "await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral(\"再见\") : \"再见\"));"
+    },
+    {
+      "path": "repo/js/AutoPickLitter/main.js",
+      "line": 1139,
+      "literals": [
+        "再见"
+      ],
+      "source": "await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral(\"再见\") : \"再见\"));"
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
@@ -3663,7 +3619,7 @@
       "literals": [
         "合成"
       ],
-      "source": "if (resList[i].text.includes(\"合成\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"合成\") : resList[i].text.includes(\"合成\"))) {"
     },
     {
       "path": "repo/js/AutoStoryLoader/main.js",
@@ -3679,7 +3635,7 @@
       "literals": [
         "追踪"
       ],
-      "source": "if (trackingResult === \"追踪\") {"
+      "source": "if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(trackingResult, \"追踪\") : trackingResult === \"追踪\")) {"
     },
     {
       "path": "repo/js/AutoStoryLoader/main.js",
@@ -3719,7 +3675,7 @@
       "literals": [
         "之花"
       ],
-      "source": "if (rewardResult.text.includes(\"之花\") || rewardResult.text.includes(\"激活\")) {"
+      "source": "if (rewardResult.text.includes(\"之花\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(rewardResult.text, \"激活\") : rewardResult.text.includes(\"激活\"))) {"
     },
     {
       "path": "repo/js/AutoStygianOnslaught/main.js",
@@ -3727,7 +3683,7 @@
       "literals": [
         "激活"
       ],
-      "source": "if (rewardResult.text.includes(\"之花\") || rewardResult.text.includes(\"激活\")) {"
+      "source": "if (rewardResult.text.includes(\"之花\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(rewardResult.text, \"激活\") : rewardResult.text.includes(\"激活\"))) {"
     },
     {
       "path": "repo/js/AutoStygianOnslaught/main.js",
@@ -3743,7 +3699,7 @@
       "literals": [
         "单人挑战"
       ],
-      "source": "if (_resList[_ri].text === \"单人挑战\") {"
+      "source": "if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(_resList[_ri].text, \"单人挑战\") : _resList[_ri].text === \"单人挑战\")) {"
     },
     {
       "path": "repo/js/AutoStygianOnslaught/main.js",
@@ -3839,7 +3795,7 @@
       "literals": [
         "提瓦特"
       ],
-      "source": "if (ocrResult_btn && ocrResult_btn.text.includes(\"提瓦特\")) { // 千星奇域"
+      "source": "if (ocrResult_btn && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult_btn.text, \"提瓦特\") : ocrResult_btn.text.includes(\"提瓦特\"))) { // 千星奇域"
     },
     {
       "path": "repo/js/AutoYuanQin/main.js",
@@ -3847,7 +3803,7 @@
       "literals": [
         "装备"
       ],
-      "source": "if (ocrText && ocrText.text.includes(\"装备\")) {"
+      "source": "if (ocrText && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrText.text, \"装备\") : ocrText.text.includes(\"装备\"))) {"
     },
     {
       "path": "repo/js/AutoYuanQin/main.js",
@@ -3855,7 +3811,7 @@
       "literals": [
         "替换"
       ],
-      "source": "if (ocrText && ocrText.text.includes(\"替换\")) {"
+      "source": "if (ocrText && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrText.text, \"替换\") : ocrText.text.includes(\"替换\"))) {"
     },
     {
       "path": "repo/js/AutoYuanQin/main.js",
@@ -4043,59 +3999,35 @@
     },
     {
       "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 48,
-      "literals": [
-        "小道"
-      ],
-      "source": "if (!res.text.includes(\"小道\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 74,
+      "line": 67,
       "literals": [
         "晶蝶"
       ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
+      "source": "const isCrystalfly = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"晶蝶\") : res.text.includes(\"晶蝶\");"
     },
     {
       "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 74,
-      "literals": [
-        "诱捕"
-      ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 74,
+      "line": 68,
       "literals": [
         "装置"
       ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
+      "source": "const isDevice = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"装置\") : res.text.includes(\"装置\");"
     },
     {
       "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 137,
+      "line": 132,
       "literals": [
         "晶蝶"
       ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
+      "source": "const isCrystalfly = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"晶蝶\") : res.text.includes(\"晶蝶\");"
     },
     {
       "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 137,
-      "literals": [
-        "诱捕"
-      ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 137,
+      "line": 133,
       "literals": [
         "装置"
       ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
+      "source": "const isDevice = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"装置\") : res.text.includes(\"装置\");"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -4383,7 +4315,7 @@
       "literals": [
         "申请造访"
       ],
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
     },
     {
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
@@ -4391,7 +4323,7 @@
       "literals": [
         "申請造訪"
       ],
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
     },
     {
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
@@ -4399,7 +4331,7 @@
       "literals": [
         "委託"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
@@ -4407,7 +4339,7 @@
       "literals": [
         "委"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/ExitGameMultipleMode/main.js",
@@ -4599,7 +4531,7 @@
       "literals": [
         "申请加入"
       ],
-      "source": "else if (joinOrAddText === '申请加入') {"
+      "source": "else if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(joinOrAddText, \"申请加入\") : joinOrAddText === \"申请加入\")) {"
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
@@ -4751,7 +4683,7 @@
       "literals": [
         "开始挑战"
       ],
-      "source": "const stage_enter = stage_enter_ocr && stage_enter_ocr.text.includes(\"开始挑战\");"
+      "source": "const stage_enter = stage_enter_ocr && (genshin.textContainsLiteral ? genshin.textContainsLiteral(stage_enter_ocr.text, \"开始挑战\") : stage_enter_ocr.text.includes(\"开始挑战\"));"
     },
     {
       "path": "repo/js/StarfieldRaimentCollection/main.js",
@@ -4759,7 +4691,7 @@
       "literals": [
         "提瓦特"
       ],
-      "source": "if (ocrResult_btn && ocrResult_btn.text.includes(\"提瓦特\")) {"
+      "source": "if (ocrResult_btn && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult_btn.text, \"提瓦特\") : ocrResult_btn.text.includes(\"提瓦特\"))) {"
     },
     {
       "path": "repo/js/StarfieldRaimentCollection/main.js",
@@ -4775,7 +4707,7 @@
       "literals": [
         "单人挑战"
       ],
-      "source": "if (ocrResult[i].text.includes((genshin.getText ? genshin.getText(\"start_game\") : \"开始游戏\")) || ocrResult[i].text.includes(\"单人挑战\")) {"
+      "source": "if (ocrResult[i].text.includes((genshin.getText ? genshin.getText(\"start_game\") : \"开始游戏\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult[i].text, \"单人挑战\") : ocrResult[i].text.includes(\"单人挑战\"))) {"
     },
     {
       "path": "repo/js/StarfieldRaimentCollection/main.js",
@@ -4791,7 +4723,7 @@
       "literals": [
         "保存配置"
       ],
-      "source": "if (ocrResult && ocrResult.text.includes(\"保存配置\")) {"
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"保存配置\") : ocrResult.text.includes(\"保存配置\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -4799,7 +4731,7 @@
       "literals": [
         "点击领取"
       ],
-      "source": "if (res.text.includes(\"点击领取\") || res.text.includes(\"空月祝福\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"点击领取\") : res.text.includes(\"点击领取\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"空月祝福\") : res.text.includes(\"空月祝福\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -4807,7 +4739,7 @@
       "literals": [
         "空月祝福"
       ],
-      "source": "if (res.text.includes(\"点击领取\") || res.text.includes(\"空月祝福\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"点击领取\") : res.text.includes(\"点击领取\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"空月祝福\") : res.text.includes(\"空月祝福\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -4815,7 +4747,7 @@
       "literals": [
         "点击"
       ],
-      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || res.text.includes(\"获得\")) {"
+      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"获得\") : res.text.includes(\"获得\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -4823,7 +4755,7 @@
       "literals": [
         "空白"
       ],
-      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || res.text.includes(\"获得\")) {"
+      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"获得\") : res.text.includes(\"获得\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -4831,7 +4763,7 @@
       "literals": [
         "获得"
       ],
-      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || res.text.includes(\"获得\")) {"
+      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"获得\") : res.text.includes(\"获得\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -4903,7 +4835,15 @@
       "literals": [
         "切换账号"
       ],
-      "source": "await waitForOcrMatch(\"切换账号\");"
+      "source": "await waitForOcrMatch((genshin.getTextLiteral ? genshin.getTextLiteral(\"切换账号\") : \"切换账号\"));"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 653,
+      "literals": [
+        "切换账号"
+      ],
+      "source": "await waitForOcrMatch((genshin.getTextLiteral ? genshin.getTextLiteral(\"切换账号\") : \"切换账号\"));"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -4927,7 +4867,15 @@
       "literals": [
         "切换账号"
       ],
-      "source": "await waitForOcrMatch(\"切换账号\");"
+      "source": "await waitForOcrMatch((genshin.getTextLiteral ? genshin.getTextLiteral(\"切换账号\") : \"切换账号\"));"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 891,
+      "literals": [
+        "切换账号"
+      ],
+      "source": "await waitForOcrMatch((genshin.getTextLiteral ? genshin.getTextLiteral(\"切换账号\") : \"切换账号\"));"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -5127,7 +5075,15 @@
       "literals": [
         "删除"
       ],
-      "source": "await findTextAndClick(\"删除\", 960, 980, 960, 100, 50, 100);"
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"删除\") : \"删除\"), 960, 980, 960, 100, 50, 100);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 215,
+      "literals": [
+        "删除"
+      ],
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"删除\") : \"删除\"), 960, 980, 960, 100, 50, 100);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -5143,7 +5099,15 @@
       "literals": [
         "大厅"
       ],
-      "source": "await findTextAndClick(\"大厅\", 960, 600, 960, 400, 2);"
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"大厅\") : \"大厅\"), 960, 600, 960, 400, 2);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 300,
+      "literals": [
+        "大厅"
+      ],
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"大厅\") : \"大厅\"), 960, 600, 960, 400, 2);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -5151,7 +5115,15 @@
       "literals": [
         "返回"
       ],
-      "source": "await findTextAndClick(\"返回\", 960, 0, 960, 100);"
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"返回\") : \"返回\"), 960, 0, 960, 100);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 410,
+      "literals": [
+        "返回"
+      ],
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"返回\") : \"返回\"), 960, 0, 960, 100);"
     },
     {
       "path": "repo/js/YNF-AutoEat/main.js",
@@ -5303,7 +5275,7 @@
       "literals": [
         "设置"
       ],
-      "source": "if (res2.text.includes(\"设置\")) click(1600, 260); //点击退出-选项4"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res2.text, \"设置\") : res2.text.includes(\"设置\"))) click(1600, 260); //点击退出-选项4"
     },
     {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",
@@ -5327,7 +5299,7 @@
       "literals": [
         "申请造访"
       ],
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -5335,7 +5307,7 @@
       "literals": [
         "申請造訪"
       ],
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -5343,7 +5315,7 @@
       "literals": [
         "委託"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -5351,7 +5323,7 @@
       "literals": [
         "委"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -5359,7 +5331,7 @@
       "literals": [
         "委託"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -5367,7 +5339,7 @@
       "literals": [
         "委"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/切换画质/main.js",
@@ -5439,7 +5411,7 @@
       "literals": [
         "尘歌壶"
       ],
-      "source": "if (!ocrResult.isEmpty() && ocrResult.Text.includes(\"尘歌壶\")) {"
+      "source": "if (!ocrResult.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.Text, \"尘歌壶\") : ocrResult.Text.includes(\"尘歌壶\"))) {"
     },
     {
       "path": "repo/js/尘歌壶一条龙/main.js",
@@ -5447,7 +5419,7 @@
       "literals": [
         "尘歌壶"
       ],
-      "source": "if (!ocrResult2.isEmpty() && ocrResult2.Text.includes(\"尘歌壶\")) {"
+      "source": "if (!ocrResult2.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult2.Text, \"尘歌壶\") : ocrResult2.Text.includes(\"尘歌壶\"))) {"
     },
     {
       "path": "repo/js/尘歌壶一条龙/main.js",
@@ -5455,7 +5427,7 @@
       "literals": [
         "已售罄"
       ],
-      "source": "if (!soldOutResult.isEmpty() && soldOutResult.Text.includes(\"已售罄\")) {"
+      "source": "if (!soldOutResult.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(soldOutResult.Text, \"已售罄\") : soldOutResult.Text.includes(\"已售罄\"))) {"
     },
     {
       "path": "repo/js/尘歌壶洞天百宝购买/main.js",
@@ -5471,7 +5443,7 @@
       "literals": [
         "按键"
       ],
-      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || res.text.includes(\"按键\") || res.text.includes(\"按鍵\")) {"
+      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"按键\") : res.text.includes(\"按键\")) || res.text.includes(\"按鍵\")) {"
     },
     {
       "path": "repo/js/恢复默认键位设置/main.js",
@@ -5479,7 +5451,7 @@
       "literals": [
         "按鍵"
       ],
-      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || res.text.includes(\"按键\") || res.text.includes(\"按鍵\")) {"
+      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"按键\") : res.text.includes(\"按键\")) || res.text.includes(\"按鍵\")) {"
     },
     {
       "path": "repo/js/批量讨伐角色养成材料BOSS/src/farm-manager.js",
@@ -6199,7 +6171,7 @@
       "literals": [
         "售罄"
       ],
-      "source": "if (ocrResult.isExist() && (ocrResult.text.includes(\"售罄\"))) {"
+      "source": "if (ocrResult.isExist() && ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"售罄\") : ocrResult.text.includes(\"售罄\")))) {"
     },
     {
       "path": "repo/js/自动购买商品/main.js",
@@ -6623,7 +6595,7 @@
       "literals": [
         "分钟"
       ],
-      "source": "if (ocrResult[i].text.endsWith(\"分钟\") || ocrResult[i].text.endsWith(\"秒\")) {"
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"分钟\") : ocrResult[i].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"秒\") : ocrResult[i].text.endsWith(\"秒\"))) {"
     },
     {
       "path": "repo/js/食材加工/main.js",
@@ -6631,7 +6603,7 @@
       "literals": [
         "秒"
       ],
-      "source": "if (ocrResult[i].text.endsWith(\"分钟\") || ocrResult[i].text.endsWith(\"秒\")) {"
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"分钟\") : ocrResult[i].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"秒\") : ocrResult[i].text.endsWith(\"秒\"))) {"
     },
     {
       "path": "repo/js/食材加工极速版/main.js",
@@ -6666,25 +6638,47 @@
       "source": "if (challengeName == \"纯水精灵\" || challengeName == \"歌裴莉娅的葬送\" || challengeName == \"科培琉司的劫罚\") samePlace = 1;//这些 boss 挑战后不会原地刷新"
     }
   ],
-  "review_cjk_count": 736,
+  "review_cjk_count": 806,
   "review_literal_frequency": {
     "食材加工2": 7,
     "OCR未识别到任何文本": 6,
+    "单人挑战": 6,
+    "申请加入": 6,
+    "委託": 6,
     "OCR启动": 6,
     "当前队伍名称位置:({x},{y},{w},{h}), 识别结果：{text}": 5,
     "目标队伍位置:({x},{y},{w},{h}), 识别结果：{text}": 5,
     "冒险之证": 5,
     "秘境": 5,
     "OCR过程中出错: {0}": 5,
+    "之花": 5,
     "已到达领奖点，检测到文字: ": 5,
+    "按键": 4,
     "文本位置:({x},{y},{w},{h}), 识别内容：{text}": 4,
     "空参数": 4,
+    "分钟": 4,
+    "秒": 4,
+    "追踪": 4,
     "停止追踪": 4,
+    "复苏": 4,
+    "装备": 4,
     "模板匹配": 4,
+    "地脉": 4,
+    "双倍": 4,
+    "2倍": 4,
+    "停止": 4,
     "小道具": 4,
-    "单人挑战": 4,
+    "开始挑战": 4,
+    "提瓦特": 4,
+    "晶蝶": 4,
+    "装置": 4,
+    "申请造访": 4,
+    "申請造訪": 4,
+    "大厅": 4,
+    "切换账号": 4,
     "文字": 4,
     "目标文字": 4,
+    "尘歌壶": 4,
     "交互烹饪锅": 4,
     "绝缘": 3,
     "影中沉凝的幻灭": 3,
@@ -6695,28 +6689,27 @@
     "开放": 3,
     "特定秘境": 3,
     "伪造地图追踪(跑图+垂钓)": 3,
+    "所有": 3,
     "任务": 3,
-    "之花": 3,
-    "双倍": 3,
-    "2倍": 3,
-    "20个": 3,
-    "40个": 3,
-    "开始挑战": 3,
+    "获得": 3,
+    "已售罄": 3,
     "识别结果:{1}": 3,
-    "委託": 3,
     "委": 3,
     "识别到委托选项卡位置:({x},{y},{w},{h}), 识别内容：{text}": 3,
-    "大厅": 3,
+    "返回": 3,
     "登录其他账号": 3,
     "OCR错误, 未识别到文本： 烹饪": 2,
-    "按键": 2,
+    "角色选择": 2,
+    "自动": 2,
     "按鍵": 2,
+    "箱": 2,
+    "珍貴": 2,
+    "珍贵": 2,
     "顶部OCR未识别到任何活动条目，可能是页面为空或识别失败": 2,
+    "征讨领域": 2,
     "OCR 全区域识别结果数量 {len}": 2,
     "高效": 2,
     "螃蟹": 2,
-    "分钟": 2,
-    "秒": 2,
     "全选": 2,
     "套装锁定方案": 2,
     "不允许使用HTTP请求": 2,
@@ -6730,13 +6723,11 @@
     "easyOCR识别出错: {error}": 2,
     "尝试多次后,截图失败!": 2,
     "[限时全开] 大范围失败，重试...": 2,
-    "复苏": 2,
     "伪造地图追踪(跑图)": 2,
-    "装备": 2,
     "伪造地图追踪(垂钓)": 2,
+    "查看资料": 2,
     "原粹树脂识别数量结果：": 2,
     "打倒": 2,
-    "所有": 2,
     "传奇": 2,
     "高收益": 2,
     "钟离": 2,
@@ -6744,39 +6735,45 @@
     "爱可菲": 2,
     "assets/确认筛选.png": 2,
     "assets/螃蟹技能图标.png": 2,
-    "地脉": 2,
+    "接触": 2,
+    "2倍产出": 2,
+    "激活地脉之花": 2,
+    "选择激活方式": 2,
+    "补充": 2,
+    "使用": 2,
+    "浓缩树脂": 2,
+    "须臾树脂": 2,
+    "脆弱树脂": 2,
+    "原石": 2,
     "两倍": 2,
-    "停止": 2,
+    "溢口": 2,
+    "打倒所有敌人": 2,
     "OCR识别结果为空或无效": 2,
     "芭芭拉": 2,
-    "获得": 2,
     "参量质变仪": 2,
     "养成道具": 2,
     "食物": 2,
     "材料": 2,
-    "已售罄": 2,
     "我要结算": 2,
     "星尘兑换": 2,
-    "申请加入": 2,
+    "世界": 2,
+    "多人游戏申请": 2,
+    "多人游戏": 2,
     "御签挂": 2,
     "乌娜亚塔": 2,
     "是否": 2,
-    "提瓦特": 2,
-    "晶蝶": 2,
-    "诱捕": 2,
-    "装置": 2,
+    "合成": 2,
+    "激活": 2,
+    "替换": 2,
     "元素爆发": 2,
     "元素": 2,
     "点": 2,
     "对局胜利": 2,
     "对局失败": 2,
     "指定好友名字位置:({x},{y},{w},{h}), 识别内容：{text}": 2,
-    "申请造访": 2,
-    "申請造訪": 2,
     "申请造访尘歌壶位置:({x},{y},{w},{h}), 识别内容：{text}": 2,
     "无法进入 [${res.text}] 的尘歌壶": 2,
     "收藏": 2,
-    "返回": 2,
     "领取": 2,
     "星境": 2,
     "彩馈": 2,
@@ -6784,24 +6781,26 @@
     "珍赏": 2,
     "盛邀": 2,
     "簾": 2,
+    "保存配置": 2,
+    "点击领取": 2,
+    "空月祝福": 2,
     "点击": 2,
     "账号+密码+OCR": 2,
-    "切换账号": 2,
     "退出并": 2,
-    "尘歌壶": 2,
+    "删除": 2,
+    "设置": 2,
     "路径名: ": 2,
+    "售罄": 2,
     "—初始化—": 2,
     "无变化": 2,
     "选择加工数量": 2,
     "已不能持有更多": 2,
     "OCR错误, 未识别到文本": 1,
     "OCR错误": 1,
-    "角色选择": 1,
     "产出": 1,
     "特殊": 1,
     "暂无": 1,
     "奇怪": 1,
-    "自动": 1,
     "OCR错误, 未识别到文本： 烹饪，可能原因：食材耗尽": 1,
     "OCR错误，未找到烹饪按钮": 1,
     "加速": 1,
@@ -6809,12 +6808,8 @@
     "按键选项卡位置:({x},{y},{h},{w}), 文本{text}": 1,
     "白萝卜识别结果:({x},{y},{h},{w}), 数量：{text}": 1,
     "卷心菜识别结果:({x},{y},{h},{w}), 数量：{text}": 1,
-    "箱": 1,
-    "珍貴": 1,
-    "珍贵": 1,
     "默认": 1,
     "剩余时间": 1,
-    "征讨领域": 1,
     "OCR识别过程出错:": 1,
     "当前状态:": 1,
     "，无需调整": 1,
@@ -6909,7 +6904,6 @@
     "未检测到秘境结束": 1,
     "未找到对应的秘境": 1,
     "禁用": 1,
-    "查看资料": 1,
     "张牙": 1,
     "舞爪": 1,
     "恶党": 1,
@@ -6938,18 +6932,9 @@
     "assets/确认.png": 1,
     "assets/重新连接服务器.png": 1,
     "怪物掉落材料": 1,
-    "接触": 1,
-    "2倍产出": 1,
-    "激活地脉之花": 1,
-    "选择激活方式": 1,
-    "补充": 1,
-    "浓缩树脂": 1,
     "浓缩": 1,
-    "须臾树脂": 1,
     "须臾": 1,
-    "脆弱树脂": 1,
     "脆弱": 1,
-    "原石": 1,
     "3次": 1,
     "原粹": 1,
     "树脂": 1,
@@ -6957,8 +6942,6 @@
     "双倍产出检测": 1,
     "双倍产出检测-r1": 1,
     "衍出": 1,
-    "溢口": 1,
-    "打倒所有敌人": 1,
     "OCR识别失败：未能识别到脆弱树脂数量": 1,
     "脆弱树脂数量: ": 1,
     "OCR识别失败：未能识别到须臾树脂数量": 1,
@@ -6981,13 +6964,6 @@
     "纪行": 1,
     "纪行等级": 1,
     "验证": 1,
-    "校验完成": 1,
-    "校验失败": 1,
-    "世界": 1,
-    "多人游戏申请": 1,
-    "多人游戏": 1,
-    "路线启动": 1,
-    "全部路线结束": 1,
     "世界权限": 1,
     "神奇的": 1,
     "如何才": 1,
@@ -7020,16 +6996,12 @@
     "来一份": 1,
     "圣遗物空间检查": 1,
     "幽境检查": 1,
-    "合成": 1,
     "任务提示": 1,
     "脆弱树脂识别数量结果：": 1,
-    "激活": 1,
     "紊乱平息": 1,
     "大循环": 1,
-    "替换": 1,
     "联机合奏": 1,
     "地方特产": 1,
-    "小道": 1,
     "assets/icon/晶蝶诱捕装置.png": 1,
     "回合开始时：": 1,
     "结束阶段：": 1,
@@ -7122,9 +7094,6 @@
     "搜索奇域": 1,
     "已完成所有任务": 1,
     "前往大厅": 1,
-    "保存配置": 1,
-    "点击领取": 1,
-    "空月祝福": 1,
     "空白": 1,
     "退出至登录界面": 1,
     "进入游戏": 1,
@@ -7140,10 +7109,8 @@
     "继续": 1,
     "置顶": 1,
     "管理关卡": 1,
-    "删除": 1,
     "当前牌组名称: {text}": 1,
     "无法出战": 1,
-    "设置": 1,
     "JS HTTP权限": 1,
     "道具已达到容量上限": 1,
     "assets/RecognitionObject/狗粮界面1.png": 1,
@@ -7191,7 +7158,6 @@
     "📁pathing材料": 1,
     "【扫描额外的分类】": 1,
     "当前物品在背包内的容量已达上限": 1,
-    "售罄": 1,
     "有什么卖的": 1,
     "可以卖一些": 1,
     "进入世界申请": 1,
@@ -7247,7 +7213,15 @@
       "literals": [
         "角色选择"
       ],
-      "source": "if (ocrResult && ocrResult.text.includes(\"角色选择\")) break;"
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"角色选择\") : ocrResult.text.includes(\"角色选择\"))) break;"
+    },
+    {
+      "path": "repo/js/AEscoffier_chef/main.js",
+      "line": 948,
+      "literals": [
+        "角色选择"
+      ],
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"角色选择\") : ocrResult.text.includes(\"角色选择\"))) break;"
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
@@ -7287,7 +7261,15 @@
       "literals": [
         "自动"
       ],
-      "source": "if (!(checkOcr.text.includes(\"自动\"))) { // 未解锁自动烹饪"
+      "source": "if (!((genshin.textContainsLiteral ? genshin.textContainsLiteral(checkOcr.text, \"自动\") : checkOcr.text.includes(\"自动\")))) { // 未解锁自动烹饪"
+    },
+    {
+      "path": "repo/js/AEscoffier_chef/main.js",
+      "line": 1070,
+      "literals": [
+        "自动"
+      ],
+      "source": "if (!((genshin.textContainsLiteral ? genshin.textContainsLiteral(checkOcr.text, \"自动\") : checkOcr.text.includes(\"自动\")))) { // 未解锁自动烹饪"
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
@@ -7327,7 +7309,15 @@
       "literals": [
         "按键"
       ],
-      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || res.text.includes(\"按键\") || res.text.includes(\"按鍵\")) {"
+      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"按键\") : res.text.includes(\"按键\")) || res.text.includes(\"按鍵\")) {"
+    },
+    {
+      "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
+      "line": 178,
+      "literals": [
+        "按键"
+      ],
+      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"按键\") : res.text.includes(\"按键\")) || res.text.includes(\"按鍵\")) {"
     },
     {
       "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
@@ -7335,7 +7325,7 @@
       "literals": [
         "按鍵"
       ],
-      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || res.text.includes(\"按键\") || res.text.includes(\"按鍵\")) {"
+      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"按键\") : res.text.includes(\"按键\")) || res.text.includes(\"按鍵\")) {"
     },
     {
       "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
@@ -7367,7 +7357,15 @@
       "literals": [
         "箱"
       ],
-      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
+      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"箱\") : res.text.includes(\"箱\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍貴\") : res.text.includes(\"珍貴\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍贵\") : res.text.includes(\"珍贵\"))) {"
+    },
+    {
+      "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
+      "line": 400,
+      "literals": [
+        "箱"
+      ],
+      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"箱\") : res.text.includes(\"箱\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍貴\") : res.text.includes(\"珍貴\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍贵\") : res.text.includes(\"珍贵\"))) {"
     },
     {
       "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
@@ -7375,7 +7373,15 @@
       "literals": [
         "珍貴"
       ],
-      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
+      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"箱\") : res.text.includes(\"箱\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍貴\") : res.text.includes(\"珍貴\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍贵\") : res.text.includes(\"珍贵\"))) {"
+    },
+    {
+      "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
+      "line": 400,
+      "literals": [
+        "珍貴"
+      ],
+      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"箱\") : res.text.includes(\"箱\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍貴\") : res.text.includes(\"珍貴\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍贵\") : res.text.includes(\"珍贵\"))) {"
     },
     {
       "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
@@ -7383,7 +7389,15 @@
       "literals": [
         "珍贵"
       ],
-      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || res.text.includes(\"箱\") || res.text.includes(\"珍貴\") || res.text.includes(\"珍贵\")) {"
+      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"箱\") : res.text.includes(\"箱\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍貴\") : res.text.includes(\"珍貴\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍贵\") : res.text.includes(\"珍贵\"))) {"
+    },
+    {
+      "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
+      "line": 400,
+      "literals": [
+        "珍贵"
+      ],
+      "source": "if (res.text.includes(\"Precious\") || res.text.includes(\"Chest\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"箱\") : res.text.includes(\"箱\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍貴\") : res.text.includes(\"珍貴\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"珍贵\") : res.text.includes(\"珍贵\"))) {"
     },
     {
       "path": "repo/js/AcceleratedEditionSwitchParty/main.js",
@@ -7439,7 +7453,15 @@
       "literals": [
         "征讨领域"
       ],
-      "source": "const find = await findTextAndClick(\"征讨领域\");"
+      "source": "const find = await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"征讨领域\") : \"征讨领域\"));"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/campaignArea.js",
+      "line": 151,
+      "literals": [
+        "征讨领域"
+      ],
+      "source": "const find = await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"征讨领域\") : \"征讨领域\"));"
     },
     {
       "path": "repo/js/ActivitySwitchNotice/utils/mapMission.js",
@@ -7543,7 +7565,15 @@
       "literals": [
         "分钟"
       ],
-      "source": "if (ocrResult[j].text.endsWith(\"分钟\") || ocrResult[j].text.endsWith(\"秒\")) {"
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"分钟\") : ocrResult[j].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"秒\") : ocrResult[j].text.endsWith(\"秒\"))) {"
+    },
+    {
+      "path": "repo/js/AotoTeyvatFoodOneDragon/main.js",
+      "line": 2039,
+      "literals": [
+        "分钟"
+      ],
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"分钟\") : ocrResult[j].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"秒\") : ocrResult[j].text.endsWith(\"秒\"))) {"
     },
     {
       "path": "repo/js/AotoTeyvatFoodOneDragon/main.js",
@@ -7551,7 +7581,15 @@
       "literals": [
         "秒"
       ],
-      "source": "if (ocrResult[j].text.endsWith(\"分钟\") || ocrResult[j].text.endsWith(\"秒\")) {"
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"分钟\") : ocrResult[j].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"秒\") : ocrResult[j].text.endsWith(\"秒\"))) {"
+    },
+    {
+      "path": "repo/js/AotoTeyvatFoodOneDragon/main.js",
+      "line": 2039,
+      "literals": [
+        "秒"
+      ],
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"分钟\") : ocrResult[j].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, \"秒\") : ocrResult[j].text.endsWith(\"秒\"))) {"
     },
     {
       "path": "repo/js/AotoTeyvatFoodOneDragon/main.js",
@@ -7824,6 +7862,22 @@
         "findCommissionTarget第一步失败: {error}"
       ],
       "source": "log.error(\"findCommissionTarget第一步失败: {error}\", error.message);"
+    },
+    {
+      "path": "repo/js/AutoCommission/lib/execute.js",
+      "line": 118,
+      "literals": [
+        "追踪"
+      ],
+      "source": "if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(trackingResult, \"追踪\") : trackingResult === \"追踪\")) {"
+    },
+    {
+      "path": "repo/js/AutoCommission/lib/execute.js",
+      "line": 118,
+      "literals": [
+        "追踪"
+      ],
+      "source": "if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(trackingResult, \"追踪\") : trackingResult === \"追踪\")) {"
     },
     {
       "path": "repo/js/AutoCommission/lib/execute.js",
@@ -8695,7 +8749,15 @@
       "literals": [
         "复苏"
       ],
-      "source": "} else if (msg.includes(\"复苏\")) {"
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(msg, \"复苏\") : msg.includes(\"复苏\"))) {"
+    },
+    {
+      "path": "repo/js/AutoDomainCustomizable/main.js",
+      "line": 572,
+      "literals": [
+        "复苏"
+      ],
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(msg, \"复苏\") : msg.includes(\"复苏\"))) {"
     },
     {
       "path": "repo/js/AutoDomainCustomizable/main.js",
@@ -8727,7 +8789,15 @@
       "literals": [
         "装备"
       ],
-      "source": "if (ocrResult && ocrResult.text.includes(\"装备\")) {"
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"装备\") : ocrResult.text.includes(\"装备\"))) {"
+    },
+    {
+      "path": "repo/js/AutoFishingTeyvat/main.js",
+      "line": 894,
+      "literals": [
+        "装备"
+      ],
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"装备\") : ocrResult.text.includes(\"装备\"))) {"
     },
     {
       "path": "repo/js/AutoFishingTeyvat/main.js",
@@ -8783,7 +8853,15 @@
       "literals": [
         "查看资料"
       ],
-      "source": "if (ocrResult && ocrResult.text.includes(\"查看资料\")) {"
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"查看资料\") : ocrResult.text.includes(\"查看资料\"))) {"
+    },
+    {
+      "path": "repo/js/AutoFishingTeyvat/main.js",
+      "line": 1084,
+      "literals": [
+        "查看资料"
+      ],
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"查看资料\") : ocrResult.text.includes(\"查看资料\"))) {"
     },
     {
       "path": "repo/js/AutoFontaineLeyLine/main.js",
@@ -8815,7 +8893,7 @@
       "literals": [
         "张牙"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -8823,7 +8901,7 @@
       "literals": [
         "舞爪"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -8831,7 +8909,7 @@
       "literals": [
         "恶党"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -8839,7 +8917,7 @@
       "literals": [
         "打倒"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -8847,7 +8925,15 @@
       "literals": [
         "所有"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
+    },
+    {
+      "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
+      "line": 218,
+      "literals": [
+        "所有"
+      ],
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipEvilBaresItsFangsGetRawMeat/main.js",
@@ -8855,7 +8941,7 @@
       "literals": [
         "鳄鱼"
       ],
-      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || res.text.includes(\"所有\") || res.text.includes(\"鳄鱼\")) {"
+      "source": "if (res.text.includes(\"张牙\") || res.text.includes(\"舞爪\") || res.text.includes(\"恶党\") || res.text.includes(\"打倒\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"所有\") : res.text.includes(\"所有\")) || res.text.includes(\"鳄鱼\")) {"
     },
     {
       "path": "repo/js/AutoFriendshipFight/main.js",
@@ -9215,7 +9301,15 @@
       "literals": [
         "接触"
       ],
-      "source": "if (ocrResults[i].text.includes(\"接触\") ||"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, \"接触\") : ocrResults[i].text.includes(\"接触\")) ||"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/main.js",
+      "line": 991,
+      "literals": [
+        "接触"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, \"接触\") : ocrResults[i].text.includes(\"接触\")) ||"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/main.js",
@@ -9223,7 +9317,15 @@
       "literals": [
         "地脉"
       ],
-      "source": "ocrResults[i].text.includes(\"地脉\") ||"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, \"地脉\") : ocrResults[i].text.includes(\"地脉\")) ||"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/main.js",
+      "line": 992,
+      "literals": [
+        "地脉"
+      ],
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, \"地脉\") : ocrResults[i].text.includes(\"地脉\")) ||"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/main.js",
@@ -9231,7 +9333,15 @@
       "literals": [
         "之花"
       ],
-      "source": "ocrResults[i].text.includes(\"之花\")) {"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, \"之花\") : ocrResults[i].text.includes(\"之花\"))) {"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/main.js",
+      "line": 993,
+      "literals": [
+        "之花"
+      ],
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, \"之花\") : ocrResults[i].text.includes(\"之花\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/main.js",
@@ -9247,7 +9357,15 @@
       "literals": [
         "双倍"
       ],
-      "source": "t.text.includes(\"双倍\") ||"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"双倍\") : t.text.includes(\"双倍\")) ||"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 41,
+      "literals": [
+        "双倍"
+      ],
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"双倍\") : t.text.includes(\"双倍\")) ||"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9255,7 +9373,15 @@
       "literals": [
         "2倍产出"
       ],
-      "source": "t.text.includes(\"2倍产出\") ||"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"2倍产出\") : t.text.includes(\"2倍产出\")) ||"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 42,
+      "literals": [
+        "2倍产出"
+      ],
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"2倍产出\") : t.text.includes(\"2倍产出\")) ||"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9263,7 +9389,15 @@
       "literals": [
         "2倍"
       ],
-      "source": "t.text.includes(\"2倍\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"2倍\") : t.text.includes(\"2倍\"))"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 43,
+      "literals": [
+        "2倍"
+      ],
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"2倍\") : t.text.includes(\"2倍\"))"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9271,7 +9405,15 @@
       "literals": [
         "激活地脉之花"
       ],
-      "source": "if (text.includes(\"激活地脉之花\") ||"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(text, \"激活地脉之花\") : text.includes(\"激活地脉之花\")) ||"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 185,
+      "literals": [
+        "激活地脉之花"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(text, \"激活地脉之花\") : text.includes(\"激活地脉之花\")) ||"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9279,7 +9421,15 @@
       "literals": [
         "选择激活方式"
       ],
-      "source": "text.includes(\"选择激活方式\")) {"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(text, \"选择激活方式\") : text.includes(\"选择激活方式\"))) {"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 186,
+      "literals": [
+        "选择激活方式"
+      ],
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(text, \"选择激活方式\") : text.includes(\"选择激活方式\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9287,7 +9437,31 @@
       "literals": [
         "补充"
       ],
-      "source": "const hasSupplement = textList.some(t => t.text.includes(\"补充\"));"
+      "source": "const hasSupplement = textList.some(t => (genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"补充\") : t.text.includes(\"补充\")));"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 218,
+      "literals": [
+        "补充"
+      ],
+      "source": "const hasSupplement = textList.some(t => (genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"补充\") : t.text.includes(\"补充\")));"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 248,
+      "literals": [
+        "使用"
+      ],
+      "source": "if (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(text, \"使用\") : text === \"使用\") {"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 248,
+      "literals": [
+        "使用"
+      ],
+      "source": "if (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(text, \"使用\") : text === \"使用\") {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9299,19 +9473,11 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 329,
+      "line": 338,
       "literals": [
-        "20个"
+        "浓缩树脂"
       ],
-      "source": "(t.text.includes(\"20个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 334,
-      "literals": [
-        "40个"
-      ],
-      "source": "(t.text.includes(\"40个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"浓缩树脂\") : t.text.includes(\"浓缩树脂\")) || t.text.includes(\"浓缩\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9319,7 +9485,7 @@
       "literals": [
         "浓缩树脂"
       ],
-      "source": "t.text.includes(\"浓缩树脂\") || t.text.includes(\"浓缩\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"浓缩树脂\") : t.text.includes(\"浓缩树脂\")) || t.text.includes(\"浓缩\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9327,7 +9493,7 @@
       "literals": [
         "浓缩"
       ],
-      "source": "t.text.includes(\"浓缩树脂\") || t.text.includes(\"浓缩\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"浓缩树脂\") : t.text.includes(\"浓缩树脂\")) || t.text.includes(\"浓缩\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9335,7 +9501,15 @@
       "literals": [
         "须臾树脂"
       ],
-      "source": "t.text.includes(\"须臾树脂\") || t.text.includes(\"须臾\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"须臾树脂\") : t.text.includes(\"须臾树脂\")) || t.text.includes(\"须臾\")"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 342,
+      "literals": [
+        "须臾树脂"
+      ],
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"须臾树脂\") : t.text.includes(\"须臾树脂\")) || t.text.includes(\"须臾\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9343,7 +9517,7 @@
       "literals": [
         "须臾"
       ],
-      "source": "t.text.includes(\"须臾树脂\") || t.text.includes(\"须臾\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"须臾树脂\") : t.text.includes(\"须臾树脂\")) || t.text.includes(\"须臾\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9351,7 +9525,15 @@
       "literals": [
         "脆弱树脂"
       ],
-      "source": "t.text.includes(\"脆弱树脂\") || t.text.includes(\"脆弱\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"脆弱树脂\") : t.text.includes(\"脆弱树脂\")) || t.text.includes(\"脆弱\")"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 346,
+      "literals": [
+        "脆弱树脂"
+      ],
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"脆弱树脂\") : t.text.includes(\"脆弱树脂\")) || t.text.includes(\"脆弱\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9359,7 +9541,7 @@
       "literals": [
         "脆弱"
       ],
-      "source": "t.text.includes(\"脆弱树脂\") || t.text.includes(\"脆弱\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"脆弱树脂\") : t.text.includes(\"脆弱树脂\")) || t.text.includes(\"脆弱\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9367,7 +9549,15 @@
       "literals": [
         "原石"
       ],
-      "source": "t.text.includes(\"原石\") && t.text.includes(\"3次\")"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"原石\") : t.text.includes(\"原石\")) && t.text.includes(\"3次\")"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 350,
+      "literals": [
+        "原石"
+      ],
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"原石\") : t.text.includes(\"原石\")) && t.text.includes(\"3次\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9375,39 +9565,7 @@
       "literals": [
         "3次"
       ],
-      "source": "t.text.includes(\"原石\") && t.text.includes(\"3次\")"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 377,
-      "literals": [
-        "20个"
-      ],
-      "source": "(t.text.includes(\"20个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 381,
-      "literals": [
-        "40个"
-      ],
-      "source": "(t.text.includes(\"40个\") && t.text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\")))"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 730,
-      "literals": [
-        "20个"
-      ],
-      "source": "if ((text.includes(\"20\") || text.includes(\"20个\")) && text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\"))) {"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 733,
-      "literals": [
-        "40个"
-      ],
-      "source": "if ((text.includes(\"40\") || text.includes(\"40个\")) && text.includes((genshin.getText ? genshin.getText(\"original_resin\") : \"原粹树脂\"))) {"
+      "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"原石\") : t.text.includes(\"原石\")) && t.text.includes(\"3次\")"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
@@ -9511,7 +9669,15 @@
       "literals": [
         "停止"
       ],
-      "source": "if (res.text.includes(\"停止\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"停止\") : res.text.includes(\"停止\"))) {"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/findLeyLineOutcropByBook.js",
+      "line": 200,
+      "literals": [
+        "停止"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"停止\") : res.text.includes(\"停止\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/findLeyLineOutcropByBook.js",
@@ -9519,7 +9685,15 @@
       "literals": [
         "停止"
       ],
-      "source": "if (res.text.includes(\"停止\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"停止\") : res.text.includes(\"停止\"))) {"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/findLeyLineOutcropByBook.js",
+      "line": 236,
+      "literals": [
+        "停止"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"停止\") : res.text.includes(\"停止\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/findLeyLineOutcropByBook.js",
@@ -9527,7 +9701,15 @@
       "literals": [
         "地脉"
       ],
-      "source": "} else if (res.text.includes(\"地脉\") || res.text.includes(\"衍出\")) {"
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"地脉\") : res.text.includes(\"地脉\")) || res.text.includes(\"衍出\")) {"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/findLeyLineOutcropByBook.js",
+      "line": 238,
+      "literals": [
+        "地脉"
+      ],
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"地脉\") : res.text.includes(\"地脉\")) || res.text.includes(\"衍出\")) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/findLeyLineOutcropByBook.js",
@@ -9535,7 +9717,7 @@
       "literals": [
         "衍出"
       ],
-      "source": "} else if (res.text.includes(\"地脉\") || res.text.includes(\"衍出\")) {"
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"地脉\") : res.text.includes(\"地脉\")) || res.text.includes(\"衍出\")) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
@@ -9543,7 +9725,15 @@
       "literals": [
         "之花"
       ],
-      "source": "if (result2.text.includes(\"之花\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result2.text, \"之花\") : result2.text.includes(\"之花\"))) {"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
+      "line": 30,
+      "literals": [
+        "之花"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result2.text, \"之花\") : result2.text.includes(\"之花\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
@@ -9551,7 +9741,15 @@
       "literals": [
         "溢口"
       ],
-      "source": "if (result2.text.includes(\"溢口\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result2.text, \"溢口\") : result2.text.includes(\"溢口\"))) {"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
+      "line": 37,
+      "literals": [
+        "溢口"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result2.text, \"溢口\") : result2.text.includes(\"溢口\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
@@ -9559,7 +9757,15 @@
       "literals": [
         "打倒所有敌人"
       ],
-      "source": "} else if (result.text.includes(\"打倒所有敌人\")) {"
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result.text, \"打倒所有敌人\") : result.text.includes(\"打倒所有敌人\"))) {"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
+      "line": 43,
+      "literals": [
+        "打倒所有敌人"
+      ],
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result.text, \"打倒所有敌人\") : result.text.includes(\"打倒所有敌人\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
@@ -9567,7 +9773,15 @@
       "literals": [
         "复苏"
       ],
-      "source": "if (res.text.includes(\"复苏\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"复苏\") : res.text.includes(\"复苏\"))) {"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
+      "line": 106,
+      "literals": [
+        "复苏"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"复苏\") : res.text.includes(\"复苏\"))) {"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/recognitionResin.js",
@@ -9971,19 +10185,11 @@
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 440,
+      "line": 528,
       "literals": [
-        "校验完成"
+        "世界"
       ],
-      "source": "if (ocrList[i].text.includes(\"校验完成\")) {"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 443,
-      "literals": [
-        "校验失败"
-      ],
-      "source": "} else if (ocrList[i].text.includes(\"校验失败\")) {"
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"世界\") : ocr.text === \"世界\")) {"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -9991,7 +10197,7 @@
       "literals": [
         "世界"
       ],
-      "source": "if (ocr.isExist() && ocr.text === \"世界\") {"
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"世界\") : ocr.text === \"世界\")) {"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -9999,7 +10205,15 @@
       "literals": [
         "多人游戏申请"
       ],
-      "source": "if (!(ocrTitle.isExist() && ocrTitle.text === \"多人游戏申请\")) {"
+      "source": "if (!(ocrTitle.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrTitle.text, \"多人游戏申请\") : ocrTitle.text === \"多人游戏申请\"))) {"
+    },
+    {
+      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
+      "line": 564,
+      "literals": [
+        "多人游戏申请"
+      ],
+      "source": "if (!(ocrTitle.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrTitle.text, \"多人游戏申请\") : ocrTitle.text === \"多人游戏申请\"))) {"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -10007,7 +10221,15 @@
       "literals": [
         "多人游戏"
       ],
-      "source": "if (ocrMulti.isExist() && ocrMulti.text === \"多人游戏\") {"
+      "source": "if (ocrMulti.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrMulti.text, \"多人游戏\") : ocrMulti.text === \"多人游戏\")) {"
+    },
+    {
+      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
+      "line": 631,
+      "literals": [
+        "多人游戏"
+      ],
+      "source": "if (ocrMulti.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrMulti.text, \"多人游戏\") : ocrMulti.text === \"多人游戏\")) {"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -10015,7 +10237,15 @@
       "literals": [
         "申请加入"
       ],
-      "source": "if (ocrJoin.isExist() && ocrJoin.text === \"申请加入\") {"
+      "source": "if (ocrJoin.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrJoin.text, \"申请加入\") : ocrJoin.text === \"申请加入\")) {"
+    },
+    {
+      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
+      "line": 646,
+      "literals": [
+        "申请加入"
+      ],
+      "source": "if (ocrJoin.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrJoin.text, \"申请加入\") : ocrJoin.text === \"申请加入\")) {"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
@@ -10023,23 +10253,15 @@
       "literals": [
         "申请加入"
       ],
-      "source": "if (!(ocrJoin.isExist() && ocrJoin.text === \"申请加入\")) return true;"
+      "source": "if (!(ocrJoin.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrJoin.text, \"申请加入\") : ocrJoin.text === \"申请加入\"))) return true;"
     },
     {
       "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 924,
+      "line": 652,
       "literals": [
-        "路线启动"
+        "申请加入"
       ],
-      "source": "if (ocr[l].text === \"路线启动\") { // 检测队长的消息"
-    },
-    {
-      "path": "repo/js/AutoPathingLoader-MultiUser/main.js",
-      "line": 961,
-      "literals": [
-        "全部路线结束"
-      ],
-      "source": "if (ocr[l].text.includes(\"全部路线结束\")) { // 检测队长的消息"
+      "source": "if (!(ocrJoin.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrJoin.text, \"申请加入\") : ocrJoin.text === \"申请加入\"))) return true;"
     },
     {
       "path": "repo/js/AutoPermission/main.js",
@@ -10391,7 +10613,15 @@
       "literals": [
         "合成"
       ],
-      "source": "if (resList[i].text.includes(\"合成\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"合成\") : resList[i].text.includes(\"合成\"))) {"
+    },
+    {
+      "path": "repo/js/AutoRefinedCondensationResin/main.js",
+      "line": 73,
+      "literals": [
+        "合成"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"合成\") : resList[i].text.includes(\"合成\"))) {"
     },
     {
       "path": "repo/js/AutoStoryLoader/main.js",
@@ -10435,6 +10665,22 @@
     },
     {
       "path": "repo/js/AutoStoryLoader/main.js",
+      "line": 878,
+      "literals": [
+        "追踪"
+      ],
+      "source": "if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(trackingResult, \"追踪\") : trackingResult === \"追踪\")) {"
+    },
+    {
+      "path": "repo/js/AutoStoryLoader/main.js",
+      "line": 878,
+      "literals": [
+        "追踪"
+      ],
+      "source": "if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(trackingResult, \"追踪\") : trackingResult === \"追踪\")) {"
+    },
+    {
+      "path": "repo/js/AutoStoryLoader/main.js",
       "line": 907,
       "literals": [
         "findCommissionTarget第2步失败: {error}"
@@ -10471,7 +10717,7 @@
       "literals": [
         "之花"
       ],
-      "source": "if (rewardResult.text.includes(\"之花\") || rewardResult.text.includes(\"激活\")) {"
+      "source": "if (rewardResult.text.includes(\"之花\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(rewardResult.text, \"激活\") : rewardResult.text.includes(\"激活\"))) {"
     },
     {
       "path": "repo/js/AutoStygianOnslaught/main.js",
@@ -10479,7 +10725,15 @@
       "literals": [
         "激活"
       ],
-      "source": "if (rewardResult.text.includes(\"之花\") || rewardResult.text.includes(\"激活\")) {"
+      "source": "if (rewardResult.text.includes(\"之花\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(rewardResult.text, \"激活\") : rewardResult.text.includes(\"激活\"))) {"
+    },
+    {
+      "path": "repo/js/AutoStygianOnslaught/main.js",
+      "line": 361,
+      "literals": [
+        "激活"
+      ],
+      "source": "if (rewardResult.text.includes(\"之花\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(rewardResult.text, \"激活\") : rewardResult.text.includes(\"激活\"))) {"
     },
     {
       "path": "repo/js/AutoStygianOnslaught/main.js",
@@ -10503,7 +10757,15 @@
       "literals": [
         "单人挑战"
       ],
-      "source": "if (_resList[_ri].text === \"单人挑战\") {"
+      "source": "if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(_resList[_ri].text, \"单人挑战\") : _resList[_ri].text === \"单人挑战\")) {"
+    },
+    {
+      "path": "repo/js/AutoStygianOnslaught/main.js",
+      "line": 881,
+      "literals": [
+        "单人挑战"
+      ],
+      "source": "if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(_resList[_ri].text, \"单人挑战\") : _resList[_ri].text === \"单人挑战\")) {"
     },
     {
       "path": "repo/js/AutoStygianOnslaught/main.js",
@@ -10527,7 +10789,15 @@
       "literals": [
         "提瓦特"
       ],
-      "source": "if (ocrResult_btn && ocrResult_btn.text.includes(\"提瓦特\")) { // 千星奇域"
+      "source": "if (ocrResult_btn && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult_btn.text, \"提瓦特\") : ocrResult_btn.text.includes(\"提瓦特\"))) { // 千星奇域"
+    },
+    {
+      "path": "repo/js/AutoYuanQin/main.js",
+      "line": 2006,
+      "literals": [
+        "提瓦特"
+      ],
+      "source": "if (ocrResult_btn && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult_btn.text, \"提瓦特\") : ocrResult_btn.text.includes(\"提瓦特\"))) { // 千星奇域"
     },
     {
       "path": "repo/js/AutoYuanQin/main.js",
@@ -10535,7 +10805,15 @@
       "literals": [
         "装备"
       ],
-      "source": "if (ocrText && ocrText.text.includes(\"装备\")) {"
+      "source": "if (ocrText && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrText.text, \"装备\") : ocrText.text.includes(\"装备\"))) {"
+    },
+    {
+      "path": "repo/js/AutoYuanQin/main.js",
+      "line": 2024,
+      "literals": [
+        "装备"
+      ],
+      "source": "if (ocrText && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrText.text, \"装备\") : ocrText.text.includes(\"装备\"))) {"
     },
     {
       "path": "repo/js/AutoYuanQin/main.js",
@@ -10543,7 +10821,15 @@
       "literals": [
         "替换"
       ],
-      "source": "if (ocrText && ocrText.text.includes(\"替换\")) {"
+      "source": "if (ocrText && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrText.text, \"替换\") : ocrText.text.includes(\"替换\"))) {"
+    },
+    {
+      "path": "repo/js/AutoYuanQin/main.js",
+      "line": 2064,
+      "literals": [
+        "替换"
+      ],
+      "source": "if (ocrText && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrText.text, \"替换\") : ocrText.text.includes(\"替换\"))) {"
     },
     {
       "path": "repo/js/AutoYuanQin/main.js",
@@ -10565,65 +10851,73 @@
       "path": "repo/js/CrystalflyTrap/main.js",
       "line": 48,
       "literals": [
-        "小道"
-      ],
-      "source": "if (!res.text.includes(\"小道\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 55,
-      "literals": [
         "assets/icon/晶蝶诱捕装置.png"
       ],
       "source": "let crystalflyTrap = ro1.find(RecognitionObject.TemplateMatch(file.ReadImageMatSync(\"assets/icon/晶蝶诱捕装置.png\")))"
     },
     {
       "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 74,
+      "line": 67,
       "literals": [
         "晶蝶"
       ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
+      "source": "const isCrystalfly = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"晶蝶\") : res.text.includes(\"晶蝶\");"
     },
     {
       "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 74,
-      "literals": [
-        "诱捕"
-      ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 74,
-      "literals": [
-        "装置"
-      ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 137,
+      "line": 67,
       "literals": [
         "晶蝶"
       ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
+      "source": "const isCrystalfly = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"晶蝶\") : res.text.includes(\"晶蝶\");"
     },
     {
       "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 137,
-      "literals": [
-        "诱捕"
-      ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
-    },
-    {
-      "path": "repo/js/CrystalflyTrap/main.js",
-      "line": 137,
+      "line": 68,
       "literals": [
         "装置"
       ],
-      "source": "if (!res.text.includes(\"晶蝶\") || !res.text.includes(\"诱捕\") || !res.text.includes(\"装置\")) {"
+      "source": "const isDevice = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"装置\") : res.text.includes(\"装置\");"
+    },
+    {
+      "path": "repo/js/CrystalflyTrap/main.js",
+      "line": 68,
+      "literals": [
+        "装置"
+      ],
+      "source": "const isDevice = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"装置\") : res.text.includes(\"装置\");"
+    },
+    {
+      "path": "repo/js/CrystalflyTrap/main.js",
+      "line": 132,
+      "literals": [
+        "晶蝶"
+      ],
+      "source": "const isCrystalfly = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"晶蝶\") : res.text.includes(\"晶蝶\");"
+    },
+    {
+      "path": "repo/js/CrystalflyTrap/main.js",
+      "line": 132,
+      "literals": [
+        "晶蝶"
+      ],
+      "source": "const isCrystalfly = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"晶蝶\") : res.text.includes(\"晶蝶\");"
+    },
+    {
+      "path": "repo/js/CrystalflyTrap/main.js",
+      "line": 133,
+      "literals": [
+        "装置"
+      ],
+      "source": "const isDevice = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"装置\") : res.text.includes(\"装置\");"
+    },
+    {
+      "path": "repo/js/CrystalflyTrap/main.js",
+      "line": 133,
+      "literals": [
+        "装置"
+      ],
+      "source": "const isDevice = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"装置\") : res.text.includes(\"装置\");"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -10791,7 +11085,15 @@
       "literals": [
         "申请造访"
       ],
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
+    },
+    {
+      "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
+      "line": 253,
+      "literals": [
+        "申请造访"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
     },
     {
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
@@ -10799,7 +11101,15 @@
       "literals": [
         "申請造訪"
       ],
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
+    },
+    {
+      "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
+      "line": 253,
+      "literals": [
+        "申請造訪"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
     },
     {
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
@@ -10823,7 +11133,15 @@
       "literals": [
         "委託"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+    },
+    {
+      "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
+      "line": 400,
+      "literals": [
+        "委託"
+      ],
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
@@ -10831,7 +11149,7 @@
       "literals": [
         "委"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/DoubleFriendshipEncounterPoints/main.js",
@@ -10944,6 +11262,22 @@
         "其他玩家"
       ],
       "source": "if (yourselfRegin.text.includes('其他玩家')) {"
+    },
+    {
+      "path": "repo/js/JoinFriendsWorld/main.js",
+      "line": 69,
+      "literals": [
+        "申请加入"
+      ],
+      "source": "else if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(joinOrAddText, \"申请加入\") : joinOrAddText === \"申请加入\")) {"
+    },
+    {
+      "path": "repo/js/JoinFriendsWorld/main.js",
+      "line": 69,
+      "literals": [
+        "申请加入"
+      ],
+      "source": "else if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(joinOrAddText, \"申请加入\") : joinOrAddText === \"申请加入\")) {"
     },
     {
       "path": "repo/js/LinneaMining/utils/routes.js",
@@ -11671,7 +12005,15 @@
       "literals": [
         "开始挑战"
       ],
-      "source": "const stage_enter = stage_enter_ocr && stage_enter_ocr.text.includes(\"开始挑战\");"
+      "source": "const stage_enter = stage_enter_ocr && (genshin.textContainsLiteral ? genshin.textContainsLiteral(stage_enter_ocr.text, \"开始挑战\") : stage_enter_ocr.text.includes(\"开始挑战\"));"
+    },
+    {
+      "path": "repo/js/StarfieldRaimentCollection/main.js",
+      "line": 61,
+      "literals": [
+        "开始挑战"
+      ],
+      "source": "const stage_enter = stage_enter_ocr && (genshin.textContainsLiteral ? genshin.textContainsLiteral(stage_enter_ocr.text, \"开始挑战\") : stage_enter_ocr.text.includes(\"开始挑战\"));"
     },
     {
       "path": "repo/js/StarfieldRaimentCollection/main.js",
@@ -11679,7 +12021,15 @@
       "literals": [
         "提瓦特"
       ],
-      "source": "if (ocrResult_btn && ocrResult_btn.text.includes(\"提瓦特\")) {"
+      "source": "if (ocrResult_btn && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult_btn.text, \"提瓦特\") : ocrResult_btn.text.includes(\"提瓦特\"))) {"
+    },
+    {
+      "path": "repo/js/StarfieldRaimentCollection/main.js",
+      "line": 99,
+      "literals": [
+        "提瓦特"
+      ],
+      "source": "if (ocrResult_btn && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult_btn.text, \"提瓦特\") : ocrResult_btn.text.includes(\"提瓦特\"))) {"
     },
     {
       "path": "repo/js/StarfieldRaimentCollection/main.js",
@@ -11695,7 +12045,15 @@
       "literals": [
         "单人挑战"
       ],
-      "source": "if (ocrResult[i].text.includes((genshin.getText ? genshin.getText(\"start_game\") : \"开始游戏\")) || ocrResult[i].text.includes(\"单人挑战\")) {"
+      "source": "if (ocrResult[i].text.includes((genshin.getText ? genshin.getText(\"start_game\") : \"开始游戏\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult[i].text, \"单人挑战\") : ocrResult[i].text.includes(\"单人挑战\"))) {"
+    },
+    {
+      "path": "repo/js/StarfieldRaimentCollection/main.js",
+      "line": 233,
+      "literals": [
+        "单人挑战"
+      ],
+      "source": "if (ocrResult[i].text.includes((genshin.getText ? genshin.getText(\"start_game\") : \"开始游戏\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult[i].text, \"单人挑战\") : ocrResult[i].text.includes(\"单人挑战\"))) {"
     },
     {
       "path": "repo/js/StarfieldRaimentCollection/main.js",
@@ -11711,7 +12069,15 @@
       "literals": [
         "保存配置"
       ],
-      "source": "if (ocrResult && ocrResult.text.includes(\"保存配置\")) {"
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"保存配置\") : ocrResult.text.includes(\"保存配置\"))) {"
+    },
+    {
+      "path": "repo/js/StarfieldRaimentCollection/main.js",
+      "line": 350,
+      "literals": [
+        "保存配置"
+      ],
+      "source": "if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"保存配置\") : ocrResult.text.includes(\"保存配置\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -11719,7 +12085,15 @@
       "literals": [
         "点击领取"
       ],
-      "source": "if (res.text.includes(\"点击领取\") || res.text.includes(\"空月祝福\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"点击领取\") : res.text.includes(\"点击领取\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"空月祝福\") : res.text.includes(\"空月祝福\"))) {"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 419,
+      "literals": [
+        "点击领取"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"点击领取\") : res.text.includes(\"点击领取\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"空月祝福\") : res.text.includes(\"空月祝福\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -11727,7 +12101,15 @@
       "literals": [
         "空月祝福"
       ],
-      "source": "if (res.text.includes(\"点击领取\") || res.text.includes(\"空月祝福\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"点击领取\") : res.text.includes(\"点击领取\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"空月祝福\") : res.text.includes(\"空月祝福\"))) {"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 419,
+      "literals": [
+        "空月祝福"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"点击领取\") : res.text.includes(\"点击领取\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"空月祝福\") : res.text.includes(\"空月祝福\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -11735,7 +12117,7 @@
       "literals": [
         "点击"
       ],
-      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || res.text.includes(\"获得\")) {"
+      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"获得\") : res.text.includes(\"获得\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -11743,7 +12125,7 @@
       "literals": [
         "空白"
       ],
-      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || res.text.includes(\"获得\")) {"
+      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"获得\") : res.text.includes(\"获得\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -11751,7 +12133,15 @@
       "literals": [
         "获得"
       ],
-      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || res.text.includes(\"获得\")) {"
+      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"获得\") : res.text.includes(\"获得\"))) {"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 433,
+      "literals": [
+        "获得"
+      ],
+      "source": "if (res.text.includes(\"点击\") || res.text.includes(\"空白\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"获得\") : res.text.includes(\"获得\"))) {"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -11807,7 +12197,15 @@
       "literals": [
         "切换账号"
       ],
-      "source": "await waitForOcrMatch(\"切换账号\");"
+      "source": "await waitForOcrMatch((genshin.getTextLiteral ? genshin.getTextLiteral(\"切换账号\") : \"切换账号\"));"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 653,
+      "literals": [
+        "切换账号"
+      ],
+      "source": "await waitForOcrMatch((genshin.getTextLiteral ? genshin.getTextLiteral(\"切换账号\") : \"切换账号\"));"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -11847,7 +12245,15 @@
       "literals": [
         "切换账号"
       ],
-      "source": "await waitForOcrMatch(\"切换账号\");"
+      "source": "await waitForOcrMatch((genshin.getTextLiteral ? genshin.getTextLiteral(\"切换账号\") : \"切换账号\"));"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 891,
+      "literals": [
+        "切换账号"
+      ],
+      "source": "await waitForOcrMatch((genshin.getTextLiteral ? genshin.getTextLiteral(\"切换账号\") : \"切换账号\"));"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -11983,7 +12389,15 @@
       "literals": [
         "删除"
       ],
-      "source": "await findTextAndClick(\"删除\", 960, 980, 960, 100, 50, 100);"
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"删除\") : \"删除\"), 960, 980, 960, 100, 50, 100);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 215,
+      "literals": [
+        "删除"
+      ],
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"删除\") : \"删除\"), 960, 980, 960, 100, 50, 100);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -11999,7 +12413,15 @@
       "literals": [
         "大厅"
       ],
-      "source": "await findTextAndClick(\"大厅\", 960, 600, 960, 400, 2);"
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"大厅\") : \"大厅\"), 960, 600, 960, 400, 2);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 300,
+      "literals": [
+        "大厅"
+      ],
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"大厅\") : \"大厅\"), 960, 600, 960, 400, 2);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -12007,7 +12429,15 @@
       "literals": [
         "返回"
       ],
-      "source": "await findTextAndClick(\"返回\", 960, 0, 960, 100);"
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"返回\") : \"返回\"), 960, 0, 960, 100);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 410,
+      "literals": [
+        "返回"
+      ],
+      "source": "await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"返回\") : \"返回\"), 960, 0, 960, 100);"
     },
     {
       "path": "repo/js/YNF-AutoEat/main.js",
@@ -12071,7 +12501,15 @@
       "literals": [
         "设置"
       ],
-      "source": "if (res2.text.includes(\"设置\")) click(1600, 260); //点击退出-选项4"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res2.text, \"设置\") : res2.text.includes(\"设置\"))) click(1600, 260); //点击退出-选项4"
+    },
+    {
+      "path": "repo/js/七圣召唤七日历练全自动/main.js",
+      "line": 353,
+      "literals": [
+        "设置"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res2.text, \"设置\") : res2.text.includes(\"设置\"))) click(1600, 260); //点击退出-选项4"
     },
     {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",
@@ -12127,7 +12565,15 @@
       "literals": [
         "申请造访"
       ],
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
+    },
+    {
+      "path": "repo/js/使用历练点完成每日委托/main.js",
+      "line": 292,
+      "literals": [
+        "申请造访"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -12135,7 +12581,15 @@
       "literals": [
         "申請造訪"
       ],
-      "source": "if (res.text.includes(\"申请造访\") || res.text.includes(\"visit Serenitea Pot\") || res.text.includes(\"申請造訪\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
+    },
+    {
+      "path": "repo/js/使用历练点完成每日委托/main.js",
+      "line": 292,
+      "literals": [
+        "申請造訪"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申请造访\") : res.text.includes(\"申请造访\")) || res.text.includes(\"visit Serenitea Pot\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"申請造訪\") : res.text.includes(\"申請造訪\"))) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -12159,7 +12613,15 @@
       "literals": [
         "委託"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+    },
+    {
+      "path": "repo/js/使用历练点完成每日委托/main.js",
+      "line": 437,
+      "literals": [
+        "委託"
+      ],
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -12167,7 +12629,7 @@
       "literals": [
         "委"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -12183,7 +12645,15 @@
       "literals": [
         "委託"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+    },
+    {
+      "path": "repo/js/使用历练点完成每日委托/main.js",
+      "line": 490,
+      "literals": [
+        "委託"
+      ],
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -12191,7 +12661,7 @@
       "literals": [
         "委"
       ],
-      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || res.text.includes(\"委託\") || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
+      "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
     },
     {
       "path": "repo/js/使用历练点完成每日委托/main.js",
@@ -12383,7 +12853,15 @@
       "literals": [
         "尘歌壶"
       ],
-      "source": "if (!ocrResult.isEmpty() && ocrResult.Text.includes(\"尘歌壶\")) {"
+      "source": "if (!ocrResult.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.Text, \"尘歌壶\") : ocrResult.Text.includes(\"尘歌壶\"))) {"
+    },
+    {
+      "path": "repo/js/尘歌壶一条龙/main.js",
+      "line": 227,
+      "literals": [
+        "尘歌壶"
+      ],
+      "source": "if (!ocrResult.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.Text, \"尘歌壶\") : ocrResult.Text.includes(\"尘歌壶\"))) {"
     },
     {
       "path": "repo/js/尘歌壶一条龙/main.js",
@@ -12391,7 +12869,15 @@
       "literals": [
         "尘歌壶"
       ],
-      "source": "if (!ocrResult2.isEmpty() && ocrResult2.Text.includes(\"尘歌壶\")) {"
+      "source": "if (!ocrResult2.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult2.Text, \"尘歌壶\") : ocrResult2.Text.includes(\"尘歌壶\"))) {"
+    },
+    {
+      "path": "repo/js/尘歌壶一条龙/main.js",
+      "line": 239,
+      "literals": [
+        "尘歌壶"
+      ],
+      "source": "if (!ocrResult2.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult2.Text, \"尘歌壶\") : ocrResult2.Text.includes(\"尘歌壶\"))) {"
     },
     {
       "path": "repo/js/尘歌壶一条龙/main.js",
@@ -12399,7 +12885,15 @@
       "literals": [
         "已售罄"
       ],
-      "source": "if (!soldOutResult.isEmpty() && soldOutResult.Text.includes(\"已售罄\")) {"
+      "source": "if (!soldOutResult.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(soldOutResult.Text, \"已售罄\") : soldOutResult.Text.includes(\"已售罄\"))) {"
+    },
+    {
+      "path": "repo/js/尘歌壶一条龙/main.js",
+      "line": 408,
+      "literals": [
+        "已售罄"
+      ],
+      "source": "if (!soldOutResult.isEmpty() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(soldOutResult.Text, \"已售罄\") : soldOutResult.Text.includes(\"已售罄\"))) {"
     },
     {
       "path": "repo/js/恢复默认键位设置/main.js",
@@ -12407,7 +12901,15 @@
       "literals": [
         "按键"
       ],
-      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || res.text.includes(\"按键\") || res.text.includes(\"按鍵\")) {"
+      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"按键\") : res.text.includes(\"按键\")) || res.text.includes(\"按鍵\")) {"
+    },
+    {
+      "path": "repo/js/恢复默认键位设置/main.js",
+      "line": 25,
+      "literals": [
+        "按键"
+      ],
+      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"按键\") : res.text.includes(\"按键\")) || res.text.includes(\"按鍵\")) {"
     },
     {
       "path": "repo/js/恢复默认键位设置/main.js",
@@ -12415,7 +12917,7 @@
       "literals": [
         "按鍵"
       ],
-      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || res.text.includes(\"按键\") || res.text.includes(\"按鍵\")) {"
+      "source": "if (res.text.includes(\"Key\") || res.text.includes(\"Bindings\") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"按键\") : res.text.includes(\"按键\")) || res.text.includes(\"按鍵\")) {"
     },
     {
       "path": "repo/js/批量讨伐角色养成材料BOSS/src/utils.js",
@@ -12743,7 +13245,15 @@
       "literals": [
         "售罄"
       ],
-      "source": "if (ocrResult.isExist() && (ocrResult.text.includes(\"售罄\"))) {"
+      "source": "if (ocrResult.isExist() && ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"售罄\") : ocrResult.text.includes(\"售罄\")))) {"
+    },
+    {
+      "path": "repo/js/自动购买商品/main.js",
+      "line": 250,
+      "literals": [
+        "售罄"
+      ],
+      "source": "if (ocrResult.isExist() && ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, \"售罄\") : ocrResult.text.includes(\"售罄\")))) {"
     },
     {
       "path": "repo/js/自动购买商品/main.js",
@@ -12999,7 +13509,15 @@
       "literals": [
         "分钟"
       ],
-      "source": "if (ocrResult[i].text.endsWith(\"分钟\") || ocrResult[i].text.endsWith(\"秒\")) {"
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"分钟\") : ocrResult[i].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"秒\") : ocrResult[i].text.endsWith(\"秒\"))) {"
+    },
+    {
+      "path": "repo/js/食材加工/main.js",
+      "line": 438,
+      "literals": [
+        "分钟"
+      ],
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"分钟\") : ocrResult[i].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"秒\") : ocrResult[i].text.endsWith(\"秒\"))) {"
     },
     {
       "path": "repo/js/食材加工/main.js",
@@ -13007,7 +13525,15 @@
       "literals": [
         "秒"
       ],
-      "source": "if (ocrResult[i].text.endsWith(\"分钟\") || ocrResult[i].text.endsWith(\"秒\")) {"
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"分钟\") : ocrResult[i].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"秒\") : ocrResult[i].text.endsWith(\"秒\"))) {"
+    },
+    {
+      "path": "repo/js/食材加工/main.js",
+      "line": 438,
+      "literals": [
+        "秒"
+      ],
+      "source": "if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"分钟\") : ocrResult[i].text.endsWith(\"分钟\")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, \"秒\") : ocrResult[i].text.endsWith(\"秒\"))) {"
     },
     {
       "path": "repo/js/食材加工极速版/main.js",

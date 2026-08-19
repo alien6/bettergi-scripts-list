@@ -1,6 +1,6 @@
 # PT-BR Script Validation Status
 
-Generated: 2026-08-18 22:44:05Z
+Generated: 2026-08-19 00:15:56Z
 
-- Structural validation: PASS
-- Strict functional CJK occurrences: 94
+- Structural validation: FAIL
+- Strict functional CJK occurrences: 42

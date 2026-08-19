@@ -1,5 +1,5 @@
 {
-  "strict_functional_cjk_count": 48,
+  "strict_functional_cjk_count": 42,
   "legacy_runtime_covered_count": 0,
   "literal_frequency": {
     "对局胜利": 2,
@@ -8,8 +8,6 @@
     "加速": 1,
     "快速加工": 1,
     "下次": 1,
-    "原粹": 1,
-    "树脂": 1,
     "世界权限": 1,
     "能给我几支香吗": 1,
     "给我一份福利餐": 1,
@@ -28,10 +26,6 @@
     "登录其他账号": 1,
     "我方出战牌组": 1,
     "更改牌组外观": 1,
-    "罗盘状态异常，可能在战斗中": 1,
-    "未发现宝藏或宝藏相关线索": 1,
-    "发现宝藏或宝藏相关线索": 1,
-    "存在宝藏": 1,
     "倒计时": 1,
     "点击": 1,
     "继续": 1,
@@ -52,13 +46,11 @@
     "repo/js/DSTCG/main.js": 5,
     "repo/js/SwitchAccountMultipleMode/main.js": 5,
     "repo/js/WeeklyThousandStarRealm/main.js": 5,
-    "repo/js/TeyvatScanner/main.js": 4,
     "repo/js/七圣召唤七日历练全自动/main.js": 4,
     "repo/js/AutoPickLitter/main.js": 3,
     "repo/js/StarfieldRaimentCollection/main.js": 3,
     "repo/js/自动购买商品/main.js": 3,
     "repo/js/AEscoffier_chef/main.js": 2,
-    "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js": 2,
     "repo/js/TCGQuickProficiency/main.js": 2,
     "repo/js/铁匠铺/main.js": 2,
     "repo/js/AutoFriendshipFight/main.js": 1,
@@ -90,18 +82,6 @@
       "line": 187,
       "literal": "下次",
       "source": "await genshin.chooseTalkOption(\"下次\");"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 748,
-      "literal": "原粹",
-      "source": "(t.text.includes(targetAmount.toString()) && t.text.includes(\"原粹\")) ||"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 749,
-      "literal": "树脂",
-      "source": "(t.text.includes(`${targetAmount}个`) && t.text.includes(\"树脂\"))"
     },
     {
       "path": "repo/js/AutoPermission/main.js",
@@ -234,30 +214,6 @@
       "line": 267,
       "literal": "更改牌组外观",
       "source": "if (deck.text && deck.text.includes(\"更改牌组外观\")) {"
-    },
-    {
-      "path": "repo/js/TeyvatScanner/main.js",
-      "line": 247,
-      "literal": "罗盘状态异常，可能在战斗中",
-      "source": "if (compassResult === \"罗盘状态异常，可能在战斗中\") {"
-    },
-    {
-      "path": "repo/js/TeyvatScanner/main.js",
-      "line": 250,
-      "literal": "未发现宝藏或宝藏相关线索",
-      "source": "} else if (compassResult === \"未发现宝藏或宝藏相关线索\") {"
-    },
-    {
-      "path": "repo/js/TeyvatScanner/main.js",
-      "line": 253,
-      "literal": "发现宝藏或宝藏相关线索",
-      "source": "} else if (compassResult === \"发现宝藏或宝藏相关线索\") {"
-    },
-    {
-      "path": "repo/js/TeyvatScanner/main.js",
-      "line": 296,
-      "literal": "存在宝藏",
-      "source": "if (treasures[i] === \"存在宝藏\") {"
     },
     {
       "path": "repo/js/WeeklyBoss/utils.js",

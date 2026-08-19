@@ -1,62 +1,15 @@
 === PYTHON SYNTAX ===
 === STRICT SCAN ===
 {
-  "strict_functional_cjk_count": 94,
+  "strict_functional_cjk_count": 42,
+  "legacy_runtime_covered_count": 0,
   "top_literals": [
-    [
-      "委託",
-      3
-    ],
-    [
-      "委",
-      3
-    ],
-    [
-      "使用20个原粹树脂",
-      2
-    ],
-    [
-      "之花",
-      2
-    ],
-    [
-      "20个",
-      2
-    ],
-    [
-      "40个",
-      2
-    ],
-    [
-      "挂起来吧",
-      2
-    ],
-    [
-      "晶蝶",
-      2
-    ],
-    [
-      "诱捕",
-      2
-    ],
-    [
-      "装置",
-      2
-    ],
     [
       "对局胜利",
       2
     ],
     [
       "对局失败",
-      2
-    ],
-    [
-      "申请造访",
-      2
-    ],
-    [
-      "申請造訪",
       2
     ],
     [
@@ -72,71 +25,7 @@
       1
     ],
     [
-      "箱",
-      1
-    ],
-    [
-      "珍貴",
-      1
-    ],
-    [
-      "珍贵",
-      1
-    ],
-    [
-      "使用40个原粹树脂，获取2次产出",
-      1
-    ],
-    [
       "下次",
-      1
-    ],
-    [
-      "接触",
-      1
-    ],
-    [
-      "双倍",
-      1
-    ],
-    [
-      "2倍产出",
-      1
-    ],
-    [
-      "2倍",
-      1
-    ],
-    [
-      "补充",
-      1
-    ],
-    [
-      "原粹",
-      1
-    ],
-    [
-      "树脂",
-      1
-    ],
-    [
-      "溢口",
-      1
-    ],
-    [
-      "校验完成",
-      1
-    ],
-    [
-      "校验失败",
-      1
-    ],
-    [
-      "路线启动",
-      1
-    ],
-    [
-      "全部路线结束",
       1
     ],
     [
@@ -162,25 +51,117 @@
     [
       "联机合奏",
       1
+    ],
+    [
+      "初始手牌",
+      1
+    ],
+    [
+      "重投骰子",
+      1
+    ],
+    [
+      "出战角色",
+      1
+    ],
+    [
+      "其他玩家",
+      1
+    ],
+    [
+      "搜索奇域",
+      1
+    ],
+    [
+      "已完成所有任务",
+      1
+    ],
+    [
+      "前往大厅",
+      1
+    ],
+    [
+      "退出至登录界面",
+      1
+    ],
+    [
+      "进入游戏",
+      1
+    ],
+    [
+      "登录其他账号",
+      1
+    ],
+    [
+      "我方出战牌组",
+      1
+    ],
+    [
+      "更改牌组外观",
+      1
+    ],
+    [
+      "倒计时",
+      1
+    ],
+    [
+      "点击",
+      1
+    ],
+    [
+      "继续",
+      1
+    ],
+    [
+      "置顶",
+      1
+    ],
+    [
+      "管理关卡",
+      1
+    ],
+    [
+      "收藏",
+      1
+    ],
+    [
+      "无法出战",
+      1
+    ],
+    [
+      "道具已达到容量上限",
+      1
+    ],
+    [
+      "当前物品在背包内的容量已达上限",
+      1
+    ],
+    [
+      "有什么卖的",
+      1
+    ],
+    [
+      "可以卖一些",
+      1
+    ],
+    [
+      "进入世界申请",
+      1
+    ],
+    [
+      "利亚姆",
+      1
+    ],
+    [
+      "今日已无法锻造",
+      1
+    ],
+    [
+      "锻造队列",
+      1
     ]
   ],
   "top_files": [
-    [
-      "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      10
-    ],
-    [
-      "repo/js/CrystalflyTrap/main.js",
-      7
-    ],
-    [
-      "repo/js/使用历练点完成每日委托/main.js",
-      6
-    ],
-    [
-      "repo/js/AutoPickLitter/main.js",
-      5
-    ],
     [
       "repo/js/DSTCG/main.js",
       5
@@ -194,27 +175,11 @@
       5
     ],
     [
-      "repo/js/AutoPathingLoader-MultiUser/main.js",
-      4
-    ],
-    [
-      "repo/js/DoubleFriendshipEncounterPoints/main.js",
-      4
-    ],
-    [
-      "repo/js/TeyvatScanner/main.js",
-      4
-    ],
-    [
       "repo/js/七圣召唤七日历练全自动/main.js",
       4
     ],
     [
-      "repo/js/背包材料统计/lib/timeCostSystem.js",
-      4
-    ],
-    [
-      "repo/js/AIPC珍贵宝箱无限刷/main.js",
+      "repo/js/AutoPickLitter/main.js",
       3
     ],
     [
@@ -227,22 +192,6 @@
     ],
     [
       "repo/js/AEscoffier_chef/main.js",
-      2
-    ],
-    [
-      "repo/js/AutoFontaineLeyLine/main.js",
-      2
-    ],
-    [
-      "repo/js/AutoLeyLineOutcrop/main.js",
-      2
-    ],
-    [
-      "repo/js/AutoLeyLineOutcrop/utils/processLeyLineOutcrop.js",
-      2
-    ],
-    [
-      "repo/js/AutoStygianOnslaught/main.js",
       2
     ],
     [
@@ -262,6 +211,10 @@
       1
     ],
     [
+      "repo/js/AutoStygianOnslaught/main.js",
+      1
+    ],
+    [
       "repo/js/AutoYuanQin/main.js",
       1
     ],
@@ -274,10 +227,6 @@
       1
     ],
     [
-      "repo/js/背包材料统计/main.js",
-      1
-    ],
-    [
       "repo/js/营养袋吃药统计/main.js",
       1
     ],
@@ -285,11 +234,13 @@
       "repo/js/诛贼-地方传奇-利亚姆/lib/Laim/lib/MobPuller.js",
       1
     ]
-  ]
+  ],
+  "top_runtime_covered_literals": []
 }
 === MANIFEST JSON ===
 Validated 138 manifest.json files
 === TYPE DEFINITIONS ===
 All PT-BR localization typings present
 === INTERNAL SETTINGS SAFETY ===
-No generated localization in settings.* comparisons
+repo/js/FullyAutoAndSemiAutoTools/main.js:1103: auto.skip = settings.auto_semi_key_mode === (genshin.getText ? genshin.getText("skip") : "跳过")
+1 localized internal setting comparisons remain
