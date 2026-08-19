@@ -3,6 +3,10 @@
     "pt": ["m"],
     "evidence": "Genshin TextMap: {0}分钟 -> {0}m"
   },
+  "点击": {
+    "pt": ["Pressione", "Toque"],
+    "evidence": "Genshin TextMap paired PT-BR UI prompts consistently use Pressione for clickable actions; Toque is retained as an accepted interaction variant"
+  },
   "按鍵": {
     "pt": ["Comandos"],
     "evidence": "Traditional-Chinese alias of 按键, exact TextMap PT value Comandos"
