@@ -83,6 +83,14 @@
     "pt": ["Comissão"],
     "evidence": "Traditional-Chinese alias of 委托; semantic commission key uses Comissão in PT-BR"
   },
+  "今日已无法锻造": {
+    "pt": ["Não foi possível forjar"],
+    "evidence": "Genshin TextMap paired forge-limit messages begin with Não foi possível forjar"
+  },
+  "锻造队列": {
+    "pt": ["Fila de Forjamento", "Fila de forjamento"],
+    "evidence": "Genshin TextMap exact paired labels: 锻造队列({0}/{1}) -> Fila de Forjamento {0}/{1}; 锻造队列已满 -> Fila de forjamento cheia"
+  },
   "箱": {
     "pt": ["Baú"],
     "evidence": "Genshin PT-BR chest UI uses Baú"
