@@ -927,7 +927,7 @@ async function numberTemplateMatch(
         let ocrResults = await performOcr("王平安", dialogZone.x, dialogZone.y, false);
         if (ocrResults.success) {
             await sleep(700);
-            await genshin.chooseTalkOption("能给我几支香吗");
+            await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral("能给我几支香吗") : "能给我几支香吗"));
             await sleep(700);
             leftButtonClick();
             await sleep(700);

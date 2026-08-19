@@ -57,7 +57,7 @@ const WAIT_FRIEND_CONFIRM_TIMEOUT = 25 * 1000;
             const yourselfText = yourselfRegin.text.trim();
             if (genshin.textContainsLiteral
                 ? genshin.textContainsLiteral(yourselfText, '其他玩家')
-                : yourselfText.includes('其他玩家')) {
+                : (genshin.textContainsLiteral ? genshin.textContainsLiteral(yourselfText, "其他玩家") : yourselfText.includes("其他玩家"))) {
                 gameRegion.dispose();
                 throw new Error('不能使用自己的UID');
             }

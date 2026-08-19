@@ -1,17 +1,46 @@
 {
-  "strict_functional_cjk_count": 25,
+  "strict_functional_cjk_count": 68,
   "legacy_runtime_covered_count": 0,
   "literal_frequency": {
+    "天": 3,
+    "小时": 3,
+    "时间": 3,
+    "当前拥有": 3,
+    "每": 3,
+    "秒": 2,
+    "个": 2,
     "退出并": 2,
+    "超量名单": 2,
+    "狗粮经验": 1,
+    "摩拉": 1,
     "加速": 1,
     "快速加工": 1,
+    "小": 1,
+    "分": 1,
+    "分钟": 1,
+    "西风": 1,
+    "丘丘人哨塔": 1,
+    "敌人再次来袭": 1,
+    "击败": 1,
+    "消灭": 1,
+    "击退": 1,
     "下次": 1,
-    "能给我几支香吗": 1,
+    "预计用时": 1,
+    "包含以下怪物": 1,
+    "倍产出次数": 1,
     "给我一份福利餐": 1,
     "其实": 1,
     "紊乱平息": 1,
     "联机合奏": 1,
-    "其他玩家": 1,
+    "周": 1,
+    "点": 1,
+    "版本": 1,
+    "离开队伍": 1,
+    "回合开始时：": 1,
+    "结束阶段：": 1,
+    "拒绝了多人游戏申请": 1,
+    "无法进入": 1,
+    "世界主人暂忙": 1,
     "搜索奇域": 1,
     "已完成所有任务": 1,
     "前往大厅": 1,
@@ -25,27 +54,59 @@
     "道具已达到容量上限": 1,
     "当前物品在背包内的容量已达上限": 1,
     "进入世界申请": 1,
-    "利亚姆": 1
+    "利亚姆": 1,
+    "用时": 1
   },
   "file_frequency": {
-    "repo/js/AutoPickLitter/main.js": 3,
+    "repo/js/CD-Aware-AutoGather/lib/lib.js": 8,
+    "repo/js/ActivitySwitchNotice/utils/activity.js": 7,
+    "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js": 4,
+    "repo/js/AutoHoeingOneDragon/main.js": 3,
+    "repo/js/JoinFriendsWorld/main.js": 3,
     "repo/js/StarfieldRaimentCollection/main.js": 3,
     "repo/js/SwitchAccountMultipleMode/main.js": 3,
     "repo/js/WeeklyThousandStarRealm/main.js": 3,
+    "repo/js/营养袋吃药统计/main.js": 3,
+    "repo/js/AAA-Artifacts-Bulk-Supply/main.js": 2,
     "repo/js/AEscoffier_chef/main.js": 2,
+    "repo/js/AutoPickLitter/main.js": 2,
+    "repo/js/CD-Aware-AutoGather/main.js": 2,
+    "repo/js/DSTCG/main.js": 2,
     "repo/js/TCGQuickProficiency/main.js": 2,
     "repo/js/七圣召唤七日历练全自动/main.js": 2,
+    "repo/js/背包材料统计/main.js": 2,
+    "repo/js/采集cd管理/main.js": 2,
+    "repo/js/ArtifactExpCount/main.js": 1,
+    "repo/js/ArtifactScore/tools/crawl-standalone.js": 1,
+    "repo/js/AutoCommissionNova/src/processors/basic-destroy-watchtower.js": 1,
     "repo/js/AutoFriendshipFight/main.js": 1,
+    "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js": 1,
+    "repo/js/AutoLeyLineOutcrop/utils/calCountByResin.js": 1,
+    "repo/js/AutoNobushi/main.js": 1,
+    "repo/js/AutoPlan/utils/physical.js": 1,
     "repo/js/AutoStygianOnslaught/main.js": 1,
     "repo/js/AutoYuanQin/main.js": 1,
-    "repo/js/JoinFriendsWorld/main.js": 1,
+    "repo/js/OCRCountResin/main.js": 1,
     "repo/js/自动购买商品/main.js": 1,
-    "repo/js/营养袋吃药统计/main.js": 1,
     "repo/js/诛贼-地方传奇-利亚姆/lib/Laim/lib/MobPuller.js": 1
   },
   "runtime_covered_literal_frequency": {},
   "runtime_covered_file_frequency": {},
   "findings": [
+    {
+      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
+      "line": 152,
+      "literal": "狗粮经验",
+      "source": "const match = line.match(/狗粮经验(-?\\d+)，摩拉(-?\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
+      "line": 152,
+      "literal": "摩拉",
+      "source": "const match = line.match(/狗粮经验(-?\\d+)，摩拉(-?\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
       "line": 1765,
@@ -59,16 +120,148 @@
       "source": "if (itemPage && itemPage.text.includes(\"快速加工\")) { // 如果未打开矿石详情页面"
     },
     {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 623,
+      "literal": "小",
+      "source": "if (remainingTimeText.endsWith('小')) {"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 625,
+      "literal": "分",
+      "source": "} else if (remainingTimeText.endsWith('分')) {"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 334,
+      "literal": "天",
+      "source": "const dayMatch = timeText.match(/(\\d+(?:\\.\\d+)?)\\s*天/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 335,
+      "literal": "小时",
+      "source": "const hourMatch = timeText.match(/(\\d+(?:\\.\\d+)?)\\s*小时/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 336,
+      "literal": "分钟",
+      "source": "const minuteMatch = timeText.match(/(\\d+(?:\\.\\d+)?)\\s*分钟/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 367,
+      "literal": "天",
+      "source": "const dayMatch = timeText.match(/(\\d+)\\s*天/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 368,
+      "literal": "小时",
+      "source": "const hourMatch = timeText.match(/(\\d+)\\s*小时/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ArtifactExpCount/main.js",
+      "line": 609,
+      "literal": "时间",
+      "source": "const timeMatch = line.match(/时间:(\\d{4}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2})/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ArtifactScore/tools/crawl-standalone.js",
+      "line": 268,
+      "literal": "西风",
+      "source": "const rx = text.match(/(\\/\\^西风[^)]+\\)\\/)/)",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoCommissionNova/src/processors/basic-destroy-watchtower.js",
+      "line": 88,
+      "literal": "丘丘人哨塔",
+      "source": "const match = normalized.match(/丘丘人哨塔.*?(\\d+)\\/(\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js",
+      "line": 23,
+      "literal": "敌人再次来袭",
+      "source": "const match = normalized.match(/敌人再次来袭.*?[（(](\\d+)\\/(\\d+)[）)]/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js",
+      "line": 38,
+      "literal": "击败",
+      "source": "const semanticMatch = normalized.match(/(?:击败|消灭|击退).*?(\\d+)\\/(\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js",
+      "line": 38,
+      "literal": "消灭",
+      "source": "const semanticMatch = normalized.match(/(?:击败|消灭|击退).*?(\\d+)\\/(\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js",
+      "line": 38,
+      "literal": "击退",
+      "source": "const semanticMatch = normalized.match(/(?:击败|消灭|击退).*?(\\d+)\\/(\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
       "path": "repo/js/AutoFriendshipFight/main.js",
       "line": 187,
       "literal": "下次",
       "source": "await genshin.chooseTalkOption(\"下次\");"
     },
     {
-      "path": "repo/js/AutoPickLitter/main.js",
-      "line": 930,
-      "literal": "能给我几支香吗",
-      "source": "await genshin.chooseTalkOption(\"能给我几支香吗\");"
+      "path": "repo/js/AutoHoeingOneDragon/main.js",
+      "line": 335,
+      "literal": "预计用时",
+      "source": "const timeMatch = desc.match(/预计用时([\\d\\.]+)秒/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoHoeingOneDragon/main.js",
+      "line": 335,
+      "literal": "秒",
+      "source": "const timeMatch = desc.match(/预计用时([\\d\\.]+)秒/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoHoeingOneDragon/main.js",
+      "line": 341,
+      "literal": "包含以下怪物",
+      "source": "const monsterMatch = desc.match(/包含以下怪物：(.*?)。/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 54,
+      "literal": "倍产出次数",
+      "source": "const match = texts[i].text.match(/2倍产出次数[：:]\\s*(\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/calCountByResin.js",
+      "line": 309,
+      "literal": "当前拥有",
+      "source": "const match = textList[i].text.match(/当前拥有\\s*([0-5ss])/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoNobushi/main.js",
+      "line": 17,
+      "literal": "个",
+      "source": "const match = pathing_name.match(/-(\\d+)个\\.json$/);",
+      "coverage": "regex-language-dependency"
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
@@ -83,6 +276,13 @@
       "source": "await genshin.chooseTalkOption(\"其实\");"
     },
     {
+      "path": "repo/js/AutoPlan/utils/physical.js",
+      "line": 315,
+      "literal": "当前拥有",
+      "source": "const match = res.text.match(/当前拥有\\s*([0-5ss])/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
       "path": "repo/js/AutoStygianOnslaught/main.js",
       "line": 896,
       "literal": "紊乱平息",
@@ -95,10 +295,110 @@
       "source": "if (ocrResult && ocrResult.text.includes(\"联机合奏\")) {"
     },
     {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 209,
+      "literal": "每",
+      "source": "let match = lowerCaseRefreshMode.match(/每(\\d*)周/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 209,
+      "literal": "周",
+      "source": "let match = lowerCaseRefreshMode.match(/每(\\d*)周/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 231,
+      "literal": "每",
+      "source": "match = lowerCaseRefreshMode.match(/每(\\d*)天(\\d{1,2})点/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 231,
+      "literal": "天",
+      "source": "match = lowerCaseRefreshMode.match(/每(\\d*)天(\\d{1,2})点/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 231,
+      "literal": "点",
+      "source": "match = lowerCaseRefreshMode.match(/每(\\d*)天(\\d{1,2})点/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 263,
+      "literal": "小时",
+      "source": "match = lowerCaseRefreshMode.match(/(\\d+)小时/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 277,
+      "literal": "每",
+      "source": "match = lowerCaseRefreshMode.match(/每(\\d*)版本/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 277,
+      "literal": "版本",
+      "source": "match = lowerCaseRefreshMode.match(/每(\\d*)版本/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/main.js",
+      "line": 1164,
+      "literal": "离开队伍",
+      "source": "if (btnText === \"离开队伍\") {"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/main.js",
+      "line": 1016,
+      "literal": "个",
+      "source": "const match = pathName.match(/-(\\d+)个/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/DSTCG/main.js",
+      "line": 1737,
+      "literal": "回合开始时：",
+      "source": "if (effectText.includes(\"回合开始时：\") || effectText.includes(\"结束阶段：\")) {"
+    },
+    {
+      "path": "repo/js/DSTCG/main.js",
+      "line": 1737,
+      "literal": "结束阶段：",
+      "source": "if (effectText.includes(\"回合开始时：\") || effectText.includes(\"结束阶段：\")) {"
+    },
+    {
       "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 56,
-      "literal": "其他玩家",
-      "source": "if (yourselfRegin.text.includes('其他玩家')) {"
+      "line": 87,
+      "literal": "拒绝了多人游戏申请",
+      "source": "if (requestText.endsWith('拒绝了多人游戏申请')) {"
+    },
+    {
+      "path": "repo/js/JoinFriendsWorld/main.js",
+      "line": 90,
+      "literal": "无法进入",
+      "source": "else if (requestText.startsWith('无法进入')) {"
+    },
+    {
+      "path": "repo/js/JoinFriendsWorld/main.js",
+      "line": 93,
+      "literal": "世界主人暂忙",
+      "source": "else if (requestText.startsWith('世界主人暂忙')) {"
+    },
+    {
+      "path": "repo/js/OCRCountResin/main.js",
+      "line": 263,
+      "literal": "当前拥有",
+      "source": "const match = res.text.match(/当前拥有\\s*([0-5ss])/);",
+      "coverage": "regex-language-dependency"
     },
     {
       "path": "repo/js/StarfieldRaimentCollection/main.js",
@@ -179,6 +479,20 @@
       "source": "if (!result.isEmpty() && result.text.includes(\"道具已达到容量上限\")) {"
     },
     {
+      "path": "repo/js/背包材料统计/main.js",
+      "line": 996,
+      "literal": "超量名单",
+      "source": "const match = existingContent.match(/超量名单:(.*)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/背包材料统计/main.js",
+      "line": 1032,
+      "literal": "超量名单",
+      "source": "const match = content.match(/超量名单:(.*)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
       "path": "repo/js/自动购买商品/main.js",
       "line": 228,
       "literal": "当前物品在背包内的容量已达上限",
@@ -191,10 +505,38 @@
       "source": "if (ocr_res.text.includes(\"进入世界申请\")) {"
     },
     {
+      "path": "repo/js/营养袋吃药统计/main.js",
+      "line": 376,
+      "literal": "时间",
+      "source": "const timeMatch = line.match(/时间:(\\d{4}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2})/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/营养袋吃药统计/main.js",
+      "line": 401,
+      "literal": "时间",
+      "source": "const timeMatch = line.match(/时间:(\\d{4}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2})/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
       "path": "repo/js/诛贼-地方传奇-利亚姆/lib/Laim/lib/MobPuller.js",
       "line": 122,
       "literal": "利亚姆",
       "source": "const found01 = ocrRes.some(r => r.text.includes('利亚姆'));"
+    },
+    {
+      "path": "repo/js/采集cd管理/main.js",
+      "line": 3467,
+      "literal": "用时",
+      "source": "const tm = part.match(/^用时(\\d+)秒$/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/采集cd管理/main.js",
+      "line": 3467,
+      "literal": "秒",
+      "source": "const tm = part.match(/^用时(\\d+)秒$/);",
+      "coverage": "regex-language-dependency"
     }
   ],
   "runtime_covered_findings": []

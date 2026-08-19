@@ -1,7 +1,7 @@
 {
   "semantic_replacements": {},
   "files_changed": [],
-  "remaining_functional_cjk_count": 691,
+  "remaining_functional_cjk_count": 690,
   "remaining_known_semantic_count": 0,
   "remaining_functional_literal_frequency": {
     "无": 10,
@@ -336,7 +336,6 @@
     "执行": 1,
     "有草神": 1,
     "草": 1,
-    "冒险等阶": 1,
     "其他玩家": 1,
     "拒绝了多人游戏申请": 1,
     "无法进入": 1,
@@ -3967,23 +3966,15 @@
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 53,
-      "literals": [
-        "冒险等阶"
-      ],
-      "source": "if (!levelText.includes('冒险等阶')) {"
-    },
-    {
-      "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 56,
+      "line": 60,
       "literals": [
         "其他玩家"
       ],
-      "source": "if (yourselfRegin.text.includes('其他玩家')) {"
+      "source": ": yourselfText.includes('其他玩家')) {"
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 69,
+      "line": 73,
       "literals": [
         "申请加入"
       ],
@@ -3991,7 +3982,7 @@
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 83,
+      "line": 87,
       "literals": [
         "拒绝了多人游戏申请"
       ],
@@ -3999,7 +3990,7 @@
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 86,
+      "line": 90,
       "literals": [
         "无法进入"
       ],
@@ -4007,7 +3998,7 @@
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 89,
+      "line": 93,
       "literals": [
         "世界主人暂忙"
       ],
@@ -6122,6 +6113,7 @@
     "指定好友名字位置:({x},{y},{w},{h}), 识别内容：{text}": 2,
     "申请造访尘歌壶位置:({x},{y},{w},{h}), 识别内容：{text}": 2,
     "无法进入 [${res.text}] 的尘歌壶": 2,
+    "其他玩家": 2,
     "收藏": 2,
     "领取": 2,
     "星境": 2,
@@ -6370,8 +6362,6 @@
     "拖动到看不见辅助排序规则(影响OCR)": 1,
     "==处理前": 1,
     "处理过": 1,
-    "冒险等阶": 1,
-    "其他玩家": 1,
     "战斗": 1,
     "清除": 1,
     "1970年": 1,
@@ -10623,23 +10613,23 @@
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 53,
-      "literals": [
-        "冒险等阶"
-      ],
-      "source": "if (!levelText.includes('冒险等阶')) {"
-    },
-    {
-      "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 56,
+      "line": 59,
       "literals": [
         "其他玩家"
       ],
-      "source": "if (yourselfRegin.text.includes('其他玩家')) {"
+      "source": "? genshin.textContainsLiteral(yourselfText, '其他玩家')"
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 69,
+      "line": 60,
+      "literals": [
+        "其他玩家"
+      ],
+      "source": ": yourselfText.includes('其他玩家')) {"
+    },
+    {
+      "path": "repo/js/JoinFriendsWorld/main.js",
+      "line": 73,
       "literals": [
         "申请加入"
       ],
@@ -10647,7 +10637,7 @@
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
-      "line": 69,
+      "line": 73,
       "literals": [
         "申请加入"
       ],
