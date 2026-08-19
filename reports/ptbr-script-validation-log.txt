@@ -1,17 +1,15 @@
 === PYTHON SYNTAX ===
+=== PYTHON UNIT TESTS ===
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
 === STRICT SCAN ===
 {
-  "strict_functional_cjk_count": 42,
+  "strict_functional_cjk_count": 31,
   "legacy_runtime_covered_count": 0,
   "top_literals": [
-    [
-      "对局胜利",
-      2
-    ],
-    [
-      "对局失败",
-      2
-    ],
     [
       "退出并",
       2
@@ -53,18 +51,6 @@
       1
     ],
     [
-      "初始手牌",
-      1
-    ],
-    [
-      "重投骰子",
-      1
-    ],
-    [
-      "出战角色",
-      1
-    ],
-    [
       "其他玩家",
       1
     ],
@@ -85,14 +71,6 @@
       1
     ],
     [
-      "进入游戏",
-      1
-    ],
-    [
-      "登录其他账号",
-      1
-    ],
-    [
       "我方出战牌组",
       1
     ],
@@ -102,14 +80,6 @@
     ],
     [
       "倒计时",
-      1
-    ],
-    [
-      "点击",
-      1
-    ],
-    [
-      "继续",
       1
     ],
     [
@@ -163,27 +133,19 @@
   ],
   "top_files": [
     [
-      "repo/js/DSTCG/main.js",
-      5
-    ],
-    [
-      "repo/js/SwitchAccountMultipleMode/main.js",
-      5
-    ],
-    [
-      "repo/js/WeeklyThousandStarRealm/main.js",
-      5
-    ],
-    [
-      "repo/js/七圣召唤七日历练全自动/main.js",
-      4
-    ],
-    [
       "repo/js/AutoPickLitter/main.js",
       3
     ],
     [
       "repo/js/StarfieldRaimentCollection/main.js",
+      3
+    ],
+    [
+      "repo/js/SwitchAccountMultipleMode/main.js",
+      3
+    ],
+    [
+      "repo/js/WeeklyThousandStarRealm/main.js",
       3
     ],
     [
@@ -196,6 +158,10 @@
     ],
     [
       "repo/js/TCGQuickProficiency/main.js",
+      2
+    ],
+    [
+      "repo/js/七圣召唤七日历练全自动/main.js",
       2
     ],
     [

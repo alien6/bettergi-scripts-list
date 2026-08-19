@@ -3715,7 +3715,7 @@
       "literals": [
         "初始手牌"
       ],
-      "source": "if (ocr.isExist() && ocr.text === \"初始手牌\") {"
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"初始手牌\") : ocr.text === \"初始手牌\")) {"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -3723,7 +3723,7 @@
       "literals": [
         "重投骰子"
       ],
-      "source": "if (ocr.isExist() && ocr.text === \"重投骰子\") {"
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"重投骰子\") : ocr.text === \"重投骰子\")) {"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -3731,7 +3731,7 @@
       "literals": [
         "出战角色"
       ],
-      "source": "if (ocr.isExist() && ocr.text === \"出战角色\") {"
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"出战角色\") : ocr.text === \"出战角色\")) {"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -3739,7 +3739,7 @@
       "literals": [
         "对局胜利"
       ],
-      "source": "if (ocr.isExist() && ocr.text.includes(\"对局胜利\")) {"
+      "source": "if (ocr.isExist() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocr.text, \"对局胜利\") : ocr.text.includes(\"对局胜利\"))) {"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -3747,7 +3747,7 @@
       "literals": [
         "对局失败"
       ],
-      "source": "} else if (ocr.isExist() && ocr.text.includes(\"对局失败\")){"
+      "source": "} else if (ocr.isExist() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocr.text, \"对局失败\") : ocr.text.includes(\"对局失败\"))){"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -4619,7 +4619,7 @@
       "literals": [
         "对局失败"
       ],
-      "source": "if (res1.text.includes(\"对局失败\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res1.text, \"对局失败\") : res1.text.includes(\"对局失败\"))) {"
     },
     {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",
@@ -4627,7 +4627,7 @@
       "literals": [
         "对局胜利"
       ],
-      "source": "} else if (res1.text.includes(\"对局胜利\")) {"
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res1.text, \"对局胜利\") : res1.text.includes(\"对局胜利\"))) {"
     },
     {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",
@@ -5958,7 +5958,7 @@
       "source": "if (challengeName == \"纯水精灵\" || challengeName == \"歌裴莉娅的葬送\" || challengeName == \"科培琉司的劫罚\") samePlace = 1;//这些 boss 挑战后不会原地刷新"
     }
   ],
-  "review_cjk_count": 804,
+  "review_cjk_count": 811,
   "review_literal_frequency": {
     "食材加工2": 7,
     "OCR未识别到任何文本": 6,
@@ -5992,6 +5992,8 @@
     "提瓦特": 4,
     "晶蝶": 4,
     "装置": 4,
+    "对局胜利": 4,
+    "对局失败": 4,
     "申请造访": 4,
     "申請造訪": 4,
     "大厅": 4,
@@ -6088,8 +6090,9 @@
     "元素爆发": 2,
     "元素": 2,
     "点": 2,
-    "对局胜利": 2,
-    "对局失败": 2,
+    "初始手牌": 2,
+    "重投骰子": 2,
+    "出战角色": 2,
     "指定好友名字位置:({x},{y},{w},{h}), 识别内容：{text}": 2,
     "申请造访尘歌壶位置:({x},{y},{w},{h}), 识别内容：{text}": 2,
     "无法进入 [${res.text}] 的尘歌壶": 2,
@@ -6323,9 +6326,6 @@
     "assets/icon/晶蝶诱捕装置.png": 1,
     "回合开始时：": 1,
     "结束阶段：": 1,
-    "初始手牌": 1,
-    "重投骰子": 1,
-    "出战角色": 1,
     "万能元素": 1,
     "充能": 1,
     "检测到物品过期": 1,
@@ -10267,7 +10267,15 @@
       "literals": [
         "初始手牌"
       ],
-      "source": "if (ocr.isExist() && ocr.text === \"初始手牌\") {"
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"初始手牌\") : ocr.text === \"初始手牌\")) {"
+    },
+    {
+      "path": "repo/js/DSTCG/main.js",
+      "line": 1810,
+      "literals": [
+        "初始手牌"
+      ],
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"初始手牌\") : ocr.text === \"初始手牌\")) {"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -10275,7 +10283,15 @@
       "literals": [
         "重投骰子"
       ],
-      "source": "if (ocr.isExist() && ocr.text === \"重投骰子\") {"
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"重投骰子\") : ocr.text === \"重投骰子\")) {"
+    },
+    {
+      "path": "repo/js/DSTCG/main.js",
+      "line": 1833,
+      "literals": [
+        "重投骰子"
+      ],
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"重投骰子\") : ocr.text === \"重投骰子\")) {"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -10283,7 +10299,15 @@
       "literals": [
         "出战角色"
       ],
-      "source": "if (ocr.isExist() && ocr.text === \"出战角色\") {"
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"出战角色\") : ocr.text === \"出战角色\")) {"
+    },
+    {
+      "path": "repo/js/DSTCG/main.js",
+      "line": 1856,
+      "literals": [
+        "出战角色"
+      ],
+      "source": "if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, \"出战角色\") : ocr.text === \"出战角色\")) {"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -10291,7 +10315,15 @@
       "literals": [
         "对局胜利"
       ],
-      "source": "if (ocr.isExist() && ocr.text.includes(\"对局胜利\")) {"
+      "source": "if (ocr.isExist() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocr.text, \"对局胜利\") : ocr.text.includes(\"对局胜利\"))) {"
+    },
+    {
+      "path": "repo/js/DSTCG/main.js",
+      "line": 1879,
+      "literals": [
+        "对局胜利"
+      ],
+      "source": "if (ocr.isExist() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocr.text, \"对局胜利\") : ocr.text.includes(\"对局胜利\"))) {"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -10299,7 +10331,15 @@
       "literals": [
         "对局失败"
       ],
-      "source": "} else if (ocr.isExist() && ocr.text.includes(\"对局失败\")){"
+      "source": "} else if (ocr.isExist() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocr.text, \"对局失败\") : ocr.text.includes(\"对局失败\"))){"
+    },
+    {
+      "path": "repo/js/DSTCG/main.js",
+      "line": 1881,
+      "literals": [
+        "对局失败"
+      ],
+      "source": "} else if (ocr.isExist() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocr.text, \"对局失败\") : ocr.text.includes(\"对局失败\"))){"
     },
     {
       "path": "repo/js/DSTCG/main.js",
@@ -11787,7 +11827,15 @@
       "literals": [
         "对局失败"
       ],
-      "source": "if (res1.text.includes(\"对局失败\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res1.text, \"对局失败\") : res1.text.includes(\"对局失败\"))) {"
+    },
+    {
+      "path": "repo/js/七圣召唤七日历练全自动/main.js",
+      "line": 328,
+      "literals": [
+        "对局失败"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res1.text, \"对局失败\") : res1.text.includes(\"对局失败\"))) {"
     },
     {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",
@@ -11795,7 +11843,15 @@
       "literals": [
         "对局胜利"
       ],
-      "source": "} else if (res1.text.includes(\"对局胜利\")) {"
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res1.text, \"对局胜利\") : res1.text.includes(\"对局胜利\"))) {"
+    },
+    {
+      "path": "repo/js/七圣召唤七日历练全自动/main.js",
+      "line": 334,
+      "literals": [
+        "对局胜利"
+      ],
+      "source": "} else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res1.text, \"对局胜利\") : res1.text.includes(\"对局胜利\"))) {"
     },
     {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",

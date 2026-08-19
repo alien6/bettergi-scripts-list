@@ -1,5 +1,5 @@
 {
-  "strict_functional_cjk_count": 35,
+  "strict_functional_cjk_count": 31,
   "legacy_runtime_covered_count": 0,
   "literal_frequency": {
     "退出并": 2,
@@ -17,13 +17,9 @@
     "已完成所有任务": 1,
     "前往大厅": 1,
     "退出至登录界面": 1,
-    "进入游戏": 1,
-    "登录其他账号": 1,
     "我方出战牌组": 1,
     "更改牌组外观": 1,
     "倒计时": 1,
-    "点击": 1,
-    "继续": 1,
     "置顶": 1,
     "管理关卡": 1,
     "收藏": 1,
@@ -38,10 +34,10 @@
     "锻造队列": 1
   },
   "file_frequency": {
-    "repo/js/SwitchAccountMultipleMode/main.js": 5,
-    "repo/js/WeeklyThousandStarRealm/main.js": 5,
     "repo/js/AutoPickLitter/main.js": 3,
     "repo/js/StarfieldRaimentCollection/main.js": 3,
+    "repo/js/SwitchAccountMultipleMode/main.js": 3,
+    "repo/js/WeeklyThousandStarRealm/main.js": 3,
     "repo/js/自动购买商品/main.js": 3,
     "repo/js/AEscoffier_chef/main.js": 2,
     "repo/js/TCGQuickProficiency/main.js": 2,
@@ -145,18 +141,6 @@
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 526,
-      "literal": "进入游戏",
-      "source": "await u.waitAndFindText([\"进入游戏\", \"登录其他账号\"], 680, 380, 540, 340, 200);"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 526,
-      "literal": "登录其他账号",
-      "source": "await u.waitAndFindText([\"进入游戏\", \"登录其他账号\"], 680, 380, 540, 340, 200);"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
       "line": 656,
       "literal": "退出并",
       "source": "if (await waitForOcrMatch(\"退出并\", new OpenCvSharp.OpenCvSharp.Rect(0, 0, 1920, 1080), 0.8, 1000)) {"
@@ -184,18 +168,6 @@
       "line": 1258,
       "literal": "倒计时",
       "source": "if (res.text.includes(\"倒计时\")) {"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 134,
-      "literal": "点击",
-      "source": "const result = await findText([\"点击\", \"继续\"],610, 950, 700, 60);"
-    },
-    {
-      "path": "repo/js/WeeklyThousandStarRealm/main.js",
-      "line": 134,
-      "literal": "继续",
-      "source": "const result = await findText([\"点击\", \"继续\"],610, 950, 700, 60);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",

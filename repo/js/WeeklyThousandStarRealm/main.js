@@ -131,7 +131,7 @@ function decreaseWeekTotal() {
 
 // 升级特殊界面点击
 async function findAndClickWhiteSpaceNext() {
-  const result = await findText(["点击", "继续"],610, 950, 700, 60);
+  const result = await findText([(genshin.getTextLiteral ? genshin.getTextLiteral("点击") : "点击"), (genshin.getTextLiteral ? genshin.getTextLiteral("继续") : "继续")],610, 950, 700, 60);
   if (result) {
     await sleep(duration);
     click(610, 950);

@@ -523,7 +523,7 @@ function normalizeAccountOcrText(text) {
 
     async function stateChangeUser() {
         u.logi("开始切换账号");
-        await u.waitAndFindText(["进入游戏", "登录其他账号"], 680, 380, 540, 340, 200);
+        await u.waitAndFindText([(genshin.getTextLiteral ? genshin.getTextLiteral("进入游戏") : "进入游戏"), "登录其他账号"], 680, 380, 540, 340, 200);
 
         const assetSelectUserDropDownIcon = u.loadTemplate("Assets/RecognitionObject/caret.png", 680, 380, 1220, 700);
         let captureRegion = captureGameRegion();
