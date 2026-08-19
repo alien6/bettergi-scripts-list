@@ -242,5 +242,4 @@ Validated 138 manifest.json files
 === TYPE DEFINITIONS ===
 All PT-BR localization typings present
 === INTERNAL SETTINGS SAFETY ===
-repo/js/FullyAutoAndSemiAutoTools/main.js:1103: auto.skip = settings.auto_semi_key_mode === (genshin.getText ? genshin.getText("skip") : "跳过")
-1 localized internal setting comparisons remain
+No generated localization in settings.* comparisons

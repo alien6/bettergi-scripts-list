@@ -1,35 +1,27 @@
 {
-  "semantic_replacements": {
-    "skip": 1
-  },
-  "files_changed": [
-    "repo/js/FullyAutoAndSemiAutoTools/main.js"
-  ],
-  "remaining_functional_cjk_count": 767,
+  "semantic_replacements": {},
+  "files_changed": [],
+  "remaining_functional_cjk_count": 688,
   "remaining_known_semantic_count": 0,
   "remaining_functional_literal_frequency": {
-    "是": 14,
-    "收尾额外A": 10,
     "无": 10,
-    "否": 8,
+    "收尾额外A": 9,
     "综合测试": 8,
-    "默认": 7,
     "旅行者": 7,
     "综合模式": 7,
     "战斗": 6,
     "-通用": 6,
+    "是": 6,
     "已完成": 6,
-    "无(默认)": 6,
     "法器角色充能": 6,
     "全天": 5,
     "装备": 5,
     "天赋": 5,
     "路径名: ": 5,
-    "分解（经验瓶）": 4,
-    "特殊料理": 4,
     "白天": 4,
     "夜晚": 4,
     "进入他人世界": 4,
+    "无(默认)": 4,
     "模板匹配": 4,
     "挂起来吧": 4,
     "再见": 4,
@@ -45,7 +37,6 @@
     "地图追踪": 3,
     "伪造地图追踪(跑图+垂钓)": 3,
     "蕈兽": 3,
-    "启用仅指定怪物模式": 3,
     "之花": 3,
     "空参数": 3,
     "领队": 3,
@@ -55,20 +46,18 @@
     "委": 3,
     "命之座": 3,
     "传说任务": 3,
+    "特殊料理": 3,
     "拾枝杂谈": 3,
     "角色": 3,
     "瑙掕壊": 3,
+    "否": 3,
     "内容检测码: ": 3,
     "上次运行日期:": 2,
-    "不调节时间": 2,
-    "尽量调为白天": 2,
     "餐馆": 2,
     "杂货店": 2,
-    "定制模式(需要手动配置 额外烹饪时间 )": 2,
     "自动": 2,
     "按键": 2,
     "按鍵": 2,
-    "诺艾尔": 2,
     "征讨领域": 2,
     "自动拾取": 2,
     "识别失败": 2,
@@ -102,6 +91,7 @@
     "伪造地图追踪(跑图)": 2,
     "伪造地图追踪(垂钓)": 2,
     "使用20个原粹树脂": 2,
+    "启用仅指定怪物模式": 2,
     "精英": 2,
     "传奇": 2,
     "高收益": 2,
@@ -128,17 +118,13 @@
     "奔行世间": 2,
     "总计": 2,
     "点击": 2,
-    "下拉列表": 2,
-    "账号+密码+OCR": 2,
     "退出并": 2,
-    "不切换服务器": 2,
     "主": 2,
     "删除": 2,
     "大厅": 2,
     "返回": 2,
     "兼容模式": 2,
     "中": 2,
-    "只要大瓶": 2,
     "尘歌壶": 2,
     "入队语音": 2,
     "倒下语音": 2,
@@ -156,29 +142,17 @@
     "上次激活收尾路线时间:": 1,
     "上次运行收尾路线:": 1,
     "日期": 1,
-    "销毁（摩拉）": 1,
     "其他": 1,
     "角色选择": 1,
-    "12%概率双倍": 1,
-    "无加成": 1,
-    "「奇怪的」": 1,
-    "禁用": 1,
-    "跳过此料理": 1,
-    "手动烹饪数计入总数": 1,
-    "预期的特殊料理数": 1,
     "鱼肉": 1,
-    "预期的食材数量(持有总量)": 1,
     "加速": 1,
     "快速加工": 1,
     "箱": 1,
     "珍貴": 1,
     "珍贵": 1,
-    "全跳过": 1,
-    "只跳过与精英怪战斗的路线": 1,
+    "诺艾尔": 1,
     "小": 1,
     "分": 1,
-    "自定义通知": 1,
-    "自动拾取（智能）": 1,
     "强制拾取": 1,
     "下落": 1,
     "自定义": 1,
@@ -208,9 +182,8 @@
     "鹤鸣余音": 1,
     "若水": 1,
     "息燧之笛": 1,
-    "手动进入后运行": 1,
-    "按照下列配置自动进入并运行": 1,
     "物理伤害加成": 1,
+    "分解（经验瓶）": 1,
     "摧毁（摩拉）": 1,
     "编辑委托流程": 1,
     "录制地图路径": 1,
@@ -225,8 +198,6 @@
     "全天(默认)": 1,
     "稻妻-垂钓点-鹤观逢岳之野西南": 1,
     "查看资料": 1,
-    "合成的鱼饵数量(设置200则合成200个)": 1,
-    "期望的鱼饵数量(设置200则合成到200个)": 1,
     "合成台": 1,
     "使用40个原粹树脂，获取2次产出": 1,
     "张牙": 1,
@@ -243,7 +214,6 @@
     "维沙瓦": 1,
     "调试路线分配": 1,
     "运行锄地路线": 1,
-    "路径组一": 1,
     "普通": 1,
     "精英高收益": 1,
     "小怪": 1,
@@ -273,8 +243,6 @@
     "脆弱": 1,
     "原石": 1,
     "3次": 1,
-    "原粹": 1,
-    "树脂": 1,
     "战斗失败": 1,
     "衍出": 1,
     "溢口": 1,
@@ -285,7 +253,6 @@
     "多人游戏申请": 1,
     "多人游戏": 1,
     "全字匹配": 1,
-    "基于固定位置": 1,
     "世界权限": 1,
     "上次取水时间:": 1,
     "上次上香时间:": 1,
@@ -304,9 +271,6 @@
     "转盘的运势: ": 1,
     "能给我几支香吗": 1,
     "给我一份福利餐": 1,
-    "【山之血：0，飞澜鲨鲨：0，圣龙君临：0，太阳的轰鸣：0，献给小酒杯：0，菲耶蒂娜：0】": 1,
-    "随机模式": 1,
-    "指定模式": 1,
     "狼啸": 1,
     "鸣风": 1,
     "旭日": 1,
@@ -320,7 +284,6 @@
     "幽境检查": 1,
     "合成": 1,
     "任务提示": 1,
-    "同意": 1,
     "激活": 1,
     "紊乱平息": 1,
     "保持圣遗物奖励不变": 1,
@@ -329,7 +292,6 @@
     "推荐-非快速配对模式 @Tool_tingsu": 1,
     "存在bug-快速配对模式 @兩夢三醒": 1,
     "大循环": 1,
-    "启用": 1,
     "替换": 1,
     "联机合奏": 1,
     "物品": 1,
@@ -365,19 +327,13 @@
     "菈乌玛": 1,
     "哥伦比娅": 1,
     "枫原万叶": 1,
-    "完全退出游戏": 1,
-    "完全退出游戏到桌面": 1,
     "自动战斗": 1,
     "自动对话": 1,
-    "半自动": 1,
-    "继续运行": 1,
     "刷新": 1,
     "加载": 1,
     "执行": 1,
     "有草神": 1,
     "草": 1,
-    "科西霍": 1,
-    "海浪中的莎孚": 1,
     "冒险等阶": 1,
     "其他玩家": 1,
     "拒绝了多人游戏申请": 1,
@@ -400,7 +356,6 @@
     "退出至登录界面": 1,
     "进入游戏": 1,
     "登录其他账号": 1,
-    "B服切换另一个账号匹配+键鼠": 1,
     "作为主账号：速刷熟练度": 1,
     "作为辅助账号：快速投降": 1,
     "扫描当前账号卡牌熟练度": 1,
@@ -408,14 +363,12 @@
     "我方出战牌组": 1,
     "更改牌组外观": 1,
     "任意界面": 1,
-    "导航至宝藏地点": 1,
     "不存在宝藏": 1,
     "终点处小地图无效": 1,
     "罗盘状态异常，可能在战斗中": 1,
     "未发现宝藏或宝藏相关线索": 1,
     "发现宝藏或宝藏相关线索": 1,
     "存在宝藏": 1,
-    "风魔龙": 1,
     "倒计时": 1,
     "继续": 1,
     "置顶": 1,
@@ -434,7 +387,6 @@
     "JS HTTP权限": 1,
     "道具已达到容量上限": 1,
     "高": 1,
-    "只要小瓶": 1,
     "已售罄": 1,
     "不切换": 1,
     "（前两字）": 1,
@@ -503,27 +455,11 @@
   "remaining_functional": [
     {
       "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
-      "line": 104,
-      "literals": [
-        "分解（经验瓶）"
-      ],
-      "source": "if (settings.decomposeMode === \"分解（经验瓶）\") {"
-    },
-    {
-      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
       "line": 127,
       "literals": [
         "收尾额外A"
       ],
       "source": "if (!onlyActivate || state.runningEndingAndExtraRoute != \"收尾额外A\") {"
-    },
-    {
-      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
-      "line": 206,
-      "literals": [
-        "收尾额外A"
-      ],
-      "source": "if (state.runningEndingAndExtraRoute === \"收尾额外A\" && settings.autoOnline) {"
     },
     {
       "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
@@ -580,22 +516,6 @@
         "收尾额外B"
       ],
       "source": "if (record.lastRunEndingRoute === \"收尾额外B\") {"
-    },
-    {
-      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
-      "line": 463,
-      "literals": [
-        "销毁（摩拉）"
-      ],
-      "source": "if (settings.decomposeMode === \"销毁（摩拉）\") {"
-    },
-    {
-      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
-      "line": 578,
-      "literals": [
-        "分解（经验瓶）"
-      ],
-      "source": "if (settings.decomposeMode === \"分解（经验瓶）\") {"
     },
     {
       "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
@@ -670,30 +590,6 @@
       "source": "endingPath = state.runningEndingAndExtraRoute === \"收尾额外A\""
     },
     {
-      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
-      "line": 1005,
-      "literals": [
-        "分解（经验瓶）"
-      ],
-      "source": "if (settings.decomposeMode === \"分解（经验瓶）\") {"
-    },
-    {
-      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
-      "line": 1210,
-      "literals": [
-        "不调节时间"
-      ],
-      "source": "if (settings.setTimeMode && settings.setTimeMode != \"不调节时间\" && (((new Date() - lastsettimeTime) > settimeInterval))) {"
-    },
-    {
-      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
-      "line": 1211,
-      "literals": [
-        "尽量调为白天"
-      ],
-      "source": "if (settings.setTimeMode === \"尽量调为白天\") {"
-    },
-    {
       "path": "repo/js/AEscoffier_chef/main.js",
       "line": 267,
       "literals": [
@@ -727,14 +623,6 @@
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 605,
-      "literals": [
-        "定制模式(需要手动配置 额外烹饪时间 )"
-      ],
-      "source": "if (settings.cookPattern === \"定制模式(需要手动配置 额外烹饪时间 )\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
       "line": 814,
       "literals": [
         "其他"
@@ -751,54 +639,6 @@
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 953,
-      "literals": [
-        "12%概率双倍"
-      ],
-      "source": "if (settings.characterBonus === \"12%概率双倍\" && !spl) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 958,
-      "literals": [
-        "特殊料理"
-      ],
-      "source": "} else if (settings.characterBonus === \"特殊料理\" || spl) {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 966,
-      "literals": [
-        "无加成"
-      ],
-      "source": "} else if (settings.characterBonus === \"无加成\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 974,
-      "literals": [
-        "「奇怪的」"
-      ],
-      "source": "} else if (settings.characterBonus === \"「奇怪的」\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1010,
-      "literals": [
-        "禁用"
-      ],
-      "source": "if (settings.dealInsufficient !== \"禁用\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1021,
-      "literals": [
-        "跳过此料理"
-      ],
-      "source": "if (settings.dealInsufficient === \"跳过此料理\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
       "line": 1070,
       "literals": [
         "自动"
@@ -807,35 +647,11 @@
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1087,
-      "literals": [
-        "手动烹饪数计入总数"
-      ],
-      "source": "if (settings.autoLocked === \"手动烹饪数计入总数\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1191,
-      "literals": [
-        "预期的特殊料理数"
-      ],
-      "source": "if (spl && settings.characterMode === \"预期的特殊料理数\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
       "line": 1362,
       "literals": [
         "鱼肉"
       ],
       "source": "if (name === \"鱼肉\") {"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1570,
-      "literals": [
-        "预期的食材数量(持有总量)"
-      ],
-      "source": "if (settings.ingredientMode === \"预期的食材数量(持有总量)\") {"
     },
     {
       "path": "repo/js/AEscoffier_chef/main.js",
@@ -852,14 +668,6 @@
         "快速加工"
       ],
       "source": "if (itemPage && itemPage.text.includes(\"快速加工\")) { // 如果未打开矿石详情页面"
-    },
-    {
-      "path": "repo/js/AEscoffier_chef/main.js",
-      "line": 1878,
-      "literals": [
-        "定制模式(需要手动配置 额外烹饪时间 )"
-      ],
-      "source": "if (settings.cookPattern === \"定制模式(需要手动配置 额外烹饪时间 )\" && settings.segmentTime === \"0\") {"
     },
     {
       "path": "repo/js/AIPC珍贵宝箱无限刷/main.js",
@@ -903,67 +711,11 @@
     },
     {
       "path": "repo/js/AbundantOre/main.js",
-      "line": 21,
-      "literals": [
-        "默认"
-      ],
-      "source": "const use_global_mining_action = settings.custom_mining_action === \"默认\" || settings.custom_mining_action === \"default\";"
-    },
-    {
-      "path": "repo/js/AbundantOre/main.js",
-      "line": 48,
-      "literals": [
-        "全跳过"
-      ],
-      "source": "if (settings.fight_option === \"全跳过\") {"
-    },
-    {
-      "path": "repo/js/AbundantOre/main.js",
-      "line": 50,
-      "literals": [
-        "只跳过与精英怪战斗的路线"
-      ],
-      "source": "} else if (settings.fight_option === \"只跳过与精英怪战斗的路线\") {"
-    },
-    {
-      "path": "repo/js/AbundantOre/main.js",
       "line": 390,
       "literals": [
         "诺艾尔"
       ],
       "source": "} else if (mining_character === \"诺艾尔\") {"
-    },
-    {
-      "path": "repo/js/AbundantOre/main.js",
-      "line": 631,
-      "literals": [
-        "诺艾尔"
-      ],
-      "source": "} else if (settings.custom_mining_action || mining_character === \"诺艾尔\") {"
-    },
-    {
-      "path": "repo/js/ActivitySwitch/main.js",
-      "line": 157,
-      "literals": [
-        "默认"
-      ],
-      "source": "if (settings.onePage && settings.onePage !== '默认') {"
-    },
-    {
-      "path": "repo/js/ActivitySwitch/main.js",
-      "line": 178,
-      "literals": [
-        "默认"
-      ],
-      "source": "if (settings.toTopPage && settings.toTopPage !== '默认') {"
-    },
-    {
-      "path": "repo/js/ActivitySwitch/main.js",
-      "line": 255,
-      "literals": [
-        "默认"
-      ],
-      "source": "if (settings.maxOcrCount && settings.maxOcrCount !== '默认') {"
     },
     {
       "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
@@ -998,14 +750,6 @@
       "source": "const find = await findTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral(\"征讨领域\") : \"征讨领域\"));"
     },
     {
-      "path": "repo/js/ActivitySwitchNotice/utils/ws.js",
-      "line": 84,
-      "literals": [
-        "自定义通知"
-      ],
-      "source": "if (settings.wsNoticeType === \"自定义通知\") {"
-    },
-    {
       "path": "repo/js/AllFowlTeyvat/main.js",
       "line": 199,
       "literals": [
@@ -1020,14 +764,6 @@
         "夜晚"
       ],
       "source": "} else if (time_state === \"夜晚\") {"
-    },
-    {
-      "path": "repo/js/AllFowlTeyvat/main.js",
-      "line": 336,
-      "literals": [
-        "自动拾取（智能）"
-      ],
-      "source": "if (settings.mode_pick === \"自动拾取（智能）\") {"
     },
     {
       "path": "repo/js/AllFowlTeyvat/main.js",
@@ -1535,22 +1271,6 @@
     },
     {
       "path": "repo/js/ArtifactsGroupPurchasing/main.js",
-      "line": 51,
-      "literals": [
-        "手动进入后运行"
-      ],
-      "source": "if (settings.groupMode === \"手动进入后运行\") {"
-    },
-    {
-      "path": "repo/js/ArtifactsGroupPurchasing/main.js",
-      "line": 55,
-      "literals": [
-        "按照下列配置自动进入并运行"
-      ],
-      "source": "if (settings.groupMode === \"按照下列配置自动进入并运行\") {"
-    },
-    {
-      "path": "repo/js/ArtifactsGroupPurchasing/main.js",
       "line": 163,
       "literals": [
         "进入他人世界"
@@ -1636,54 +1356,6 @@
         "摧毁（摩拉）"
       ],
       "source": "} else if (operationType === \"摧毁（摩拉）\") {"
-    },
-    {
-      "path": "repo/js/AutoArtifacts_A_B_Extra/main.js",
-      "line": 82,
-      "literals": [
-        "否"
-      ],
-      "source": "let swapPath = settings.swapPath != undefined && settings.swapPath != '否' ? true : false;"
-    },
-    {
-      "path": "repo/js/AutoArtifacts_A_B_Extra/main.js",
-      "line": 83,
-      "literals": [
-        "是"
-      ],
-      "source": "let extra = settings.extra != undefined && settings.extra != '是' ? false : true;"
-    },
-    {
-      "path": "repo/js/AutoArtifacts_A_B_Extra/main.js",
-      "line": 84,
-      "literals": [
-        "是"
-      ],
-      "source": "let extraAB = settings.extraAB != undefined && settings.extraAB != '是' ? false : true;"
-    },
-    {
-      "path": "repo/js/AutoArtifacts_A_B_Extra/main.js",
-      "line": 85,
-      "literals": [
-        "是"
-      ],
-      "source": "let autoSalvage = settings.autoSalvage != undefined && settings.autoSalvage != '是' ? false : true;"
-    },
-    {
-      "path": "repo/js/AutoArtifacts_A_B_Extra/main.js",
-      "line": 87,
-      "literals": [
-        "是"
-      ],
-      "source": "let activeRestore = settings.activeRestore != undefined && settings.activeRestore != '是' ? false : true;"
-    },
-    {
-      "path": "repo/js/AutoArtifacts_A_B_Extra/main.js",
-      "line": 88,
-      "literals": [
-        "否"
-      ],
-      "source": "const activeProgress = settings.activeProgress != undefined && settings.activeProgress != '否' ? true : false;"
     },
     {
       "path": "repo/js/AutoArtifacts_A_B_Extra/main.js",
@@ -2223,14 +1895,6 @@
     },
     {
       "path": "repo/js/AutoFishingTeyvat/main.js",
-      "line": 671,
-      "literals": [
-        "无(默认)"
-      ],
-      "source": "if (!is_daytime && !is_nighttime && (typeof (settings.path_select) === 'undefined' || settings.path_select === \"无(默认)\")) {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat/main.js",
       "line": 681,
       "literals": [
         "全天(默认)"
@@ -2343,14 +2007,6 @@
     },
     {
       "path": "repo/js/AutoFishingTeyvat/main.js",
-      "line": 1017,
-      "literals": [
-        "无(默认)"
-      ],
-      "source": "const is_con = !(typeof (settings.path_select) === 'undefined' || settings.path_select === \"无(默认)\");"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat/main.js",
       "line": 1037,
       "literals": [
         "无"
@@ -2404,22 +2060,6 @@
         "无(默认)"
       ],
       "source": "if (path_continue !== \"无(默认)\" && !is_con && is_continue && path_filter.length === path_pathing.length) {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 800,
-      "literals": [
-        "合成的鱼饵数量(设置200则合成200个)"
-      ],
-      "source": "if (settings.select_method === \"合成的鱼饵数量(设置200则合成200个)\") {"
-    },
-    {
-      "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
-      "line": 802,
-      "literals": [
-        "期望的鱼饵数量(设置200则合成到200个)"
-      ],
-      "source": "} else if (settings.select_method === \"期望的鱼饵数量(设置200则合成到200个)\") {"
     },
     {
       "path": "repo/js/AutoFishingTeyvat-Bait/main.js",
@@ -2623,14 +2263,6 @@
     },
     {
       "path": "repo/js/AutoHoeingOneDragon/main.js",
-      "line": 191,
-      "literals": [
-        "路径组一"
-      ],
-      "source": "if (settings.groupIndex === '路径组一') {"
-    },
-    {
-      "path": "repo/js/AutoHoeingOneDragon/main.js",
       "line": 238,
       "literals": [
         "模板匹配"
@@ -2775,14 +2407,6 @@
     },
     {
       "path": "repo/js/AutoHoeingOneDragon/main.js",
-      "line": 1883,
-      "literals": [
-        "启用仅指定怪物模式"
-      ],
-      "source": "if (settings.operationMode != \"启用仅指定怪物模式\") {"
-    },
-    {
-      "path": "repo/js/AutoHoeingOneDragon/main.js",
       "line": 2007,
       "literals": [
         "传奇"
@@ -2903,7 +2527,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 338,
+      "line": 336,
       "literals": [
         "浓缩树脂"
       ],
@@ -2911,7 +2535,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 338,
+      "line": 336,
       "literals": [
         "浓缩"
       ],
@@ -2919,7 +2543,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 342,
+      "line": 340,
       "literals": [
         "须臾树脂"
       ],
@@ -2927,7 +2551,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 342,
+      "line": 340,
       "literals": [
         "须臾"
       ],
@@ -2935,7 +2559,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 346,
+      "line": 344,
       "literals": [
         "脆弱树脂"
       ],
@@ -2943,7 +2567,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 346,
+      "line": 344,
       "literals": [
         "脆弱"
       ],
@@ -2951,7 +2575,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 350,
+      "line": 348,
       "literals": [
         "原石"
       ],
@@ -2959,27 +2583,11 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 350,
+      "line": 348,
       "literals": [
         "3次"
       ],
       "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"原石\") : t.text.includes(\"原石\")) && t.text.includes(\"3次\")"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 748,
-      "literals": [
-        "原粹"
-      ],
-      "source": "(t.text.includes(targetAmount.toString()) && t.text.includes(\"原粹\")) ||"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 749,
-      "literals": [
-        "树脂"
-      ],
-      "source": "(t.text.includes(`${targetAmount}个`) && t.text.includes(\"树脂\"))"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/executePathsUsingNodeData.js",
@@ -3279,14 +2887,6 @@
     },
     {
       "path": "repo/js/AutoPermission/main.js",
-      "line": 12,
-      "literals": [
-        "基于固定位置"
-      ],
-      "source": "if(settings.workMode===\"基于固定位置\"){"
-    },
-    {
-      "path": "repo/js/AutoPermission/main.js",
       "line": 46,
       "literals": [
         "世界权限"
@@ -3503,30 +3103,6 @@
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
-      "line": 1259,
-      "literals": [
-        "【山之血：0，飞澜鲨鲨：0，圣龙君临：0，太阳的轰鸣：0，献给小酒杯：0，菲耶蒂娜：0】"
-      ],
-      "source": "if (record.lastDragonEggsNum == \"【山之血：0，飞澜鲨鲨：0，圣龙君临：0，太阳的轰鸣：0，献给小酒杯：0，菲耶蒂娜：0】\" || settings.updateEggs) {"
-    },
-    {
-      "path": "repo/js/AutoPickLitter/main.js",
-      "line": 1275,
-      "literals": [
-        "随机模式"
-      ],
-      "source": "if (settings.selectDragonEggModel == \"随机模式\") {"
-    },
-    {
-      "path": "repo/js/AutoPickLitter/main.js",
-      "line": 1278,
-      "literals": [
-        "指定模式"
-      ],
-      "source": "} else if (settings.selectDragonEggModel == \"指定模式\") {"
-    },
-    {
-      "path": "repo/js/AutoPickLitter/main.js",
       "line": 1410,
       "literals": [
         "狼啸"
@@ -3639,14 +3215,6 @@
     },
     {
       "path": "repo/js/AutoStoryLoader/main.js",
-      "line": 1365,
-      "literals": [
-        "同意"
-      ],
-      "source": "if (!settings.disclaimer_accepted || settings.disclaimer_confirm_text !== \"同意\") {"
-    },
-    {
-      "path": "repo/js/AutoStoryLoader/main.js",
       "line": 1388,
       "literals": [
         "刷新剧情列表"
@@ -3734,30 +3302,6 @@
       "source": "if((optionName === \"图像质量\") || (optionName === \"场景细节\")){"
     },
     {
-      "path": "repo/js/AutoSwitchGraphicsSettings/main.js",
-      "line": 228,
-      "literals": [
-        "默认"
-      ],
-      "source": "if(settings.dynamicRange !== \"默认\")"
-    },
-    {
-      "path": "repo/js/AutoSwitchGraphicsSettings/main.js",
-      "line": 234,
-      "literals": [
-        "默认"
-      ],
-      "source": "if(settings.outputSetting !== \"默认\")"
-    },
-    {
-      "path": "repo/js/AutoSwitchGraphicsSettings/main.js",
-      "line": 240,
-      "literals": [
-        "默认"
-      ],
-      "source": "if(settings.muteWhenMinimized !== \"默认\")"
-    },
-    {
       "path": "repo/js/AutoSwitchRoles/main.js",
       "line": 44,
       "literals": [
@@ -3780,14 +3324,6 @@
         "大循环"
       ],
       "source": "if (pathing.fileName.length > 1 && pathing.fileName[0].includes('大循环')) {"
-    },
-    {
-      "path": "repo/js/AutoYuanQin/main.js",
-      "line": 986,
-      "literals": [
-        "启用"
-      ],
-      "source": "Settings.debug = (typeof (settings.debug_mode) === 'undefined') ? false : settings.debug_mode === \"启用\";"
     },
     {
       "path": "repo/js/AutoYuanQin/main.js",
@@ -4254,38 +3790,6 @@
       "source": "const isStart = phase.indexOf('采集前') === 0;"
     },
     {
-      "path": "repo/js/DailyHarvestStats/main.js",
-      "line": 419,
-      "literals": [
-        "否"
-      ],
-      "source": "const countMora = (settings.countMora != undefined ? settings.countMora : '是') !== '否';"
-    },
-    {
-      "path": "repo/js/DailyHarvestStats/main.js",
-      "line": 420,
-      "literals": [
-        "否"
-      ],
-      "source": "const countFodder = (settings.countFodder != undefined ? settings.countFodder : '是') !== '否';"
-    },
-    {
-      "path": "repo/js/DailyHarvestStats/main.js",
-      "line": 421,
-      "literals": [
-        "是"
-      ],
-      "source": "const doReset = (settings.reset != undefined ? settings.reset : '否') === '是';"
-    },
-    {
-      "path": "repo/js/DailyHarvestStats/main.js",
-      "line": 422,
-      "literals": [
-        "否"
-      ],
-      "source": "const notify = (settings.notify != undefined ? settings.notify : '是') !== '否';"
-    },
-    {
       "path": "repo/js/DeerGameMeat/main.js",
       "line": 19,
       "literals": [
@@ -4340,22 +3844,6 @@
         "委"
       ],
       "source": "if (res.text.includes((genshin.getText ? genshin.getText(\"commission\") : \"委托\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"委託\") : res.text.includes(\"委託\")) || res.text.includes(\"Commissions\") || res.text.includes(\"委\")) {"
-    },
-    {
-      "path": "repo/js/ExitGameMultipleMode/main.js",
-      "line": 5,
-      "literals": [
-        "完全退出游戏"
-      ],
-      "source": "} else if (settings.Modes == \"完全退出游戏\") {"
-    },
-    {
-      "path": "repo/js/ExitGameMultipleMode/main.js",
-      "line": 7,
-      "literals": [
-        "完全退出游戏到桌面"
-      ],
-      "source": "} else if (settings.Modes == \"完全退出游戏到桌面\") {"
     },
     {
       "path": "repo/js/FollowsPet/index.js",
@@ -4423,22 +3911,6 @@
     },
     {
       "path": "repo/js/FullyAutoAndSemiAutoTools/main.js",
-      "line": 1100,
-      "literals": [
-        "半自动"
-      ],
-      "source": "auto.semi = settings.mode === \"半自动\""
-    },
-    {
-      "path": "repo/js/FullyAutoAndSemiAutoTools/main.js",
-      "line": 1102,
-      "literals": [
-        "继续运行"
-      ],
-      "source": "auto.run = settings.auto_semi_key_mode === \"继续运行\""
-    },
-    {
-      "path": "repo/js/FullyAutoAndSemiAutoTools/main.js",
       "line": 1154,
       "literals": [
         "刷新"
@@ -4476,22 +3948,6 @@
         "草"
       ],
       "source": "const idx = SevenElement.SevenElements.indexOf('草');"
-    },
-    {
-      "path": "repo/js/FurinaSalonSolitaireOusiaDefeatLocalLegend/main.js",
-      "line": 2,
-      "literals": [
-        "科西霍"
-      ],
-      "source": "if (settings.target == \"科西霍\") {"
-    },
-    {
-      "path": "repo/js/FurinaSalonSolitaireOusiaDefeatLocalLegend/main.js",
-      "line": 4,
-      "literals": [
-        "海浪中的莎孚"
-      ],
-      "source": "} else if (settings.target == \"海浪中的莎孚\") {"
     },
     {
       "path": "repo/js/HolyRelicsUp/main.js",
@@ -4556,30 +4012,6 @@
         "世界主人暂忙"
       ],
       "source": "else if (requestText.startsWith('世界主人暂忙')) {"
-    },
-    {
-      "path": "repo/js/KeepAwakeCountdown/main.js",
-      "line": 36,
-      "literals": [
-        "是"
-      ],
-      "source": "let keepAliveEnable = (settings.keepalive_enable != undefined ? settings.keepalive_enable : '是') === '是';"
-    },
-    {
-      "path": "repo/js/KeepAwakeCountdown/main.js",
-      "line": 42,
-      "literals": [
-        "是"
-      ],
-      "source": "let allowNextDay = (settings.allow_next_day != undefined ? settings.allow_next_day : '否') === '是';"
-    },
-    {
-      "path": "repo/js/KeepAwakeCountdown/main.js",
-      "line": 181,
-      "literals": [
-        "是"
-      ],
-      "source": "let claimWelkin = (settings.claim_welkin != undefined ? settings.claim_welkin : '否') === '是';"
     },
     {
       "path": "repo/js/KeepAwakeCountdown/main.js",
@@ -4791,46 +4223,6 @@
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 610,
-      "literals": [
-        "下拉列表"
-      ],
-      "source": "if (settings.Modes == \"下拉列表\" && !settings.GlobalAccount) {"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 612,
-      "literals": [
-        "账号+密码+OCR"
-      ],
-      "source": "} else if (settings.Modes == \"账号+密码+OCR\" && !settings.GlobalAccount) {"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 614,
-      "literals": [
-        "B服切换另一个账号匹配+键鼠"
-      ],
-      "source": "} else if (settings.Modes == \"B服切换另一个账号匹配+键鼠\") {"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 616,
-      "literals": [
-        "账号+密码+OCR"
-      ],
-      "source": "} else if (settings.Modes == \"账号+密码+OCR\" && settings.GlobalAccount) {"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 618,
-      "literals": [
-        "下拉列表"
-      ],
-      "source": "} else if (settings.Modes == \"下拉列表\" && settings.GlobalAccount) {"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
       "line": 653,
       "literals": [
         "切换账号"
@@ -4855,14 +4247,6 @@
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 665,
-      "literals": [
-        "不切换服务器"
-      ],
-      "source": "if (settings.Servers && (settings.Servers !== \"不切换服务器\" || settings.Servers == \"\")) {"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
       "line": 891,
       "literals": [
         "切换账号"
@@ -4884,14 +4268,6 @@
         "退出并"
       ],
       "source": "if (await waitForOcrMatch(\"退出并\", new OpenCvSharp.OpenCvSharp.Rect(0, 0, 1920, 1080), 0.8, 1000)) {"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 923,
-      "literals": [
-        "不切换服务器"
-      ],
-      "source": "if (settings.Servers && (settings.Servers !== \"不切换服务器\" || settings.Servers == \"\")) {"
     },
     {
       "path": "repo/js/TCGQuickProficiency/main.js",
@@ -4948,14 +4324,6 @@
         "任意界面"
       ],
       "source": "if (start !== \"任意界面\") {"
-    },
-    {
-      "path": "repo/js/TeyvatScanner/main.js",
-      "line": 108,
-      "literals": [
-        "导航至宝藏地点"
-      ],
-      "source": "if (settings.operationMode != \"导航至宝藏地点\") {"
     },
     {
       "path": "repo/js/TeyvatScanner/main.js",
@@ -5020,14 +4388,6 @@
         "主"
       ],
       "source": "if (route.endsWith(\"主\")) {"
-    },
-    {
-      "path": "repo/js/WeeklyBoss/utils.js",
-      "line": 1252,
-      "literals": [
-        "风魔龙"
-      ],
-      "source": "if (settings.monsterName != \"风魔龙\") click(300, settings.difficulty * 110 + 90);"
     },
     {
       "path": "repo/js/WeeklyBoss/utils.js",
@@ -5380,30 +4740,6 @@
         "兼容模式"
       ],
       "source": "if (Quality !== \"兼容模式\" && (!MotionBlur || !Bloom)) {"
-    },
-    {
-      "path": "repo/js/只要大瓶/main.js",
-      "line": 130,
-      "literals": [
-        "只要小瓶"
-      ],
-      "source": "if (settings.bottleType != \"只要小瓶\") {"
-    },
-    {
-      "path": "repo/js/只要大瓶/main.js",
-      "line": 177,
-      "literals": [
-        "只要大瓶"
-      ],
-      "source": "if (settings.bottleType === \"只要大瓶\") {"
-    },
-    {
-      "path": "repo/js/只要大瓶/main.js",
-      "line": 188,
-      "literals": [
-        "只要大瓶"
-      ],
-      "source": "if (settings.bottleType === \"只要大瓶\") {"
     },
     {
       "path": "repo/js/尘歌壶一条龙/main.js",
@@ -6479,22 +5815,6 @@
     },
     {
       "path": "repo/js/采集cd管理/main.js",
-      "line": 1256,
-      "literals": [
-        "不调节时间"
-      ],
-      "source": "if (settings.setTimeMode && settings.setTimeMode != \"不调节时间\" && (((timeNow - lastsettimeTime) > settimeInterval) || firstsettime)) {"
-    },
-    {
-      "path": "repo/js/采集cd管理/main.js",
-      "line": 1258,
-      "literals": [
-        "尽量调为白天"
-      ],
-      "source": "if (settings.setTimeMode === \"尽量调为白天\") {"
-    },
-    {
-      "path": "repo/js/采集cd管理/main.js",
       "line": 2370,
       "literals": [
         "重新生成索引文件（用于强制刷新CD）"
@@ -6638,7 +5958,7 @@
       "source": "if (challengeName == \"纯水精灵\" || challengeName == \"歌裴莉娅的葬送\" || challengeName == \"科培琉司的劫罚\") samePlace = 1;//这些 boss 挑战后不会原地刷新"
     }
   ],
-  "review_cjk_count": 806,
+  "review_cjk_count": 804,
   "review_literal_frequency": {
     "食材加工2": 7,
     "OCR未识别到任何文本": 6,
@@ -6936,8 +6256,6 @@
     "须臾": 1,
     "脆弱": 1,
     "3次": 1,
-    "原粹": 1,
-    "树脂": 1,
     "战斗失败": 1,
     "双倍产出检测": 1,
     "双倍产出检测-r1": 1,
@@ -9473,7 +8791,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 338,
+      "line": 336,
       "literals": [
         "浓缩树脂"
       ],
@@ -9481,7 +8799,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 338,
+      "line": 336,
       "literals": [
         "浓缩树脂"
       ],
@@ -9489,7 +8807,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 338,
+      "line": 336,
       "literals": [
         "浓缩"
       ],
@@ -9497,7 +8815,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 342,
+      "line": 340,
       "literals": [
         "须臾树脂"
       ],
@@ -9505,7 +8823,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 342,
+      "line": 340,
       "literals": [
         "须臾树脂"
       ],
@@ -9513,7 +8831,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 342,
+      "line": 340,
       "literals": [
         "须臾"
       ],
@@ -9521,7 +8839,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 346,
+      "line": 344,
       "literals": [
         "脆弱树脂"
       ],
@@ -9529,7 +8847,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 346,
+      "line": 344,
       "literals": [
         "脆弱树脂"
       ],
@@ -9537,7 +8855,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 346,
+      "line": 344,
       "literals": [
         "脆弱"
       ],
@@ -9545,7 +8863,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 350,
+      "line": 348,
       "literals": [
         "原石"
       ],
@@ -9553,7 +8871,7 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 350,
+      "line": 348,
       "literals": [
         "原石"
       ],
@@ -9561,27 +8879,11 @@
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 350,
+      "line": 348,
       "literals": [
         "3次"
       ],
       "source": "(genshin.textContainsLiteral ? genshin.textContainsLiteral(t.text, \"原石\") : t.text.includes(\"原石\")) && t.text.includes(\"3次\")"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 748,
-      "literals": [
-        "原粹"
-      ],
-      "source": "(t.text.includes(targetAmount.toString()) && t.text.includes(\"原粹\")) ||"
-    },
-    {
-      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
-      "line": 749,
-      "literals": [
-        "树脂"
-      ],
-      "source": "(t.text.includes(`${targetAmount}个`) && t.text.includes(\"树脂\"))"
     },
     {
       "path": "repo/js/AutoLeyLineOutcrop/utils/calCountByResin.js",
