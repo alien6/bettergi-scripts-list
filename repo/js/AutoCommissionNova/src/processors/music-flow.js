@@ -12,7 +12,7 @@ const COMPLETION_REGION = new OpenCvSharp.OpenCvSharp.Rect(880, 165, 160, 45);
 function isCommissionCompleted() {
     try {
         const text = bvPageOcrRegionText(COMPLETION_REGION);
-        if (text.includes("委托完成")) {
+        if (text.includes((genshin.getText ? genshin.getText("commission_completed") : "委托完成"))) {
             log.info("识别到委托完成文本: {text}", text);
             return true;
         }

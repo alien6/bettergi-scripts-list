@@ -131,7 +131,7 @@
 
     // 背包过期物品识别，需要在背包界面，并且是1920x1080分辨率下使用
     async function handleExpiredItems() {
-        const ifGuoqi = await textOCR("物品过期", 1.5, 0, 0, 870, 280, 170, 40);
+        const ifGuoqi = await textOCR((genshin.getText ? genshin.getText("item_expired") : "物品过期"), 1.5, 0, 0, 870, 280, 170, 40);
         if (ifGuoqi.found) {
             log.info("检测到过期物品，正在处理...");
             await sleep(500);
@@ -1967,7 +1967,7 @@
 
         await AutoPath(stove);
 
-        const res1 = await textOCR("烹饪", 5, 0, 0, 1150, 460, 155, 155);
+        const res1 = await textOCR((genshin.getText ? genshin.getText("cooking") : "烹饪"), 5, 0, 0, 1150, 460, 155, 155);
         if (res1.found) {
             await sleep(10);
             keyDown("VK_MENU");
@@ -1981,7 +1981,7 @@
             while (attempts < maxAttempts) {
                 log.info(`第${attempts + 1}次尝试寻找烹饪按钮`);
                 keyPress("W");
-                const res2 = await textOCR("烹饪", 5, 0, 0, 1150, 460, 155, 155);
+                const res2 = await textOCR((genshin.getText ? genshin.getText("cooking") : "烹饪"), 5, 0, 0, 1150, 460, 155, 155);
                 if (res2.found) {
                     await sleep(10);
                     keyDown("VK_MENU");
@@ -2013,7 +2013,7 @@
                     await sleep(500);
                 }
 
-                const res = await textOCR("全部领取", 1, 0, 0, 195, 1000, 120, 40);
+                const res = await textOCR((genshin.getText ? genshin.getText("claim_all") : "全部领取"), 1, 0, 0, 195, 1000, 120, 40);
                 if (res.found) {
                     click(res.x, res.y);
                     await sleep(800);
@@ -2036,7 +2036,7 @@
 
                         // 收集所有包含"分钟"或"秒"的项目
                         for (let j = 0; j < ocrResult.count; ++j) {
-                            if (ocrResult[j].text.endsWith("分钟") || ocrResult[j].text.endsWith("秒")) {
+                            if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, "分钟") : ocrResult[j].text.endsWith("分钟")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[j].text, "秒") : ocrResult[j].text.endsWith("秒"))) {
                                 foodItems.push({
                                     index: j,
                                     x: ocrResult[j].x,
@@ -2089,7 +2089,7 @@
                 click(1190, 755);
                 await sleep(800);
             } else {
-                const res3 = await textOCR("料理制作", 1, 0, 0, 140, 30, 115, 30);
+                const res3 = await textOCR((genshin.getText ? genshin.getText("cooking_production") : "料理制作"), 1, 0, 0, 140, 30, 115, 30);
                 if (!res3.found) {
                     await sleep(500);
                     click(910, 55);
@@ -2127,7 +2127,7 @@
                         click(1700, 1020);// 制作
                         await sleep(1000);
 
-                        await textOCR("自动烹饪", 5, 1, 0, 725, 1000, 130, 45);
+                        await textOCR((genshin.getText ? genshin.getText("auto_cook") : "自动烹饪"), 5, 1, 0, 725, 1000, 130, 45);
                         await sleep(800);
                         click(960, 460);
                         await sleep(800);

@@ -1,0 +1,688 @@
+{
+  "strict_functional_cjk_count": 90,
+  "legacy_runtime_covered_count": 0,
+  "literal_frequency": {
+    "天": 3,
+    "小时": 3,
+    "时间": 3,
+    "当前拥有": 3,
+    "每": 3,
+    "正在匹配对局": 3,
+    "更改牌组外观": 3,
+    "秒": 2,
+    "个": 2,
+    "退出并": 2,
+    "登录其他账号": 2,
+    "七圣召唤": 2,
+    "请选择要替换的手牌": 2,
+    "编辑牌组": 2,
+    "我方出战牌组": 2,
+    "超量名单": 2,
+    "狗粮经验": 1,
+    "摩拉": 1,
+    "加速": 1,
+    "快速加工": 1,
+    "小": 1,
+    "分": 1,
+    "分钟": 1,
+    "西风": 1,
+    "丘丘人哨塔": 1,
+    "敌人再次来袭": 1,
+    "击败": 1,
+    "消灭": 1,
+    "击退": 1,
+    "下次": 1,
+    "预计用时": 1,
+    "包含以下怪物": 1,
+    "倍产出次数": 1,
+    "给我一份福利餐": 1,
+    "其实": 1,
+    "紊乱平息": 1,
+    "联机合奏": 1,
+    "周": 1,
+    "点": 1,
+    "版本": 1,
+    "离开队伍": 1,
+    "角色展柜": 1,
+    "回合开始时：": 1,
+    "结束阶段：": 1,
+    "拒绝了多人游戏申请": 1,
+    "无法进入": 1,
+    "世界主人暂忙": 1,
+    "搜索奇域": 1,
+    "已完成所有任务": 1,
+    "前往大厅": 1,
+    "接受": 1,
+    "放弃对局": 1,
+    "确定要放弃": 1,
+    "联机对局": 1,
+    "邀请队友": 1,
+    "猫尾酒馆": 1,
+    "传送至": 1,
+    "卡牌": 1,
+    "置顶": 1,
+    "管理关卡": 1,
+    "收藏": 1,
+    "无法出战": 1,
+    "道具已达到容量上限": 1,
+    "当前物品在背包内的容量已达上限": 1,
+    "进入世界申请": 1,
+    "天赋": 1,
+    "用时": 1
+  },
+  "file_frequency": {
+    "repo/js/TCGQuickProficiency/main.js": 22,
+    "repo/js/CD-Aware-AutoGather/lib/lib.js": 8,
+    "repo/js/ActivitySwitchNotice/utils/activity.js": 7,
+    "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js": 4,
+    "repo/js/SwitchAccountMultipleMode/main.js": 4,
+    "repo/js/AutoHoeingOneDragon/main.js": 3,
+    "repo/js/CD-Aware-AutoGather/main.js": 3,
+    "repo/js/JoinFriendsWorld/main.js": 3,
+    "repo/js/StarfieldRaimentCollection/main.js": 3,
+    "repo/js/WeeklyThousandStarRealm/main.js": 3,
+    "repo/js/营养袋吃药统计/main.js": 3,
+    "repo/js/AAA-Artifacts-Bulk-Supply/main.js": 2,
+    "repo/js/AEscoffier_chef/main.js": 2,
+    "repo/js/AutoPickLitter/main.js": 2,
+    "repo/js/DSTCG/main.js": 2,
+    "repo/js/七圣召唤七日历练全自动/main.js": 2,
+    "repo/js/背包材料统计/main.js": 2,
+    "repo/js/采集cd管理/main.js": 2,
+    "repo/js/ArtifactExpCount/main.js": 1,
+    "repo/js/ArtifactScore/tools/crawl-standalone.js": 1,
+    "repo/js/AutoCommissionNova/src/processors/basic-destroy-watchtower.js": 1,
+    "repo/js/AutoFriendshipFight/main.js": 1,
+    "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js": 1,
+    "repo/js/AutoLeyLineOutcrop/utils/calCountByResin.js": 1,
+    "repo/js/AutoNobushi/main.js": 1,
+    "repo/js/AutoPlan/utils/physical.js": 1,
+    "repo/js/AutoStygianOnslaught/main.js": 1,
+    "repo/js/AutoYuanQin/main.js": 1,
+    "repo/js/OCRCountResin/main.js": 1,
+    "repo/js/自动购买商品/main.js": 1,
+    "repo/js/诛贼-地方传奇-利亚姆/lib/Laim/lib/core.js": 1
+  },
+  "runtime_covered_literal_frequency": {},
+  "runtime_covered_file_frequency": {},
+  "findings": [
+    {
+      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
+      "line": 152,
+      "literal": "狗粮经验",
+      "source": "const match = line.match(/狗粮经验(-?\\d+)，摩拉(-?\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
+      "line": 152,
+      "literal": "摩拉",
+      "source": "const match = line.match(/狗粮经验(-?\\d+)，摩拉(-?\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AEscoffier_chef/main.js",
+      "line": 1765,
+      "literal": "加速",
+      "source": "if (findResult && findResult.text.includes(\"加速\")) {"
+    },
+    {
+      "path": "repo/js/AEscoffier_chef/main.js",
+      "line": 1794,
+      "literal": "快速加工",
+      "source": "if (itemPage && itemPage.text.includes(\"快速加工\")) { // 如果未打开矿石详情页面"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 623,
+      "literal": "小",
+      "source": "if (remainingTimeText.endsWith('小')) {"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 625,
+      "literal": "分",
+      "source": "} else if (remainingTimeText.endsWith('分')) {"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 334,
+      "literal": "天",
+      "source": "const dayMatch = timeText.match(/(\\d+(?:\\.\\d+)?)\\s*天/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 335,
+      "literal": "小时",
+      "source": "const hourMatch = timeText.match(/(\\d+(?:\\.\\d+)?)\\s*小时/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 336,
+      "literal": "分钟",
+      "source": "const minuteMatch = timeText.match(/(\\d+(?:\\.\\d+)?)\\s*分钟/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 367,
+      "literal": "天",
+      "source": "const dayMatch = timeText.match(/(\\d+)\\s*天/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ActivitySwitchNotice/utils/activity.js",
+      "line": 368,
+      "literal": "小时",
+      "source": "const hourMatch = timeText.match(/(\\d+)\\s*小时/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ArtifactExpCount/main.js",
+      "line": 609,
+      "literal": "时间",
+      "source": "const timeMatch = line.match(/时间:(\\d{4}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2})/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/ArtifactScore/tools/crawl-standalone.js",
+      "line": 268,
+      "literal": "西风",
+      "source": "const rx = text.match(/(\\/\\^西风[^)]+\\)\\/)/)",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoCommissionNova/src/processors/basic-destroy-watchtower.js",
+      "line": 88,
+      "literal": "丘丘人哨塔",
+      "source": "const match = normalized.match(/丘丘人哨塔.*?(\\d+)\\/(\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js",
+      "line": 23,
+      "literal": "敌人再次来袭",
+      "source": "const match = normalized.match(/敌人再次来袭.*?[（(](\\d+)\\/(\\d+)[）)]/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js",
+      "line": 38,
+      "literal": "击败",
+      "source": "const semanticMatch = normalized.match(/(?:击败|消灭|击退).*?(\\d+)\\/(\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js",
+      "line": 38,
+      "literal": "消灭",
+      "source": "const semanticMatch = normalized.match(/(?:击败|消灭|击退).*?(\\d+)\\/(\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js",
+      "line": 38,
+      "literal": "击退",
+      "source": "const semanticMatch = normalized.match(/(?:击败|消灭|击退).*?(\\d+)\\/(\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoFriendshipFight/main.js",
+      "line": 187,
+      "literal": "下次",
+      "source": "await genshin.chooseTalkOption(\"下次\");"
+    },
+    {
+      "path": "repo/js/AutoHoeingOneDragon/main.js",
+      "line": 335,
+      "literal": "预计用时",
+      "source": "const timeMatch = desc.match(/预计用时([\\d\\.]+)秒/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoHoeingOneDragon/main.js",
+      "line": 335,
+      "literal": "秒",
+      "source": "const timeMatch = desc.match(/预计用时([\\d\\.]+)秒/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoHoeingOneDragon/main.js",
+      "line": 341,
+      "literal": "包含以下怪物",
+      "source": "const monsterMatch = desc.match(/包含以下怪物：(.*?)。/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      "line": 54,
+      "literal": "倍产出次数",
+      "source": "const match = texts[i].text.match(/2倍产出次数[：:]\\s*(\\d+)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoLeyLineOutcrop/utils/calCountByResin.js",
+      "line": 309,
+      "literal": "当前拥有",
+      "source": "const match = textList[i].text.match(/当前拥有\\s*([0-5ss])/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoNobushi/main.js",
+      "line": 17,
+      "literal": "个",
+      "source": "const match = pathing_name.match(/-(\\d+)个\\.json$/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoPickLitter/main.js",
+      "line": 1168,
+      "literal": "给我一份福利餐",
+      "source": "// await genshin.chooseTalkOption(\"给我一份福利餐\");"
+    },
+    {
+      "path": "repo/js/AutoPickLitter/main.js",
+      "line": 1538,
+      "literal": "其实",
+      "source": "await genshin.chooseTalkOption(\"其实\");"
+    },
+    {
+      "path": "repo/js/AutoPlan/utils/physical.js",
+      "line": 315,
+      "literal": "当前拥有",
+      "source": "const match = res.text.match(/当前拥有\\s*([0-5ss])/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/AutoStygianOnslaught/main.js",
+      "line": 896,
+      "literal": "紊乱平息",
+      "source": "if (_resList[_ri].text === \"紊乱平息\") {"
+    },
+    {
+      "path": "repo/js/AutoYuanQin/main.js",
+      "line": 2075,
+      "literal": "联机合奏",
+      "source": "if (ocrResult && ocrResult.text.includes(\"联机合奏\")) {"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 209,
+      "literal": "每",
+      "source": "let match = lowerCaseRefreshMode.match(/每(\\d*)周/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 209,
+      "literal": "周",
+      "source": "let match = lowerCaseRefreshMode.match(/每(\\d*)周/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 231,
+      "literal": "每",
+      "source": "match = lowerCaseRefreshMode.match(/每(\\d*)天(\\d{1,2})点/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 231,
+      "literal": "天",
+      "source": "match = lowerCaseRefreshMode.match(/每(\\d*)天(\\d{1,2})点/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 231,
+      "literal": "点",
+      "source": "match = lowerCaseRefreshMode.match(/每(\\d*)天(\\d{1,2})点/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 263,
+      "literal": "小时",
+      "source": "match = lowerCaseRefreshMode.match(/(\\d+)小时/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 277,
+      "literal": "每",
+      "source": "match = lowerCaseRefreshMode.match(/每(\\d*)版本/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      "line": 277,
+      "literal": "版本",
+      "source": "match = lowerCaseRefreshMode.match(/每(\\d*)版本/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/main.js",
+      "line": 1164,
+      "literal": "离开队伍",
+      "source": "if (btnText === \"离开队伍\") {"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/main.js",
+      "line": 1168,
+      "literal": "角色展柜",
+      "source": "await waitForTextAppear(\"角色展柜\", [1082, 204, 107, 49]);"
+    },
+    {
+      "path": "repo/js/CD-Aware-AutoGather/main.js",
+      "line": 1016,
+      "literal": "个",
+      "source": "const match = pathName.match(/-(\\d+)个/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/DSTCG/main.js",
+      "line": 1737,
+      "literal": "回合开始时：",
+      "source": "if (effectText.includes(\"回合开始时：\") || effectText.includes(\"结束阶段：\")) {"
+    },
+    {
+      "path": "repo/js/DSTCG/main.js",
+      "line": 1737,
+      "literal": "结束阶段：",
+      "source": "if (effectText.includes(\"回合开始时：\") || effectText.includes(\"结束阶段：\")) {"
+    },
+    {
+      "path": "repo/js/JoinFriendsWorld/main.js",
+      "line": 87,
+      "literal": "拒绝了多人游戏申请",
+      "source": "if (requestText.endsWith('拒绝了多人游戏申请')) {"
+    },
+    {
+      "path": "repo/js/JoinFriendsWorld/main.js",
+      "line": 90,
+      "literal": "无法进入",
+      "source": "else if (requestText.startsWith('无法进入')) {"
+    },
+    {
+      "path": "repo/js/JoinFriendsWorld/main.js",
+      "line": 93,
+      "literal": "世界主人暂忙",
+      "source": "else if (requestText.startsWith('世界主人暂忙')) {"
+    },
+    {
+      "path": "repo/js/OCRCountResin/main.js",
+      "line": 263,
+      "literal": "当前拥有",
+      "source": "const match = res.text.match(/当前拥有\\s*([0-5ss])/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/StarfieldRaimentCollection/main.js",
+      "line": 60,
+      "literal": "搜索奇域",
+      "source": "const search_page = search_page_ocr && search_page_ocr.text.includes(\"搜索奇域\");"
+    },
+    {
+      "path": "repo/js/StarfieldRaimentCollection/main.js",
+      "line": 182,
+      "literal": "已完成所有任务",
+      "source": "if (ocrResult && ocrResult.text.includes(\"已完成所有任务\")) {"
+    },
+    {
+      "path": "repo/js/StarfieldRaimentCollection/main.js",
+      "line": 237,
+      "literal": "前往大厅",
+      "source": "} else if (ocrResult[i].text.includes(\"前往大厅\")) {"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 656,
+      "literal": "退出并",
+      "source": "if (await waitForOcrMatch(\"退出并\", new OpenCvSharp.OpenCvSharp.Rect(0, 0, 1920, 1080), 0.8, 1000)) {"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 727,
+      "literal": "登录其他账号",
+      "source": "await recognizeTextAndClick(\"登录其他账号\", RecognitionObject.Ocr(300, 200, 1200, 800), 5000);"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 894,
+      "literal": "退出并",
+      "source": "if (await waitForOcrMatch(\"退出并\", new OpenCvSharp.OpenCvSharp.Rect(0, 0, 1920, 1080), 0.8, 1000)) {"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 900,
+      "literal": "登录其他账号",
+      "source": "await recognizeTextAndClick(\"登录其他账号\", RecognitionObject.Ocr(300, 200, 1200, 800), 8000);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 99,
+      "literal": "正在匹配对局",
+      "source": "await waitForTextAppear(\"正在匹配对局\", [870, 386, 181, 43], 1800000);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 100,
+      "literal": "接受",
+      "source": "await recognizeTextAndClick(\"接受\", [1177, 713, 82, 55]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 103,
+      "literal": "七圣召唤",
+      "source": "await waitForTextAppear(\"七圣召唤\", [902, 870, 119, 46]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 105,
+      "literal": "请选择要替换的手牌",
+      "source": "await waitForTextAppear(\"请选择要替换的手牌\", [847, 232, 229, 39], 30000);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 115,
+      "literal": "放弃对局",
+      "source": "await recognizeTextAndClick(\"放弃对局\", [1543, 172, 112, 43]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 116,
+      "literal": "确定要放弃",
+      "source": "await waitForTextAppear(\"确定要放弃\", [785, 497, 339, 39]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 145,
+      "literal": "联机对局",
+      "source": "await recognizeTextAndClick(\"联机对局\", [1217, 411, 220, 280]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 154,
+      "literal": "编辑牌组",
+      "source": "await recognizeTextAndClick(\"编辑牌组\", [733, 997, 129, 48]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 155,
+      "literal": "更改牌组外观",
+      "source": "await waitForTextAppear(\"更改牌组外观\", [1592, 186, 139, 35]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 161,
+      "literal": "更改牌组外观",
+      "source": "await waitForTextAppear(\"更改牌组外观\", [1592, 186, 139, 35]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 163,
+      "literal": "编辑牌组",
+      "source": "await waitForTextAppear(\"编辑牌组\", [733, 997, 129, 48]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 165,
+      "literal": "我方出战牌组",
+      "source": "await waitForTextAppear(\"我方出战牌组\", [1248, 688, 156, 36]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 172,
+      "literal": "邀请队友",
+      "source": "await recognizeTextAndClick(\"邀请队友\", [1332, 886, 130, 49]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 173,
+      "literal": "正在匹配对局",
+      "source": "let r = await waitForTextAppear(\"正在匹配对局\", [870, 385, 184, 42], 500);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 181,
+      "literal": "正在匹配对局",
+      "source": "await waitForTextAppear(\"正在匹配对局\", [871, 386, 182, 39], 30000);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 184,
+      "literal": "七圣召唤",
+      "source": "await waitForTextAppear(\"七圣召唤\", [902, 870, 119, 46]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 186,
+      "literal": "请选择要替换的手牌",
+      "source": "await waitForTextAppear(\"请选择要替换的手牌\", [847, 232, 229, 39], 30000);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 254,
+      "literal": "猫尾酒馆",
+      "source": "await recognizeTextAndClick(\"猫尾酒馆\", [1320, 560, 300, 410]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 255,
+      "literal": "传送至",
+      "source": "await recognizeTextAndClick(\"传送至\", [1580, 980, 225, 59]);"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 262,
+      "literal": "我方出战牌组",
+      "source": "if (invite.text && invite.text.includes(\"我方出战牌组\")) {"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 267,
+      "literal": "更改牌组外观",
+      "source": "if (deck.text && deck.text.includes(\"更改牌组外观\")) {"
+    },
+    {
+      "path": "repo/js/TCGQuickProficiency/main.js",
+      "line": 287,
+      "literal": "卡牌",
+      "source": "let r = await waitForTextAppear(\"卡牌\", [867, 266, 68, 47], 500);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 143,
+      "literal": "置顶",
+      "source": "const top_text = await findText(\"置顶\", 1400, 650, 400, 100);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 197,
+      "literal": "管理关卡",
+      "source": "await findTextAndClick(\"管理关卡\", 960, 0, 960, 100, 50, 50);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 266,
+      "literal": "收藏",
+      "source": "await findTextAndClick(\"收藏\", 0, 850, 300, 230);"
+    },
+    {
+      "path": "repo/js/七圣召唤七日历练全自动/main.js",
+      "line": 170,
+      "literal": "无法出战",
+      "source": "if (res.text.includes(\"无法出战\")) {"
+    },
+    {
+      "path": "repo/js/七圣召唤七日历练全自动/main.js",
+      "line": 920,
+      "literal": "道具已达到容量上限",
+      "source": "if (!result.isEmpty() && result.text.includes(\"道具已达到容量上限\")) {"
+    },
+    {
+      "path": "repo/js/背包材料统计/main.js",
+      "line": 996,
+      "literal": "超量名单",
+      "source": "const match = existingContent.match(/超量名单:(.*)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/背包材料统计/main.js",
+      "line": 1032,
+      "literal": "超量名单",
+      "source": "const match = content.match(/超量名单:(.*)/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/自动购买商品/main.js",
+      "line": 228,
+      "literal": "当前物品在背包内的容量已达上限",
+      "source": "if (ocrResult.isExist() && ocrResult.text.includes(\"当前物品在背包内的容量已达上限\")) {"
+    },
+    {
+      "path": "repo/js/营养袋吃药统计/main.js",
+      "line": 84,
+      "literal": "进入世界申请",
+      "source": "if (ocr_res.text.includes(\"进入世界申请\")) {"
+    },
+    {
+      "path": "repo/js/营养袋吃药统计/main.js",
+      "line": 376,
+      "literal": "时间",
+      "source": "const timeMatch = line.match(/时间:(\\d{4}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2})/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/营养袋吃药统计/main.js",
+      "line": 401,
+      "literal": "时间",
+      "source": "const timeMatch = line.match(/时间:(\\d{4}\\/\\d{2}\\/\\d{2} \\d{2}:\\d{2}:\\d{2})/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/诛贼-地方传奇-利亚姆/lib/Laim/lib/core.js",
+      "line": 40,
+      "literal": "天赋",
+      "source": "const talentRes = await this.recognizeTextAndClick('天赋', { x: 133, y: 395, width: 115, height: 70 });"
+    },
+    {
+      "path": "repo/js/采集cd管理/main.js",
+      "line": 3467,
+      "literal": "用时",
+      "source": "const tm = part.match(/^用时(\\d+)秒$/);",
+      "coverage": "regex-language-dependency"
+    },
+    {
+      "path": "repo/js/采集cd管理/main.js",
+      "line": 3467,
+      "literal": "秒",
+      "source": "const tm = part.match(/^用时(\\d+)秒$/);",
+      "coverage": "regex-language-dependency"
+    }
+  ],
+  "runtime_covered_findings": []
+}

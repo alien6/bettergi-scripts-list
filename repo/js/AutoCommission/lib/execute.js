@@ -115,7 +115,7 @@ var Execute = {
           var trackingResult = await Utils.easyOCROne(
             Constants.OCR_REGIONS.COMMISSION_TRACKING
           );
-          if (trackingResult === "追踪") {
+          if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(trackingResult, "追踪") : trackingResult === "追踪")) {
             log.info("发现追踪按钮，点击追踪");
             click(1693, 1000);
             await sleep(1000);

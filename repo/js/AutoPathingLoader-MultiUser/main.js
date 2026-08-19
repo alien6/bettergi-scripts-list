@@ -112,7 +112,7 @@
         let ocr = ro.Find(ocrRo); // 当前页面OCR
         ro.dispose();
         for (let i = 0; i < 3; i++) {
-            if (ocr.isExist() && ocr.text === "当前队伍") {
+            if (ocr.isExist() && ocr.text === (genshin.getText ? genshin.getText("current_party") : "当前队伍")) {
                 ocr.Click(); // 点击 当前队伍
                 await sleep(500);
                 click(445, 1010); // 点击聊天框
@@ -421,7 +421,7 @@
                             } else {
                                 log.error(`${playerP}校验失败: ${ocrList[i].text}`);
                                 if (sendSignal) { // 队长发布检验完成信息
-                                    await sendMessage(`校验失败`);
+                                    await sendMessage(`BGI_VERIFY_FAIL`);
                                 }
                                 return false
                             }
@@ -429,7 +429,7 @@
                     }
                     if (Object.values(verifyDic).every(value => value === true)) { // 全部验证通过
                         if (sendSignal) { // 队长发布检验完成信息
-                            await sendMessage(`校验完成`);
+                            await sendMessage(`BGI_VERIFY_OK`);
                         }
                         await sleep(300);
                         return true;
@@ -437,10 +437,10 @@
                 }
             } else { // 队员
                 for (let i = 0; i < ocrList.count; i++) {
-                    if (ocrList[i].text.includes("校验完成")) {
+                    if (ocrList[i].text.includes("BGI_VERIFY_OK")) {
                         log.info(`检测到队长的校验完成信号`)
                         return true;
-                    } else if (ocrList[i].text.includes("校验失败")) {
+                    } else if (ocrList[i].text.includes("BGI_VERIFY_FAIL")) {
                         log.error(`检测到队长的校验失败信号`)
                         return false;
                     }
@@ -525,7 +525,7 @@
         let ocr = captureGameRegion().Find(ocrRo);
         log.info(`开始检测进入世界申请弹窗, 超时时长: ${timeOut}ms`);
         for (let i = 0; i < Math.floor(timeOut / 100); i++) {
-            if (ocr.isExist() && ocr.text === "世界") {
+            if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, "世界") : ocr.text === "世界")) {
                 log.info(`检测到弹窗！`);
                 keyPress("Y");
                 await sleep(300); // 弹窗打开的时间
@@ -561,7 +561,7 @@
         let ro3 = captureGameRegion();
         ocrTitle = ro3.Find(ocrTitleRo);
         ro3.dispose();
-        if (!(ocrTitle.isExist() && ocrTitle.text === "多人游戏申请")) {
+        if (!(ocrTitle.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrTitle.text, "多人游戏申请") : ocrTitle.text === "多人游戏申请"))) {
             log.error(`未处于 多人游戏申请 界面...`);
             return false;
         }
@@ -628,7 +628,7 @@
             const ro5 = captureGameRegion();
             let ocrMulti = ro5.Find(ocrMultiRo);
             ro5.dispose();
-            if (ocrMulti.isExist() && ocrMulti.text === "多人游戏") {
+            if (ocrMulti.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrMulti.text, "多人游戏") : ocrMulti.text === "多人游戏")) {
                 break;
             }
         }
@@ -643,13 +643,13 @@
             const ro6 = captureGameRegion();
             let ocrJoin = ro6.Find(ocrJoinRo);
             ro6.dispose();
-            if (ocrJoin.isExist() && ocrJoin.text === "申请加入") {
+            if (ocrJoin.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrJoin.text, "申请加入") : ocrJoin.text === "申请加入")) {
                 ocrJoin.Click();
                 await sleep(10000);
                 const ro7 = captureGameRegion();
                 ocrJoin = ro7.Find(ocrJoinRo);
                 ro7.dispose();
-                if (!(ocrJoin.isExist() && ocrJoin.text === "申请加入")) return true;
+                if (!(ocrJoin.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocrJoin.text, "申请加入") : ocrJoin.text === "申请加入"))) return true;
             }
             await sleep(8000);
         }
@@ -701,7 +701,7 @@
                         const ro8 = captureGameRegion();
                         let ocr = ro8.Find(ocrRo); // 当前页面OCR
                         ro8.dispose();
-                        if (ocr.isExist() && ocr.text === "当前队伍") { // 多此一举
+                        if (ocr.isExist() && ocr.text === (genshin.getText ? genshin.getText("current_party") : "当前队伍")) { // 多此一举
                             ocr.Click(); // 点击 当前队伍
                         }
                         await sleep(200);
@@ -808,7 +808,7 @@
                                     moveMouseTo(1555, 860); // 移走鼠标，防止干扰OCR
                                     await sleep(200);
                                     let ocr = captureGameRegion().Find(ocrRo); // 当前页面OCR
-                                    if (ocr.isExist() && ocr.text === "当前队伍") { // 多此一举
+                                    if (ocr.isExist() && ocr.text === (genshin.getText ? genshin.getText("current_party") : "当前队伍")) { // 多此一举
                                         ocr.Click(); // 点击 当前队伍
                                     }
                                     await sleep(200);
@@ -841,7 +841,7 @@
                                         }
                                         if (Object.values(judge_dic).every(value => value === true)) { // 全部就位
                                             log.info("全部就位");
-                                            await sendMessage("路线启动");
+                                            await sendMessage("BGI_ROUTE_START");
                                             wait_flag = false;
                                         };
                                     }
@@ -851,7 +851,7 @@
                             await pathingScript.run(JSON.stringify(pathDic));
                         }
                         // 跑完了全部路线
-                        await sendMessage("全部路线结束");
+                        await sendMessage("BGI_ROUTES_DONE");
                         // 等待队员退出（防止自己返回单人模式时卡死）
                         await sleep(12000);
                         // 返回单人模式（会自动踢出队员）
@@ -907,7 +907,7 @@
                                     moveMouseTo(1555, 860); // 移走鼠标，防止干扰OCR
                                     await sleep(200);
                                     let ocr = captureGameRegion().Find(ocrRo); // 当前页面OCR
-                                    if (ocr.isExist() && ocr.text === "当前队伍") { // 多此一举
+                                    if (ocr.isExist() && ocr.text === (genshin.getText ? genshin.getText("current_party") : "当前队伍")) { // 多此一举
                                         ocr.Click(); // 点击 当前队伍
                                     }
                                     await sleep(200);
@@ -921,7 +921,7 @@
                                     while (wait_flag) { // 循环等待
                                         let ocr = captureGameRegion().FindMulti(ocrMsgRo); // 当前页面OCR
                                         for (let l = 0; l < ocr.count; l++) { // 遍历OCR数组
-                                            if (ocr[l].text === "路线启动") { // 检测队长的消息
+                                            if (ocr[l].text === "BGI_ROUTE_START") { // 检测队长的消息
                                                 log.info(`检测到队长发送的路线启动信息`);
                                                 wait_flag = false;
                                                 break;
@@ -945,7 +945,7 @@
                         const ro12 = captureGameRegion();
                         let ocr = ro12.Find(ocrRo); // 当前页面OCR
                         ro12.dispose();
-                        if (ocr.isExist() && ocr.text === "当前队伍") { // 多此一举
+                        if (ocr.isExist() && ocr.text === (genshin.getText ? genshin.getText("current_party") : "当前队伍")) { // 多此一举
                             ocr.Click(); // 点击 当前队伍
                         }
                         await sleep(200);
@@ -958,7 +958,7 @@
                             let ocr = ro13.FindMulti(ocrMsgRo); // 当前页面OCR
                             ro13.dispose();
                             for (let l = 0; l < ocr.count; l++) { // 遍历OCR数组
-                                if (ocr[l].text.includes("全部路线结束")) { // 检测队长的消息
+                                if (ocr[l].text.includes("BGI_ROUTES_DONE")) { // 检测队长的消息
                                     log.info(`检测到队长发送的脚本结束信息`);
                                     // 返回单人模式（会自动踢出队员）
                                     genshin.returnMainUi();

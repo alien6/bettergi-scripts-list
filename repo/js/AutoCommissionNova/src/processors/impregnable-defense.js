@@ -56,7 +56,7 @@ function readKills() {
  * @returns {boolean} 当前帧是否识别到完成提示。
  */
 function hasCompletionText() {
-    return String(readOcr(COMPLETION_REGION, "完成提示")).replace(/\s/g, "").includes("委托完成");
+    return String(readOcr(COMPLETION_REGION, "完成提示")).replace(/\s/g, "").includes((genshin.getText ? genshin.getText("commission_completed") : "委托完成"));
 }
 
 /**

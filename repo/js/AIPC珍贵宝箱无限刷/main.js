@@ -175,7 +175,7 @@ const LocationButtonRo = RecognitionObject.TemplateMatch(file.ReadImageMatSync("
 			captureRegion.dispose();
 			for (let i = 0; i < resList.count; i++) {
 				let res = resList[i];
-				if (res.text.includes("Key") || res.text.includes("Bindings") || res.text.includes("按键") || res.text.includes("按鍵")) {
+				if (res.text.includes("Key") || res.text.includes("Bindings") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "按键") : res.text.includes("按键")) || res.text.includes("按鍵")) {
 					log.info("按键选项卡位置:({x},{y},{h},{w}), 文本{text}", res.x, res.y, res.width, res.Height, res.text);
 					res.click();
 					await sleep(2000);
@@ -397,7 +397,7 @@ const LocationButtonRo = RecognitionObject.TemplateMatch(file.ReadImageMatSync("
 			captureRegion.dispose();
 			for (let i = 0; i < resList.count; i++) {
 				let res = resList[i];
-				if (res.text.includes("Precious") || res.text.includes("Chest") || res.text.includes("箱") || res.text.includes("珍貴") || res.text.includes("珍贵")) {
+				if (res.text.includes("Precious") || res.text.includes("Chest") || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "箱") : res.text.includes("箱")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "珍貴") : res.text.includes("珍貴")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "珍贵") : res.text.includes("珍贵"))) {
 					failureCount++;
 					log.warn(`检测到宝箱未被拾取 (${failureCount}/5) 次`);
 					if (failureCount >= 3) {

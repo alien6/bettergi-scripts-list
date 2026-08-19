@@ -1,0 +1,101 @@
+name: PT-BR Script Migration
+
+on:
+  push:
+    branches:
+      - feature/pt-br-support
+    paths:
+      - tools/ptbr_migrate.py
+      - tools/ptbr_apply_textmap.py
+      - tools/ptbr_audited_literals.json
+      - tools/ptbr_manual_fixes.py
+      - tools/ptbr_targeted_regression.py
+      - tools/ptbr_cleanup.py
+      - tools/ptbr_strict_scan.py
+      - reports/ptbr-textmap-resolved.json
+      - .github/workflows/ptbr-migrate.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/pt-br-support
+          fetch-depth: 0
+
+      - name: Fetch main for formatting cleanup
+        run: git fetch origin main:refs/remotes/origin/main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply semantic key migration
+        run: python tools/ptbr_migrate.py --apply
+
+      - name: Apply audited TextMap mappings
+        run: python tools/ptbr_apply_textmap.py
+
+      - name: RED - record targeted regressions before fixes
+        shell: bash
+        run: |
+          set +e
+          python tools/ptbr_targeted_regression.py --report reports/ptbr-targeted-before.json
+          code=$?
+          set -e
+          if [ "$code" -eq 0 ]; then
+            echo "Expected targeted regression check to be RED before fixes, but it already passed."
+          else
+            echo "RED confirmed: targeted language-dependent paths are still present before fixes."
+          fi
+
+      - name: Apply targeted language-independent fixes
+        run: python tools/ptbr_manual_fixes.py
+
+      - name: GREEN - require targeted regressions to be fixed
+        run: python tools/ptbr_targeted_regression.py --report reports/ptbr-targeted-after.json
+
+      - name: Clean comments, settings and newline noise
+        run: python tools/ptbr_cleanup.py
+
+      - name: Refresh strict OCR audit
+        run: python tools/ptbr_strict_scan.py
+
+      - name: Validate Python utilities
+        run: python -m py_compile tools/ptbr_migrate.py tools/ptbr_apply_textmap.py tools/ptbr_manual_fixes.py tools/ptbr_targeted_regression.py tools/ptbr_cleanup.py tools/ptbr_strict_scan.py
+
+      - name: Validate manifests
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          count = 0
+          for path in Path('repo/js').rglob('manifest.json'):
+              with path.open('r', encoding='utf-8-sig') as handle:
+                  json.load(handle)
+              count += 1
+          print(f'Validated {count} manifest.json files')
+          PY
+
+      - name: Commit generated migration
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No migration changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bettergi.d.ts repo/js reports/ptbr-hardcoded-ocr.json reports/ptbr-strict-ocr.json reports/ptbr-targeted-before.json reports/ptbr-targeted-after.json
+          git commit -m "chore: apply audited PT-BR script migration"
+          git push origin HEAD:feature/pt-br-support

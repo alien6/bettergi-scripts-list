@@ -197,7 +197,7 @@ this.findAndCancelTrackingInBook = async function () {
         let stop = null;
         for (let i = 0; i < resList.count; i++) {
             let res = resList[i];
-            if (res.text.includes("停止")) {
+            if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "停止") : res.text.includes("停止"))) {
                 stop = res;
                 break;
             }
@@ -233,9 +233,9 @@ this.cancelTrackingInMap = async function () {
         if (resList && resList.count > 0) {
             for (let i = 0; i < resList.count; i++) {
                 let res = resList[i];
-                if (res.text.includes("停止")) {
+                if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "停止") : res.text.includes("停止"))) {
                     stop = res;
-                } else if (res.text.includes("地脉") || res.text.includes("衍出")) {
+                } else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "地脉") : res.text.includes("地脉")) || res.text.includes("衍出")) {
                     leyLine = res;
                 }
             }

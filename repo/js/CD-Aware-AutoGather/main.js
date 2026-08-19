@@ -1155,16 +1155,16 @@ function getSelectedMaterials(configMap) {
 async function getCoOpModeAndHostUid() {
     await genshin.returnMainUi();
     keyPress("F2");
-    await waitForTextAppear("多人游戏", [130, 20, 129, 57]);
+    await waitForTextAppear((genshin.getTextLiteral ? genshin.getTextLiteral("多人游戏") : "多人游戏"), [130, 20, 129, 57]);
     let uid = await getGameAccount(true, false);
-    const coOpMode = !(await isTextExistedInRegion("搜索", [1638, 90, 87, 63]));
+    const coOpMode = !(await isTextExistedInRegion((genshin.getText ? genshin.getText("search") : "搜索"), [1638, 90, 87, 63]));
     if (coOpMode) {
         const btnText = await getTextInRegion([1560, 992, 191, 55]);
         // 仅在多人模式且非房主时需要
         if (btnText === "离开队伍") {
             log.info("当前处于联机模式，且玩家不是房主");
             click(332, 218);
-            await recognizeTextAndClick("查看资料", [555, 182, 118, 49]);
+            await recognizeTextAndClick((genshin.getTextLiteral ? genshin.getTextLiteral("查看资料") : "查看资料"), [555, 182, 118, 49]);
             await waitForTextAppear("角色展柜", [1082, 204, 107, 49]);
             await sleep(100);
             uid = await getTextInRegion([623, 192, 118, 37]);

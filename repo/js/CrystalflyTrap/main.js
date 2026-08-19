@@ -40,17 +40,10 @@
             log.info("放置晶蝶诱捕装置");
             keyPress("B");
             await sleep(1000);
-            let backpackTitle = captureGameRegion();
-            let resList = backpackTitle.findMulti(RecognitionObject.ocr(130, 0, 200, 50));
-            backpackTitle.dispose();
-            for (let i = 0; i < resList.count; i++) {
-                let res = resList[i];
-                if (!res.text.includes("小道")) {
-                    log.info("点击小道具栏");
-                    click(1060, 40);
-                    await sleep(1000);
-                }
-            }
+            // 直接打开小道具栏，避免依赖背包标题中的中文 OCR。
+            log.info("点击小道具栏");
+            click(1060, 40);
+            await sleep(1000);
             const ro1 = captureGameRegion();
             let crystalflyTrap = ro1.find(RecognitionObject.TemplateMatch(file.ReadImageMatSync("assets/icon/晶蝶诱捕装置.png")))
             ro1.dispose();
@@ -71,7 +64,9 @@
             captureRegion.dispose();
             for (let i = 0; i < resList2.count; i++) {
                 let res = resList2[i];
-                if (!res.text.includes("晶蝶") || !res.text.includes("诱捕") || !res.text.includes("装置")) {
+                const isCrystalfly = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "晶蝶") : res.text.includes("晶蝶");
+                const isDevice = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "装置") : res.text.includes("装置");
+                if (!isCrystalfly || !isDevice) {
                     log.error("当前光标不是晶蝶诱捕装置");
                     throw new Error("当前光标不是晶蝶诱捕装置");
                 }
@@ -134,7 +129,9 @@
             captureRegion.dispose();
             for (let i = 0; i < resList.count; i++) {
                 let res = resList[i];
-                if (!res.text.includes("晶蝶") || !res.text.includes("诱捕") || !res.text.includes("装置")) {
+                const isCrystalfly = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "晶蝶") : res.text.includes("晶蝶");
+                const isDevice = genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "装置") : res.text.includes("装置");
+                if (!isCrystalfly || !isDevice) {
                     log.error("当前光标不是晶蝶诱捕装置");
                     throw new Error("当前光标不是晶蝶诱捕装置");
                 }

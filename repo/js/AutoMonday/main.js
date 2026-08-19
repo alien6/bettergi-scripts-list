@@ -417,7 +417,7 @@
                 return false;
             }
         } catch (error) {
-            if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+            if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
             log.error("执行粉球篮球兑换过程中出现错误: {error}", error.message);
         }
 
@@ -650,7 +650,7 @@
 
     // 背包过期物品识别
     async function handleExpiredItems() {
-        const ifGuoqi = await textOCREnhanced("物品过期", 1.5, 0, 3, 870, 280, 170, 40);
+        const ifGuoqi = await textOCREnhanced((genshin.getText ? genshin.getText("item_expired") : "物品过期"), 1.5, 0, 3, 870, 280, 170, 40);
         if (ifGuoqi.found) {
             log.info("检测到过期物品，正在处理...");
             await sleep(500);
@@ -823,7 +823,7 @@
         try {
             const result = captureRegion.find(ocrRo2);
             const text = result.text;
-            const keywords = ["挑战成功", "达成", "挑战达成"];
+            const keywords = ["挑战成功", "达成", (genshin.getText ? genshin.getText("challenge_completed") : "挑战达成")];
 
             for (const keyword of keywords) {
                 if (text.includes(keyword)) {
@@ -848,7 +848,7 @@
         await sleep(10);
         await textOCREnhanced("开始挑战", 8, 1, 0, 1615, 990, 220, 50);// 等待“开始挑战”出现
         await sleep(10);
-        await textOCREnhanced("地脉异常", 10, 1, 0, 840, 405, 180, 55);// 等待“地脉异常”出现
+        await textOCREnhanced((genshin.getText ? genshin.getText("ley_line_disorder") : "地脉异常"), 10, 1, 0, 840, 405, 180, 55);// 等待“地脉异常”出现
 
         await sleep(1000);
 
@@ -935,7 +935,7 @@
             await writeCDRecords(updatedRecords);
             log.info("本周质变仪任务已完成！");
         } catch (error) {
-            if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+            if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
             log.error("执行质变仪任务过程中出现错误: {error}", error.message);
         }
     }
@@ -961,7 +961,7 @@
             await writeCDRecords(updatedRecords);
             log.info("本周爱可菲任务已完成！");
         } catch (error) {
-            if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+            if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
             log.error("执行爱可菲任务过程中出现错误: {error}", error.message);
         }
     }
@@ -986,7 +986,7 @@
             keyDown("VK_MENU");
             await sleep(500);
 
-            const res1 = await textOCREnhanced("烹饪", 5, 0, 3, 1150, 460, 155, 155);
+            const res1 = await textOCREnhanced((genshin.getText ? genshin.getText("cooking") : "烹饪"), 5, 0, 3, 1150, 460, 155, 155);
             if (res1.found) {
                 click(res1.x + 15, res1.y + 15);
             }
@@ -1026,7 +1026,7 @@
                     click(1700, 1020);// 制作
                     await sleep(1000);
 
-                    await textOCREnhanced("自动烹饪", 5, 1, 0, 725, 1000, 130, 45);
+                    await textOCREnhanced((genshin.getText ? genshin.getText("auto_cook") : "自动烹饪"), 5, 1, 0, 725, 1000, 130, 45);
                     await sleep(800);
                     click(960, 460);
                     await sleep(800);
@@ -1059,7 +1059,7 @@
                 await sleep(300);
             }
         } catch (error) {
-            if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+            if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
             log.error("执行烹饪任务过程中出现错误: {error}", error.message);
         }
     }
@@ -1126,7 +1126,7 @@
             updatedRecords[routeName] = getNextMonday4AMISO();
             await writeCDRecords(updatedRecords);
         } catch (error) {
-            if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+            if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
             log.error("执行锻造任务过程中出现错误: {error}", error.message);
         }
     }
@@ -1163,7 +1163,7 @@
             updatedRecords[routeName] = getNextMonday4AMISO();
             await writeCDRecords(updatedRecords);
         } catch (error) {
-            if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+            if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
             log.error("执行首领任务过程中出现错误: {error}", error.message);
         }
     }
@@ -1212,7 +1212,7 @@
             await genshin.tpToStatueOfTheSeven();// 回一次神像
             await sleep(5000);
         } catch (error) {
-            if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+            if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
             log.error("执行秘境任务过程中出现错误: {error}", error.message);
         }
     }
@@ -1267,7 +1267,7 @@
                 log.warn("四方网CD未刷新！！！");
             }
         } catch (error) {
-            if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+            if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
             log.error("执行四方网任务过程中出现错误: {error}", error.message);
         }
     }
@@ -1351,7 +1351,7 @@
             updatedRecords[routeName] = getNextMonday4AMISO();
             await writeCDRecords(updatedRecords);
         } catch (error) {
-            if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+            if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
             log.error("执行投资券过程中出现错误: {error}", error.message);
         }
     }
@@ -1401,7 +1401,7 @@
                 await writeCDRecords(updatedRecords);
             }
         } catch (error) {
-            if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+            if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
             log.error("执行粉球篮球兑换过程中出现错误: {error}", error.message);
         }
     }
@@ -1510,7 +1510,7 @@
             }
         }
     } catch (error) {
-        if (error.message === "A task was canceled." || error.message === "取消自动任务") { throw error; }
+        if (error.message === "A task was canceled." || error.message === (genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) { throw error; }
         log.error(`执行过程中发生错误：${error.message}`);
     } finally {
         await genshin.returnMainUi();

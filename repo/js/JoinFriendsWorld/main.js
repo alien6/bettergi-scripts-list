@@ -47,13 +47,17 @@ const WAIT_FRIEND_CONFIRM_TIMEOUT = 25 * 1000;
         click(1680, 150);
         await sleep(500);
         const gameRegion = captureGameRegion();
-        // 尝试找到用户卡片的冒险等阶
+        // 该固定区域是用户卡片的冒险等阶。只需要确认 OCR 中存在等级数字，
+        // 不依赖任何游戏语言的标签文本。
         const levelRegin = gameRegion.find(autoZoomOcr(425, 445, 106, 37));
         const levelText = levelRegin.text.trim();
-        if (!levelText.includes('冒险等阶')) {
+        if (!/\d+/.test(levelText)) {
             // 判断是否搜索的用户是否是自己
             const yourselfRegin = gameRegion.find(autoZoomOcr(660, 495, 601, 88));
-            if (yourselfRegin.text.includes('其他玩家')) {
+            const yourselfText = yourselfRegin.text.trim();
+            if (genshin.textContainsLiteral
+                ? genshin.textContainsLiteral(yourselfText, '其他玩家')
+                : (genshin.textContainsLiteral ? genshin.textContainsLiteral(yourselfText, "其他玩家") : yourselfText.includes("其他玩家"))) {
                 gameRegion.dispose();
                 throw new Error('不能使用自己的UID');
             }
@@ -66,7 +70,7 @@ const WAIT_FRIEND_CONFIRM_TIMEOUT = 25 * 1000;
         if (joinOrAddText === '') {
             throw new Error('你的好友不在线');
         }
-        else if (joinOrAddText === '申请加入') {
+        else if ((genshin.textEqualsLiteral ? genshin.textEqualsLiteral(joinOrAddText, "申请加入") : joinOrAddText === "申请加入")) {
             log.info(`已经发起加入申请，等待好友同意`);
             joinOrAddRegin.click();
         }

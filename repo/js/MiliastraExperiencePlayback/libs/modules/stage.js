@@ -27,7 +27,7 @@ const availablePlaybackFiles = () => {
 const playStage = async (playbacks) => {
   if (
     !(await waitForAction(
-      () => findStageEscBtn() !== void 0 || findBottomBtnText("返回大厅") !== void 0,
+      () => findStageEscBtn() !== void 0 || findBottomBtnText((genshin.getText ? genshin.getText("return_to_lobby") : "返回大厅")) !== void 0,
       async () => {
         /** 关卡房间，点击 “开始游戏” 按钮 */
         /** 「经典模式」关卡，点击 “开始挑战” 按钮 */
@@ -64,7 +64,7 @@ const playStage = async (playbacks) => {
   )
     throw new Error("进入关卡超时");
   /** 直接通关结算的关卡（不会进入关卡） */
-  if (findBottomBtnText("返回大厅")) {
+  if (findBottomBtnText((genshin.getText ? genshin.getText("return_to_lobby") : "返回大厅"))) {
     await exitStageToLobby();
     return;
   }
@@ -115,7 +115,7 @@ const exitStage = async () => {
         /** 点击 “中断挑战” 按钮 */
         findExitStageBtn()?.click();
         /** 点击底部 “返回大厅” 按钮 */
-        findBottomBtnText("返回大厅")?.click();
+        findBottomBtnText((genshin.getText ? genshin.getText("return_to_lobby") : "返回大厅"))?.click();
       },
       { maxAttempts: 60 },
     ))
@@ -139,7 +139,7 @@ const exitStageToLobby = async () => {
         /** 跳过结算画面 */
         findSkipBtn()?.click();
         /** 点击底部 “返回大厅” 按钮 */
-        findBottomBtnText("返回大厅")?.click();
+        findBottomBtnText((genshin.getText ? genshin.getText("return_to_lobby") : "返回大厅"))?.click();
       },
       { maxAttempts: 60 },
     ))

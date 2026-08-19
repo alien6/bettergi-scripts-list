@@ -131,8 +131,6 @@ export class UI {
      * @returns {Promise<boolean>} 返回是否在秘境界面
      */
     static async isInOutDomainUI() {
-        //509, 259, 901, 563
-        const text = "退出秘境";
         const ocrRegion = {
             x: 509,
             y: 259,
@@ -141,19 +139,17 @@ export class UI {
         }
         const Box={x:ocrRegion.x, y:ocrRegion.y, width:ocrRegion.w, height:ocrRegion.h}
         await drawBoxDebug(settings.debug,Box, 400,new Pen(Color.Lime, 2))
-        const find = await findText(text, ocrRegion.x, ocrRegion.y, ocrRegion.w, ocrRegion.h)
+        const find = await findTextKey('exit_domain', ocrRegion.x, ocrRegion.y, ocrRegion.w, ocrRegion.h)
         Log.debug("识别结果:{1}", find)
-        return find && find.includes(text)
+        return Boolean(find)
     }
 
     /**
      * 判断当前UI是否在秘境界面
-     * 通过OCR技术在指定区域识别"退出秘境"文本
+     * 通过语义化OCR文本判断当前界面状态
      * @returns {Promise<boolean>} 返回是否在秘境界面，true表示在秘境界面，false表示不在
      */
     static async isInOutDomainUI() {
-        //509, 259, 901, 563
-        const text = "退出秘境";
         const ocrRegion = {
             x: 509,
             y: 259,
@@ -162,35 +158,28 @@ export class UI {
         }
         const Box={x:ocrRegion.x, y:ocrRegion.y, width:ocrRegion.w, height:ocrRegion.h}
         await drawBoxDebug(settings.debug,Box, 400,new Pen(Color.MediumBlue, 2))
-        const find = await findText(text, ocrRegion.x, ocrRegion.y, ocrRegion.w, ocrRegion.h)
+        const find = await findTextKey('exit_domain', ocrRegion.x, ocrRegion.y, ocrRegion.w, ocrRegion.h)
         Log.debug("识别结果:{1}", find)
-        return find && find.includes(text)
+        return Boolean(find)
     }
 
     /**
      * 检查是否在Stygian Onslaught（冥河冲击）UI界面中
-     * 通过OCR识别屏幕上的特定文本"退出挑战"来判断当前界面状态
      * @returns {Promise<boolean>} 返回是否在Stygian Onslaught UI界面中
      */
     static async isInOutStygianOnslaughtUI() {
-        // 定义要识别的文本内容
-        const text = "退出挑战";
-        // 定义OCR识别的区域坐标和尺寸
         const ocrRegion = {
-            x: 509,  // 区域左上角x坐标
-            y: 259,  // 区域左上角y坐标
-            w: 901,  // 区域宽度
-            h: 563   // 区域高度
+            x: 509,
+            y: 259,
+            w: 901,
+            h: 563
         }
         const Box={x:ocrRegion.x, y:ocrRegion.y, width:ocrRegion.w, height:ocrRegion.h}
         await drawBoxDebug(settings.debug,Box, 400,new Pen(Color.MediumSlateBlue, 2))
 
-        // 在指定区域内查找文本，并等待识别结果
-        const find = await findText(text, ocrRegion.x, ocrRegion.y, ocrRegion.w, ocrRegion.h)
-        // 输出识别结果到调试日志
+        const find = await findTextKey('exit_challenge', ocrRegion.x, ocrRegion.y, ocrRegion.w, ocrRegion.h)
         Log.debug("识别结果:{1}", find)
-        // 返回识别结果中是否包含目标文本
-        return find && find.includes(text)
+        return Boolean(find)
     }
 }
 
@@ -215,7 +204,7 @@ export async function toMainUi() {
  * 该函数用于处理退出秘境界面的相关操作，包括点击确认按钮和检测界面状态
  */
 export async function outDomainUI() {
-    Log.info(`{0}`, "退出秘境");
+    Log.info(`{0}`, (genshin.getText ? genshin.getText("exit_domain") : "退出秘境"));
     const ocrRegion = {
         x: 509,
         y: 259,
@@ -227,8 +216,8 @@ export async function outDomainUI() {
     let tryMax = false
     let inMainUI = false
     await sleep(ms);
-    //点击确认按钮
-    await findTextAndClick('地脉异常')
+    //点击地脉异常提示
+    await findTextKeyAndClick('ley_line_disorder')
     await sleep(ms * 2);
     while (!await UI.isInOutDomainUI()) {
         if (UI.isInMainUI()) {
@@ -250,8 +239,7 @@ export async function outDomainUI() {
             const Box={x:ocrRegion.x, y:ocrRegion.y, width:ocrRegion.w, height:ocrRegion.h}
             await drawBoxDebug(settings.debug,Box, 400,new Pen(Color.NavajoWhite, 2))
 
-            //点击确认按钮
-            await findTextAndClick('确认', ocrRegion.x, ocrRegion.y, ocrRegion.w, ocrRegion.h)
+            await findTextKeyAndClick('confirm', ocrRegion.x, ocrRegion.y, ocrRegion.w, ocrRegion.h)
         } catch (e) {
             // Log.error(`多次尝试点击确认失败 假定已经退出处理`);
         }
@@ -261,7 +249,7 @@ export async function outDomainUI() {
 }
 
 export async function outStygianOnslaughtUI() {
-    Log.info(`{0}`, "退出挑战");
+    Log.info(`{0}`, (genshin.getText ? genshin.getText("exit_challenge") : "退出挑战"));
     const ocrRegion = {
         x: 509,
         y: 259,
@@ -293,8 +281,7 @@ export async function outStygianOnslaughtUI() {
             const Box={x:ocrRegion.x, y:ocrRegion.y, width:ocrRegion.w, height:ocrRegion.h}
             await drawBoxDebug(settings.debug,Box, 400,new Pen(Color.PaleVioletRed, 2))
 
-            //点击确认按钮
-            await findTextAndClick('退出挑战', ocrRegion.x, ocrRegion.y, ocrRegion.w, ocrRegion.h)
+            await findTextKeyAndClick('exit_challenge', ocrRegion.x, ocrRegion.y, ocrRegion.w, ocrRegion.h)
         } catch (e) {
             // Log.error(`多次尝试点击确认失败 假定已经退出处理`);
         }
@@ -312,7 +299,7 @@ export async function openBag() {
     const Box={x:870, y:280, width:170, height:40}
     await drawBoxDebug(settings.debug,Box, 400,new Pen(Color.PowderBlue, 2))
 
-    const expiredText = await findText("物品过期", Box.x, Box.y, Box.width, Box.height, 2);
+    const expiredText = await findTextKey('item_expired', Box.x, Box.y, Box.width, Box.height, 2);
     if (expiredText) {
         Log.info("检测到过期物品，关闭弹窗");
         await sleep(500);
@@ -419,6 +406,40 @@ export async function findText(
 }
 
 /**
+ * 通过稳定语义键查找当前游戏语言中的文本。
+ * @param {string} key BetterGI GameTextKey，例如 confirm / exit_domain
+ */
+export async function findTextKey(
+    key,
+    x = 0,
+    y = 0,
+    w = 1920,
+    h = 1080,
+    attempts = 5,
+    interval = 50,
+) {
+    const keywords = Array.from(genshin.getTexts(key), text => text.toLowerCase());
+    for (let i = 0; i < attempts; i++) {
+        const gameRegion = captureGameRegion();
+        try {
+            const ro = RecognitionObject.Ocr(x, y, w, h);
+            const results = gameRegion.findMulti(ro);
+            for (let j = 0; j < results.count; j++) {
+                const res = results[j];
+                const actual = res?.text?.toLowerCase();
+                if (res.isExist() && actual && keywords.some(keyword => actual.includes(keyword))) {
+                    return res.text;
+                }
+            }
+        } finally {
+            gameRegion.dispose();
+        }
+        await sleep(interval);
+    }
+    return "";
+}
+
+/**
  * 通用找文本并点击（OCR）
  * @param {string} text 目标文本（单个文本）
  * @param {number} [x=0] OCR 区域左上角 X
@@ -471,6 +492,44 @@ export async function findTextAndClick(
         await sleep(interval);
     }
 
+    return null;
+}
+
+/**
+ * 通过稳定语义键查找并点击当前游戏语言中的文本。
+ */
+export async function findTextKeyAndClick(
+    key,
+    x = 0,
+    y = 0,
+    w = 1920,
+    h = 1080,
+    attempts = 5,
+    interval = 50,
+    preClickDelay = 50,
+    postClickDelay = 50
+) {
+    const keywords = Array.from(genshin.getTexts(key), text => text.toLowerCase());
+    for (let i = 0; i < attempts; i++) {
+        const gameRegion = captureGameRegion();
+        try {
+            const ro = RecognitionObject.Ocr(x, y, w, h);
+            const results = gameRegion.findMulti(ro);
+            for (let j = 0; j < results.count; j++) {
+                const res = results[j];
+                const actual = res?.text?.toLowerCase();
+                if (res.isExist() && actual && keywords.some(keyword => actual.includes(keyword))) {
+                    await sleep(preClickDelay);
+                    res.click();
+                    await sleep(postClickDelay);
+                    return res;
+                }
+            }
+        } finally {
+            gameRegion.dispose();
+        }
+        await sleep(interval);
+    }
     return null;
 }
 

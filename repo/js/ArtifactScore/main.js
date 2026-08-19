@@ -364,12 +364,12 @@ async function updateCharacterFromSelectionPage(headerResult) {
  */
 async function updateCachedCharacter() {
   const headerText = readOcrText(...REGIONS.characterHeader)
-  if (matchKnownText(headerText, ["圣遗物"])) {
+  if (matchKnownText(headerText, [(genshin.getText ? genshin.getText("artifact") : "圣遗物")])) {
     return updateCharacterFromSelectionPage({ text: headerText })
   }
 
   const tabText = readOcrText(...REGIONS.artifactTab)
-  if (!matchKnownText(tabText, ["圣遗物"])) return false
+  if (!matchKnownText(tabText, [(genshin.getText ? genshin.getText("artifact") : "圣遗物")])) return false
 
   const elementKeyword = matchKnownText(headerText, ELEMENTS.map(item => item.label))
   if (!elementKeyword) return false
@@ -446,12 +446,12 @@ async function readSubStat(region, index, snapshot = null) {
   const text = snapshot
     ? rowText(snapshot.items, region)
     : readOcrText(...region)
-  if (text.includes("待激活")) {
+  if (text.includes((genshin.getText ? genshin.getText("awaiting_activation") : "待激活"))) {
     return {
       key: `待激活${index + 1}`,
       statKey: "",
       value: 0,
-      name: "待激活",
+      name: (genshin.getText ? genshin.getText("awaiting_activation") : "待激活"),
       displayValue: "0"
     }
   }
@@ -587,7 +587,7 @@ function enrichArtifactStats(artifact, scoreBreakdown = null) {
     const estimate = item.key ? estimateSubStatRolls(item.key, item.rawValue) : null
     const state = item.name === "未识别"
       ? "unrecognized"
-      : item.name === "待激活"
+      : item.name === (genshin.getText ? genshin.getText("awaiting_activation") : "待激活")
         ? "pending"
         : detail
           ? getAttrUseState(detail.weight)

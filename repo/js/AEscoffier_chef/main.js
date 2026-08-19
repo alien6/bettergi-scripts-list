@@ -2,7 +2,7 @@
     const food_msg = JSON.parse(file.readTextSync("assets/foodMsg.json"));
     // const material_list = ['蘑菇', '黑麦粉', '洋葱', '夏槲果', '卷心菜', '胡萝卜', '土豆', '酸奶油', '兽肉', '火腿', '香肠', '胡椒', '宿影花', '冬凌草', '白灵果', '禽肉', '面粉', '香辛料', '薄荷', '苹果', '黄油', '糖', '鱼肉', '奶油', '秃秃豆', '鸟蛋', '盐', '番茄', '寒涌石', '奶酪', '青蜜莓', '苦种', '虾仁', '颗粒果', '咖啡豆', '墩墩桃', '日落果', '树莓', '牛奶', '汐藻', '泡泡桔', '海露花', '螃蟹', '绯樱绣球', '红果果菇', '堇瓜', '蟹黄', '清心', '烬芯花', '果酱', '澄晶实', '培根', '烛伞蘑菇', '肉龙掌', '发酵果实汁', '茉洁草', '稻米', '白萝卜', '松茸', '沉玉仙茗', '豆腐', '绝云椒椒', '竹笋', '金鱼草', '杏仁', '小麦', '松果', '海草', '琉璃袋', '帕蒂沙兰', '神秘的肉', '莲蓬', '枣椰', '鳗肉', '须弥蔷薇', '钩钩果', '树王圣体菇', '星蕈', '嘟嘟莲', '马尾', '甜甜花', '小灯草', '「冷鲜肉」', '熏禽肉'];
     const food_category = {
-        "恢复类": ["恢复血量", "持续恢复", "复活"],
+        "恢复类": ["恢复血量", "持续恢复", (genshin.getText ? genshin.getText("revive") : "复活")],
         "攻击类": ["提升伤害", "提升攻击", "提升暴击", "提升暴击伤害"],
         "冒险类": ["恢复体力", "减少体力消耗", "减少严寒消耗", "环境交互恢复"],
         "防御类": ["提升防御", "提升护盾", "生命上限提升", "提升治疗效果", "元素充能效率提升"],
@@ -302,7 +302,7 @@
         if (ocr_area) {
             let refer_y;
             for (let i = 0; i < ocr_area.length; i++) {
-                if (ocr_area[i].text.includes("当前拥有")) { // 寻找“当前拥有”
+                if (ocr_area[i].text.includes((genshin.getText ? genshin.getText("current_owned") : "当前拥有"))) { // 寻找“当前拥有”
                     refer_y = ocr_area[i].y;
 
                     for (let j = 0; j < ocr_area.length; j++) {
@@ -315,7 +315,7 @@
                             return item_num;
                         }
                     }
-                } else if (ocr_area[i].text.includes("培养需求")) {
+                } else if (ocr_area[i].text.includes((genshin.getText ? genshin.getText("growth_requirements") : "培养需求"))) {
                     refer_y = ocr_area[i].y;
 
                     for (let j = 0; j < ocr_area.length; j++) {
@@ -741,13 +741,13 @@
             click(1686, 1018); // 制作
             await sleep(800);
             let checkOcr = await Ocr(710, 523, 115, 31);
-            if (checkOcr && checkOcr.text.includes("材料不足")) {
+            if (checkOcr && checkOcr.text.includes((genshin.getText ? genshin.getText("insufficient_materials") : "材料不足"))) {
                 log.error(`制作 ${food_name} 过程中，材料不足...`);
                 return false;
             }
             await sleep(1000); // 等待进入烹饪界面
             checkOcr = await Ocr(132, 33, 69, 29);
-            if (checkOcr && checkOcr.text.includes("烹饪")) {
+            if (checkOcr && checkOcr.text.includes((genshin.getText ? genshin.getText("cooking") : "烹饪"))) {
                 // 检测角色加成
                 await check_character_bonus();
                 await sleep(500);
@@ -758,14 +758,14 @@
                     await sleep(1000);
                     // 检测自动烹饪解锁
                     checkOcr = await Ocr(730, 993, 124, 40);
-                    if (checkOcr && checkOcr.text.includes("自动烹饪")) {
+                    if (checkOcr && checkOcr.text.includes((genshin.getText ? genshin.getText("auto_cook") : "自动烹饪"))) {
                         log.info(`检测到自动烹饪已解锁，${food_name} 已完成...`);
                         break;
                     }
                     // 检测材料耗尽
                     checkOcr = await Ocr(121, 22, 158, 55);
-                    if (!(checkOcr && checkOcr.text.includes("烹饪"))) {
-                        if (checkOcr.text.includes("料理制作")) {
+                    if (!(checkOcr && checkOcr.text.includes((genshin.getText ? genshin.getText("cooking") : "烹饪")))) {
+                        if (checkOcr.text.includes((genshin.getText ? genshin.getText("cooking_production") : "料理制作"))) {
                             log.warn(`料理 ${food_name} ，制作过程中食材耗尽，已跳过...`);
                         }
                         log.error("OCR错误, 未识别到文本： 烹饪");
@@ -774,7 +774,7 @@
                 }
                 // 检测是否处于“烹饪界面”，并退出
                 checkOcr = await Ocr(132, 33, 69, 29);
-                if (checkOcr && checkOcr.text.includes("烹饪")) {
+                if (checkOcr && checkOcr.text.includes((genshin.getText ? genshin.getText("cooking") : "烹饪"))) {
                     await sleep(500);
                     keyPress("Escape");
                     await sleep(500);
@@ -786,7 +786,7 @@
             }
         } else {
             let flag = await Ocr(137, 31, 111, 34);
-            if (flag && flag.text.includes("料理制作")) {
+            if (flag && flag.text.includes((genshin.getText ? genshin.getText("cooking_production") : "料理制作"))) {
                 log.info("已经刷满全部料理熟练度...");
                 return false;
             }
@@ -887,7 +887,7 @@
             click(material_site[i]["x"], material_site[i]["y1"]);
             await sleep(500);
             let ocrResult = await Ocr(881, 763, 158, 267);
-            if (ocrResult && (ocrResult.text.includes("当前拥有") || ocrResult.text.includes("培养需求"))) {
+            if (ocrResult && (ocrResult.text.includes((genshin.getText ? genshin.getText("current_owned") : "当前拥有")) || ocrResult.text.includes((genshin.getText ? genshin.getText("growth_requirements") : "培养需求")))) {
                 flag = true;
             } else {
                 // 点击食材（下）
@@ -896,7 +896,7 @@
                 click(material_site[i]["x"], material_site[i]["y2"]);
                 await sleep(500);
                 let ocrResult = await Ocr(881, 763, 158, 267);
-                if (ocrResult && (ocrResult.text.includes("当前拥有") || ocrResult.text.includes("培养需求"))) {
+                if (ocrResult && (ocrResult.text.includes((genshin.getText ? genshin.getText("current_owned") : "当前拥有")) || ocrResult.text.includes((genshin.getText ? genshin.getText("growth_requirements") : "培养需求")))) {
                     flag = true;
                 }
             }
@@ -945,7 +945,7 @@
         while (true) {
             await sleep(200);
             let ocrResult = await Ocr(119, 29, 130, 37);
-            if (ocrResult && ocrResult.text.includes("角色选择")) break;
+            if (ocrResult && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, "角色选择") : ocrResult.text.includes("角色选择"))) break;
         }
         await sleep(200);
         let ocrResult = await ocr_find_area(148, 95, 773, 937, "产出");
@@ -1067,7 +1067,7 @@
         await sleep(500);
         let checkOcr = await Ocr(730, 993, 524, 40);
         if (checkOcr) {
-            if (!(checkOcr.text.includes("自动"))) { // 未解锁自动烹饪
+            if (!((genshin.textContainsLiteral ? genshin.textContainsLiteral(checkOcr.text, "自动") : checkOcr.text.includes("自动")))) { // 未解锁自动烹饪
                 // 手动烹饪默认次数
                 let cook_num = parseInt(food_msg[food_name]["price"], 10) * 5;
                 let cook_count = 0;
@@ -1083,7 +1083,7 @@
                     }
                     // 检测自动烹饪解锁
                     checkOcr = await Ocr(730, 993, 124, 40);
-                    if (checkOcr && checkOcr.text.includes("自动烹饪")) {
+                    if (checkOcr && checkOcr.text.includes((genshin.getText ? genshin.getText("auto_cook") : "自动烹饪"))) {
                         if (settings.autoLocked === "手动烹饪数计入总数") {
                             log.info(`检测到自动烹饪已解锁，${food_name} 剩余${food_num - cook_count}次`);
                             food_num -= cook_count;
@@ -1097,7 +1097,7 @@
                     }
                     // 检测材料耗尽
                     checkOcr = await Ocr(132, 33, 69, 29);
-                    if (!(checkOcr && checkOcr.text.includes("烹饪"))) {
+                    if (!(checkOcr && checkOcr.text.includes((genshin.getText ? genshin.getText("cooking") : "烹饪")))) {
                         log.error("OCR错误, 未识别到文本： 烹饪，可能原因：食材耗尽");
                         return false;
                     }
@@ -1110,7 +1110,7 @@
                 await set_ingredient_num(food_num);
                 while (true) { // [DEBUG] 无容错
                     let ocrResult = await Ocr(934, 884, 76, 39);
-                    if (ocrResult && ocrResult.text.includes("确认")) {
+                    if (ocrResult && ocrResult.text.includes((genshin.getText ? genshin.getText("confirm") : "确认"))) {
                         ocrResult.Click();
                         await sleep(500);
                         break;
@@ -1122,7 +1122,7 @@
             click(1878, 846); // 点击空白处
             await sleep(500);
             let ocrResult = await Ocr(132, 33, 69, 29);
-            if (ocrResult && ocrResult.text.includes("烹饪")) {
+            if (ocrResult && ocrResult.text.includes((genshin.getText ? genshin.getText("cooking") : "烹饪"))) {
                 await sleep(500);
                 keyPress("Escape"); // 返回料理制作
                 await sleep(500);
@@ -1334,7 +1334,7 @@
 
         // 领取食材
         let claim_all = await Ocr(198, 1003, 118, 31);
-        if (claim_all && claim_all.text === "全部领取") {
+        if (claim_all && claim_all.text === (genshin.getText ? genshin.getText("claim_all") : "全部领取")) {
             claim_all.Click(); // 全部领取
             await sleep(500);
             click(1569, 864); // 点击空白处
@@ -1448,7 +1448,7 @@
         click(1687, 1016);
         await sleep(500);
         let check_ocr = await Ocr(901, 524, 118, 31);
-        if (check_ocr && check_ocr.text === "队列已满") {
+        if (check_ocr && check_ocr.text === (genshin.getText ? genshin.getText("queue_full") : "队列已满")) {
             log.info(`食材加工(${name}): 队列已满...`);
             return 0;
         }
@@ -1493,7 +1493,7 @@
 
         // 领取食材
         let claim_all = await Ocr(198, 1003, 118, 31);
-        if (claim_all && claim_all.text === "全部领取") {
+        if (claim_all && claim_all.text === (genshin.getText ? genshin.getText("claim_all") : "全部领取")) {
             claim_all.Click(); // 全部领取
             await sleep(500);
             click(1569, 864); // 点击空白处
@@ -1753,7 +1753,7 @@
 
         // 先尝试领取一下
         let claim_all = await Ocr(198, 1003, 118, 31);
-        if (claim_all && claim_all.text === "全部领取") {
+        if (claim_all && claim_all.text === (genshin.getText ? genshin.getText("claim_all") : "全部领取")) {
             claim_all.Click(); // 全部领取
             await sleep(500);
             click(1569, 864); // 点击空白处

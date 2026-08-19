@@ -259,7 +259,7 @@ async function countCondensedResin() {
     let textList = captureRegion.findMulti(ocrRo);
     captureRegion.dispose();
     for (const res of textList) {
-        if (res.text.includes("当前拥有")) {
+        if (res.text.includes((genshin.getText ? genshin.getText("current_owned") : "当前拥有"))) {
             const match = res.text.match(/当前拥有\s*([0-5ss])/);
             if (match && match[1]) {
                 const count = parseInt(match[1]);

@@ -322,7 +322,7 @@ let challengeTime = 0;
             let ro = captureGameRegion();
             let res = ro.find(RecognitionObject.ocr(840, 935, 230, 40));
             ro.dispose();
-            if (res.text.includes("自动退出")) {
+            if (res.text.includes((genshin.getText ? genshin.getText("auto_exit") : "自动退出"))) {
                      log.info("检测到挑战成功");
                      return;
                 }
@@ -362,7 +362,7 @@ const autoNavigateToReward = async () => {
         let rewardTextArea = captureRegion.DeriveCrop(1210, 515, 200, 50);
         let rewardResult = rewardTextArea.find(RecognitionObject.ocrThis);
         // 检测到特点文字则结束！！！ 
-        if (rewardResult.text == "接触征讨之花") {
+        if (rewardResult.text == (genshin.getText ? genshin.getText("touch_trounce_blossom") : "接触征讨之花")) {
             log.info(`总计前进第${advanceNum}次`);
             log.info("已到达领奖点，检测到文字: " + rewardResult.text);
             captureRegion.dispose();
@@ -701,7 +701,7 @@ await sleep(400);
     
 await waitAndClickImage(imageName);
     try {
- await repeatOperationUntilTextFound({x: 1640,y: 960,width: 200,height: 100,targetText: "传送",stepDuration: 0, maxSteps:25, waitTime:100,ifClick: true});//用来等待点击文字,10s等待
+ await repeatOperationUntilTextFound({x: 1640,y: 960,width: 200,height: 100,targetText: (genshin.getText ? genshin.getText("teleport") : "传送"),stepDuration: 0, maxSteps:25, waitTime:100,ifClick: true});//用来等待点击文字,10s等待
     } catch (error) {
      log.info("秘境未开启");
      await genshin.returnMainUi();

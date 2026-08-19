@@ -414,7 +414,7 @@
         let shelter_option = await Ocr(165, 1001, 289, 32); // 筛选器文本
 
         if (shelter_option) {
-            if (shelter_option.text !== "鱼饵") {
+            if (shelter_option.text !== (genshin.getText ? genshin.getText("bait") : "鱼饵")) {
                 await sleep(500);
                 shelter_option.Click(); // 继续测试：没奏效？
                 await sleep(500);
@@ -424,7 +424,7 @@
                 if (ocrList.length !== 0) {
                     let flag = true;
                     for (let i = 0; i < ocrList.length; i++) {
-                        if (ocrList[i].text.includes("鱼饵")) {
+                        if (ocrList[i].text.includes((genshin.getText ? genshin.getText("bait") : "鱼饵"))) {
                             flag = false;
                             ocrList[i].Click();
                             await sleep(500);
@@ -487,7 +487,7 @@
             if (ocr_area) {
                 let refer_y;
                 for (let i = 0; i < ocr_area.length; i++) {
-                    if (ocr_area[i].text.includes("当前拥有")) {
+                    if (ocr_area[i].text.includes((genshin.getText ? genshin.getText("current_owned") : "当前拥有"))) {
                         refer_y = ocr_area[i].y;
 
                         for (let j = 0; j < ocr_area.length; j++) {
@@ -499,7 +499,7 @@
                                 await sleep(500);
                             }
                         }
-                    } else if (ocr_area[i].text.includes("培养需求")) {
+                    } else if (ocr_area[i].text.includes((genshin.getText ? genshin.getText("growth_requirements") : "培养需求"))) {
                         refer_y = ocr_area[i].y;
 
                         for (let j = 0; j < ocr_area.length; j++) {
@@ -537,7 +537,7 @@
         if (ocr_area.length !== 0) {
             let refer_y;
             for (let i = 0; i < ocr_area.length; i++) {
-                if (ocr_area[i].text.includes("当前拥有")) {
+                if (ocr_area[i].text.includes((genshin.getText ? genshin.getText("current_owned") : "当前拥有"))) {
                     refer_y = ocr_area[i].y;
 
                     for (let j = 0; j < ocr_area.length; j++) {
@@ -589,7 +589,7 @@
         let shelter_option = await Ocr(165, 1001, 289, 32); // 筛选器文本
 
         if (shelter_option) {
-            if (shelter_option.text !== "鱼饵") {
+            if (shelter_option.text !== (genshin.getText ? genshin.getText("bait") : "鱼饵")) {
                 shelter_option.Click();
                 await sleep(500);
 
@@ -598,7 +598,7 @@
                 if (ocrList.length !== 0) {
                     let flag = true;
                     for (let i = 0; i < ocrList.length; i++) {
-                        if (ocrList[i].text.includes("鱼饵")) {
+                        if (ocrList[i].text.includes((genshin.getText ? genshin.getText("bait") : "鱼饵"))) {
                             flag = false;
                             ocrList[i].Click();
                             await sleep(500);
@@ -661,7 +661,7 @@
             if (ocr_area.length !== 0) {
                 let refer_y;
                 for (let i = 0; i < ocr_area.length; i++) {
-                    if (ocr_area[i].text.includes("当前拥有")) {
+                    if (ocr_area[i].text.includes((genshin.getText ? genshin.getText("current_owned") : "当前拥有"))) {
                         refer_y = ocr_area[i].y;
 
                         for (let j = 0; j < ocr_area.length; j++) {
@@ -922,7 +922,7 @@
         await sleep(500);
 
         let claim_all = await Ocr(198, 1003, 118, 31);
-        if (claim_all && claim_all.text === "全部领取") {
+        if (claim_all && claim_all.text === (genshin.getText ? genshin.getText("claim_all") : "全部领取")) {
             claim_all.Click(); // 全部领取
             await sleep(500);
             click(1569, 864); // 点击空白处
@@ -949,7 +949,7 @@
         click(1687, 1016);
         await sleep(500);
         let check_ocr = await Ocr(901, 524, 118, 31);
-        if (check_ocr && check_ocr.text === "队列已满") {
+        if (check_ocr && check_ocr.text === (genshin.getText ? genshin.getText("queue_full") : "队列已满")) {
             log.info(`食材加工(${name}): 队列已满...`);
             return 0;
         }

@@ -174,7 +174,7 @@
         log.info(`浮点运算测试完成，得分 ${calculateScore.toFixed(2)}`);
     }
 
-    if (operationMode === "传送" || operationMode === "综合测试") {
+    if (operationMode === (genshin.getText ? genshin.getText("teleport") : "传送") || operationMode === "综合测试") {
         let startTime = Date.now();
         let count = 0;
         while (Date.now() - startTime < 45 * 1000) {

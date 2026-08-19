@@ -283,7 +283,7 @@ StepProcessorLoader.register("对话", async function (stepData, context) {
 {
   "type": "AutoSkip",
   "priorityOptions": ["帮助", "同意", "确认"],
-  "note": "优先点击包含'帮助'、'同意'、'确认'的选项"
+  "note": "优先点击包含'帮助'、'同意'、"确认"的选项"
 }
 
 3. 带NPC白名单的用法：

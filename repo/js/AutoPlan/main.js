@@ -73,7 +73,7 @@ async function checkFilterMain(list = []) {
             await toMainUi()
             if (await checkHolyRelicsKey(threshold)) {
                 log.info(`圣遗物背包剩余空间不足{1}，已过滤掉秘境圣遗物任务`, threshold)
-                checkList = filterList(list, domainList,"圣遗物")
+                checkList = filterList(list, domainList,(genshin.getText ? genshin.getText("artifact") : "圣遗物"))
                 log.debug("checkList:{1}", JSON.stringify(checkList))
             }
             await toMainUi()

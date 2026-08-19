@@ -871,7 +871,7 @@ async function autoFight(timeout) {
         await fightTask;
     } catch (error) {
         // 忽略取消任务产生的异常
-        if (error.message && error.message.includes("取消")) {
+        if (error.message && error.message.includes((genshin.getText ? genshin.getText("cancel") : "取消"))) {
             log.debug("战斗任务已正常取消");
         } else {
             log.warn(`战斗任务结束时出现异常: ${error.message}`);
@@ -976,7 +976,7 @@ async function startRewardTextDetection(cts) {
                         let resList = captureRegion.findMulti(ocrRoThis); // 使用预定义的ocrRoThis对象
                         if (resList && resList.count > 0) {
                             for (let i = 0; i < resList.count; i++) {
-                                if (resList[i].text.includes("原粹树脂")) {
+                                if (resList[i].text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) {
                                     log.debug("已到达领取页面，可以领奖");
                                     resolve(true);
                                     return;
@@ -988,9 +988,9 @@ async function startRewardTextDetection(cts) {
 
                         if (ocrResults && ocrResults.count > 0) {
                             for (let i = 0; i < ocrResults.count; i++) {
-                                if (ocrResults[i].text.includes("接触") ||
-                                    ocrResults[i].text.includes("地脉") ||
-                                    ocrResults[i].text.includes("之花")) {
+                                if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, "接触") : ocrResults[i].text.includes("接触")) ||
+                                    (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, "地脉") : ocrResults[i].text.includes("地脉")) ||
+                                    (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults[i].text, "之花") : ocrResults[i].text.includes("之花"))) {
                                     log.debug("检测到文字: " + ocrResults[i].text);
                                     resolve(true);
                                     return;

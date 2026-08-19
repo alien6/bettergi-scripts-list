@@ -24,7 +24,7 @@ export default defineStep({
                 type: "string",
                 label: "背包分类",
                 required: true,
-                options: ["武器", "圣遗物", "养成道具", "食物", "材料", "小道具", "任务", "贵重道具", "摆设"],
+                options: ["武器", (genshin.getText ? genshin.getText("artifact") : "圣遗物"), "养成道具", "食物", "材料", "小道具", "任务", "贵重道具", "摆设"],
             },
             items: {
                 type: "array",

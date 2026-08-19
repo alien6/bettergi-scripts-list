@@ -98,7 +98,7 @@ function escapeRegExp(string) {
         const text_h = 51;
         const ocr_res = game_region.find(RecognitionObject.ocr(text_x, text_y, text_w, text_h));
         if (ocr_res) {
-            if (ocr_res.text.includes("物品过期")) {
+            if (ocr_res.text.includes((genshin.getText ? genshin.getText("item_expired") : "物品过期"))) {
                 log.info("检测到物品过期");
                 click(1000, 750);
                 await sleep(1000);
@@ -692,7 +692,7 @@ function escapeRegExp(string) {
             await clickPNG('筛选2', 1);
             await clickPNG('重置');
             await sleep(stepDelay);
-            await clickPNG('搜索');
+            await clickPNG((genshin.getText ? genshin.getText("search") : "搜索"));
             await sleep(loadDelay);
             log.info(`搜索${drugName}`);
             inputText(drugName);
@@ -880,13 +880,13 @@ function escapeRegExp(string) {
                 return;
             }
         }
-        await clickPNG("料理制作",20,false);
+        await clickPNG((genshin.getText ? genshin.getText("cooking_production") : "料理制作"),20,false);
         //搜索回血药
         await clickPNG('筛选1', 1);
         await clickPNG('筛选2', 1);
         await clickPNG('重置');
         await sleep(stepDelay);
-        await clickPNG('搜索');
+        await clickPNG((genshin.getText ? genshin.getText("search") : "搜索"));
         await sleep(loadDelay);
         // 去除前缀
         let searchName = recoveryFoodName.replace(/^.+的/, '');
@@ -896,7 +896,7 @@ function escapeRegExp(string) {
         await sleep(loadDelay);
         await clickPNG('制作');
         await sleep(loadDelay);
-        await clickPNG('自动烹饪');
+        await clickPNG((genshin.getText ? genshin.getText("auto_cook") : "自动烹饪"));
         await sleep(stepDelay);
         await clickPNG('选择烹饪数量',20,false);
         await sleep(stepDelay);

@@ -247,7 +247,7 @@ async function checkSoldOutMessage() {
         // 在指定区域进行 OCR 识别（与容量上限提示区域相同，也可根据需要调整）
         let ocrObject = RecognitionObject.Ocr(1305, 860, 500, 100);
         let ocrResult = captureRegion.Find(ocrObject);
-        if (ocrResult.isExist() && (ocrResult.text.includes("售罄"))) {
+        if (ocrResult.isExist() && ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResult.text, "售罄") : ocrResult.text.includes("售罄")))) {
             returnValue = true;
         }
     } catch (e) {
@@ -844,7 +844,7 @@ async function spikChat(npcName) {
         try {
             let resList = captureRegion.findMulti(RecognitionObject.ocrThis);
             for (let i = 0; i < resList.count; i++) {
-                if (resList[i].text.includes("有什么卖的") || resList[i].text.includes("可以卖一些")) {
+                if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, "有什么卖的") : resList[i].text.includes("有什么卖的")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, "可以卖一些") : resList[i].text.includes("可以卖一些"))) {
                     await sleep(500);
                     click(resList[i].x + 30, resList[i].y + 30);
                     await sleep(500);

@@ -1,0 +1,47 @@
+name: PT-BR TextMap Apply
+
+on:
+  push:
+    branches:
+      - feature/pt-br-support
+    paths:
+      - tools/ptbr_apply_textmap.py
+      - tools/ptbr_audited_literals.json
+      - tools/ptbr_manual_fixes.py
+      - reports/ptbr-textmap-resolved.json
+      - .github/workflows/ptbr-textmap-apply.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/pt-br-support
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply audited TextMap mappings
+        run: python tools/ptbr_apply_textmap.py
+      - name: Apply targeted language-independent fixes
+        run: python tools/ptbr_manual_fixes.py
+      - name: Refresh strict audit after migration
+        run: python tools/ptbr_strict_scan.py
+      - name: Commit changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bettergi.d.ts repo/js reports/ptbr-strict-ocr.json
+          if git diff --cached --quiet; then
+            echo "No audited PT-BR code changes."
+            exit 0
+          fi
+          git commit -m "feat: apply audited PT-BR OCR mappings"
+          git push origin HEAD:feature/pt-br-support

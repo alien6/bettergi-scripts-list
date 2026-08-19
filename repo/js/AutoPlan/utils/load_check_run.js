@@ -371,7 +371,7 @@ class Domain extends Base {
                 } catch (e) {
                     const errorMessage = e.message
                     // 只有选择了秘境的时候才会重试
-                    if (errorMessage.includes("复活") && domainParam.DomainName) {
+                    if (errorMessage.includes((genshin.getText ? genshin.getText("revive") : "复活")) && domainParam.DomainName) {
                         continue;
                     }
                     if (!config.run.exclude_run_exception || config.run.loop_plan) {//排除异常 与循环计划互斥
@@ -525,7 +525,7 @@ class LeyLineOutcrop extends Base {
             } catch (e) {
                 const errorMessage = e.message
                 // 只有选择了秘境的时候才会重试
-                if (errorMessage.includes("复活")) {
+                if (errorMessage.includes((genshin.getText ? genshin.getText("revive") : "复活"))) {
                     continue;
                 }
                 if (!config.run.exclude_run_exception || config.run.loop_plan) {//排除异常 与循环计划互斥
@@ -733,7 +733,7 @@ class StygianOnslaught extends Base {
                     break;
                 } catch (e) {
                     const errorMessage = e.message
-                    if (errorMessage.includes("复活")) {
+                    if (errorMessage.includes((genshin.getText ? genshin.getText("revive") : "复活"))) {
                         continue;
                     }
                     if (!config.run.exclude_run_exception || config.run.loop_plan) {//排除异常 与循环计划互斥

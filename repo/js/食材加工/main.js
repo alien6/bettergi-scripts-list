@@ -435,7 +435,7 @@
                     const ocrResult = ra.findMulti(RecognitionObject.ocr(117, 196, 1148, 502));
                     ra.dispose();
                     for (var i = 0; i < ocrResult.count; ++i) {
-                        if (ocrResult[i].text.endsWith("分钟") || ocrResult[i].text.endsWith("秒")) {
+                        if ((genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, "分钟") : ocrResult[i].text.endsWith("分钟")) || (genshin.textEndsWithLiteral ? genshin.textEndsWithLiteral(ocrResult[i].text, "秒") : ocrResult[i].text.endsWith("秒"))) {
                             // 选中该食材
                             click(ocrResult[i].x, ocrResult[i].y);
                             await sleep(500);

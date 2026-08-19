@@ -745,7 +745,7 @@ async function chcekDragonEggs() {
 async function checkExpire() {
     await sleep(1000);
     let ocrExpire = await performOcr("",{ min: 870, max: 1040 }, { min: 280, max: 320 }, true);
-    if (ocrExpire.text == "物品过期") {
+    if (ocrExpire.text == (genshin.getText ? genshin.getText("item_expired") : "物品过期")) {
         log.info(`处理中=========`);
        await click(980, 750);
        await sleep(50);
@@ -927,7 +927,7 @@ async function numberTemplateMatch(
         let ocrResults = await performOcr("王平安", dialogZone.x, dialogZone.y, false);
         if (ocrResults.success) {
             await sleep(700);
-            await genshin.chooseTalkOption("能给我几支香吗");
+            await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral("能给我几支香吗") : "能给我几支香吗"));
             await sleep(700);
             leftButtonClick();
             await sleep(700);
@@ -1032,7 +1032,7 @@ async function numberTemplateMatch(
                         results = "大凶";
                         await pathingScript.runFile("assets/挂签路线.json");
                         await performOcr("御签挂", { min: 900, max: 1700 }, { min: 380, max: 880 }, false);
-                        await genshin.chooseTalkOption("挂起来吧");
+                        await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral("挂起来吧") : "挂起来吧"));
                         await sleep(700);
                         await click(111,184);
                         await sleep(1000);
@@ -1048,7 +1048,7 @@ async function numberTemplateMatch(
                         await pathingScript.runFile("assets/挂签路线.json");
                         await performOcr("御签挂", { min: 900, max: 1700 }, { min: 380, max: 880 }, false);
                         await sleep(700);
-                        await genshin.chooseTalkOption("挂起来吧");
+                        await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral("挂起来吧") : "挂起来吧"));
                         await click(111,184);
                         await sleep(1000);
                         await click(1250,817);
@@ -1074,7 +1074,7 @@ async function numberTemplateMatch(
                     };  
                 } else {
                     await sleep(700);
-                    await genshin.chooseTalkOption("再见");
+                    await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral("再见") : "再见"));
                     await sleep(700);
                     leftButtonClick();
                     await sleep(1500);
@@ -1136,7 +1136,7 @@ async function numberTemplateMatch(
                     };
                 } else {
                     log.info("你开过了？look my eyes,回答我！！！");
-                    await genshin.chooseTalkOption("再见");
+                    await genshin.chooseTalkOption((genshin.getTextLiteral ? genshin.getTextLiteral("再见") : "再见"));
                     await sleep(700);
                     leftButtonClick();
                     await sleep(1500);

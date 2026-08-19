@@ -43,7 +43,7 @@
 
             for (let i = 0; i < resList.count; i++) {
                 let res = resList[i];
-                if (res.text.includes("世界权限")) { 
+                if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "世界权限") : res.text.includes("世界权限"))) { 
                     res.click(); 
                     tag = 1;
                     break;

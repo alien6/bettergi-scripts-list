@@ -27,20 +27,20 @@ async function (timeout, targetPath, retries = 0) {
         
         // 检查地脉之花状态 - 已完成状态，准备领取奖励
         log.debug(`地脉花状态：${result2.text}`);
-        if (result2.text.includes("之花")) {
+        if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result2.text, "之花") : result2.text.includes("之花"))) {
             log.info("识别到地脉之花，准备领取奖励");
             await switchToFriendshipTeamIfNeeded();
             return;
         }
         
         // 处理地脉溢口
-        if (result2.text.includes("溢口")) {
+        if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result2.text, "溢口") : result2.text.includes("溢口"))) {
             log.info("识别到地脉溢口");
             keyPress("F");
             await sleep(300);
             keyPress("F");
             await sleep(500);
-        } else if (result.text.includes("打倒所有敌人")) {
+        } else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(result.text, "打倒所有敌人") : result.text.includes("打倒所有敌人"))) {
             log.info("地脉花已经打开，直接战斗");
         } else {
             // 未识别到目标，需要重新导航
@@ -103,7 +103,7 @@ async function processResurrect() {
         let resurrectButton = null;
         for (let i = 0; i < resList.count; i++) {
             let res = resList[i];
-            if (res.text.includes("复苏")) {
+            if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "复苏") : res.text.includes("复苏"))) {
                 resurrectButton = res;
                 break;
             }

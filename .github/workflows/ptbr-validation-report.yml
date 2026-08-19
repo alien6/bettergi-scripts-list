@@ -1,0 +1,143 @@
+name: PT-BR Script Validation Report
+
+on:
+  push:
+    branches:
+      - feature/pt-br-support
+    paths:
+      - '.github/workflows/ptbr-validation-report.yml'
+      - 'tools/**'
+      - 'repo/js/**'
+      - 'bettergi.d.ts'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout triggering commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch main for formatting cleanup
+        run: git fetch origin main:refs/remotes/origin/main
+
+      - name: Apply deterministic PT-BR migrations
+        run: |
+          python tools/ptbr_migrate.py --apply
+          python tools/ptbr_apply_textmap.py
+          python tools/ptbr_manual_fixes.py
+          python tools/ptbr_cleanup.py
+
+      - name: Require targeted language-independent regressions fixed
+        run: python tools/ptbr_targeted_regression.py --report reports/ptbr-targeted-after.json
+
+      - name: Validate and capture evidence
+        shell: bash
+        run: |
+          mkdir -p reports
+          : > reports/ptbr-script-validation-log.txt
+          status=0
+
+          echo '=== PYTHON SYNTAX ===' | tee -a reports/ptbr-script-validation-log.txt
+          python -m py_compile tools/ptbr_migrate.py tools/ptbr_cleanup.py tools/ptbr_strict_scan.py tools/ptbr_textmap_resolve.py tools/ptbr_apply_textmap.py tools/ptbr_manual_fixes.py tools/ptbr_targeted_regression.py 2>&1 | tee -a reports/ptbr-script-validation-log.txt || status=1
+
+          echo '=== PYTHON UNIT TESTS ===' | tee -a reports/ptbr-script-validation-log.txt
+          python -m unittest discover -s tools -p 'test_ptbr_*.py' 2>&1 | tee -a reports/ptbr-script-validation-log.txt || status=1
+
+          echo '=== STRICT SCAN ===' | tee -a reports/ptbr-script-validation-log.txt
+          python tools/ptbr_strict_scan.py 2>&1 | tee -a reports/ptbr-script-validation-log.txt || status=1
+
+          echo '=== MANIFEST JSON ===' | tee -a reports/ptbr-script-validation-log.txt
+          python - <<'PY' 2>&1 | tee -a reports/ptbr-script-validation-log.txt || status=1
+          import json
+          from pathlib import Path
+          count=0
+          for p in Path('repo/js').rglob('manifest.json'):
+              with p.open('r',encoding='utf-8-sig') as f: json.load(f)
+              count+=1
+          print(f'Validated {count} manifest.json files')
+          PY
+
+          echo '=== TYPE DEFINITIONS ===' | tee -a reports/ptbr-script-validation-log.txt
+          python - <<'PY' 2>&1 | tee -a reports/ptbr-script-validation-log.txt || status=1
+          from pathlib import Path
+          text=Path('bettergi.d.ts').read_text(encoding='utf-8-sig')
+          required=[
+              'gameCulture',
+              'getText(key: string)',
+              'getTexts(key: string)',
+              'getTextLiteral(canonicalZhHans: string)',
+              'getTextLiterals(canonicalZhHans: string)',
+              'textContainsLiteral(actualText: string',
+              'textEqualsLiteral(actualText: string',
+              'textStartsWithLiteral(actualText: string',
+              'textEndsWithLiteral(actualText: string',
+              'findTextKeyAndClick'
+          ]
+          missing=[x for x in required if x not in text]
+          if missing: raise SystemExit('Missing BetterGI typings: '+repr(missing))
+          print('All PT-BR localization typings present')
+          PY
+
+          echo '=== INTERNAL SETTINGS SAFETY ===' | tee -a reports/ptbr-script-validation-log.txt
+          python - <<'PY' 2>&1 | tee -a reports/ptbr-script-validation-log.txt || status=1
+          from pathlib import Path
+          bad=[]
+          for p in Path('repo/js').rglob('*.js'):
+              try: lines=p.read_text(encoding='utf-8-sig').splitlines()
+              except UnicodeDecodeError: continue
+              for n,line in enumerate(lines,1):
+                  if 'settings.' in line and 'genshin.getText ? genshin.getText(' in line:
+                      bad.append(f'{p}:{n}: {line.strip()}')
+          if bad:
+              print('\n'.join(bad[:100])); raise SystemExit(f'{len(bad)} localized internal setting comparisons remain')
+          print('No generated localization in settings.* comparisons')
+          PY
+
+          strict=$(python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('reports/ptbr-strict-ocr.json')
+          print(json.loads(p.read_text(encoding='utf-8')).get('strict_functional_cjk_count','unknown'))
+          PY
+          )
+          {
+            echo '# PT-BR Script Validation Status'
+            echo
+            echo "Generated: $(date -u '+%Y-%m-%d %H:%M:%SZ')"
+            echo
+            if [ "$status" -eq 0 ]; then echo '- Structural validation: PASS'; else echo '- Structural validation: FAIL'; fi
+            echo "- Strict functional CJK occurrences: $strict"
+          } > reports/ptbr-script-validation-status.md
+          cat reports/ptbr-script-validation-status.md
+          exit 0
+
+      - name: Commit migrated scripts and evidence
+        shell: bash
+        run: |
+          remote_sha=$(git ls-remote origin refs/heads/feature/pt-br-support | awk '{print $1}')
+          if [ "$remote_sha" != "$GITHUB_SHA" ]; then
+            echo "Branch advanced from $GITHUB_SHA to $remote_sha; skipping stale migration evidence."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bettergi.d.ts repo/js \
+                  reports/ptbr-hardcoded-ocr.json \
+                  reports/ptbr-script-validation-status.md \
+                  reports/ptbr-script-validation-log.txt \
+                  reports/ptbr-strict-ocr.json \
+                  reports/ptbr-targeted-after.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore: apply and validate PT-BR script migration"
+          git push origin HEAD:feature/pt-br-support

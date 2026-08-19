@@ -27,7 +27,7 @@
   });
   
   // 同时注册"传送"别名
-  StepProcessorLoader.register("传送", async function(step, context) {
+  StepProcessorLoader.register((genshin.getText ? genshin.getText("teleport") : "传送"), async function(step, context) {
     return StepProcessorLoader.processors["tp"](step, context);
   });
 })();

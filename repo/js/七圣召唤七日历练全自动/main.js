@@ -145,7 +145,7 @@ async function switchCardTeam(Name, shareCode) {
         captureRegion = captureGameRegion();
         let res = captureRegion.find(RecognitionObject.ocr(1140, 732, 83, 55));
         captureRegion.dispose();
-        if (res.text === "确认") {
+        if (res.text === (genshin.getText ? genshin.getText("confirm") : "确认")) {
             res.click();
         } else {
             click(731, 998); // 编辑牌组
@@ -325,13 +325,13 @@ async function checkChallengeResults() {
     capture.dispose();
     let success = false;
     log.info(`结果识别：${res1.text}`);
-    if (res1.text.includes("对局失败")) {
+    if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res1.text, "对局失败") : res1.text.includes("对局失败"))) {
         log.info("对局失败");
         await sleep(1000);
         click(754, 915); //退出挑战
         await sleep(4000);
         await autoConversation();
-    } else if (res1.text.includes("对局胜利")) {
+    } else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res1.text, "对局胜利") : res1.text.includes("对局胜利"))) {
         log.info("对局胜利");
         await sleep(1000);
         click(754, 915); //退出挑战
@@ -350,7 +350,7 @@ async function checkChallengeResults() {
         let ro2 = captureGameRegion();
         let res2 = ro2.find(region2);
         ro2.dispose();
-        if (res2.text.includes("设置")) click(1600, 260); //点击退出-选项4
+        if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res2.text, "设置") : res2.text.includes("设置"))) click(1600, 260); //点击退出-选项4
         else click(1600, 200); //点击退出-选项3
         await sleep(1000);
         click(1180, 756); //点击确认

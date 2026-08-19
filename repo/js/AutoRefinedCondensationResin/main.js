@@ -70,7 +70,7 @@ async function condensedResin() {
         let resList = captureRegion.findMulti(RecognitionObject.ocrThis);
         captureRegion.dispose();
         for (let i = 0; i < resList.count; i++) {
-            if (resList[i].text.includes("合成")) {
+            if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, "合成") : resList[i].text.includes("合成"))) {
 
                 // 找到合成台，点击合成台
                 log.info("寻找合成台成功,开始与合成台交互");

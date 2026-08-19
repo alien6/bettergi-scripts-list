@@ -377,7 +377,7 @@ function appendResult(result) {
 function isCancellation(error) {
   const message = String(error && error.message ? error.message : error);
   const lowerMessage = message.toLowerCase();
-  return message.includes("取消自动任务") || lowerMessage.includes("canceled") || lowerMessage.includes("cancelled");
+  return message.includes((genshin.getText ? genshin.getText("cancel_auto_task") : "取消自动任务")) || lowerMessage.includes("canceled") || lowerMessage.includes("cancelled");
 }
 
 function addIssuePoint(state, pointKey) {

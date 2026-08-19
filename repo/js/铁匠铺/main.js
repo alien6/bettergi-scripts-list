@@ -664,7 +664,7 @@ async function tryForgeOre(oreType) {
                 ro2.dispose();
                 if (ocrResults) {
                     // log.info(`${ocrResults.text}`);
-                    if (ocrResults.text.includes("今日已无法锻造")) {
+                    if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults.text, "今日已无法锻造") : ocrResults.text.includes("今日已无法锻造"))) {
                         if (notice) {
                             notification.send("检测到 今日已无法锻造 结束锻造");
                         } else {
@@ -676,7 +676,7 @@ async function tryForgeOre(oreType) {
                         await click(960, 1042);// 多次点击结束弹窗
                         return true; // 终止锻造流程
                     }
-                    else if (ocrResults.text.includes("材料不足")) {
+                    else if (ocrResults.text.includes((genshin.getText ? genshin.getText("insufficient_materials") : "材料不足"))) {
                         if (notice) {
                             notification.send("检测到 材料不足 跳过当前矿物。请检查背包，及时补充矿物。");
                         } else {
@@ -866,7 +866,7 @@ async function forgeOre(smithyName, maxOre = null) {
                     RecognitionObject.ocr(ocrRegionAfter.x, ocrRegionAfter.y, ocrRegionAfter.width, ocrRegionAfter.height)
                 );
                 ro2.dispose();
-                if (ocrResultsAfter.text.includes("锻造队列")) {
+                if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResultsAfter.text, "锻造队列") : ocrResultsAfter.text.includes("锻造队列"))) {
                     await sleep(1000);//等待僵直
                     ocrResultsAfter.click();
                     await sleep(200);

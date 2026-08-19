@@ -50,7 +50,7 @@ async function detectTextInRegion(x, y, width, height, targetText) {
         return false;
     }
 }
-// 使用示例1：检测特定区域的文字是否为"确认"
+// 使用示例1：检测特定区域的文字是否为(genshin.getText ? genshin.getText("confirm") : "确认")
 /*
  let result = await utils.detectTextInRegion(0, 0, 400, 400, "合成");
  if (result) {

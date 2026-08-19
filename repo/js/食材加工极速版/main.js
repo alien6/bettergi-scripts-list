@@ -94,13 +94,13 @@ async function ingredientProcessing() {
         await sleep(300);
 
         /* ---------- 1. 队列已满 ---------- */
-        if (await findPNG("队列已满", 1)) {
+        if (await findPNG((genshin.getText ? genshin.getText("queue_full") : "队列已满"), 1)) {
             log.warn(`检测到${tasks[i].name}队列已满，等待图标消失`);
-            while (await findPNG("队列已满", 1)) {
+            while (await findPNG((genshin.getText ? genshin.getText("queue_full") : "队列已满"), 1)) {
                 log.warn(`检测到${tasks[i].name}队列已满，等待图标消失`);
                 await sleep(300);
             }
-            if (await clickPNG("全部领取", 3)) {
+            if (await clickPNG((genshin.getText ? genshin.getText("claim_all") : "全部领取"), 3)) {
                 await clickPNG("点击空白区域继续");
                 await findPNG("食材加工2");
                 await sleep(100);
@@ -109,13 +109,13 @@ async function ingredientProcessing() {
         }
 
         /* ---------- 2. 材料不足 ---------- */
-        if (await findPNG("材料不足", 1)) {
+        if (await findPNG((genshin.getText ? genshin.getText("insufficient_materials") : "材料不足"), 1)) {
             log.warn(`检测到${tasks[i].name}材料不足，等待图标消失`);
-            while (await findPNG("材料不足", 1)) {
+            while (await findPNG((genshin.getText ? genshin.getText("insufficient_materials") : "材料不足"), 1)) {
                 log.warn(`检测到${tasks[i].name}材料不足，等待图标消失`);
                 await sleep(300);
             }
-            if (await clickPNG("全部领取", 3)) {
+            if (await clickPNG((genshin.getText ? genshin.getText("claim_all") : "全部领取"), 3)) {
                 await clickPNG("点击空白区域继续");
                 await findPNG("食材加工2");
                 await sleep(100);
@@ -143,7 +143,7 @@ async function ingredientProcessing() {
                 log.warn(`检测到${tasks[i].name}已满，等待图标消失`);
                 await sleep(300);
             }
-            if (await clickPNG("全部领取", 3)) {
+            if (await clickPNG((genshin.getText ? genshin.getText("claim_all") : "全部领取"), 3)) {
                 await clickPNG("点击空白区域继续");
                 await findPNG("食材加工2");
                 await sleep(100);
@@ -156,7 +156,7 @@ async function ingredientProcessing() {
 
         await sleep(200);
         /* 正常完成：仅领取，不移除 */
-        if (await clickPNG("全部领取", 3)) {
+        if (await clickPNG((genshin.getText ? genshin.getText("claim_all") : "全部领取"), 3)) {
             await clickPNG("点击空白区域继续");
             await findPNG("食材加工2");
             await sleep(100);
@@ -165,7 +165,7 @@ async function ingredientProcessing() {
 
     /* ===== 2. 两轮扫描 ===== */
     // 进入界面先领取一次
-    if (await clickPNG("全部领取", 3)) {
+    if (await clickPNG((genshin.getText ? genshin.getText("claim_all") : "全部领取"), 3)) {
         await clickPNG("点击空白区域继续");
         await findPNG("食材加工2");
         await sleep(100);
