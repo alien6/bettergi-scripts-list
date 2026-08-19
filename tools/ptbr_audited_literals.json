@@ -90,5 +90,25 @@
   "珍貴": {
     "pt": ["Precioso"],
     "evidence": "Traditional-Chinese alias of 珍贵"
+  },
+  "初始手牌": {
+    "pt": ["Mão Inicial", "Mão inicial"],
+    "evidence": "PT-BR Genius Invokation tutorial describes adjustment of the mão inicial"
+  },
+  "重投骰子": {
+    "pt": ["Rolar Novamente", "Rolar novamente", "Rolagem"],
+    "evidence": "PT-BR Genius Invokation tutorial explicitly uses the rule name Rolar Novamente"
+  },
+  "出战角色": {
+    "pt": ["Personagem em Combate", "Personagem em combate"],
+    "evidence": "PT-BR Genius Invokation rules and tutorial use Personagem em Combate"
+  },
+  "对局胜利": {
+    "pt": ["Vitória", "Vitória na Partida", "Vitória na partida"],
+    "evidence": "PT-BR Genius Invokation challenge/result terminology uses Vitória"
+  },
+  "对局失败": {
+    "pt": ["Derrota", "Derrota na Partida", "Derrota na partida"],
+    "evidence": "PT-BR Genius Invokation match terminology uses derrota"
   }
 }
