@@ -2891,7 +2891,7 @@
       "literals": [
         "世界权限"
       ],
-      "source": "if (res.text.includes(\"世界权限\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"世界权限\") : res.text.includes(\"世界权限\"))) {"
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
@@ -4403,7 +4403,7 @@
       "literals": [
         "倒计时"
       ],
-      "source": "if (res.text.includes(\"倒计时\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"倒计时\") : res.text.includes(\"倒计时\"))) {"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -5571,7 +5571,7 @@
       "literals": [
         "有什么卖的"
       ],
-      "source": "if (resList[i].text.includes(\"有什么卖的\") || resList[i].text.includes(\"可以卖一些\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"有什么卖的\") : resList[i].text.includes(\"有什么卖的\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"可以卖一些\") : resList[i].text.includes(\"可以卖一些\"))) {"
     },
     {
       "path": "repo/js/自动购买商品/main.js",
@@ -5579,7 +5579,7 @@
       "literals": [
         "可以卖一些"
       ],
-      "source": "if (resList[i].text.includes(\"有什么卖的\") || resList[i].text.includes(\"可以卖一些\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"有什么卖的\") : resList[i].text.includes(\"有什么卖的\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"可以卖一些\") : resList[i].text.includes(\"可以卖一些\"))) {"
     },
     {
       "path": "repo/js/药品消耗统计/main.js",
@@ -5875,7 +5875,7 @@
       "literals": [
         "今日已无法锻造"
       ],
-      "source": "if (ocrResults.text.includes(\"今日已无法锻造\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults.text, \"今日已无法锻造\") : ocrResults.text.includes(\"今日已无法锻造\"))) {"
     },
     {
       "path": "repo/js/铁匠铺/main.js",
@@ -5907,7 +5907,7 @@
       "literals": [
         "锻造队列"
       ],
-      "source": "if (ocrResultsAfter.text.includes(\"锻造队列\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResultsAfter.text, \"锻造队列\") : ocrResultsAfter.text.includes(\"锻造队列\"))) {"
     },
     {
       "path": "repo/js/铁匠铺/main.js",
@@ -5982,7 +5982,7 @@
       "source": "if (challengeName == \"纯水精灵\" || challengeName == \"歌裴莉娅的葬送\" || challengeName == \"科培琉司的劫罚\") samePlace = 1;//这些 boss 挑战后不会原地刷新"
     }
   ],
-  "review_cjk_count": 814,
+  "review_cjk_count": 820,
   "review_literal_frequency": {
     "食材加工2": 7,
     "OCR未识别到任何文本": 6,
@@ -6106,6 +6106,7 @@
     "世界": 2,
     "多人游戏申请": 2,
     "多人游戏": 2,
+    "世界权限": 2,
     "御签挂": 2,
     "乌娜亚塔": 2,
     "是否": 2,
@@ -6135,14 +6136,19 @@
     "进入游戏": 2,
     "账号+密码+OCR": 2,
     "退出并": 2,
+    "倒计时": 2,
     "继续": 2,
     "删除": 2,
     "设置": 2,
     "路径名: ": 2,
     "售罄": 2,
+    "有什么卖的": 2,
+    "可以卖一些": 2,
     "—初始化—": 2,
     "无变化": 2,
     "选择加工数量": 2,
+    "今日已无法锻造": 2,
+    "锻造队列": 2,
     "已不能持有更多": 2,
     "OCR错误, 未识别到文本": 1,
     "OCR错误": 1,
@@ -6311,7 +6317,6 @@
     "纪行": 1,
     "纪行等级": 1,
     "验证": 1,
-    "世界权限": 1,
     "神奇的": 1,
     "如何才": 1,
     "已": 1,
@@ -6448,7 +6453,6 @@
     "七": 1,
     "OCR无法识别当前角色名称，使用技能名作为替代": 1,
     "OCR无法识别当前角色名称，跳过": 1,
-    "倒计时": 1,
     "置顶": 1,
     "管理关卡": 1,
     "当前牌组名称: {text}": 1,
@@ -6500,8 +6504,6 @@
     "📁pathing材料": 1,
     "【扫描额外的分类】": 1,
     "当前物品在背包内的容量已达上限": 1,
-    "有什么卖的": 1,
-    "可以卖一些": 1,
     "进入世界申请": 1,
     "药物数量无变化": 1,
     "OCR未识别到内容": 1,
@@ -6512,9 +6514,7 @@
     "[findLamp] 找到利亚姆": 1,
     "[findLamp] 未找到灯或血条": 1,
     "道具数量超过上限": 1,
-    "枫丹水下": 1,
-    "今日已无法锻造": 1,
-    "锻造队列": 1
+    "枫丹水下": 1
   },
   "review": [
     {
@@ -9595,7 +9595,15 @@
       "literals": [
         "世界权限"
       ],
-      "source": "if (res.text.includes(\"世界权限\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"世界权限\") : res.text.includes(\"世界权限\"))) {"
+    },
+    {
+      "path": "repo/js/AutoPermission/main.js",
+      "line": 46,
+      "literals": [
+        "世界权限"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"世界权限\") : res.text.includes(\"世界权限\"))) {"
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
@@ -11723,7 +11731,15 @@
       "literals": [
         "倒计时"
       ],
-      "source": "if (res.text.includes(\"倒计时\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"倒计时\") : res.text.includes(\"倒计时\"))) {"
+    },
+    {
+      "path": "repo/js/WeeklyBoss/utils.js",
+      "line": 1258,
+      "literals": [
+        "倒计时"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, \"倒计时\") : res.text.includes(\"倒计时\"))) {"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -12667,7 +12683,15 @@
       "literals": [
         "有什么卖的"
       ],
-      "source": "if (resList[i].text.includes(\"有什么卖的\") || resList[i].text.includes(\"可以卖一些\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"有什么卖的\") : resList[i].text.includes(\"有什么卖的\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"可以卖一些\") : resList[i].text.includes(\"可以卖一些\"))) {"
+    },
+    {
+      "path": "repo/js/自动购买商品/main.js",
+      "line": 847,
+      "literals": [
+        "有什么卖的"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"有什么卖的\") : resList[i].text.includes(\"有什么卖的\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"可以卖一些\") : resList[i].text.includes(\"可以卖一些\"))) {"
     },
     {
       "path": "repo/js/自动购买商品/main.js",
@@ -12675,7 +12699,15 @@
       "literals": [
         "可以卖一些"
       ],
-      "source": "if (resList[i].text.includes(\"有什么卖的\") || resList[i].text.includes(\"可以卖一些\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"有什么卖的\") : resList[i].text.includes(\"有什么卖的\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"可以卖一些\") : resList[i].text.includes(\"可以卖一些\"))) {"
+    },
+    {
+      "path": "repo/js/自动购买商品/main.js",
+      "line": 847,
+      "literals": [
+        "可以卖一些"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"有什么卖的\") : resList[i].text.includes(\"有什么卖的\")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, \"可以卖一些\") : resList[i].text.includes(\"可以卖一些\"))) {"
     },
     {
       "path": "repo/js/药品消耗统计/main.js",
@@ -12899,7 +12931,15 @@
       "literals": [
         "今日已无法锻造"
       ],
-      "source": "if (ocrResults.text.includes(\"今日已无法锻造\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults.text, \"今日已无法锻造\") : ocrResults.text.includes(\"今日已无法锻造\"))) {"
+    },
+    {
+      "path": "repo/js/铁匠铺/main.js",
+      "line": 667,
+      "literals": [
+        "今日已无法锻造"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResults.text, \"今日已无法锻造\") : ocrResults.text.includes(\"今日已无法锻造\"))) {"
     },
     {
       "path": "repo/js/铁匠铺/main.js",
@@ -12907,7 +12947,15 @@
       "literals": [
         "锻造队列"
       ],
-      "source": "if (ocrResultsAfter.text.includes(\"锻造队列\")) {"
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResultsAfter.text, \"锻造队列\") : ocrResultsAfter.text.includes(\"锻造队列\"))) {"
+    },
+    {
+      "path": "repo/js/铁匠铺/main.js",
+      "line": 869,
+      "literals": [
+        "锻造队列"
+      ],
+      "source": "if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(ocrResultsAfter.text, \"锻造队列\") : ocrResultsAfter.text.includes(\"锻造队列\"))) {"
     },
     {
       "path": "repo/js/食材加工/main.js",
