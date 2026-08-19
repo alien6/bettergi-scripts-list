@@ -165,6 +165,10 @@ def line_context(text: str, match: re.Match[str]) -> tuple[str, str, str]:
 
 def is_functional_context(text: str, match: re.Match[str]) -> bool:
     line, prefix, suffix = line_context(text, match)
+    # settings.* values are script configuration protocol, not localized game UI.
+    # Localizing them changes manifest-defined option values and breaks behavior.
+    if "settings." in line:
+        return False
     compact_prefix = prefix[-300:]
     if FUNCTION_CALL_RE.search(compact_prefix):
         return True
