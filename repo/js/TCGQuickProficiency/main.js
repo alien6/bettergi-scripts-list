@@ -107,7 +107,7 @@ async function runAsPartner() {
         await recognizeTextAndClick((genshin.getText ? genshin.getText("confirm") : (genshin.getText ? genshin.getText("ok") : "确定")), [937, 922, 82, 54], 30000);
 
         log.info("等待进入牌桌界面");
-        await waitForTextAppear("出战角色", [1766, 850, 118, 43]);
+        await waitForTextAppear((genshin.getTextLiteral ? genshin.getTextLiteral("出战角色") : "出战角色"), [1766, 850, 118, 43]);
 
         log.info("认输");
         click(1864, 46);

@@ -1,18 +1,86 @@
 === PYTHON SYNTAX ===
 === PYTHON UNIT TESTS ===
-...
+.......
 ----------------------------------------------------------------------
-Ran 3 tests in 0.005s
+Ran 7 tests in 0.005s
 
 OK
 === STRICT SCAN ===
 {
-  "strict_functional_cjk_count": 25,
+  "strict_functional_cjk_count": 90,
   "legacy_runtime_covered_count": 0,
   "top_literals": [
     [
+      "天",
+      3
+    ],
+    [
+      "小时",
+      3
+    ],
+    [
+      "时间",
+      3
+    ],
+    [
+      "当前拥有",
+      3
+    ],
+    [
+      "每",
+      3
+    ],
+    [
+      "正在匹配对局",
+      3
+    ],
+    [
+      "更改牌组外观",
+      3
+    ],
+    [
+      "秒",
+      2
+    ],
+    [
+      "个",
+      2
+    ],
+    [
       "退出并",
       2
+    ],
+    [
+      "登录其他账号",
+      2
+    ],
+    [
+      "七圣召唤",
+      2
+    ],
+    [
+      "请选择要替换的手牌",
+      2
+    ],
+    [
+      "编辑牌组",
+      2
+    ],
+    [
+      "我方出战牌组",
+      2
+    ],
+    [
+      "超量名单",
+      2
+    ],
+    [
+      "狗粮经验",
+      1
+    ],
+    [
+      "摩拉",
+      1
     ],
     [
       "加速",
@@ -23,11 +91,55 @@ OK
       1
     ],
     [
+      "小",
+      1
+    ],
+    [
+      "分",
+      1
+    ],
+    [
+      "分钟",
+      1
+    ],
+    [
+      "西风",
+      1
+    ],
+    [
+      "丘丘人哨塔",
+      1
+    ],
+    [
+      "敌人再次来袭",
+      1
+    ],
+    [
+      "击败",
+      1
+    ],
+    [
+      "消灭",
+      1
+    ],
+    [
+      "击退",
+      1
+    ],
+    [
       "下次",
       1
     ],
     [
-      "能给我几支香吗",
+      "预计用时",
+      1
+    ],
+    [
+      "包含以下怪物",
+      1
+    ],
+    [
+      "倍产出次数",
       1
     ],
     [
@@ -47,69 +159,49 @@ OK
       1
     ],
     [
-      "其他玩家",
+      "周",
       1
     ],
     [
-      "搜索奇域",
+      "点",
       1
     ],
     [
-      "已完成所有任务",
-      1
-    ],
-    [
-      "前往大厅",
-      1
-    ],
-    [
-      "退出至登录界面",
-      1
-    ],
-    [
-      "我方出战牌组",
-      1
-    ],
-    [
-      "更改牌组外观",
-      1
-    ],
-    [
-      "置顶",
-      1
-    ],
-    [
-      "管理关卡",
-      1
-    ],
-    [
-      "收藏",
-      1
-    ],
-    [
-      "无法出战",
-      1
-    ],
-    [
-      "道具已达到容量上限",
-      1
-    ],
-    [
-      "当前物品在背包内的容量已达上限",
-      1
-    ],
-    [
-      "进入世界申请",
-      1
-    ],
-    [
-      "利亚姆",
+      "版本",
       1
     ]
   ],
   "top_files": [
     [
-      "repo/js/AutoPickLitter/main.js",
+      "repo/js/TCGQuickProficiency/main.js",
+      22
+    ],
+    [
+      "repo/js/CD-Aware-AutoGather/lib/lib.js",
+      8
+    ],
+    [
+      "repo/js/ActivitySwitchNotice/utils/activity.js",
+      7
+    ],
+    [
+      "repo/js/AutoCommissionNova/src/processors/impregnable-defense-config.js",
+      4
+    ],
+    [
+      "repo/js/SwitchAccountMultipleMode/main.js",
+      4
+    ],
+    [
+      "repo/js/AutoHoeingOneDragon/main.js",
+      3
+    ],
+    [
+      "repo/js/CD-Aware-AutoGather/main.js",
+      3
+    ],
+    [
+      "repo/js/JoinFriendsWorld/main.js",
       3
     ],
     [
@@ -117,19 +209,27 @@ OK
       3
     ],
     [
-      "repo/js/SwitchAccountMultipleMode/main.js",
+      "repo/js/WeeklyThousandStarRealm/main.js",
       3
     ],
     [
-      "repo/js/WeeklyThousandStarRealm/main.js",
+      "repo/js/营养袋吃药统计/main.js",
       3
+    ],
+    [
+      "repo/js/AAA-Artifacts-Bulk-Supply/main.js",
+      2
     ],
     [
       "repo/js/AEscoffier_chef/main.js",
       2
     ],
     [
-      "repo/js/TCGQuickProficiency/main.js",
+      "repo/js/AutoPickLitter/main.js",
+      2
+    ],
+    [
+      "repo/js/DSTCG/main.js",
       2
     ],
     [
@@ -137,7 +237,43 @@ OK
       2
     ],
     [
+      "repo/js/背包材料统计/main.js",
+      2
+    ],
+    [
+      "repo/js/采集cd管理/main.js",
+      2
+    ],
+    [
+      "repo/js/ArtifactExpCount/main.js",
+      1
+    ],
+    [
+      "repo/js/ArtifactScore/tools/crawl-standalone.js",
+      1
+    ],
+    [
+      "repo/js/AutoCommissionNova/src/processors/basic-destroy-watchtower.js",
+      1
+    ],
+    [
       "repo/js/AutoFriendshipFight/main.js",
+      1
+    ],
+    [
+      "repo/js/AutoLeyLineOutcrop/utils/attemptReward.js",
+      1
+    ],
+    [
+      "repo/js/AutoLeyLineOutcrop/utils/calCountByResin.js",
+      1
+    ],
+    [
+      "repo/js/AutoNobushi/main.js",
+      1
+    ],
+    [
+      "repo/js/AutoPlan/utils/physical.js",
       1
     ],
     [
@@ -149,19 +285,11 @@ OK
       1
     ],
     [
-      "repo/js/JoinFriendsWorld/main.js",
+      "repo/js/OCRCountResin/main.js",
       1
     ],
     [
       "repo/js/自动购买商品/main.js",
-      1
-    ],
-    [
-      "repo/js/营养袋吃药统计/main.js",
-      1
-    ],
-    [
-      "repo/js/诛贼-地方传奇-利亚姆/lib/Laim/lib/MobPuller.js",
       1
     ]
   ],

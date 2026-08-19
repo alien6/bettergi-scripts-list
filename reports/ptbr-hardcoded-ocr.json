@@ -1,7 +1,7 @@
 {
   "semantic_replacements": {},
   "files_changed": [],
-  "remaining_functional_cjk_count": 691,
+  "remaining_functional_cjk_count": 692,
   "remaining_known_semantic_count": 0,
   "remaining_functional_literal_frequency": {
     "无": 10,
@@ -119,6 +119,7 @@
     "阶段放入": 2,
     "奔行世间": 2,
     "总计": 2,
+    "退出至登录界面": 2,
     "进入游戏": 2,
     "退出并": 2,
     "主": 2,
@@ -354,7 +355,6 @@
     "空月祝福": 1,
     "空白": 1,
     "获得": 1,
-    "退出至登录界面": 1,
     "登录其他账号": 1,
     "作为主账号：速刷熟练度": 1,
     "作为辅助账号：快速投降": 1,
@@ -4202,7 +4202,15 @@
       "literals": [
         "退出至登录界面"
       ],
-      "source": "let btnExitToLogin = await u.waitAndFindText(\"退出至登录界面\", 680, 380, 540, 340);"
+      "source": "let btnExitToLogin = await u.waitAndFindText((genshin.getTextLiteral ? genshin.getTextLiteral(\"退出至登录界面\") : \"退出至登录界面\"), 680, 380, 540, 340);"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 503,
+      "literals": [
+        "退出至登录界面"
+      ],
+      "source": "let btnExitToLogin = await u.waitAndFindText((genshin.getTextLiteral ? genshin.getTextLiteral(\"退出至登录界面\") : \"退出至登录界面\"), 680, 380, 540, 340);"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -5981,7 +5989,7 @@
       "source": "if (challengeName == \"纯水精灵\" || challengeName == \"歌裴莉娅的葬送\" || challengeName == \"科培琉司的劫罚\") samePlace = 1;//这些 boss 挑战后不会原地刷新"
     }
   ],
-  "review_cjk_count": 821,
+  "review_cjk_count": 822,
   "review_literal_frequency": {
     "食材加工2": 7,
     "OCR未识别到任何文本": 6,
@@ -6133,6 +6141,7 @@
     "保存配置": 2,
     "点击领取": 2,
     "空月祝福": 2,
+    "退出至登录界面": 2,
     "进入游戏": 2,
     "账号+密码+OCR": 2,
     "退出并": 2,
@@ -6442,7 +6451,6 @@
     "已完成所有任务": 1,
     "前往大厅": 1,
     "空白": 1,
-    "退出至登录界面": 1,
     "识别到目标账号：{0}": 1,
     "OCR模式": 1,
     "国际服OCR模式": 1,
@@ -11529,7 +11537,15 @@
       "literals": [
         "退出至登录界面"
       ],
-      "source": "let btnExitToLogin = await u.waitAndFindText(\"退出至登录界面\", 680, 380, 540, 340);"
+      "source": "let btnExitToLogin = await u.waitAndFindText((genshin.getTextLiteral ? genshin.getTextLiteral(\"退出至登录界面\") : \"退出至登录界面\"), 680, 380, 540, 340);"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 503,
+      "literals": [
+        "退出至登录界面"
+      ],
+      "source": "let btnExitToLogin = await u.waitAndFindText((genshin.getTextLiteral ? genshin.getTextLiteral(\"退出至登录界面\") : \"退出至登录界面\"), 680, 380, 540, 340);"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",

@@ -119,7 +119,7 @@ var MobPuller = {
             await sleep(100);
 
             const ocrRes = Array.from(captureGameRegion().findMulti(RecognitionObject.ocr(900, 10, 100, 40)) || []);
-            const found01 = ocrRes.some(r => r.text.includes('利亚姆'));
+            const found01 = ocrRes.some(r => (genshin.textContainsLiteral ? genshin.textContainsLiteral(r.text, "利亚姆") : r.text.includes("利亚姆")));
             if (found01) { log.info('[findLamp] 找到利亚姆'); return true; }
 
           }
