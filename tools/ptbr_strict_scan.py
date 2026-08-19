@@ -27,7 +27,7 @@ REGEX_LITERAL = re.compile(r"/(?P<v>(?:\\.|[^/\r\n])*" + CJK + r"(?:\\.|[^/\r\n]
 REGEX_TEXT_MATCH = re.compile(r"[A-Za-z_$][\w$?.\[\]]*\s*\.\s*(?:match|search)\s*\(\s*$", re.I)
 CJK_RUN = re.compile(CJK + r"+")
 DIRECT_CALL = re.compile(r"(?P<call>findText(?:AndClick)?|OcrMatch|chooseTalkOption|ChooseTalkOption|waitAndFindText|waitForOcrMatch)\s*\([^;\r\n]*$", re.I)
-OCR_EXPR = r"(?:[A-Za-z_$][\w$?.\[\]]*\.text|ocr[\w$?.\[\]]*|result\d*[\w$?.\[\]]*|results[\w$?.\[\]]*|res(?:\d+)?(?:[.$?\[\]][A-Za-z0-9_$?\[\].]*)?|resList[\w$?.\[\]]*|findResult[\w$?.\[\]]*|recognitionResult[\w$?.\[\]]*|recognizedText[\w$?.\[\]]*|detectedText[\w$?.\[\]]*)"
+OCR_EXPR = r"(?:[A-Za-z_$][\w$?.\[\]]*\.text|[A-Za-z_$][\w$]*Text(?:[.$?\[\]][A-Za-z0-9_$?\[\].]*)?|ocr[\w$?.\[\]]*|result\d*[\w$?.\[\]]*|results[\w$?.\[\]]*|res(?:\d+)?(?:[.$?\[\]][A-Za-z0-9_$?\[\].]*)?|resList[\w$?.\[\]]*|findResult[\w$?.\[\]]*|recognitionResult[\w$?.\[\]]*|recognizedText[\w$?.\[\]]*|detectedText[\w$?.\[\]]*)"
 OCR_METHOD = re.compile(OCR_EXPR + r"\s*\.\s*(?P<method>includes|contains|indexOf|startsWith|endsWith)\s*\([^\r\n]*$", re.I)
 OCR_COMPARE = re.compile(OCR_EXPR + r"\s*(?:===|==|!==|!=)\s*$", re.I)
 GENERATED_FALLBACK = re.compile(r"\(genshin\.getText\s*\?\s*genshin\.getText\([^\r\n)]*\)\s*:\s*$", re.I)
