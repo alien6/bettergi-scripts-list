@@ -40,6 +40,19 @@ RESOLVED_LITERAL_API = (
 )
 RUNTIME_STRING_METHODS = {'includes', 'indexof', 'startswith', 'endswith'}
 
+# These values are script-owned protocol/state tokens, not text read from the
+# Genshin UI. Keeping them in Chinese is compatible with every game language and
+# also preserves existing TeyvatScanner record files. They are excluded only for
+# this exact script; the same literals elsewhere are still audited normally.
+INTERNAL_STATUS_LITERALS = {
+    'repo/js/TeyvatScanner/main.js': {
+        '罗盘状态异常，可能在战斗中',
+        '未发现宝藏或宝藏相关线索',
+        '发现宝藏或宝藏相关线索',
+        '存在宝藏',
+    },
+}
+
 
 def load_runtime_covered_literals() -> set[str]:
     covered = set(SEMANTIC_LITERALS)
@@ -79,10 +92,15 @@ def scan(path:Path, runtime_covered_literals:set[str]):
     try: text=path.read_text(encoding='utf-8-sig')
     except UnicodeDecodeError: return [], []
     comments=comment_mask(text); blockers=[]; covered=[]
+    relative_path=path.relative_to(ROOT).as_posix()
+    internal_literals=INTERNAL_STATUS_LITERALS.get(relative_path, set())
     for m in STRING.finditer(text):
         if inside(m.start(),comments): continue
         ls=text.rfind('\n',0,m.start())+1; le=text.find('\n',m.end()); le=len(text) if le<0 else le
         prefix=text[ls:m.start()]; line=text[ls:le]
+        literal=m.group('v')
+        if literal in internal_literals:
+            continue
         if 'settings.' in line or any(marker in line for marker in RESOLVED_LITERAL_API) or GENERATED_FALLBACK.search(prefix[-220:]) or IGNORE_CALL_PREFIX.search(prefix[-260:]):
             continue
 
@@ -91,8 +109,7 @@ def scan(path:Path, runtime_covered_literals:set[str]):
         compare=bool(OCR_COMPARE.search(prefix[-450:]))
         if not (direct_match or method_match or compare): continue
 
-        finding={'path':path.relative_to(ROOT).as_posix(),'line':text.count('\n',0,m.start())+1,'literal':m.group('v'),'source':line.strip()[:500]}
-        literal=m.group('v')
+        finding={'path':relative_path,'line':text.count('\n',0,m.start())+1,'literal':literal,'source':line.strip()[:500]}
         runtime_covered=False
 
         # The JS shim only wraps native String search methods. String.contains is
