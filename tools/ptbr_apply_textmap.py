@@ -142,9 +142,10 @@ def apply_line(code:str, resolved:set[str]):
         localized=f'(genshin.getTextLiteral ? genshin.getTextLiteral({lit}) : {lit})'
         # Match a resolved literal anywhere inside a direct OCR/helper call's
         # argument list, not only when it is the first scalar argument. This
-        # covers common shapes such as findText(["点击", "继续"], ...).
+        # covers common shapes such as findText(["点击", "继续"], ...) as well as
+        # script-local TCG helpers that still consume recognized game text.
         patt_call=re.compile(
-            rf'(?P<prefix>\b(?:findText|findTextAndClick|chooseTalkOption|waitAndFindText|waitForOcrMatch)\([^;\r\n]*?)'
+            rf'(?P<prefix>\b(?:findText|findTextAndClick|chooseTalkOption|waitAndFindText|waitForOcrMatch|waitForTextAppear|recognizeTextAndClick)\([^;\r\n]*?)'
             rf'(?P<q>[\'\"]){esc}(?P=q)'
         )
         def repl_call(m):
