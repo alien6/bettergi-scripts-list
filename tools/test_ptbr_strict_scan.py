@@ -48,6 +48,31 @@ class StrictScanTests(unittest.TestCase):
         finally:
             ptbr_strict_scan.ROOT = old_root
 
+    def test_local_ocr_text_variable_string_methods_are_reported(self):
+        old_root = ptbr_strict_scan.ROOT
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                path = root / "repo" / "js" / "fixture.js"
+                path.parent.mkdir(parents=True)
+                path.write_text(
+                    'const requestText = requestRegion.text.trim();\n'
+                    "if (requestText.endsWith('拒绝了多人游戏申请')) fail();\n"
+                    "if (requestText.startsWith('无法进入')) fail();\n",
+                    encoding="utf-8",
+                )
+                ptbr_strict_scan.ROOT = root
+
+                blockers, covered = ptbr_strict_scan.scan(path, set())
+
+                self.assertEqual(
+                    ["拒绝了多人游戏申请", "无法进入"],
+                    [item["literal"] for item in blockers],
+                )
+                self.assertEqual([], covered)
+        finally:
+            ptbr_strict_scan.ROOT = old_root
+
 
 if __name__ == "__main__":
     unittest.main()
