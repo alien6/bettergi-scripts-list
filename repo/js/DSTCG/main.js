@@ -1807,7 +1807,7 @@
         const ro1 = captureGameRegion();
         let ocr = ro1.Find(ocrRo); // 当前页面OCR
         ro1.dispose();
-        if (ocr.isExist() && ocr.text === "初始手牌") {
+        if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, "初始手牌") : ocr.text === "初始手牌")) {
             return true;
         } else {
             return false;
@@ -1830,7 +1830,7 @@
         const ro2 = captureGameRegion();
         let ocr = ro2.Find(ocrRo); // 当前页面OCR
         ro2.dispose();
-        if (ocr.isExist() && ocr.text === "重投骰子") {
+        if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, "重投骰子") : ocr.text === "重投骰子")) {
             return true;
         } else {
             return false;
@@ -1853,7 +1853,7 @@
         const ro3 = captureGameRegion();
         let ocr = ro3.Find(ocrRo); // 当前页面OCR
         ro3.dispose();
-        if (ocr.isExist() && ocr.text === "出战角色") {
+        if (ocr.isExist() && (genshin.textEqualsLiteral ? genshin.textEqualsLiteral(ocr.text, "出战角色") : ocr.text === "出战角色")) {
             return true;
         } else {
             return false;
@@ -1876,9 +1876,9 @@
         const ro4 = captureGameRegion();
         let ocr = ro4.Find(ocrRo); // 当前页面OCR
         ro4.dispose();
-        if (ocr.isExist() && ocr.text.includes("对局胜利")) {
+        if (ocr.isExist() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocr.text, "对局胜利") : ocr.text.includes("对局胜利"))) {
             return "win";
-        } else if (ocr.isExist() && ocr.text.includes("对局失败")){
+        } else if (ocr.isExist() && (genshin.textContainsLiteral ? genshin.textContainsLiteral(ocr.text, "对局失败") : ocr.text.includes("对局失败"))){
             return "lose";
         } else { // 不是结束界面
             return "none";

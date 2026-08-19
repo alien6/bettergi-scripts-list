@@ -325,13 +325,13 @@ async function checkChallengeResults() {
     capture.dispose();
     let success = false;
     log.info(`结果识别：${res1.text}`);
-    if (res1.text.includes("对局失败")) {
+    if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res1.text, "对局失败") : res1.text.includes("对局失败"))) {
         log.info("对局失败");
         await sleep(1000);
         click(754, 915); //退出挑战
         await sleep(4000);
         await autoConversation();
-    } else if (res1.text.includes("对局胜利")) {
+    } else if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res1.text, "对局胜利") : res1.text.includes("对局胜利"))) {
         log.info("对局胜利");
         await sleep(1000);
         click(754, 915); //退出挑战

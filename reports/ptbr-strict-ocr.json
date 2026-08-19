@@ -1,9 +1,7 @@
 {
-  "strict_functional_cjk_count": 42,
+  "strict_functional_cjk_count": 35,
   "legacy_runtime_covered_count": 0,
   "literal_frequency": {
-    "对局胜利": 2,
-    "对局失败": 2,
     "退出并": 2,
     "加速": 1,
     "快速加工": 1,
@@ -14,9 +12,6 @@
     "其实": 1,
     "紊乱平息": 1,
     "联机合奏": 1,
-    "初始手牌": 1,
-    "重投骰子": 1,
-    "出战角色": 1,
     "其他玩家": 1,
     "搜索奇域": 1,
     "已完成所有任务": 1,
@@ -43,15 +38,14 @@
     "锻造队列": 1
   },
   "file_frequency": {
-    "repo/js/DSTCG/main.js": 5,
     "repo/js/SwitchAccountMultipleMode/main.js": 5,
     "repo/js/WeeklyThousandStarRealm/main.js": 5,
-    "repo/js/七圣召唤七日历练全自动/main.js": 4,
     "repo/js/AutoPickLitter/main.js": 3,
     "repo/js/StarfieldRaimentCollection/main.js": 3,
     "repo/js/自动购买商品/main.js": 3,
     "repo/js/AEscoffier_chef/main.js": 2,
     "repo/js/TCGQuickProficiency/main.js": 2,
+    "repo/js/七圣召唤七日历练全自动/main.js": 2,
     "repo/js/铁匠铺/main.js": 2,
     "repo/js/AutoFriendshipFight/main.js": 1,
     "repo/js/AutoPermission/main.js": 1,
@@ -118,36 +112,6 @@
       "line": 2075,
       "literal": "联机合奏",
       "source": "if (ocrResult && ocrResult.text.includes(\"联机合奏\")) {"
-    },
-    {
-      "path": "repo/js/DSTCG/main.js",
-      "line": 1810,
-      "literal": "初始手牌",
-      "source": "if (ocr.isExist() && ocr.text === \"初始手牌\") {"
-    },
-    {
-      "path": "repo/js/DSTCG/main.js",
-      "line": 1833,
-      "literal": "重投骰子",
-      "source": "if (ocr.isExist() && ocr.text === \"重投骰子\") {"
-    },
-    {
-      "path": "repo/js/DSTCG/main.js",
-      "line": 1856,
-      "literal": "出战角色",
-      "source": "if (ocr.isExist() && ocr.text === \"出战角色\") {"
-    },
-    {
-      "path": "repo/js/DSTCG/main.js",
-      "line": 1879,
-      "literal": "对局胜利",
-      "source": "if (ocr.isExist() && ocr.text.includes(\"对局胜利\")) {"
-    },
-    {
-      "path": "repo/js/DSTCG/main.js",
-      "line": 1881,
-      "literal": "对局失败",
-      "source": "} else if (ocr.isExist() && ocr.text.includes(\"对局失败\")){"
     },
     {
       "path": "repo/js/JoinFriendsWorld/main.js",
@@ -256,18 +220,6 @@
       "line": 170,
       "literal": "无法出战",
       "source": "if (res.text.includes(\"无法出战\")) {"
-    },
-    {
-      "path": "repo/js/七圣召唤七日历练全自动/main.js",
-      "line": 328,
-      "literal": "对局失败",
-      "source": "if (res1.text.includes(\"对局失败\")) {"
-    },
-    {
-      "path": "repo/js/七圣召唤七日历练全自动/main.js",
-      "line": 334,
-      "literal": "对局胜利",
-      "source": "} else if (res1.text.includes(\"对局胜利\")) {"
     },
     {
       "path": "repo/js/七圣召唤七日历练全自动/main.js",
