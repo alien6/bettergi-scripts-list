@@ -107,6 +107,14 @@
     "pt": ["Você pode me vender algumas"],
     "evidence": "Genshin TextMap paired dialogue: 可以卖一些猎物给我吗？ -> Você pode me vender algumas das suas caças?"
   },
+  "能给我几支香吗": {
+    "pt": ["Você poderia me dar alguns palitos de incenso"],
+    "evidence": "Exact Genshin TextMap dialogue: 能给我几支香吗？ -> Você poderia me dar alguns palitos de incenso?"
+  },
+  "其他玩家": {
+    "pt": ["outros jogadores", "Outros jogadores", "outro jogador", "Outro jogador"],
+    "evidence": "Genshin TextMap UID/world rows use outros jogadores and outro jogador in the same search/join context"
+  },
   "箱": {
     "pt": ["Baú"],
     "evidence": "Genshin PT-BR chest UI uses Baú"
