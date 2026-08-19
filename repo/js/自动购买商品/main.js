@@ -844,7 +844,7 @@ async function spikChat(npcName) {
         try {
             let resList = captureRegion.findMulti(RecognitionObject.ocrThis);
             for (let i = 0; i < resList.count; i++) {
-                if (resList[i].text.includes("有什么卖的") || resList[i].text.includes("可以卖一些")) {
+                if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, "有什么卖的") : resList[i].text.includes("有什么卖的")) || (genshin.textContainsLiteral ? genshin.textContainsLiteral(resList[i].text, "可以卖一些") : resList[i].text.includes("可以卖一些"))) {
                     await sleep(500);
                     click(resList[i].x + 30, resList[i].y + 30);
                     await sleep(500);

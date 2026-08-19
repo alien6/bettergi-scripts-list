@@ -1,12 +1,11 @@
 {
-  "strict_functional_cjk_count": 31,
+  "strict_functional_cjk_count": 25,
   "legacy_runtime_covered_count": 0,
   "literal_frequency": {
     "退出并": 2,
     "加速": 1,
     "快速加工": 1,
     "下次": 1,
-    "世界权限": 1,
     "能给我几支香吗": 1,
     "给我一份福利餐": 1,
     "其实": 1,
@@ -19,36 +18,28 @@
     "退出至登录界面": 1,
     "我方出战牌组": 1,
     "更改牌组外观": 1,
-    "倒计时": 1,
     "置顶": 1,
     "管理关卡": 1,
     "收藏": 1,
     "无法出战": 1,
     "道具已达到容量上限": 1,
     "当前物品在背包内的容量已达上限": 1,
-    "有什么卖的": 1,
-    "可以卖一些": 1,
     "进入世界申请": 1,
-    "利亚姆": 1,
-    "今日已无法锻造": 1,
-    "锻造队列": 1
+    "利亚姆": 1
   },
   "file_frequency": {
     "repo/js/AutoPickLitter/main.js": 3,
     "repo/js/StarfieldRaimentCollection/main.js": 3,
     "repo/js/SwitchAccountMultipleMode/main.js": 3,
     "repo/js/WeeklyThousandStarRealm/main.js": 3,
-    "repo/js/自动购买商品/main.js": 3,
     "repo/js/AEscoffier_chef/main.js": 2,
     "repo/js/TCGQuickProficiency/main.js": 2,
     "repo/js/七圣召唤七日历练全自动/main.js": 2,
-    "repo/js/铁匠铺/main.js": 2,
     "repo/js/AutoFriendshipFight/main.js": 1,
-    "repo/js/AutoPermission/main.js": 1,
     "repo/js/AutoStygianOnslaught/main.js": 1,
     "repo/js/AutoYuanQin/main.js": 1,
     "repo/js/JoinFriendsWorld/main.js": 1,
-    "repo/js/WeeklyBoss/utils.js": 1,
+    "repo/js/自动购买商品/main.js": 1,
     "repo/js/营养袋吃药统计/main.js": 1,
     "repo/js/诛贼-地方传奇-利亚姆/lib/Laim/lib/MobPuller.js": 1
   },
@@ -72,12 +63,6 @@
       "line": 187,
       "literal": "下次",
       "source": "await genshin.chooseTalkOption(\"下次\");"
-    },
-    {
-      "path": "repo/js/AutoPermission/main.js",
-      "line": 46,
-      "literal": "世界权限",
-      "source": "if (res.text.includes(\"世界权限\")) {"
     },
     {
       "path": "repo/js/AutoPickLitter/main.js",
@@ -164,12 +149,6 @@
       "source": "if (deck.text && deck.text.includes(\"更改牌组外观\")) {"
     },
     {
-      "path": "repo/js/WeeklyBoss/utils.js",
-      "line": 1258,
-      "literal": "倒计时",
-      "source": "if (res.text.includes(\"倒计时\")) {"
-    },
-    {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
       "line": 143,
       "literal": "置顶",
@@ -206,18 +185,6 @@
       "source": "if (ocrResult.isExist() && ocrResult.text.includes(\"当前物品在背包内的容量已达上限\")) {"
     },
     {
-      "path": "repo/js/自动购买商品/main.js",
-      "line": 847,
-      "literal": "有什么卖的",
-      "source": "if (resList[i].text.includes(\"有什么卖的\") || resList[i].text.includes(\"可以卖一些\")) {"
-    },
-    {
-      "path": "repo/js/自动购买商品/main.js",
-      "line": 847,
-      "literal": "可以卖一些",
-      "source": "if (resList[i].text.includes(\"有什么卖的\") || resList[i].text.includes(\"可以卖一些\")) {"
-    },
-    {
       "path": "repo/js/营养袋吃药统计/main.js",
       "line": 84,
       "literal": "进入世界申请",
@@ -228,18 +195,6 @@
       "line": 122,
       "literal": "利亚姆",
       "source": "const found01 = ocrRes.some(r => r.text.includes('利亚姆'));"
-    },
-    {
-      "path": "repo/js/铁匠铺/main.js",
-      "line": 667,
-      "literal": "今日已无法锻造",
-      "source": "if (ocrResults.text.includes(\"今日已无法锻造\")) {"
-    },
-    {
-      "path": "repo/js/铁匠铺/main.js",
-      "line": 869,
-      "literal": "锻造队列",
-      "source": "if (ocrResultsAfter.text.includes(\"锻造队列\")) {"
     }
   ],
   "runtime_covered_findings": []

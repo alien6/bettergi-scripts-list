@@ -2,12 +2,12 @@
 === PYTHON UNIT TESTS ===
 ..
 ----------------------------------------------------------------------
-Ran 2 tests in 0.001s
+Ran 2 tests in 0.002s
 
 OK
 === STRICT SCAN ===
 {
-  "strict_functional_cjk_count": 31,
+  "strict_functional_cjk_count": 25,
   "legacy_runtime_covered_count": 0,
   "top_literals": [
     [
@@ -24,10 +24,6 @@ OK
     ],
     [
       "下次",
-      1
-    ],
-    [
-      "世界权限",
       1
     ],
     [
@@ -79,10 +75,6 @@ OK
       1
     ],
     [
-      "倒计时",
-      1
-    ],
-    [
       "置顶",
       1
     ],
@@ -107,27 +99,11 @@ OK
       1
     ],
     [
-      "有什么卖的",
-      1
-    ],
-    [
-      "可以卖一些",
-      1
-    ],
-    [
       "进入世界申请",
       1
     ],
     [
       "利亚姆",
-      1
-    ],
-    [
-      "今日已无法锻造",
-      1
-    ],
-    [
-      "锻造队列",
       1
     ]
   ],
@@ -149,10 +125,6 @@ OK
       3
     ],
     [
-      "repo/js/自动购买商品/main.js",
-      3
-    ],
-    [
       "repo/js/AEscoffier_chef/main.js",
       2
     ],
@@ -165,15 +137,7 @@ OK
       2
     ],
     [
-      "repo/js/铁匠铺/main.js",
-      2
-    ],
-    [
       "repo/js/AutoFriendshipFight/main.js",
-      1
-    ],
-    [
-      "repo/js/AutoPermission/main.js",
       1
     ],
     [
@@ -189,7 +153,7 @@ OK
       1
     ],
     [
-      "repo/js/WeeklyBoss/utils.js",
+      "repo/js/自动购买商品/main.js",
       1
     ],
     [

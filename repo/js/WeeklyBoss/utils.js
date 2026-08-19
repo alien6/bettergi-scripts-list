@@ -1255,7 +1255,7 @@ async function goToChallenge() {
     let capture = captureGameRegion();
     const region = RecognitionObject.ocr(1320, 10, 290, 80);//领奖次数区域
     let res = capture.find(region);
-    if (res.text.includes("倒计时")) {
+    if ((genshin.textContainsLiteral ? genshin.textContainsLiteral(res.text, "倒计时") : res.text.includes("倒计时"))) {
       log.info("领奖次数耗尽，任务结束");
       await file.writeText(`assets/${settings.monsterName}.txt`, new Date().toISOString());
       throw new Error(`周本${settings.monsterName}已经领过奖了`);

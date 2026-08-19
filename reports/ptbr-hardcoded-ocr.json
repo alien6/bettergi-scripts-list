@@ -1,7 +1,7 @@
 {
   "semantic_replacements": {},
   "files_changed": [],
-  "remaining_functional_cjk_count": 688,
+  "remaining_functional_cjk_count": 691,
   "remaining_known_semantic_count": 0,
   "remaining_functional_literal_frequency": {
     "无": 10,
@@ -44,6 +44,7 @@
     "元素爆发": 3,
     "委託": 3,
     "委": 3,
+    "点击": 3,
     "命之座": 3,
     "传说任务": 3,
     "特殊料理": 3,
@@ -117,9 +118,10 @@
     "阶段放入": 2,
     "奔行世间": 2,
     "总计": 2,
-    "点击": 2,
+    "进入游戏": 2,
     "退出并": 2,
     "主": 2,
+    "继续": 2,
     "删除": 2,
     "大厅": 2,
     "返回": 2,
@@ -354,7 +356,6 @@
     "空白": 1,
     "获得": 1,
     "退出至登录界面": 1,
-    "进入游戏": 1,
     "登录其他账号": 1,
     "作为主账号：速刷熟练度": 1,
     "作为辅助账号：快速投降": 1,
@@ -370,7 +371,6 @@
     "发现宝藏或宝藏相关线索": 1,
     "存在宝藏": 1,
     "倒计时": 1,
-    "继续": 1,
     "置顶": 1,
     "管理关卡": 1,
     "收藏": 1,
@@ -4211,7 +4211,15 @@
       "literals": [
         "进入游戏"
       ],
-      "source": "await u.waitAndFindText([\"进入游戏\", \"登录其他账号\"], 680, 380, 540, 340, 200);"
+      "source": "await u.waitAndFindText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"进入游戏\") : \"进入游戏\"), \"登录其他账号\"], 680, 380, 540, 340, 200);"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 526,
+      "literals": [
+        "进入游戏"
+      ],
+      "source": "await u.waitAndFindText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"进入游戏\") : \"进入游戏\"), \"登录其他账号\"], 680, 380, 540, 340, 200);"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -4219,7 +4227,7 @@
       "literals": [
         "登录其他账号"
       ],
-      "source": "await u.waitAndFindText([\"进入游戏\", \"登录其他账号\"], 680, 380, 540, 340, 200);"
+      "source": "await u.waitAndFindText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"进入游戏\") : \"进入游戏\"), \"登录其他账号\"], 680, 380, 540, 340, 200);"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -4403,7 +4411,15 @@
       "literals": [
         "点击"
       ],
-      "source": "const result = await findText([\"点击\", \"继续\"],610, 950, 700, 60);"
+      "source": "const result = await findText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"点击\") : \"点击\"), (genshin.getTextLiteral ? genshin.getTextLiteral(\"继续\") : \"继续\")],610, 950, 700, 60);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 134,
+      "literals": [
+        "点击"
+      ],
+      "source": "const result = await findText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"点击\") : \"点击\"), (genshin.getTextLiteral ? genshin.getTextLiteral(\"继续\") : \"继续\")],610, 950, 700, 60);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -4411,7 +4427,15 @@
       "literals": [
         "继续"
       ],
-      "source": "const result = await findText([\"点击\", \"继续\"],610, 950, 700, 60);"
+      "source": "const result = await findText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"点击\") : \"点击\"), (genshin.getTextLiteral ? genshin.getTextLiteral(\"继续\") : \"继续\")],610, 950, 700, 60);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 134,
+      "literals": [
+        "继续"
+      ],
+      "source": "const result = await findText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"点击\") : \"点击\"), (genshin.getTextLiteral ? genshin.getTextLiteral(\"继续\") : \"继续\")],610, 950, 700, 60);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -5958,7 +5982,7 @@
       "source": "if (challengeName == \"纯水精灵\" || challengeName == \"歌裴莉娅的葬送\" || challengeName == \"科培琉司的劫罚\") samePlace = 1;//这些 boss 挑战后不会原地刷新"
     }
   ],
-  "review_cjk_count": 811,
+  "review_cjk_count": 814,
   "review_literal_frequency": {
     "食材加工2": 7,
     "OCR未识别到任何文本": 6,
@@ -6019,6 +6043,7 @@
     "委": 3,
     "识别到委托选项卡位置:({x},{y},{w},{h}), 识别内容：{text}": 3,
     "返回": 3,
+    "点击": 3,
     "登录其他账号": 3,
     "OCR错误, 未识别到文本： 烹饪": 2,
     "角色选择": 2,
@@ -6107,9 +6132,10 @@
     "保存配置": 2,
     "点击领取": 2,
     "空月祝福": 2,
-    "点击": 2,
+    "进入游戏": 2,
     "账号+密码+OCR": 2,
     "退出并": 2,
+    "继续": 2,
     "删除": 2,
     "设置": 2,
     "路径名: ": 2,
@@ -6414,7 +6440,6 @@
     "前往大厅": 1,
     "空白": 1,
     "退出至登录界面": 1,
-    "进入游戏": 1,
     "识别到目标账号：{0}": 1,
     "OCR模式": 1,
     "国际服OCR模式": 1,
@@ -6424,7 +6449,6 @@
     "OCR无法识别当前角色名称，使用技能名作为替代": 1,
     "OCR无法识别当前角色名称，跳过": 1,
     "倒计时": 1,
-    "继续": 1,
     "置顶": 1,
     "管理关卡": 1,
     "当前牌组名称: {text}": 1,
@@ -11499,7 +11523,15 @@
       "literals": [
         "进入游戏"
       ],
-      "source": "await u.waitAndFindText([\"进入游戏\", \"登录其他账号\"], 680, 380, 540, 340, 200);"
+      "source": "await u.waitAndFindText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"进入游戏\") : \"进入游戏\"), \"登录其他账号\"], 680, 380, 540, 340, 200);"
+    },
+    {
+      "path": "repo/js/SwitchAccountMultipleMode/main.js",
+      "line": 526,
+      "literals": [
+        "进入游戏"
+      ],
+      "source": "await u.waitAndFindText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"进入游戏\") : \"进入游戏\"), \"登录其他账号\"], 680, 380, 540, 340, 200);"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -11507,7 +11539,7 @@
       "literals": [
         "登录其他账号"
       ],
-      "source": "await u.waitAndFindText([\"进入游戏\", \"登录其他账号\"], 680, 380, 540, 340, 200);"
+      "source": "await u.waitAndFindText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"进入游戏\") : \"进入游戏\"), \"登录其他账号\"], 680, 380, 540, 340, 200);"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
@@ -11699,7 +11731,15 @@
       "literals": [
         "点击"
       ],
-      "source": "const result = await findText([\"点击\", \"继续\"],610, 950, 700, 60);"
+      "source": "const result = await findText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"点击\") : \"点击\"), (genshin.getTextLiteral ? genshin.getTextLiteral(\"继续\") : \"继续\")],610, 950, 700, 60);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 134,
+      "literals": [
+        "点击"
+      ],
+      "source": "const result = await findText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"点击\") : \"点击\"), (genshin.getTextLiteral ? genshin.getTextLiteral(\"继续\") : \"继续\")],610, 950, 700, 60);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
@@ -11707,7 +11747,15 @@
       "literals": [
         "继续"
       ],
-      "source": "const result = await findText([\"点击\", \"继续\"],610, 950, 700, 60);"
+      "source": "const result = await findText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"点击\") : \"点击\"), (genshin.getTextLiteral ? genshin.getTextLiteral(\"继续\") : \"继续\")],610, 950, 700, 60);"
+    },
+    {
+      "path": "repo/js/WeeklyThousandStarRealm/main.js",
+      "line": 134,
+      "literals": [
+        "继续"
+      ],
+      "source": "const result = await findText([(genshin.getTextLiteral ? genshin.getTextLiteral(\"点击\") : \"点击\"), (genshin.getTextLiteral ? genshin.getTextLiteral(\"继续\") : \"继续\")],610, 950, 700, 60);"
     },
     {
       "path": "repo/js/WeeklyThousandStarRealm/main.js",
