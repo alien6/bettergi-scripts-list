@@ -55,13 +55,18 @@ def patch_leyline(text: str) -> str:
         'if (text.includes("40") && text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) {'
     )
 
-    old_verify = '''    return texts.some(t =>
-        (t.text.includes(targetAmount.toString()) && t.text.includes("原粹")) ||
-        (t.text.includes(`${targetAmount}个`) && t.text.includes("树脂"))
-    );'''
-    new_verify = '''    const originalResin = genshin.getText ? genshin.getText("original_resin") : "原粹树脂";
-    return texts.some(t => t.text.includes(targetAmount.toString()) && t.text.includes(originalResin));'''
-    text = text.replace(old_verify, new_verify)
+    # This source file uses CRLF. The previous literal multiline replacement only
+    # matched LF, which left the final split Chinese "原粹"/"树脂" check behind.
+    verify_pattern = re.compile(
+        r'return\s+texts\.some\(t\s*=>\s*\r?\n\s*'
+        r'\(t\.text\.includes\(targetAmount\.toString\(\)\)\s*&&\s*t\.text\.includes\("原粹"\)\)\s*\|\|\s*\r?\n\s*'
+        r'\(t\.text\.includes\(`\$\{targetAmount\}个`\)\s*&&\s*t\.text\.includes\("树脂"\)\)\s*\r?\n\s*\);'
+    )
+    verify_replacement = (
+        'const originalResin = genshin.getText ? genshin.getText("original_resin") : "原粹树脂";\n'
+        '    return texts.some(t => t.text.includes(targetAmount.toString()) && t.text.includes(originalResin));'
+    )
+    text = verify_pattern.sub(verify_replacement, text)
 
     text = text.replace(
         'genshin.textContainsLiteral(t.text, "浓缩树脂") : t.text.includes("浓缩树脂")) || t.text.includes("浓缩"))',
@@ -99,6 +104,19 @@ def patch_leyline(text: str) -> str:
             rf'\({re.escape(subject)}\.includes\("40"\)\s*\|\|\s*\(genshin\.textContainsLiteral \? genshin\.textContainsLiteral\({re.escape(subject)}, "40个"\) : {re.escape(subject)}\.includes\("40个"\)\)\)',
             f'{subject}.includes("40")', text
         )
+
+    # Clean duplicate numeric branches produced by earlier migration passes.
+    for amount in ("20", "40"):
+        text = text.replace(
+            f'({{"text" if False else "text"}}.includes("{amount}") || text.includes("{amount}"))',
+            f'text.includes("{amount}")'
+        )
+        text = text.replace(
+            f'(t.text.includes("{amount}") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))) ||\r\n            (t.text.includes("{amount}") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂")))',
+            f't.text.includes("{amount}") && t.text.includes((genshin.getText ? genshin.getText("original_resin") : "原粹树脂"))'
+        )
+    text = text.replace('(text.includes("20") || text.includes("20"))', 'text.includes("20")')
+    text = text.replace('(text.includes("40") || text.includes("40"))', 'text.includes("40")')
     return text
 
 
