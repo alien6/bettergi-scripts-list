@@ -500,7 +500,7 @@ function normalizeAccountOcrText(text) {
         click(50, 1024);
 
         // 退出至登录界面
-        let btnExitToLogin = await u.waitAndFindText("退出至登录界面", 680, 380, 540, 340);
+        let btnExitToLogin = await u.waitAndFindText((genshin.getTextLiteral ? genshin.getTextLiteral("退出至登录界面") : "退出至登录界面"), 680, 380, 540, 340);
         // u.logi("检测到\"退出至登录界面\"按钮，点击");
         // btnExitToLogin.DrawSelf("ExitToLoginBtn");
         btnExitToLogin.Click();

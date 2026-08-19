@@ -1,5 +1,5 @@
 {
-  "strict_functional_cjk_count": 68,
+  "strict_functional_cjk_count": 67,
   "legacy_runtime_covered_count": 0,
   "literal_frequency": {
     "天": 3,
@@ -44,7 +44,6 @@
     "搜索奇域": 1,
     "已完成所有任务": 1,
     "前往大厅": 1,
-    "退出至登录界面": 1,
     "我方出战牌组": 1,
     "更改牌组外观": 1,
     "置顶": 1,
@@ -64,7 +63,6 @@
     "repo/js/AutoHoeingOneDragon/main.js": 3,
     "repo/js/JoinFriendsWorld/main.js": 3,
     "repo/js/StarfieldRaimentCollection/main.js": 3,
-    "repo/js/SwitchAccountMultipleMode/main.js": 3,
     "repo/js/WeeklyThousandStarRealm/main.js": 3,
     "repo/js/营养袋吃药统计/main.js": 3,
     "repo/js/AAA-Artifacts-Bulk-Supply/main.js": 2,
@@ -72,6 +70,7 @@
     "repo/js/AutoPickLitter/main.js": 2,
     "repo/js/CD-Aware-AutoGather/main.js": 2,
     "repo/js/DSTCG/main.js": 2,
+    "repo/js/SwitchAccountMultipleMode/main.js": 2,
     "repo/js/TCGQuickProficiency/main.js": 2,
     "repo/js/七圣召唤七日历练全自动/main.js": 2,
     "repo/js/背包材料统计/main.js": 2,
@@ -417,12 +416,6 @@
       "line": 237,
       "literal": "前往大厅",
       "source": "} else if (ocrResult[i].text.includes(\"前往大厅\")) {"
-    },
-    {
-      "path": "repo/js/SwitchAccountMultipleMode/main.js",
-      "line": 503,
-      "literal": "退出至登录界面",
-      "source": "let btnExitToLogin = await u.waitAndFindText(\"退出至登录界面\", 680, 380, 540, 340);"
     },
     {
       "path": "repo/js/SwitchAccountMultipleMode/main.js",
