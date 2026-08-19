@@ -26,7 +26,7 @@ STRING = re.compile(r"(?P<q>['\"])(?P<v>[^'\"\r\n]*" + CJK + r"[^'\"\r\n]*)(?P=q
 REGEX_LITERAL = re.compile(r"/(?P<v>(?:\\.|[^/\r\n])*" + CJK + r"(?:\\.|[^/\r\n])*)/[dgimsuvy]*")
 REGEX_TEXT_MATCH = re.compile(r"[A-Za-z_$][\w$?.\[\]]*\s*\.\s*(?:match|search)\s*\(\s*$", re.I)
 CJK_RUN = re.compile(CJK + r"+")
-DIRECT_CALL = re.compile(r"(?P<call>findText(?:AndClick)?|OcrMatch|chooseTalkOption|ChooseTalkOption|waitAndFindText|waitForOcrMatch)\s*\([^;\r\n]*$", re.I)
+DIRECT_CALL = re.compile(r"(?P<call>findText(?:AndClick)?|OcrMatch|chooseTalkOption|ChooseTalkOption|waitAndFindText|waitForOcrMatch|waitForTextAppear|recognizeTextAndClick)\s*\([^;\r\n]*$", re.I)
 OCR_EXPR = r"(?:[A-Za-z_$][\w$?.\[\]]*\.text|[A-Za-z_$][\w$]*Text(?:[.$?\[\]][A-Za-z0-9_$?\[\].]*)?|ocr[\w$?.\[\]]*|result\d*[\w$?.\[\]]*|results[\w$?.\[\]]*|res(?:\d+)?(?:[.$?\[\]][A-Za-z0-9_$?\[\].]*)?|resList[\w$?.\[\]]*|findResult[\w$?.\[\]]*|recognitionResult[\w$?.\[\]]*|recognizedText[\w$?.\[\]]*|detectedText[\w$?.\[\]]*)"
 OCR_METHOD = re.compile(OCR_EXPR + r"\s*\.\s*(?P<method>includes|contains|indexOf|startsWith|endsWith)\s*\([^\r\n]*$", re.I)
 OCR_COMPARE = re.compile(OCR_EXPR + r"\s*(?:===|==|!==|!=)\s*$", re.I)
@@ -124,6 +124,10 @@ def scan(path:Path, runtime_covered_literals:set[str]):
         # chooseTalkOption is localized centrally in ChooseTalkOptionTask.
         if direct_match and direct_match.group('call').lower() == 'choosetalkoption':
             runtime_covered = literal in runtime_covered_literals
+
+        # Script-local OCR helpers remain blockers until the migration pass wraps
+        # their text argument with getTextLiteral(). They are intentionally not
+        # marked as runtime-covered by the String compatibility shim.
 
         # Equality is never hidden by the runtime shim; it remains a blocker even
         # when the literal has a known PT-BR translation.
