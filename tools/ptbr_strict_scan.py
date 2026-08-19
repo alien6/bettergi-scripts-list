@@ -21,7 +21,11 @@ REPORT = ROOT / "reports" / "ptbr-strict-ocr.json"
 AUDITED = ROOT / "tools" / "ptbr_audited_literals.json"
 TEXTMAP = ROOT / "reports" / "ptbr-textmap-resolved.json"
 
-STRING = re.compile(r"(?P<q>['\"])(?P<v>[^'\"\r\n]*[\u3400-\u4dbf\u4e00-\u9fff][^'\"\r\n]*)(?P=q)")
+CJK = r"[\u3400-\u4dbf\u4e00-\u9fff]"
+STRING = re.compile(r"(?P<q>['\"])(?P<v>[^'\"\r\n]*" + CJK + r"[^'\"\r\n]*)(?P=q)")
+REGEX_LITERAL = re.compile(r"/(?P<v>(?:\\.|[^/\r\n])*" + CJK + r"(?:\\.|[^/\r\n])*)/[dgimsuvy]*")
+REGEX_TEXT_MATCH = re.compile(r"[A-Za-z_$][\w$?.\[\]]*\s*\.\s*(?:match|search)\s*\(\s*$", re.I)
+CJK_RUN = re.compile(CJK + r"+")
 DIRECT_CALL = re.compile(r"(?P<call>findText(?:AndClick)?|OcrMatch|chooseTalkOption|ChooseTalkOption|waitAndFindText|waitForOcrMatch)\s*\([^;\r\n]*$", re.I)
 OCR_EXPR = r"(?:[A-Za-z_$][\w$?.\[\]]*\.text|ocr[\w$?.\[\]]*|result\d*[\w$?.\[\]]*|results[\w$?.\[\]]*|res(?:\d+)?(?:[.$?\[\]][A-Za-z0-9_$?\[\].]*)?|resList[\w$?.\[\]]*|findResult[\w$?.\[\]]*|recognitionResult[\w$?.\[\]]*|recognizedText[\w$?.\[\]]*|detectedText[\w$?.\[\]]*)"
 OCR_METHOD = re.compile(OCR_EXPR + r"\s*\.\s*(?P<method>includes|contains|indexOf|startsWith|endsWith)\s*\([^\r\n]*$", re.I)
@@ -131,6 +135,26 @@ def scan(path:Path, runtime_covered_literals:set[str]):
             covered.append(finding)
         else:
             blockers.append(finding)
+
+    # Regex literals can also encode game-language assumptions, e.g.
+    # ocrText.match(/冒险等阶\s*(\d+)/). Restrict this pass to regex literals used
+    # directly by match/search so ordinary math/division or unrelated patterns
+    # are not promoted to high-confidence OCR blockers.
+    for m in REGEX_LITERAL.finditer(text):
+        if inside(m.start(), comments):
+            continue
+        ls=text.rfind('\n',0,m.start())+1; le=text.find('\n',m.end()); le=len(text) if le<0 else le
+        prefix=text[ls:m.start()]; line=text[ls:le]
+        if 'settings.' in line or not REGEX_TEXT_MATCH.search(prefix[-260:]):
+            continue
+        for run in CJK_RUN.findall(m.group('v')):
+            blockers.append({
+                'path':relative_path,
+                'line':text.count('\n',0,m.start())+1,
+                'literal':run,
+                'source':line.strip()[:500],
+                'coverage':'regex-language-dependency',
+            })
     return blockers, covered
 
 
