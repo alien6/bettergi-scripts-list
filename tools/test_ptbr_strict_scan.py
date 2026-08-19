@@ -27,6 +27,27 @@ class StrictScanTests(unittest.TestCase):
         finally:
             ptbr_strict_scan.ROOT = old_root
 
+    def test_cjk_regex_used_to_parse_ocr_text_is_reported(self):
+        old_root = ptbr_strict_scan.ROOT
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                path = root / "repo" / "js" / "fixture.js"
+                path.parent.mkdir(parents=True)
+                path.write_text(
+                    'const levelText = result.text;\n'
+                    'const levelMatch = levelText.match(/冒险等阶\\s*(\\d+)/);\n',
+                    encoding="utf-8",
+                )
+                ptbr_strict_scan.ROOT = root
+
+                blockers, covered = ptbr_strict_scan.scan(path, set())
+
+                self.assertEqual(["冒险等阶"], [item["literal"] for item in blockers])
+                self.assertEqual([], covered)
+        finally:
+            ptbr_strict_scan.ROOT = old_root
+
 
 if __name__ == "__main__":
     unittest.main()
