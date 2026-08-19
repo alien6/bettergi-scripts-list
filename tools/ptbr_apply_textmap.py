@@ -140,8 +140,21 @@ def apply_line(code:str, resolved:set[str]):
         code=patt_eq.sub(repl_eq,code)
 
         localized=f'(genshin.getTextLiteral ? genshin.getTextLiteral({lit}) : {lit})'
-        patt_call=re.compile(rf'\b(?P<fn>findText|findTextAndClick|chooseTalkOption|waitAndFindText|waitForOcrMatch)\(\s*(?P<q>[\'\"]){esc}(?P=q)')
-        code=patt_call.sub(lambda m:f'{m.group("fn")}({localized}',code)
+        # Match a resolved literal anywhere inside a direct OCR/helper call's
+        # argument list, not only when it is the first scalar argument. This
+        # covers common shapes such as findText(["点击", "继续"], ...).
+        patt_call=re.compile(
+            rf'(?P<prefix>\b(?:findText|findTextAndClick|chooseTalkOption|waitAndFindText|waitForOcrMatch)\([^;\r\n]*?)'
+            rf'(?P<q>[\'\"]){esc}(?P=q)'
+        )
+        def repl_call(m):
+            prefix=m.group('prefix')
+            # Preserve idempotence: do not wrap the canonical fallback literal
+            # inside a getTextLiteral/getLegacyText expression on a later pass.
+            if re.search(r'(?:getTextLiteral|getLegacyText)\s*\(\s*$', prefix[-120:]):
+                return m.group(0)
+            return f'{prefix}{localized}'
+        code=patt_call.sub(repl_call,code)
     return code
 
 
